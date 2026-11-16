@@ -1,0 +1,147 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "name": "@abrar225/skills",
+  "skills": [
+    {
+      "id": "master-router",
+      "name": "Master Agent Orchestrator",
+      "domain": "orchestrator",
+      "path": "skills/orchestrator/master-router",
+      "description": "Orchestrates incoming agent tasks: grills vague requirements, selects minimal optimal skills, and enforces engineering boundaries.",
+      "triggers": ["orchestrate", "triage", "start project", "route skills"],
+      "recommendedModel": "reasoning",
+      "evalCount": 5
+    },
+    {
+      "id": "gravitas",
+      "name": "Gravitas Engineering Invariants",
+      "domain": "orchestrator",
+      "path": "skills/orchestrator/gravitas",
+      "description": "Engineering reliability runtime: Ground before mutating, stay in scope, evidence-backed verification, and failure avoidance.",
+      "triggers": ["gravitas", "reliability", "verification", "engineering standard"],
+      "recommendedModel": "fast",
+      "evalCount": 6
+    },
+    {
+      "id": "grill-me",
+      "name": "Socratic Requirements Griller",
+      "domain": "orchestrator",
+      "path": "skills/orchestrator/grill-me",
+      "description": "Interviews developers one question at a time down the decision tree to resolve ambiguities before any code is written.",
+      "triggers": ["grill-me", "interview", "clarify", "requirements"],
+      "recommendedModel": "fast",
+      "evalCount": 4
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "name": "UI/UX Pro Max Design System",
+      "domain": "ui-ux",
+      "path": "skills/ui-ux/ui-ux-pro-max",
+      "description": "Production design system heuristics: color palettes, typography rhythm, spacing tokens, and visual polish.",
+      "triggers": ["design UI", "make it look good", "UI polish", "design system", "tailwind"],
+      "recommendedModel": "fast",
+      "evalCount": 8
+    },
+    {
+      "id": "framer-motion-animator",
+      "name": "Framer Motion Kinetic Physics",
+      "domain": "ui-ux",
+      "path": "skills/ui-ux/framer-motion-animator",
+      "description": "Fluid spring animations, staggered page entries, layout transitions, and gesture-driven motion.",
+      "triggers": ["animate", "framer motion", "transitions", "micro-interaction", "spring"],
+      "recommendedModel": "fast",
+      "evalCount": 5
+    },
+    {
+      "id": "frontend-design",
+      "name": "Frontend Design Architect",
+      "domain": "frontend",
+      "path": "skills/frontend/frontend-design",
+      "description": "Modern frontend architectures, accessible markup, responsive flex/grid layouts, and component composition.",
+      "triggers": ["frontend", "component design", "web layout", "react"],
+      "recommendedModel": "fast",
+      "evalCount": 6
+    },
+    {
+      "id": "flutter-architecture",
+      "name": "Flutter Enterprise Architecture",
+      "domain": "mobile",
+      "path": "skills/mobile/flutter-architecture",
+      "description": "Production Flutter architecture using Bloc/Riverpod, clean layer separation, offline caching, and responsive widgets.",
+      "triggers": ["flutter", "dart", "mobile app", "cross-platform", "bloc"],
+      "recommendedModel": "reasoning",
+      "evalCount": 4
+    },
+    {
+      "id": "packetlark-workbench",
+      "name": "PacketLark API Workbench",
+      "domain": "backend-api",
+      "path": "skills/backend-api/packetlark-workbench",
+      "description": "Local API workbench patterns: HTTP contract testing, request replays, mock servers, and stdio MCP integrations.",
+      "triggers": ["api testing", "packetlark", "http requests", "api workbench", "mcp server"],
+      "recommendedModel": "fast",
+      "evalCount": 5
+    },
+    {
+      "id": "review-security",
+      "name": "Application Security Auditor",
+      "domain": "security-bug-bounty",
+      "path": "skills/security-bug-bounty/review-security",
+      "description": "Static application security audits: SQL injection, SSRF, IDOR, authorization flaws, and secrets detection.",
+      "triggers": ["security review", "audit code", "vulnerabilities", "bug bounty"],
+      "recommendedModel": "reasoning",
+      "evalCount": 7
+    },
+    {
+      "id": "reverse-engineer-anything",
+      "name": "Reverse Engineering Specialist",
+      "domain": "security-bug-bounty",
+      "path": "skills/security-bug-bounty/reverse-engineer-anything",
+      "description": "Deep protocol analysis, network payload inspection, deobfuscation, and API recreation.",
+      "triggers": ["reverse engineer", "decompile", "inspect protocol", "decode"],
+      "recommendedModel": "reasoning",
+      "evalCount": 4
+    },
+    {
+      "id": "human-writer",
+      "name": "Human Voice & De-Slop Writer",
+      "domain": "social-media",
+      "path": "skills/social-media/human-writer",
+      "description": "De-AI-slop writing engine adhering to Wikipedia MOS, natural cadence, zero em dashes, and high-retention human prose.",
+      "triggers": ["human writer", "de-slop", "copywriting", "write article", "readme write"],
+      "recommendedModel": "fast",
+      "evalCount": 5
+    },
+    {
+      "id": "instagram-autoposting",
+      "name": "Instagram Reels Automation",
+      "domain": "social-media",
+      "path": "skills/social-media/instagram-autoposting",
+      "description": "Vertical 9:16 video specifications, caption structures, deduplication guards, and DOM automation patterns.",
+      "triggers": ["instagram", "reels", "autopost", "video publish"],
+      "recommendedModel": "fast",
+      "evalCount": 3
+    },
+    {
+      "id": "linkedin-autoposting",
+      "name": "LinkedIn Deep-Dive Publishing",
+      "domain": "social-media",
+      "path": "skills/social-media/linkedin-autoposting",
+      "description": "Technical engineering deep dives, whitespace ergonomics, and DOM automation for LinkedIn.",
+      "triggers": ["linkedin", "tech post", "engineering article"],
+      "recommendedModel": "fast",
+      "evalCount": 3
+    },
+    {
+      "id": "karpathy-guidelines",
+      "name": "Karpathy Engineering Heuristics",
+      "domain": "engineering-ops",
+      "path": "skills/engineering-ops/karpathy-guidelines",
+      "description": "Surgical code edits, avoiding unnecessary abstractions, surfacing hidden assumptions, and proving test passes.",
+      "triggers": ["karpathy", "clean code", "surgical edits", "simplicity"],
+      "recommendedModel": "fast",
+      "evalCount": 5
+    }
+  ]
+}

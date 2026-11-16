@@ -1,0 +1,74 @@
+{
+  "domains": [
+    {
+      "id": "orchestrator",
+      "name": "Agent Orchestration & Governance",
+      "description": "Meta-skills that triage incoming developer intent, grill ambiguities, enforce engineering invariants, and dispatch task-specific skills.",
+      "path": "skills/orchestrator",
+      "flagshipSkills": ["master-router", "gravitas", "grill-me"]
+    },
+    {
+      "id": "ui-ux",
+      "name": "UI/UX Design & Micro-Interactions",
+      "description": "Design systems, typography scales, spacing tokens, visual hierarchy, and polished spring physics.",
+      "path": "skills/ui-ux",
+      "flagshipSkills": ["ui-ux-pro-max", "framer-motion-animator", "linear-ui-skills", "refactoring-ui"]
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend Engineering & Web Frameworks",
+      "description": "Modern Next.js, React Server Components, high-performance web graphics, Three.js, and design component libraries.",
+      "path": "skills/frontend",
+      "flagshipSkills": ["frontend-design", "astryx", "vercel-react-best-practices", "threejs-fundamentals"]
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile Application Development",
+      "description": "Flutter enterprise architecture, Jetpack Compose UI sidecar previews, and cross-platform native patterns.",
+      "path": "skills/mobile",
+      "flagshipSkills": ["flutter-architecture", "android-cli", "compose-preview"]
+    },
+    {
+      "id": "backend-api",
+      "name": "Backend, API & Data Pipelines",
+      "description": "PacketLark local API testing, MCP tool protocols, BigQuery data transforms, and dbt modeling.",
+      "path": "skills/backend-api",
+      "flagshipSkills": ["packetlark-workbench", "dbt-bigquery", "data-autocleaning"]
+    },
+    {
+      "id": "security-bug-bounty",
+      "name": "Security Auditing & Bug Bounty Hunting",
+      "description": "Static application security testing (SAST), binary reverse engineering, API parameter fuzzing, and threat modeling.",
+      "path": "skills/security-bug-bounty",
+      "flagshipSkills": ["review-security", "reverse-engineer-anything", "bug-bounty-hunter"]
+    },
+    {
+      "id": "automations",
+      "name": "Automations & Cron Workflows",
+      "description": "Headless browser automation, background task schedulers, sleep gates, and recurring bot workers.",
+      "path": "skills/automations",
+      "flagshipSkills": ["task-scheduler", "browser-automation", "firecrawl-scraper"]
+    },
+    {
+      "id": "scraping-leads",
+      "name": "Lead Generation & Intelligent Scraping",
+      "description": "Social media data scraping, company profile enrichment, cold email automation, and programmatic SEO.",
+      "path": "skills/scraping-leads",
+      "flagshipSkills": ["cold-email-pipeline", "ai-seo", "lead-enrichment"]
+    },
+    {
+      "id": "social-media",
+      "name": "Social Media Publishing & Growth",
+      "description": "Human-written high-retention copywriting, 9:16 vertical video specs, Reels/Shorts DOM publishing, and platform formatting.",
+      "path": "skills/social-media",
+      "flagshipSkills": ["human-writer", "instagram-autoposting", "linkedin-autoposting", "x-autoposting", "reddit-autoposting"]
+    },
+    {
+      "id": "engineering-ops",
+      "name": "Engineering Operations & Code Quality",
+      "description": "Karpathy-style surgical changes, codebase knowledge graph extraction, and red-green-refactor TDD cycles.",
+      "path": "skills/engineering-ops",
+      "flagshipSkills": ["karpathy-guidelines", "graphify", "tdd"]
+    }
+  ]
+}

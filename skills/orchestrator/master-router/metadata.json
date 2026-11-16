@@ -1,0 +1,10 @@
+{
+  "id": "master-router",
+  "name": "Master Agent Orchestrator",
+  "version": "1.0.0",
+  "domain": "orchestrator",
+  "recommendedModel": "reasoning",
+  "author": "Abrar Akhunji",
+  "tags": ["orchestrator", "router", "triage", "grill-me", "gravitas"],
+  "prerequisites": []
+}

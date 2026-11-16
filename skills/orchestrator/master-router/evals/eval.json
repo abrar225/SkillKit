@@ -1,0 +1,34 @@
+{
+  "skillId": "master-router",
+  "version": "1.0.0",
+  "evals": [
+    {
+      "id": "eval-intent-routing",
+      "prompt": "I need to design a sleek dark-mode dashboard with subtle hover animations and high-converting typography.",
+      "assertions": [
+        {
+          "type": "routes_to_domain",
+          "value": "ui-ux"
+        },
+        {
+          "type": "selects_skills",
+          "value": ["ui-ux-pro-max", "framer-motion-animator"]
+        }
+      ]
+    },
+    {
+      "id": "eval-ambiguity-grill",
+      "prompt": "Build me a full-stack mobile app.",
+      "assertions": [
+        {
+          "type": "triggers_grill_me",
+          "value": true
+        },
+        {
+          "type": "questions_asked_singly",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

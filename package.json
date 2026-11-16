@@ -1,0 +1,38 @@
+{
+  "name": "@abrar225/skills",
+  "version": "1.0.0",
+  "description": "Agent-First Skills Monorepo for Vibe Coders and AI Coding Agents",
+  "main": "bin/vibe-skills.js",
+  "bin": {
+    "vibe-skills": "./bin/vibe-skills.js"
+  },
+  "scripts": {
+    "test": "node scripts/test-evals.js",
+    "scan": "node bin/vibe-skills.js scan",
+    "export:all": "node scripts/export-skills.js --target all",
+    "export:antigravity": "node scripts/export-skills.js --target antigravity",
+    "export:claude": "node scripts/export-skills.js --target claude",
+    "export:cursor": "node scripts/export-skills.js --target cursor"
+  },
+  "keywords": [
+    "ai-agent",
+    "agent-skills",
+    "vibe-coding",
+    "antigravity",
+    "claude-code",
+    "cursor",
+    "monorepo",
+    "orchestrator",
+    "gravitas"
+  ],
+  "author": "Abrar Akhunji <abrarakhunji@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abrar225/Skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abrar225/Skills/issues"
+  },
+  "homepage": "https://github.com/abrar225/Skills#readme"
+}

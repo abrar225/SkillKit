@@ -1,0 +1,11 @@
+{
+  "id": "example-skill",
+  "name": "Example Skill",
+  "version": "1.0.0",
+  "domain": "ui-ux",
+  "recommendedModel": "fast",
+  "author": "Abrar Akhunji",
+  "tags": ["ui", "design-system", "vibe-coding"],
+  "prerequisites": [],
+  "verificationCommand": "npm test"
+}
