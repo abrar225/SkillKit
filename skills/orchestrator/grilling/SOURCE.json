@@ -1,0 +1,11 @@
+{
+  "id": "orchestrator/grilling",
+  "name": "grilling",
+  "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/grilling",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

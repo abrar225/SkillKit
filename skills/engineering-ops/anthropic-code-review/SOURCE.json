@@ -1,0 +1,36 @@
+{
+  "id": "engineering-ops/anthropic-code-review",
+  "name": "code-review",
+  "description": "Review the current diff, or a PR number/branch/path target, for correctness bugs (plus reuse/simplification/efficiency cleanups where the model's recipe covers them) at the effort level given first, before any target (low|medium|high|xhigh|max: from few high-confidence findings to many, some uncertain; ultra: deep multi-agent review in the cloud (requires claude.ai account access)); with no level given, it reuses the level you typed last. Pass --comment to post findings as inline PR comments, or --fix to apply them to the working tree after the review. Pass --max-findings <n> to report up to n findings, or --max-findings all for every finding. The choice stays until you pass --max-findings default. For ultra on a GitHub.com PR target, --post asks to post the finished review's findings to the PR as a single comment from the user's GitHub account (not a review; the launch dialog still confirms in interactive sessions, while non-interactive mode posts on the flag alone) and --no-post hides that option.",
+  "origin": "upstream",
+  "license": "CC0-1.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "path": "Anthropic/claude-code/skills/code-review",
+    "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103",
+    "ref": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "9f50718ad0c7a0b5618d3cfec8034e9e17dbdde9e9ecd7f43d8d9ae62eeb2989",
+      "high.md": "516ccdfb079072491f3958f209669327f6258a7504ca00a8f68b43eecb0387f0",
+      "low.md": "aab0c3accfb83b7fdb28c2a52dbad9aabf8e60e0547519529b8391b870d740a9",
+      "max.md": "83be9fd7fe19ec141df1a20197cc67b801d202fd351209160d98e4e29faa895a",
+      "medium.md": "393c737a840ac2aa8a9333f11cbb4eb24be4310701d75ead36fe99cb3cc6b3f9",
+      "report-findings-tool.md": "a6cdedb06f7f800c41713d916e852544fdd8663f403e799584db0c3a6f830a76",
+      "xhigh.md": "a2562b061214e5b672d77f950758c160bac6328803d791afd057cc5930dc4163"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "f99ae25b6325d3a2fcebe74ee92296e2058fe84e97f228a5b81b5e8a1821f04f"
+    }
+  ]
+}

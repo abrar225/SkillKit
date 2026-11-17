@@ -1,0 +1,33 @@
+{
+  "id": "backend-api/neon-auth",
+  "name": "neon-auth",
+  "description": "Add authentication to a new app. Use for \"add auth\", \"add login\", Neon Auth (Managed Better Auth), identity routing, sign-up, sign-in, password reset, email OTP, magic links, organizations, phone OTP, OAuth, OAuth server for MCP or third-party OAuth clients, passkeys, MFA, trusted domains, invalid domain, and @neon/auth. No existing identity: default to Managed Better Auth. Keep working Better Auth, Clerk, Supabase Auth, or another IdP. User asked to migrate from Supabase Auth: Managed Better Auth. A required plugin outside Managed support: self-managed Better Auth on a Neon Function or the existing app host. Also use for auth APIs in @neon/neon-js.",
+  "origin": "upstream",
+  "license": "Apache-2.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "neondatabase/agent-skills",
+    "url": "https://github.com/neondatabase/agent-skills",
+    "path": "skills/neon-auth",
+    "commit": "60b9a53fdd08c3be22781c5e51f6b689a77d3e39",
+    "ref": "60b9a53fdd08c3be22781c5e51f6b689a77d3e39"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "42fc58a1914ad23a578cae153f0f3c16509240e49d934ba35da78a77ce09400d",
+      "references/managed-auth.md": "93be8e4c4e2310245a530ea0900e3be4ad9e53018f20671bb818d136e3699fae",
+      "references/oauth-server.md": "a19fa4d9fa861bd2adcca26b1c781aa0b408b949999846b1b003e79962073f55",
+      "references/self-managed.md": "ddcb6d35207e1595a0ff1857c85fcba99d651c58ef158448c389fe4343a08b28"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ]
+}

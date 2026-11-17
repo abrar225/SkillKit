@@ -1,0 +1,33 @@
+{
+  "id": "backend-api/supabase",
+  "name": "supabase",
+  "description": "Use when doing ANY task involving Supabase. Triggers: Supabase products (Database, Auth, Edge Functions, Realtime, Storage, Vectors, Cron, Queues); client libraries and SSR integrations (supabase-js, @supabase/ssr) in Next.js, React, SvelteKit, Astro, Remix; auth issues (login, logout, sessions, JWT, cookies, getSession, getUser, getClaims, RLS); Supabase CLI or MCP server; schema changes, migrations, declarative schemas, security audits, Postgres extensions (pg_graphql, pg_cron, pg_vector); debugging and troubleshooting errors or unexpected behavior on Supabase projects (HTTP errors, Postgres errors, RLS surprises, permission denied, schema cache issues, timeouts, Edge Function crashes, Realtime drops, Storage failures) and reading or querying logs (Logs Explorer, ClickHouse).",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "supabase/agent-skills",
+    "url": "https://github.com/supabase/agent-skills",
+    "path": "skills/supabase",
+    "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+    "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "CHANGELOG.md": "4b9c9387871d7888f18e9c97a7d5691ea38e333401ccdcb0161d2140cb16b2d8",
+      "SKILL.md": "697e0e949f97621c6fc1784169eb3ccbf673747d6bb8299a52962d3d84d93dc6",
+      "assets/feedback-issue-template.md": "ea211aa174c5a096fe76461f25143b8bc23f3bde3adc9e727cda38218cc8c282",
+      "references/skill-feedback.md": "09ad94c0291735dfc04c92557c8734fa259ec39e1d56bf2bd5c6a6529d838717"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "b65e575eb4f04a13c187d64e958321298e2ab84d67aa8428819f362056ba292c"
+    }
+  ]
+}

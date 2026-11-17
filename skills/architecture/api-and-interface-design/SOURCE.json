@@ -1,0 +1,30 @@
+{
+  "id": "architecture/api-and-interface-design",
+  "name": "api-and-interface-design",
+  "description": "Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "addyosmani/agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/api-and-interface-design",
+    "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
+    "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "cc5e2166c484b2c297e8253f56e7525e5031f81d66101ca4e760ef378ea6bad0"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+    }
+  ]
+}

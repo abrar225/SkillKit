@@ -1,0 +1,39 @@
+{
+  "id": "frontend/dataviz",
+  "name": "dataviz",
+  "description": "Use this skill whenever you are about to create ANY chart, graph, plot, dashboard, or data visualization, in ANY output medium — an HTML or React artifact, inline SVG, plotting code in any library (matplotlib, plotly, d3, Recharts, …), an image/PNG you will render and upload, or a chart shared into Slack. Read it BEFORE writing the first line of chart code, choosing chart colors, building a stat tile / meter / KPI row, or laying out a dashboard. When the destination is a first-party document connector (host-designated, never self-described) that renders live charts, hand it the rows (inline, or as an uploaded data file the chart cites) rather than a rendered PNG/SVG — a picture of a chart loses hover, data inspection and per-value comments. Produces visualizations that read as one system — elegant, accessible, consistent in light and dark — using a brand-neutral placeholder palette you swap for your own. Teaches a design-system-agnostic method: a form heuristic, a color formula with a runnable validator, mark specs, and interaction rules. A validated default palette is documented in `references/palette.md` — swap that file's values for your brand's. Triggers on: \"chart\", \"graph\", \"plot\", \"data viz\", \"visualization\", \"dashboard\", \"analytics\", \"visualize data\", \"categorical colors\", \"sequential / diverging palette\", \"stat tile\", \"sparkline\", \"heatmap\", \"legend\", \"axis\", \"tooltip\", \"chart colors\", \"color by series\".",
+  "origin": "upstream",
+  "license": "CC0-1.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "path": "Anthropic/claude-code/skills/dataviz",
+    "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103",
+    "ref": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "2cf348891c5058c9ee495f3e08fc84bfdd2b5575a6a6b1893fa32e99fac8a748",
+      "references/anti-patterns.md": "9bbea748b10cf4a76c781d79da992c3ba6e9980c4b25a7f2066e17bef987d593",
+      "references/choosing-a-form.md": "e47e25a8cf1099d9fbff34997dd139e90c2592bc2edcb90d709dae65188f7917",
+      "references/color-formula.md": "0e3f185b89f7e172ac196e632a114d0d3c9434b71c6fd050c492280700d29920",
+      "references/components.md": "e0558ce3d3aa04827dd0dc995b2bd8f4f0606edf90c8cf076aae0e2c58b302db",
+      "references/interaction.md": "2050b65e1a0d919627db870215f423956e17f82c1285eb336537b732cb0c7893",
+      "references/marks-and-anatomy.md": "481794f643764633ce6a84aca495a247fb7ef13314c413d8599acecd36597755",
+      "references/palette.md": "e3e830bcff3bb6c8fa696a390da234e07cc289dda1373f4abf34eb1fa358d74a",
+      "scripts/validate_palette.js": "25df43beb77674dad34348b9fe338d5a47f568e08bcf51b38780e51386cf866e",
+      "scripts/validate_palette.py": "949f8c86dc1c98c589f1455bb2d7cd8967ffecf85d77eed2789dce62ce6c2cf4"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "f99ae25b6325d3a2fcebe74ee92296e2058fe84e97f228a5b81b5e8a1821f04f"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "planning/research",
+  "name": "research",
+  "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "path": "skills/engineering/research",
+    "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "ref": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "1f629e18ab899412683bc6a1c4efb4339999e27c2fdac328f26ee10a8c031d33",
+      "agents/openai.yaml": "9b4c470d63221c1f68f22df70b83e2f12401b317babe0d1b7b5f24a974474d0d"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    }
+  ]
+}

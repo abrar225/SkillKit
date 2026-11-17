@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/migrate-to-skills",
+  "name": "migrate-to-skills",
+  "description": "Convert 'Applied intelligently' Codex rules (.cursor/rules/*.mdc) and slash commands (.cursor/commands/*.md) to Agent Skills format (.cursor/skills/). Use when you want to migrate rules or commands to skills, convert .mdc rules to SKILL.md format, or consolidate commands into the skills directory.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/migrate-to-skills",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

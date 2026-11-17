@@ -1,0 +1,35 @@
+{
+  "id": "planning/meta-plan",
+  "name": "plan",
+  "description": "On an explicit planning request, always call `read_skill` for this skill before answering. Research first, then return one concise inline plan; do not create a plan file unless the user explicitly asks or a governing workflow requires one. Start and end the reply by saying this is not a special mode and `go` executes the plan; do not implement in the planning turn. For ordinary implement, build, fix, debug, or refactor requests, work directly. When an explicit plan divides work into separate diffs, commits, or PRs and the user asks to publish, preserve that split and tell the user before deviating.",
+  "origin": "upstream",
+  "license": "Apache-2.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "path": "Meta/muse-code/skills/plan",
+    "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103",
+    "ref": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "4bc60d05aace45292a8504572374b31307cfd64d33a68415f9d38ed88b0432c6"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "f99ae25b6325d3a2fcebe74ee92296e2058fe84e97f228a5b81b5e8a1821f04f"
+    },
+    {
+      "sourcePath": "Meta/muse-code/skills/LICENSE",
+      "localPath": "upstream-licenses/Meta/muse-code/skills/LICENSE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "social-media/linkedin-profile-optimizer",
+  "name": "linkedin-profile-optimizer",
+  "description": "Optimize LinkedIn profile for searchability, recruiter visibility, and engagement",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/linkedin-profile-optimizer",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

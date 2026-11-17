@@ -1,0 +1,30 @@
+{
+  "id": "frontend/generative-ui",
+  "name": "generative_ui",
+  "description": "How to render rich interactive HTML widgets inline in the chat or as standalone artifacts. Use this skill when you want to show the user diagrams, data visualizations, interactive controls, educational walkthroughs, or any rich visual content beyond plain text and markdown.",
+  "origin": "upstream",
+  "license": "CC0-1.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "path": "Google/antigravity/skills/generative_ui",
+    "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103",
+    "ref": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "e68549d8cece3680e70ac90b80a40aa28f3b948c75afbba87b0d71ef64aac827"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "f99ae25b6325d3a2fcebe74ee92296e2058fe84e97f228a5b81b5e8a1821f04f"
+    }
+  ]
+}

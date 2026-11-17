@@ -1,0 +1,189 @@
+[
+  {
+    "id": "owasp-top-10",
+    "name": "OWASP Top 10",
+    "url": "https://owasp.org/Top10/",
+    "type": "security-standard",
+    "pricing": "free",
+    "license": "CC-BY-4.0",
+    "description": "The reference list of the most critical web application security risks.",
+    "why": "The baseline vocabulary for any security review an agent performs.",
+    "tags": ["security", "owasp", "web"]
+  },
+  {
+    "id": "owasp-asvs",
+    "name": "OWASP ASVS",
+    "url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "type": "security-standard",
+    "pricing": "free",
+    "license": "CC-BY-4.0",
+    "description": "Application Security Verification Standard: testable requirements by level.",
+    "why": "Turns 'is it secure?' into a checklist with verifiable criteria.",
+    "tags": ["security", "verification", "requirements"]
+  },
+  {
+    "id": "gitleaks",
+    "name": "Gitleaks",
+    "url": "https://github.com/gitleaks/gitleaks",
+    "type": "secret-scanner",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Detects hardcoded secrets in git history and working trees.",
+    "why": "The cheapest high-value security check to run before every push.",
+    "tags": ["secrets", "security", "git"]
+  },
+  {
+    "id": "trufflehog",
+    "name": "TruffleHog",
+    "url": "https://github.com/trufflesecurity/trufflehog",
+    "type": "secret-scanner",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "description": "Secret detection with credential verification across git, files, and cloud storage.",
+    "why": "Verification reduces false positives compared with regex-only scanners.",
+    "tags": ["secrets", "security", "verification"]
+  },
+  {
+    "id": "osv-scanner",
+    "name": "OSV-Scanner",
+    "url": "https://github.com/google/osv-scanner",
+    "type": "dependency-scanner",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Vulnerability scanner backed by the OSV database across lockfiles and containers.",
+    "why": "A vendor-neutral way to check dependencies for known CVEs.",
+    "tags": ["dependencies", "cve", "security"]
+  },
+  {
+    "id": "snyk",
+    "name": "Snyk",
+    "url": "https://snyk.io/",
+    "type": "security-platform",
+    "pricing": "freemium",
+    "license": "commercial service",
+    "description": "Developer security platform for dependencies, containers, code, and IaC.",
+    "why": "Useful when a team wants continuous scanning and remediation guidance.",
+    "tags": ["security", "dependencies", "sast"]
+  },
+  {
+    "id": "dependabot",
+    "name": "Dependabot",
+    "url": "https://github.com/dependabot",
+    "type": "dependency-updater",
+    "pricing": "free on GitHub",
+    "license": "GitHub terms",
+    "description": "Automated dependency updates and security alerts on GitHub.",
+    "why": "Keeps the dependency surface current without manual version chasing.",
+    "tags": ["dependencies", "updates", "github"]
+  },
+  {
+    "id": "nvd",
+    "name": "NVD",
+    "url": "https://nvd.nist.gov/",
+    "type": "vulnerability-database",
+    "pricing": "free",
+    "license": "public domain / NIST terms",
+    "description": "National Vulnerability Database with CVE details and severity scores.",
+    "why": "Primary source when you need to verify a CVE claim.",
+    "tags": ["cve", "vulnerabilities", "reference"]
+  },
+  {
+    "id": "mitre-attack",
+    "name": "MITRE ATT&CK",
+    "url": "https://attack.mitre.org/",
+    "type": "threat-model",
+    "pricing": "free",
+    "license": "MITRE terms",
+    "description": "Knowledge base of adversary tactics and techniques.",
+    "why": "Useful for threat modeling beyond a generic OWASP checklist.",
+    "tags": ["threat-modeling", "security", "reference"]
+  },
+  {
+    "id": "hackerone",
+    "name": "HackerOne",
+    "url": "https://www.hackerone.com/",
+    "type": "bug-bounty-platform",
+    "pricing": "commercial",
+    "license": "commercial service",
+    "description": "Bug bounty and vulnerability disclosure platform.",
+    "why": "Where many public programs and disclosed reports live.",
+    "tags": ["bug-bounty", "security", "programs"]
+  },
+  {
+    "id": "bugcrowd",
+    "name": "Bugcrowd",
+    "url": "https://www.bugcrowd.com/",
+    "type": "bug-bounty-platform",
+    "pricing": "commercial",
+    "license": "commercial service",
+    "description": "Crowdsourced security testing and bug bounty platform.",
+    "why": "A second major source of programs and disclosed findings.",
+    "tags": ["bug-bounty", "security", "programs"]
+  },
+  {
+    "id": "payloads-all-the-things",
+    "name": "PayloadsAllTheThings",
+    "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+    "type": "security-reference",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Curated payloads and bypass techniques for web security testing.",
+    "why": "A practical reference during authorized testing, not a substitute for methodology.",
+    "tags": ["security", "payloads", "testing"]
+  },
+  {
+    "id": "seclists",
+    "name": "SecLists",
+    "url": "https://github.com/danielmiessler/SecLists",
+    "type": "security-reference",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Security testing wordlists for discovery, fuzzing, and credentials.",
+    "why": "The standard wordlist collection for authorized recon and fuzzing.",
+    "tags": ["security", "wordlists", "fuzzing"]
+  },
+  {
+    "id": "ffuf",
+    "name": "ffuf",
+    "url": "https://github.com/ffuf/ffuf",
+    "type": "security-tool",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Fast web fuzzer for content discovery and parameter testing.",
+    "why": "A core tool for authorized recon and endpoint discovery.",
+    "tags": ["security", "fuzzing", "recon"]
+  },
+  {
+    "id": "burp-community",
+    "name": "Burp Suite Community",
+    "url": "https://portswigger.net/burp/communitydownload",
+    "type": "security-tool",
+    "pricing": "free",
+    "license": "commercial EULA",
+    "description": "Community edition of the widely used web security testing proxy.",
+    "why": "Manual request interception is still essential for authorization testing.",
+    "tags": ["security", "proxy", "testing"]
+  },
+  {
+    "id": "caido",
+    "name": "Caido",
+    "url": "https://caido.io/",
+    "type": "security-tool",
+    "pricing": "freemium",
+    "license": "commercial EULA",
+    "description": "Modern web security auditing toolkit with a lightweight proxy.",
+    "why": "A faster, more modern alternative to legacy interception tools.",
+    "tags": ["security", "proxy", "testing"]
+  },
+  {
+    "id": "mitmproxy",
+    "name": "mitmproxy",
+    "url": "https://mitmproxy.org/",
+    "type": "security-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Interactive HTTPS proxy with a Python API.",
+    "why": "Scriptable traffic inspection for protocol analysis and automation.",
+    "tags": ["security", "proxy", "python", "protocols"]
+  }
+]

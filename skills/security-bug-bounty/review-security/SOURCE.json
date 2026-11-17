@@ -1,0 +1,11 @@
+{
+  "id": "security-bug-bounty/review-security",
+  "name": "review-security",
+  "description": "Review code changes with Security Review subagent.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/review-security",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

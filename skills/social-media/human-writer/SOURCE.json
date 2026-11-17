@@ -1,0 +1,12 @@
+{
+  "id": "social-media/human-writer",
+  "name": "human-writer",
+  "description": "Transforms text into authentic, high-retention human writing using Wikipedia's Manual of Style and human engineering prose. Eliminates AI slop, em dashes, robotic symmetries, and formulaic templates.",
+  "origin": "local-original",
+  "license": "unverified-local",
+  "licenseStatus": "unverified",
+  "retrievedAt": "2026-11-17",
+  "note": "Original local skill.",
+  "upstream": null,
+  "originalPath": "repository (pre-existing)"
+}

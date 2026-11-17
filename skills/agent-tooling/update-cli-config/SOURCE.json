@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/update-cli-config",
+  "name": "update-cli-config",
+  "description": "View and modify Codex CLI configuration settings in ~/.cursor/cli-config.json. Use when the user wants to change CLI settings, configure permissions, switch approval mode, enable vim mode, toggle display options, configure sandbox, or manage any CLI preferences.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/update-cli-config",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

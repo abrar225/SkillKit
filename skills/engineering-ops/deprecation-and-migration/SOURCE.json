@@ -1,0 +1,30 @@
+{
+  "id": "engineering-ops/deprecation-and-migration",
+  "name": "deprecation-and-migration",
+  "description": "Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users from one implementation to another. Use when migrating a database schema in production, such as renaming or dropping a column without downtime (expand/contract). Use when deciding whether to maintain or sunset existing code.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "addyosmani/agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/deprecation-and-migration",
+    "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
+    "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "1896d7db836fc067e2856739664db9ff5bb642526fdff2126d08ec0d588da4b7"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+    }
+  ]
+}

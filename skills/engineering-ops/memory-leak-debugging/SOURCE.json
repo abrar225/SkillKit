@@ -1,0 +1,31 @@
+{
+  "id": "engineering-ops/memory-leak-debugging",
+  "name": "memory-leak-debugging",
+  "description": "Diagnoses and resolves memory leaks in JavaScript/Node.js applications. Use when a user reports high memory usage, OOM errors, or wants to capture, compare, or inspect heap snapshots with Chrome DevTools MCP memory tools.",
+  "origin": "upstream",
+  "license": "CC0-1.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "path": "Google/antigravity/skills/memory-leak-debugging",
+    "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103",
+    "ref": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "895127ac55a3f2c4e0ca9be496e84165eee6408637c2bcc5516d69170a8de80e",
+      "references/common-leaks.md": "2d41e075d8d22e69bc420a9eb4bc180eb2466669ffd0939c201723d80b2673a1"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "f99ae25b6325d3a2fcebe74ee92296e2058fe84e97f228a5b81b5e8a1821f04f"
+    }
+  ]
+}

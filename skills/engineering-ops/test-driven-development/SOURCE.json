@@ -1,0 +1,31 @@
+{
+  "id": "engineering-ops/test-driven-development",
+  "name": "test-driven-development",
+  "description": "Use when implementing any feature or bugfix, before writing implementation code",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/test-driven-development",
+    "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "ref": "22f0b463e7a5e579904dd6211a520321035526f7"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d",
+      "writing-good-tests.md": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+    }
+  ]
+}

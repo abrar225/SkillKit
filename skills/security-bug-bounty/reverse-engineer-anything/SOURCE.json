@@ -1,0 +1,12 @@
+{
+  "id": "security-bug-bounty/reverse-engineer-anything",
+  "name": "reverse-engineer-anything",
+  "description": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA. Use shipped-artifact or requested runtime evidence to explain features, compare versions, decompile code, or guide a reconstruction. Skip REA for ordinary source-repository architecture analysis.",
+  "origin": "local-original",
+  "license": "unverified-local",
+  "licenseStatus": "unverified",
+  "retrievedAt": "2026-11-17",
+  "note": "Original local skill.",
+  "upstream": null,
+  "originalPath": "repository (pre-existing)"
+}

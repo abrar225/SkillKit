@@ -1,0 +1,21 @@
+{
+  "id": "planning/vibe-planning-6docs",
+  "name": "vibe-planning-6docs",
+  "description": "Turn an app idea into six connected planning documents before an AI coding agent builds it. Use when starting a new app, scoping version one, writing a PRD/TRD, mapping app flow, defining UI/UX or backend schema, or producing an implementation plan.",
+  "origin": "source-page-extraction",
+  "license": "source-page-retained",
+  "licenseStatus": "unverified",
+  "retrievedAt": "2026-11-17",
+  "note": "User-requested extraction of the public Notion page. Complete raw source response and extraction ledger are retained; Markdown preserves all source blocks and supported rich-text annotations. No license is declared by the source page.",
+  "url": "https://midi-garment-d51.notion.site/The-6-Documents-You-Need-Before-Vibe-Coding-Any-App-3d313d90aa8f80769b6aecefb5f83f45",
+  "upstream": null,
+  "originalPath": "https://midi-garment-d51.notion.site/The-6-Documents-You-Need-Before-Vibe-Coding-Any-App-3d313d90aa8f80769b6aecefb5f83f45",
+  "extraction": {
+    "snapshot": "references/source-page.json",
+    "snapshotSha256": "569e626f3eda18776fd6fb3e81ea62d942cde6bc4fba3840d0179d6917e116d2",
+    "ledger": "references/extraction.json",
+    "pageId": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+    "blockCount": 82,
+    "codeBlockCount": 17
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "mobile/write-swift",
+  "name": "write-swift",
+  "description": "How to write modern Swift well — modeling with value types, Swift 6 data-race safety and approachable concurrency (@concurrent, main-actor-by-default, actors, task groups), protocols and generics (some vs any), API design, performance and ARC, Swift Testing, macros, and the modern language features agents don't know about yet. Use when writing, reviewing, or migrating Swift, or when a concurrency error, a hang, a data race, a retain cycle, or a performance problem needs fixing.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "emilkowalski/skills",
+    "url": "https://github.com/emilkowalski/skills",
+    "path": "skills/write-swift",
+    "commit": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c",
+    "ref": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "ad8f3af70b627c165ecd73ecdba49449e35301dd845c397cf813f06582bbdac2"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    }
+  ]
+}

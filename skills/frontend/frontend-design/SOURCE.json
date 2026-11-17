@@ -1,0 +1,25 @@
+{
+  "id": "frontend/frontend-design",
+  "name": "frontend-design",
+  "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+  "origin": "upstream",
+  "license": "Apache-2.0 (per-skill LICENSE.txt)",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/frontend-design",
+    "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+    "ref": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "SKILL.md": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": []
+}

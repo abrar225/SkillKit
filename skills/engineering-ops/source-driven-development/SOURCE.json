@@ -1,0 +1,30 @@
+{
+  "id": "engineering-ops/source-driven-development",
+  "name": "source-driven-development",
+  "description": "Grounds every implementation decision in official documentation. Use when you want to verify an approach against the official docs before implementing it, or when you want authoritative, source-cited code free from outdated patterns. Use when building with any framework or library where correctness matters.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "addyosmani/agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/source-driven-development",
+    "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
+    "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "df38a852658679a67c7a9e4840160570c95094a13a63307e834045ddbf8aa287"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+    }
+  ]
+}

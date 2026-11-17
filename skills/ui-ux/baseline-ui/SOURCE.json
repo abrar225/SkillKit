@@ -1,0 +1,30 @@
+{
+  "id": "ui-ux/baseline-ui",
+  "name": "baseline-ui",
+  "description": "Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast cleanup or polish pass.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "ibelick/ui-skills",
+    "url": "https://github.com/ibelick/ui-skills",
+    "path": "skills/baseline-ui",
+    "commit": "65cc0edb4f64fe8bfe7e9c59466074de25bece76",
+    "ref": "65cc0edb4f64fe8bfe7e9c59466074de25bece76"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/create-rule",
+  "name": "create-rule",
+  "description": "Create Codex rules for persistent AI guidance. Use when you want to create a rule, add coding standards, set up project conventions, configure file-specific patterns, create RULE.md files, or asks about .cursor/rules/ or AGENTS.md.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/create-rule",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

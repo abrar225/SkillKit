@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/share",
+  "name": "share",
+  "description": "Save, back up, or share the current project on Codex — creates a repo (a saved, versioned copy that isn't public) even for users who have never used git, handling all setup automatically. Use when the user asks to save, back up, publish, or share their project on Codex, or how to not lose it.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/share",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "engineering-ops/code-review-and-quality",
+  "name": "code-review-and-quality",
+  "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Use when asked to review a diff or a pull request, even when the diff is pasted inline and the review looks quick to do from reading it.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "addyosmani/agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/code-review-and-quality",
+    "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
+    "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "5dc8f98d9d23e74676091a945b2649bb52456e34f293238ee2511281104a94c0"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+    }
+  ]
+}

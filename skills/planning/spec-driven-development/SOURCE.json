@@ -1,0 +1,30 @@
+{
+  "id": "planning/spec-driven-development",
+  "name": "spec-driven-development",
+  "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when drafting a PRD or requirements document with objectives and scope, or when requirements are unclear, ambiguous, or only exist as a vague idea. Use when a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying. Use when evolving a shipped spec — scoping a V1, deferring ideas to a V2 backlog, or writing a follow-up spec for a change to an existing feature.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "addyosmani/agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/spec-driven-development",
+    "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
+    "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "58dd9f5f2e53830c0c0dd9651998bd6ee4e2a1cc520c9dcf855dfb2fbb3f5059"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+    }
+  ]
+}

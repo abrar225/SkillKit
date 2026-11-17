@@ -1,0 +1,11 @@
+{
+  "id": "engineering-ops/tdd",
+  "name": "tdd",
+  "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/tdd",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

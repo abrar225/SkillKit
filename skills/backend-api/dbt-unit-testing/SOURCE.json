@@ -1,0 +1,43 @@
+{
+  "id": "backend-api/dbt-unit-testing",
+  "name": "adding-dbt-unit-test",
+  "description": "Creates unit test YAML definitions that mock upstream model inputs and validate expected outputs. Use when adding unit tests for a dbt model or practicing test-driven development (TDD) in dbt.",
+  "origin": "upstream",
+  "license": "Apache-2.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "dbt-labs/dbt-agent-skills",
+    "url": "https://github.com/dbt-labs/dbt-agent-skills",
+    "path": "skills/dbt/skills/adding-dbt-unit-test",
+    "commit": "b8facde20b7a92c40ce3e6b86b71c4b92aa44040",
+    "ref": "b8facde20b7a92c40ce3e6b86b71c4b92aa44040"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "b185a1ead7471bd128ef8892ffc39a4d31dcfd1053fcb81dc6955f4e7ca2778e",
+      "references/examples.md": "eeb3a31ba2224d611d4c29a3f3ac7907808fa0e6969d5c2186092529920219e1",
+      "references/spec.md": "8d3a4f9895d988a8eef262f44669b9e520b0299c44e9b58e4acc91bd2ab787f9",
+      "references/special-cases-ephemeral-dependency.md": "9333220abbe0efe146631405a380fd1b2a98c972527df4151fa178d253e3a41e",
+      "references/special-cases-incremental-model.md": "9264d0bef874c77b7fc19a7e1406409f24f693bbd6e3e479bbe19839c9747509",
+      "references/special-cases-special-case-overrides.md": "8f90954286cbe1c5ab105137255000aeea641413ed1f23324abb874fcae82137",
+      "references/special-cases-versioned-model.md": "1a88625d7a9166881e945125ea6f7b1b3963bb5e9f3e1efbf1d9d996d2e34005",
+      "references/warehouse-bigquery-caveats.md": "c259e4400cda127e3e6ac1044e70e68b4f99fa179dc7f22ae1bddef6112cd16c",
+      "references/warehouse-bigquery-data-types.md": "7c605113880c1cb7febf4313c3cd44ecf6fed7fec22a9f580430029a53564326",
+      "references/warehouse-postgres-data-types.md": "be4f2f6c66b722baadc827fa81e4ca3f1ce3175cb002d2a8dfb33aeef5cdbba0",
+      "references/warehouse-redshift-caveats.md": "5bec6b91712be0b93061982c9923acd6bda2eb02a67697fdc13cabffc3f948b1",
+      "references/warehouse-redshift-data-types.md": "82669225e3de247388d56341ea66deaf436395ef2fff34911c79dceb93aa6138",
+      "references/warehouse-snowflake-data-types.md": "d7eb96ce9710da807eab9e2e6c2667970c80c97681726e58176ac7b036d82ad2",
+      "references/warehouse-spark-data-types.md": "293587b72bb78c366d798e261373c22025b5db6b319932ac8e0dbb9a62b749c7"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "a25c0f444db00399e225e96559b376d92188fbab622b50c5d4db7c556f77daff"
+    }
+  ]
+}

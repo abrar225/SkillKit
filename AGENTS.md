@@ -1,57 +1,87 @@
-# AGENTS.md — Agent-First Operations Protocol
+# AGENTS.md — Operating Rules
 
-Welcome, Agent. You have entered the **Agent-First Skills Monorepo** maintained by **Abrar Akhunji**.
-This repository is an organized collection of battle-tested development skills, evaluation benchmarks, and automation runtimes designed for vibe coders and AI agents.
+This repository is a curated library of agent skills and developer resources. It is also a working tool: the registries, CLI, and docs are generated from what is on disk and validated against it.
 
----
+Maintained by Abrar Akhunji.
 
-## 1. The Core Invariants (Governed by `/gravitas`)
+## 1. Core invariants
 
-When operating in this repository or utilizing its skills:
-1. **Ground before mutating**: Always read the target file, its tests, and its callers before editing. Never act on assumed state.
-2. **Stay in declared scope**: Only edit files directly related to the user's explicit task.
-3. **Completion requires evidence**: A task is never "done" until a verifiable test, eval, or runtime check passes *after* the latest edit.
-4. **No Hallucinated Success**: If something was not verified via shell or inspect tool, state clearly that it was not checked.
-5. **Human Voice**: In documentation and public writing, write naturally. Eliminate AI slop, redundant em dashes, and robotic symmetries.
+1. **Ground before mutating.** Read the target file, its `SOURCE.json`, and the registry entry before editing. Never act on assumed state.
+2. **Stay in scope.** Edit only files related to the task. Vendored instructions are read-only; restore or update them only through the pinned importer, without editorial changes. Do not create original skills. The explicitly authorized six-document source extraction is the exception.
+3. **Completion requires evidence.** Run `npm run validate` after any change to `skills/`, `resources/`, or `registry/`. A task is not done because the edit applied.
+4. **No invented success.** If a command was not run, say it was not run. If a URL was not checked, say it was not checked.
+5. **Human voice.** Write plainly. No filler, no robotic symmetry, no em dash chains.
 
----
+## 2. Where things live
 
-## 2. Orchestration Protocol (Master Router)
-
-Whenever an agent visits this repository or is requested to perform a task:
-1. **Step 1: Intent Triage**  
-   Match the user request against the Domain Registry (`registry/domains.json` and `registry/skills.json`).
-2. **Step 2: Ambiguity Grilling (`/grill-me`)**  
-   If the user's prompt leaves critical architectural decisions unresolved, pause and ask targeted multiple-choice questions one at a time.
-3. **Step 3: Surgical Skill Injection**  
-   Load *only* the specific domain skill required for the task. Do not load the entire repository into context.
-4. **Step 4: Verification Against Evals**  
-   Verify that the resulting code satisfies the assertions defined in the skill's `evals/eval.json`.
-
----
-
-## 3. Directory Map
-
-| Path | Purpose |
+| Path | Contents |
 | :--- | :--- |
-| `skills/orchestrator/` | Master routing, intent grilling (`grill-me`), reliability gates (`gravitas`) |
-| `skills/ui-ux/` | High-polish UI systems, Framer Motion, Linear dark themes, Refactoring UI |
-| `skills/frontend/` | React, Next.js App Router, Astryx components, Three.js WebGL scenes |
-| `skills/mobile/` | Flutter architecture, Bloc/Riverpod patterns, Android CLI previews |
-| `skills/backend-api/` | PacketLark workbench, HTTP testing, BigQuery dbt, data cleaning |
-| `skills/security-bug-bounty/`| Security SAST auditing, protocol reverse engineering, bug bounty recon |
-| `skills/automations/` | Headless browser automation, background task schedulers, Firecrawl |
-| `skills/scraping-leads/` | Social media data scraping, company enrichment, cold email automation |
-| `skills/social-media/` | Human writer, Instagram Reels automation, LinkedIn deep-dives, X threads |
-| `skills/engineering-ops/` | Karpathy simplicity rules, Graphify knowledge graphs, TDD |
-| `registry/` | Machine-readable JSON indexes (`skills.json`, `domains.json`) |
-| `bin/` | Interactive CLI dispatcher (`vibe-skills`) |
-| `templates/` | Standard starter scaffolds with eval suites |
+| `skills/orchestrator/` | Routing, grilling, multi-model councils, context control, reliability rules |
+| `skills/planning/` | PRDs, specs, tickets, plans, brainstorming, the 6-docs workflow |
+| `skills/architecture/` | Codebase design, domain modeling, ADRs, interfaces, knowledge graphs |
+| `skills/engineering-ops/` | TDD, debugging, review, verification, migrations, performance |
+| `skills/ui-ux/` | Layout, design systems, typography, motion, critique |
+| `skills/frontend/` | React, Next.js, Three.js, browser APIs |
+| `skills/mobile/` | Flutter, React Native, SwiftUI |
+| `skills/backend-api/` | Postgres, Supabase, Neon, Prisma, dbt, MCP |
+| `skills/security-bug-bounty/` | Security review, hardening, reverse engineering |
+| `skills/automations/` | Browser agents, web app testing, DevTools |
+| `skills/scraping-leads/` | Search visibility, enrichment, cold outreach |
+| `skills/social-media/` | Writing and publishing workflows |
+| `skills/media/` | Video, motion, canvas, generative art |
+| `skills/agent-tooling/` | Skills, hooks, rules, subagents, CLI configuration |
+| `registry/` | Generated indexes: `skills.json`, `domains.json`, `resources.json` |
+| `resources/` | Hand-curated resource sources, one file per category |
+| `scripts/` | Import, registry build, docs build, validation |
+| `bin/vibe-skills.js` | CLI: list, search, info, domains, resources, scan, validate, export, stats |
+| `docs/` | Guides plus generated catalogs |
+| `templates/skill-template/` | Starter files for an original skill |
 
----
+## 3. Working protocol
 
-## 4. Multi-Agent Adaptor Shortcuts
-- For **Antigravity**: Skills map to `.gemini/config/skills/<skill-name>/SKILL.md`.
-- For **Claude Code**: Refer to `CLAUDE.md` and `.claude/skills/`.
-- For **Cursor**: Refer to `.cursorrules` and `.cursor/skills/`.
-- For **Skills CLI**: Run `npx skills add abrar225/Skills/<domain>/<skill-name>`.
+1. **Triage.** Match the request against `registry/domains.json` and `registry/skills.json`. Search before creating anything: `node bin/vibe-skills.js search "<topic>"`.
+2. **Grill ambiguity.** If the request leaves a consequential decision open, ask focused questions one at a time. Use `skills/orchestrator/grill-me` when the decision is architectural.
+3. **Load narrowly.** Read the one `SKILL.md` the task needs, plus the supporting files its body points at. Do not load the repository into context.
+4. **Check provenance.** Before reusing or modifying a skill, read its `SOURCE.json`. `origin: upstream` means read-only. `origin: local-original` means the content belongs to this repository.
+5. **Verify.** Run the commands in section 4. Report what passed and what did not.
+
+## 4. Commands
+
+```bash
+node bin/vibe-skills.js stats            # totals and license breakdown
+node bin/vibe-skills.js search "<term>"  # skills and resources
+node bin/vibe-skills.js info <id>        # one skill, with provenance
+node bin/vibe-skills.js scan <dir>       # recommend skills for a project
+node bin/vibe-skills.js validate         # registry-vs-disk check
+node bin/vibe-skills.js export --target <claude|cursor|antigravity|agents> [--ids ...]
+
+python3 scripts/build-registry.py        # regenerate registries from disk
+node scripts/build-docs.js               # regenerate catalogs and notices
+python3 scripts/import-skills.py         # import newly listed upstream skills
+```
+
+Order matters: import or edit first, then `build-registry.py`, then `validate`, then `build-docs.js`.
+
+## 5. Adding things
+
+- **Vendored skill.** Add the repo, license, and paths to `scripts/import-manifest.json`, run `import-skills.py`, rebuild, validate. Never edit the copied files. See `docs/ADDING-A-SKILL.md`.
+- **Original skill.** Do not author new skills. Existing legacy local copies retain their provenance. Only the explicitly requested six-document page may be packaged as an attributed source extraction.
+- **Resource.** Add an entry to the matching `resources/*.json` with `id`, `name`, `url`, `type`, `pricing`, `license`, `description`, `why`, `tags`. HTTPS only. See `docs/ADDING-A-RESOURCE.md`.
+- **Domain.** Add it once in `scripts/build-registry.py`, create `skills/<domain>/`, rebuild.
+
+## 6. What validation enforces
+
+Errors include full registry/source drift, missing directories or entry points, provenance disagreement with the pinned manifest, invalid commit/path metadata, changed upstream content or executable bits, missing inherited notices, unrecorded upstream files, ID/display-name collisions, count mismatches, and invalid resource URLs.
+
+Warnings: unverified or missing license, skill without frontmatter, duplicate upstream name handled by `displayName`, missing resource metadata.
+
+Warnings are disclosed, not suppressed. The 53 unverified licenses are catalogued in `THIRD_PARTY_NOTICES.md`.
+
+## 7. Multi-agent entry points
+
+- **Claude Code:** `CLAUDE.md`
+- **Cursor:** `.cursorrules`
+- **Antigravity:** `.gemini/config/skills/<skill>/SKILL.md`
+- **Skills CLI:** install from the repository with the convention documented in `vercel-labs/skills`
+
+All of them should point back to this file rather than restating it.

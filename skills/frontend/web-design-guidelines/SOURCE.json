@@ -1,0 +1,24 @@
+{
+  "id": "frontend/web-design-guidelines",
+  "name": "web-design-guidelines",
+  "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+  "origin": "upstream",
+  "license": "MIT (per-skill frontmatter)",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "vercel-labs/agent-skills",
+    "url": "https://github.com/vercel-labs/agent-skills",
+    "path": "skills/web-design-guidelines",
+    "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+    "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mobile/flutter-architecture",
+  "name": "flutter-apply-architecture-best-practices",
+  "description": "Architects a Flutter application using the recommended layered approach (UI, Logic, Data). Use when structuring a new project or refactoring for scalability.",
+  "origin": "local-original",
+  "license": "unverified-local",
+  "licenseStatus": "unverified",
+  "retrievedAt": "2026-11-17",
+  "note": "Local daily skill.",
+  "upstream": null,
+  "originalPath": "repository (pre-existing)"
+}

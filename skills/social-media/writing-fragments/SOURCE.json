@@ -1,0 +1,31 @@
+{
+  "id": "social-media/writing-fragments",
+  "name": "writing-fragments",
+  "description": "Writing, explore: mine raw fragments, no structure yet.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "path": "skills/in-progress/writing-fragments",
+    "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "ref": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "298b0edd23df229183630de592ed8aa4289233560f2040691f6eb77caeaad4ea",
+      "agents/openai.yaml": "81167f25ee8ea1bb4b4958f12b6702ea972ad31b05e03ec91e39fa4bae0c2641"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "social-media/x-autoposting",
+  "name": "x-autoposting",
+  "description": "Rules, copywriting frameworks, DOM automation patterns, and media specifications for publishing high-retention technical posts and videos to X (Twitter) for @Abrarakhunji.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.gemini/config/skills/x-autoposting",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

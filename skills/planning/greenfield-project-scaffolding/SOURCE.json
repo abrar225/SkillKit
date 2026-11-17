@@ -1,0 +1,35 @@
+{
+  "id": "planning/greenfield-project-scaffolding",
+  "name": "greenfield-project-scaffolding",
+  "description": "Use only when all three gates already hold. (1) This same user turn explicitly says to start, implement, build, scaffold, or go ahead with a new project now; prior answers, planning, decisions, and reminders never authorize. (2) No named path or confirmed suitable here/current-folder target resolves placement. (3) Inspection is forbidden, or permitted top-level inspection has already proved the current root home-like, general-purpose, or falsely empty. Do not load this skill merely to check eligibility. Exclude existing work, bug fixes, component edits, server or verification work, and standalone, paste-ready, single-file, or snippet delivery.",
+  "origin": "upstream",
+  "license": "Apache-2.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "path": "Meta/muse-code/skills/greenfield-project-scaffolding",
+    "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103",
+    "ref": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "a47fca93bb864c4dc377b9a52b50d80d6f2c4e1805e532e05152def32d24467c"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "f99ae25b6325d3a2fcebe74ee92296e2058fe84e97f228a5b81b5e8a1821f04f"
+    },
+    {
+      "sourcePath": "Meta/muse-code/skills/LICENSE",
+      "localPath": "upstream-licenses/Meta/muse-code/skills/LICENSE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    }
+  ]
+}

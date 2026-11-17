@@ -1,0 +1,33 @@
+{
+  "id": "planning/triage",
+  "name": "triage",
+  "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "path": "skills/engineering/triage",
+    "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "ref": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "AGENT-BRIEF.md": "7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f",
+      "OUT-OF-SCOPE.md": "1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d",
+      "SKILL.md": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf",
+      "agents/openai.yaml": "2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "backend-api/prisma-orm-setup",
+  "name": "prisma-orm-setup",
+  "description": "Set up Prisma ORM in an application, connect its database, or troubleshoot the connection of an existing Prisma 6, 7, or 8 app. Defaults new applications to Prisma ORM 8 and loads the package-owned prisma-8 skill; keeps existing Prisma 6/7 apps on their version with provider references for PostgreSQL, MySQL, SQLite, SQL Server, CockroachDB, MongoDB, and Prisma Postgres.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "prisma/skills",
+    "url": "https://github.com/prisma/skills",
+    "path": "prisma-orm-setup",
+    "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+    "ref": "a6f192959cf43b08aa330fe1ffca090267215812"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "26f935e748f4e16ad5900d75b30a7ef4ad395169a0add7c332fbb6d7df8eb769",
+      "references/v6-mongodb.md": "4462f0a04bf420de9d485ffee6c5dac6f21f1e80b2fb8e42015ebb6ed6017805",
+      "references/v7-client-setup.md": "ce3921ed1bdddb7264f557ff4441fdc3c3cfe2101543bb407f229f3c2a4a510e",
+      "references/v7-cockroachdb.md": "4f8dd99e2d112ce85a414dc1aa6dc4b7ae9c159892edd07c4b13da12859e5f46",
+      "references/v7-mysql.md": "117570fae5e6eef1c9278583d76986201702e4e43acf0627a44a7a96de668804",
+      "references/v7-postgresql.md": "4449969b112b7f3b2ac6050e4cb94d64662529789bfab72562036d235c6d0ddc",
+      "references/v7-prisma-postgres.md": "89fd2a14866b596011032f80a318caa9f82cbde678749d213dfc1d5fe4886c2b",
+      "references/v7-sqlite.md": "12503fac68f7f1197a3ae8d4d96764a78eb9a0eaa043d93f4ca7fa0b74641cf7",
+      "references/v7-sqlserver.md": "3979b71ca859e59a22309c7f1a89f22ddc0f0fce456d2c3b2ccdc2b1aea6f98c"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "03b4d243884e832289d7306e3bcc725ce5095834cc91e0be2b46f178eaafd973"
+    }
+  ]
+}

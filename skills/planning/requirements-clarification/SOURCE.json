@@ -1,0 +1,35 @@
+{
+  "id": "planning/requirements-clarification",
+  "name": "requirements-clarification",
+  "description": "Clarify a material user-owned product decision before substantive implementation commitments. Use only when request and named/governing evidence still leave a choice that would materially change scope, platform support, user-facing surface, data/API contract, domain values, project placement, or cross-system architecture; also use when a truncated request omits such a choice. On the initial turn, inspect only named or governing requirements evidence, then ask directly without loading: prefer structured input; ask one blocking outcome question or at most three coupled questions; wait. After the answer, load the body before write or delegation. Do not use for implement/build/fix/debug/refactor work when expected behavior is settled, plan/design deliverables owned by Plan, complexity/greenfield/integration alone, agent-owned technical choices, locally discoverable facts, reversible defaults, permission to begin, or stop/no-tool turns. Never re-ask supplied facts or turn clarification into refusal.",
+  "origin": "upstream",
+  "license": "Apache-2.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "path": "Meta/muse-code/skills/requirements-clarification",
+    "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103",
+    "ref": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "f29a4b5b24874d8f8d20e37bee8c68e77b06d4a9093020b5ec79b35ff20e7fec"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "f99ae25b6325d3a2fcebe74ee92296e2058fe84e97f228a5b81b5e8a1821f04f"
+    },
+    {
+      "sourcePath": "Meta/muse-code/skills/LICENSE",
+      "localPath": "upstream-licenses/Meta/muse-code/skills/LICENSE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    }
+  ]
+}

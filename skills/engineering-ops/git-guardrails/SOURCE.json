@@ -1,0 +1,34 @@
+{
+  "id": "engineering-ops/git-guardrails",
+  "name": "git-guardrails-claude-code",
+  "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "path": "skills/misc/git-guardrails-claude-code",
+    "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "ref": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+      "agents/openai.yaml": "d53cd783fc0ac208dec9a4c267989284384785aab6422dccdaed42f9e40243ec",
+      "scripts/block-dangerous-git.sh": "234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b"
+    },
+    "executablePaths": [
+      "scripts/block-dangerous-git.sh"
+    ]
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    }
+  ]
+}

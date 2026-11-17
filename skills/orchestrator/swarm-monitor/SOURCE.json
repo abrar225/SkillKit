@@ -1,0 +1,12 @@
+{
+  "id": "orchestrator/swarm-monitor",
+  "name": "swarm_monitor",
+  "description": "ONLY for the native-swarm worker whose brief says it is the monitor. On a timer, it checks whether the whole swarm has stalled and calls on the one member who can unstick it. Coordinators and other workers: do not load this.",
+  "origin": "local-original",
+  "license": "unverified-local",
+  "licenseStatus": "unverified",
+  "retrievedAt": "2026-11-17",
+  "note": "Original local skill.",
+  "upstream": null,
+  "originalPath": "repository (pre-existing)"
+}

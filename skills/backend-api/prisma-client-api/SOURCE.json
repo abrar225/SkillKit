@@ -1,0 +1,38 @@
+{
+  "id": "backend-api/prisma-client-api",
+  "name": "prisma-client-api",
+  "description": "Prisma Client API reference covering model queries, filters, operators, and client methods. Use when writing database queries, using CRUD operations, filtering data, or configuring Prisma Client. Triggers on \"prisma query\", \"findMany\", \"create\", \"update\", \"delete\", \"$transaction\".",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "prisma/skills",
+    "url": "https://github.com/prisma/skills",
+    "path": "prisma-client-api",
+    "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+    "ref": "a6f192959cf43b08aa330fe1ffca090267215812"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "d033821313dc64b2b7dee120c6904b7d4457813e3b9c82d9584f7dee74baabe4",
+      "references/client-methods.md": "2113d60e37017220395b59adbe244d6f157235041301ac47193eaa5a90881c7f",
+      "references/constructor.md": "90be727e5ec7142c2e9ee4c8d40d9683b6fc8ce29061bb52feb0058c944e1c61",
+      "references/filters.md": "da052f732cfb7cfdbaa4691809bb30d88e9f72115b4cfb6bb2f4d8113f38ff21",
+      "references/model-queries.md": "86c23f822803e6e250bd8c9de214fd1724d7847a9ee4f1798a6e253d7aadd63f",
+      "references/query-options.md": "18044ee8cc142f73dcfce4f667ff51acf678cb7584823dcc49e97e080c78d490",
+      "references/raw-queries.md": "23b394111cc79a08d2852622620a44e4e4b76815cf44b04ce92589dee7951dbd",
+      "references/relations.md": "f6a7b701d823b125e6208e4baadacc3209b068a5c770fbed3d7b60bb7a92df49",
+      "references/transactions.md": "d9b441e7113d2bba8a39e639d9560925b464aaa585322ba460e3f2fed00f398e"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "03b4d243884e832289d7306e3bcc725ce5095834cc91e0be2b46f178eaafd973"
+    }
+  ]
+}

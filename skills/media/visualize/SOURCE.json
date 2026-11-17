@@ -1,0 +1,11 @@
+{
+  "id": "media/visualize",
+  "name": "visualize",
+  "description": "Use /visualize for creating compact charts, diagrams, or other visuals inline as part of the conversation itself. It chooses among Markdown tables, Mermaid, inline HTML, and other supported in-transcript forms. Use Canvas for durable artifacts outside the transcript that users may revisit, refine, or share.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/visualize",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

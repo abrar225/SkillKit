@@ -1,0 +1,143 @@
+[
+  {
+    "id": "six-documents-notion",
+    "name": "The 6 Documents You Need Before Vibe Coding Any App",
+    "url": "https://midi-garment-d51.notion.site/The-6-Documents-You-Need-Before-Vibe-Coding-Any-App-3d313d90aa8f80769b6aecefb5f83f45",
+    "type": "planning-guide",
+    "pricing": "free",
+    "license": "source page; no license declared; attributed Markdown extraction and source snapshot retained",
+    "description": "A complete pre-coding planning system: App Brief, PRD, TRD, App Flow, UI/UX Brief, Backend Schema, and Implementation Plan, with copy-ready templates and prompts.",
+    "why": "The most complete free workflow in this catalog for turning an idea into buildable instructions. Imported as the vibe-planning-6docs skill without paraphrasing.",
+    "tags": [
+      "planning",
+      "prd",
+      "trd",
+      "schema",
+      "vibe-coding"
+    ]
+  },
+  {
+    "id": "shape-up",
+    "name": "Shape Up",
+    "url": "https://basecamp.com/shapeup",
+    "type": "planning-method",
+    "pricing": "free",
+    "license": "book content copyrighted; free to read online",
+    "description": "Basecamp's product development method built around shaped work, six-week cycles, and betting.",
+    "why": "A strong antidote to unbounded backlogs and vague scope.",
+    "tags": [
+      "planning",
+      "scope",
+      "cycles",
+      "product"
+    ]
+  },
+  {
+    "id": "github-spec-kit",
+    "name": "GitHub Spec Kit",
+    "url": "https://github.com/github/spec-kit",
+    "type": "spec-driven-toolkit",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Toolkit for spec-driven development with agents: specify, plan, tasks, and implement phases.",
+    "why": "A concrete command workflow for teams that want specs to drive implementation.",
+    "tags": [
+      "spec-driven",
+      "planning",
+      "agents",
+      "github"
+    ]
+  },
+  {
+    "id": "bmad-method",
+    "name": "BMAD Method",
+    "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+    "type": "agent-planning-method",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Breakthrough Method for Agile AI-Driven Development with specialized planning agents.",
+    "why": "A heavier, role-based planning framework for larger agent-run projects.",
+    "tags": [
+      "agents",
+      "planning",
+      "agile",
+      "method"
+    ]
+  },
+  {
+    "id": "mermaid",
+    "name": "Mermaid",
+    "url": "https://mermaid.js.org/",
+    "type": "diagram-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Text-based diagrams for flowcharts, sequence diagrams, ER diagrams, and more.",
+    "why": "Diagrams that live in Markdown and can be reviewed like code.",
+    "tags": [
+      "diagrams",
+      "markdown",
+      "flowchart",
+      "erd"
+    ]
+  },
+  {
+    "id": "excalidraw",
+    "name": "Excalidraw",
+    "url": "https://excalidraw.com/",
+    "type": "diagram-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Virtual whiteboard for hand-drawn-style architecture and flow sketches.",
+    "why": "Fast for early ambiguity; pairs well with the 6-documents flow.",
+    "tags": [
+      "diagrams",
+      "whiteboard",
+      "architecture"
+    ]
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "url": "https://www.notion.so/",
+    "type": "workspace",
+    "pricing": "freemium",
+    "license": "commercial service",
+    "description": "Docs, databases, and project workspaces.",
+    "why": "Where many teams keep PRDs and decision logs; useful as an export source.",
+    "tags": [
+      "docs",
+      "planning",
+      "workspace"
+    ]
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "url": "https://linear.app/",
+    "type": "issue-tracker",
+    "pricing": "freemium",
+    "license": "commercial service",
+    "description": "Fast issue tracking and project planning for software teams.",
+    "why": "A clean target for turning a spec into tickets an agent can execute.",
+    "tags": [
+      "issues",
+      "planning",
+      "project-management"
+    ]
+  },
+  {
+    "id": "jira",
+    "name": "Jira",
+    "url": "https://www.atlassian.com/software/jira",
+    "type": "issue-tracker",
+    "pricing": "freemium",
+    "license": "commercial service",
+    "description": "Enterprise issue and project tracking.",
+    "why": "Common in existing organizations; agents often need to read or write tickets.",
+    "tags": [
+      "issues",
+      "enterprise",
+      "project-management"
+    ]
+  }
+]

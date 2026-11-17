@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/rename-chat",
+  "name": "rename-chat",
+  "description": "Rename the current chat to match its focus. Use only when the user invokes /rename-chat. Optional text after the command steers the title.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/rename-chat",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

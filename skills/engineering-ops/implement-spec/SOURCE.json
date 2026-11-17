@@ -1,0 +1,31 @@
+{
+  "id": "engineering-ops/implement-spec",
+  "name": "implement-spec",
+  "description": "Implement the result of /to-spec and /to-tickets in code.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "path": "skills/engineering/implement-spec",
+    "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "ref": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "1993a473cec40ac85d081c112cdffdc63ec3267c2e412055ad09e013a2f623d1",
+      "agents/openai.yaml": "fd41efb42c60c96320d6531be7e4bf15cbf5518cd652d57dff27ccffa46988e9"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    }
+  ]
+}

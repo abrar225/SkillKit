@@ -1,0 +1,11 @@
+{
+  "id": "frontend/deploy-with-vercel",
+  "name": "deploy-with-vercel",
+  "description": "Link this repository to a Vercel project and deploy it using the Vercel MCP tools.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/deploy-with-vercel",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/create-hook",
+  "name": "create-hook",
+  "description": "Create Codex hooks. Use when you want to create a hook, write hooks.json, add hook scripts, or automate behavior around agent events.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/create-hook",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

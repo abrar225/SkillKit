@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/new-repo",
+  "name": "new-repo",
+  "description": "Create a Codex-hosted repo for the current project and push it. Use when a project has no git remote yet and the user asks to create a repo on Codex, push the project to Codex, or set up a Codex-hosted remote; installs and signs in the origin CLI when needed.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/new-repo",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

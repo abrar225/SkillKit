@@ -1,0 +1,11 @@
+{
+  "id": "engineering-ops/review-bugbot",
+  "name": "review-bugbot",
+  "description": "Review code changes with Bugbot subagent.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/review-bugbot",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

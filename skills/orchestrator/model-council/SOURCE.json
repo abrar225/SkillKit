@@ -1,0 +1,30 @@
+{
+  "id": "orchestrator/model-council",
+  "name": "model-council",
+  "description": "The user invoked Model Council. Run their query independently across several frontier models in parallel, then synthesize one model-forward answer organized around where the models agree, disagree, and diverge. The synthesis — not the individual answers — is the product.",
+  "origin": "upstream",
+  "license": "CC0-1.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "path": "Perplexity/skills/model-council",
+    "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103",
+    "ref": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "c541ce788a137031cd8b78404c8614c4f10f30231178cdc44f55855066e1e2a4"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "f99ae25b6325d3a2fcebe74ee92296e2058fe84e97f228a5b81b5e8a1821f04f"
+    }
+  ]
+}

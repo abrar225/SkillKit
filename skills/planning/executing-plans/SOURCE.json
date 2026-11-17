@@ -1,0 +1,35 @@
+{
+  "id": "planning/executing-plans",
+  "name": "executing-plans",
+  "description": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/executing-plans",
+    "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "ref": "22f0b463e7a5e579904dd6211a520321035526f7"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "deaf176fa179827e80f2ea3101db3ea90fdf562ebef340eba761e4687940f5f5",
+      "scripts/task-done": "ac0b5ebafc7d471507b7e94d88da77a11f187ba277c8d48fefaf8ff3e4fee50e",
+      "scripts/task-start": "4ae7ce3b6777c3240af786197836a6b4bbf3b0ee831c25f147c149ea8db54a21"
+    },
+    "executablePaths": [
+      "scripts/task-done",
+      "scripts/task-start"
+    ]
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ui-ux/pick-ui-library",
+  "name": "pick-ui-library",
+  "description": "Pick the library for a frontend task from a curated list — primitives, toasts, drawers, command menus, OTP, numbers, charts, virtualization, drag and drop, state, styling.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "emilkowalski/skills",
+    "url": "https://github.com/emilkowalski/skills",
+    "path": "skills/pick-ui-library",
+    "commit": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c",
+    "ref": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "db10dc6b2a0c340d873f69e35140ceb3c929e15664b33fcacd1ecb25c5574df3"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    }
+  ]
+}

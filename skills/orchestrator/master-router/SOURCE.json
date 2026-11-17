@@ -1,0 +1,12 @@
+{
+  "id": "orchestrator/master-router",
+  "name": "master-router",
+  "description": "Master meta-orchestrator for the Skills repository. Analyzes incoming developer intent, grills ambiguities, enforces engineering invariants, and dispatches the exact required skills.",
+  "origin": "local-original",
+  "license": "unverified-local",
+  "licenseStatus": "unverified",
+  "retrievedAt": "2026-11-17",
+  "note": "Original local skill.",
+  "upstream": null,
+  "originalPath": "repository (pre-existing)"
+}

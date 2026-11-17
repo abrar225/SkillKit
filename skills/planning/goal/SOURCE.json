@@ -1,0 +1,12 @@
+{
+  "id": "planning/goal",
+  "name": "goal",
+  "description": "Set a goal that Codex will pursue to completion.",
+  "origin": "local-original",
+  "license": "unverified-local",
+  "licenseStatus": "unverified",
+  "retrievedAt": "2026-11-17",
+  "note": "Local daily skill.",
+  "upstream": null,
+  "originalPath": "repository (pre-existing)"
+}

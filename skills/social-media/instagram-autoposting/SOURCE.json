@@ -1,0 +1,12 @@
+{
+  "id": "social-media/instagram-autoposting",
+  "name": "instagram-autoposting",
+  "description": "Rules, vertical 9:16 video specifications, caption structures, deduplication guards, and DOM automation patterns for publishing full-screen Instagram Reels for @abrar_akhunji.py.",
+  "origin": "local-original",
+  "license": "unverified-local",
+  "licenseStatus": "unverified",
+  "retrievedAt": "2026-11-17",
+  "note": "Original local skill.",
+  "upstream": null,
+  "originalPath": "repository (pre-existing)"
+}

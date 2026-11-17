@@ -1,0 +1,31 @@
+{
+  "id": "social-media/writing-beats",
+  "name": "writing-beats",
+  "description": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "path": "skills/in-progress/writing-beats",
+    "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "ref": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "a96abafa2372eede8267d770138b322d6125da8adaa7ccf0a5e08e4ee13ee71e",
+      "agents/openai.yaml": "ddaef01da61d8e3c5f482c4403033c20cf5823f08a1dbf1d4c871670831d01e2"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    }
+  ]
+}

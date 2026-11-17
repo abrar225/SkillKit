@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/onboard",
+  "name": "onboard",
+  "description": "Use /onboard for a focused Codex onboarding flow that learns basic preferences, picks a first goal, and routes the user to the right next action.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/onboard",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/loop",
+  "name": "loop",
+  "description": "Run a prompt or skill in this session on a recurring or variable interval (e.g. /loop 5m /foo).",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/loop",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

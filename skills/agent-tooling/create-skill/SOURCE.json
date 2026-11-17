@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/create-skill",
+  "name": "create-skill",
+  "description": "Create Codex Agent Skills. Use when authoring a new skill or asking about SKILL.md structure.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/create-skill",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

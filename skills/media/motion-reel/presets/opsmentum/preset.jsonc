@@ -1,0 +1,53 @@
+// OpsMentum Launch Reel Preset
+{
+  "name": "OpsMentum Operational Launch Reel",
+  "brand": {
+    "product": "OpsMentum",
+    "url": "https://opsmentum.com",
+    "promise": "Eliminate hidden operational drag and recover productive team capacity.",
+    "hook": "Where does your team's week get lost.",
+    "cta": "Start your 30-day guarantee at opsmentum.com",
+    "audience": "Founders, COOs, VPs of Engineering, Product Leaders (16:9 Web & 9:16 Mobile)",
+    "must_show": "PFI friction score drop (62 to 24), 4 friction pillars, 90-second anonymous check-in, leadership action plan",
+    "must_avoid": "Em-dashes, clinical terms like burnout, Slack or Teams integration claims, generic dot grids, glowing orbs, Dr. prefix"
+  },
+  "colors": {
+    "bg": "#08080A",
+    "card": "#0F0F13",
+    "ink": "#F0F0F5",
+    "ink2": "#8888A0",
+    "accent": "#6366F1"
+  },
+  "fonts": {
+    "display": {
+      "file": "",
+      "family": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "weight": 600,
+      "tracking": "-0.035em"
+    },
+    "ui": {
+      "file": "",
+      "family": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    }
+  },
+  "timeline": {
+    "duration": 16,
+    "fps": 60,
+    "bpm": 120,
+    "formats": ["16x9", "9x16"],
+    "music": {
+      "source": "synth",
+      "chords": ["Am", "F", "C", "G"],
+      "seed": 4242
+    }
+  },
+  "voiceover": {
+    "provider": "none"
+  },
+  "notes": [
+    "Zero em-dashes anywhere in on-screen copy or captions.",
+    "No medical or clinical terms. Use team fatigue, workload overload, or operational friction.",
+    "Strictly 100% web check-in. Never mention or show Slack or Teams bots.",
+    "No repeating dot-grid backgrounds or ambient blur orbs. Use clean solid surfaces with 1px border #1E1E28."
+  ]
+}

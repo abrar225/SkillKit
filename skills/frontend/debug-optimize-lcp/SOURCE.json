@@ -1,0 +1,34 @@
+{
+  "id": "frontend/debug-optimize-lcp",
+  "name": "debug-optimize-lcp",
+  "description": "Guides debugging and optimizing Largest Contentful Paint (LCP) using Chrome DevTools MCP tools. Use this skill whenever the user asks about LCP performance, slow page loads, Core Web Vitals optimization, or wants to understand why their page's main content takes too long to appear. Also use when the user mentions \"largest contentful paint\", \"page load speed\", \"CWV\", or wants to improve how fast their hero image or main content renders.",
+  "origin": "upstream",
+  "license": "CC0-1.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "path": "Google/antigravity/skills/debug-optimize-lcp",
+    "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103",
+    "ref": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "8898b35108b12f73cef83a08964ffff0ebfad429389ffd42cb49a423025657ae",
+      "references/elements-and-size.md": "a99e9e5f93ad2e5b5b65e84abd2bb220e0560be66cc87059361f1d5f7ef2aed7",
+      "references/lcp-breakdown.md": "c63bb071fa465c41464446100f4afc069118eab9092cbec0b284dd452404a947",
+      "references/lcp-snippets.md": "b54d0c26e9df7eea1e58cc118bbbe1ef2037d097a146603ef31c17fe47a6b8b8",
+      "references/optimization-strategies.md": "786691daf6216f1aacb0e2bafdc08ef8450067a392ab26814337ac9837c048c1"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "f99ae25b6325d3a2fcebe74ee92296e2058fe84e97f228a5b81b5e8a1821f04f"
+    }
+  ]
+}

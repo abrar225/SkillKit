@@ -1,0 +1,30 @@
+{
+  "id": "engineering-ops/verification-before-completion",
+  "name": "verification-before-completion",
+  "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/verification-before-completion",
+    "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "ref": "22f0b463e7a5e579904dd6211a520321035526f7"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "mdn",
+    "name": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/",
+    "type": "reference",
+    "pricing": "free",
+    "license": "CC-BY-SA-2.5 for docs",
+    "description": "The authoritative reference for HTML, CSS, JavaScript, and web APIs.",
+    "why": "When an agent is unsure about a platform API, this is the source to check.",
+    "tags": ["web", "reference", "html", "css", "javascript"]
+  },
+  {
+    "id": "web-dev",
+    "name": "web.dev",
+    "url": "https://web.dev/",
+    "type": "learning-resource",
+    "pricing": "free",
+    "license": "CC-BY-4.0",
+    "description": "Google's guidance on performance, accessibility, and modern web capabilities.",
+    "why": "Practical Core Web Vitals and accessibility material with measurable advice.",
+    "tags": ["performance", "accessibility", "web"]
+  },
+  {
+    "id": "javascript-info",
+    "name": "JavaScript.info",
+    "url": "https://javascript.info/",
+    "type": "learning-resource",
+    "pricing": "free",
+    "license": "CC-BY-NC-SA",
+    "description": "Deep, modern JavaScript tutorial from fundamentals to advanced topics.",
+    "why": "A reliable way to close language gaps before editing unfamiliar code.",
+    "tags": ["javascript", "learning", "reference"]
+  },
+  {
+    "id": "roadmap-sh",
+    "name": "roadmap.sh",
+    "url": "https://roadmap.sh/",
+    "type": "learning-resource",
+    "pricing": "free",
+    "license": "community resources",
+    "description": "Community roadmaps for frontend, backend, DevOps, AI, and more.",
+    "why": "Useful for scoping what a developer or agent needs to learn next.",
+    "tags": ["learning", "roadmaps", "career"]
+  },
+  {
+    "id": "freecodecamp",
+    "name": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/",
+    "type": "learning-resource",
+    "pricing": "free",
+    "license": "BSD-3-Clause for curriculum",
+    "description": "Free interactive coding curriculum and certifications.",
+    "why": "A no-cost path for fundamentals when someone is starting out.",
+    "tags": ["learning", "curriculum", "free"]
+  },
+  {
+    "id": "awesome-selfhosted",
+    "name": "Awesome Selfhosted",
+    "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+    "type": "awesome-list",
+    "pricing": "free",
+    "license": "CC-BY-SA-3.0",
+    "description": "Large curated list of self-hostable software.",
+    "why": "A good starting point when a team wants to avoid a hosted dependency.",
+    "tags": ["self-hosted", "awesome-list", "infrastructure"]
+  }
+]

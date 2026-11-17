@@ -1,0 +1,30 @@
+{
+  "id": "ui-ux/ui-skills-root",
+  "name": "ui-skills-root",
+  "description": "Use before UI-related work to select the smallest useful UI Skills context through the ui-skills CLI.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "ibelick/ui-skills",
+    "url": "https://github.com/ibelick/ui-skills",
+    "path": "skills/ui-skills-root",
+    "commit": "65cc0edb4f64fe8bfe7e9c59466074de25bece76",
+    "ref": "65cc0edb4f64fe8bfe7e9c59466074de25bece76"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+    }
+  ]
+}

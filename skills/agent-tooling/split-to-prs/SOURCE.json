@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/split-to-prs",
+  "name": "split-to-prs",
+  "description": "Split current work into small reviewable PRs. Use when the user asks to split a chat, set of changes, branch, or PR.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/split-to-prs",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

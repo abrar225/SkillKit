@@ -1,0 +1,30 @@
+{
+  "id": "ui-ux/create-design-md",
+  "name": "create-design-md",
+  "description": "Create or update a DESIGN.md from an existing product repository or public website. Use when asked to document an interface's design language, reconstruct its visual system, extract design tokens and guidance from current evidence, or give coding agents persistent UI context. Do not modify product source or promote accidental implementation patterns into design decisions.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "ibelick/ui-skills",
+    "url": "https://github.com/ibelick/ui-skills",
+    "path": "skills/create-design-md",
+    "commit": "65cc0edb4f64fe8bfe7e9c59466074de25bece76",
+    "ref": "65cc0edb4f64fe8bfe7e9c59466074de25bece76"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "adba4fa94a9ca0291811ac26405e8fe15c1a6375743a80971c6f895bb837eeed"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "agent-tooling/writing-skills",
+  "name": "writing-skills",
+  "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/writing-skills",
+    "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "ref": "22f0b463e7a5e579904dd6211a520321035526f7"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "8cb3ac68c6d8c4bb46886b998b09af7989643cab8bd0e46ee86dd62e64546bbe",
+      "references/CLAUDE_MD_TESTING.md": "0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0",
+      "references/anthropic-best-practices.md": "217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a",
+      "references/bulletproofing.md": "9397023e6bc85b556a57f3097371363bf03e28e755c57f403f470bcda90e0a23",
+      "references/discovery.md": "c6bbc74af3be90f693f7cbc986af6fa94e8df75f65109b52e96032587f5b92af",
+      "references/flowcharts.md": "8b1f542391f274f0d33f3457ac099a3d317d6877eaa3b8d3b1ebef151b55fda7",
+      "references/graphviz-conventions.dot": "e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694",
+      "references/persuasion-principles.md": "a51bc9bf75189ea73a27b3fb504a2fdfdb966fb1f7f1cdf03203230a216ccc03",
+      "references/testing-skills-with-subagents.md": "ed8a6862c085900135962390530d9dc7637ad6d650b4324ce3b051287a5c3f22",
+      "render-graphs.js": "c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196"
+    },
+    "executablePaths": [
+      "render-graphs.js"
+    ]
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+    }
+  ]
+}

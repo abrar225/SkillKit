@@ -1,0 +1,38 @@
+{
+  "id": "backend-api/dbt-analytics-engineering",
+  "name": "using-dbt-for-analytics-engineering",
+  "description": "Builds and modifies dbt models, writes SQL transformations using ref() and source(), creates tests, and validates results with dbt show. Use when doing any dbt work - building or modifying models, debugging errors, exploring unfamiliar data sources, writing tests, or evaluating impact of changes.",
+  "origin": "upstream",
+  "license": "Apache-2.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "dbt-labs/dbt-agent-skills",
+    "url": "https://github.com/dbt-labs/dbt-agent-skills",
+    "path": "skills/dbt/skills/using-dbt-for-analytics-engineering",
+    "commit": "b8facde20b7a92c40ce3e6b86b71c4b92aa44040",
+    "ref": "b8facde20b7a92c40ce3e6b86b71c4b92aa44040"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "bcbf2ea18ff5a6ba5988febf0d8989560cbe05fdf76e61c84ef3f012c5f79a7b",
+      "references/debugging-dbt-errors.md": "933c04f5dbffdac1820c89fc8b2f339e7906a07995d47c796c25f89095d1b0de",
+      "references/discovering-data.md": "c9eedadd6defa42cd31912c01d118349cd8eb258e44af9397cbeaf4db61bbef2",
+      "references/evaluating-impact-of-a-dbt-model-change.md": "7f4c4542d72834cc3d0f6aa9a488c4bdbd48d189744020632dc66ea76f3b3f72",
+      "references/managing-packages.md": "e91601808e75fd5dba61fb471d3e3e67a2f88f46a55252446924b6d2e7e196d1",
+      "references/planning-dbt-models.md": "da9c9431b59c3da8a67466896139841046be5287115434f26da60882e1b7a6fc",
+      "references/writing-data-tests.md": "2b110c633f3696c2f3d620535f927fc93a5a90e64bdc32759c62617cab53b0f2",
+      "references/writing-documentation.md": "99796521bfb88076703b73983e5c4a484e6470322fd908911a2407c2736c0552",
+      "scripts/review_run_results.md": "c8554bbb0d1683706cdea7a98496cc2af5f4774b7c236bd90f5d72612dcfaa93"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "a25c0f444db00399e225e96559b376d92188fbab622b50c5d4db7c556f77daff"
+    }
+  ]
+}

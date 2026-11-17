@@ -1,0 +1,24 @@
+{
+  "id": "social-media/writing-guidelines",
+  "name": "writing-guidelines",
+  "description": "Review docs/prose for Writing Guidelines compliance. Use when asked to \"review my docs\", \"check writing style\", \"audit prose\", \"review docs voice and tone\", or \"check this page against the writing handbook\".",
+  "origin": "upstream",
+  "license": "MIT (per-skill frontmatter)",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "vercel-labs/agent-skills",
+    "url": "https://github.com/vercel-labs/agent-skills",
+    "path": "skills/writing-guidelines",
+    "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+    "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "89a5f581193289b80af58b980090aeed535047c8df2b55ccbaae0de40283a99d"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": []
+}

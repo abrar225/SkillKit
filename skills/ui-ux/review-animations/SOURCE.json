@@ -1,0 +1,31 @@
+{
+  "id": "ui-ux/review-animations",
+  "name": "review-animations",
+  "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "emilkowalski/skills",
+    "url": "https://github.com/emilkowalski/skills",
+    "path": "skills/review-animations",
+    "commit": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c",
+    "ref": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "9ceb5072ce5d5e51b07efa60817c66d06fc6492b7900b44dff5ff0f8f7bcf188",
+      "STANDARDS.md": "2d2c28e9fe98dd55a879bafa1684827c812eb31f6b63fe578141d3978ddc664e"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    }
+  ]
+}

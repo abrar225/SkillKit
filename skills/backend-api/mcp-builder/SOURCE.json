@@ -1,0 +1,34 @@
+{
+  "id": "backend-api/mcp-builder",
+  "name": "mcp-builder",
+  "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+  "origin": "upstream",
+  "license": "Apache-2.0 (per-skill LICENSE.txt)",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/mcp-builder",
+    "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+    "ref": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+      "SKILL.md": "b483b56d6673134497e45489c317f26ae0f1429c194db0297e43073e17e6748c",
+      "reference/evaluation.md": "8c99479f8a2d22a636c38e274537aac3610879e26f34e0709825077c4576f427",
+      "reference/mcp_best_practices.md": "80fb4369a349447cf18ecdd7494fe7938b6065377e9f08c077cec411093a3007",
+      "reference/node_mcp_server.md": "ee3c95d812e450f6168b734390d0c9ef6f8ebeef041d73a122c972dfbd4d476a",
+      "reference/node_mcp_server_v2.md": "49b2fe48f33910b743ae3a56353fffa5d5f252f531053f24f2da4e5914c0d3aa",
+      "reference/python_mcp_server.md": "2da52f77e675191014ca2e146a4b95aa04d0ca7dd7e2b100322df15ade685e80",
+      "scripts/connections.py": "9403668a2041568772082a8b334122c1f88daf0541fb393af4522d0094a47a6e",
+      "scripts/evaluation.py": "49ed1d17cdce5da101b210197740713f49b935c29d4f339542a14b132658e6f7",
+      "scripts/example_evaluation.xml": "9272b348ddcc4b06ba562367ccd0770e018158c0068ac5116d5e34aaeff8777a",
+      "scripts/requirements.txt": "d5d7558b2368ecea9dfeed7d1fbc71ee9e0750bebd1282faa527d528a344c3c7"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": []
+}

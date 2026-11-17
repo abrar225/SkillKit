@@ -1,0 +1,12 @@
+{
+  "id": "planning/autopilot",
+  "name": "autopilot",
+  "description": "Keep a PR merge-ready by triaging comments, resolving clear conflicts, and fixing CI in a loop.",
+  "origin": "local-original",
+  "license": "unverified-local",
+  "licenseStatus": "unverified",
+  "retrievedAt": "2026-11-17",
+  "note": "Local daily skill.",
+  "upstream": null,
+  "originalPath": "repository (pre-existing)"
+}

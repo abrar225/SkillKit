@@ -1,0 +1,30 @@
+{
+  "id": "orchestrator/dispatching-parallel-agents",
+  "name": "dispatching-parallel-agents",
+  "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/dispatching-parallel-agents",
+    "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "ref": "22f0b463e7a5e579904dd6211a520321035526f7"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+    }
+  ]
+}

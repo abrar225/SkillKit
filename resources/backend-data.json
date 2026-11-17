@@ -1,0 +1,200 @@
+[
+  {
+    "id": "prisma",
+    "name": "Prisma",
+    "url": "https://www.prisma.io/",
+    "type": "orm",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Type-safe ORM and schema tooling for Node.js and TypeScript.",
+    "why": "A common default for typed database access and migrations.",
+    "tags": ["orm", "typescript", "database", "migrations"]
+  },
+  {
+    "id": "drizzle",
+    "name": "Drizzle ORM",
+    "url": "https://orm.drizzle.team/",
+    "type": "orm",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "SQL-first TypeScript ORM with a lightweight runtime.",
+    "why": "Good when you want explicit SQL shape and minimal abstraction.",
+    "tags": ["orm", "typescript", "sql"]
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase",
+    "url": "https://supabase.com/",
+    "type": "backend-platform",
+    "pricing": "freemium",
+    "license": "Apache-2.0 (self-hosted)",
+    "description": "Postgres backend with auth, storage, realtime, and generated APIs.",
+    "why": "A fast path from schema to working auth and data APIs.",
+    "tags": ["postgres", "auth", "backend", "storage"]
+  },
+  {
+    "id": "neon",
+    "name": "Neon",
+    "url": "https://neon.tech/",
+    "type": "database-platform",
+    "pricing": "freemium",
+    "license": "Apache-2.0 (open-source components)",
+    "description": "Serverless Postgres with branching and scale-to-zero.",
+    "why": "Useful for preview environments and agent-created branches.",
+    "tags": ["postgres", "serverless", "branching"]
+  },
+  {
+    "id": "planetscale",
+    "name": "PlanetScale",
+    "url": "https://planetscale.com/",
+    "type": "database-platform",
+    "pricing": "freemium",
+    "license": "commercial service",
+    "description": "Managed MySQL-compatible database with branching workflows.",
+    "why": "A mature managed database option for MySQL-shaped apps.",
+    "tags": ["mysql", "database", "managed"]
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "url": "https://www.postgresql.org/",
+    "type": "database",
+    "pricing": "free",
+    "license": "PostgreSQL License",
+    "description": "Open-source relational database with strong correctness and extension support.",
+    "why": "The safest default relational database for new production apps.",
+    "tags": ["database", "sql", "relational"]
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "url": "https://redis.io/",
+    "type": "database",
+    "pricing": "freemium",
+    "license": "RSALv2 / SSPLv1 for current versions",
+    "description": "In-memory data store for caching, queues, and realtime state.",
+    "why": "Common infrastructure for caching and rate limiting; check license terms.",
+    "tags": ["cache", "redis", "realtime"]
+  },
+  {
+    "id": "zod",
+    "name": "Zod",
+    "url": "https://zod.dev/",
+    "type": "validation-library",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "TypeScript-first schema validation with static type inference.",
+    "why": "A clean way to validate inputs at API and form boundaries.",
+    "tags": ["validation", "typescript", "schema"]
+  },
+  {
+    "id": "openapi",
+    "name": "OpenAPI",
+    "url": "https://www.openapis.org/",
+    "type": "api-specification",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Standard specification for describing HTTP APIs.",
+    "why": "Gives agents and tools a machine-readable API contract.",
+    "tags": ["api", "spec", "http"]
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "url": "https://www.postman.com/",
+    "type": "api-tool",
+    "pricing": "freemium",
+    "license": "commercial service",
+    "description": "API client, collections, and collaboration platform.",
+    "why": "Widely used for manual API verification and sharing requests.",
+    "tags": ["api", "testing", "collections"]
+  },
+  {
+    "id": "hoppscotch",
+    "name": "Hoppscotch",
+    "url": "https://hoppscotch.io/",
+    "type": "api-tool",
+    "pricing": "freemium",
+    "license": "MIT",
+    "description": "Open-source API client that runs in the browser or self-hosted.",
+    "why": "A lightweight, open alternative to hosted API clients.",
+    "tags": ["api", "testing", "open-source"]
+  },
+  {
+    "id": "dbt",
+    "name": "dbt",
+    "url": "https://www.getdbt.com/",
+    "type": "data-transform-tool",
+    "pricing": "freemium",
+    "license": "Apache-2.0 (dbt Core)",
+    "description": "SQL-based transformation framework with tests, docs, and lineage.",
+    "why": "The standard way to make warehouse transformations reviewable.",
+    "tags": ["data", "sql", "analytics", "dbt"]
+  },
+  {
+    "id": "bigquery",
+    "name": "BigQuery",
+    "url": "https://cloud.google.com/bigquery",
+    "type": "data-warehouse",
+    "pricing": "paid",
+    "license": "commercial service",
+    "description": "Google Cloud's serverless analytics warehouse.",
+    "why": "Common production warehouse target for dbt and analytics work.",
+    "tags": ["data", "warehouse", "gcp", "sql"]
+  },
+  {
+    "id": "duckdb",
+    "name": "DuckDB",
+    "url": "https://duckdb.org/",
+    "type": "analytics-database",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "In-process analytical SQL database.",
+    "why": "Excellent for local data exploration and reproducible analysis.",
+    "tags": ["data", "sql", "analytics", "local"]
+  },
+  {
+    "id": "airflow",
+    "name": "Apache Airflow",
+    "url": "https://airflow.apache.org/",
+    "type": "workflow-orchestrator",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Programmatic workflow scheduling and orchestration.",
+    "why": "A standard choice for batch data pipelines.",
+    "tags": ["data", "orchestration", "pipelines"]
+  },
+  {
+    "id": "n8n",
+    "name": "n8n",
+    "url": "https://n8n.io/",
+    "type": "automation-platform",
+    "pricing": "freemium",
+    "license": "Sustainable Use License (fair-code)",
+    "description": "Visual workflow automation with code nodes and self-hosting.",
+    "why": "Fast way to connect APIs and agents without building a scheduler.",
+    "tags": ["automation", "workflows", "self-hosted"]
+  },
+  {
+    "id": "laravel-boost",
+    "name": "Laravel Boost",
+    "url": "https://github.com/laravel/boost",
+    "type": "agent-toolkit",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Laravel's MCP server and agent guidelines for application-aware coding.",
+    "why": "The canonical way to give an agent Laravel-specific context and tools.",
+    "tags": ["laravel", "php", "mcp", "agent"]
+  },
+  {
+    "id": "packetlark",
+    "name": "PacketLark",
+    "url": "https://github.com/abrar225/PacketLark",
+    "type": "api-workbench",
+    "pricing": "free",
+    "license": "check repository",
+    "description": "Local API workbench and HTTP contract engine maintained by this repository's author.",
+    "why": "Useful for request replay, mock servers, and HTTP contract testing.",
+    "tags": ["api", "workbench", "http", "local"]
+  }
+]

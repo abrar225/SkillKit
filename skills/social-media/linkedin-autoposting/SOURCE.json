@@ -1,0 +1,12 @@
+{
+  "id": "social-media/linkedin-autoposting",
+  "name": "linkedin-autoposting",
+  "description": "Rules, structure, whitespace guidelines, DOM automation patterns, and video upload specifications for publishing professional AI engineering deep dives to LinkedIn for Abrar Akhunji.",
+  "origin": "local-original",
+  "license": "unverified-local",
+  "licenseStatus": "unverified",
+  "retrievedAt": "2026-11-17",
+  "note": "Original local skill.",
+  "upstream": null,
+  "originalPath": "repository (pre-existing)"
+}

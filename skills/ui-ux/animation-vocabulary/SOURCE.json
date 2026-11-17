@@ -1,0 +1,30 @@
+{
+  "id": "ui-ux/animation-vocabulary",
+  "name": "animation-vocabulary",
+  "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "emilkowalski/skills",
+    "url": "https://github.com/emilkowalski/skills",
+    "path": "skills/animation-vocabulary",
+    "commit": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c",
+    "ref": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "42df33f1583483cc441fcd76693b3399148602705d2e9b8a26665d6b1951cd0b"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    }
+  ]
+}

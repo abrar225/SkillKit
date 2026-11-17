@@ -1,0 +1,2652 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-11-17",
+  "count": 157,
+  "categories": [
+    {
+      "id": "agent-workflows",
+      "name": "Agent Workflows & Skill Ecosystems",
+      "path": "resources/agent-workflows.json",
+      "count": 20
+    },
+    {
+      "id": "architecture-code-quality",
+      "name": "Architecture, Code Quality & Dead Code",
+      "path": "resources/architecture-code-quality.json",
+      "count": 18
+    },
+    {
+      "id": "automation-scraping",
+      "name": "Automation, Scraping & Leads",
+      "path": "resources/automation-scraping.json",
+      "count": 10
+    },
+    {
+      "id": "backend-data",
+      "name": "Backend, Databases & Data",
+      "path": "resources/backend-data.json",
+      "count": 18
+    },
+    {
+      "id": "design-ui",
+      "name": "Design, UI & Motion",
+      "path": "resources/design-ui.json",
+      "count": 25
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend Platform & Performance",
+      "path": "resources/frontend.json",
+      "count": 20
+    },
+    {
+      "id": "learning-reference",
+      "name": "Learning & Reference",
+      "path": "resources/learning-reference.json",
+      "count": 6
+    },
+    {
+      "id": "media-video",
+      "name": "Media, Video & Generative Art",
+      "path": "resources/media-video.json",
+      "count": 6
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile Platforms",
+      "path": "resources/mobile.json",
+      "count": 8
+    },
+    {
+      "id": "planning-docs",
+      "name": "Planning, Specs & Documentation",
+      "path": "resources/planning-docs.json",
+      "count": 9
+    },
+    {
+      "id": "security",
+      "name": "Security & Reverse Engineering",
+      "path": "resources/security.json",
+      "count": 17
+    }
+  ],
+  "resources": [
+    {
+      "id": "skills-sh",
+      "name": "skills.sh",
+      "url": "https://www.skills.sh/",
+      "type": "skill-registry",
+      "pricing": "free",
+      "license": "index of community skills; per-skill licenses vary",
+      "description": "The open agent-skills ecosystem: leaderboard, topics, official packs, audits, and install commands.",
+      "why": "The fastest way to discover a skill before vendoring it. Always check the source repository license.",
+      "install": "npx skills add <owner/repo>",
+      "tags": [
+        "skills",
+        "registry",
+        "discovery"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "vercel-labs-skills",
+      "name": "vercel-labs/skills",
+      "url": "https://github.com/vercel-labs/skills",
+      "type": "skill",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "The find-skills skill and the Skills CLI source.",
+      "why": "Teaches an agent how to search and install from the ecosystem instead of guessing.",
+      "tags": [
+        "skills",
+        "discovery",
+        "cli"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "anthropics-skills",
+      "name": "Anthropic Skills",
+      "url": "https://github.com/anthropics/skills",
+      "type": "skill-library",
+      "pricing": "free",
+      "license": "Apache-2.0 per skill",
+      "description": "Anthropic's official skill collection: frontend design, skill creator, MCP builder, webapp testing, canvas, documents, and more.",
+      "why": "High-quality reference implementations for skill structure and agent workflows.",
+      "tags": [
+        "skills",
+        "anthropic",
+        "official"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "superpowers",
+      "name": "Superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "type": "skill-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "A large skill system for planning, debugging, TDD, code review, parallel agents, and verification.",
+      "why": "One of the strongest open collections for disciplined engineering workflows.",
+      "tags": [
+        "skills",
+        "engineering",
+        "tdd",
+        "review"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "mattpocock-skills",
+      "name": "Matt Pocock skills",
+      "url": "https://github.com/mattpocock/skills",
+      "type": "skill-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Engineering and productivity skills including grilling, domain modeling, codebase design, triage, and spec writing.",
+      "why": "Excellent TypeScript and product-engineering judgement encoded as skills.",
+      "tags": [
+        "skills",
+        "typescript",
+        "planning",
+        "grilling"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "addyosmani-agent-skills",
+      "name": "Addy Osmani Agent Skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "type": "skill-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Broad engineering skill set covering planning, specs, code quality, debugging, performance, security, and shipping.",
+      "why": "A well-organized, practical set that maps cleanly onto real delivery work.",
+      "tags": [
+        "skills",
+        "engineering",
+        "performance",
+        "security"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "system-prompts-leaks",
+      "name": "system_prompts_leaks",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "type": "prompt-archive",
+      "pricing": "free",
+      "license": "CC0-1.0",
+      "description": "Archive of public system prompts and agent skills from Anthropic, OpenAI, Google, Meta, and others, updated frequently.",
+      "why": "Useful for studying how production agents structure instructions. This repository vendors a curated developer-relevant subset only.",
+      "tags": [
+        "prompts",
+        "archive",
+        "agents",
+        "reference"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "agent-reach",
+      "name": "Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "type": "agent-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "One CLI for reading and searching Twitter/X, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu without API fees.",
+      "why": "Gives agents eyes on social and video platforms through a single interface.",
+      "tags": [
+        "agent",
+        "search",
+        "social",
+        "cli"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "ego-lite",
+      "name": "ego lite",
+      "url": "https://lite.ego.app/",
+      "type": "agent-browser",
+      "pricing": "free",
+      "license": "commercial product",
+      "description": "A Chromium browser designed for humans and agents, with a dedicated ego-browser skill.",
+      "why": "Lets an agent use the user's logged-in browser context instead of a blank automation profile.",
+      "tags": [
+        "browser",
+        "agent",
+        "automation",
+        "skill"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "vercel-agent-browser",
+      "name": "Vercel Agent Browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "type": "agent-browser",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Browser automation CLI built for AI agents, with snapshots and ref-based interaction.",
+      "why": "A practical alternative when ego lite is not available.",
+      "tags": [
+        "browser",
+        "agent",
+        "automation"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "playwright-mcp",
+      "name": "Playwright MCP",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "type": "mcp-server",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Playwright's accessibility-tree browser automation exposed as an MCP server.",
+      "why": "Deterministic browser actions and verification for agents that support MCP.",
+      "tags": [
+        "mcp",
+        "browser",
+        "playwright",
+        "testing"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "chrome-devtools-mcp",
+      "name": "Chrome DevTools MCP",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "type": "mcp-server",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Chrome DevTools exposed to agents for performance traces, console, network, and DOM inspection.",
+      "why": "Closes the loop between 'it renders' and 'it is fast and correct'.",
+      "tags": [
+        "mcp",
+        "chrome",
+        "devtools",
+        "performance"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "browser-use",
+      "name": "Browser Use",
+      "url": "https://github.com/browser-use/browser-use",
+      "type": "agent-browser",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Python library that lets agents control a browser through natural-language actions.",
+      "why": "A mature option for scripted browser agents outside a single IDE.",
+      "tags": [
+        "browser",
+        "python",
+        "agents"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "url": "https://github.com/mendableai/firecrawl",
+      "type": "scraping-tool",
+      "pricing": "freemium",
+      "license": "AGPL-3.0",
+      "description": "Turn websites into LLM-ready markdown or structured data.",
+      "why": "Reliable extraction for docs, research, and lead enrichment.",
+      "tags": [
+        "scraping",
+        "markdown",
+        "llm",
+        "mcp"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "crawl4ai",
+      "name": "Crawl4AI",
+      "url": "https://github.com/unclecode/crawl4ai",
+      "type": "scraping-tool",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Open-source, LLM-friendly web crawler and scraper.",
+      "why": "A self-hosted alternative when you do not want a hosted scraping service.",
+      "tags": [
+        "scraping",
+        "crawler",
+        "llm"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "context7",
+      "name": "Context7",
+      "url": "https://github.com/upstash/context7",
+      "type": "mcp-server",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Up-to-date library documentation exposed to agents through MCP.",
+      "why": "Reduces hallucinated APIs by giving the agent current docs.",
+      "tags": [
+        "mcp",
+        "docs",
+        "context"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "repomix",
+      "name": "Repomix",
+      "url": "https://github.com/yamadashy/repomix",
+      "type": "context-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Packs a repository into a single AI-friendly file with structure and token counts.",
+      "why": "Useful for whole-repo analysis when an agent cannot browse the filesystem.",
+      "tags": [
+        "context",
+        "repository",
+        "packing"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "serena",
+      "name": "Serena",
+      "url": "https://github.com/oraios/serena",
+      "type": "mcp-server",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Semantic code retrieval and editing tools exposed through MCP.",
+      "why": "Gives agents symbol-level navigation instead of grep-only editing.",
+      "tags": [
+        "mcp",
+        "code-intelligence",
+        "symbols"
+      ],
+      "category": "agent-workflows"
+    },
+    {
+      "id": "antigravity-boost",
+      "name": "Antigravity Boost (/boost)",
+      "url": "https://antigravity.google/docs/boost/",
+      "type": "builtin-agent-command",
+      "pricing": "paid Antigravity plans",
+      "license": "Google documentation; no portable skill license established",
+      "description": "Built-in Antigravity command for difficult engineering tasks, with specialized subagents, improvement rounds, and independent verification.",
+      "why": "Documents the exact /boost feature requested here. This is a host capability; no portable SKILL.md is being invented or substituted.",
+      "tags": [
+        "antigravity",
+        "boost",
+        "multi-agent",
+        "orchestration",
+        "verification"
+      ],
+      "verifiedAt": "2026-11-17",
+      "verification": "Official product documentation checked; linked rather than copied.",
+      "category": "agent-workflows"
+    },
+    {
+      "id": "antigravity-subagents",
+      "name": "Antigravity Custom Subagents",
+      "url": "https://antigravity.google/docs/subagents",
+      "type": "official-documentation",
+      "pricing": "see Antigravity plan availability",
+      "license": "Google documentation; linked only",
+      "description": "Official guide to background subagents and the Boost, Swarm, and Teamwork orchestrators.",
+      "why": "Explains host configuration and orchestration choices without presenting built-in capabilities as portable skills.",
+      "tags": [
+        "antigravity",
+        "subagents",
+        "orchestration"
+      ],
+      "verifiedAt": "2026-11-17",
+      "verification": "Official product documentation checked; linked rather than copied.",
+      "category": "agent-workflows"
+    },
+    {
+      "id": "refactoring-guru",
+      "name": "Refactoring Guru",
+      "url": "https://refactoring.guru/",
+      "type": "reference",
+      "pricing": "freemium",
+      "license": "commercial site",
+      "description": "Illustrated catalog of design patterns, refactoring techniques, and code smells.",
+      "why": "The fastest vocabulary for naming a structural problem before changing code.",
+      "tags": [
+        "architecture",
+        "refactoring",
+        "patterns"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "martin-fowler",
+      "name": "Martin Fowler",
+      "url": "https://martinfowler.com/",
+      "type": "reference",
+      "pricing": "free",
+      "license": "commercial site; articles copyrighted",
+      "description": "Foundational writing on refactoring, architecture, domain modeling, and evolutionary design.",
+      "why": "Primary source for concepts agents often cite incorrectly.",
+      "tags": [
+        "architecture",
+        "refactoring",
+        "domain-modeling"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "system-design-primer",
+      "name": "System Design Primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "type": "learning-resource",
+      "pricing": "free",
+      "license": "CC-BY-4.0",
+      "description": "Open-source guide to large-scale system design with diagrams and tradeoffs.",
+      "why": "A broad, well-maintained reference for architecture conversations.",
+      "tags": [
+        "system-design",
+        "architecture",
+        "scalability"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "c4-model",
+      "name": "C4 Model",
+      "url": "https://c4model.com/",
+      "type": "architecture-method",
+      "pricing": "free",
+      "license": "CC-BY-4.0",
+      "description": "A hierarchical way to diagram software architecture: context, containers, components, code.",
+      "why": "Gives agents and humans a shared diagram vocabulary that stays readable.",
+      "tags": [
+        "architecture",
+        "diagrams",
+        "c4"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "adr",
+      "name": "Architecture Decision Records",
+      "url": "https://adr.github.io/",
+      "type": "architecture-practice",
+      "pricing": "free",
+      "license": "open community resources",
+      "description": "Lightweight templates and conventions for recording architectural decisions.",
+      "why": "Keeps the reason behind a choice attached to the codebase.",
+      "tags": [
+        "adr",
+        "decisions",
+        "documentation"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "repowise-dead-code",
+      "name": "Best Dead Code Detection Tools (2026)",
+      "url": "https://repowise.dev/blog/comparisons/best-dead-code-detection-tools",
+      "type": "comparison-guide",
+      "pricing": "free",
+      "license": "commercial site; article copyrighted",
+      "description": "Language-by-language comparison of dead-code tools: Knip, Vulture, deadcode, deptry, ts-prune, Go deadcode, PMD, PHPStan, cargo-machete, and repowise.",
+      "why": "A current, method-backed map of which dead-code tool to use for each stack.",
+      "tags": [
+        "dead-code",
+        "code-quality",
+        "comparison"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "knip",
+      "name": "Knip",
+      "url": "https://knip.dev/",
+      "type": "code-quality-tool",
+      "pricing": "free",
+      "license": "ISC",
+      "description": "Finds unused files, exports, and dependencies in JavaScript and TypeScript projects, including monorepos.",
+      "why": "The strongest open-source dead-code tool for JS/TS, with 200+ framework plugins and auto-fix.",
+      "install": "npx knip",
+      "repo": "https://github.com/webpro-nl/knip",
+      "tags": [
+        "dead-code",
+        "javascript",
+        "typescript",
+        "monorepo"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "vulture",
+      "name": "Vulture",
+      "url": "https://github.com/jendrikseipp/vulture",
+      "type": "code-quality-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Python dead-code finder with confidence scores and whitelist support.",
+      "why": "The standard Python starting point for unused code.",
+      "install": "pip install vulture",
+      "tags": [
+        "dead-code",
+        "python"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "deadcode",
+      "name": "deadcode",
+      "url": "https://github.com/albertas/deadcode",
+      "type": "code-quality-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Python dead-code detector with a `--fix` mode.",
+      "why": "Useful when you want automated removal after reviewing a dry run.",
+      "tags": [
+        "dead-code",
+        "python",
+        "autofix"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "deptry",
+      "name": "deptry",
+      "url": "https://github.com/fpgmaas/deptry",
+      "type": "code-quality-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Reports missing, unused, and misplaced Python dependencies.",
+      "why": "Unused dependencies are dead code in the manifest; deptry covers them.",
+      "tags": [
+        "dependencies",
+        "python",
+        "dead-code"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "ts-prune",
+      "name": "ts-prune",
+      "url": "https://github.com/nadeesha/ts-prune",
+      "type": "code-quality-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Prints unused exports from a TypeScript project.",
+      "why": "Narrow but useful when you only need an export list.",
+      "tags": [
+        "typescript",
+        "dead-code",
+        "exports"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "dependency-cruiser",
+      "name": "dependency-cruiser",
+      "url": "https://github.com/sverweij/dependency-cruiser",
+      "type": "architecture-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Validates and visualizes JavaScript/TypeScript dependency graphs and architectural rules.",
+      "why": "Turns architecture boundaries into checks an agent can run.",
+      "tags": [
+        "dependencies",
+        "architecture",
+        "graph"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "madge",
+      "name": "madge",
+      "url": "https://github.com/pahen/madge",
+      "type": "architecture-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Generates dependency graphs and detects circular dependencies in JS/TS projects.",
+      "why": "Fast way to expose cycles before a refactor.",
+      "tags": [
+        "dependencies",
+        "circular",
+        "graph"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "jscpd",
+      "name": "jscpd",
+      "url": "https://github.com/kucherenko/jscpd",
+      "type": "code-quality-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Copy/paste detector for many languages.",
+      "why": "Finds duplicated logic that agents tend to create across files.",
+      "tags": [
+        "duplication",
+        "code-quality"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "semgrep",
+      "name": "Semgrep",
+      "url": "https://semgrep.dev/",
+      "type": "static-analysis-tool",
+      "pricing": "freemium",
+      "license": "LGPL-2.1 (OSS engine)",
+      "description": "Pattern-based static analysis for security and code-quality rules across many languages.",
+      "why": "Rules are readable and fast enough to run in an agent loop.",
+      "tags": [
+        "security",
+        "static-analysis",
+        "sast"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "codeql",
+      "name": "CodeQL",
+      "url": "https://codeql.github.com/",
+      "type": "static-analysis-tool",
+      "pricing": "free for public repos",
+      "license": "GitHub terms",
+      "description": "Semantic code analysis engine used by GitHub code scanning.",
+      "why": "Deep data-flow analysis for security issues in supported languages.",
+      "tags": [
+        "security",
+        "sast",
+        "data-flow"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "sonarqube",
+      "name": "SonarQube",
+      "url": "https://www.sonarsource.com/products/sonarqube/",
+      "type": "code-quality-platform",
+      "pricing": "freemium",
+      "license": "LGPL-3.0 (Community Build)",
+      "description": "Continuous code-quality and security analysis with quality gates.",
+      "why": "Useful when a team wants a shared gate rather than ad-hoc lint runs.",
+      "tags": [
+        "code-quality",
+        "security",
+        "ci"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "andrej-karpathy-skills",
+      "name": "Andrej Karpathy Guidelines & Skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "type": "repository",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Community-maintained coding guidelines inspired by Andrej Karpathy, covering surgical changes, explicit assumptions, and verifiable outcomes.",
+      "why": "Essential behavioral guardrail for vibe coding agents to avoid unnecessary abstractions and surface hidden assumptions.",
+      "tags": [
+        "coding-guidelines",
+        "code-quality",
+        "agent-behavior",
+        "best-practices"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "url": "https://playwright.dev/",
+      "type": "browser-automation",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Cross-browser automation with reliable locators, tracing, and test runner.",
+      "why": "The most dependable base for agent browser testing and scraping.",
+      "tags": [
+        "browser",
+        "testing",
+        "automation"
+      ],
+      "category": "automation-scraping"
+    },
+    {
+      "id": "puppeteer",
+      "name": "Puppeteer",
+      "url": "https://pptr.dev/",
+      "type": "browser-automation",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Chrome/Chromium automation library for Node.js.",
+      "why": "Useful when the target is Chromium-only and the API fits better.",
+      "tags": [
+        "browser",
+        "chrome",
+        "automation"
+      ],
+      "category": "automation-scraping"
+    },
+    {
+      "id": "scrapy",
+      "name": "Scrapy",
+      "url": "https://scrapy.org/",
+      "type": "scraping-framework",
+      "pricing": "free",
+      "license": "BSD-3-Clause",
+      "description": "Python framework for large-scale structured crawling.",
+      "why": "A mature choice for crawlers that need queues, retries, and pipelines.",
+      "tags": [
+        "python",
+        "crawler",
+        "scraping"
+      ],
+      "category": "automation-scraping"
+    },
+    {
+      "id": "apify",
+      "name": "Apify",
+      "url": "https://apify.com/",
+      "type": "scraping-platform",
+      "pricing": "freemium",
+      "license": "commercial service",
+      "description": "Hosted scraping and automation platform with ready-made actors.",
+      "why": "Avoids maintaining browser infrastructure for common targets.",
+      "tags": [
+        "scraping",
+        "hosted",
+        "actors"
+      ],
+      "category": "automation-scraping"
+    },
+    {
+      "id": "browserbase",
+      "name": "Browserbase",
+      "url": "https://www.browserbase.com/",
+      "type": "browser-infrastructure",
+      "pricing": "freemium",
+      "license": "commercial service",
+      "description": "Hosted headless browser infrastructure for agents.",
+      "why": "Scales browser sessions without local Chrome management.",
+      "tags": [
+        "browser",
+        "hosted",
+        "agents"
+      ],
+      "category": "automation-scraping"
+    },
+    {
+      "id": "stagehand",
+      "name": "Stagehand",
+      "url": "https://github.com/browserbase/stagehand",
+      "type": "browser-automation",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "AI-native browser automation with a Playwright-compatible core.",
+      "why": "A middle ground between brittle selectors and fully autonomous browsing.",
+      "tags": [
+        "browser",
+        "ai",
+        "playwright",
+        "automation"
+      ],
+      "category": "automation-scraping"
+    },
+    {
+      "id": "steel-browser",
+      "name": "Steel Browser",
+      "url": "https://github.com/steel-dev/steel-browser",
+      "type": "browser-infrastructure",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Open-source browser API for agents.",
+      "why": "Self-hostable browser sessions with a clean API.",
+      "tags": [
+        "browser",
+        "self-hosted",
+        "agents"
+      ],
+      "category": "automation-scraping"
+    },
+    {
+      "id": "trigger-dev",
+      "name": "Trigger.dev",
+      "url": "https://trigger.dev/",
+      "type": "background-jobs",
+      "pricing": "freemium",
+      "license": "Apache-2.0",
+      "description": "Background jobs and durable workflows for TypeScript.",
+      "why": "Good fit for long-running scrapes, agent tasks, and retries.",
+      "tags": [
+        "jobs",
+        "workflows",
+        "typescript"
+      ],
+      "category": "automation-scraping"
+    },
+    {
+      "id": "inngest",
+      "name": "Inngest",
+      "url": "https://www.inngest.com/",
+      "type": "background-jobs",
+      "pricing": "freemium",
+      "license": "Apache-2.0",
+      "description": "Event-driven durable functions with steps and retries.",
+      "why": "Makes agent and automation workflows observable and resumable.",
+      "tags": [
+        "workflows",
+        "events",
+        "durable"
+      ],
+      "category": "automation-scraping"
+    },
+    {
+      "id": "temporal",
+      "name": "Temporal",
+      "url": "https://temporal.io/",
+      "type": "workflow-engine",
+      "pricing": "freemium",
+      "license": "MIT",
+      "description": "Durable execution platform for long-running workflows.",
+      "why": "The heavyweight option when workflow state must survive failures.",
+      "tags": [
+        "workflows",
+        "durable",
+        "distributed"
+      ],
+      "category": "automation-scraping"
+    },
+    {
+      "id": "prisma",
+      "name": "Prisma",
+      "url": "https://www.prisma.io/",
+      "type": "orm",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Type-safe ORM and schema tooling for Node.js and TypeScript.",
+      "why": "A common default for typed database access and migrations.",
+      "tags": [
+        "orm",
+        "typescript",
+        "database",
+        "migrations"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "drizzle",
+      "name": "Drizzle ORM",
+      "url": "https://orm.drizzle.team/",
+      "type": "orm",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "SQL-first TypeScript ORM with a lightweight runtime.",
+      "why": "Good when you want explicit SQL shape and minimal abstraction.",
+      "tags": [
+        "orm",
+        "typescript",
+        "sql"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "url": "https://supabase.com/",
+      "type": "backend-platform",
+      "pricing": "freemium",
+      "license": "Apache-2.0 (self-hosted)",
+      "description": "Postgres backend with auth, storage, realtime, and generated APIs.",
+      "why": "A fast path from schema to working auth and data APIs.",
+      "tags": [
+        "postgres",
+        "auth",
+        "backend",
+        "storage"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "neon",
+      "name": "Neon",
+      "url": "https://neon.tech/",
+      "type": "database-platform",
+      "pricing": "freemium",
+      "license": "Apache-2.0 (open-source components)",
+      "description": "Serverless Postgres with branching and scale-to-zero.",
+      "why": "Useful for preview environments and agent-created branches.",
+      "tags": [
+        "postgres",
+        "serverless",
+        "branching"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "planetscale",
+      "name": "PlanetScale",
+      "url": "https://planetscale.com/",
+      "type": "database-platform",
+      "pricing": "freemium",
+      "license": "commercial service",
+      "description": "Managed MySQL-compatible database with branching workflows.",
+      "why": "A mature managed database option for MySQL-shaped apps.",
+      "tags": [
+        "mysql",
+        "database",
+        "managed"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "url": "https://www.postgresql.org/",
+      "type": "database",
+      "pricing": "free",
+      "license": "PostgreSQL License",
+      "description": "Open-source relational database with strong correctness and extension support.",
+      "why": "The safest default relational database for new production apps.",
+      "tags": [
+        "database",
+        "sql",
+        "relational"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "url": "https://redis.io/",
+      "type": "database",
+      "pricing": "freemium",
+      "license": "RSALv2 / SSPLv1 for current versions",
+      "description": "In-memory data store for caching, queues, and realtime state.",
+      "why": "Common infrastructure for caching and rate limiting; check license terms.",
+      "tags": [
+        "cache",
+        "redis",
+        "realtime"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "zod",
+      "name": "Zod",
+      "url": "https://zod.dev/",
+      "type": "validation-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "TypeScript-first schema validation with static type inference.",
+      "why": "A clean way to validate inputs at API and form boundaries.",
+      "tags": [
+        "validation",
+        "typescript",
+        "schema"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "openapi",
+      "name": "OpenAPI",
+      "url": "https://www.openapis.org/",
+      "type": "api-specification",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Standard specification for describing HTTP APIs.",
+      "why": "Gives agents and tools a machine-readable API contract.",
+      "tags": [
+        "api",
+        "spec",
+        "http"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "url": "https://www.postman.com/",
+      "type": "api-tool",
+      "pricing": "freemium",
+      "license": "commercial service",
+      "description": "API client, collections, and collaboration platform.",
+      "why": "Widely used for manual API verification and sharing requests.",
+      "tags": [
+        "api",
+        "testing",
+        "collections"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "hoppscotch",
+      "name": "Hoppscotch",
+      "url": "https://hoppscotch.io/",
+      "type": "api-tool",
+      "pricing": "freemium",
+      "license": "MIT",
+      "description": "Open-source API client that runs in the browser or self-hosted.",
+      "why": "A lightweight, open alternative to hosted API clients.",
+      "tags": [
+        "api",
+        "testing",
+        "open-source"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "dbt",
+      "name": "dbt",
+      "url": "https://www.getdbt.com/",
+      "type": "data-transform-tool",
+      "pricing": "freemium",
+      "license": "Apache-2.0 (dbt Core)",
+      "description": "SQL-based transformation framework with tests, docs, and lineage.",
+      "why": "The standard way to make warehouse transformations reviewable.",
+      "tags": [
+        "data",
+        "sql",
+        "analytics",
+        "dbt"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "bigquery",
+      "name": "BigQuery",
+      "url": "https://cloud.google.com/bigquery",
+      "type": "data-warehouse",
+      "pricing": "paid",
+      "license": "commercial service",
+      "description": "Google Cloud's serverless analytics warehouse.",
+      "why": "Common production warehouse target for dbt and analytics work.",
+      "tags": [
+        "data",
+        "warehouse",
+        "gcp",
+        "sql"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "duckdb",
+      "name": "DuckDB",
+      "url": "https://duckdb.org/",
+      "type": "analytics-database",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "In-process analytical SQL database.",
+      "why": "Excellent for local data exploration and reproducible analysis.",
+      "tags": [
+        "data",
+        "sql",
+        "analytics",
+        "local"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "airflow",
+      "name": "Apache Airflow",
+      "url": "https://airflow.apache.org/",
+      "type": "workflow-orchestrator",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Programmatic workflow scheduling and orchestration.",
+      "why": "A standard choice for batch data pipelines.",
+      "tags": [
+        "data",
+        "orchestration",
+        "pipelines"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "url": "https://n8n.io/",
+      "type": "automation-platform",
+      "pricing": "freemium",
+      "license": "Sustainable Use License (fair-code)",
+      "description": "Visual workflow automation with code nodes and self-hosting.",
+      "why": "Fast way to connect APIs and agents without building a scheduler.",
+      "tags": [
+        "automation",
+        "workflows",
+        "self-hosted"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "laravel-boost",
+      "name": "Laravel Boost",
+      "url": "https://github.com/laravel/boost",
+      "type": "agent-toolkit",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Laravel's MCP server and agent guidelines for application-aware coding.",
+      "why": "The canonical way to give an agent Laravel-specific context and tools.",
+      "tags": [
+        "laravel",
+        "php",
+        "mcp",
+        "agent"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "packetlark",
+      "name": "PacketLark",
+      "url": "https://github.com/abrar225/PacketLark",
+      "type": "api-workbench",
+      "pricing": "free",
+      "license": "check repository",
+      "description": "Local API workbench and HTTP contract engine maintained by this repository's author.",
+      "why": "Useful for request replay, mock servers, and HTTP contract testing.",
+      "tags": [
+        "api",
+        "workbench",
+        "http",
+        "local"
+      ],
+      "category": "backend-data"
+    },
+    {
+      "id": "ui-skills",
+      "name": "UI Skills",
+      "url": "https://www.ui-skills.com/",
+      "type": "skill-library",
+      "pricing": "free",
+      "license": "MIT (skills repo)",
+      "description": "Curated design-engineering skills, Design.md references, playbooks, and an MCP/CLI catalog for agents.",
+      "why": "The best starting point for UI-focused agents: routing skills, accessibility fixes, motion performance, and design-system extraction.",
+      "install": "npx ui-skills",
+      "tags": [
+        "design",
+        "skills",
+        "mcp",
+        "accessibility",
+        "design-md"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "ibelick-ui-skills",
+      "name": "ibelick/ui-skills",
+      "url": "https://github.com/ibelick/ui-skills",
+      "type": "skill-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Source repository for UI Skills: routing, baseline UI, canvas, accessibility, metadata, motion performance, and improve-ui skills.",
+      "why": "Vendorable, permissively licensed design skills from a well-known design engineer.",
+      "tags": [
+        "design",
+        "skills",
+        "mit",
+        "react"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "shadcn-ui",
+      "name": "shadcn/ui",
+      "url": "https://github.com/shadcn-ui/ui",
+      "type": "component-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Copy-paste React components built on Radix primitives and Tailwind CSS.",
+      "why": "The default component layer for many production React apps; agents can read the source directly.",
+      "install": "npx shadcn@latest init",
+      "tags": [
+        "react",
+        "components",
+        "tailwind",
+        "radix"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "radix-ui",
+      "name": "Radix UI",
+      "url": "https://www.radix-ui.com/",
+      "type": "component-primitives",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Unstyled, accessible React primitives for dialogs, menus, popovers, tabs, and more.",
+      "why": "Accessibility and interaction behaviour that agents should reuse instead of rebuilding.",
+      "tags": [
+        "react",
+        "accessibility",
+        "primitives"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "tailwindcss",
+      "name": "Tailwind CSS",
+      "url": "https://tailwindcss.com/",
+      "type": "css-framework",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Utility-first CSS framework with a design-token-friendly configuration.",
+      "why": "The most common styling layer in agent-generated frontends; its scale and tokens keep output consistent.",
+      "tags": [
+        "css",
+        "design-system",
+        "tokens"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "motion",
+      "name": "Motion",
+      "url": "https://motion.dev/",
+      "type": "animation-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Production animation library for React and JavaScript, formerly Framer Motion.",
+      "why": "Springs, gestures, layout transitions, and reduced-motion handling with a stable API.",
+      "install": "npm install motion",
+      "tags": [
+        "animation",
+        "react",
+        "gestures",
+        "springs"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "aceternity-ui",
+      "name": "Aceternity UI",
+      "url": "https://ui.aceternity.com/",
+      "type": "component-library",
+      "pricing": "freemium",
+      "license": "mixed / commercial terms",
+      "description": "Copy-paste animated components and landing-page sections for React and Next.js.",
+      "why": "A large source of polished hero, card, and background patterns; check per-component terms before shipping.",
+      "tags": [
+        "react",
+        "nextjs",
+        "animation",
+        "components"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "magic-ui",
+      "name": "Magic UI",
+      "url": "https://magicui.design/",
+      "type": "component-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Open-source animated React components built with Tailwind and Motion.",
+      "why": "Useful motion-heavy UI blocks without hand-writing every animation.",
+      "tags": [
+        "react",
+        "components",
+        "animation",
+        "tailwind"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "21st-dev",
+      "name": "21st.dev",
+      "url": "https://21st.dev/",
+      "type": "component-registry",
+      "pricing": "freemium",
+      "license": "mixed / per-component",
+      "description": "Community registry of React UI components and agent-ready component prompts.",
+      "why": "Fast way to find a specific component pattern; verify each component's license.",
+      "tags": [
+        "react",
+        "registry",
+        "components"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "uiverse",
+      "name": "Uiverse",
+      "url": "https://uiverse.io/",
+      "type": "component-library",
+      "pricing": "free",
+      "license": "mixed / per-element",
+      "description": "Community library of CSS and Tailwind UI elements.",
+      "why": "Good for isolated buttons, loaders, and micro-components; check individual licenses.",
+      "tags": [
+        "css",
+        "tailwind",
+        "components"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "lucide",
+      "name": "Lucide",
+      "url": "https://lucide.dev/",
+      "type": "icon-library",
+      "pricing": "free",
+      "license": "ISC",
+      "description": "Consistent open-source icon set with framework packages.",
+      "why": "A safe default icon system for agent-generated interfaces.",
+      "install": "npm install lucide-react",
+      "tags": [
+        "icons",
+        "react",
+        "svg"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "phosphor-icons",
+      "name": "Phosphor Icons",
+      "url": "https://phosphoricons.com/",
+      "type": "icon-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Flexible icon family with multiple weights and framework packages.",
+      "why": "Useful when a design needs weight variation rather than a single stroke style.",
+      "tags": [
+        "icons",
+        "svg",
+        "weights"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "heroicons",
+      "name": "Heroicons",
+      "url": "https://heroicons.com/",
+      "type": "icon-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "SVG icons from the Tailwind CSS team, in outline, solid, and mini variants.",
+      "why": "Pairs naturally with Tailwind-based interfaces.",
+      "tags": [
+        "icons",
+        "tailwind",
+        "svg"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "google-fonts",
+      "name": "Google Fonts",
+      "url": "https://fonts.google.com/",
+      "type": "font-library",
+      "pricing": "free",
+      "license": "open font licenses",
+      "description": "Large catalog of open-source typefaces with web embedding.",
+      "why": "Reliable default for typography when no brand font exists.",
+      "tags": [
+        "fonts",
+        "typography",
+        "web"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "fontshare",
+      "name": "Fontshare",
+      "url": "https://www.fontshare.com/",
+      "type": "font-library",
+      "pricing": "free",
+      "license": "free for personal and commercial use (per font)",
+      "description": "Curated free typefaces from Indian Type Foundry.",
+      "why": "A stronger editorial alternative to the most overused Google Fonts.",
+      "tags": [
+        "fonts",
+        "typography"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "coolors",
+      "name": "Coolors",
+      "url": "https://coolors.co/",
+      "type": "color-tool",
+      "pricing": "freemium",
+      "license": "commercial service",
+      "description": "Palette generator with contrast and export tools.",
+      "why": "Fast way to explore a palette before encoding semantic tokens.",
+      "tags": [
+        "color",
+        "palette",
+        "accessibility"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "realtime-colors",
+      "name": "Realtime Colors",
+      "url": "https://realtimecolors.com/",
+      "type": "color-tool",
+      "pricing": "free",
+      "license": "commercial service",
+      "description": "Preview color palettes and typography on a realistic page layout.",
+      "why": "Tests a palette in context instead of on a swatch grid.",
+      "tags": [
+        "color",
+        "typography",
+        "preview"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "astryx",
+      "name": "Astryx",
+      "url": "https://github.com/meta/astryx",
+      "type": "design-system",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Meta's open-source, customizable, agent-ready design system with React components, themes, and an Astryx CLI.",
+      "why": "A production design system that agents can query directly through the astryx command.",
+      "install": "npm i -g @astryxdesign/cli && astryx init",
+      "tags": [
+        "design-system",
+        "react",
+        "themes",
+        "agent-ready"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "dqnamo",
+      "name": "dqnamo",
+      "url": "https://www.dqnamo.com/",
+      "type": "design-engineering-lab",
+      "pricing": "free",
+      "license": "commercial site; code per experiment",
+      "description": "Interaction experiments and component ideas from a London design-engineering studio.",
+      "why": "High-quality reference for motion, physical UI, and unusual component behaviour.",
+      "tags": [
+        "design-engineering",
+        "interactions",
+        "inspiration"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "refactoring-ui",
+      "name": "Refactoring UI",
+      "url": "https://www.refactoringui.com/",
+      "type": "design-book",
+      "pricing": "paid",
+      "license": "commercial",
+      "description": "Design book and resources by Adam Wathan and Steve Schoger for developers.",
+      "why": "The clearest practical system for hierarchy, spacing, color, and depth. Link only; do not copy.",
+      "tags": [
+        "design",
+        "book",
+        "visual-hierarchy"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "emilkowalski-skills",
+      "name": "Emil Kowalski skills",
+      "url": "https://github.com/emilkowalski/skills",
+      "type": "skill-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Animation, motion review, Apple-design, gestures, and UI-library selection skills.",
+      "why": "Some of the strongest practical motion guidance available as installable skills.",
+      "tags": [
+        "animation",
+        "motion",
+        "skills",
+        "design-engineering"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "impeccable",
+      "name": "Impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "type": "skill",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "A flagship design skill for production-grade, anti-generic frontend interfaces.",
+      "why": "Strong craft constraints and consistency rules for agent-built UI.",
+      "tags": [
+        "design",
+        "skill",
+        "frontend"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "taste-skill",
+      "name": "Taste Skill",
+      "url": "https://github.com/leonxlnx/taste-skill",
+      "type": "skill",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "High-agency UX/UI guidance with layout variance, typography, and GSAP motion constraints.",
+      "why": "Pushes agents away from templated layouts and toward deliberate visual composition.",
+      "tags": [
+        "design",
+        "taste",
+        "gsap",
+        "layout"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "vividsites",
+      "name": "Vivid Sites",
+      "url": "https://www.vividsites.app/",
+      "type": "template-library",
+      "pricing": "paid with free samples",
+      "license": "commercial",
+      "description": "Cinematic Three.js and scroll-film website templates with copy-paste prompts.",
+      "why": "Useful reference for cinematic web direction. Free samples only: /t/prisma, /t/foldworld, /t/blockhaus. Do not copy paid prompts.",
+      "freeSamples": [
+        "https://www.vividsites.app/t/prisma",
+        "https://www.vividsites.app/t/foldworld",
+        "https://www.vividsites.app/t/blockhaus"
+      ],
+      "tags": [
+        "threejs",
+        "templates",
+        "cinematic",
+        "paid"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "getlayers",
+      "name": "GetLayers",
+      "url": "https://www.getlayers.ai/",
+      "type": "template-library",
+      "pricing": "paid",
+      "license": "commercial",
+      "description": "Cinematic AI website template library with prompt-based workflows and an MCP/Figma surface.",
+      "why": "Reference only. Pricing is paid; no template content is copied into this repository.",
+      "tags": [
+        "templates",
+        "cinematic",
+        "paid",
+        "mcp"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "url": "https://react.dev/",
+      "type": "framework",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Component-based UI library with the official modern documentation.",
+      "why": "The base layer for most agent-built frontends; the docs are the source of truth for hooks and rendering.",
+      "tags": [
+        "react",
+        "frontend",
+        "ui"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "url": "https://nextjs.org/",
+      "type": "framework",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "React framework with App Router, server components, routing, and deployment conventions.",
+      "why": "Common production target; agents need its caching, routing, and server/client boundaries.",
+      "tags": [
+        "nextjs",
+        "react",
+        "ssr",
+        "app-router"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "vercel-agent-skills",
+      "name": "Vercel Agent Skills",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "type": "skill-library",
+      "pricing": "free",
+      "license": "MIT (per-skill frontmatter)",
+      "description": "React best practices, composition patterns, view transitions, React Native, deployment, and writing guidelines.",
+      "why": "Official Vercel engineering guidance packaged for agents.",
+      "tags": [
+        "vercel",
+        "react",
+        "nextjs",
+        "skills"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "threejs",
+      "name": "Three.js",
+      "url": "https://threejs.org/",
+      "type": "3d-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "WebGL renderer and scene graph for 3D browser experiences.",
+      "why": "The foundation for most agent-generated 3D and shader work.",
+      "install": "npm install three",
+      "tags": [
+        "3d",
+        "webgl",
+        "graphics"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "react-three-fiber",
+      "name": "React Three Fiber",
+      "url": "https://github.com/pmndrs/react-three-fiber",
+      "type": "3d-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "React renderer for Three.js with a declarative scene API.",
+      "why": "Makes 3D scenes composable with React state and component patterns.",
+      "install": "npm install three @react-three/fiber",
+      "tags": [
+        "react",
+        "threejs",
+        "3d"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "drei",
+      "name": "Drei",
+      "url": "https://github.com/pmndrs/drei",
+      "type": "3d-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Useful helpers and abstractions for React Three Fiber.",
+      "why": "Avoids reimplementing controls, loaders, environments, and common 3D utilities.",
+      "tags": [
+        "react",
+        "threejs",
+        "helpers"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "gsap",
+      "name": "GSAP",
+      "url": "https://gsap.com/",
+      "type": "animation-library",
+      "pricing": "freemium",
+      "license": "standard no-charge license; some plugins paid",
+      "description": "Professional-grade JavaScript animation platform with timelines and ScrollTrigger.",
+      "why": "Best-in-class timeline control for complex scroll and motion sequences.",
+      "tags": [
+        "animation",
+        "scroll",
+        "timeline"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "lenis",
+      "name": "Lenis",
+      "url": "https://github.com/darkroomengineering/lenis",
+      "type": "scroll-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Smooth-scroll library that integrates with GSAP and native scrolling.",
+      "why": "A common dependency for cinematic scroll experiences; use with reduced-motion care.",
+      "tags": [
+        "scroll",
+        "smooth-scroll",
+        "animation"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "roughjs",
+      "name": "Rough.js",
+      "url": "https://roughjs.com/",
+      "type": "graphics-library",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Create hand-drawn, sketchy graphics on canvas and SVG.",
+      "why": "A distinctive visual primitive for diagrams, annotations, and whiteboard-style UI.",
+      "install": "npm install roughjs",
+      "tags": [
+        "canvas",
+        "svg",
+        "hand-drawn"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "remotion",
+      "name": "Remotion",
+      "url": "https://www.remotion.dev/",
+      "type": "video-framework",
+      "pricing": "freemium",
+      "license": "company license for companies; free for individuals",
+      "description": "Create videos programmatically with React.",
+      "why": "The standard way to render deterministic, code-driven video.",
+      "tags": [
+        "video",
+        "react",
+        "rendering"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "hyperframes",
+      "name": "HyperFrames",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "type": "video-framework",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "HTML-rendered video framework with skills for composition, animation, captions, charts, and rendering.",
+      "why": "A modern agent-first video pipeline; the repository also ships a large skill set.",
+      "tags": [
+        "video",
+        "html",
+        "skills",
+        "rendering"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "astro",
+      "name": "Astro",
+      "url": "https://astro.build/",
+      "type": "framework",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Content-focused web framework with islands and minimal client JavaScript.",
+      "why": "Strong choice for marketing, docs, and content sites where performance matters.",
+      "tags": [
+        "astro",
+        "ssg",
+        "content"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "svelte",
+      "name": "Svelte",
+      "url": "https://svelte.dev/",
+      "type": "framework",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Compiled UI framework with reactive language primitives.",
+      "why": "A high-performance alternative when the project is not React-based.",
+      "tags": [
+        "svelte",
+        "frontend"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "vue",
+      "name": "Vue",
+      "url": "https://vuejs.org/",
+      "type": "framework",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Progressive JavaScript framework with a mature ecosystem.",
+      "why": "Common in existing codebases; agents should follow the project's framework rather than rewrite it.",
+      "tags": [
+        "vue",
+        "frontend"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "nuxt",
+      "name": "Nuxt",
+      "url": "https://nuxt.com/",
+      "type": "framework",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Vue framework with routing, server routes, and rendering modes.",
+      "why": "The Vue equivalent of a full production app framework.",
+      "tags": [
+        "vue",
+        "nuxt",
+        "ssr"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "url": "https://vite.dev/",
+      "type": "build-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Fast frontend build tool and dev server.",
+      "why": "Default bundler for many modern frameworks and standalone apps.",
+      "tags": [
+        "build",
+        "bundler",
+        "dev-server"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "url": "https://www.typescriptlang.org/",
+      "type": "language",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Typed superset of JavaScript with a mature compiler and language service.",
+      "why": "Types are the cheapest guardrail an agent can use while editing a codebase.",
+      "tags": [
+        "typescript",
+        "types",
+        "javascript"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "biome",
+      "name": "Biome",
+      "url": "https://biomejs.dev/",
+      "type": "lint-format-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Fast formatter and linter for JavaScript, TypeScript, and web files.",
+      "why": "One tool for formatting and linting, with agent-friendly diagnostics.",
+      "tags": [
+        "lint",
+        "format",
+        "javascript",
+        "typescript"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "eslint",
+      "name": "ESLint",
+      "url": "https://eslint.org/",
+      "type": "lint-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Pluggable static analysis for JavaScript and TypeScript.",
+      "why": "Still the most widely configured lint layer in existing projects.",
+      "tags": [
+        "lint",
+        "javascript",
+        "typescript"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "prettier",
+      "name": "Prettier",
+      "url": "https://prettier.io/",
+      "type": "format-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Opinionated code formatter with broad language support.",
+      "why": "Keeps agent edits consistent with the rest of the codebase.",
+      "tags": [
+        "format",
+        "code-style"
+      ],
+      "category": "frontend"
+    },
+    {
+      "id": "mdn",
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/",
+      "type": "reference",
+      "pricing": "free",
+      "license": "CC-BY-SA-2.5 for docs",
+      "description": "The authoritative reference for HTML, CSS, JavaScript, and web APIs.",
+      "why": "When an agent is unsure about a platform API, this is the source to check.",
+      "tags": [
+        "web",
+        "reference",
+        "html",
+        "css",
+        "javascript"
+      ],
+      "category": "learning-reference"
+    },
+    {
+      "id": "web-dev",
+      "name": "web.dev",
+      "url": "https://web.dev/",
+      "type": "learning-resource",
+      "pricing": "free",
+      "license": "CC-BY-4.0",
+      "description": "Google's guidance on performance, accessibility, and modern web capabilities.",
+      "why": "Practical Core Web Vitals and accessibility material with measurable advice.",
+      "tags": [
+        "performance",
+        "accessibility",
+        "web"
+      ],
+      "category": "learning-reference"
+    },
+    {
+      "id": "javascript-info",
+      "name": "JavaScript.info",
+      "url": "https://javascript.info/",
+      "type": "learning-resource",
+      "pricing": "free",
+      "license": "CC-BY-NC-SA",
+      "description": "Deep, modern JavaScript tutorial from fundamentals to advanced topics.",
+      "why": "A reliable way to close language gaps before editing unfamiliar code.",
+      "tags": [
+        "javascript",
+        "learning",
+        "reference"
+      ],
+      "category": "learning-reference"
+    },
+    {
+      "id": "roadmap-sh",
+      "name": "roadmap.sh",
+      "url": "https://roadmap.sh/",
+      "type": "learning-resource",
+      "pricing": "free",
+      "license": "community resources",
+      "description": "Community roadmaps for frontend, backend, DevOps, AI, and more.",
+      "why": "Useful for scoping what a developer or agent needs to learn next.",
+      "tags": [
+        "learning",
+        "roadmaps",
+        "career"
+      ],
+      "category": "learning-reference"
+    },
+    {
+      "id": "freecodecamp",
+      "name": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/",
+      "type": "learning-resource",
+      "pricing": "free",
+      "license": "BSD-3-Clause for curriculum",
+      "description": "Free interactive coding curriculum and certifications.",
+      "why": "A no-cost path for fundamentals when someone is starting out.",
+      "tags": [
+        "learning",
+        "curriculum",
+        "free"
+      ],
+      "category": "learning-reference"
+    },
+    {
+      "id": "awesome-selfhosted",
+      "name": "Awesome Selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "type": "awesome-list",
+      "pricing": "free",
+      "license": "CC-BY-SA-3.0",
+      "description": "Large curated list of self-hostable software.",
+      "why": "A good starting point when a team wants to avoid a hosted dependency.",
+      "tags": [
+        "self-hosted",
+        "awesome-list",
+        "infrastructure"
+      ],
+      "category": "learning-reference"
+    },
+    {
+      "id": "motion-canvas",
+      "name": "Motion Canvas",
+      "url": "https://motioncanvas.io/",
+      "type": "animation-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Programmatic animation with a TypeScript generator API and live editor.",
+      "why": "Good for technical explainers and deterministic motion.",
+      "tags": [
+        "animation",
+        "typescript",
+        "video"
+      ],
+      "category": "media-video"
+    },
+    {
+      "id": "manim",
+      "name": "Manim",
+      "url": "https://www.manim.community/",
+      "type": "animation-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Python animation engine for mathematical and technical explainers.",
+      "why": "A strong choice for precise diagrams and equation-driven motion.",
+      "tags": [
+        "python",
+        "animation",
+        "math"
+      ],
+      "category": "media-video"
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "url": "https://ffmpeg.org/",
+      "type": "media-tool",
+      "pricing": "free",
+      "license": "LGPL/GPL depending on build",
+      "description": "The standard command-line toolkit for audio and video processing.",
+      "why": "Almost every video pipeline eventually needs it for encode, trim, and mux.",
+      "tags": [
+        "video",
+        "audio",
+        "encoding"
+      ],
+      "category": "media-video"
+    },
+    {
+      "id": "p5js",
+      "name": "p5.js",
+      "url": "https://p5js.org/",
+      "type": "creative-coding",
+      "pricing": "free",
+      "license": "LGPL-2.1",
+      "description": "Creative coding library for canvas sketches and generative art.",
+      "why": "A low-friction way to make algorithmic visuals for the web.",
+      "tags": [
+        "creative-coding",
+        "canvas",
+        "generative-art"
+      ],
+      "category": "media-video"
+    },
+    {
+      "id": "hyperframes-skills",
+      "name": "HyperFrames Skills",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "type": "skill-library",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Video skills for launch films, explainers, music videos, charts, maps, captions, and rendering.",
+      "why": "A complete agent-first video workflow with a registry of editable blocks.",
+      "tags": [
+        "video",
+        "skills",
+        "animation",
+        "rendering"
+      ],
+      "category": "media-video"
+    },
+    {
+      "id": "remotion-skills",
+      "name": "Remotion Skills",
+      "url": "https://github.com/remotion-dev/skills",
+      "type": "skill-library",
+      "pricing": "free",
+      "license": "see repository",
+      "description": "Skills for creating, animating, captioning, and rendering Remotion videos.",
+      "why": "Useful when the project already uses Remotion.",
+      "tags": [
+        "video",
+        "remotion",
+        "skills"
+      ],
+      "category": "media-video"
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "url": "https://flutter.dev/",
+      "type": "mobile-framework",
+      "pricing": "free",
+      "license": "BSD-3-Clause",
+      "description": "Cross-platform UI toolkit for iOS, Android, web, and desktop.",
+      "why": "A mature choice for a single codebase across mobile platforms.",
+      "tags": [
+        "flutter",
+        "dart",
+        "mobile",
+        "cross-platform"
+      ],
+      "category": "mobile"
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "url": "https://dart.dev/",
+      "type": "language",
+      "pricing": "free",
+      "license": "BSD-3-Clause",
+      "description": "The language and toolchain behind Flutter.",
+      "why": "Needed for sound null safety and idiomatic Flutter code.",
+      "tags": [
+        "dart",
+        "flutter",
+        "language"
+      ],
+      "category": "mobile"
+    },
+    {
+      "id": "expo",
+      "name": "Expo",
+      "url": "https://expo.dev/",
+      "type": "mobile-framework",
+      "pricing": "freemium",
+      "license": "MIT",
+      "description": "React Native toolchain with builds, updates, and native module access.",
+      "why": "The fastest path to a production React Native app.",
+      "tags": [
+        "react-native",
+        "expo",
+        "mobile"
+      ],
+      "category": "mobile"
+    },
+    {
+      "id": "react-native",
+      "name": "React Native",
+      "url": "https://reactnative.dev/",
+      "type": "mobile-framework",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Build native mobile apps with React.",
+      "why": "Lets a React team ship mobile without a second UI paradigm.",
+      "tags": [
+        "react",
+        "mobile",
+        "native"
+      ],
+      "category": "mobile"
+    },
+    {
+      "id": "jetpack-compose",
+      "name": "Jetpack Compose",
+      "url": "https://developer.android.com/compose",
+      "type": "ui-toolkit",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Android's declarative UI toolkit in Kotlin.",
+      "why": "The current default for new Android UI.",
+      "tags": [
+        "android",
+        "kotlin",
+        "compose",
+        "ui"
+      ],
+      "category": "mobile"
+    },
+    {
+      "id": "swiftui",
+      "name": "SwiftUI",
+      "url": "https://developer.apple.com/xcode/swiftui/",
+      "type": "ui-toolkit",
+      "pricing": "free",
+      "license": "Apple terms",
+      "description": "Apple's declarative UI framework across its platforms.",
+      "why": "The native path for iOS, iPadOS, macOS, watchOS, and visionOS.",
+      "tags": [
+        "ios",
+        "swift",
+        "ui",
+        "apple"
+      ],
+      "category": "mobile"
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "url": "https://kotlinlang.org/",
+      "type": "language",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Concise JVM language with first-class Android support.",
+      "why": "The language for modern Android and Compose work.",
+      "tags": [
+        "kotlin",
+        "android",
+        "jvm"
+      ],
+      "category": "mobile"
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "url": "https://www.swift.org/",
+      "type": "language",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Apple's language for iOS, macOS, and server-side Swift.",
+      "why": "Required for native Apple platform development.",
+      "tags": [
+        "swift",
+        "apple",
+        "ios"
+      ],
+      "category": "mobile"
+    },
+    {
+      "id": "six-documents-notion",
+      "name": "The 6 Documents You Need Before Vibe Coding Any App",
+      "url": "https://midi-garment-d51.notion.site/The-6-Documents-You-Need-Before-Vibe-Coding-Any-App-3d313d90aa8f80769b6aecefb5f83f45",
+      "type": "planning-guide",
+      "pricing": "free",
+      "license": "source page; no license declared; attributed Markdown extraction and source snapshot retained",
+      "description": "A complete pre-coding planning system: App Brief, PRD, TRD, App Flow, UI/UX Brief, Backend Schema, and Implementation Plan, with copy-ready templates and prompts.",
+      "why": "The most complete free workflow in this catalog for turning an idea into buildable instructions. Imported as the vibe-planning-6docs skill without paraphrasing.",
+      "tags": [
+        "planning",
+        "prd",
+        "trd",
+        "schema",
+        "vibe-coding"
+      ],
+      "category": "planning-docs"
+    },
+    {
+      "id": "shape-up",
+      "name": "Shape Up",
+      "url": "https://basecamp.com/shapeup",
+      "type": "planning-method",
+      "pricing": "free",
+      "license": "book content copyrighted; free to read online",
+      "description": "Basecamp's product development method built around shaped work, six-week cycles, and betting.",
+      "why": "A strong antidote to unbounded backlogs and vague scope.",
+      "tags": [
+        "planning",
+        "scope",
+        "cycles",
+        "product"
+      ],
+      "category": "planning-docs"
+    },
+    {
+      "id": "github-spec-kit",
+      "name": "GitHub Spec Kit",
+      "url": "https://github.com/github/spec-kit",
+      "type": "spec-driven-toolkit",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Toolkit for spec-driven development with agents: specify, plan, tasks, and implement phases.",
+      "why": "A concrete command workflow for teams that want specs to drive implementation.",
+      "tags": [
+        "spec-driven",
+        "planning",
+        "agents",
+        "github"
+      ],
+      "category": "planning-docs"
+    },
+    {
+      "id": "bmad-method",
+      "name": "BMAD Method",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+      "type": "agent-planning-method",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Breakthrough Method for Agile AI-Driven Development with specialized planning agents.",
+      "why": "A heavier, role-based planning framework for larger agent-run projects.",
+      "tags": [
+        "agents",
+        "planning",
+        "agile",
+        "method"
+      ],
+      "category": "planning-docs"
+    },
+    {
+      "id": "mermaid",
+      "name": "Mermaid",
+      "url": "https://mermaid.js.org/",
+      "type": "diagram-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Text-based diagrams for flowcharts, sequence diagrams, ER diagrams, and more.",
+      "why": "Diagrams that live in Markdown and can be reviewed like code.",
+      "tags": [
+        "diagrams",
+        "markdown",
+        "flowchart",
+        "erd"
+      ],
+      "category": "planning-docs"
+    },
+    {
+      "id": "excalidraw",
+      "name": "Excalidraw",
+      "url": "https://excalidraw.com/",
+      "type": "diagram-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Virtual whiteboard for hand-drawn-style architecture and flow sketches.",
+      "why": "Fast for early ambiguity; pairs well with the 6-documents flow.",
+      "tags": [
+        "diagrams",
+        "whiteboard",
+        "architecture"
+      ],
+      "category": "planning-docs"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "url": "https://www.notion.so/",
+      "type": "workspace",
+      "pricing": "freemium",
+      "license": "commercial service",
+      "description": "Docs, databases, and project workspaces.",
+      "why": "Where many teams keep PRDs and decision logs; useful as an export source.",
+      "tags": [
+        "docs",
+        "planning",
+        "workspace"
+      ],
+      "category": "planning-docs"
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "url": "https://linear.app/",
+      "type": "issue-tracker",
+      "pricing": "freemium",
+      "license": "commercial service",
+      "description": "Fast issue tracking and project planning for software teams.",
+      "why": "A clean target for turning a spec into tickets an agent can execute.",
+      "tags": [
+        "issues",
+        "planning",
+        "project-management"
+      ],
+      "category": "planning-docs"
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "url": "https://www.atlassian.com/software/jira",
+      "type": "issue-tracker",
+      "pricing": "freemium",
+      "license": "commercial service",
+      "description": "Enterprise issue and project tracking.",
+      "why": "Common in existing organizations; agents often need to read or write tickets.",
+      "tags": [
+        "issues",
+        "enterprise",
+        "project-management"
+      ],
+      "category": "planning-docs"
+    },
+    {
+      "id": "owasp-top-10",
+      "name": "OWASP Top 10",
+      "url": "https://owasp.org/Top10/",
+      "type": "security-standard",
+      "pricing": "free",
+      "license": "CC-BY-4.0",
+      "description": "The reference list of the most critical web application security risks.",
+      "why": "The baseline vocabulary for any security review an agent performs.",
+      "tags": [
+        "security",
+        "owasp",
+        "web"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "owasp-asvs",
+      "name": "OWASP ASVS",
+      "url": "https://owasp.org/www-project-application-security-verification-standard/",
+      "type": "security-standard",
+      "pricing": "free",
+      "license": "CC-BY-4.0",
+      "description": "Application Security Verification Standard: testable requirements by level.",
+      "why": "Turns 'is it secure?' into a checklist with verifiable criteria.",
+      "tags": [
+        "security",
+        "verification",
+        "requirements"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "gitleaks",
+      "name": "Gitleaks",
+      "url": "https://github.com/gitleaks/gitleaks",
+      "type": "secret-scanner",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Detects hardcoded secrets in git history and working trees.",
+      "why": "The cheapest high-value security check to run before every push.",
+      "tags": [
+        "secrets",
+        "security",
+        "git"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "trufflehog",
+      "name": "TruffleHog",
+      "url": "https://github.com/trufflesecurity/trufflehog",
+      "type": "secret-scanner",
+      "pricing": "free",
+      "license": "AGPL-3.0",
+      "description": "Secret detection with credential verification across git, files, and cloud storage.",
+      "why": "Verification reduces false positives compared with regex-only scanners.",
+      "tags": [
+        "secrets",
+        "security",
+        "verification"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "osv-scanner",
+      "name": "OSV-Scanner",
+      "url": "https://github.com/google/osv-scanner",
+      "type": "dependency-scanner",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Vulnerability scanner backed by the OSV database across lockfiles and containers.",
+      "why": "A vendor-neutral way to check dependencies for known CVEs.",
+      "tags": [
+        "dependencies",
+        "cve",
+        "security"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "snyk",
+      "name": "Snyk",
+      "url": "https://snyk.io/",
+      "type": "security-platform",
+      "pricing": "freemium",
+      "license": "commercial service",
+      "description": "Developer security platform for dependencies, containers, code, and IaC.",
+      "why": "Useful when a team wants continuous scanning and remediation guidance.",
+      "tags": [
+        "security",
+        "dependencies",
+        "sast"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "dependabot",
+      "name": "Dependabot",
+      "url": "https://github.com/dependabot",
+      "type": "dependency-updater",
+      "pricing": "free on GitHub",
+      "license": "GitHub terms",
+      "description": "Automated dependency updates and security alerts on GitHub.",
+      "why": "Keeps the dependency surface current without manual version chasing.",
+      "tags": [
+        "dependencies",
+        "updates",
+        "github"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "nvd",
+      "name": "NVD",
+      "url": "https://nvd.nist.gov/",
+      "type": "vulnerability-database",
+      "pricing": "free",
+      "license": "public domain / NIST terms",
+      "description": "National Vulnerability Database with CVE details and severity scores.",
+      "why": "Primary source when you need to verify a CVE claim.",
+      "tags": [
+        "cve",
+        "vulnerabilities",
+        "reference"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "mitre-attack",
+      "name": "MITRE ATT&CK",
+      "url": "https://attack.mitre.org/",
+      "type": "threat-model",
+      "pricing": "free",
+      "license": "MITRE terms",
+      "description": "Knowledge base of adversary tactics and techniques.",
+      "why": "Useful for threat modeling beyond a generic OWASP checklist.",
+      "tags": [
+        "threat-modeling",
+        "security",
+        "reference"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "hackerone",
+      "name": "HackerOne",
+      "url": "https://www.hackerone.com/",
+      "type": "bug-bounty-platform",
+      "pricing": "commercial",
+      "license": "commercial service",
+      "description": "Bug bounty and vulnerability disclosure platform.",
+      "why": "Where many public programs and disclosed reports live.",
+      "tags": [
+        "bug-bounty",
+        "security",
+        "programs"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "bugcrowd",
+      "name": "Bugcrowd",
+      "url": "https://www.bugcrowd.com/",
+      "type": "bug-bounty-platform",
+      "pricing": "commercial",
+      "license": "commercial service",
+      "description": "Crowdsourced security testing and bug bounty platform.",
+      "why": "A second major source of programs and disclosed findings.",
+      "tags": [
+        "bug-bounty",
+        "security",
+        "programs"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "payloads-all-the-things",
+      "name": "PayloadsAllTheThings",
+      "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+      "type": "security-reference",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Curated payloads and bypass techniques for web security testing.",
+      "why": "A practical reference during authorized testing, not a substitute for methodology.",
+      "tags": [
+        "security",
+        "payloads",
+        "testing"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "seclists",
+      "name": "SecLists",
+      "url": "https://github.com/danielmiessler/SecLists",
+      "type": "security-reference",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Security testing wordlists for discovery, fuzzing, and credentials.",
+      "why": "The standard wordlist collection for authorized recon and fuzzing.",
+      "tags": [
+        "security",
+        "wordlists",
+        "fuzzing"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "ffuf",
+      "name": "ffuf",
+      "url": "https://github.com/ffuf/ffuf",
+      "type": "security-tool",
+      "pricing": "free",
+      "license": "Apache-2.0",
+      "description": "Fast web fuzzer for content discovery and parameter testing.",
+      "why": "A core tool for authorized recon and endpoint discovery.",
+      "tags": [
+        "security",
+        "fuzzing",
+        "recon"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "burp-community",
+      "name": "Burp Suite Community",
+      "url": "https://portswigger.net/burp/communitydownload",
+      "type": "security-tool",
+      "pricing": "free",
+      "license": "commercial EULA",
+      "description": "Community edition of the widely used web security testing proxy.",
+      "why": "Manual request interception is still essential for authorization testing.",
+      "tags": [
+        "security",
+        "proxy",
+        "testing"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "caido",
+      "name": "Caido",
+      "url": "https://caido.io/",
+      "type": "security-tool",
+      "pricing": "freemium",
+      "license": "commercial EULA",
+      "description": "Modern web security auditing toolkit with a lightweight proxy.",
+      "why": "A faster, more modern alternative to legacy interception tools.",
+      "tags": [
+        "security",
+        "proxy",
+        "testing"
+      ],
+      "category": "security"
+    },
+    {
+      "id": "mitmproxy",
+      "name": "mitmproxy",
+      "url": "https://mitmproxy.org/",
+      "type": "security-tool",
+      "pricing": "free",
+      "license": "MIT",
+      "description": "Interactive HTTPS proxy with a Python API.",
+      "why": "Scriptable traffic inspection for protocol analysis and automation.",
+      "tags": [
+        "security",
+        "proxy",
+        "python",
+        "protocols"
+      ],
+      "category": "security"
+    }
+  ]
+}

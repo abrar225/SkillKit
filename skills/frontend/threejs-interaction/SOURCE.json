@@ -1,0 +1,11 @@
+{
+  "id": "frontend/threejs-interaction",
+  "name": "threejs-interaction",
+  "description": "Three.js interaction - raycasting, controls, mouse/touch input, object selection. Use when handling user input, implementing click detection, adding camera controls, or creating interactive 3D experiences.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/threejs-interaction",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

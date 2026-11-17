@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/create-subagent",
+  "name": "create-subagent",
+  "description": "Create custom subagents for specialized AI tasks. Use when you want to create a new type of subagent, set up task-specific agents, configure code reviewers, debuggers, or domain-specific assistants with custom prompts.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/create-subagent",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

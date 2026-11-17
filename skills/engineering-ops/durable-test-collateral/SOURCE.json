@@ -1,0 +1,35 @@
+{
+  "id": "engineering-ops/durable-test-collateral",
+  "name": "durable-test-collateral",
+  "description": "Load the body before the first implementation edit for a bug fix or behavior change, or when the user or governing specification makes reusable tests a deliverable. It keeps the smallest focused test with the delivered project and updates coverage when behavior changes. Do not load for greenfield work unless reusable tests are explicitly required, behavior-preserving refactors, verification-only work, plan/review/explanation/documentation/formatting/generated-output-only work, explicit no-change or no-tool work, or when the user declines tests.",
+  "origin": "upstream",
+  "license": "Apache-2.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "path": "Meta/muse-code/skills/durable-test-collateral",
+    "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103",
+    "ref": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "08adbfe3fa3658466cf13f675771cb18b264bda2e5ab68d5fc569e5b0fac27dd"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "f99ae25b6325d3a2fcebe74ee92296e2058fe84e97f228a5b81b5e8a1821f04f"
+    },
+    {
+      "sourcePath": "Meta/muse-code/skills/LICENSE",
+      "localPath": "upstream-licenses/Meta/muse-code/skills/LICENSE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "flutter",
+    "name": "Flutter",
+    "url": "https://flutter.dev/",
+    "type": "mobile-framework",
+    "pricing": "free",
+    "license": "BSD-3-Clause",
+    "description": "Cross-platform UI toolkit for iOS, Android, web, and desktop.",
+    "why": "A mature choice for a single codebase across mobile platforms.",
+    "tags": ["flutter", "dart", "mobile", "cross-platform"]
+  },
+  {
+    "id": "dart",
+    "name": "Dart",
+    "url": "https://dart.dev/",
+    "type": "language",
+    "pricing": "free",
+    "license": "BSD-3-Clause",
+    "description": "The language and toolchain behind Flutter.",
+    "why": "Needed for sound null safety and idiomatic Flutter code.",
+    "tags": ["dart", "flutter", "language"]
+  },
+  {
+    "id": "expo",
+    "name": "Expo",
+    "url": "https://expo.dev/",
+    "type": "mobile-framework",
+    "pricing": "freemium",
+    "license": "MIT",
+    "description": "React Native toolchain with builds, updates, and native module access.",
+    "why": "The fastest path to a production React Native app.",
+    "tags": ["react-native", "expo", "mobile"]
+  },
+  {
+    "id": "react-native",
+    "name": "React Native",
+    "url": "https://reactnative.dev/",
+    "type": "mobile-framework",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Build native mobile apps with React.",
+    "why": "Lets a React team ship mobile without a second UI paradigm.",
+    "tags": ["react", "mobile", "native"]
+  },
+  {
+    "id": "jetpack-compose",
+    "name": "Jetpack Compose",
+    "url": "https://developer.android.com/compose",
+    "type": "ui-toolkit",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Android's declarative UI toolkit in Kotlin.",
+    "why": "The current default for new Android UI.",
+    "tags": ["android", "kotlin", "compose", "ui"]
+  },
+  {
+    "id": "swiftui",
+    "name": "SwiftUI",
+    "url": "https://developer.apple.com/xcode/swiftui/",
+    "type": "ui-toolkit",
+    "pricing": "free",
+    "license": "Apple terms",
+    "description": "Apple's declarative UI framework across its platforms.",
+    "why": "The native path for iOS, iPadOS, macOS, watchOS, and visionOS.",
+    "tags": ["ios", "swift", "ui", "apple"]
+  },
+  {
+    "id": "kotlin",
+    "name": "Kotlin",
+    "url": "https://kotlinlang.org/",
+    "type": "language",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Concise JVM language with first-class Android support.",
+    "why": "The language for modern Android and Compose work.",
+    "tags": ["kotlin", "android", "jvm"]
+  },
+  {
+    "id": "swift",
+    "name": "Swift",
+    "url": "https://www.swift.org/",
+    "type": "language",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Apple's language for iOS, macOS, and server-side Swift.",
+    "why": "Required for native Apple platform development.",
+    "tags": ["swift", "apple", "ios"]
+  }
+]

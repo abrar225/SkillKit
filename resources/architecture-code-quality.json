@@ -1,0 +1,275 @@
+[
+  {
+    "id": "refactoring-guru",
+    "name": "Refactoring Guru",
+    "url": "https://refactoring.guru/",
+    "type": "reference",
+    "pricing": "freemium",
+    "license": "commercial site",
+    "description": "Illustrated catalog of design patterns, refactoring techniques, and code smells.",
+    "why": "The fastest vocabulary for naming a structural problem before changing code.",
+    "tags": [
+      "architecture",
+      "refactoring",
+      "patterns"
+    ]
+  },
+  {
+    "id": "martin-fowler",
+    "name": "Martin Fowler",
+    "url": "https://martinfowler.com/",
+    "type": "reference",
+    "pricing": "free",
+    "license": "commercial site; articles copyrighted",
+    "description": "Foundational writing on refactoring, architecture, domain modeling, and evolutionary design.",
+    "why": "Primary source for concepts agents often cite incorrectly.",
+    "tags": [
+      "architecture",
+      "refactoring",
+      "domain-modeling"
+    ]
+  },
+  {
+    "id": "system-design-primer",
+    "name": "System Design Primer",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "type": "learning-resource",
+    "pricing": "free",
+    "license": "CC-BY-4.0",
+    "description": "Open-source guide to large-scale system design with diagrams and tradeoffs.",
+    "why": "A broad, well-maintained reference for architecture conversations.",
+    "tags": [
+      "system-design",
+      "architecture",
+      "scalability"
+    ]
+  },
+  {
+    "id": "c4-model",
+    "name": "C4 Model",
+    "url": "https://c4model.com/",
+    "type": "architecture-method",
+    "pricing": "free",
+    "license": "CC-BY-4.0",
+    "description": "A hierarchical way to diagram software architecture: context, containers, components, code.",
+    "why": "Gives agents and humans a shared diagram vocabulary that stays readable.",
+    "tags": [
+      "architecture",
+      "diagrams",
+      "c4"
+    ]
+  },
+  {
+    "id": "adr",
+    "name": "Architecture Decision Records",
+    "url": "https://adr.github.io/",
+    "type": "architecture-practice",
+    "pricing": "free",
+    "license": "open community resources",
+    "description": "Lightweight templates and conventions for recording architectural decisions.",
+    "why": "Keeps the reason behind a choice attached to the codebase.",
+    "tags": [
+      "adr",
+      "decisions",
+      "documentation"
+    ]
+  },
+  {
+    "id": "repowise-dead-code",
+    "name": "Best Dead Code Detection Tools (2026)",
+    "url": "https://repowise.dev/blog/comparisons/best-dead-code-detection-tools",
+    "type": "comparison-guide",
+    "pricing": "free",
+    "license": "commercial site; article copyrighted",
+    "description": "Language-by-language comparison of dead-code tools: Knip, Vulture, deadcode, deptry, ts-prune, Go deadcode, PMD, PHPStan, cargo-machete, and repowise.",
+    "why": "A current, method-backed map of which dead-code tool to use for each stack.",
+    "tags": [
+      "dead-code",
+      "code-quality",
+      "comparison"
+    ]
+  },
+  {
+    "id": "knip",
+    "name": "Knip",
+    "url": "https://knip.dev/",
+    "type": "code-quality-tool",
+    "pricing": "free",
+    "license": "ISC",
+    "description": "Finds unused files, exports, and dependencies in JavaScript and TypeScript projects, including monorepos.",
+    "why": "The strongest open-source dead-code tool for JS/TS, with 200+ framework plugins and auto-fix.",
+    "install": "npx knip",
+    "repo": "https://github.com/webpro-nl/knip",
+    "tags": [
+      "dead-code",
+      "javascript",
+      "typescript",
+      "monorepo"
+    ]
+  },
+  {
+    "id": "vulture",
+    "name": "Vulture",
+    "url": "https://github.com/jendrikseipp/vulture",
+    "type": "code-quality-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Python dead-code finder with confidence scores and whitelist support.",
+    "why": "The standard Python starting point for unused code.",
+    "install": "pip install vulture",
+    "tags": [
+      "dead-code",
+      "python"
+    ]
+  },
+  {
+    "id": "deadcode",
+    "name": "deadcode",
+    "url": "https://github.com/albertas/deadcode",
+    "type": "code-quality-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Python dead-code detector with a `--fix` mode.",
+    "why": "Useful when you want automated removal after reviewing a dry run.",
+    "tags": [
+      "dead-code",
+      "python",
+      "autofix"
+    ]
+  },
+  {
+    "id": "deptry",
+    "name": "deptry",
+    "url": "https://github.com/fpgmaas/deptry",
+    "type": "code-quality-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Reports missing, unused, and misplaced Python dependencies.",
+    "why": "Unused dependencies are dead code in the manifest; deptry covers them.",
+    "tags": [
+      "dependencies",
+      "python",
+      "dead-code"
+    ]
+  },
+  {
+    "id": "ts-prune",
+    "name": "ts-prune",
+    "url": "https://github.com/nadeesha/ts-prune",
+    "type": "code-quality-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Prints unused exports from a TypeScript project.",
+    "why": "Narrow but useful when you only need an export list.",
+    "tags": [
+      "typescript",
+      "dead-code",
+      "exports"
+    ]
+  },
+  {
+    "id": "dependency-cruiser",
+    "name": "dependency-cruiser",
+    "url": "https://github.com/sverweij/dependency-cruiser",
+    "type": "architecture-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Validates and visualizes JavaScript/TypeScript dependency graphs and architectural rules.",
+    "why": "Turns architecture boundaries into checks an agent can run.",
+    "tags": [
+      "dependencies",
+      "architecture",
+      "graph"
+    ]
+  },
+  {
+    "id": "madge",
+    "name": "madge",
+    "url": "https://github.com/pahen/madge",
+    "type": "architecture-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Generates dependency graphs and detects circular dependencies in JS/TS projects.",
+    "why": "Fast way to expose cycles before a refactor.",
+    "tags": [
+      "dependencies",
+      "circular",
+      "graph"
+    ]
+  },
+  {
+    "id": "jscpd",
+    "name": "jscpd",
+    "url": "https://github.com/kucherenko/jscpd",
+    "type": "code-quality-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Copy/paste detector for many languages.",
+    "why": "Finds duplicated logic that agents tend to create across files.",
+    "tags": [
+      "duplication",
+      "code-quality"
+    ]
+  },
+  {
+    "id": "semgrep",
+    "name": "Semgrep",
+    "url": "https://semgrep.dev/",
+    "type": "static-analysis-tool",
+    "pricing": "freemium",
+    "license": "LGPL-2.1 (OSS engine)",
+    "description": "Pattern-based static analysis for security and code-quality rules across many languages.",
+    "why": "Rules are readable and fast enough to run in an agent loop.",
+    "tags": [
+      "security",
+      "static-analysis",
+      "sast"
+    ]
+  },
+  {
+    "id": "codeql",
+    "name": "CodeQL",
+    "url": "https://codeql.github.com/",
+    "type": "static-analysis-tool",
+    "pricing": "free for public repos",
+    "license": "GitHub terms",
+    "description": "Semantic code analysis engine used by GitHub code scanning.",
+    "why": "Deep data-flow analysis for security issues in supported languages.",
+    "tags": [
+      "security",
+      "sast",
+      "data-flow"
+    ]
+  },
+  {
+    "id": "sonarqube",
+    "name": "SonarQube",
+    "url": "https://www.sonarsource.com/products/sonarqube/",
+    "type": "code-quality-platform",
+    "pricing": "freemium",
+    "license": "LGPL-3.0 (Community Build)",
+    "description": "Continuous code-quality and security analysis with quality gates.",
+    "why": "Useful when a team wants a shared gate rather than ad-hoc lint runs.",
+    "tags": [
+      "code-quality",
+      "security",
+      "ci"
+    ]
+  },
+  {
+    "id": "andrej-karpathy-skills",
+    "name": "Andrej Karpathy Guidelines & Skills",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "type": "repository",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Community-maintained coding guidelines inspired by Andrej Karpathy, covering surgical changes, explicit assumptions, and verifiable outcomes.",
+    "why": "Essential behavioral guardrail for vibe coding agents to avoid unnecessary abstractions and surface hidden assumptions.",
+    "tags": [
+      "coding-guidelines",
+      "code-quality",
+      "agent-behavior",
+      "best-practices"
+    ]
+  }
+]

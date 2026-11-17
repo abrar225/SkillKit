@@ -1,0 +1,32 @@
+{
+  "id": "frontend/react-view-transitions",
+  "name": "vercel-react-view-transitions",
+  "description": "Guide for implementing smooth, native-feeling animations using React's View Transition API (`<ViewTransition>` component, `addTransitionType`, and CSS view transition pseudo-elements). Use this skill whenever the user wants to add page transitions, animate route changes, create shared element animations, animate enter/exit of components, animate list reorder, implement directional (forward/back) navigation animations, or integrate view transitions in Next.js. Also use when the user mentions view transitions, `startViewTransition`, `ViewTransition`, transition types, or asks about animating between UI states in React without third-party animation libraries.",
+  "origin": "upstream",
+  "license": "MIT (per-skill frontmatter)",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "vercel-labs/agent-skills",
+    "url": "https://github.com/vercel-labs/agent-skills",
+    "path": "skills/react-view-transitions",
+    "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+    "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "AGENTS.md": "4bfb2fb46451abace536d85077cc45d98147edf706a418dc15634c5b1ec64d41",
+      "README.md": "aba31b4ac31c1b13d2a8054179604abd4498b0d7324746635ff0e3b0aea9d608",
+      "SKILL.md": "693acbddd1d2dcf774286867efbc9a5c09dce2da6f21f8e12618187a92f2106a",
+      "metadata.json": "b1a5ae09f3904dc83dab79f518d033bd98f1e2f55caabfdb5beeeaaf0ca5e4c2",
+      "references/css-recipes.md": "f4a5b92a7aad6befd2779e498ab04311277f179b240d2170f0a68a1444024d51",
+      "references/implementation.md": "87687de5fa2f775a6b5134ee02863ebede9ee6bc42ea8ed99bd53aa5325e78f4",
+      "references/nextjs.md": "f926a645d5e4c62fcc2d5832be0f3ad048f2ee1d17f8476324e2bc407e4b3a07",
+      "references/patterns.md": "da24d7f37c7e6b8ecbcf05525ef613d8f5be94655c233d6fa62833c8a746604f",
+      "references/troubleshooting.md": "aa6811d276dcf06dcc9aba90d1e11e1d0a29146604bf7c89a9e93a6fa8883c7a"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": []
+}

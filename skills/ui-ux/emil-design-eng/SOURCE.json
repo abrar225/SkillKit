@@ -1,0 +1,30 @@
+{
+  "id": "ui-ux/emil-design-eng",
+  "name": "emil-design-eng",
+  "description": "Emil Kowalski's design-engineering philosophy for UI polish, component design, animation decisions, and the invisible details that make software feel great. Use when building or reviewing a UI component's interactions and polish (press and hover states, popover origin, tooltip timing, transitions vs keyframes, clip-path techniques, drag details) and no narrower skill fits.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "emilkowalski/skills",
+    "url": "https://github.com/emilkowalski/skills",
+    "path": "skills/emil-design-eng",
+    "commit": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c",
+    "ref": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "cdbfe467e6c9a4940c3a19e795cecf1ba659378d7412e06c245c6ae49da47da6"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "media/hyperframes",
+  "name": "hyperframes",
+  "description": "Read first to make, edit, animate or render any video with HyperFrames (HTML rendered to video), including launch films, explainers, music videos, charts, maps, vertical clips, title cards, captions and overlays. Holds the render contract, the work loop and what each kind of video needs.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/hyperframes",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

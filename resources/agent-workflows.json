@@ -1,0 +1,318 @@
+[
+  {
+    "id": "skills-sh",
+    "name": "skills.sh",
+    "url": "https://www.skills.sh/",
+    "type": "skill-registry",
+    "pricing": "free",
+    "license": "index of community skills; per-skill licenses vary",
+    "description": "The open agent-skills ecosystem: leaderboard, topics, official packs, audits, and install commands.",
+    "why": "The fastest way to discover a skill before vendoring it. Always check the source repository license.",
+    "install": "npx skills add <owner/repo>",
+    "tags": [
+      "skills",
+      "registry",
+      "discovery"
+    ]
+  },
+  {
+    "id": "vercel-labs-skills",
+    "name": "vercel-labs/skills",
+    "url": "https://github.com/vercel-labs/skills",
+    "type": "skill",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "The find-skills skill and the Skills CLI source.",
+    "why": "Teaches an agent how to search and install from the ecosystem instead of guessing.",
+    "tags": [
+      "skills",
+      "discovery",
+      "cli"
+    ]
+  },
+  {
+    "id": "anthropics-skills",
+    "name": "Anthropic Skills",
+    "url": "https://github.com/anthropics/skills",
+    "type": "skill-library",
+    "pricing": "free",
+    "license": "Apache-2.0 per skill",
+    "description": "Anthropic's official skill collection: frontend design, skill creator, MCP builder, webapp testing, canvas, documents, and more.",
+    "why": "High-quality reference implementations for skill structure and agent workflows.",
+    "tags": [
+      "skills",
+      "anthropic",
+      "official"
+    ]
+  },
+  {
+    "id": "superpowers",
+    "name": "Superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "type": "skill-library",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "A large skill system for planning, debugging, TDD, code review, parallel agents, and verification.",
+    "why": "One of the strongest open collections for disciplined engineering workflows.",
+    "tags": [
+      "skills",
+      "engineering",
+      "tdd",
+      "review"
+    ]
+  },
+  {
+    "id": "mattpocock-skills",
+    "name": "Matt Pocock skills",
+    "url": "https://github.com/mattpocock/skills",
+    "type": "skill-library",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Engineering and productivity skills including grilling, domain modeling, codebase design, triage, and spec writing.",
+    "why": "Excellent TypeScript and product-engineering judgement encoded as skills.",
+    "tags": [
+      "skills",
+      "typescript",
+      "planning",
+      "grilling"
+    ]
+  },
+  {
+    "id": "addyosmani-agent-skills",
+    "name": "Addy Osmani Agent Skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "type": "skill-library",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Broad engineering skill set covering planning, specs, code quality, debugging, performance, security, and shipping.",
+    "why": "A well-organized, practical set that maps cleanly onto real delivery work.",
+    "tags": [
+      "skills",
+      "engineering",
+      "performance",
+      "security"
+    ]
+  },
+  {
+    "id": "system-prompts-leaks",
+    "name": "system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "type": "prompt-archive",
+    "pricing": "free",
+    "license": "CC0-1.0",
+    "description": "Archive of public system prompts and agent skills from Anthropic, OpenAI, Google, Meta, and others, updated frequently.",
+    "why": "Useful for studying how production agents structure instructions. This repository vendors a curated developer-relevant subset only.",
+    "tags": [
+      "prompts",
+      "archive",
+      "agents",
+      "reference"
+    ]
+  },
+  {
+    "id": "agent-reach",
+    "name": "Agent-Reach",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "type": "agent-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "One CLI for reading and searching Twitter/X, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu without API fees.",
+    "why": "Gives agents eyes on social and video platforms through a single interface.",
+    "tags": [
+      "agent",
+      "search",
+      "social",
+      "cli"
+    ]
+  },
+  {
+    "id": "ego-lite",
+    "name": "ego lite",
+    "url": "https://lite.ego.app/",
+    "type": "agent-browser",
+    "pricing": "free",
+    "license": "commercial product",
+    "description": "A Chromium browser designed for humans and agents, with a dedicated ego-browser skill.",
+    "why": "Lets an agent use the user's logged-in browser context instead of a blank automation profile.",
+    "tags": [
+      "browser",
+      "agent",
+      "automation",
+      "skill"
+    ]
+  },
+  {
+    "id": "vercel-agent-browser",
+    "name": "Vercel Agent Browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "type": "agent-browser",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Browser automation CLI built for AI agents, with snapshots and ref-based interaction.",
+    "why": "A practical alternative when ego lite is not available.",
+    "tags": [
+      "browser",
+      "agent",
+      "automation"
+    ]
+  },
+  {
+    "id": "playwright-mcp",
+    "name": "Playwright MCP",
+    "url": "https://github.com/microsoft/playwright-mcp",
+    "type": "mcp-server",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Playwright's accessibility-tree browser automation exposed as an MCP server.",
+    "why": "Deterministic browser actions and verification for agents that support MCP.",
+    "tags": [
+      "mcp",
+      "browser",
+      "playwright",
+      "testing"
+    ]
+  },
+  {
+    "id": "chrome-devtools-mcp",
+    "name": "Chrome DevTools MCP",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "type": "mcp-server",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Chrome DevTools exposed to agents for performance traces, console, network, and DOM inspection.",
+    "why": "Closes the loop between 'it renders' and 'it is fast and correct'.",
+    "tags": [
+      "mcp",
+      "chrome",
+      "devtools",
+      "performance"
+    ]
+  },
+  {
+    "id": "browser-use",
+    "name": "Browser Use",
+    "url": "https://github.com/browser-use/browser-use",
+    "type": "agent-browser",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Python library that lets agents control a browser through natural-language actions.",
+    "why": "A mature option for scripted browser agents outside a single IDE.",
+    "tags": [
+      "browser",
+      "python",
+      "agents"
+    ]
+  },
+  {
+    "id": "firecrawl",
+    "name": "Firecrawl",
+    "url": "https://github.com/mendableai/firecrawl",
+    "type": "scraping-tool",
+    "pricing": "freemium",
+    "license": "AGPL-3.0",
+    "description": "Turn websites into LLM-ready markdown or structured data.",
+    "why": "Reliable extraction for docs, research, and lead enrichment.",
+    "tags": [
+      "scraping",
+      "markdown",
+      "llm",
+      "mcp"
+    ]
+  },
+  {
+    "id": "crawl4ai",
+    "name": "Crawl4AI",
+    "url": "https://github.com/unclecode/crawl4ai",
+    "type": "scraping-tool",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Open-source, LLM-friendly web crawler and scraper.",
+    "why": "A self-hosted alternative when you do not want a hosted scraping service.",
+    "tags": [
+      "scraping",
+      "crawler",
+      "llm"
+    ]
+  },
+  {
+    "id": "context7",
+    "name": "Context7",
+    "url": "https://github.com/upstash/context7",
+    "type": "mcp-server",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Up-to-date library documentation exposed to agents through MCP.",
+    "why": "Reduces hallucinated APIs by giving the agent current docs.",
+    "tags": [
+      "mcp",
+      "docs",
+      "context"
+    ]
+  },
+  {
+    "id": "repomix",
+    "name": "Repomix",
+    "url": "https://github.com/yamadashy/repomix",
+    "type": "context-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Packs a repository into a single AI-friendly file with structure and token counts.",
+    "why": "Useful for whole-repo analysis when an agent cannot browse the filesystem.",
+    "tags": [
+      "context",
+      "repository",
+      "packing"
+    ]
+  },
+  {
+    "id": "serena",
+    "name": "Serena",
+    "url": "https://github.com/oraios/serena",
+    "type": "mcp-server",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Semantic code retrieval and editing tools exposed through MCP.",
+    "why": "Gives agents symbol-level navigation instead of grep-only editing.",
+    "tags": [
+      "mcp",
+      "code-intelligence",
+      "symbols"
+    ]
+  },
+  {
+    "id": "antigravity-boost",
+    "name": "Antigravity Boost (/boost)",
+    "url": "https://antigravity.google/docs/boost/",
+    "type": "builtin-agent-command",
+    "pricing": "paid Antigravity plans",
+    "license": "Google documentation; no portable skill license established",
+    "description": "Built-in Antigravity command for difficult engineering tasks, with specialized subagents, improvement rounds, and independent verification.",
+    "why": "Documents the exact /boost feature requested here. This is a host capability; no portable SKILL.md is being invented or substituted.",
+    "tags": [
+      "antigravity",
+      "boost",
+      "multi-agent",
+      "orchestration",
+      "verification"
+    ],
+    "verifiedAt": "2026-11-17",
+    "verification": "Official product documentation checked; linked rather than copied."
+  },
+  {
+    "id": "antigravity-subagents",
+    "name": "Antigravity Custom Subagents",
+    "url": "https://antigravity.google/docs/subagents",
+    "type": "official-documentation",
+    "pricing": "see Antigravity plan availability",
+    "license": "Google documentation; linked only",
+    "description": "Official guide to background subagents and the Boost, Swarm, and Teamwork orchestrators.",
+    "why": "Explains host configuration and orchestration choices without presenting built-in capabilities as portable skills.",
+    "tags": [
+      "antigravity",
+      "subagents",
+      "orchestration"
+    ],
+    "verifiedAt": "2026-11-17",
+    "verification": "Official product documentation checked; linked rather than copied."
+  }
+]

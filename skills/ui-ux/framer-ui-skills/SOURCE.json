@@ -1,0 +1,12 @@
+{
+  "id": "ui-ux/framer-ui-skills",
+  "name": "framer-ui-skills",
+  "description": "Framer's UI design system. Use when building interfaces inspired by Framer's aesthetic - dark mode, Inter font, 4px grid.",
+  "origin": "local-original",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "note": "Local daily skill.",
+  "upstream": null,
+  "originalPath": "repository (pre-existing)"
+}

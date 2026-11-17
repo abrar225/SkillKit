@@ -27,3 +27,10 @@ build/
 # Agent local state
 .gemini/antigravity/
 .planning/
+
+# Private website source (deployed separately, never published to GitHub)
+/site/
+.vercel/
+# Local agent state
+.codex/
+.agents/

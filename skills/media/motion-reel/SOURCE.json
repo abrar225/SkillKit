@@ -1,0 +1,11 @@
+{
+  "id": "media/motion-reel",
+  "name": "motion-reel",
+  "description": "Produce a beat-synced product launch reel / showreel / promo video in code. The pipeline captures a product URL's real brand assets, writes a style guide, measures the beat grid, and gets a shotlist approved. It then builds a deterministic seek(t) film with springs, runs 3+ scored critique rounds to 8+, and renders H.264 with synthesized music, SFX and optional Fish Audio voiceover in 16:9, 1:1, 4:5 and 9:16. Use when the user asks for a launch video, product reel, motion reel, showreel, promo, sizzle or social ad for a product or URL, or says \"motion-reel\".",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/motion-reel",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "automations/agent-reach",
+  "name": "agent-reach",
+  "description": "只读读取各平台内容：搜索、读帖、看评论、取字幕、查行情和职位。 Use when 用户提到或贴出链接：小红书/xiaohongshu、B站/bilibili、Twitter/X、Reddit、 YouTube（字幕、转录）、GitHub、V2EX、雪球/股票行情、LinkedIn/Boss直聘 职位、 Instagram、Facebook、小宇宙播客；或说\"帮我搜/看看/读一下这个链接\"而自带网页搜索/读取不可用、失败或拿不到正文； 或要安装、加上/去掉某个平台、登录/退出、看状态、更新、卸载 Agent Reach。 不做：发帖、评论、点赞、私信等任何写操作；不替用户登录、不索要密码。 公开内容优先用 Agent 自带工具，Reach 补缺口。",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "Panniantong/Agent-Reach",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "path": "agent_reach/skill",
+    "commit": "c70ae6da5d39bc90e09ad2ae0575ccc89f31e284",
+    "ref": "c70ae6da5d39bc90e09ad2ae0575ccc89f31e284"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "24f81769fbd0c2ffcddee574c8255022346fc39adc1f78e75c0e30d9ec3769c1",
+      "SKILL_en.md": "f22bae507f150547f5ddef367ff65d503842c6315033309a1b1cc57c820216c2",
+      "references/capabilities.md": "36105d4686493e67eb2f6d7cb47479e06bef6fbfe7159f08d3a6b64314b1cd79",
+      "references/maintenance.md": "316585c8837f3e12fd88cb1769cf9b00eed9c83c2fc70f46a6dcb791012121e1",
+      "references/sessions.md": "2b15b340db21838680659b4694a419f6799036e49ddb4b8042e7b893a4dbadd3"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "e94c131ac1c2f78cfd8f7e69da354c0ff58e4e54071697703d56856c036de402"
+    }
+  ]
+}

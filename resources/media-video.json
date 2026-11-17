@@ -1,0 +1,68 @@
+[
+  {
+    "id": "motion-canvas",
+    "name": "Motion Canvas",
+    "url": "https://motioncanvas.io/",
+    "type": "animation-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Programmatic animation with a TypeScript generator API and live editor.",
+    "why": "Good for technical explainers and deterministic motion.",
+    "tags": ["animation", "typescript", "video"]
+  },
+  {
+    "id": "manim",
+    "name": "Manim",
+    "url": "https://www.manim.community/",
+    "type": "animation-tool",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "Python animation engine for mathematical and technical explainers.",
+    "why": "A strong choice for precise diagrams and equation-driven motion.",
+    "tags": ["python", "animation", "math"]
+  },
+  {
+    "id": "ffmpeg",
+    "name": "FFmpeg",
+    "url": "https://ffmpeg.org/",
+    "type": "media-tool",
+    "pricing": "free",
+    "license": "LGPL/GPL depending on build",
+    "description": "The standard command-line toolkit for audio and video processing.",
+    "why": "Almost every video pipeline eventually needs it for encode, trim, and mux.",
+    "tags": ["video", "audio", "encoding"]
+  },
+  {
+    "id": "p5js",
+    "name": "p5.js",
+    "url": "https://p5js.org/",
+    "type": "creative-coding",
+    "pricing": "free",
+    "license": "LGPL-2.1",
+    "description": "Creative coding library for canvas sketches and generative art.",
+    "why": "A low-friction way to make algorithmic visuals for the web.",
+    "tags": ["creative-coding", "canvas", "generative-art"]
+  },
+  {
+    "id": "hyperframes-skills",
+    "name": "HyperFrames Skills",
+    "url": "https://github.com/heygen-com/hyperframes",
+    "type": "skill-library",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Video skills for launch films, explainers, music videos, charts, maps, captions, and rendering.",
+    "why": "A complete agent-first video workflow with a registry of editable blocks.",
+    "tags": ["video", "skills", "animation", "rendering"]
+  },
+  {
+    "id": "remotion-skills",
+    "name": "Remotion Skills",
+    "url": "https://github.com/remotion-dev/skills",
+    "type": "skill-library",
+    "pricing": "free",
+    "license": "see repository",
+    "description": "Skills for creating, animating, captioning, and rendering Remotion videos.",
+    "why": "Useful when the project already uses Remotion.",
+    "tags": ["video", "remotion", "skills"]
+  }
+]

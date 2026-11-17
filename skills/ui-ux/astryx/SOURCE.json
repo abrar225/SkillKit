@@ -1,0 +1,30 @@
+{
+  "id": "ui-ux/astryx",
+  "name": "astryx",
+  "description": "Astryx, a design system and UI library, is available on this computer through the astryx command; use it when building or changing UI, choosing components, layout, styling or theming, working with a design system, or in any project that depends on @astryxdesign packages or mentions Astryx.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "meta/astryx",
+    "url": "https://github.com/meta/astryx",
+    "path": "plugins/astryx/skills/astryx",
+    "commit": "0fbecc659b1eda97e0f2e689a83ce4b0f5b083d4",
+    "ref": "0fbecc659b1eda97e0f2e689a83ce4b0f5b083d4"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "0d1aad9cf9d40ced1bef802544b89ce41c82bc7c00d566c4cd702108e174874a"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "a6855be541fc8f446acd1bc4f2f8efce1ace6dce71dba32fcd8da553ee54b473"
+    }
+  ]
+}

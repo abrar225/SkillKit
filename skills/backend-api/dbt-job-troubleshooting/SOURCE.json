@@ -1,0 +1,31 @@
+{
+  "id": "backend-api/dbt-job-troubleshooting",
+  "name": "troubleshooting-dbt-job-errors",
+  "description": "Diagnoses dbt Cloud/platform job failures by analyzing run logs, querying the Admin API, reviewing git history, and investigating data issues. Use when a dbt Cloud/platform job fails and you need to diagnose the root cause, especially when error messages are unclear or when intermittent failures occur. Do not use for local dbt development errors.",
+  "origin": "upstream",
+  "license": "Apache-2.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "dbt-labs/dbt-agent-skills",
+    "url": "https://github.com/dbt-labs/dbt-agent-skills",
+    "path": "skills/dbt/skills/troubleshooting-dbt-job-errors",
+    "commit": "b8facde20b7a92c40ce3e6b86b71c4b92aa44040",
+    "ref": "b8facde20b7a92c40ce3e6b86b71c4b92aa44040"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "899cb284651b722de729c0a4fe4761f4a536f0a6c48f4aad8fe44ab7783d1b7a",
+      "references/investigation-template.md": "351ea62958b63303bd53ea636aa5410b04232d5ddf61f14e5cf1f0da1cceab3d"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "a25c0f444db00399e225e96559b376d92188fbab622b50c5d4db7c556f77daff"
+    }
+  ]
+}

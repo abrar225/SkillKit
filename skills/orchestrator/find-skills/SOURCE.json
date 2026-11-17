@@ -1,0 +1,30 @@
+{
+  "id": "orchestrator/find-skills",
+  "name": "find-skills",
+  "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "vercel-labs/skills",
+    "url": "https://github.com/vercel-labs/skills",
+    "path": "skills/find-skills",
+    "commit": "57217cf86ba38148a57af9e90d14a4c049558330",
+    "ref": "57217cf86ba38148a57af9e90d14a4c049558330"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca"
+    }
+  ]
+}

@@ -1,0 +1,5029 @@
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "__version__": 3,
+    "block": {
+      "3d313d90-aa8f-8076-9b6a-ecefb5f83f45": {
+        "spaceId": "4a1109f7-79dc-4b65-804e-53300726b814",
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "version": 21,
+            "type": "page",
+            "properties": {
+              "title": [
+                [
+                  "The 6 Documents You Need Before Vibe Coding Any App"
+                ]
+              ]
+            },
+            "content": [
+              "3d313d90-aa8f-8193-b4c3-d8b3cceaa1cf",
+              "3d313d90-aa8f-8188-a811-ce2a6668a350",
+              "3d313d90-aa8f-816a-8ca3-ceb25631b4b3",
+              "3d313d90-aa8f-814c-95ba-dd5e382d9667",
+              "3d313d90-aa8f-8178-8bee-de12657007be",
+              "3d313d90-aa8f-814b-8b4e-f3128e5d8f7b",
+              "3d313d90-aa8f-8104-90d9-e5a8d933d704",
+              "3d313d90-aa8f-814b-9407-f1f50e7da332",
+              "3d313d90-aa8f-81a7-a519-f668926f0ea5",
+              "3d313d90-aa8f-8163-8d39-e708f197654f",
+              "3d313d90-aa8f-812c-b73b-e93531f6846e",
+              "3d313d90-aa8f-8151-8e69-ebfdf5480310",
+              "3d313d90-aa8f-8182-afe3-eb13497a7de3",
+              "3d313d90-aa8f-81cd-b032-f36bb942fd0a",
+              "3d313d90-aa8f-8186-b473-d9be0152e6b5",
+              "3d313d90-aa8f-81e0-bb00-d4c4665ffaec",
+              "3d313d90-aa8f-810e-881b-eefcaecae89d",
+              "3d313d90-aa8f-8142-8d05-ecc6ec54338d",
+              "3d313d90-aa8f-8157-9214-cacee0365bfc",
+              "3d313d90-aa8f-81cb-90a9-d48d133acc5b",
+              "3d313d90-aa8f-8156-973f-fa05391c61be",
+              "3d313d90-aa8f-8116-a2ef-c3f5e68ef53d",
+              "3d313d90-aa8f-8181-bc7a-dc4b6d158f69",
+              "3d313d90-aa8f-81a9-a82d-dfbf0fb093ed",
+              "3d313d90-aa8f-81e6-a0b9-e75edcddcc02",
+              "3d313d90-aa8f-817f-868e-dbc982cb1e53",
+              "3d313d90-aa8f-81c3-93d1-fb830db733b3",
+              "3d313d90-aa8f-8138-a6d2-c4bf462af98a",
+              "3d313d90-aa8f-8182-8e6c-dc457dc9be33",
+              "3d313d90-aa8f-813b-a683-c9465c7c60e3",
+              "3d313d90-aa8f-81ae-945d-c6ca7b858374",
+              "3d313d90-aa8f-8101-a76f-c9e2a1e7760c",
+              "3d313d90-aa8f-81cf-adbb-fbe6756029b0",
+              "3d313d90-aa8f-8111-8f33-c20870077a6a",
+              "3d313d90-aa8f-816a-a0fd-f54d0334a26d",
+              "3d313d90-aa8f-81e2-abd1-d1165ea00ee9",
+              "3d313d90-aa8f-81e5-a327-e9988a0b38ac",
+              "3d313d90-aa8f-814d-952f-c6281b43b75e",
+              "3d313d90-aa8f-81c9-a22d-ea5275922b36",
+              "3d313d90-aa8f-811f-b959-cf0536f1ba97",
+              "3d313d90-aa8f-8165-8506-d2d39b4a572b",
+              "3d313d90-aa8f-81e5-9778-f1fda894cf24",
+              "3d313d90-aa8f-81b0-b674-cc9ee1dfbf17",
+              "3d313d90-aa8f-81b4-afb9-ff2e8af122a5",
+              "3d313d90-aa8f-81bd-b8e3-e2961b82ce81",
+              "3d313d90-aa8f-8149-b8c8-c29458fed348",
+              "3d313d90-aa8f-8107-90fd-fad5efb7edc2",
+              "3d313d90-aa8f-810e-a9c3-dd20939fc25f",
+              "3d313d90-aa8f-81e6-9506-d79807ae7ebf",
+              "3d313d90-aa8f-8198-813d-ea2491e4b237",
+              "3d313d90-aa8f-81d5-bd9a-e9c0e402e7f4",
+              "3d313d90-aa8f-8167-8d73-d8102ad4398c",
+              "3d313d90-aa8f-813c-a079-dbb442bada93",
+              "3d313d90-aa8f-81f8-9bfc-da78220e0a9c",
+              "3d313d90-aa8f-81f6-9803-dbc0743bb559",
+              "3d313d90-aa8f-8178-8ea9-cd708b860f1d",
+              "3d313d90-aa8f-81bf-8c30-f1899fa60def",
+              "3d313d90-aa8f-81b0-a7a0-da505e7c17b2",
+              "3d313d90-aa8f-819e-bc84-ca7a26055286",
+              "3d313d90-aa8f-81b1-bf1d-eff016828486",
+              "3d313d90-aa8f-81a9-ba7b-e13667f33dd2",
+              "3d313d90-aa8f-81b1-b567-d9b342f96239",
+              "3d313d90-aa8f-8160-8498-f483c50a9a6d",
+              "3d313d90-aa8f-8136-943c-dfef7b20c466",
+              "3d313d90-aa8f-8183-a4f4-de7a2b4caf9b",
+              "3d313d90-aa8f-815c-bf91-c7b79c0dc1b8",
+              "3d313d90-aa8f-81cf-885e-cc90ab329cac",
+              "3d313d90-aa8f-81fe-941c-e9ef291255c3",
+              "3d313d90-aa8f-8127-ad0e-c931b10ced75",
+              "3d313d90-aa8f-81dd-ad68-f972e5d75d07",
+              "3d313d90-aa8f-81e3-932a-cdff883d20d2",
+              "3d313d90-aa8f-81f6-aa32-fc477838331f",
+              "3d313d90-aa8f-8105-8c53-d2d14b6da0e5",
+              "3d313d90-aa8f-8151-a6ab-f65b80fd6724",
+              "3d313d90-aa8f-8174-9323-db4ad2c9309c",
+              "3d313d90-aa8f-81cf-9208-cf35fca015ae",
+              "3d313d90-aa8f-81a9-a4a2-cb886ea335ff",
+              "3d313d90-aa8f-8129-9478-c8ee47d2dfe7",
+              "3d313d90-aa8f-813c-ace0-c9eaa794d3ec",
+              "3d313d90-aa8f-815a-ab70-ceb2f7f7b443",
+              "3d313d90-aa8f-81e6-bbdd-f16abb698ada"
+            ],
+            "format": {
+              "site_id": "3d313d90-aa8f-80ae-9a07-00795bb699f7"
+            },
+            "permissions": [
+              {
+                "role": "reader",
+                "type": "public_permission",
+                "is_site": true,
+                "added_timestamp": 1788677695182
+              }
+            ],
+            "created_time": 1788677633699,
+            "last_edited_time": 1788677694861,
+            "parent_id": "39e13d90-aa8f-800a-ae07-d981d9820a02",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "FkTDsO2-h6gQg-53RdRrKQ,\"start\",\"end\"",
+                "n": {
+                  "FkTDsO2-h6gQg-53RdRrKQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "FkTDsO2-h6gQg-53RdRrKQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "-WHuX9BmjBK4",
+                            57
+                          ],
+                          "o": "start",
+                          "l": 51,
+                          "c": "The 6 Documents You Need Before Vibe Coding Any App"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "BUmZRayAtBdm",
+                            19
+                          ],
+                          "o": "start",
+                          "l": -38
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "-WHuX9BmjBK4",
+                            1
+                          ],
+                          "o": "start",
+                          "l": -18
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": [
+                      "UQ3a-hJYi3auSMXuddqCEw,[\"-WHuX9BmjBK4\",72],\"end\""
+                    ]
+                  },
+                  "UQ3a-hJYi3auSMXuddqCEw,[\"-WHuX9BmjBK4\",72],\"end\"": {
+                    "s": {
+                      "x": "UQ3a-hJYi3auSMXuddqCEw",
+                      "i": [
+                        {
+                          "t": "p",
+                          "i": [
+                            "-WHuX9BmjBK4",
+                            72
+                          ],
+                          "o": "start"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "HZGgFezjwz5u",
+                            1
+                          ],
+                          "o": "start",
+                          "l": -51
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": "l"
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "39e13d90-aa8f-800a-ae07-d981d9820a02": {
+        "spaceId": "4a1109f7-79dc-4b65-804e-53300726b814",
+        "value": {
+          "role": "none"
+        }
+      },
+      "3d313d90-aa8f-8193-b4c3-d8b3cceaa1cf": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8193-b4c3-d8b3cceaa1cf",
+            "version": 3,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "Turn an app idea into clear instructions before asking an AI coding agent to build it.",
+                  [
+                    [
+                      "b"
+                    ]
+                  ]
+                ]
+              ]
+            },
+            "created_time": 1788677633515,
+            "last_edited_time": 1788677633515,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "pdMbGH_-0BuqrEF_4th4tA,\"start\",\"end\"",
+                "n": {
+                  "pdMbGH_-0BuqrEF_4th4tA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "pdMbGH_-0BuqrEF_4th4tA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "Ut0HPP0rzctB",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 86,
+                          "c": "Turn an app idea into clear instructions before asking an AI coding agent to build it.",
+                          "b": [
+                            {
+                              "t": "a",
+                              "x": "pdMbGH_-0BuqrEF_4th4tA",
+                              "l": "",
+                              "i": [
+                                "Ut0HPP0rzctB",
+                                87
+                              ],
+                              "s": {
+                                "i": [
+                                  "Ut0HPP0rzctB",
+                                  1
+                                ],
+                                "a": "b"
+                              },
+                              "e": {
+                                "i": "end",
+                                "a": "b"
+                              },
+                              "a": [
+                                "b"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "t": "e",
+                          "b": []
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8188-a811-ce2a6668a350": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8188-a811-ce2a6668a350",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "One prompt can describe an idea. It usually cannot make every product, technical, design and data decision consistently."
+                ]
+              ]
+            },
+            "created_time": 1788677633517,
+            "last_edited_time": 1788677633517,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "AURUmCRTgraBBirCBGxBXQ,\"start\",\"end\"",
+                "n": {
+                  "AURUmCRTgraBBirCBGxBXQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "AURUmCRTgraBBirCBGxBXQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "_2YeTa3zP-zt",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 120,
+                          "c": "One prompt can describe an idea. It usually cannot make every product, technical, design and data decision consistently."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-816a-8ca3-ceb25631b4b3": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-816a-8ca3-ceb25631b4b3",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "This guide helps you create six connected documents:"
+                ]
+              ]
+            },
+            "created_time": 1788677633520,
+            "last_edited_time": 1788677633520,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "slGF02ofUamQzhr2d5aykw,\"start\",\"end\"",
+                "n": {
+                  "slGF02ofUamQzhr2d5aykw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "slGF02ofUamQzhr2d5aykw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "ybsjwi9qOZHV",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 52,
+                          "c": "This guide helps you create six connected documents:"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-814c-95ba-dd5e382d9667": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-814c-95ba-dd5e382d9667",
+            "version": 3,
+            "type": "numbered_list",
+            "properties": {
+              "title": [
+                [
+                  "Product Requirements Document (PRD)"
+                ]
+              ]
+            },
+            "created_time": 1788677633523,
+            "last_edited_time": 1788677633523,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "-z715fRskactKyx2E1bIqQ,\"start\",\"end\"",
+                "n": {
+                  "-z715fRskactKyx2E1bIqQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "-z715fRskactKyx2E1bIqQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "3fCj16-vj2xg",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 35,
+                          "c": "Product Requirements Document (PRD)"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8178-8bee-de12657007be": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8178-8bee-de12657007be",
+            "version": 3,
+            "type": "numbered_list",
+            "properties": {
+              "title": [
+                [
+                  "Technical Requirements Document (TRD)"
+                ]
+              ]
+            },
+            "created_time": 1788677633525,
+            "last_edited_time": 1788677633525,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "RmW98Puxzp8sM_tHI4k85w,\"start\",\"end\"",
+                "n": {
+                  "RmW98Puxzp8sM_tHI4k85w,\"start\",\"end\"": {
+                    "s": {
+                      "x": "RmW98Puxzp8sM_tHI4k85w",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "AEIrLHshOo8P",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 37,
+                          "c": "Technical Requirements Document (TRD)"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-814b-8b4e-f3128e5d8f7b": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-814b-8b4e-f3128e5d8f7b",
+            "version": 3,
+            "type": "numbered_list",
+            "properties": {
+              "title": [
+                [
+                  "App Flow"
+                ]
+              ]
+            },
+            "created_time": 1788677633526,
+            "last_edited_time": 1788677633526,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "uPEQGKKvEJbiLOwzwWdX0Q,\"start\",\"end\"",
+                "n": {
+                  "uPEQGKKvEJbiLOwzwWdX0Q,\"start\",\"end\"": {
+                    "s": {
+                      "x": "uPEQGKKvEJbiLOwzwWdX0Q",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "t_a79CTfUyHi",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 8,
+                          "c": "App Flow"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8104-90d9-e5a8d933d704": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8104-90d9-e5a8d933d704",
+            "version": 3,
+            "type": "numbered_list",
+            "properties": {
+              "title": [
+                [
+                  "UI/UX Design Brief"
+                ]
+              ]
+            },
+            "created_time": 1788677633527,
+            "last_edited_time": 1788677633527,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "XCdBk6v0mIrJNeBgrgtqHg,\"start\",\"end\"",
+                "n": {
+                  "XCdBk6v0mIrJNeBgrgtqHg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "XCdBk6v0mIrJNeBgrgtqHg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "MBzM59NkGWdM",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 18,
+                          "c": "UI/UX Design Brief"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-814b-9407-f1f50e7da332": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-814b-9407-f1f50e7da332",
+            "version": 3,
+            "type": "numbered_list",
+            "properties": {
+              "title": [
+                [
+                  "Backend Schema"
+                ]
+              ]
+            },
+            "created_time": 1788677633529,
+            "last_edited_time": 1788677633529,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "KXnc7kCr-JYe_NoL_QcVdQ,\"start\",\"end\"",
+                "n": {
+                  "KXnc7kCr-JYe_NoL_QcVdQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "KXnc7kCr-JYe_NoL_QcVdQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "MOmGSotA9O7I",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 14,
+                          "c": "Backend Schema"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81a7-a519-f668926f0ea5": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81a7-a519-f668926f0ea5",
+            "version": 3,
+            "type": "numbered_list",
+            "properties": {
+              "title": [
+                [
+                  "Implementation Plan"
+                ]
+              ]
+            },
+            "created_time": 1788677633530,
+            "last_edited_time": 1788677633530,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "1zOGMV_D18hRfMM9FJOmjQ,\"start\",\"end\"",
+                "n": {
+                  "1zOGMV_D18hRfMM9FJOmjQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "1zOGMV_D18hRfMM9FJOmjQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "QQpJhb002dIn",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 19,
+                          "c": "Implementation Plan"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8163-8d39-e708f197654f": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8163-8d39-e708f197654f",
+            "version": 3,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "You can create them with Claude, ChatGPT or another capable AI assistant. Generate them "
+                ],
+                [
+                  "one at a time in this order",
+                  [
+                    [
+                      "b"
+                    ]
+                  ]
+                ],
+                [
+                  ". Review and approve each document before moving to the next one."
+                ]
+              ]
+            },
+            "created_time": 1788677633532,
+            "last_edited_time": 1788677633532,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "SqUWskBxnIRalXNU7nO_rg,\"start\",\"end\"",
+                "n": {
+                  "SqUWskBxnIRalXNU7nO_rg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "SqUWskBxnIRalXNU7nO_rg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "s6HxwkxjLX9E",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 88,
+                          "c": "You can create them with Claude, ChatGPT or another capable AI assistant. Generate them "
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "s6HxwkxjLX9E",
+                            89
+                          ],
+                          "o": [
+                            "s6HxwkxjLX9E",
+                            88
+                          ],
+                          "l": 27,
+                          "c": "one at a time in this order",
+                          "b": [
+                            {
+                              "t": "a",
+                              "x": "SqUWskBxnIRalXNU7nO_rg",
+                              "l": "",
+                              "i": [
+                                "s6HxwkxjLX9E",
+                                181
+                              ],
+                              "s": {
+                                "i": [
+                                  "s6HxwkxjLX9E",
+                                  89
+                                ],
+                                "a": "b"
+                              },
+                              "e": {
+                                "i": [
+                                  "s6HxwkxjLX9E",
+                                  116
+                                ],
+                                "a": "b"
+                              },
+                              "a": [
+                                "b"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "s6HxwkxjLX9E",
+                            116
+                          ],
+                          "o": [
+                            "s6HxwkxjLX9E",
+                            115
+                          ],
+                          "l": 65,
+                          "c": ". Review and approve each document before moving to the next one.",
+                          "b": []
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-812c-b73b-e93531f6846e": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-812c-b73b-e93531f6846e",
+            "version": 2,
+            "type": "quote",
+            "properties": {
+              "title": [
+                [
+                  "These are practical planning documents for AI-assisted development, not universal industry standards. Adjust their depth to the size and risk of your project."
+                ]
+              ]
+            },
+            "created_time": 1788677633536,
+            "last_edited_time": 1788677633536,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "sB9WDuDiPWT-u4zAu8e2Rw,\"start\",\"end\"",
+                "n": {
+                  "sB9WDuDiPWT-u4zAu8e2Rw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "sB9WDuDiPWT-u4zAu8e2Rw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "B5sLXCKvfeEx",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 158,
+                          "c": "These are practical planning documents for AI-assisted development, not universal industry standards. Adjust their depth to the size and risk of your project."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8151-8e69-ebfdf5480310": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8151-8e69-ebfdf5480310",
+            "version": 1,
+            "type": "divider",
+            "created_time": 1788677633538,
+            "last_edited_time": 1788677633538,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "yxZ1PuXvTN6O7MDv8v-IQQ,\"start\",\"end\"",
+                "n": {
+                  "yxZ1PuXvTN6O7MDv8v-IQQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "yxZ1PuXvTN6O7MDv8v-IQQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8182-afe3-eb13497a7de3": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8182-afe3-eb13497a7de3",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Why the Order Matters"
+                ]
+              ]
+            },
+            "created_time": 1788677633539,
+            "last_edited_time": 1788677633539,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "PVm_Gn2mv1XVw0AplQAjVg,\"start\",\"end\"",
+                "n": {
+                  "PVm_Gn2mv1XVw0AplQAjVg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "PVm_Gn2mv1XVw0AplQAjVg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "etf42bRAXBOC",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 21,
+                          "c": "Why the Order Matters"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81cd-b032-f36bb942fd0a": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81cd-b032-f36bb942fd0a",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "App idea\n↓\nPRD — what are we building?\n↓\nTRD — how will it be built?\n↓\nApp Flow — how does the user move through it?\n↓\nUI/UX Brief — how should it look and behave?\n↓\nBackend Schema — how is the data organised?\n↓\nImplementation Plan — in what order should it be built?"
+                ]
+              ],
+              "language": [
+                [
+                  "Plain Text"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633542,
+            "last_edited_time": 1788677633542,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "wAtjfEVQnSZKWsc52CQvmQ,\"start\",\"end\"",
+                "n": {
+                  "wAtjfEVQnSZKWsc52CQvmQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "wAtjfEVQnSZKWsc52CQvmQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "cUkZP9kDQ5eF",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 267,
+                          "c": "App idea\n↓\nPRD — what are we building?\n↓\nTRD — how will it be built?\n↓\nApp Flow — how does the user move through it?\n↓\nUI/UX Brief — how should it look and behave?\n↓\nBackend Schema — how is the data organised?\n↓\nImplementation Plan — in what order should it be built?"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8186-b473-d9be0152e6b5": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8186-b473-d9be0152e6b5",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "If a later document conflicts with an approved earlier document, fix the conflict before starting development."
+                ]
+              ]
+            },
+            "created_time": 1788677633545,
+            "last_edited_time": 1788677633545,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "8uWUj4itZrQ5N3LWU1OTRQ,\"start\",\"end\"",
+                "n": {
+                  "8uWUj4itZrQ5N3LWU1OTRQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "8uWUj4itZrQ5N3LWU1OTRQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "vPqDBBXz61L9",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 110,
+                          "c": "If a later document conflicts with an approved earlier document, fix the conflict before starting development."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81e0-bb00-d4c4665ffaec": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81e0-bb00-d4c4665ffaec",
+            "version": 1,
+            "type": "divider",
+            "created_time": 1788677633547,
+            "last_edited_time": 1788677633547,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "aJUL-MTwYmQ_t47ZMqTnng,\"start\",\"end\"",
+                "n": {
+                  "aJUL-MTwYmQ_t47ZMqTnng,\"start\",\"end\"": {
+                    "s": {
+                      "x": "aJUL-MTwYmQ_t47ZMqTnng",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-810e-881b-eefcaecae89d": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-810e-881b-eefcaecae89d",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Before You Start: Write a Small App Brief"
+                ]
+              ]
+            },
+            "created_time": 1788677633548,
+            "last_edited_time": 1788677633548,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "0LWqo9ChsPUFS53pUb_G2A,\"start\",\"end\"",
+                "n": {
+                  "0LWqo9ChsPUFS53pUb_G2A,\"start\",\"end\"": {
+                    "s": {
+                      "x": "0LWqo9ChsPUFS53pUb_G2A",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "X2Yyt0lw71sj",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 41,
+                          "c": "Before You Start: Write a Small App Brief"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8142-8d05-ecc6ec54338d": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8142-8d05-ecc6ec54338d",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "Complete this first. Do not make the AI guess missing product decisions."
+                ]
+              ]
+            },
+            "created_time": 1788677633551,
+            "last_edited_time": 1788677633551,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "mM3RALi0UiwFu6vZOLYcjQ,\"start\",\"end\"",
+                "n": {
+                  "mM3RALi0UiwFu6vZOLYcjQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "mM3RALi0UiwFu6vZOLYcjQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "fUGxSyYBh1ME",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 72,
+                          "c": "Complete this first. Do not make the AI guess missing product decisions."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8157-9214-cacee0365bfc": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8157-9214-cacee0365bfc",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "# App Brief\n\nApp name:\n\nOne-line idea:\n\nProblem it solves:\n\nWho it is for:\n\nThe main action a user should complete:\n\nMust-have features:\n-\n-\n-\n\nNice-to-have features:\n-\n-\n\nPlatform:\n-Web / iOS / Android / multiple\n\nBusiness model, if relevant:\n\nImportant constraints:\n-Deadline:\n-Budget:\n-Required tools or services:\n-Privacy or security requirements:\n\nReferences or existing products:"
+                ]
+              ],
+              "language": [
+                [
+                  "Markdown"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633554,
+            "last_edited_time": 1788677633554,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "X2xVCHshihW-oAxt53raXA,\"start\",\"end\"",
+                "n": {
+                  "X2xVCHshihW-oAxt53raXA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "X2xVCHshihW-oAxt53raXA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "NrjrGheJuVGE",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 385,
+                          "c": "# App Brief\n\nApp name:\n\nOne-line idea:\n\nProblem it solves:\n\nWho it is for:\n\nThe main action a user should complete:\n\nMust-have features:\n-\n-\n-\n\nNice-to-have features:\n-\n-\n\nPlatform:\n-Web / iOS / Android / multiple\n\nBusiness model, if relevant:\n\nImportant constraints:\n-Deadline:\n-Budget:\n-Required tools or services:\n-Privacy or security requirements:\n\nReferences or existing products:"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81cb-90a9-d48d133acc5b": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81cb-90a9-d48d133acc5b",
+            "version": 3,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "Save it as "
+                ],
+                [
+                  "00-app-brief.md",
+                  [
+                    [
+                      "c"
+                    ]
+                  ]
+                ],
+                [
+                  "."
+                ]
+              ]
+            },
+            "created_time": 1788677633557,
+            "last_edited_time": 1788677633557,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "mZmNxbPMx5gd640dQx3CyQ,\"start\",\"end\"",
+                "n": {
+                  "mZmNxbPMx5gd640dQx3CyQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "mZmNxbPMx5gd640dQx3CyQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "3-FFkVcEffe3",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 11,
+                          "c": "Save it as "
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "3-FFkVcEffe3",
+                            12
+                          ],
+                          "o": [
+                            "3-FFkVcEffe3",
+                            11
+                          ],
+                          "l": 15,
+                          "c": "00-app-brief.md",
+                          "b": [
+                            {
+                              "t": "a",
+                              "x": "mZmNxbPMx5gd640dQx3CyQ",
+                              "l": "",
+                              "i": [
+                                "3-FFkVcEffe3",
+                                28
+                              ],
+                              "s": {
+                                "i": [
+                                  "3-FFkVcEffe3",
+                                  12
+                                ],
+                                "a": "b"
+                              },
+                              "e": {
+                                "i": [
+                                  "3-FFkVcEffe3",
+                                  27
+                                ],
+                                "a": "b"
+                              },
+                              "a": [
+                                "c"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "3-FFkVcEffe3",
+                            27
+                          ],
+                          "o": [
+                            "3-FFkVcEffe3",
+                            26
+                          ],
+                          "l": 1,
+                          "c": ".",
+                          "b": []
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8156-973f-fa05391c61be": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8156-973f-fa05391c61be",
+            "version": 1,
+            "type": "divider",
+            "created_time": 1788677633559,
+            "last_edited_time": 1788677633559,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "Kg0x_T5jNOqHomdb9u8fsg,\"start\",\"end\"",
+                "n": {
+                  "Kg0x_T5jNOqHomdb9u8fsg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "Kg0x_T5jNOqHomdb9u8fsg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8116-a2ef-c3f5e68ef53d": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8116-a2ef-c3f5e68ef53d",
+            "version": 2,
+            "type": "header",
+            "properties": {
+              "title": [
+                [
+                  "1. Product Requirements Document (PRD)"
+                ]
+              ]
+            },
+            "created_time": 1788677633561,
+            "last_edited_time": 1788677633561,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "WuQIxjPqOsG8byFmeSVqlg,\"start\",\"end\"",
+                "n": {
+                  "WuQIxjPqOsG8byFmeSVqlg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "WuQIxjPqOsG8byFmeSVqlg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "ZO4s2QJfp4-c",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 38,
+                          "c": "1. Product Requirements Document (PRD)"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8181-bc7a-dc4b6d158f69": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8181-bc7a-dc4b6d158f69",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "What It Controls"
+                ]
+              ]
+            },
+            "created_time": 1788677633562,
+            "last_edited_time": 1788677633562,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "HNc8BCamPBaff-AdeBJNuw,\"start\",\"end\"",
+                "n": {
+                  "HNc8BCamPBaff-AdeBJNuw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "HNc8BCamPBaff-AdeBJNuw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "l9oivZbOChgR",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 16,
+                          "c": "What It Controls"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81a9-a82d-dfbf0fb093ed": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81a9-a82d-dfbf0fb093ed",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "The PRD explains the product itself: the problem, users, core experience, features, scope and success criteria. It prevents the coding agent from inventing features or solving a different problem."
+                ]
+              ]
+            },
+            "created_time": 1788677633565,
+            "last_edited_time": 1788677633565,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "SE0sIFUIrmoDR6-tyXibgQ,\"start\",\"end\"",
+                "n": {
+                  "SE0sIFUIrmoDR6-tyXibgQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "SE0sIFUIrmoDR6-tyXibgQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "DhCYLsaUDS8O",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 196,
+                          "c": "The PRD explains the product itself: the problem, users, core experience, features, scope and success criteria. It prevents the coding agent from inventing features or solving a different problem."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81e6-a0b9-e75edcddcc02": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81e6-a0b9-e75edcddcc02",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Copy-Ready PRD Template"
+                ]
+              ]
+            },
+            "created_time": 1788677633567,
+            "last_edited_time": 1788677633567,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "OQ0FtkKLrER4JnOjoFEfww,\"start\",\"end\"",
+                "n": {
+                  "OQ0FtkKLrER4JnOjoFEfww,\"start\",\"end\"": {
+                    "s": {
+                      "x": "OQ0FtkKLrER4JnOjoFEfww",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "3_Pf15NyZ8Ld",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 23,
+                          "c": "Copy-Ready PRD Template"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-817f-868e-dbc982cb1e53": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-817f-868e-dbc982cb1e53",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "# Product Requirements Document\n\n## 1. Product Overview\n-Product name:\n-One-sentence description:\n-Problem being solved:\n-Why this product should exist:\n\n## 2. Target Users\n-Primary user:\n-Their current problem:\n-Their desired outcome:\n-Secondary users, if any:\n\n## 3. Core User Outcome\nDescribe the single most important result a user should achieve.\n\n## 4. Core Features\nFor every feature include:\n-Feature name\n-User need\n-What the feature does\n-Inputs\n-Expected output\n-Acceptance criteria\n-Error or empty states\n\n## 5. Scope\n### Included in version one\n-\n\n### Explicitly excluded from version one\n-\n\n### Possible later additions\n-\n\n## 6. User Stories\n-As a [user], I want to [action], so that [outcome].\n\n## 7. Functional Requirements\n-\n\n## 8. Non-Functional Requirements\n-Performance\n-Accessibility\n-Privacy\n-Security\n-Browser or device support\n\n## 9. Success Criteria\n-\n\n## 10. Assumptions and Open Questions\n-"
+                ]
+              ],
+              "language": [
+                [
+                  "Markdown"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633571,
+            "last_edited_time": 1788677633571,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "UZY9OAWhCFGspJo4YM1fUg,\"start\",\"end\"",
+                "n": {
+                  "UZY9OAWhCFGspJo4YM1fUg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "UZY9OAWhCFGspJo4YM1fUg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "k4viz3tSY7PN",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 917,
+                          "c": "# Product Requirements Document\n\n## 1. Product Overview\n-Product name:\n-One-sentence description:\n-Problem being solved:\n-Why this product should exist:\n\n## 2. Target Users\n-Primary user:\n-Their current problem:\n-Their desired outcome:\n-Secondary users, if any:\n\n## 3. Core User Outcome\nDescribe the single most important result a user should achieve.\n\n## 4. Core Features\nFor every feature include:\n-Feature name\n-User need\n-What the feature does\n-Inputs\n-Expected output\n-Acceptance criteria\n-Error or empty states\n\n## 5. Scope\n### Included in version one\n-\n\n### Explicitly excluded from version one\n-\n\n### Possible later additions\n-\n\n## 6. User Stories\n-As a [user], I want to [action], so that [outcome].\n\n## 7. Functional Requirements\n-\n\n## 8. Non-Functional Requirements\n-Performance\n-Accessibility\n-Privacy\n-Security\n-Browser or device support\n\n## 9. Success Criteria\n-\n\n## 10. Assumptions and Open Questions\n-"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81c3-93d1-fb830db733b3": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81c3-93d1-fb830db733b3",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Prompt to Generate the PRD"
+                ]
+              ]
+            },
+            "created_time": 1788677633574,
+            "last_edited_time": 1788677633574,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "oHxJz6N5RUYuTS-QyC1mBA,\"start\",\"end\"",
+                "n": {
+                  "oHxJz6N5RUYuTS-QyC1mBA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "oHxJz6N5RUYuTS-QyC1mBA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "jQ-xQ8puTNYJ",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 26,
+                          "c": "Prompt to Generate the PRD"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8138-a6d2-c4bf462af98a": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8138-a6d2-c4bf462af98a",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "Act as a senior product manager. Use my App Brief below to create a practical Product Requirements Document for the first usable version of this app.\n\nDo not write code and do not choose the technical stack yet.\n\nThe PRD must include:\n- Product overview and the problem being solved\n- Primary and secondary users\n- Core user outcome\n- Complete version-one feature list\n- User stories\n- Functional requirements\n- Important non-functional requirements\n- Acceptance criteria for every core feature\n- Included scope, excluded scope and possible later additions\n- Success criteria\n- Assumptions, risks and unresolved questions\n\nDo not silently invent important requirements. If essential information is missing, ask me focused questions before creating the final document. Keep version one realistic and separate must-have features from nice-to-have ideas.\n\nReturn clean Markdown that I can save as 01-prd.md.\n\nAPP BRIEF:\n[PASTE 00-app-brief.md]"
+                ]
+              ],
+              "language": [
+                [
+                  "Plain Text"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633577,
+            "last_edited_time": 1788677633577,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "NXJUKWgcNl-DVBN6OYxCkw,\"start\",\"end\"",
+                "n": {
+                  "NXJUKWgcNl-DVBN6OYxCkw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "NXJUKWgcNl-DVBN6OYxCkw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "UzSd8x6H-0ii",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 940,
+                          "c": "Act as a senior product manager. Use my App Brief below to create a practical Product Requirements Document for the first usable version of this app.\n\nDo not write code and do not choose the technical stack yet.\n\nThe PRD must include:\n- Product overview and the problem being solved\n- Primary and secondary users\n- Core user outcome\n- Complete version-one feature list\n- User stories\n- Functional requirements\n- Important non-functional requirements\n- Acceptance criteria for every core feature\n- Included scope, excluded scope and possible later additions\n- Success criteria\n- Assumptions, risks and unresolved questions\n\nDo not silently invent important requirements. If essential information is missing, ask me focused questions before creating the final document. Keep version one realistic and separate must-have features from nice-to-have ideas.\n\nReturn clean Markdown that I can save as 01-prd.md.\n\nAPP BRIEF:\n[PASTE 00-app-brief.md]"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8182-8e6c-dc457dc9be33": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8182-8e6c-dc457dc9be33",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "Review the PRD and approve the version-one scope before continuing."
+                ]
+              ]
+            },
+            "created_time": 1788677633579,
+            "last_edited_time": 1788677633579,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "qOolpEhtDIiGzdaysEbYZg,\"start\",\"end\"",
+                "n": {
+                  "qOolpEhtDIiGzdaysEbYZg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "qOolpEhtDIiGzdaysEbYZg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "nclxO-z6Qf-C",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 67,
+                          "c": "Review the PRD and approve the version-one scope before continuing."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-813b-a683-c9465c7c60e3": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-813b-a683-c9465c7c60e3",
+            "version": 1,
+            "type": "divider",
+            "created_time": 1788677633581,
+            "last_edited_time": 1788677633581,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "xqbovdZlPK25TGPfuQ7d_Q,\"start\",\"end\"",
+                "n": {
+                  "xqbovdZlPK25TGPfuQ7d_Q,\"start\",\"end\"": {
+                    "s": {
+                      "x": "xqbovdZlPK25TGPfuQ7d_Q",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81ae-945d-c6ca7b858374": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81ae-945d-c6ca7b858374",
+            "version": 2,
+            "type": "header",
+            "properties": {
+              "title": [
+                [
+                  "2. Technical Requirements Document (TRD)"
+                ]
+              ]
+            },
+            "created_time": 1788677633583,
+            "last_edited_time": 1788677633583,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "G4SxwOIOy1ud5UmceBKsyw,\"start\",\"end\"",
+                "n": {
+                  "G4SxwOIOy1ud5UmceBKsyw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "G4SxwOIOy1ud5UmceBKsyw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "CouX0ybsn3vY",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 40,
+                          "c": "2. Technical Requirements Document (TRD)"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8101-a76f-c9e2a1e7760c": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8101-a76f-c9e2a1e7760c",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "What It Controls"
+                ]
+              ]
+            },
+            "created_time": 1788677633585,
+            "last_edited_time": 1788677633585,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "dCcPFzOIRMT74Gnv9anPsA,\"start\",\"end\"",
+                "n": {
+                  "dCcPFzOIRMT74Gnv9anPsA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "dCcPFzOIRMT74Gnv9anPsA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "06JAFerSb0Bt",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 16,
+                          "c": "What It Controls"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81cf-adbb-fbe6756029b0": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81cf-adbb-fbe6756029b0",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "The TRD records the technical choices: architecture, stack, tools, APIs, authentication, infrastructure and quality requirements. It stops the coding agent from changing technologies halfway through the build."
+                ]
+              ]
+            },
+            "created_time": 1788677633587,
+            "last_edited_time": 1788677633587,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "nuhWHeIZcixRSh_vtcW92A,\"start\",\"end\"",
+                "n": {
+                  "nuhWHeIZcixRSh_vtcW92A,\"start\",\"end\"": {
+                    "s": {
+                      "x": "nuhWHeIZcixRSh_vtcW92A",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "X5thMdrNBIPN",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 209,
+                          "c": "The TRD records the technical choices: architecture, stack, tools, APIs, authentication, infrastructure and quality requirements. It stops the coding agent from changing technologies halfway through the build."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8111-8f33-c20870077a6a": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8111-8f33-c20870077a6a",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Copy-Ready TRD Template"
+                ]
+              ]
+            },
+            "created_time": 1788677633589,
+            "last_edited_time": 1788677633589,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "1fWudChC8KEYIi5T499BJA,\"start\",\"end\"",
+                "n": {
+                  "1fWudChC8KEYIi5T499BJA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "1fWudChC8KEYIi5T499BJA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "2hmgWnnhRjG2",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 23,
+                          "c": "Copy-Ready TRD Template"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-816a-a0fd-f54d0334a26d": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-816a-a0fd-f54d0334a26d",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "# Technical Requirements Document\n\n## 1. Technical Overview\n-Architecture summary:\n-Platforms:\n-Main technical constraints:\n\n## 2. Technology Stack\n-Frontend:\n-Backend:\n-Database:\n-Authentication:\n-File storage:\n-Hosting:\n-Analytics:\n-Testing:\n\nFor every choice include the reason and rejected alternatives.\n\n## 3. System Architecture\n-Client responsibilities:\n-Server responsibilities:\n-Database responsibilities:\n-External service responsibilities:\n\n## 4. APIs and Integrations\nFor each integration:\n-Purpose\n-Data sent and received\n-Authentication method\n-Rate or usage limits\n-Failure handling\n\n## 5. Security and Privacy\n-Authentication and authorisation\n-Input validation\n-Secrets management\n-Sensitive data handling\n-Abuse prevention\n\n## 6. Performance Requirements\n-Expected usage\n-Loading targets\n-Caching approach\n-Media optimisation\n\n## 7. Testing and Quality\n-Unit tests\n-Integration tests\n-End-to-end tests\n-Accessibility checks\n\n## 8. Development and Deployment\n-Environments\n-Environment variables\n-CI checks\n-Deployment approach\n\n## 9. Technical Risks and Open Questions\n-"
+                ]
+              ],
+              "language": [
+                [
+                  "Markdown"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633594,
+            "last_edited_time": 1788677633594,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "bWVN17PrKJDszUgF2V1ZPg,\"start\",\"end\"",
+                "n": {
+                  "bWVN17PrKJDszUgF2V1ZPg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "bWVN17PrKJDszUgF2V1ZPg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "Y_zX3pVQ8wi5",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 1088,
+                          "c": "# Technical Requirements Document\n\n## 1. Technical Overview\n-Architecture summary:\n-Platforms:\n-Main technical constraints:\n\n## 2. Technology Stack\n-Frontend:\n-Backend:\n-Database:\n-Authentication:\n-File storage:\n-Hosting:\n-Analytics:\n-Testing:\n\nFor every choice include the reason and rejected alternatives.\n\n## 3. System Architecture\n-Client responsibilities:\n-Server responsibilities:\n-Database responsibilities:\n-External service responsibilities:\n\n## 4. APIs and Integrations\nFor each integration:\n-Purpose\n-Data sent and received\n-Authentication method\n-Rate or usage limits\n-Failure handling\n\n## 5. Security and Privacy\n-Authentication and authorisation\n-Input validation\n-Secrets management\n-Sensitive data handling\n-Abuse prevention\n\n## 6. Performance Requirements\n-Expected usage\n-Loading targets\n-Caching approach\n-Media optimisation\n\n## 7. Testing and Quality\n-Unit tests\n-Integration tests\n-End-to-end tests\n-Accessibility checks\n\n## 8. Development and Deployment\n-Environments\n-Environment variables\n-CI checks\n-Deployment approach\n\n## 9. Technical Risks and Open Questions\n-"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81e2-abd1-d1165ea00ee9": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81e2-abd1-d1165ea00ee9",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Prompt to Generate the TRD"
+                ]
+              ]
+            },
+            "created_time": 1788677633597,
+            "last_edited_time": 1788677633597,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "WA6d9a-IakrYTgPBXqr0Qg,\"start\",\"end\"",
+                "n": {
+                  "WA6d9a-IakrYTgPBXqr0Qg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "WA6d9a-IakrYTgPBXqr0Qg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "7gZbLUgfI9-P",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 26,
+                          "c": "Prompt to Generate the TRD"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81e5-a327-e9988a0b38ac": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81e5-a327-e9988a0b38ac",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "Act as a senior software architect. Create a Technical Requirements Document for the approved PRD below.\n\nDo not change the product scope. Recommend the simplest production-appropriate architecture that can support the approved requirements. Avoid adding infrastructure only to make the stack look advanced.\n\nThe TRD must include:\n- Frontend, backend, database and authentication choices\n- Important libraries and development tools\n- System architecture and responsibility boundaries\n- Every required external API or service\n- Security, privacy and secrets handling\n- Performance and accessibility requirements\n- Testing strategy\n- Local, staging and production environments\n- Deployment approach\n- Reasons for major choices, rejected alternatives, risks and open questions\n\nFlag every requirement that cannot be satisfied by the proposed stack. Ask focused questions when a decision depends on missing information.\n\nReturn clean Markdown that I can save as 02-trd.md.\n\nAPP BRIEF:\n[PASTE 00-app-brief.md]\n\nAPPROVED PRD:\n[PASTE 01-prd.md]"
+                ]
+              ],
+              "language": [
+                [
+                  "Plain Text"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633599,
+            "last_edited_time": 1788677633599,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "Jyy2XEqo4BDK3jEIuUw4ZQ,\"start\",\"end\"",
+                "n": {
+                  "Jyy2XEqo4BDK3jEIuUw4ZQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "Jyy2XEqo4BDK3jEIuUw4ZQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "PlTiTpl56vVu",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 1037,
+                          "c": "Act as a senior software architect. Create a Technical Requirements Document for the approved PRD below.\n\nDo not change the product scope. Recommend the simplest production-appropriate architecture that can support the approved requirements. Avoid adding infrastructure only to make the stack look advanced.\n\nThe TRD must include:\n- Frontend, backend, database and authentication choices\n- Important libraries and development tools\n- System architecture and responsibility boundaries\n- Every required external API or service\n- Security, privacy and secrets handling\n- Performance and accessibility requirements\n- Testing strategy\n- Local, staging and production environments\n- Deployment approach\n- Reasons for major choices, rejected alternatives, risks and open questions\n\nFlag every requirement that cannot be satisfied by the proposed stack. Ask focused questions when a decision depends on missing information.\n\nReturn clean Markdown that I can save as 02-trd.md.\n\nAPP BRIEF:\n[PASTE 00-app-brief.md]\n\nAPPROVED PRD:\n[PASTE 01-prd.md]"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-814d-952f-c6281b43b75e": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-814d-952f-c6281b43b75e",
+            "version": 1,
+            "type": "divider",
+            "created_time": 1788677633602,
+            "last_edited_time": 1788677633602,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "vo5-vDD30c5ag24DLORWHA,\"start\",\"end\"",
+                "n": {
+                  "vo5-vDD30c5ag24DLORWHA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "vo5-vDD30c5ag24DLORWHA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81c9-a22d-ea5275922b36": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81c9-a22d-ea5275922b36",
+            "version": 2,
+            "type": "header",
+            "properties": {
+              "title": [
+                [
+                  "3. App Flow"
+                ]
+              ]
+            },
+            "created_time": 1788677633604,
+            "last_edited_time": 1788677633604,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "8iILF_nTB-OFpgTvXiqsUA,\"start\",\"end\"",
+                "n": {
+                  "8iILF_nTB-OFpgTvXiqsUA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "8iILF_nTB-OFpgTvXiqsUA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "FtoGZk3towK5",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 11,
+                          "c": "3. App Flow"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-811f-b959-cf0536f1ba97": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-811f-b959-cf0536f1ba97",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "What It Controls"
+                ]
+              ]
+            },
+            "created_time": 1788677633606,
+            "last_edited_time": 1788677633606,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "u6pz_ygUgxMq1w5S4rSWdA,\"start\",\"end\"",
+                "n": {
+                  "u6pz_ygUgxMq1w5S4rSWdA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "u6pz_ygUgxMq1w5S4rSWdA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "RzviKI6R4LAe",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 16,
+                          "c": "What It Controls"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8165-8506-d2d39b4a572b": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8165-8506-d2d39b4a572b",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "The App Flow lists every screen, route and important interaction. It explains where a user starts, what happens after each action and how they recover from errors or empty states."
+                ]
+              ]
+            },
+            "created_time": 1788677633608,
+            "last_edited_time": 1788677633608,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "jvCjr4nJ757GPGLWiZK0mg,\"start\",\"end\"",
+                "n": {
+                  "jvCjr4nJ757GPGLWiZK0mg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "jvCjr4nJ757GPGLWiZK0mg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "BbCgGy6OkxQ6",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 179,
+                          "c": "The App Flow lists every screen, route and important interaction. It explains where a user starts, what happens after each action and how they recover from errors or empty states."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81e5-9778-f1fda894cf24": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81e5-9778-f1fda894cf24",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Copy-Ready App Flow Template"
+                ]
+              ]
+            },
+            "created_time": 1788677633610,
+            "last_edited_time": 1788677633610,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "D6k5BLVtko2g4f9TfIVtrQ,\"start\",\"end\"",
+                "n": {
+                  "D6k5BLVtko2g4f9TfIVtrQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "D6k5BLVtko2g4f9TfIVtrQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "jIGdlmNYNXF7",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 28,
+                          "c": "Copy-Ready App Flow Template"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81b0-b674-cc9ee1dfbf17": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81b0-b674-cc9ee1dfbf17",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "# App Flow\n\n## 1. Entry Points\n-First visit:\n-Returning user:\n-Shared or deep link:\n\n## 2. Authentication Flow\n-Sign up\n-Sign in\n-Verification\n-Password recovery\n-Sign out\n\n## 3. Screen Inventory\nFor every screen include:\n-Screen name\n-Route\n-Purpose\n-Entry conditions\n-Main content\n-Primary action\n-Secondary actions\n-Loading state\n-Empty state\n-Error state\n-Success state\n-Next destination\n\n## 4. Primary User Journey\nWrite the complete happy path from entry to the core outcome.\n\n## 5. Secondary Journeys\n-\n\n## 6. Decision Points\nFor every important choice:\n-User action\n-Condition\n-Result\n-Destination\n\n## 7. Edge Cases and Recovery\n-Invalid input\n-Failed request\n-Lost connection\n-Missing permissions\n-Expired session\n-Cancelled action\n\n## 8. Navigation Rules\n-Global navigation\n-Back behaviour\n-Protected routes\n-Deep links"
+                ]
+              ],
+              "language": [
+                [
+                  "Markdown"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633614,
+            "last_edited_time": 1788677633614,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "tj_TxjlNGrTKiBJi2PjvEg,\"start\",\"end\"",
+                "n": {
+                  "tj_TxjlNGrTKiBJi2PjvEg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "tj_TxjlNGrTKiBJi2PjvEg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "B2DZALvuz5Xl",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 829,
+                          "c": "# App Flow\n\n## 1. Entry Points\n-First visit:\n-Returning user:\n-Shared or deep link:\n\n## 2. Authentication Flow\n-Sign up\n-Sign in\n-Verification\n-Password recovery\n-Sign out\n\n## 3. Screen Inventory\nFor every screen include:\n-Screen name\n-Route\n-Purpose\n-Entry conditions\n-Main content\n-Primary action\n-Secondary actions\n-Loading state\n-Empty state\n-Error state\n-Success state\n-Next destination\n\n## 4. Primary User Journey\nWrite the complete happy path from entry to the core outcome.\n\n## 5. Secondary Journeys\n-\n\n## 6. Decision Points\nFor every important choice:\n-User action\n-Condition\n-Result\n-Destination\n\n## 7. Edge Cases and Recovery\n-Invalid input\n-Failed request\n-Lost connection\n-Missing permissions\n-Expired session\n-Cancelled action\n\n## 8. Navigation Rules\n-Global navigation\n-Back behaviour\n-Protected routes\n-Deep links"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81b4-afb9-ff2e8af122a5": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81b4-afb9-ff2e8af122a5",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Prompt to Generate the App Flow"
+                ]
+              ]
+            },
+            "created_time": 1788677633616,
+            "last_edited_time": 1788677633616,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "CJoJFaaCsF61JO41VDMq8A,\"start\",\"end\"",
+                "n": {
+                  "CJoJFaaCsF61JO41VDMq8A,\"start\",\"end\"": {
+                    "s": {
+                      "x": "CJoJFaaCsF61JO41VDMq8A",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "ux59nXmPH4GM",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 31,
+                          "c": "Prompt to Generate the App Flow"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81bd-b8e3-e2961b82ce81": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81bd-b8e3-e2961b82ce81",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "Act as a senior product designer. Create the complete App Flow for the approved product and technical requirements below.\n\nMap every required page or screen, route, navigation path, decision point and important button outcome. Include the primary journey, secondary journeys, authentication, loading, empty, error and success states.\n\nFor every screen specify:\n- Purpose\n- How the user reaches it\n- What information appears\n- Primary and secondary actions\n- What happens after each action\n- The next destination\n- Required states and edge cases\n\nDo not add screens that are not supported by the PRD. Flag missing or contradictory flows instead of guessing.\n\nReturn:\n1. A plain-English journey summary\n2. A screen inventory table\n3. A Mermaid flowchart\n4. Detailed screen-by-screen behaviour\n\nReturn clean Markdown that I can save as 03-app-flow.md.\n\nAPPROVED PRD:\n[PASTE 01-prd.md]\n\nAPPROVED TRD:\n[PASTE 02-trd.md]"
+                ]
+              ],
+              "language": [
+                [
+                  "Plain Text"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633618,
+            "last_edited_time": 1788677633618,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "1151kPZQ1AY-7iqaW_SSDw,\"start\",\"end\"",
+                "n": {
+                  "1151kPZQ1AY-7iqaW_SSDw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "1151kPZQ1AY-7iqaW_SSDw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "-YVEAxnFKWEP",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 914,
+                          "c": "Act as a senior product designer. Create the complete App Flow for the approved product and technical requirements below.\n\nMap every required page or screen, route, navigation path, decision point and important button outcome. Include the primary journey, secondary journeys, authentication, loading, empty, error and success states.\n\nFor every screen specify:\n- Purpose\n- How the user reaches it\n- What information appears\n- Primary and secondary actions\n- What happens after each action\n- The next destination\n- Required states and edge cases\n\nDo not add screens that are not supported by the PRD. Flag missing or contradictory flows instead of guessing.\n\nReturn:\n1. A plain-English journey summary\n2. A screen inventory table\n3. A Mermaid flowchart\n4. Detailed screen-by-screen behaviour\n\nReturn clean Markdown that I can save as 03-app-flow.md.\n\nAPPROVED PRD:\n[PASTE 01-prd.md]\n\nAPPROVED TRD:\n[PASTE 02-trd.md]"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8149-b8c8-c29458fed348": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8149-b8c8-c29458fed348",
+            "version": 1,
+            "type": "divider",
+            "created_time": 1788677633620,
+            "last_edited_time": 1788677633620,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "AtyBJ_aw-YlhNyH-KiwS7Q,\"start\",\"end\"",
+                "n": {
+                  "AtyBJ_aw-YlhNyH-KiwS7Q,\"start\",\"end\"": {
+                    "s": {
+                      "x": "AtyBJ_aw-YlhNyH-KiwS7Q",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8107-90fd-fad5efb7edc2": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8107-90fd-fad5efb7edc2",
+            "version": 2,
+            "type": "header",
+            "properties": {
+              "title": [
+                [
+                  "4. UI/UX Design Brief"
+                ]
+              ]
+            },
+            "created_time": 1788677633622,
+            "last_edited_time": 1788677633622,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "TiWnB_Y4S46KQ2pNERxB_g,\"start\",\"end\"",
+                "n": {
+                  "TiWnB_Y4S46KQ2pNERxB_g,\"start\",\"end\"": {
+                    "s": {
+                      "x": "TiWnB_Y4S46KQ2pNERxB_g",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "lkwGHfGlQ39J",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 21,
+                          "c": "4. UI/UX Design Brief"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-810e-a9c3-dd20939fc25f": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-810e-a9c3-dd20939fc25f",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "What It Controls"
+                ]
+              ]
+            },
+            "created_time": 1788677633624,
+            "last_edited_time": 1788677633624,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "NO1UQSS_qka09OQYUAJA4g,\"start\",\"end\"",
+                "n": {
+                  "NO1UQSS_qka09OQYUAJA4g,\"start\",\"end\"": {
+                    "s": {
+                      "x": "NO1UQSS_qka09OQYUAJA4g",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "g6KB1gPWhY7a",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 16,
+                          "c": "What It Controls"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81e6-9506-d79807ae7ebf": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81e6-9506-d79807ae7ebf",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "The UI/UX Brief defines how the product should look, feel and respond. It gives the coding agent a visual system instead of allowing it to generate random gradients, cards and spacing."
+                ]
+              ]
+            },
+            "created_time": 1788677633626,
+            "last_edited_time": 1788677633626,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "zQSsB8SP_iwt5xCFRz5BbA,\"start\",\"end\"",
+                "n": {
+                  "zQSsB8SP_iwt5xCFRz5BbA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "zQSsB8SP_iwt5xCFRz5BbA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "XBTc--Eddvrb",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 184,
+                          "c": "The UI/UX Brief defines how the product should look, feel and respond. It gives the coding agent a visual system instead of allowing it to generate random gradients, cards and spacing."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8198-813d-ea2491e4b237": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8198-813d-ea2491e4b237",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Copy-Ready UI/UX Brief Template"
+                ]
+              ]
+            },
+            "created_time": 1788677633628,
+            "last_edited_time": 1788677633628,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "m5wQ84yqLhs2Vehx3Rl8wA,\"start\",\"end\"",
+                "n": {
+                  "m5wQ84yqLhs2Vehx3Rl8wA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "m5wQ84yqLhs2Vehx3Rl8wA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "xxdi1YWWAzru",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 31,
+                          "c": "Copy-Ready UI/UX Brief Template"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81d5-bd9a-e9c0e402e7f4": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81d5-bd9a-e9c0e402e7f4",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "# UI/UX Design Brief\n\n## 1. Experience Goal\n-Desired feeling:\n-Three visual adjectives:\n-What the design must avoid:\n\n## 2. Users and Context\n-Primary user:\n-Device and environment:\n-Accessibility needs:\n\n## 3. Visual Direction\n-Colour palette and roles:\n-Typography:\n-Icon direction:\n-Image or illustration direction:\n-Surface and border treatment:\n\n## 4. Layout System\n-Content width:\n-Grid:\n-Spacing scale:\n-Section rhythm:\n-Responsive breakpoints:\n\n## 5. Component Language\n-Buttons\n-Inputs\n-Navigation\n-Cards\n-Modals or sheets\n-Tables or lists\n-Feedback and status components\n\nFor every component include states: default, hover, focus, active, disabled, loading and error where relevant.\n\n## 6. Screen Direction\nFor every core screen:\n-Visual hierarchy\n-Main composition\n-Primary action placement\n-Important responsive changes\n\n## 7. Interaction and Motion\n-Purposeful transitions\n-Feedback moments\n-Reduced-motion behaviour\n\n## 8. Accessibility\n-Contrast\n-Keyboard use\n-Focus states\n-Tap targets\n-Text sizing\n\n## 9. Consistency Rules\n### Always use\n-\n\n### Never use\n-"
+                ]
+              ],
+              "language": [
+                [
+                  "Markdown"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633632,
+            "last_edited_time": 1788677633632,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "2DQa5Tf8Gu9CA_UhjXJguQ,\"start\",\"end\"",
+                "n": {
+                  "2DQa5Tf8Gu9CA_UhjXJguQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "2DQa5Tf8Gu9CA_UhjXJguQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "MZNJRk-NFV8g",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 1073,
+                          "c": "# UI/UX Design Brief\n\n## 1. Experience Goal\n-Desired feeling:\n-Three visual adjectives:\n-What the design must avoid:\n\n## 2. Users and Context\n-Primary user:\n-Device and environment:\n-Accessibility needs:\n\n## 3. Visual Direction\n-Colour palette and roles:\n-Typography:\n-Icon direction:\n-Image or illustration direction:\n-Surface and border treatment:\n\n## 4. Layout System\n-Content width:\n-Grid:\n-Spacing scale:\n-Section rhythm:\n-Responsive breakpoints:\n\n## 5. Component Language\n-Buttons\n-Inputs\n-Navigation\n-Cards\n-Modals or sheets\n-Tables or lists\n-Feedback and status components\n\nFor every component include states: default, hover, focus, active, disabled, loading and error where relevant.\n\n## 6. Screen Direction\nFor every core screen:\n-Visual hierarchy\n-Main composition\n-Primary action placement\n-Important responsive changes\n\n## 7. Interaction and Motion\n-Purposeful transitions\n-Feedback moments\n-Reduced-motion behaviour\n\n## 8. Accessibility\n-Contrast\n-Keyboard use\n-Focus states\n-Tap targets\n-Text sizing\n\n## 9. Consistency Rules\n### Always use\n-\n\n### Never use\n-"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8167-8d73-d8102ad4398c": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8167-8d73-d8102ad4398c",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Prompt to Generate the UI/UX Brief"
+                ]
+              ]
+            },
+            "created_time": 1788677633635,
+            "last_edited_time": 1788677633635,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "7_KQu1_8RfvBe6TyxsdjSg,\"start\",\"end\"",
+                "n": {
+                  "7_KQu1_8RfvBe6TyxsdjSg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "7_KQu1_8RfvBe6TyxsdjSg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "qA3Th84IM_AR",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 34,
+                          "c": "Prompt to Generate the UI/UX Brief"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-813c-a079-dbb442bada93": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-813c-a079-dbb442bada93",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "Act as a senior product designer and design-systems specialist. Create a UI/UX Design Brief for the approved PRD and App Flow below.\n\nTranslate the product, audience and journeys into one coherent visual system. Define:\n- Experience goal and visual direction\n- Semantic colour palette with exact colour values and usage roles\n- Typography families, sizes, weights and line heights\n- Spacing, grid, container and responsive rules\n- Buttons, inputs, navigation, cards and feedback components\n- Required interaction states\n- Composition guidance for every core screen\n- Mobile-specific behaviour\n- Motion and reduced-motion rules\n- Accessibility requirements\n- Clear always-use and never-use rules\n\nKeep the result distinctive to the product. Do not default to excessive gradients, glassmorphism, identical rounded cards or decorative motion. Do not copy a reference literally.\n\nFlag any design decision that conflicts with the user journey or accessibility requirements.\n\nReturn clean Markdown that I can save as 04-ui-ux-brief.md.\n\nAPP BRIEF:\n[PASTE 00-app-brief.md]\n\nAPPROVED PRD:\n[PASTE 01-prd.md]\n\nAPPROVED APP FLOW:\n[PASTE 03-app-flow.md]\n\nOPTIONAL DESIGN REFERENCES AND WHAT I LIKE ABOUT EACH:\n[PASTE LINKS OR NOTES]"
+                ]
+              ],
+              "language": [
+                [
+                  "Plain Text"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633637,
+            "last_edited_time": 1788677633637,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "cffnqULXwTNktRTgxHto8Q,\"start\",\"end\"",
+                "n": {
+                  "cffnqULXwTNktRTgxHto8Q,\"start\",\"end\"": {
+                    "s": {
+                      "x": "cffnqULXwTNktRTgxHto8Q",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "wVbjWToPdfpX",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 1220,
+                          "c": "Act as a senior product designer and design-systems specialist. Create a UI/UX Design Brief for the approved PRD and App Flow below.\n\nTranslate the product, audience and journeys into one coherent visual system. Define:\n- Experience goal and visual direction\n- Semantic colour palette with exact colour values and usage roles\n- Typography families, sizes, weights and line heights\n- Spacing, grid, container and responsive rules\n- Buttons, inputs, navigation, cards and feedback components\n- Required interaction states\n- Composition guidance for every core screen\n- Mobile-specific behaviour\n- Motion and reduced-motion rules\n- Accessibility requirements\n- Clear always-use and never-use rules\n\nKeep the result distinctive to the product. Do not default to excessive gradients, glassmorphism, identical rounded cards or decorative motion. Do not copy a reference literally.\n\nFlag any design decision that conflicts with the user journey or accessibility requirements.\n\nReturn clean Markdown that I can save as 04-ui-ux-brief.md.\n\nAPP BRIEF:\n[PASTE 00-app-brief.md]\n\nAPPROVED PRD:\n[PASTE 01-prd.md]\n\nAPPROVED APP FLOW:\n[PASTE 03-app-flow.md]\n\nOPTIONAL DESIGN REFERENCES AND WHAT I LIKE ABOUT EACH:\n[PASTE LINKS OR NOTES]"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81f8-9bfc-da78220e0a9c": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81f8-9bfc-da78220e0a9c",
+            "version": 1,
+            "type": "divider",
+            "created_time": 1788677633639,
+            "last_edited_time": 1788677633639,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "XmaEqIrVcAIp4WE7p6zeTg,\"start\",\"end\"",
+                "n": {
+                  "XmaEqIrVcAIp4WE7p6zeTg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "XmaEqIrVcAIp4WE7p6zeTg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81f6-9803-dbc0743bb559": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81f6-9803-dbc0743bb559",
+            "version": 2,
+            "type": "header",
+            "properties": {
+              "title": [
+                [
+                  "5. Backend Schema"
+                ]
+              ]
+            },
+            "created_time": 1788677633641,
+            "last_edited_time": 1788677633641,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "zQv7LhDXCW6hmPgywdoGyw,\"start\",\"end\"",
+                "n": {
+                  "zQv7LhDXCW6hmPgywdoGyw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "zQv7LhDXCW6hmPgywdoGyw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "TztVs43CeE7E",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 17,
+                          "c": "5. Backend Schema"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8178-8ea9-cd708b860f1d": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8178-8ea9-cd708b860f1d",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "What It Controls"
+                ]
+              ]
+            },
+            "created_time": 1788677633643,
+            "last_edited_time": 1788677633643,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "tDrvGb2nSiv4g78Vzkd5aw,\"start\",\"end\"",
+                "n": {
+                  "tDrvGb2nSiv4g78Vzkd5aw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "tDrvGb2nSiv4g78Vzkd5aw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "3YHiir4ZewdO",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 16,
+                          "c": "What It Controls"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81bf-8c30-f1899fa60def": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81bf-8c30-f1899fa60def",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "The Backend Schema explains how the product stores and connects data. It covers users, authentication, tables, columns, relationships, access rules and important data operations."
+                ]
+              ]
+            },
+            "created_time": 1788677633645,
+            "last_edited_time": 1788677633645,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "hx-_uYLaJBMSUr2Fw6lfDg,\"start\",\"end\"",
+                "n": {
+                  "hx-_uYLaJBMSUr2Fw6lfDg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "hx-_uYLaJBMSUr2Fw6lfDg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "6TLjTBEEbHjF",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 178,
+                          "c": "The Backend Schema explains how the product stores and connects data. It covers users, authentication, tables, columns, relationships, access rules and important data operations."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81b0-a7a0-da505e7c17b2": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81b0-a7a0-da505e7c17b2",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Copy-Ready Backend Schema Template"
+                ]
+              ]
+            },
+            "created_time": 1788677633647,
+            "last_edited_time": 1788677633647,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "87jTyRYIcNHP75_Wfmde3Q,\"start\",\"end\"",
+                "n": {
+                  "87jTyRYIcNHP75_Wfmde3Q,\"start\",\"end\"": {
+                    "s": {
+                      "x": "87jTyRYIcNHP75_Wfmde3Q",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "9vgnKpxIMixR",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 34,
+                          "c": "Copy-Ready Backend Schema Template"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-819e-bc84-ca7a26055286": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-819e-bc84-ca7a26055286",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "# Backend Schema\n\n## 1. Data Overview\n-Database type:\n-Main data domains:\n-Ownership model:\n\n## 2. Authentication and Authorisation\n-User identity:\n-Sign-in methods:\n-Roles:\n-Permissions:\n-Session handling:\n\n## 3. Tables or Collections\nFor every table include:\n-Table name\n-Purpose\n-Column name\n-Data type\n-Required or optional\n-Default value\n-Validation rules\n-Unique constraints\n-Indexes\n-Foreign keys\n-Created and updated timestamps\n\n## 4. Relationships\n-One-to-one\n-One-to-many\n-Many-to-many\n-Delete behaviour\n\n## 5. Access Rules\nFor every table:\n-Who can create\n-Who can read\n-Who can update\n-Who can delete\n\n## 6. Core Data Operations\n-\n\n## 7. File Storage\n-Buckets or folders\n-Allowed types and sizes\n-Access rules\n\n## 8. Data Integrity and Security\n-Validation\n-Transactions\n-Sensitive data\n-Audit requirements\n\n## 9. Migration and Seed Data\n-\n\n## 10. Risks and Open Questions\n-"
+                ]
+              ],
+              "language": [
+                [
+                  "Markdown"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633651,
+            "last_edited_time": 1788677633651,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "womrCVc6tRq8-6kZFX8Aag,\"start\",\"end\"",
+                "n": {
+                  "womrCVc6tRq8-6kZFX8Aag,\"start\",\"end\"": {
+                    "s": {
+                      "x": "womrCVc6tRq8-6kZFX8Aag",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "StnYGBDEA1BF",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 886,
+                          "c": "# Backend Schema\n\n## 1. Data Overview\n-Database type:\n-Main data domains:\n-Ownership model:\n\n## 2. Authentication and Authorisation\n-User identity:\n-Sign-in methods:\n-Roles:\n-Permissions:\n-Session handling:\n\n## 3. Tables or Collections\nFor every table include:\n-Table name\n-Purpose\n-Column name\n-Data type\n-Required or optional\n-Default value\n-Validation rules\n-Unique constraints\n-Indexes\n-Foreign keys\n-Created and updated timestamps\n\n## 4. Relationships\n-One-to-one\n-One-to-many\n-Many-to-many\n-Delete behaviour\n\n## 5. Access Rules\nFor every table:\n-Who can create\n-Who can read\n-Who can update\n-Who can delete\n\n## 6. Core Data Operations\n-\n\n## 7. File Storage\n-Buckets or folders\n-Allowed types and sizes\n-Access rules\n\n## 8. Data Integrity and Security\n-Validation\n-Transactions\n-Sensitive data\n-Audit requirements\n\n## 9. Migration and Seed Data\n-\n\n## 10. Risks and Open Questions\n-"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81b1-bf1d-eff016828486": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81b1-bf1d-eff016828486",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Prompt to Generate the Backend Schema"
+                ]
+              ]
+            },
+            "created_time": 1788677633653,
+            "last_edited_time": 1788677633653,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "1ACxh2R5tSGNQAJzzWoEjg,\"start\",\"end\"",
+                "n": {
+                  "1ACxh2R5tSGNQAJzzWoEjg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "1ACxh2R5tSGNQAJzzWoEjg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "XctoNatw1-Vk",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 37,
+                          "c": "Prompt to Generate the Backend Schema"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81a9-ba7b-e13667f33dd2": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81a9-ba7b-e13667f33dd2",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "Act as a senior backend and database architect. Design the Backend Schema required by the approved PRD, TRD and App Flow below.\n\nDo not invent product features. Every table, field and relationship must support a named requirement or user flow.\n\nInclude:\n- Authentication and session model\n- User roles and permissions\n- Every required table or collection\n- Columns, data types, defaults and validation\n- Primary keys, foreign keys, unique constraints and indexes\n- One-to-one, one-to-many and many-to-many relationships\n- Create, read, update and delete access rules\n- Important data operations and transaction boundaries\n- File-storage structure if required\n- Delete and retention behaviour\n- Seed data, migrations, privacy and security considerations\n- Risks, assumptions and unresolved questions\n\nReturn:\n1. A plain-English data overview\n2. A table-by-table schema\n3. A Mermaid entity-relationship diagram\n4. Access-control rules\n5. A traceability list connecting each table to its PRD feature\n\nReturn clean Markdown that I can save as 05-backend-schema.md.\n\nAPPROVED PRD:\n[PASTE 01-prd.md]\n\nAPPROVED TRD:\n[PASTE 02-trd.md]\n\nAPPROVED APP FLOW:\n[PASTE 03-app-flow.md]"
+                ]
+              ],
+              "language": [
+                [
+                  "Plain Text"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633655,
+            "last_edited_time": 1788677633655,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "kub1KbWf_D79PW9sMvyz0w,\"start\",\"end\"",
+                "n": {
+                  "kub1KbWf_D79PW9sMvyz0w,\"start\",\"end\"": {
+                    "s": {
+                      "x": "kub1KbWf_D79PW9sMvyz0w",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "nSOf-4dEDRlS",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 1169,
+                          "c": "Act as a senior backend and database architect. Design the Backend Schema required by the approved PRD, TRD and App Flow below.\n\nDo not invent product features. Every table, field and relationship must support a named requirement or user flow.\n\nInclude:\n- Authentication and session model\n- User roles and permissions\n- Every required table or collection\n- Columns, data types, defaults and validation\n- Primary keys, foreign keys, unique constraints and indexes\n- One-to-one, one-to-many and many-to-many relationships\n- Create, read, update and delete access rules\n- Important data operations and transaction boundaries\n- File-storage structure if required\n- Delete and retention behaviour\n- Seed data, migrations, privacy and security considerations\n- Risks, assumptions and unresolved questions\n\nReturn:\n1. A plain-English data overview\n2. A table-by-table schema\n3. A Mermaid entity-relationship diagram\n4. Access-control rules\n5. A traceability list connecting each table to its PRD feature\n\nReturn clean Markdown that I can save as 05-backend-schema.md.\n\nAPPROVED PRD:\n[PASTE 01-prd.md]\n\nAPPROVED TRD:\n[PASTE 02-trd.md]\n\nAPPROVED APP FLOW:\n[PASTE 03-app-flow.md]"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81b1-b567-d9b342f96239": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81b1-b567-d9b342f96239",
+            "version": 1,
+            "type": "divider",
+            "created_time": 1788677633657,
+            "last_edited_time": 1788677633657,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "gy6YOrp0xDV5iaCzwG3sSQ,\"start\",\"end\"",
+                "n": {
+                  "gy6YOrp0xDV5iaCzwG3sSQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "gy6YOrp0xDV5iaCzwG3sSQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8160-8498-f483c50a9a6d": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8160-8498-f483c50a9a6d",
+            "version": 2,
+            "type": "header",
+            "properties": {
+              "title": [
+                [
+                  "6. Implementation Plan"
+                ]
+              ]
+            },
+            "created_time": 1788677633659,
+            "last_edited_time": 1788677633659,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "4CFqgF-9BMIlWjdhpPBtWw,\"start\",\"end\"",
+                "n": {
+                  "4CFqgF-9BMIlWjdhpPBtWw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "4CFqgF-9BMIlWjdhpPBtWw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "dRDEAo8Dritl",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 22,
+                          "c": "6. Implementation Plan"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8136-943c-dfef7b20c466": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8136-943c-dfef7b20c466",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "What It Controls"
+                ]
+              ]
+            },
+            "created_time": 1788677633661,
+            "last_edited_time": 1788677633661,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "RchZ7NyvjpWC-IKwYaSBDQ,\"start\",\"end\"",
+                "n": {
+                  "RchZ7NyvjpWC-IKwYaSBDQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "RchZ7NyvjpWC-IKwYaSBDQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "CRAOca7SN0J5",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 16,
+                          "c": "What It Controls"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8183-a4f4-de7a2b4caf9b": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8183-a4f4-de7a2b4caf9b",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "The Implementation Plan converts the approved documents into a build sequence. It tells the coding agent what to build first, which files and systems are involved, how to verify each phase and when to stop for review."
+                ]
+              ]
+            },
+            "created_time": 1788677633663,
+            "last_edited_time": 1788677633663,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "SyO-k8NRRd89y0gFRPGqDw,\"start\",\"end\"",
+                "n": {
+                  "SyO-k8NRRd89y0gFRPGqDw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "SyO-k8NRRd89y0gFRPGqDw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "SXgUzLHXnlpJ",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 217,
+                          "c": "The Implementation Plan converts the approved documents into a build sequence. It tells the coding agent what to build first, which files and systems are involved, how to verify each phase and when to stop for review."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-815c-bf91-c7b79c0dc1b8": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-815c-bf91-c7b79c0dc1b8",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Copy-Ready Implementation Plan Template"
+                ]
+              ]
+            },
+            "created_time": 1788677633664,
+            "last_edited_time": 1788677633664,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "z3XFCM6PzOu1hypbqRZRiQ,\"start\",\"end\"",
+                "n": {
+                  "z3XFCM6PzOu1hypbqRZRiQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "z3XFCM6PzOu1hypbqRZRiQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "RmIlTUZi7OID",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 39,
+                          "c": "Copy-Ready Implementation Plan Template"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81cf-885e-cc90ab329cac": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81cf-885e-cc90ab329cac",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "# Implementation Plan\n\n## 1. Current Project State\n-Existing code:\n-Reusable parts:\n-Missing foundations:\n-Risks:\n\n## 2. Build Principles\n-Preserve approved scope\n-Work in small verifiable phases\n-Test after every phase\n-Do not begin later phases while required checks fail\n\n## 3. Ordered Phases\nFor every phase include:\n-Goal\n-Requirements covered\n-Components or systems involved\n-Files expected to change\n-Data or API work\n-UI states\n-Tests and verification\n-Completion criteria\n-Dependencies\n-Risks\n\n## 4. Suggested Sequence\n-Project foundation\n-Shared design system\n-Authentication\n-Core data model\n-Primary user journey\n-Secondary features\n-Error and empty states\n-Responsive and accessibility pass\n-Testing and performance\n-Deployment readiness\n\n## 5. Requirement Traceability\nMap every PRD feature to its implementation phase and verification method.\n\n## 6. Final Verification\n-Functional checks\n-Responsive checks\n-Accessibility checks\n-Security checks\n-Production build"
+                ]
+              ],
+              "language": [
+                [
+                  "Markdown"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633668,
+            "last_edited_time": 1788677633668,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "1EpOjIRCeXApu2_3M0DA8w,\"start\",\"end\"",
+                "n": {
+                  "1EpOjIRCeXApu2_3M0DA8w,\"start\",\"end\"": {
+                    "s": {
+                      "x": "1EpOjIRCeXApu2_3M0DA8w",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "Y_ESI_nC4DPG",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 978,
+                          "c": "# Implementation Plan\n\n## 1. Current Project State\n-Existing code:\n-Reusable parts:\n-Missing foundations:\n-Risks:\n\n## 2. Build Principles\n-Preserve approved scope\n-Work in small verifiable phases\n-Test after every phase\n-Do not begin later phases while required checks fail\n\n## 3. Ordered Phases\nFor every phase include:\n-Goal\n-Requirements covered\n-Components or systems involved\n-Files expected to change\n-Data or API work\n-UI states\n-Tests and verification\n-Completion criteria\n-Dependencies\n-Risks\n\n## 4. Suggested Sequence\n-Project foundation\n-Shared design system\n-Authentication\n-Core data model\n-Primary user journey\n-Secondary features\n-Error and empty states\n-Responsive and accessibility pass\n-Testing and performance\n-Deployment readiness\n\n## 5. Requirement Traceability\nMap every PRD feature to its implementation phase and verification method.\n\n## 6. Final Verification\n-Functional checks\n-Responsive checks\n-Accessibility checks\n-Security checks\n-Production build"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81fe-941c-e9ef291255c3": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81fe-941c-e9ef291255c3",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "Prompt to Generate the Implementation Plan"
+                ]
+              ]
+            },
+            "created_time": 1788677633670,
+            "last_edited_time": 1788677633670,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "6xp2BdZpoOTiTpWLoUeMhg,\"start\",\"end\"",
+                "n": {
+                  "6xp2BdZpoOTiTpWLoUeMhg,\"start\",\"end\"": {
+                    "s": {
+                      "x": "6xp2BdZpoOTiTpWLoUeMhg",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "QFXeXuiJkeGH",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 42,
+                          "c": "Prompt to Generate the Implementation Plan"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8127-ad0e-c931b10ced75": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8127-ad0e-c931b10ced75",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "Act as a senior technical lead. Read all five approved documents below and create an ordered Implementation Plan for an AI coding agent.\n\nDo not write implementation code yet. First inspect the existing project if one is available. Reuse the current stack and conventions unless the TRD explicitly requires a change.\n\nBreak the build into small, verifiable phases. For every phase include:\n- Goal and user-visible outcome\n- PRD requirements covered\n- Components, routes, services and data involved\n- Expected files or areas of the project to change\n- Dependencies\n- Loading, empty, error and success states\n- Tests and manual verification\n- Completion criteria\n- Risks and rollback considerations\n\nOrder the phases so foundations and dependencies are completed before the features that rely on them. Include a traceability table mapping every PRD feature to a phase and test. Identify contradictions or missing information before presenting the final plan.\n\nReturn clean Markdown that I can save as 06-implementation-plan.md. End with a recommended first phase and wait for approval before coding.\n\nAPPROVED PRD:\n[PASTE 01-prd.md]\n\nAPPROVED TRD:\n[PASTE 02-trd.md]\n\nAPPROVED APP FLOW:\n[PASTE 03-app-flow.md]\n\nAPPROVED UI/UX BRIEF:\n[PASTE 04-ui-ux-brief.md]\n\nAPPROVED BACKEND SCHEMA:\n[PASTE 05-backend-schema.md]"
+                ]
+              ],
+              "language": [
+                [
+                  "Plain Text"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633672,
+            "last_edited_time": 1788677633672,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "JgHBmUQvYycG64oZqpCkpw,\"start\",\"end\"",
+                "n": {
+                  "JgHBmUQvYycG64oZqpCkpw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "JgHBmUQvYycG64oZqpCkpw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "FFqd_4Md_-Uh",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 1310,
+                          "c": "Act as a senior technical lead. Read all five approved documents below and create an ordered Implementation Plan for an AI coding agent.\n\nDo not write implementation code yet. First inspect the existing project if one is available. Reuse the current stack and conventions unless the TRD explicitly requires a change.\n\nBreak the build into small, verifiable phases. For every phase include:\n- Goal and user-visible outcome\n- PRD requirements covered\n- Components, routes, services and data involved\n- Expected files or areas of the project to change\n- Dependencies\n- Loading, empty, error and success states\n- Tests and manual verification\n- Completion criteria\n- Risks and rollback considerations\n\nOrder the phases so foundations and dependencies are completed before the features that rely on them. Include a traceability table mapping every PRD feature to a phase and test. Identify contradictions or missing information before presenting the final plan.\n\nReturn clean Markdown that I can save as 06-implementation-plan.md. End with a recommended first phase and wait for approval before coding.\n\nAPPROVED PRD:\n[PASTE 01-prd.md]\n\nAPPROVED TRD:\n[PASTE 02-trd.md]\n\nAPPROVED APP FLOW:\n[PASTE 03-app-flow.md]\n\nAPPROVED UI/UX BRIEF:\n[PASTE 04-ui-ux-brief.md]\n\nAPPROVED BACKEND SCHEMA:\n[PASTE 05-backend-schema.md]"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81dd-ad68-f972e5d75d07": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81dd-ad68-f972e5d75d07",
+            "version": 1,
+            "type": "divider",
+            "created_time": 1788677633674,
+            "last_edited_time": 1788677633674,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "3zVysNQx0USXAZtQlpAatw,\"start\",\"end\"",
+                "n": {
+                  "3zVysNQx0USXAZtQlpAatw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "3zVysNQx0USXAZtQlpAatw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81e3-932a-cdff883d20d2": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81e3-932a-cdff883d20d2",
+            "version": 2,
+            "type": "header",
+            "properties": {
+              "title": [
+                [
+                  "Final Consistency Check"
+                ]
+              ]
+            },
+            "created_time": 1788677633676,
+            "last_edited_time": 1788677633676,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "V-nDDUijzcwckloo1QD4cw,\"start\",\"end\"",
+                "n": {
+                  "V-nDDUijzcwckloo1QD4cw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "V-nDDUijzcwckloo1QD4cw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "ZtAOVC_If-3K",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 23,
+                          "c": "Final Consistency Check"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81f6-aa32-fc477838331f": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81f6-aa32-fc477838331f",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "Run this after all six documents are ready."
+                ]
+              ]
+            },
+            "created_time": 1788677633678,
+            "last_edited_time": 1788677633678,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "0IBhxw2wbRZ9COY0oBG2cQ,\"start\",\"end\"",
+                "n": {
+                  "0IBhxw2wbRZ9COY0oBG2cQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "0IBhxw2wbRZ9COY0oBG2cQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "7VTQk4u10qdP",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 43,
+                          "c": "Run this after all six documents are ready."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8105-8c53-d2d14b6da0e5": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8105-8c53-d2d14b6da0e5",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "Audit these six planning documents as one connected specification before any code is written.\n\nCheck for:\n- Features present in one document but missing from another\n- Screens without a supporting PRD requirement\n- Buttons or actions without a defined destination\n- Data fields or tables with no product purpose\n- PRD features with no data, UI or implementation coverage\n- Technical choices that cannot support the approved flow\n- UI states missing from the App Flow\n- Authentication or permission conflicts\n- Different names used for the same feature or entity\n- Implementation phases in the wrong dependency order\n- Unresolved assumptions presented as confirmed decisions\n\nReturn:\n1. Blocking contradictions\n2. Important gaps\n3. Minor naming inconsistencies\n4. Exact corrections required in each file\n5. A final traceability matrix: PRD feature → screen → data entity → implementation phase\n\nDo not rewrite the documents or start coding until I approve the corrections.\n\n[ATTACH OR PASTE ALL SIX DOCUMENTS]"
+                ]
+              ],
+              "language": [
+                [
+                  "Plain Text"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633679,
+            "last_edited_time": 1788677633679,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "335q6mkTbxdgRyqC5x2eWA,\"start\",\"end\"",
+                "n": {
+                  "335q6mkTbxdgRyqC5x2eWA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "335q6mkTbxdgRyqC5x2eWA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "SKdAyZ9wouA2",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 1008,
+                          "c": "Audit these six planning documents as one connected specification before any code is written.\n\nCheck for:\n- Features present in one document but missing from another\n- Screens without a supporting PRD requirement\n- Buttons or actions without a defined destination\n- Data fields or tables with no product purpose\n- PRD features with no data, UI or implementation coverage\n- Technical choices that cannot support the approved flow\n- UI states missing from the App Flow\n- Authentication or permission conflicts\n- Different names used for the same feature or entity\n- Implementation phases in the wrong dependency order\n- Unresolved assumptions presented as confirmed decisions\n\nReturn:\n1. Blocking contradictions\n2. Important gaps\n3. Minor naming inconsistencies\n4. Exact corrections required in each file\n5. A final traceability matrix: PRD feature → screen → data entity → implementation phase\n\nDo not rewrite the documents or start coding until I approve the corrections.\n\n[ATTACH OR PASTE ALL SIX DOCUMENTS]"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8151-a6ab-f65b80fd6724": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8151-a6ab-f65b80fd6724",
+            "version": 1,
+            "type": "divider",
+            "created_time": 1788677633680,
+            "last_edited_time": 1788677633680,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "0b4gRSpf0Z3AId5mA-KrYQ,\"start\",\"end\"",
+                "n": {
+                  "0b4gRSpf0Z3AId5mA-KrYQ,\"start\",\"end\"": {
+                    "s": {
+                      "x": "0b4gRSpf0Z3AId5mA-KrYQ",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8174-9323-db4ad2c9309c": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8174-9323-db4ad2c9309c",
+            "version": 2,
+            "type": "header",
+            "properties": {
+              "title": [
+                [
+                  "Put the Documents Inside Your Project"
+                ]
+              ]
+            },
+            "created_time": 1788677633682,
+            "last_edited_time": 1788677633682,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "AxUH645gP1NPe3-GzyGm8A,\"start\",\"end\"",
+                "n": {
+                  "AxUH645gP1NPe3-GzyGm8A,\"start\",\"end\"": {
+                    "s": {
+                      "x": "AxUH645gP1NPe3-GzyGm8A",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "RzNhPOYtNbqR",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 37,
+                          "c": "Put the Documents Inside Your Project"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81cf-9208-cf35fca015ae": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81cf-9208-cf35fca015ae",
+            "version": 3,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "Create a "
+                ],
+                [
+                  "docs",
+                  [
+                    [
+                      "c"
+                    ]
+                  ]
+                ],
+                [
+                  " folder:"
+                ]
+              ]
+            },
+            "created_time": 1788677633684,
+            "last_edited_time": 1788677633684,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "rQ2eI81NRdW-iFzGbiVcGw,\"start\",\"end\"",
+                "n": {
+                  "rQ2eI81NRdW-iFzGbiVcGw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "rQ2eI81NRdW-iFzGbiVcGw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "DFx5hYQr57Tx",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 9,
+                          "c": "Create a "
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "DFx5hYQr57Tx",
+                            10
+                          ],
+                          "o": [
+                            "DFx5hYQr57Tx",
+                            9
+                          ],
+                          "l": 4,
+                          "c": "docs",
+                          "b": [
+                            {
+                              "t": "a",
+                              "x": "rQ2eI81NRdW-iFzGbiVcGw",
+                              "l": "",
+                              "i": [
+                                "DFx5hYQr57Tx",
+                                22
+                              ],
+                              "s": {
+                                "i": [
+                                  "DFx5hYQr57Tx",
+                                  10
+                                ],
+                                "a": "b"
+                              },
+                              "e": {
+                                "i": [
+                                  "DFx5hYQr57Tx",
+                                  14
+                                ],
+                                "a": "b"
+                              },
+                              "a": [
+                                "c"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "DFx5hYQr57Tx",
+                            14
+                          ],
+                          "o": [
+                            "DFx5hYQr57Tx",
+                            13
+                          ],
+                          "l": 8,
+                          "c": " folder:",
+                          "b": []
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81a9-a4a2-cb886ea335ff": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81a9-a4a2-cb886ea335ff",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "docs/\n├── 00-app-brief.md\n├── 01-prd.md\n├── 02-trd.md\n├── 03-app-flow.md\n├── 04-ui-ux-brief.md\n├── 05-backend-schema.md\n└── 06-implementation-plan.md"
+                ]
+              ],
+              "language": [
+                [
+                  "Plain Text"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633686,
+            "last_edited_time": 1788677633686,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "a_hEzdv6SkgqirAkdbGrXA,\"start\",\"end\"",
+                "n": {
+                  "a_hEzdv6SkgqirAkdbGrXA,\"start\",\"end\"": {
+                    "s": {
+                      "x": "a_hEzdv6SkgqirAkdbGrXA",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "OjGrGDVak4T6",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 149,
+                          "c": "docs/\n├── 00-app-brief.md\n├── 01-prd.md\n├── 02-trd.md\n├── 03-app-flow.md\n├── 04-ui-ux-brief.md\n├── 05-backend-schema.md\n└── 06-implementation-plan.md"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-8129-9478-c8ee47d2dfe7": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-8129-9478-c8ee47d2dfe7",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "Then give your coding agent this handoff prompt:"
+                ]
+              ]
+            },
+            "created_time": 1788677633689,
+            "last_edited_time": 1788677633689,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "aPRS9fZo1OCszBKnwk6_nw,\"start\",\"end\"",
+                "n": {
+                  "aPRS9fZo1OCszBKnwk6_nw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "aPRS9fZo1OCszBKnwk6_nw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "D4uhO8Vn97WE",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 48,
+                          "c": "Then give your coding agent this handoff prompt:"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-813c-ace0-c9eaa794d3ec": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-813c-ace0-c9eaa794d3ec",
+            "version": 3,
+            "type": "code",
+            "properties": {
+              "title": [
+                [
+                  "Read every file inside /docs before editing the project.\n\nTreat the approved PRD as the source of truth for product scope, the TRD for technical decisions, the App Flow for navigation and states, the UI/UX Brief for visual behaviour, the Backend Schema for data, and the Implementation Plan for build order.\n\nFirst inspect the existing codebase. Report any conflict between the code and the documents. Then show me the first implementation phase, the files it will affect and how it will be verified.\n\nDo not implement later phases, add unapproved features or change the approved stack. Wait for my approval before starting phase one."
+                ]
+              ],
+              "language": [
+                [
+                  "Plain Text"
+                ]
+              ]
+            },
+            "format": {
+              "code_wrap": true
+            },
+            "created_time": 1788677633691,
+            "last_edited_time": 1788677633691,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "Sqvf_ggKNsvwi0OhqEovgw,\"start\",\"end\"",
+                "n": {
+                  "Sqvf_ggKNsvwi0OhqEovgw,\"start\",\"end\"": {
+                    "s": {
+                      "x": "Sqvf_ggKNsvwi0OhqEovgw",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "ozET5NjuNbwD",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 634,
+                          "c": "Read every file inside /docs before editing the project.\n\nTreat the approved PRD as the source of truth for product scope, the TRD for technical decisions, the App Flow for navigation and states, the UI/UX Brief for visual behaviour, the Backend Schema for data, and the Implementation Plan for build order.\n\nFirst inspect the existing codebase. Report any conflict between the code and the documents. Then show me the first implementation phase, the files it will affect and how it will be verified.\n\nDo not implement later phases, add unapproved features or change the approved stack. Wait for my approval before starting phase one."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-815a-ab70-ceb2f7f7b443": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-815a-ab70-ceb2f7f7b443",
+            "version": 2,
+            "type": "sub_header",
+            "properties": {
+              "title": [
+                [
+                  "The Important Part"
+                ]
+              ]
+            },
+            "created_time": 1788677633693,
+            "last_edited_time": 1788677633693,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "SF9-pSvDt4NiMchveavr8A,\"start\",\"end\"",
+                "n": {
+                  "SF9-pSvDt4NiMchveavr8A,\"start\",\"end\"": {
+                    "s": {
+                      "x": "SF9-pSvDt4NiMchveavr8A",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "rouCXsL5r-hF",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 18,
+                          "c": "The Important Part"
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      },
+      "3d313d90-aa8f-81e6-bbdd-f16abb698ada": {
+        "value": {
+          "value": {
+            "id": "3d313d90-aa8f-81e6-bbdd-f16abb698ada",
+            "version": 2,
+            "type": "text",
+            "properties": {
+              "title": [
+                [
+                  "The goal is not to produce six long files. The goal is to remove six different kinds of guessing before your coding agent starts building."
+                ]
+              ]
+            },
+            "created_time": 1788677633695,
+            "last_edited_time": 1788677633695,
+            "parent_id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+            "parent_table": "block",
+            "alive": true,
+            "ignore_block_count": true,
+            "space_id": "4a1109f7-79dc-4b65-804e-53300726b814",
+            "crdt_format_version": 1,
+            "crdt_data": {
+              "title": {
+                "r": "Okg7v___8cTUgRSNHH_S5w,\"start\",\"end\"",
+                "n": {
+                  "Okg7v___8cTUgRSNHH_S5w,\"start\",\"end\"": {
+                    "s": {
+                      "x": "Okg7v___8cTUgRSNHH_S5w",
+                      "i": [
+                        {
+                          "t": "s"
+                        },
+                        {
+                          "t": "t",
+                          "i": [
+                            "0qTxqeMhfKa0",
+                            1
+                          ],
+                          "o": "start",
+                          "l": 138,
+                          "c": "The goal is not to produce six long files. The goal is to remove six different kinds of guessing before your coding agent starts building."
+                        },
+                        {
+                          "t": "e"
+                        }
+                      ],
+                      "l": ""
+                    },
+                    "c": []
+                  }
+                }
+              }
+            }
+          },
+          "role": "reader"
+        }
+      }
+    }
+  }
+}

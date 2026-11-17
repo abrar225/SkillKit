@@ -1,0 +1,32 @@
+{
+  "id": "ui-ux/hi-fi-design",
+  "name": "hi-fi-design",
+  "description": "The design process for high-fidelity, polished work — the system prompt tells Claude to invoke it before starting any design",
+  "origin": "upstream",
+  "license": "CC0-1.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "asgeirtj/system_prompts_leaks",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "path": "Anthropic/claude-design/skills/hi-fi-design",
+    "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103",
+    "ref": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "cbc66c2deb7cc8eeb4e9a4941e0dfe83f8a92270ff7bf47a489a7a86dd28c431"
+    },
+    "executablePaths": [
+      "SKILL.md"
+    ]
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "f99ae25b6325d3a2fcebe74ee92296e2058fe84e97f228a5b81b5e8a1821f04f"
+    }
+  ]
+}

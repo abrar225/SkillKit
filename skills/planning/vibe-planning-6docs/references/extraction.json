@@ -1,0 +1,558 @@
+{
+  "sourceUrl": "https://midi-garment-d51.notion.site/The-6-Documents-You-Need-Before-Vibe-Coding-Any-App-3d313d90aa8f80769b6aecefb5f83f45",
+  "pageId": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+  "snapshot": "references/source-page.json",
+  "snapshotSha256": "569e626f3eda18776fd6fb3e81ea62d942cde6bc4fba3840d0179d6917e116d2",
+  "blockCount": 82,
+  "codeBlockCount": 17,
+  "blocks": [
+    {
+      "id": "3d313d90-aa8f-8076-9b6a-ecefb5f83f45",
+      "type": "page",
+      "version": 21,
+      "lastEditedTime": 1788677694861
+    },
+    {
+      "id": "3d313d90-aa8f-8193-b4c3-d8b3cceaa1cf",
+      "type": "text",
+      "version": 3,
+      "lastEditedTime": 1788677633515
+    },
+    {
+      "id": "3d313d90-aa8f-8188-a811-ce2a6668a350",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633517
+    },
+    {
+      "id": "3d313d90-aa8f-816a-8ca3-ceb25631b4b3",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633520
+    },
+    {
+      "id": "3d313d90-aa8f-814c-95ba-dd5e382d9667",
+      "type": "numbered_list",
+      "version": 3,
+      "lastEditedTime": 1788677633523
+    },
+    {
+      "id": "3d313d90-aa8f-8178-8bee-de12657007be",
+      "type": "numbered_list",
+      "version": 3,
+      "lastEditedTime": 1788677633525
+    },
+    {
+      "id": "3d313d90-aa8f-814b-8b4e-f3128e5d8f7b",
+      "type": "numbered_list",
+      "version": 3,
+      "lastEditedTime": 1788677633526
+    },
+    {
+      "id": "3d313d90-aa8f-8104-90d9-e5a8d933d704",
+      "type": "numbered_list",
+      "version": 3,
+      "lastEditedTime": 1788677633527
+    },
+    {
+      "id": "3d313d90-aa8f-814b-9407-f1f50e7da332",
+      "type": "numbered_list",
+      "version": 3,
+      "lastEditedTime": 1788677633529
+    },
+    {
+      "id": "3d313d90-aa8f-81a7-a519-f668926f0ea5",
+      "type": "numbered_list",
+      "version": 3,
+      "lastEditedTime": 1788677633530
+    },
+    {
+      "id": "3d313d90-aa8f-8163-8d39-e708f197654f",
+      "type": "text",
+      "version": 3,
+      "lastEditedTime": 1788677633532
+    },
+    {
+      "id": "3d313d90-aa8f-812c-b73b-e93531f6846e",
+      "type": "quote",
+      "version": 2,
+      "lastEditedTime": 1788677633536
+    },
+    {
+      "id": "3d313d90-aa8f-8151-8e69-ebfdf5480310",
+      "type": "divider",
+      "version": 1,
+      "lastEditedTime": 1788677633538
+    },
+    {
+      "id": "3d313d90-aa8f-8182-afe3-eb13497a7de3",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633539
+    },
+    {
+      "id": "3d313d90-aa8f-81cd-b032-f36bb942fd0a",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633542,
+      "path": "references/document-order.md",
+      "textSha256": "d6583931dc401b24249892427d3a50acbaaf32dc71dd84cfd3bcbc276edff5cd"
+    },
+    {
+      "id": "3d313d90-aa8f-8186-b473-d9be0152e6b5",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633545
+    },
+    {
+      "id": "3d313d90-aa8f-81e0-bb00-d4c4665ffaec",
+      "type": "divider",
+      "version": 1,
+      "lastEditedTime": 1788677633547
+    },
+    {
+      "id": "3d313d90-aa8f-810e-881b-eefcaecae89d",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633548
+    },
+    {
+      "id": "3d313d90-aa8f-8142-8d05-ecc6ec54338d",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633551
+    },
+    {
+      "id": "3d313d90-aa8f-8157-9214-cacee0365bfc",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633554,
+      "path": "templates/00-app-brief.md",
+      "textSha256": "6272a9216295585a3e39038d4bb9b9bfb66f4240b0e96ac3b4ed85637aaa78d4"
+    },
+    {
+      "id": "3d313d90-aa8f-81cb-90a9-d48d133acc5b",
+      "type": "text",
+      "version": 3,
+      "lastEditedTime": 1788677633557
+    },
+    {
+      "id": "3d313d90-aa8f-8156-973f-fa05391c61be",
+      "type": "divider",
+      "version": 1,
+      "lastEditedTime": 1788677633559
+    },
+    {
+      "id": "3d313d90-aa8f-8116-a2ef-c3f5e68ef53d",
+      "type": "header",
+      "version": 2,
+      "lastEditedTime": 1788677633561
+    },
+    {
+      "id": "3d313d90-aa8f-8181-bc7a-dc4b6d158f69",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633562
+    },
+    {
+      "id": "3d313d90-aa8f-81a9-a82d-dfbf0fb093ed",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633565
+    },
+    {
+      "id": "3d313d90-aa8f-81e6-a0b9-e75edcddcc02",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633567
+    },
+    {
+      "id": "3d313d90-aa8f-817f-868e-dbc982cb1e53",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633571,
+      "path": "templates/01-prd.md",
+      "textSha256": "928c7e7a0987cb1b2981342287f86f31b1e03038e8b8e5b5b54c1b3ac1ae802f"
+    },
+    {
+      "id": "3d313d90-aa8f-81c3-93d1-fb830db733b3",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633574
+    },
+    {
+      "id": "3d313d90-aa8f-8138-a6d2-c4bf462af98a",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633577,
+      "path": "prompts/01-prd.prompt.md",
+      "textSha256": "f2f2b59726166341ed23c7f3fa091d2c43aa327010c60bb21143e4f4ea749dd2"
+    },
+    {
+      "id": "3d313d90-aa8f-8182-8e6c-dc457dc9be33",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633579
+    },
+    {
+      "id": "3d313d90-aa8f-813b-a683-c9465c7c60e3",
+      "type": "divider",
+      "version": 1,
+      "lastEditedTime": 1788677633581
+    },
+    {
+      "id": "3d313d90-aa8f-81ae-945d-c6ca7b858374",
+      "type": "header",
+      "version": 2,
+      "lastEditedTime": 1788677633583
+    },
+    {
+      "id": "3d313d90-aa8f-8101-a76f-c9e2a1e7760c",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633585
+    },
+    {
+      "id": "3d313d90-aa8f-81cf-adbb-fbe6756029b0",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633587
+    },
+    {
+      "id": "3d313d90-aa8f-8111-8f33-c20870077a6a",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633589
+    },
+    {
+      "id": "3d313d90-aa8f-816a-a0fd-f54d0334a26d",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633594,
+      "path": "templates/02-trd.md",
+      "textSha256": "9f3abc7e8fe52203a3cf76c15fdc3db556bb801dc95ea9474333be1dcd8be74b"
+    },
+    {
+      "id": "3d313d90-aa8f-81e2-abd1-d1165ea00ee9",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633597
+    },
+    {
+      "id": "3d313d90-aa8f-81e5-a327-e9988a0b38ac",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633599,
+      "path": "prompts/02-trd.prompt.md",
+      "textSha256": "c0ae66d33390982549b2a770261671d61898042c7c7d094ee95ed5696d66dd3b"
+    },
+    {
+      "id": "3d313d90-aa8f-814d-952f-c6281b43b75e",
+      "type": "divider",
+      "version": 1,
+      "lastEditedTime": 1788677633602
+    },
+    {
+      "id": "3d313d90-aa8f-81c9-a22d-ea5275922b36",
+      "type": "header",
+      "version": 2,
+      "lastEditedTime": 1788677633604
+    },
+    {
+      "id": "3d313d90-aa8f-811f-b959-cf0536f1ba97",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633606
+    },
+    {
+      "id": "3d313d90-aa8f-8165-8506-d2d39b4a572b",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633608
+    },
+    {
+      "id": "3d313d90-aa8f-81e5-9778-f1fda894cf24",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633610
+    },
+    {
+      "id": "3d313d90-aa8f-81b0-b674-cc9ee1dfbf17",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633614,
+      "path": "templates/03-app-flow.md",
+      "textSha256": "ab01bfc1fdee3c162d496272c0ccd31ce088216b253aff9af5c5e01dcc835f24"
+    },
+    {
+      "id": "3d313d90-aa8f-81b4-afb9-ff2e8af122a5",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633616
+    },
+    {
+      "id": "3d313d90-aa8f-81bd-b8e3-e2961b82ce81",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633618,
+      "path": "prompts/03-app-flow.prompt.md",
+      "textSha256": "c59cc2559f5c2644fe795a5fd31722180e479379fd00fe2714e6c504734624cc"
+    },
+    {
+      "id": "3d313d90-aa8f-8149-b8c8-c29458fed348",
+      "type": "divider",
+      "version": 1,
+      "lastEditedTime": 1788677633620
+    },
+    {
+      "id": "3d313d90-aa8f-8107-90fd-fad5efb7edc2",
+      "type": "header",
+      "version": 2,
+      "lastEditedTime": 1788677633622
+    },
+    {
+      "id": "3d313d90-aa8f-810e-a9c3-dd20939fc25f",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633624
+    },
+    {
+      "id": "3d313d90-aa8f-81e6-9506-d79807ae7ebf",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633626
+    },
+    {
+      "id": "3d313d90-aa8f-8198-813d-ea2491e4b237",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633628
+    },
+    {
+      "id": "3d313d90-aa8f-81d5-bd9a-e9c0e402e7f4",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633632,
+      "path": "templates/04-ui-ux-brief.md",
+      "textSha256": "66f951a13485a8938da4d633b35a69d6910f0c8a5ed7a81568c93b279c6fbf4f"
+    },
+    {
+      "id": "3d313d90-aa8f-8167-8d73-d8102ad4398c",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633635
+    },
+    {
+      "id": "3d313d90-aa8f-813c-a079-dbb442bada93",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633637,
+      "path": "prompts/04-ui-ux-brief.prompt.md",
+      "textSha256": "38a927fd74fa94facb9476ae50929899afce794dc947dbe26c3c6713f0598383"
+    },
+    {
+      "id": "3d313d90-aa8f-81f8-9bfc-da78220e0a9c",
+      "type": "divider",
+      "version": 1,
+      "lastEditedTime": 1788677633639
+    },
+    {
+      "id": "3d313d90-aa8f-81f6-9803-dbc0743bb559",
+      "type": "header",
+      "version": 2,
+      "lastEditedTime": 1788677633641
+    },
+    {
+      "id": "3d313d90-aa8f-8178-8ea9-cd708b860f1d",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633643
+    },
+    {
+      "id": "3d313d90-aa8f-81bf-8c30-f1899fa60def",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633645
+    },
+    {
+      "id": "3d313d90-aa8f-81b0-a7a0-da505e7c17b2",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633647
+    },
+    {
+      "id": "3d313d90-aa8f-819e-bc84-ca7a26055286",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633651,
+      "path": "templates/05-backend-schema.md",
+      "textSha256": "13d4be165bbac0370b9e482295ddee924152fcccada46551de1580195647fc1b"
+    },
+    {
+      "id": "3d313d90-aa8f-81b1-bf1d-eff016828486",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633653
+    },
+    {
+      "id": "3d313d90-aa8f-81a9-ba7b-e13667f33dd2",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633655,
+      "path": "prompts/05-backend-schema.prompt.md",
+      "textSha256": "8c20115754c15e8f9e3b8cb6ec01319140a61fa31c150d237e221d569f8d0a35"
+    },
+    {
+      "id": "3d313d90-aa8f-81b1-b567-d9b342f96239",
+      "type": "divider",
+      "version": 1,
+      "lastEditedTime": 1788677633657
+    },
+    {
+      "id": "3d313d90-aa8f-8160-8498-f483c50a9a6d",
+      "type": "header",
+      "version": 2,
+      "lastEditedTime": 1788677633659
+    },
+    {
+      "id": "3d313d90-aa8f-8136-943c-dfef7b20c466",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633661
+    },
+    {
+      "id": "3d313d90-aa8f-8183-a4f4-de7a2b4caf9b",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633663
+    },
+    {
+      "id": "3d313d90-aa8f-815c-bf91-c7b79c0dc1b8",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633664
+    },
+    {
+      "id": "3d313d90-aa8f-81cf-885e-cc90ab329cac",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633668,
+      "path": "templates/06-implementation-plan.md",
+      "textSha256": "4156362d1c1e07fbb979cef52cbe7d41c3f597c9e81c20bde95004347047070d"
+    },
+    {
+      "id": "3d313d90-aa8f-81fe-941c-e9ef291255c3",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633670
+    },
+    {
+      "id": "3d313d90-aa8f-8127-ad0e-c931b10ced75",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633672,
+      "path": "prompts/06-implementation-plan.prompt.md",
+      "textSha256": "4b7778f3dab37e53b1aaeb95fd37bc7d485c0729ef89b1dda165745f291b9ef4"
+    },
+    {
+      "id": "3d313d90-aa8f-81dd-ad68-f972e5d75d07",
+      "type": "divider",
+      "version": 1,
+      "lastEditedTime": 1788677633674
+    },
+    {
+      "id": "3d313d90-aa8f-81e3-932a-cdff883d20d2",
+      "type": "header",
+      "version": 2,
+      "lastEditedTime": 1788677633676
+    },
+    {
+      "id": "3d313d90-aa8f-81f6-aa32-fc477838331f",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633678
+    },
+    {
+      "id": "3d313d90-aa8f-8105-8c53-d2d14b6da0e5",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633679,
+      "path": "prompts/final-consistency-check.prompt.md",
+      "textSha256": "8c3a700f5e45ada2207bac2478ef04c55aaab63b25191303287006a7af29c4c3"
+    },
+    {
+      "id": "3d313d90-aa8f-8151-a6ab-f65b80fd6724",
+      "type": "divider",
+      "version": 1,
+      "lastEditedTime": 1788677633680
+    },
+    {
+      "id": "3d313d90-aa8f-8174-9323-db4ad2c9309c",
+      "type": "header",
+      "version": 2,
+      "lastEditedTime": 1788677633682
+    },
+    {
+      "id": "3d313d90-aa8f-81cf-9208-cf35fca015ae",
+      "type": "text",
+      "version": 3,
+      "lastEditedTime": 1788677633684
+    },
+    {
+      "id": "3d313d90-aa8f-81a9-a4a2-cb886ea335ff",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633686,
+      "path": "references/project-layout.md",
+      "textSha256": "3242c909633b5e7eac815189d398d102ecf6a5f31e05475ee754e3261624a210"
+    },
+    {
+      "id": "3d313d90-aa8f-8129-9478-c8ee47d2dfe7",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633689
+    },
+    {
+      "id": "3d313d90-aa8f-813c-ace0-c9eaa794d3ec",
+      "type": "code",
+      "version": 3,
+      "lastEditedTime": 1788677633691,
+      "path": "prompts/handoff.prompt.md",
+      "textSha256": "134b91f3a4ef43cae4ce62c216462f2abbc73dbf9e6677e32cb95b6a1fceb3a7"
+    },
+    {
+      "id": "3d313d90-aa8f-815a-ab70-ceb2f7f7b443",
+      "type": "sub_header",
+      "version": 2,
+      "lastEditedTime": 1788677633693
+    },
+    {
+      "id": "3d313d90-aa8f-81e6-bbdd-f16abb698ada",
+      "type": "text",
+      "version": 2,
+      "lastEditedTime": 1788677633695
+    }
+  ],
+  "files": {
+    "references/full-guide.md": "6ac92b922fdd38edf3aa9133fb627d47b782c6cd6647456802da32199532258d",
+    "references/source-page.json": "569e626f3eda18776fd6fb3e81ea62d942cde6bc4fba3840d0179d6917e116d2",
+    "references/document-order.md": "19c0660efe7634b4fa2c4f250fb0f1054623a2a0ff95ce539ca010ac7f685da0",
+    "templates/00-app-brief.md": "e13ee7771d67968e1e62817e2fbe9af1ea4d635fda9af28627776222143cdbd8",
+    "templates/01-prd.md": "5bd9423234093761ee836a0cb3ef1a1aadd251638fcf69a2329041c34eb46c51",
+    "prompts/01-prd.prompt.md": "82ab98b74610594158c22a0769e8636fa89ee4fb63bb39ccf017a3cf17c7d5b5",
+    "templates/02-trd.md": "77db59ef6cdbedd6daf4cbd8e2bbecd215a5001164cdf2376d13b13a5d5c72f5",
+    "prompts/02-trd.prompt.md": "50f89730fb24cb909274e1d3afdfe70b55ed690bd20cee88b65e6b4323e9c8a0",
+    "templates/03-app-flow.md": "5d206966d0c6b60d1fba81122c109cabb01b116ee45d649be25ab43710dea1a1",
+    "prompts/03-app-flow.prompt.md": "5a67aa8350971906e3e9ade8eb64b152bfef3fb879f69a3a6b6322636bdf30f8",
+    "templates/04-ui-ux-brief.md": "dc8b50314936361d053f389a6ab22662da81c00ab6356c5f248cb8d852617045",
+    "prompts/04-ui-ux-brief.prompt.md": "061a30e0a9a52c020abeb44e1fe46bd329a3f1af783e9fe6eec3e71847a6615d",
+    "templates/05-backend-schema.md": "ccea52696fe34228add99895d86f389b43431f219230ba3c91d4f764507e299c",
+    "prompts/05-backend-schema.prompt.md": "f8ff8bb0aa47f59eb39d132b51760bfdb584039d821ada006bd887b703fdc7b0",
+    "templates/06-implementation-plan.md": "913b7f720b6138bcab86e3fd953c86b8e39fe0c552e20a0aa870cfaf758932dd",
+    "prompts/06-implementation-plan.prompt.md": "185af6b70f5ec32d2df75038a1c00e372c6e5aeb9313621435ce0dbc9fa2f3eb",
+    "prompts/final-consistency-check.prompt.md": "56518812686200cc4aa62381bd7c1beb2ea0276133ad5aa30c6cb19e32f49fb1",
+    "references/project-layout.md": "edc45d4151493524841c1d5334a9b6c250eb0be76a981b1a940c028417e8f127",
+    "prompts/handoff.prompt.md": "0d0b7b6109e49cc5caa70f5dc23f0d781aeb12f6cf2d3837f6c7bde0d7b60260"
+  },
+  "codeFileNewlinePolicy": "Preserve source text; normalize terminal newlines to one LF in extracted Markdown files. Raw source text is retained in the snapshot."
+}

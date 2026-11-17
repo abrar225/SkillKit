@@ -1,96 +1,119 @@
-# Skills
+<div align="center">
 
-[![Agent-First](https://img.shields.io/badge/Architecture-Agent--First-blue.svg)](AGENTS.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Vibe Coding Ready](https://img.shields.io/badge/Vibe%20Coding-Optimized-purple.svg)](#the-vibe-coding-workflow)
+# SkillKit
 
-An **Agent-First Skills Monorepo** designed for vibe coders and modern AI coding agents (Antigravity, Claude Code, Cursor, Codex, OpenCode).
+### Better instructions. Better builds.
 
-Curated by [Abrar Akhunji](https://github.com/abrar225), this repository turns raw agent interactions into reliable, disciplined, test-verified software engineering.
+A curated toolkit for people who build with AI agents.
+Find a skill, inspect its source, and bring it into your next project.
 
----
+**192 skills · 14 domains · 157 developer resources**
 
-## The Philosophy: Disciplined Vibe Coding
+[Explore the catalog](docs/SKILLS.md) · [Browse resources](docs/RESOURCES.md) · [Get started](docs/GETTING-STARTED.md) · [Source & licensing](docs/LICENSING.md)
 
-Vibe coding is the fastest way to build ambitious software, but speed without guardrails leads to architectural drift, hallucinated dependencies, and broken edge cases.
-
-This repository bridges that gap by providing:
-1. **Curated Domain Knowledge**: Battle-tested instructions for UI/UX, Flutter, Next.js, reverse engineering, and automations.
-2. **The Orchestrator Protocol**: Before touching code, visiting agents grill ambiguous prompts, enforce boundaries, and load only the minimum needed context.
-3. **Evidence-Based Completion**: Grounded in the `gravitas` runtime. A feature is only considered done when an observable test or eval passes after the last edit.
-
-```
-Developer Intent ➔ Master Orchestrator ➔ Socratic Grilling ➔ Targeted Skill ➔ Gravitas Verification
-```
+</div>
 
 ---
 
-## Domain Taxonomy
+## From “how do I do this?” to a skill you can use
 
-All skills are organized into focused domain directories under `skills/`:
+SkillKit brings planning, engineering, design, security, automation, and media workflows into one searchable library. Every vendored skill has a source repository, pinned commit, and provenance file so you can inspect what you install.
 
-| Domain | Description | Key Skills |
-| :--- | :--- | :--- |
-| **`orchestrator/`** | Intent triage, requirements grilling, and engineering invariants | `master-router`, `gravitas`, `grill-me` |
-| **`ui-ux/`** | Design system tokens, micro-interactions, layout polish, and motion | `ui-ux-pro-max`, `framer-motion-animator`, `linear-ui` |
-| **`frontend/`** | Modern React, Next.js App Router, Astryx components, Three.js WebGL | `frontend-design`, `astryx`, `vercel-react-best-practices` |
-| **`mobile/`** | Flutter enterprise architecture, Bloc/Riverpod, Compose previews | `flutter-architecture`, `android-cli`, `compose-preview` |
-| **`backend-api/`** | PacketLark local API workbench, HTTP contracts, BigQuery dbt | `packetlark-workbench`, `dbt-bigquery`, `data-autocleaning` |
-| **`security-bug-bounty/`** | Static security audits, protocol reverse engineering, bug bounty recon | `review-security`, `reverse-engineer-anything` |
-| **`automations/`** | Headless browser automation, background workers, Firecrawl scraping | `task-scheduler`, `browser-automation`, `firecrawl` |
-| **`scraping-leads/`** | Data scraping, lead qualification, cold email pipelines, programmatic SEO | `cold-email-pipeline`, `ai-seo`, `lead-enrichment` |
-| **`social-media/`** | High-retention human writing, Instagram Reels DOM, LinkedIn tech deep-dives | `human-writer`, `instagram-autoposting`, `linkedin-autoposting` |
-| **`engineering-ops/`** | Surgical code edits, codebase knowledge graphs, red-green TDD | `karpathy-guidelines`, `graphify`, `tdd` |
+- **Search by the work.** Find skills by task, domain, or capability.
+- **Inspect before installing.** Read the full instructions, supporting files, source, and license.
+- **Use your agent.** Export to Claude Code, Cursor, Antigravity, or the `.agents/skills` convention.
+- **Connect through MCP.** Let your agent search the catalog and read instructions through a local stdio server.
 
----
+## Your first skill in a minute
 
-## Quickstart for Developers
-
-Clone this repository or use the companion CLI dispatcher:
+Requires Node.js 18+ for the dependency-free CLI. The optional MCP server and test dependencies require Node.js 20+.
 
 ```bash
-# Clone the monorepo
-git clone https://github.com/abrar225/Skills.git ~/Desktop/Skills
-cd ~/Desktop/Skills
+git clone https://github.com/abrar225/SkillKit.git
+cd SkillKit
 
-# List all available domains and skills
-node bin/vibe-skills.js list
+node bin/vibe-skills.js search "code review"
+node bin/vibe-skills.js info engineering-ops/code-review
 
-# Scan any local project to detect what skills it needs
-cd ~/path-to-your-project
-node ~/Desktop/Skills/bin/vibe-skills.js scan
+# Install into your project's Claude Code skills directory.
+node bin/vibe-skills.js export --target claude \
+  --ids engineering-ops/code-review --out ~/code/my-app
 ```
 
+Choose `--target cursor`, `--target antigravity`, or `--target agents` for another agent. Existing differing installs are skipped; use `--force` only when you intend to replace them.
+
+## Let the project tell you what it needs
+
+```bash
+node bin/vibe-skills.js scan ~/code/my-app
+node bin/vibe-skills.js domains
+node bin/vibe-skills.js list --featured
+node bin/vibe-skills.js resources
+node bin/vibe-skills.js stats
+```
+
+`scan` recommends catalog entries based on project files. Review the suggestions, then run the export command it prints.
+
+## Give your agent the catalog
+
+Install the MCP server dependencies with Node.js 20+:
+
+```bash
+npm ci
+```
+
+Add this server to your MCP client's configuration, replacing the path with your actual clone:
+
+```json
+{
+  "mcpServers": {
+    "skillkit": {
+      "command": "node",
+      "args": ["/absolute/path/to/SkillKit/bin/mcp-server.js"]
+    }
+  }
+}
+```
+
+The server offers `search_skills`, `get_skill`, `list_domains`, `export_skill`, and `list_resources`. It runs locally over stdio. `export_skill` returns an installation plan; review and execute the command to install the files.
+
+## The collection
+
+| Start with | What you will find |
+| :--- | :--- |
+| [Orchestration](docs/SKILLS.md#orchestrator) & [planning](docs/SKILLS.md#planning) | Requirements, specs, routing, and context management |
+| [Engineering](docs/SKILLS.md#engineering-ops) & [architecture](docs/SKILLS.md#architecture) | Debugging, verification, review, and system design |
+| [UI/UX](docs/SKILLS.md#ui-ux), [frontend](docs/SKILLS.md#frontend) & [mobile](docs/SKILLS.md#mobile) | Interfaces, motion, React, Three.js, Flutter, and SwiftUI |
+| [Backend](docs/SKILLS.md#backend-api) & [security](docs/SKILLS.md#security-bug-bounty) | Data, APIs, MCP, hardening, and reverse engineering |
+| [Automation](docs/SKILLS.md#automations), [media](docs/SKILLS.md#media) & [social](docs/SKILLS.md#social-media) | Browser workflows, creative tools, and publishing |
+| [Agent tooling](docs/SKILLS.md#agent-tooling) & [search visibility](docs/SKILLS.md#scraping-leads) | Skills, rules, hooks, discovery, and outreach |
+
+## A catalog you can audit
+
+```text
+skills/<domain>/<skill>/
+├── SKILL.md       Instructions and activation guidance
+├── SOURCE.json    Origin, source, pinned commit, and license metadata
+└── …              Supporting files supplied by the source
+```
+
+Vendored instructions remain byte-for-byte copies of their pinned sources. Generated registries and catalogs describe what is on disk. License status varies by entry: 53 entries have unverified, unknown, or unlicensed status. Check [third-party notices](THIRD_PARTY_NOTICES.md) before reuse.
+
+```bash
+npm ci
+npm run validate
+npm test
+npm run verify:upstream  # independently compare pinned source archives
+```
+
+Validation currently reports 55 warnings: 53 license-provenance warnings, one missing frontmatter warning, and one disambiguated-name warning. Warnings are disclosed, not hidden.
+
+## Explore further
+
+[Getting started](docs/GETTING-STARTED.md) · [CLI and installation](docs/GETTING-STARTED.md#install-into-an-agent) · [Add a vendored skill](docs/ADDING-A-SKILL.md) · [Add a resource](docs/ADDING-A-RESOURCE.md) · [Licensing](docs/LICENSING.md)
+
+The public repository contains the skill collection, CLI, MCP server, and documentation. The hosted website's implementation is maintained separately and excluded from this repository.
+
 ---
 
-## How AI Agents Use This Repository
-
-Every AI agent that visits this repository starts by reading [`AGENTS.md`](AGENTS.md).
-
-1. **Claude Code**: Reads `CLAUDE.md` and routes queries to relevant skill paths.
-2. **Antigravity**: Discovers and triggers skills via frontmatter metadata.
-3. **Cursor & Codex**: Enforces repository conventions via `.cursorrules`.
-
-### Anatomy of a Skill
-Every skill follows a standardized, test-verifiable format:
-- `SKILL.md`: Core instructions, invariants, and implementation patterns.
-- `metadata.json`: Machine-readable properties, triggers, and prerequisites.
-- `evals/eval.json`: Scenario benchmarks and golden test assertions that verify agent execution.
-
----
-
-## Tested on Real-World Workspaces
-
-These skills are extracted directly from active production projects:
-- **PacketLark**: Open-source local API workbench and HTTP contract engine.
-- **Fixo Flow**: Voice-first AI desktop workflow assistant.
-- **Social Media Manager**: Multi-platform automated publishing and Reels engine.
-- **FrameCast Studio**: Video composition and browser media tooling.
-- **Abrar Portfolio**: High-performance interactive 3D and canvas web application.
-- **Reverse Engineer**: Protocol audit and binary analysis workbench.
-
----
-
-## License
-
-MIT © [Abrar Akhunji](https://github.com/abrar225)
+Curated and maintained by [Abrar Akhunji](https://github.com/abrar225). Repository-owned code and curation: [MIT](LICENSE). Copied materials retain their source terms.

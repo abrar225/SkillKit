@@ -1,0 +1,112 @@
+[
+  {
+    "id": "playwright",
+    "name": "Playwright",
+    "url": "https://playwright.dev/",
+    "type": "browser-automation",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Cross-browser automation with reliable locators, tracing, and test runner.",
+    "why": "The most dependable base for agent browser testing and scraping.",
+    "tags": ["browser", "testing", "automation"]
+  },
+  {
+    "id": "puppeteer",
+    "name": "Puppeteer",
+    "url": "https://pptr.dev/",
+    "type": "browser-automation",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Chrome/Chromium automation library for Node.js.",
+    "why": "Useful when the target is Chromium-only and the API fits better.",
+    "tags": ["browser", "chrome", "automation"]
+  },
+  {
+    "id": "scrapy",
+    "name": "Scrapy",
+    "url": "https://scrapy.org/",
+    "type": "scraping-framework",
+    "pricing": "free",
+    "license": "BSD-3-Clause",
+    "description": "Python framework for large-scale structured crawling.",
+    "why": "A mature choice for crawlers that need queues, retries, and pipelines.",
+    "tags": ["python", "crawler", "scraping"]
+  },
+  {
+    "id": "apify",
+    "name": "Apify",
+    "url": "https://apify.com/",
+    "type": "scraping-platform",
+    "pricing": "freemium",
+    "license": "commercial service",
+    "description": "Hosted scraping and automation platform with ready-made actors.",
+    "why": "Avoids maintaining browser infrastructure for common targets.",
+    "tags": ["scraping", "hosted", "actors"]
+  },
+  {
+    "id": "browserbase",
+    "name": "Browserbase",
+    "url": "https://www.browserbase.com/",
+    "type": "browser-infrastructure",
+    "pricing": "freemium",
+    "license": "commercial service",
+    "description": "Hosted headless browser infrastructure for agents.",
+    "why": "Scales browser sessions without local Chrome management.",
+    "tags": ["browser", "hosted", "agents"]
+  },
+  {
+    "id": "stagehand",
+    "name": "Stagehand",
+    "url": "https://github.com/browserbase/stagehand",
+    "type": "browser-automation",
+    "pricing": "free",
+    "license": "MIT",
+    "description": "AI-native browser automation with a Playwright-compatible core.",
+    "why": "A middle ground between brittle selectors and fully autonomous browsing.",
+    "tags": ["browser", "ai", "playwright", "automation"]
+  },
+  {
+    "id": "steel-browser",
+    "name": "Steel Browser",
+    "url": "https://github.com/steel-dev/steel-browser",
+    "type": "browser-infrastructure",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "description": "Open-source browser API for agents.",
+    "why": "Self-hostable browser sessions with a clean API.",
+    "tags": ["browser", "self-hosted", "agents"]
+  },
+  {
+    "id": "trigger-dev",
+    "name": "Trigger.dev",
+    "url": "https://trigger.dev/",
+    "type": "background-jobs",
+    "pricing": "freemium",
+    "license": "Apache-2.0",
+    "description": "Background jobs and durable workflows for TypeScript.",
+    "why": "Good fit for long-running scrapes, agent tasks, and retries.",
+    "tags": ["jobs", "workflows", "typescript"]
+  },
+  {
+    "id": "inngest",
+    "name": "Inngest",
+    "url": "https://www.inngest.com/",
+    "type": "background-jobs",
+    "pricing": "freemium",
+    "license": "Apache-2.0",
+    "description": "Event-driven durable functions with steps and retries.",
+    "why": "Makes agent and automation workflows observable and resumable.",
+    "tags": ["workflows", "events", "durable"]
+  },
+  {
+    "id": "temporal",
+    "name": "Temporal",
+    "url": "https://temporal.io/",
+    "type": "workflow-engine",
+    "pricing": "freemium",
+    "license": "MIT",
+    "description": "Durable execution platform for long-running workflows.",
+    "why": "The heavyweight option when workflow state must survive failures.",
+    "tags": ["workflows", "durable", "distributed"]
+  }
+]

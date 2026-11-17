@@ -1,0 +1,11 @@
+{
+  "id": "frontend/threejs-fundamentals",
+  "name": "threejs-fundamentals",
+  "description": "Three.js scene setup, cameras, renderer, Object3D hierarchy, coordinate systems. Use when setting up 3D scenes, creating cameras, configuring renderers, managing object hierarchies, or working with transforms.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/threejs-fundamentals",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

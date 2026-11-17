@@ -1,12 +1,31 @@
-# Cursor Rules for Skills Monorepo
+# Cursor Rules — Skills Monorepo
 
-You are operating within the Agent-First Skills Monorepo (@abrar225/skills).
+You are working in a curated skill library. `AGENTS.md` is authoritative; this file is the short version.
 
-## Core Principles
-1. Read `AGENTS.md` before initiating major multi-file workflows.
-2. Ground all suggested code in real files. Never fabricate dependencies or imports.
-3. Every skill added must include:
-   - `SKILL.md` with YAML frontmatter.
-   - `metadata.json` with schema validation.
-   - `evals/eval.json` with concrete test assertions.
-4. Keep writing clean, natural, and free of AI fluff or repetitive em dashes.
+## Read first
+
+- `AGENTS.md` for invariants and protocol
+- `registry/domains.json` to choose a domain
+- `docs/SKILLS.md` for the full catalog
+
+## Rules
+
+1. Ground every change in real files. Read the target and its `SOURCE.json` before editing.
+2. Skills with `"origin": "upstream"` are vendored verbatim. Never edit them.
+3. New skills need `SKILL.md` and `SOURCE.json`. A description must say when to activate the skill.
+4. New resources go in `resources/<category>.json` with `id`, `name`, `url`, `type`, `pricing`, `license`, `description`, `why`, and `tags`. HTTPS only.
+5. Do not hand-edit `registry/*.json`, `docs/SKILLS.md`, `docs/RESOURCES.md`, or `THIRD_PARTY_NOTICES.md`. They are generated.
+
+## After changes
+
+```bash
+python3 scripts/build-registry.py
+npm run validate
+npm run docs
+```
+
+If validation fails, fix the cause. Do not relax the check to make it pass.
+
+## Voice
+
+Write plainly. No filler, no fabricated counts, no em dash chains.

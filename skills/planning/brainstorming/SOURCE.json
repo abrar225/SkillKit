@@ -1,0 +1,40 @@
+{
+  "id": "planning/brainstorming",
+  "name": "brainstorming",
+  "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/brainstorming",
+    "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "ref": "22f0b463e7a5e579904dd6211a520321035526f7"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "2c9ca71f94886f9ca9f4aef055f7cafb3e1a9bdf3aeebf8f4cb547c69405d207",
+      "builder-check-prompt.md": "36d51a4723d6f0a3ce5811a0ea3b3a8424f07533947e1355f5d8cb8cce40c55e",
+      "scripts/frame-template.html": "6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e",
+      "scripts/helper.js": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3",
+      "scripts/server.cjs": "763abf96510e0b892a1141397b31aa82ef900cf87ed34dde94bc8782baf4a7ca",
+      "scripts/start-server.sh": "314dd68dc00e8dd94c7491aca8a5f004c7fddffc161e2b07482f29f48d13659a",
+      "scripts/stop-server.sh": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf",
+      "visual-companion.md": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2"
+    },
+    "executablePaths": [
+      "scripts/start-server.sh",
+      "scripts/stop-server.sh"
+    ]
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/update-cursor-settings",
+  "name": "update-cursor-settings",
+  "description": "Modify Codex/VSCode user settings in settings.json. Use when you want to change editor settings, preferences, configuration, themes, font size, tab size, format on save, auto save, keybindings, or any settings.json values.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/update-cursor-settings",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

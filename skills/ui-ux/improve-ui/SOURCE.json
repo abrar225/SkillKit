@@ -1,0 +1,32 @@
+{
+  "id": "ui-ux/improve-ui",
+  "name": "improve-ui",
+  "description": "Audit an existing product surface against its own design evidence, identify verified UI problems, and write self-contained implementation plans for another agent. Strictly read-only on product source. Use when asked to review, refine, improve, or clean up an interface without replacing its identity; investigate design-system drift; or prepare a design handoff.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "ibelick/ui-skills",
+    "url": "https://github.com/ibelick/ui-skills",
+    "path": "skills/improve-ui",
+    "commit": "65cc0edb4f64fe8bfe7e9c59466074de25bece76",
+    "ref": "65cc0edb4f64fe8bfe7e9c59466074de25bece76"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "fa2ac808f6d9dab7bb3620880b014d2c18e227e5b006102856038096e573e69a",
+      "agents/openai.yaml": "933af431364517518cbcfcd4e70eb8e8b390ead920abc48c071a4eedb6747183",
+      "references/plan-template.md": "8faca7a14659a7f951d3b89fb730a43a4ce99966cc00481bf83d82b90f34b868"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+    }
+  ]
+}

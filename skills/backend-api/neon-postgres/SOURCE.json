@@ -1,0 +1,36 @@
+{
+  "id": "backend-api/neon-postgres",
+  "name": "neon-postgres",
+  "description": "Guides and best practices for working with Lakebase Postgres on Neon: connections, pooled vs direct, schema migrations, branching (including schema-only, reset-from-parent, and branch-per-PR workflows), autoscaling, scale-to-zero, instant restore, read replicas, IP allow lists, logical replication, egress optimization, and Lakebase Search. Use when the work is an existing DATABASE_URL, SQL, schema, inspect, or search. New backends, Auth, files, Functions, and LLM calls go to the parent `neon` skill. Live queries, reactive UIs, and realtime data go to `neon-realtime`. Also use for \"@neondatabase/serverless\", \"@neon/neon-js\", \"neon inspect db\", \"neon postgres computes\", \"Neon branch\", \"schema-only branch\", \"reset branch\", \"branch per PR\", high database bills, network transfer or egress, Free plan limits or a compute suspended over quota (SQLSTATE 53000, HTTP 402), SELECT * optimization, query overfetching, \"semantic search\", \"vector search\", \"full-text search\", \"BM25\", or \"hybrid search\".",
+  "origin": "upstream",
+  "license": "Apache-2.0",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "neondatabase/agent-skills",
+    "url": "https://github.com/neondatabase/agent-skills",
+    "path": "skills/neon-postgres",
+    "commit": "60b9a53fdd08c3be22781c5e51f6b689a77d3e39",
+    "ref": "60b9a53fdd08c3be22781c5e51f6b689a77d3e39"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "06153ccdf20fc05c9755b1b09598d116e2b3f0b5f7d570a0272454721b3dae01",
+      "references/branching.md": "2212db6f23cfe5ac666ace66f1e434a40234bfcb1c046e9ab883d6206643ab1a",
+      "references/egress-optimization.md": "c103951687a0f9d6ca2c3ee74b3fa68a0925c2269fb0aa13156f087d44a78e18",
+      "references/full-text-search.md": "ddeb529f7a6c520b4a94007f6196c47ed8f632b764b8be31e37a7b51324c8186",
+      "references/hybrid-search.md": "047b80f8d23df81565bb030a9c3b0a79dd7eea86da1b7b64c2e861e20dfd78d5",
+      "references/lakebase-search-drizzle.md": "1e9c764004a40010186b89647d92fb1ee79eeaba64a674cf01e75415413e8067",
+      "references/vector-search.md": "062a6d1d7aa8185731d2ce5aa9efa201dfae64221a3383e42b66e4f5a438a84f"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ]
+}

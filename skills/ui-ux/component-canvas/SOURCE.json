@@ -1,0 +1,30 @@
+{
+  "id": "ui-ux/component-canvas",
+  "name": "component-canvas",
+  "description": "Build a full-screen, interactive canvas to explore existing UI components and their variants with pan and zoom.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "ibelick/ui-skills",
+    "url": "https://github.com/ibelick/ui-skills",
+    "path": "skills/component-canvas",
+    "commit": "65cc0edb4f64fe8bfe7e9c59466074de25bece76",
+    "ref": "65cc0edb4f64fe8bfe7e9c59466074de25bece76"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "ef2d4b55a2ab83b5e00f0e7f13d7e5efd84a2743dac701d1854fafd9d09418ea"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+    }
+  ]
+}

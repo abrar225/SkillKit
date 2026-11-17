@@ -1,74 +1,201 @@
 {
+  "schemaVersion": "2.0.0",
+  "count": 14,
   "domains": [
     {
       "id": "orchestrator",
       "name": "Agent Orchestration & Governance",
-      "description": "Meta-skills that triage incoming developer intent, grill ambiguities, enforce engineering invariants, and dispatch task-specific skills.",
+      "description": "Routing, grilling, multi-agent coordination, context control, and reliability invariants.",
       "path": "skills/orchestrator",
-      "flagshipSkills": ["master-router", "gravitas", "grill-me"]
+      "skillCount": 13,
+      "flagshipSkills": [
+        "find-skills",
+        "gravitas",
+        "grill-me",
+        "grilling",
+        "master-router",
+        "model-council",
+        "swarm"
+      ]
     },
     {
-      "id": "ui-ux",
-      "name": "UI/UX Design & Micro-Interactions",
-      "description": "Design systems, typography scales, spacing tokens, visual hierarchy, and polished spring physics.",
-      "path": "skills/ui-ux",
-      "flagshipSkills": ["ui-ux-pro-max", "framer-motion-animator", "linear-ui-skills", "refactoring-ui"]
+      "id": "planning",
+      "name": "Planning, Specs & Requirements",
+      "description": "Turning intent into PRDs, specs, tickets, implementation plans, and approved scope.",
+      "path": "skills/planning",
+      "skillCount": 22,
+      "flagshipSkills": [
+        "brainstorming",
+        "planning-and-task-breakdown",
+        "to-spec",
+        "vibe-planning-6docs",
+        "writing-plans"
+      ]
     },
     {
-      "id": "frontend",
-      "name": "Frontend Engineering & Web Frameworks",
-      "description": "Modern Next.js, React Server Components, high-performance web graphics, Three.js, and design component libraries.",
-      "path": "skills/frontend",
-      "flagshipSkills": ["frontend-design", "astryx", "vercel-react-best-practices", "threejs-fundamentals"]
-    },
-    {
-      "id": "mobile",
-      "name": "Mobile Application Development",
-      "description": "Flutter enterprise architecture, Jetpack Compose UI sidecar previews, and cross-platform native patterns.",
-      "path": "skills/mobile",
-      "flagshipSkills": ["flutter-architecture", "android-cli", "compose-preview"]
-    },
-    {
-      "id": "backend-api",
-      "name": "Backend, API & Data Pipelines",
-      "description": "PacketLark local API testing, MCP tool protocols, BigQuery data transforms, and dbt modeling.",
-      "path": "skills/backend-api",
-      "flagshipSkills": ["packetlark-workbench", "dbt-bigquery", "data-autocleaning"]
-    },
-    {
-      "id": "security-bug-bounty",
-      "name": "Security Auditing & Bug Bounty Hunting",
-      "description": "Static application security testing (SAST), binary reverse engineering, API parameter fuzzing, and threat modeling.",
-      "path": "skills/security-bug-bounty",
-      "flagshipSkills": ["review-security", "reverse-engineer-anything", "bug-bounty-hunter"]
-    },
-    {
-      "id": "automations",
-      "name": "Automations & Cron Workflows",
-      "description": "Headless browser automation, background task schedulers, sleep gates, and recurring bot workers.",
-      "path": "skills/automations",
-      "flagshipSkills": ["task-scheduler", "browser-automation", "firecrawl-scraper"]
-    },
-    {
-      "id": "scraping-leads",
-      "name": "Lead Generation & Intelligent Scraping",
-      "description": "Social media data scraping, company profile enrichment, cold email automation, and programmatic SEO.",
-      "path": "skills/scraping-leads",
-      "flagshipSkills": ["cold-email-pipeline", "ai-seo", "lead-enrichment"]
-    },
-    {
-      "id": "social-media",
-      "name": "Social Media Publishing & Growth",
-      "description": "Human-written high-retention copywriting, 9:16 vertical video specs, Reels/Shorts DOM publishing, and platform formatting.",
-      "path": "skills/social-media",
-      "flagshipSkills": ["human-writer", "instagram-autoposting", "linkedin-autoposting", "x-autoposting", "reddit-autoposting"]
+      "id": "architecture",
+      "name": "Architecture & Knowledge Modeling",
+      "description": "Codebase design, domain modeling, ADRs, dependency boundaries, and knowledge graphs.",
+      "path": "skills/architecture",
+      "skillCount": 6,
+      "flagshipSkills": [
+        "codebase-design",
+        "documentation-and-adrs",
+        "domain-modeling",
+        "graphify",
+        "improve-codebase-architecture"
+      ]
     },
     {
       "id": "engineering-ops",
       "name": "Engineering Operations & Code Quality",
-      "description": "Karpathy-style surgical changes, codebase knowledge graph extraction, and red-green-refactor TDD cycles.",
+      "description": "TDD, debugging, review, verification, migrations, performance, and dead-code cleanup.",
       "path": "skills/engineering-ops",
-      "flagshipSkills": ["karpathy-guidelines", "graphify", "tdd"]
+      "skillCount": 36,
+      "flagshipSkills": [
+        "code-review",
+        "code-review-and-quality",
+        "code-simplification",
+        "karpathy-guidelines",
+        "systematic-debugging",
+        "tdd",
+        "verification-before-completion"
+      ]
+    },
+    {
+      "id": "ui-ux",
+      "name": "UI/UX, Design Systems & Motion",
+      "description": "Visual hierarchy, design tokens, accessibility, taste, and production motion.",
+      "path": "skills/ui-ux",
+      "skillCount": 31,
+      "flagshipSkills": [
+        "astryx",
+        "baseline-ui",
+        "emil-design-eng",
+        "framer-motion-animator",
+        "impeccable",
+        "improve-ui",
+        "refactoring-ui",
+        "taste-skill",
+        "ui-skills-root",
+        "ui-ux-pro-max"
+      ]
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend Engineering",
+      "description": "React, Next.js, Three.js, web APIs, performance, and production UI implementation.",
+      "path": "skills/frontend",
+      "skillCount": 15,
+      "flagshipSkills": [
+        "composition-patterns",
+        "dataviz",
+        "frontend-design",
+        "threejs-fundamentals",
+        "vercel-react-best-practices",
+        "web-design-guidelines"
+      ]
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile Engineering",
+      "description": "Flutter, React Native, SwiftUI, Jetpack Compose, and native interaction patterns.",
+      "path": "skills/mobile",
+      "skillCount": 5,
+      "flagshipSkills": [
+        "flutter-architecture",
+        "react-native-skills"
+      ]
+    },
+    {
+      "id": "backend-api",
+      "name": "Backend, APIs & Data",
+      "description": "API contracts, MCP servers, databases, ORMs, and analytical pipelines.",
+      "path": "skills/backend-api",
+      "skillCount": 11,
+      "flagshipSkills": [
+        "mcp-builder",
+        "prisma-orm-setup",
+        "supabase-postgres-best-practices"
+      ]
+    },
+    {
+      "id": "security-bug-bounty",
+      "name": "Security & Reverse Engineering",
+      "description": "Security review, hardening, reverse engineering, recon, and vulnerability analysis.",
+      "path": "skills/security-bug-bounty",
+      "skillCount": 4,
+      "flagshipSkills": [
+        "reverse-engineer-anything",
+        "review-security",
+        "security-and-hardening"
+      ]
+    },
+    {
+      "id": "automations",
+      "name": "Browser Agents & Automations",
+      "description": "Browser control, web app testing, DevTools inspection, and agent automation.",
+      "path": "skills/automations",
+      "skillCount": 6,
+      "flagshipSkills": [
+        "agent-reach",
+        "browser-testing-with-devtools",
+        "chrome-devtools",
+        "ego-browser",
+        "webapp-testing"
+      ]
+    },
+    {
+      "id": "scraping-leads",
+      "name": "Scraping & Lead Generation",
+      "description": "Search visibility, lead enrichment, cold outreach, and structured extraction.",
+      "path": "skills/scraping-leads",
+      "skillCount": 2,
+      "flagshipSkills": [
+        "ai-seo",
+        "cold-email"
+      ]
+    },
+    {
+      "id": "social-media",
+      "name": "Writing & Social Publishing",
+      "description": "Human-sounding writing, platform formatting, and publishing workflows.",
+      "path": "skills/social-media",
+      "skillCount": 11,
+      "flagshipSkills": [
+        "human-writer",
+        "instagram-autoposting",
+        "linkedin-autoposting",
+        "writing-guidelines"
+      ]
+    },
+    {
+      "id": "media",
+      "name": "Video, Motion & Generative Media",
+      "description": "Programmatic video, motion design, canvas, and generative art.",
+      "path": "skills/media",
+      "skillCount": 8,
+      "flagshipSkills": [
+        "canvas",
+        "hyperframes",
+        "media-use",
+        "motion-reel"
+      ]
+    },
+    {
+      "id": "agent-tooling",
+      "name": "Agent Tooling & Configuration",
+      "description": "Creating, configuring, and operating skills, hooks, rules, subagents, and agent CLIs.",
+      "path": "skills/agent-tooling",
+      "skillCount": 22,
+      "flagshipSkills": [
+        "create-skill",
+        "loop",
+        "sdk",
+        "skill-creator",
+        "split-to-prs",
+        "writing-skills"
+      ]
     }
   ]
 }

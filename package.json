@@ -1,18 +1,26 @@
 {
   "name": "@abrar225/skills",
   "version": "1.0.0",
-  "description": "Agent-First Skills Monorepo for Vibe Coders and AI Coding Agents",
+  "description": "SkillKit: a curated, source-traceable library of agent skills and developer resources",
   "main": "bin/vibe-skills.js",
   "bin": {
     "vibe-skills": "./bin/vibe-skills.js"
   },
   "scripts": {
-    "test": "node scripts/test-evals.js",
+    "build:registry": "python3 scripts/build-registry.py",
+    "repair:sources": "python3 scripts/repair-source-descriptions.py",
+    "repair:sources:check": "python3 scripts/repair-source-descriptions.py --check",
+    "docs": "node scripts/build-docs.js",
+    "validate": "node scripts/validate-registry.js",
+    "test": "npm run validate && node --test tests/*.test.cjs && python3 -B -m unittest discover -s tests -p \"test_*.py\"",
+    "list": "node bin/vibe-skills.js list",
+    "search": "node bin/vibe-skills.js search",
     "scan": "node bin/vibe-skills.js scan",
-    "export:all": "node scripts/export-skills.js --target all",
-    "export:antigravity": "node scripts/export-skills.js --target antigravity",
-    "export:claude": "node scripts/export-skills.js --target claude",
-    "export:cursor": "node scripts/export-skills.js --target cursor"
+    "export:all": "node bin/vibe-skills.js export --target agents",
+    "export:antigravity": "node bin/vibe-skills.js export --target antigravity",
+    "export:claude": "node bin/vibe-skills.js export --target claude",
+    "export:cursor": "node bin/vibe-skills.js export --target cursor",
+    "verify:upstream": "python3 scripts/import-skills.py --check"
   },
   "keywords": [
     "ai-agent",
@@ -29,10 +37,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abrar225/Skills.git"
+    "url": "git+https://github.com/abrar225/SkillKit.git"
   },
   "bugs": {
-    "url": "https://github.com/abrar225/Skills/issues"
+    "url": "https://github.com/abrar225/SkillKit/issues"
   },
-  "homepage": "https://github.com/abrar225/Skills#readme"
+  "homepage": "https://github.com/abrar225/SkillKit#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2"
+  }
 }

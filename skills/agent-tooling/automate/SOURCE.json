@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/automate",
+  "name": "automate",
+  "description": "Use this skill to create Codex Automations.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/automate",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "architecture/documentation-and-adrs",
+  "name": "documentation-and-adrs",
+  "description": "Records decisions and documentation, and detects when documentation has drifted from the code it describes. Use when you need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, when docs may be stale or out of sync with the code they describe, when working out which module docs are still accurate, or when setting up a check so docs cannot silently go out of date again.",
+  "origin": "upstream",
+  "license": "MIT",
+  "licenseStatus": "declared",
+  "retrievedAt": "2026-11-17",
+  "upstream": {
+    "repo": "addyosmani/agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "path": "skills/documentation-and-adrs",
+    "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
+    "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+  },
+  "contentIntegrity": {
+    "algorithm": "sha256",
+    "files": {
+      "SKILL.md": "a55e540b4544237c2d76873965869e2e6add1e7eee935324f194411eee11e096"
+    },
+    "executablePaths": []
+  },
+  "licenseFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "upstream-licenses/LICENSE",
+      "sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+    }
+  ]
+}

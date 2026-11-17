@@ -1,0 +1,11 @@
+{
+  "id": "agent-tooling/babysit",
+  "name": "babysit",
+  "description": "Keep a PR merge-ready by triaging comments, resolving clear conflicts, and fixing CI in a loop.",
+  "origin": "local-agent-skills",
+  "license": "unverified-local-copy",
+  "licenseStatus": "unverified",
+  "originalPath": "/Users/abrarakhunji/.agents/skills/babysit",
+  "upstream": null,
+  "retrievedAt": "2026-11-17"
+}

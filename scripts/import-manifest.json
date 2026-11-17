@@ -1,0 +1,853 @@
+{
+  "$comment": "Pinned upstream imports. Skill files are copied byte-for-byte from these commits; inherited license notices and content hashes travel with every export. Local entries preserve existing daily installs without asserting upstream provenance.",
+  "retrievedAt": "2026-11-17",
+  "localRoot": "~/.agents/skills",
+  "local": [
+    {
+      "source": "ai-seo",
+      "dest": "scraping-leads/ai-seo"
+    },
+    {
+      "source": "algorithmic-art",
+      "dest": "media/algorithmic-art"
+    },
+    {
+      "source": "automate",
+      "dest": "agent-tooling/automate"
+    },
+    {
+      "source": "babysit",
+      "dest": "agent-tooling/babysit"
+    },
+    {
+      "source": "canvas",
+      "dest": "media/canvas"
+    },
+    {
+      "source": "cold-email",
+      "dest": "scraping-leads/cold-email"
+    },
+    {
+      "source": "create-hook",
+      "dest": "agent-tooling/create-hook"
+    },
+    {
+      "source": "create-rule",
+      "dest": "agent-tooling/create-rule"
+    },
+    {
+      "source": "create-skill",
+      "dest": "agent-tooling/create-skill"
+    },
+    {
+      "source": "create-subagent",
+      "dest": "agent-tooling/create-subagent"
+    },
+    {
+      "source": "deploy-with-vercel",
+      "dest": "frontend/deploy-with-vercel"
+    },
+    {
+      "source": "framer-motion-animator",
+      "dest": "ui-ux/framer-motion-animator"
+    },
+    {
+      "source": "graphify",
+      "dest": "architecture/graphify"
+    },
+    {
+      "source": "grilling",
+      "dest": "orchestrator/grilling"
+    },
+    {
+      "source": "hyperframes",
+      "dest": "media/hyperframes"
+    },
+    {
+      "source": "hyperframes-cli",
+      "dest": "media/hyperframes-cli"
+    },
+    {
+      "source": "hyperframes-registry",
+      "dest": "media/hyperframes-registry"
+    },
+    {
+      "source": "linkedin-profile-optimizer",
+      "dest": "social-media/linkedin-profile-optimizer"
+    },
+    {
+      "source": "loop",
+      "dest": "agent-tooling/loop"
+    },
+    {
+      "source": "media-use",
+      "dest": "media/media-use"
+    },
+    {
+      "source": "migrate-to-skills",
+      "dest": "agent-tooling/migrate-to-skills"
+    },
+    {
+      "source": "motion-reel",
+      "dest": "media/motion-reel"
+    },
+    {
+      "source": "new-repo",
+      "dest": "agent-tooling/new-repo"
+    },
+    {
+      "source": "onboard",
+      "dest": "agent-tooling/onboard"
+    },
+    {
+      "source": "origin",
+      "dest": "agent-tooling/origin"
+    },
+    {
+      "source": "prompt-engineering-patterns",
+      "dest": "orchestrator/prompt-engineering-patterns"
+    },
+    {
+      "source": "rename-chat",
+      "dest": "agent-tooling/rename-chat"
+    },
+    {
+      "source": "review",
+      "dest": "engineering-ops/review"
+    },
+    {
+      "source": "review-bugbot",
+      "dest": "engineering-ops/review-bugbot"
+    },
+    {
+      "source": "review-security",
+      "dest": "security-bug-bounty/review-security"
+    },
+    {
+      "source": "sdk",
+      "dest": "agent-tooling/sdk"
+    },
+    {
+      "source": "share",
+      "dest": "agent-tooling/share"
+    },
+    {
+      "source": "shell",
+      "dest": "agent-tooling/shell"
+    },
+    {
+      "source": "split-to-prs",
+      "dest": "agent-tooling/split-to-prs"
+    },
+    {
+      "source": "statusline",
+      "dest": "agent-tooling/statusline"
+    },
+    {
+      "source": "tdd",
+      "dest": "engineering-ops/tdd"
+    },
+    {
+      "source": "threejs-fundamentals",
+      "dest": "frontend/threejs-fundamentals"
+    },
+    {
+      "source": "threejs-interaction",
+      "dest": "frontend/threejs-interaction"
+    },
+    {
+      "source": "update-cli-config",
+      "dest": "agent-tooling/update-cli-config"
+    },
+    {
+      "source": "update-cursor-settings",
+      "dest": "agent-tooling/update-cursor-settings"
+    },
+    {
+      "source": "vercel-react-best-practices",
+      "dest": "frontend/vercel-react-best-practices"
+    },
+    {
+      "source": "visualize",
+      "dest": "media/visualize"
+    }
+  ],
+  "localExtra": [
+    {
+      "source": "~/.gemini/config/skills/x-autoposting",
+      "dest": "social-media/x-autoposting"
+    }
+  ],
+  "upstream": [
+    {
+      "repo": "ibelick/ui-skills",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "skills/ui-skills-root",
+          "dest": "ui-ux/ui-skills-root"
+        },
+        {
+          "path": "skills/baseline-ui",
+          "dest": "ui-ux/baseline-ui"
+        },
+        {
+          "path": "skills/component-canvas",
+          "dest": "ui-ux/component-canvas"
+        },
+        {
+          "path": "skills/create-canvas",
+          "dest": "ui-ux/create-canvas"
+        },
+        {
+          "path": "skills/create-design-md",
+          "dest": "ui-ux/create-design-md"
+        },
+        {
+          "path": "skills/fixing-accessibility",
+          "dest": "ui-ux/fixing-accessibility"
+        },
+        {
+          "path": "skills/fixing-metadata",
+          "dest": "frontend/fixing-metadata"
+        },
+        {
+          "path": "skills/fixing-motion-performance",
+          "dest": "ui-ux/fixing-motion-performance"
+        },
+        {
+          "path": "skills/improve-ui",
+          "dest": "ui-ux/improve-ui"
+        }
+      ],
+      "commit": "65cc0edb4f64fe8bfe7e9c59466074de25bece76"
+    },
+    {
+      "repo": "mattpocock/skills",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "skills/engineering/codebase-design",
+          "dest": "architecture/codebase-design"
+        },
+        {
+          "path": "skills/engineering/domain-modeling",
+          "dest": "architecture/domain-modeling"
+        },
+        {
+          "path": "skills/engineering/diagnosing-bugs",
+          "dest": "engineering-ops/diagnosing-bugs"
+        },
+        {
+          "path": "skills/engineering/code-review",
+          "dest": "engineering-ops/code-review"
+        },
+        {
+          "path": "skills/engineering/implement",
+          "dest": "engineering-ops/implement"
+        },
+        {
+          "path": "skills/engineering/implement-spec",
+          "dest": "engineering-ops/implement-spec"
+        },
+        {
+          "path": "skills/engineering/research",
+          "dest": "planning/research"
+        },
+        {
+          "path": "skills/engineering/retro",
+          "dest": "planning/retro"
+        },
+        {
+          "path": "skills/engineering/to-spec",
+          "dest": "planning/to-spec"
+        },
+        {
+          "path": "skills/engineering/to-tickets",
+          "dest": "planning/to-tickets"
+        },
+        {
+          "path": "skills/engineering/triage",
+          "dest": "planning/triage"
+        },
+        {
+          "path": "skills/engineering/prototype",
+          "dest": "planning/prototype"
+        },
+        {
+          "path": "skills/engineering/wayfinder",
+          "dest": "planning/wayfinder"
+        },
+        {
+          "path": "skills/engineering/pr",
+          "dest": "engineering-ops/pr"
+        },
+        {
+          "path": "skills/productivity/writing-for-agents",
+          "dest": "agent-tooling/writing-for-agents"
+        },
+        {
+          "path": "skills/productivity/wait-what",
+          "dest": "planning/wait-what"
+        },
+        {
+          "path": "skills/in-progress/writing-beats",
+          "dest": "social-media/writing-beats"
+        },
+        {
+          "path": "skills/in-progress/writing-fragments",
+          "dest": "social-media/writing-fragments"
+        },
+        {
+          "path": "skills/in-progress/writing-shape",
+          "dest": "social-media/writing-shape"
+        },
+        {
+          "path": "skills/misc/setup-pre-commit",
+          "dest": "engineering-ops/setup-pre-commit"
+        },
+        {
+          "path": "skills/misc/git-guardrails-claude-code",
+          "dest": "engineering-ops/git-guardrails"
+        },
+        {
+          "path": "skills/productivity/grill-me",
+          "dest": "orchestrator/grill-me"
+        },
+        {
+          "path": "skills/engineering/improve-codebase-architecture",
+          "dest": "architecture/improve-codebase-architecture"
+        }
+      ],
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+    },
+    {
+      "repo": "obra/superpowers",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "skills/brainstorming",
+          "dest": "planning/brainstorming"
+        },
+        {
+          "path": "skills/writing-plans",
+          "dest": "planning/writing-plans"
+        },
+        {
+          "path": "skills/executing-plans",
+          "dest": "planning/executing-plans"
+        },
+        {
+          "path": "skills/systematic-debugging",
+          "dest": "engineering-ops/systematic-debugging"
+        },
+        {
+          "path": "skills/test-driven-development",
+          "dest": "engineering-ops/test-driven-development"
+        },
+        {
+          "path": "skills/verification-before-completion",
+          "dest": "engineering-ops/verification-before-completion"
+        },
+        {
+          "path": "skills/requesting-code-review",
+          "dest": "engineering-ops/requesting-code-review"
+        },
+        {
+          "path": "skills/receiving-code-review",
+          "dest": "engineering-ops/receiving-code-review"
+        },
+        {
+          "path": "skills/subagent-driven-development",
+          "dest": "orchestrator/subagent-driven-development"
+        },
+        {
+          "path": "skills/dispatching-parallel-agents",
+          "dest": "orchestrator/dispatching-parallel-agents"
+        },
+        {
+          "path": "skills/using-git-worktrees",
+          "dest": "engineering-ops/using-git-worktrees"
+        },
+        {
+          "path": "skills/finishing-a-development-branch",
+          "dest": "engineering-ops/finishing-a-development-branch"
+        },
+        {
+          "path": "skills/writing-skills",
+          "dest": "agent-tooling/writing-skills"
+        }
+      ],
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7"
+    },
+    {
+      "repo": "anthropics/skills",
+      "license": "Apache-2.0 (per-skill LICENSE.txt)",
+      "skills": [
+        {
+          "path": "skills/skill-creator",
+          "dest": "agent-tooling/skill-creator"
+        },
+        {
+          "path": "skills/webapp-testing",
+          "dest": "automations/webapp-testing"
+        },
+        {
+          "path": "skills/mcp-builder",
+          "dest": "backend-api/mcp-builder"
+        },
+        {
+          "path": "skills/canvas-design",
+          "dest": "ui-ux/canvas-design"
+        },
+        {
+          "path": "skills/web-artifacts-builder",
+          "dest": "frontend/web-artifacts-builder"
+        },
+        {
+          "path": "skills/brand-guidelines",
+          "dest": "ui-ux/brand-guidelines"
+        },
+        {
+          "path": "skills/theme-factory",
+          "dest": "ui-ux/theme-factory"
+        },
+        {
+          "path": "skills/internal-comms",
+          "dest": "social-media/internal-comms"
+        },
+        {
+          "path": "skills/frontend-design",
+          "dest": "frontend/frontend-design"
+        }
+      ],
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "license": "MIT (per-skill frontmatter)",
+      "skills": [
+        {
+          "path": "skills/composition-patterns",
+          "dest": "frontend/composition-patterns"
+        },
+        {
+          "path": "skills/react-view-transitions",
+          "dest": "frontend/react-view-transitions"
+        },
+        {
+          "path": "skills/writing-guidelines",
+          "dest": "social-media/writing-guidelines"
+        },
+        {
+          "path": "skills/react-native-skills",
+          "dest": "mobile/react-native-skills"
+        },
+        {
+          "path": "skills/vercel-optimize",
+          "dest": "frontend/vercel-optimize"
+        },
+        {
+          "path": "skills/web-design-guidelines",
+          "dest": "frontend/web-design-guidelines"
+        }
+      ],
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62"
+    },
+    {
+      "repo": "emilkowalski/skills",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "skills/apple-design",
+          "dest": "ui-ux/apple-design"
+        },
+        {
+          "path": "skills/improve-animations",
+          "dest": "ui-ux/improve-animations"
+        },
+        {
+          "path": "skills/review-animations",
+          "dest": "ui-ux/review-animations"
+        },
+        {
+          "path": "skills/animate",
+          "dest": "ui-ux/animate"
+        },
+        {
+          "path": "skills/animation-vocabulary",
+          "dest": "ui-ux/animation-vocabulary"
+        },
+        {
+          "path": "skills/find-animation-opportunities",
+          "dest": "ui-ux/find-animation-opportunities"
+        },
+        {
+          "path": "skills/gestures",
+          "dest": "ui-ux/gestures"
+        },
+        {
+          "path": "skills/emil-design-eng",
+          "dest": "ui-ux/emil-design-eng"
+        },
+        {
+          "path": "skills/pick-ui-library",
+          "dest": "ui-ux/pick-ui-library"
+        },
+        {
+          "path": "skills/mobile-native",
+          "dest": "mobile/mobile-native"
+        },
+        {
+          "path": "skills/write-swift",
+          "dest": "mobile/write-swift"
+        },
+        {
+          "path": "skills/animate-expo",
+          "dest": "mobile/animate-expo"
+        }
+      ],
+      "commit": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c"
+    },
+    {
+      "repo": "leonxlnx/taste-skill",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "skills/taste-skill",
+          "dest": "ui-ux/taste-skill"
+        }
+      ],
+      "commit": "f6b76575f949707b4e3c37cd86cb44b0b98643e8"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "license": "Apache-2.0",
+      "skills": [
+        {
+          "path": "plugin/skills/impeccable",
+          "dest": "ui-ux/impeccable"
+        }
+      ],
+      "commit": "d41d9860b0094dcb68030657da63461212835aaa"
+    },
+    {
+      "repo": "addyosmani/agent-skills",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "skills/planning-and-task-breakdown",
+          "dest": "planning/planning-and-task-breakdown"
+        },
+        {
+          "path": "skills/spec-driven-development",
+          "dest": "planning/spec-driven-development"
+        },
+        {
+          "path": "skills/interview-me",
+          "dest": "planning/interview-me"
+        },
+        {
+          "path": "skills/idea-refine",
+          "dest": "planning/idea-refine"
+        },
+        {
+          "path": "skills/constraint-driven-development",
+          "dest": "planning/constraint-driven-development"
+        },
+        {
+          "path": "skills/doubt-driven-development",
+          "dest": "engineering-ops/doubt-driven-development"
+        },
+        {
+          "path": "skills/code-review-and-quality",
+          "dest": "engineering-ops/code-review-and-quality"
+        },
+        {
+          "path": "skills/code-simplification",
+          "dest": "engineering-ops/code-simplification"
+        },
+        {
+          "path": "skills/debugging-and-error-recovery",
+          "dest": "engineering-ops/debugging-and-error-recovery"
+        },
+        {
+          "path": "skills/documentation-and-adrs",
+          "dest": "architecture/documentation-and-adrs"
+        },
+        {
+          "path": "skills/api-and-interface-design",
+          "dest": "architecture/api-and-interface-design"
+        },
+        {
+          "path": "skills/security-and-hardening",
+          "dest": "security-bug-bounty/security-and-hardening"
+        },
+        {
+          "path": "skills/performance-optimization",
+          "dest": "engineering-ops/performance-optimization"
+        },
+        {
+          "path": "skills/frontend-ui-engineering",
+          "dest": "frontend/frontend-ui-engineering"
+        },
+        {
+          "path": "skills/browser-testing-with-devtools",
+          "dest": "automations/browser-testing-with-devtools"
+        },
+        {
+          "path": "skills/context-engineering",
+          "dest": "orchestrator/context-engineering"
+        },
+        {
+          "path": "skills/using-agent-skills",
+          "dest": "orchestrator/using-agent-skills"
+        },
+        {
+          "path": "skills/git-workflow-and-versioning",
+          "dest": "engineering-ops/git-workflow-and-versioning"
+        },
+        {
+          "path": "skills/observability-and-instrumentation",
+          "dest": "engineering-ops/observability-and-instrumentation"
+        },
+        {
+          "path": "skills/incremental-implementation",
+          "dest": "engineering-ops/incremental-implementation"
+        },
+        {
+          "path": "skills/shipping-and-launch",
+          "dest": "engineering-ops/shipping-and-launch"
+        },
+        {
+          "path": "skills/source-driven-development",
+          "dest": "engineering-ops/source-driven-development"
+        },
+        {
+          "path": "skills/deprecation-and-migration",
+          "dest": "engineering-ops/deprecation-and-migration"
+        }
+      ],
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563"
+    },
+    {
+      "repo": "Panniantong/Agent-Reach",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "agent_reach/skill",
+          "dest": "automations/agent-reach"
+        }
+      ],
+      "commit": "c70ae6da5d39bc90e09ad2ae0575ccc89f31e284"
+    },
+    {
+      "repo": "asgeirtj/system_prompts_leaks",
+      "license": "CC0-1.0",
+      "skills": [
+        {
+          "path": "Anthropic/claude-code/skills/code-review",
+          "dest": "engineering-ops/anthropic-code-review"
+        },
+        {
+          "path": "Anthropic/claude-code/skills/debug",
+          "dest": "engineering-ops/anthropic-debug"
+        },
+        {
+          "path": "Anthropic/claude-code/skills/verify",
+          "dest": "engineering-ops/anthropic-verify"
+        },
+        {
+          "path": "Anthropic/claude-code/skills/simplify",
+          "dest": "engineering-ops/anthropic-simplify"
+        },
+        {
+          "path": "Anthropic/claude-code/skills/security-review",
+          "dest": "security-bug-bounty/anthropic-security-review"
+        },
+        {
+          "path": "Anthropic/claude-code/skills/dataviz",
+          "dest": "frontend/dataviz"
+        },
+        {
+          "path": "Anthropic/claude-code/skills/design",
+          "dest": "ui-ux/anthropic-design"
+        },
+        {
+          "path": "Anthropic/claude-code/skills/docs",
+          "dest": "social-media/anthropic-docs"
+        },
+        {
+          "path": "Anthropic/claude-design/skills/wireframe",
+          "dest": "ui-ux/wireframe"
+        },
+        {
+          "path": "Anthropic/claude-design/skills/hi-fi-design",
+          "dest": "ui-ux/hi-fi-design"
+        },
+        {
+          "path": "Google/antigravity/skills/a11y-debugging",
+          "dest": "automations/a11y-debugging"
+        },
+        {
+          "path": "Google/antigravity/skills/chrome-devtools",
+          "dest": "automations/chrome-devtools"
+        },
+        {
+          "path": "Google/antigravity/skills/memory-leak-debugging",
+          "dest": "engineering-ops/memory-leak-debugging"
+        },
+        {
+          "path": "Google/antigravity/skills/debug-optimize-lcp",
+          "dest": "frontend/debug-optimize-lcp"
+        },
+        {
+          "path": "Google/antigravity/skills/generative_ui",
+          "dest": "frontend/generative-ui"
+        },
+        {
+          "path": "Meta/muse-code/skills/plan",
+          "dest": "planning/meta-plan",
+          "license": "Apache-2.0"
+        },
+        {
+          "path": "Meta/muse-code/skills/requirements-clarification",
+          "dest": "planning/requirements-clarification",
+          "license": "Apache-2.0"
+        },
+        {
+          "path": "Meta/muse-code/skills/greenfield-project-scaffolding",
+          "dest": "planning/greenfield-project-scaffolding",
+          "license": "Apache-2.0"
+        },
+        {
+          "path": "Meta/muse-code/skills/durable-test-collateral",
+          "dest": "engineering-ops/durable-test-collateral",
+          "license": "Apache-2.0"
+        },
+        {
+          "path": "OpenAI/Codex/skills/review-agent",
+          "dest": "engineering-ops/review-agent"
+        },
+        {
+          "path": "Perplexity/skills/model-council",
+          "dest": "orchestrator/model-council"
+        }
+      ],
+      "commit": "09fc4721fcacaa4515ce7c7b39146d8b99dea103"
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "skills/supabase",
+          "dest": "backend-api/supabase"
+        },
+        {
+          "path": "skills/supabase-postgres-best-practices",
+          "dest": "backend-api/supabase-postgres-best-practices"
+        }
+      ],
+      "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7"
+    },
+    {
+      "repo": "neondatabase/agent-skills",
+      "license": "Apache-2.0",
+      "skills": [
+        {
+          "path": "skills/neon",
+          "dest": "backend-api/neon"
+        },
+        {
+          "path": "skills/neon-postgres",
+          "dest": "backend-api/neon-postgres"
+        },
+        {
+          "path": "skills/neon-auth",
+          "dest": "backend-api/neon-auth"
+        }
+      ],
+      "commit": "60b9a53fdd08c3be22781c5e51f6b689a77d3e39"
+    },
+    {
+      "repo": "prisma/skills",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "prisma-orm-setup",
+          "dest": "backend-api/prisma-orm-setup"
+        },
+        {
+          "path": "prisma-client-api",
+          "dest": "backend-api/prisma-client-api"
+        }
+      ],
+      "commit": "a6f192959cf43b08aa330fe1ffca090267215812"
+    },
+    {
+      "repo": "dbt-labs/dbt-agent-skills",
+      "license": "Apache-2.0",
+      "skills": [
+        {
+          "path": "skills/dbt/skills/using-dbt-for-analytics-engineering",
+          "dest": "backend-api/dbt-analytics-engineering"
+        },
+        {
+          "path": "skills/dbt/skills/adding-dbt-unit-test",
+          "dest": "backend-api/dbt-unit-testing"
+        },
+        {
+          "path": "skills/dbt/skills/troubleshooting-dbt-job-errors",
+          "dest": "backend-api/dbt-job-troubleshooting"
+        }
+      ],
+      "commit": "b8facde20b7a92c40ce3e6b86b71c4b92aa44040"
+    },
+    {
+      "repo": "vercel-labs/skills",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "skills/find-skills",
+          "dest": "orchestrator/find-skills"
+        }
+      ],
+      "commit": "57217cf86ba38148a57af9e90d14a4c049558330"
+    },
+    {
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "skills/karpathy-guidelines",
+          "dest": "engineering-ops/karpathy-guidelines"
+        }
+      ],
+      "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "licenseEvidence": "README.md"
+    },
+    {
+      "repo": "meta/astryx",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": "plugins/astryx/skills/astryx",
+          "dest": "ui-ux/astryx"
+        }
+      ],
+      "commit": "0fbecc659b1eda97e0f2e689a83ce4b0f5b083d4"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "license": "MIT",
+      "skills": [
+        {
+          "path": ".claude/skills/ui-ux-pro-max",
+          "dest": "ui-ux/ui-ux-pro-max"
+        }
+      ],
+      "commit": "e59ff376a41f7ca47b7541ad5c116495cbade3ee"
+    }
+  ]
+}
