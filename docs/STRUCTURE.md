@@ -1,7 +1,7 @@
 # Repository Structure
 
 ```
-Skills/
+SkillKit/
 ├── bin/vibe-skills.js          CLI: list, search, info, domains, resources, scan, validate, export, stats
 ├── registry/
 │   ├── skills.json             generated index of every skill on disk (source of truth for tooling)
