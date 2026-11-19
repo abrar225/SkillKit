@@ -1,47 +1,15 @@
 ---
 name: master-router
-description: >
-  Master meta-orchestrator for the Skills repository. Analyzes incoming developer intent,
-  grills ambiguities, enforces engineering invariants, and dispatches the exact required skills.
-domain: orchestrator
-tools_required:
-  - read_file
-  - run_command
-triggers:
-  - orchestrate
-  - route
-  - start project
-  - build feature
-  - vibe code
-license: MIT
+description: Route a developer's task to SkillKit workflows, skills, resources, and verification steps. Use when starting a build, planning a change, reviewing work, or preparing a release with SkillKit.
 ---
 
-# Master Agent Orchestrator
+# Master Router
 
-The Master Router is the first line of intelligence in the repository. When a developer or agent initiates a task, this skill ensures that work is properly scoped, interrogated, and grounded before execution begins.
+Read the existing conversation and relevant project context. Identify the requested actions, project state, deliverables, known stack, and any constraints. Use the action IDs listed in the MCP tool schema. For example, adding to a portfolio is `feature`, writing its README is `documentation`, and creating the first site is `new-web-project`.
 
-## 1. Intent Triage Workflow
+1. Call MCP `recommend_workflow` with the original `task` and your structured `intent`. Use `release` for preparation and include `deploy` only when requested. Preserve explicit deployment and implementation restrictions.
+2. If the user supplied no actual work, ask what they want to do. If a decision would materially change the result, ask one question and retain the earlier answers when resubmitting the intent. When a known task has no curated workflow, submit an empty action list with the deliverables so SkillKit can rank relevant catalog entries.
+3. Load each applicable skill by exact ID with `get_skill` and follow the references needed for that stage with `read_skill_file`. Use a fallback suggestion only when it fits the task and the host can use it.
+4. Follow project rules and permissions. Stage recommendations do not authorize installation, deployment, or external actions. Report each applicable check as passed, failed, or skipped with a concrete reason and evidence.
 
-```mermaid
-flowchart TD
-    Prompt["Developer Intent / Task"] --> Triage{"Domain Classifier"}
-    Triage --> AmbiguityCheck{"Is Intent Ambiguous?"}
-    AmbiguityCheck -->|"Yes"| Grill["Invoke /grill-me<br/>Ask 1 question at a time"]
-    AmbiguityCheck -->|"No"| PolicyCheck["Apply /gravitas Rules"]
-    Grill --> PolicyCheck
-    PolicyCheck --> LoadSkill["Load Focused Domain SKILL.md"]
-    LoadSkill --> Execute["Execute with Verification Evals"]
-```
-
-## 2. Decision Tree & Domain Mapping
-
-1. **User asks for Visuals / Polish / Styling** ➔ Route to `skills/ui-ux/ui-ux-pro-max` or `skills/ui-ux/framer-motion-animator`.
-2. **User asks for App Architecture or Code Components** ➔ Route to `skills/frontend/` or `skills/mobile/`.
-3. **User asks for API Testing or Data Models** ➔ Route to `skills/backend-api/packetlark-workbench` or `dbt-bigquery`.
-4. **User asks for Security Audits or Binary Analysis** ➔ Route to `skills/security-bug-bounty/`.
-5. **User asks for Content, Copy, or Social Publishing** ➔ Route to `skills/social-media/human-writer`.
-
-## 3. The 3 Orchestration Commandments
-- **Never guess**: If the technology stack, library choice, or design direction is not specified, run `/grill-me`.
-- **Never overload context**: Do not load all skills into context. Only read the single relevant `SKILL.md`.
-- **Evidence-backed completion**: Validate against `evals/eval.json` assertions before marking the prompt complete.
+From a local checkout, use `node bin/vibe-skills.js recommend "<task>" --workflow <id> --json` for one explicit workflow, or `--intent-json` for ordered actions and constraints. A raw brief alone returns choices.

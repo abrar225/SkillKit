@@ -11,6 +11,8 @@ function fixture(t) {
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));
   fs.mkdirSync(path.join(root, 'bin'));
   fs.mkdirSync(path.join(root, 'registry'));
+  fs.mkdirSync(path.join(root, 'lib'));
+  fs.copyFileSync(path.resolve(__dirname, '../lib/export-layout.js'), path.join(root, 'lib/export-layout.js'));
   fs.copyFileSync(path.resolve(__dirname, '../bin/vibe-skills.js'), path.join(root, 'bin/vibe-skills.js'));
   const skills = ['alpha', 'beta'].map((name) => ({
     id: `example/${name}`, name, displayName: name, domain: 'example', path: `skills/example/${name}`,
@@ -57,7 +59,7 @@ test('JSON search returns resource-only, skill-only, and empty results with the 
   assert.deepEqual(search('no-such-entry'), { query: 'no-such-entry', skills: [], resources: [] });
 });
 
-for (const [target, relative] of Object.entries({ claude: '.claude/skills', cursor: '.cursor/skills', antigravity: '.gemini/config/skills', agents: '.agents/skills' })) {
+for (const [target, relative] of Object.entries({ claude: '.claude/skills', cursor: '.cursor/skills', antigravity: '.agents/skills', agents: '.agents/skills' })) {
   test(`${target}: exports recursive contents, retains exact copies, and preserves verified earlier installs`, (t) => {
     const { project, exportSkill } = fixture(t);
     const first = exportSkill(target);

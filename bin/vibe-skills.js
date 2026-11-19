@@ -66,6 +66,9 @@ for (let i = 0; i < argv.length; i += 1) {
   else if (arg === '--featured') flags.featured = true;
   else if (arg === '--force') flags.force = true;
   else if (arg === '--verbose') flags.verbose = true;
+  else if (arg === '--intent-json') { flags.intentJson = flagValue(i, arg); i += 1; }
+  else if (arg === '--workflow') { flags.workflow = flagValue(i, arg); i += 1; }
+  else if (arg === '--stack') { flags.stack = flagValue(i, arg); i += 1; }
   else if (arg === '--target') { flags.target = flagValue(i, arg); i += 1; }
   else if (arg === '--ids') { flags.ids = flagValue(i, arg); i += 1; }
   else if (arg === '--out') {
@@ -359,14 +362,9 @@ switch (command) {
   }
 
   case 'export': {
-    const targets = {
-      claude: '.claude/skills',
-      cursor: '.cursor/skills',
-      antigravity: '.gemini/config/skills',
-      agents: '.agents/skills',
-    };
+    const targets = require('../lib/export-layout');
     const target = flags.target;
-    if (!target || !targets[target]) {
+    if (!Object.hasOwn(targets, target)) {
       fail(`usage: vibe-skills export --target <${Object.keys(targets).join('|')}> [--ids a,b] [--out dir] [--force]`);
     }
     if (flags.ids !== undefined && !flags.ids.trim()) fail('--ids must contain at least one skill ID');
@@ -481,6 +479,61 @@ switch (command) {
     break;
   }
 
+  case 'recommend': {
+    const { createRouter } = require('../lib/task-router');
+    const task = positional.join(' ');
+    if (task.length > 8000 || (flags.stack || '').length > 200) fail('task or stack exceeds the routing input limit');
+    try {
+      if (flags.intentJson?.length > 12000) fail('intent JSON exceeds the routing input limit');
+      const intent = flags.intentJson === undefined ? undefined : JSON.parse(flags.intentJson);
+      const plan = createRouter(skills, resources)({ task, workflow: flags.workflow, stack: flags.stack, intent });
+      if (flags.json) console.log(JSON.stringify(plan, null, 2));
+      else if (plan.status !== 'ready') {
+        console.log(plan.question || plan.next);
+        if (plan.status === 'needs_intent') {
+          for (const choice of plan.candidates) console.log(`  --workflow ${choice.id}: ${choice.title}`);
+        }
+        for (const skill of plan.skills || []) console.log(`  ${skill.id}: ${skill.reason}`);
+        for (const resource of plan.resources || []) console.log(`  ${resource.name}: ${resource.url}`);
+      }
+      else {
+        console.log(plan.workflows.map((workflow) => workflow.title).join(' → '));
+        for (const [index, stage] of plan.stages.entries()) {
+          console.log(`\n${index + 1}. ${stage.outcome}`);
+          console.log(`   Skills: ${stage.skills.map((skill) => skill.id).join(', ')}`);
+          for (const resource of stage.resources) console.log(`   ${resource.name}: ${resource.url}`);
+          console.log(`   Check: ${stage.check}`);
+        }
+      }
+    } catch (error) {
+      fail(error.message);
+    }
+    break;
+  }
+
+  case 'mcp-config': {
+    const client = flags.target || 'json';
+    const serverPath = path.join(__dirname, 'mcp-server.js');
+    const node = process.execPath;
+    if (client === 'codex') {
+      console.log(`[mcp_servers.skillkit]\ncommand = ${JSON.stringify(node)}\nargs = ${JSON.stringify([serverPath])}`);
+    } else if (['json', 'claude', 'cursor', 'antigravity'].includes(client)) {
+      console.log(JSON.stringify({ mcpServers: { skillkit: { command: node, args: [serverPath] } } }, null, 2));
+    } else fail('usage: vibe-skills mcp-config [--target json|claude|cursor|antigravity|codex]');
+    break;
+  }
+
+  case 'mcp-check': {
+    const result = spawnSync(process.execPath, [path.join(repoRoot, 'scripts', 'check-mcp.js')], { stdio: 'inherit' });
+    if (result.error) fail(result.error.message);
+    process.exitCode = result.status ?? 1;
+    break;
+  }
+
+  case 'agent-rule':
+    console.log(require('../lib/task-router').instructions);
+    break;
+
   case 'mcp': {
     const serverPath = path.join(__dirname, 'mcp-server.js');
     if (!fs.existsSync(serverPath)) fail('bin/mcp-server.js is missing');
@@ -518,6 +571,11 @@ Usage:
   vibe-skills resources [category] [query]          Browse the resource catalog
   vibe-skills scan [directory] [--json]             Recommend skills for a project
   vibe-skills validate [--verbose]                  Verify registries against disk
+  vibe-skills recommend [task] [--workflow id | --intent-json json] [--stack stack] [--json]
+                                                    Choose skills, resources, and verification steps
+  vibe-skills mcp-config [--target json|codex]       Print local MCP settings
+  vibe-skills mcp-check                             Verify local stdio tools and intent routing
+  vibe-skills agent-rule                            Print the project routing instruction
   vibe-skills mcp                                   Run the MCP server over stdio
   vibe-skills stats                                 Totals and license breakdown
   vibe-skills export --target <claude|cursor|antigravity|agents>

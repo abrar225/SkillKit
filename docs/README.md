@@ -3,8 +3,10 @@
 | Page | Contents |
 | :--- | :--- |
 | [Getting started](GETTING-STARTED.md) | Browse, search, scan a project, install into an agent, verify the catalog |
+| [Task routing and MCP setup](WORKFLOWS.md) | Connect an agent and try the three pilot workflows |
+| [Host verification](HOST-VERIFICATION.md) | Record of live host trials and remaining limits |
 | [Structure](STRUCTURE.md) | Repository layout, what counts as a skill or resource, the 14 domains |
-| [Adding a skill](ADDING-A-SKILL.md) | Vendor an upstream skill or write an original one |
+| [Adding a skill](ADDING-A-SKILL.md) | Import an existing skill and record its source |
 | [Adding a resource](ADDING-A-RESOURCE.md) | Entry schema, categories, quality bar |
 | [Licensing](LICENSING.md) | Repository license, vendored licenses, inclusion rules, unverified entries |
 | [Skill catalog](SKILLS.md) | Generated: every skill with path, license, and description |

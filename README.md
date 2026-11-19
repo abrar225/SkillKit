@@ -54,28 +54,26 @@ node bin/vibe-skills.js stats
 
 `scan` recommends catalog entries based on project files. Review the suggestions, then run the export command it prints.
 
-## Give your agent the catalog
+## Give your agent a workflow
 
-Install the MCP server dependencies with Node.js 20+:
+Connect the local MCP server, then describe the work in your own words. For example, “Design my portfolio website with three case studies and a contact page.” The coding agent interprets the brief in context. SkillKit validates the intent and returns source-traceable skills, resources, and checks for each applicable step.
 
 ```bash
 npm ci
+node bin/vibe-skills.js mcp-config                 # JSON for stdio clients
+node bin/vibe-skills.js mcp-config --target codex    # TOML for Codex
+node bin/vibe-skills.js agent-rule                 # paste into project instructions
 ```
 
-Add this server to your MCP client's configuration, replacing the path with your actual clone:
+Use the project instruction when you want your agent to consult SkillKit on normal requests. Start a new chat after configuring the server. Clients vary in how they expose MCP server instructions and prompts.
 
-```json
-{
-  "mcpServers": {
-    "skillkit": {
-      "command": "node",
-      "args": ["/absolute/path/to/SkillKit/bin/mcp-server.js"]
-    }
-  }
-}
+Try the same router locally without setting up MCP.
+
+```bash
+node bin/vibe-skills.js recommend "Design my portfolio website" --workflow new-web-project --json
 ```
 
-The server offers `search_skills`, `get_skill`, `list_domains`, `export_skill`, and `list_resources`. It runs locally over stdio. `export_skill` returns an installation plan; review and execute the command to install the files.
+See [client setup and example workflows](docs/WORKFLOWS.md).
 
 ## The collection
 

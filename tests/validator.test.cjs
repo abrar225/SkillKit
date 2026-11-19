@@ -11,8 +11,13 @@ const json = (file, value) => fs.writeFileSync(file, JSON.stringify(value, null,
 function fixture(t) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'skills-validator-'));
   t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
-  for (const name of ['scripts', 'registry', 'resources']) fs.mkdirSync(path.join(dir, name));
+  for (const name of ['scripts', 'registry', 'resources', 'lib', 'workflows']) fs.mkdirSync(path.join(dir, name));
   for (const name of ['build-registry.py', 'validate-registry.js']) fs.copyFileSync(path.join(root, 'scripts', name), path.join(dir, 'scripts', name));
+  fs.copyFileSync(path.join(root, 'lib/task-router.js'), path.join(dir, 'lib/task-router.js'));
+  json(path.join(dir, 'workflows/routes.json'), {
+    workflows: [{ id: 'fixture', title: 'Fixture', signals: ['fixture'], stages: [{ id: 'work', skill: 'orchestrator/fixture', resources: ['fixture'] }] }],
+    additions: [],
+  });
   json(path.join(dir, 'scripts/import-manifest.json'), { upstream: [{ repo: 'example/skills', commit: 'a'.repeat(40), license: 'MIT', skills: [{ path: 'skills/fixture', dest: 'orchestrator/fixture' }] }] });
   const domains = JSON.parse(fs.readFileSync(path.join(root, 'registry/domains.json'))).domains;
   for (const d of domains) fs.mkdirSync(path.join(dir, 'skills', d.id), { recursive: true });
@@ -165,4 +170,13 @@ test('executable paths must be safe, unique and recorded in upstream content', (
     data.contentIntegrity.executablePaths = ['SKILL.md', 'SKILL.md', '../outside', 'unknown.sh'];
   });
   fails(f.validate(), /invalid or duplicate executablePaths entry/);
+});
+
+test('validation rejects workflow pointers to missing skills and resources', (t) => {
+  const f = fixture(t);
+  f.change('workflows/routes.json', (data) => {
+    data.workflows[0].stages[0].skill = 'backend-api/missing';
+    data.workflows[0].stages[0].resources = ['missing-resource'];
+  });
+  fails(f.validate(), /Workflow catalog references do not resolve: backend-api\/missing, missing-resource/);
 });

@@ -4,6 +4,14 @@ The repository is a catalog plus a CLI. Skills live in `skills/<domain>/<skill>/
 
 Nothing here needs a build step or install to read. The CLI runs on Node 18 or newer and has no dependencies.
 
+## Start with a task
+
+Connect MCP and give your agent a normal task brief, or run the CLI router directly. [Setup and worked examples](WORKFLOWS.md).
+
+```bash
+node bin/vibe-skills.js recommend "Design my portfolio website" --workflow new-web-project
+```
+
 ## Browse
 
 ```bash
@@ -33,7 +41,7 @@ cd ~/code/my-app
 node ~/Desktop/SkillKit/bin/vibe-skills.js scan
 ```
 
-`scan` reads `package.json`, lockfile-adjacent config files, and a few well-known project files. It recommends skills that exist in this registry, and prints the export command for the list.
+`scan` reads `package.json`, selected framework and project config files. It recommends skills that exist in this registry, and prints the export command for the list.
 
 ## Install into an agent
 
@@ -43,7 +51,7 @@ Skills are plain directories with a `SKILL.md`, so installing means placing the 
 | :--- | :--- | :--- |
 | Claude Code | `.claude/skills/` | `node bin/vibe-skills.js export --target claude` |
 | Cursor | `.cursor/skills/` | `node bin/vibe-skills.js export --target cursor` |
-| Antigravity | `.gemini/config/skills/` | `node bin/vibe-skills.js export --target antigravity` |
+| Antigravity project | `.agents/skills/` | `node bin/vibe-skills.js export --target antigravity` |
 | Agents CLI convention | `.agents/skills/` | `node bin/vibe-skills.js export --target agents` |
 
 Export copies into the current directory unless you pass `--out`:

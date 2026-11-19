@@ -30,6 +30,8 @@ Maintained by Abrar Akhunji.
 | `skills/social-media/` | Writing and publishing workflows |
 | `skills/media/` | Video, motion, canvas, generative art |
 | `skills/agent-tooling/` | Skills, hooks, rules, subagents, CLI configuration |
+| `workflows/routes.json` | Curated task paths composed from existing skill and resource IDs |
+| `lib/` | Shared routing, supporting-file access, and project export layouts |
 | `registry/` | Generated indexes: `skills.json`, `domains.json`, `resources.json` |
 | `resources/` | Hand-curated resource sources, one file per category |
 | `scripts/` | Import, registry build, docs build, validation |
@@ -39,7 +41,7 @@ Maintained by Abrar Akhunji.
 
 ## 3. Working protocol
 
-1. **Triage.** Match the request against `registry/domains.json` and `registry/skills.json`. Search before creating anything: `node bin/vibe-skills.js search "<topic>"`.
+1. **Triage.** For a developer task, call `recommend_workflow` with the existing brief and structured intent, or use `node bin/vibe-skills.js recommend "<task>" --workflow <id>`. Use focused catalog search when no curated route fits.
 2. **Grill ambiguity.** If the request leaves a consequential decision open, ask focused questions one at a time. Use `skills/orchestrator/grill-me` when the decision is architectural.
 3. **Load narrowly.** Read the one `SKILL.md` the task needs, plus the supporting files its body points at. Do not load the repository into context.
 4. **Check provenance.** Before reusing or modifying a skill, read its `SOURCE.json`. `origin: upstream` means read-only. `origin: local-original` means the content belongs to this repository.
@@ -48,6 +50,7 @@ Maintained by Abrar Akhunji.
 ## 4. Commands
 
 ```bash
+node bin/vibe-skills.js recommend "<task>" --workflow <id> # task stages, skills, resources, and checks
 node bin/vibe-skills.js stats            # totals and license breakdown
 node bin/vibe-skills.js search "<term>"  # skills and resources
 node bin/vibe-skills.js info <id>        # one skill, with provenance
@@ -81,7 +84,7 @@ Warnings are disclosed, not suppressed. The 53 unverified licenses are catalogue
 
 - **Claude Code:** `CLAUDE.md`
 - **Cursor:** `.cursorrules`
-- **Antigravity:** `.gemini/config/skills/<skill>/SKILL.md`
+- **Antigravity:** `.agents/skills/<skill>/SKILL.md` within the project
 - **Skills CLI:** install from the repository with the convention documented in `vercel-labs/skills`
 
 All of them should point back to this file rather than restating it.

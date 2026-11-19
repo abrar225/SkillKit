@@ -5,6 +5,8 @@
  * Protocol (stdio).
  *
  * Tools:
+ *   recommend_workflow select skills, resources, and checks for the current task
+ *   read_skill_file read a referenced supporting text file
  *   search_skills  filter by query, domain, or capability
  *   get_skill      full SKILL.md plus provenance from SOURCE.json
  *   list_domains   the 14 domains with flagship skills
@@ -16,11 +18,18 @@
 
 const fs = require('fs');
 const path = require('path');
+const { createRouter, workflowIds, instructions, skillCompatibility, intentSchema } = require('../lib/task-router');
+const { listFiles, readSkillFile } = require('../lib/skill-files');
+const { AjvJsonSchemaValidator } = require('@modelcontextprotocol/sdk/validation/ajv');
 
 const { Server } = require('@modelcontextprotocol/sdk/server/index.js');
 const { StdioServerTransport } = require('@modelcontextprotocol/sdk/server/stdio.js');
 const {
   ListToolsRequestSchema,
+  ListPromptsRequestSchema,
+  GetPromptRequestSchema,
+  McpError,
+  ErrorCode,
   CallToolRequestSchema,
 } = require('@modelcontextprotocol/sdk/types.js');
 
@@ -29,11 +38,7 @@ const SKILLS_FILE = path.join(REPO_ROOT, 'registry', 'skills.json');
 const DOMAINS_FILE = path.join(REPO_ROOT, 'registry', 'domains.json');
 const RESOURCES_FILE = path.join(REPO_ROOT, 'registry', 'resources.json');
 
-const TARGETS = {
-  claude: '.claude/skills',
-  antigravity: '.gemini/config/skills',
-  cursor: '.cursor/skills',
-};
+const TARGETS = require('../lib/export-layout');
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -46,12 +51,13 @@ const resourcesRegistry = readJson(RESOURCES_FILE);
 const skills = skillsRegistry.skills;
 const domains = domainsRegistry.domains;
 const resources = resourcesRegistry.resources;
+const recommendWorkflow = createRouter(skills, resources);
 
 const lower = (value) => String(value || '').toLowerCase();
 const clampLimit = (value, fallback = 25, max = 100) => {
   const parsed = Number(value);
   if (!Number.isFinite(parsed) || parsed <= 0) return fallback;
-  return Math.min(Math.floor(parsed), max);
+  return Math.max(1, Math.min(Math.floor(parsed), max));
 };
 
 function exportFiles(directory, prefix = '') {
@@ -78,11 +84,13 @@ function publicSkill(skill) {
     featured: skill.featured,
     capabilities: skill.capabilities,
     path: skill.path,
+    nativeLayoutIssues: skillCompatibility(skill),
   };
 }
 
 function textResult(payload) {
   return {
+    structuredContent: payload,
     content: [
       {
         type: 'text',
@@ -102,17 +110,47 @@ function errorResult(message) {
 function resolveSkill(id) {
   if (!id) return null;
   const needle = lower(id).trim();
-  return (
-    skills.find((skill) => lower(skill.id) === needle) ||
-    skills.find((skill) => lower(skill.displayName) === needle) ||
-    skills.find((skill) => lower(skill.name) === needle) ||
-    skills.find((skill) => lower(skill.id).endsWith(`/${needle}`)) ||
-    skills.find((skill) => lower(skill.id).includes(needle)) ||
-    null
-  );
+  if (!needle) return null;
+  const exact = skills.find((skill) => lower(skill.id) === needle);
+  if (exact) return exact;
+  const groups = [
+    skills.filter((skill) => [skill.name, skill.displayName].some((name) => lower(name) === needle)),
+    skills.filter((skill) => lower(skill.id).endsWith(`/${needle}`)),
+    skills.filter((skill) => lower(skill.id).includes(needle)),
+  ];
+  const matches = groups.find((group) => group.length) || [];
+  if (matches.length > 1) throw new Error(`Ambiguous skill "${id}". Use an exact ID: ${matches.map((skill) => skill.id).join(', ')}`);
+  return matches[0] || null;
 }
 
 const tools = [
+  {
+    name: 'recommend_workflow',
+    description: 'Start here for any developer task. Interpret the user request in context and pass the structured intent. Returns applicable stages, exact skill IDs, resources, and checks. A raw task alone returns choices without inferring a workflow.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        task: { type: 'string', maxLength: 8000, description: 'Latest task brief, including relevant requirements and earlier answers. Omit when the user has given no work.' },
+        intent: intentSchema,
+        workflow: { type: 'string', enum: workflowIds, description: 'Legacy explicit selection of one workflow. Use intent for compound tasks and constraints.' },
+        stack: { type: 'string', maxLength: 200, description: 'Frameworks or technologies already known to be in use. Leave blank if unknown.' },
+      },
+      additionalProperties: false,
+    },
+  },
+  {
+    name: 'read_skill_file',
+    description: 'Read one supporting text file referenced by a skill. Pass its exact skill ID and the file path relative to that skill. Returns UTF-8 text up to 64 KiB.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        id: { type: 'string', minLength: 1, maxLength: 150 },
+        file: { type: 'string', minLength: 1, maxLength: 512 },
+      },
+      required: ['id', 'file'],
+      additionalProperties: false,
+    },
+  },
   {
     name: 'search_skills',
     description:
@@ -171,7 +209,7 @@ const tools = [
         },
         project: {
           type: 'string',
-          description: 'Project directory to install into. Defaults to the current working directory.',
+          description: 'Project directory to install into. Supply the user project path. If omitted, this resolves against the MCP process working directory, which can differ from the client workspace.',
         },
       },
       required: ['id', 'target'],
@@ -199,6 +237,16 @@ const tools = [
 
 async function callTool(name, args) {
   switch (name) {
+    case 'recommend_workflow':
+      return textResult(recommendWorkflow(args));
+
+    case 'read_skill_file': {
+      const skill = skills.find(({ id }) => id === args.id);
+      if (!skill) return errorResult('Use an exact skill ID returned by recommend_workflow or search_skills.');
+      const content = readSkillFile(path.join(REPO_ROOT, skill.path), args.file);
+      return textResult({ id: skill.id, file: args.file, content });
+    }
+
     case 'search_skills': {
       const query = lower(args.query).trim();
       const domain = lower(args.domain).trim();
@@ -237,11 +285,14 @@ async function callTool(name, args) {
       const sourceFile = path.join(skillDir, 'SOURCE.json');
       const instructions = fs.existsSync(skillFile) ? fs.readFileSync(skillFile, 'utf8') : '';
       const source = fs.existsSync(sourceFile) ? readJson(sourceFile) : null;
+      const supportingFiles = listFiles(skillDir);
 
       return textResult({
         skill: publicSkill(skill),
         instructions,
         provenance: source,
+        supportingFiles: supportingFiles.slice(0, 60),
+        supportingFileCount: supportingFiles.length,
       });
     }
 
@@ -263,7 +314,7 @@ async function callTool(name, args) {
       const skill = resolveSkill(args.id);
       if (!skill) return errorResult(`No skill matches "${args.id}". Use search_skills to find one.`);
       const target = lower(args.target);
-      if (!TARGETS[target]) {
+      if (!Object.hasOwn(TARGETS, target)) {
         return errorResult(`Unknown target "${args.target}". Valid targets: ${Object.keys(TARGETS).join(', ')}`);
       }
 
@@ -279,6 +330,8 @@ async function callTool(name, args) {
         source: sourceDir,
         destination,
         flat: true,
+        nativeLayoutIssues: skillCompatibility(skill),
+        projectExplicit: Boolean(args.project),
         files,
         invocation: { command: 'node', args: commandArgs },
         command: `node ${commandArgs.map(shellQuote).join(' ')}`,
@@ -320,20 +373,44 @@ async function callTool(name, args) {
 
 async function main() {
   const server = new Server(
-    { name: 'vibe-skills', version: '1.0.0' },
+    { name: 'vibe-skills', version: require('../package.json').version },
     {
-      capabilities: { tools: {} },
-      instructions:
-        'Curated agent-skills catalog. Use search_skills to find a skill, get_skill for full instructions and provenance, list_domains for the taxonomy, export_skill to plan an install, and list_resources for developer references.',
+      capabilities: { tools: {}, prompts: {} },
+      instructions,
     }
   );
 
-  server.setRequestHandler(ListToolsRequestSchema, async () => ({ tools }));
+  const validator = new AjvJsonSchemaValidator();
+  const validateArgs = new Map(tools.map((tool) => [tool.name, validator.getValidator(tool.inputSchema)]));
+  const annotations = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false };
+  server.setRequestHandler(ListToolsRequestSchema, async () => ({
+    tools: tools.map((tool) => ({ ...tool, annotations })),
+  }));
+
+  const prompt = {
+    name: 'skillkit_start',
+    description: 'Use SkillKit to select and apply skills for the current developer task.',
+    arguments: [{ name: 'task', description: 'Optional task brief. Otherwise use the existing conversation.' }],
+  };
+  server.setRequestHandler(ListPromptsRequestSchema, async () => ({ prompts: [prompt] }));
+  server.setRequestHandler(GetPromptRequestSchema, async ({ params }) => {
+    if (params.name !== prompt.name) throw new McpError(ErrorCode.InvalidParams, 'Unknown prompt: ' + params.name);
+    const messages = [{ role: 'user', content: { type: 'text', text: instructions } }];
+    if (params.arguments?.task) {
+      if (params.arguments.task.length > 8000) throw new McpError(ErrorCode.InvalidParams, 'Task exceeds 8000 characters.');
+      messages.push({ role: 'user', content: { type: 'text', text: params.arguments.task } });
+    }
+    return { messages };
+  });
 
   server.setRequestHandler(CallToolRequestSchema, async (request) => {
     const { name, arguments: args } = request.params;
     try {
-      return await callTool(name, args || {});
+      const validate = validateArgs.get(name);
+      if (!validate) return errorResult(`Unknown tool "${name}".`);
+      const result = validate(args || {});
+      if (!result.valid) return errorResult('Invalid arguments: ' + result.errorMessage);
+      return await callTool(name, result.data);
     } catch (err) {
       return errorResult(`Tool ${name} failed: ${err.message}`);
     }

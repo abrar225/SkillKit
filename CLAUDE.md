@@ -11,6 +11,7 @@ Entry point for Claude Code. Read `AGENTS.md` first; it holds the invariants and
 ## Commands
 
 ```bash
+node bin/vibe-skills.js recommend "<task>" --workflow <id>    # select stages and catalog entries
 node bin/vibe-skills.js search "<term>"
 node bin/vibe-skills.js info <domain>/<skill>
 node bin/vibe-skills.js scan .                  # recommend skills for this project

@@ -1,33 +1,508 @@
 {
   "skillId": "master-router",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "evals": [
     {
-      "id": "eval-intent-routing",
-      "prompt": "I need to design a sleek dark-mode dashboard with subtle hover animations and high-converting typography.",
-      "assertions": [
-        {
-          "type": "routes_to_domain",
-          "value": "ui-ux"
-        },
-        {
-          "type": "selects_skills",
-          "value": ["ui-ux-pro-max", "framer-motion-animator"]
+      "id": "missing-task",
+      "input": {},
+      "status": "needs_clarification",
+      "question": "What do you want to do?"
+    },
+    {
+      "id": "role-only",
+      "input": {
+        "task": "Act as a senior frontend developer"
+      },
+      "status": "needs_intent"
+    },
+    {
+      "id": "unclear-app",
+      "input": {
+        "task": "Build me a full-stack mobile app.",
+        "intent": {
+          "actions": [
+            "mobile"
+          ],
+          "projectState": "unknown",
+          "deliverables": [
+            "Build me a full-stack mobile app."
+          ],
+          "unresolvedDecision": "What should users be able to do in the mobile app?"
         }
+      },
+      "status": "needs_clarification"
+    },
+    {
+      "id": "portfolio",
+      "input": {
+        "task": "Design my portfolio website with project case studies and a contact page.",
+        "intent": {
+          "actions": [
+            "new-web-project"
+          ],
+          "projectState": "new",
+          "deliverables": [
+            "Design my portfolio website with project case studies and a contact page."
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "new-web-project"
+      ],
+      "skills": [
+        "frontend/frontend-design",
+        "automations/webapp-testing"
+      ],
+      "excludeSkills": [
+        "frontend/vercel-react-best-practices",
+        "ui-ux/framer-motion-animator"
+      ],
+      "resources": [
+        "mdn",
+        "playwright"
       ]
     },
     {
-      "id": "eval-ambiguity-grill",
-      "prompt": "Build me a full-stack mobile app.",
-      "assertions": [
-        {
-          "type": "triggers_grill_me",
-          "value": true
-        },
-        {
-          "type": "questions_asked_singly",
-          "value": true
+      "id": "portfolio-design-only",
+      "input": {
+        "task": "Design my portfolio website. Mockups only, no implementation.",
+        "intent": {
+          "actions": [
+            "new-web-project"
+          ],
+          "projectState": "new",
+          "deliverables": [
+            "Design my portfolio website. Mockups only, no implementation."
+          ]
         }
+      },
+      "status": "ready",
+      "workflows": [
+        "design"
+      ],
+      "excludeSkills": [
+        "engineering-ops/incremental-implementation"
+      ]
+    },
+    {
+      "id": "design-motion",
+      "input": {
+        "task": "Design a sleek dark-mode dashboard with subtle hover animations and readable typography.",
+        "intent": {
+          "actions": [
+            "design"
+          ],
+          "projectState": "unknown",
+          "deliverables": [
+            "Design a sleek dark-mode dashboard with subtle hover animations and readable typography."
+          ],
+          "stack": [
+            "React"
+          ],
+          "topics": [
+            "hover"
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "design"
+      ],
+      "skills": [
+        "frontend/frontend-design",
+        "ui-ux/framer-motion-animator"
+      ]
+    },
+    {
+      "id": "portfolio-deploy",
+      "input": {
+        "task": "Build my portfolio website in Next.js and deploy it to staging.",
+        "intent": {
+          "actions": [
+            "new-web-project",
+            "release",
+            "deploy"
+          ],
+          "projectState": "new",
+          "deliverables": [
+            "Build my portfolio website in Next.js and deploy it to staging."
+          ],
+          "stack": [
+            "Next.js"
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "new-web-project",
+        "release",
+        "deploy"
+      ],
+      "skills": [
+        "frontend/vercel-react-best-practices",
+        "engineering-ops/shipping-and-launch"
+      ]
+    },
+    {
+      "id": "plan-without-deploy",
+      "input": {
+        "task": "Plan my portfolio website.",
+        "intent": {
+          "actions": [
+            "plan"
+          ],
+          "projectState": "unknown",
+          "deliverables": [
+            "Plan my portfolio website."
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "plan"
+      ]
+    },
+    {
+      "id": "backend",
+      "input": {
+        "task": "Design a REST API and a Supabase schema for uploading project case studies.",
+        "intent": {
+          "actions": [
+            "api-data"
+          ],
+          "projectState": "unknown",
+          "deliverables": [
+            "Design a REST API and a Supabase schema for uploading project case studies."
+          ],
+          "topics": [
+            "api"
+          ],
+          "stack": [
+            "Supabase"
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "api-data"
+      ],
+      "skills": [
+        "architecture/api-and-interface-design",
+        "backend-api/supabase-postgres-best-practices"
+      ],
+      "resources": [
+        "openapi",
+        "postgresql"
+      ]
+    },
+    {
+      "id": "bigquery-without-dbt",
+      "input": {
+        "task": "Design a data model in BigQuery.",
+        "intent": {
+          "actions": [
+            "api-data"
+          ],
+          "projectState": "unknown",
+          "deliverables": [
+            "Design a data model in BigQuery."
+          ],
+          "topics": [
+            "bigquery"
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "api-data"
+      ],
+      "excludeSkills": [
+        "backend-api/dbt-analytics-engineering"
+      ],
+      "resources": [
+        "bigquery"
+      ]
+    },
+    {
+      "id": "architecture",
+      "input": {
+        "task": "Improve our codebase architecture and module boundaries.",
+        "intent": {
+          "actions": [
+            "architecture"
+          ],
+          "projectState": "unknown",
+          "deliverables": [
+            "Improve our codebase architecture and module boundaries."
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "architecture"
+      ],
+      "skills": [
+        "architecture/codebase-design"
+      ]
+    },
+    {
+      "id": "debug",
+      "input": {
+        "task": "Fix the checkout crash when the cart is empty.",
+        "intent": {
+          "actions": [
+            "debug"
+          ],
+          "projectState": "unknown",
+          "deliverables": [
+            "Fix the checkout crash when the cart is empty."
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "debug"
+      ],
+      "skills": [
+        "engineering-ops/systematic-debugging"
+      ]
+    },
+    {
+      "id": "release",
+      "input": {
+        "task": "Deploy the portfolio to staging and run smoke tests.",
+        "intent": {
+          "actions": [
+            "deploy"
+          ],
+          "projectState": "unknown",
+          "deliverables": [
+            "Deploy the portfolio to staging and run smoke tests."
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "release",
+        "deploy"
+      ],
+      "skills": [
+        "engineering-ops/shipping-and-launch"
+      ]
+    },
+    {
+      "id": "prepare-release",
+      "input": {
+        "task": "Prepare the portfolio for a staging release and run smoke tests.",
+        "intent": {
+          "actions": [
+            "release"
+          ],
+          "projectState": "unknown",
+          "deliverables": [
+            "Prepare the portfolio for a staging release and run smoke tests."
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "release"
+      ]
+    },
+    {
+      "id": "existing-feature",
+      "input": {
+        "task": "Add a filter to the existing product list and preserve the current URL behavior.",
+        "intent": {
+          "actions": [
+            "feature"
+          ],
+          "projectState": "unknown",
+          "deliverables": [
+            "Add a filter to the existing product list and preserve the current URL behavior."
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "feature"
+      ],
+      "skills": [
+        "engineering-ops/incremental-implementation",
+        "engineering-ops/verification-before-completion"
+      ]
+    },
+    {
+      "id": "explicit-intent",
+      "input": {
+        "task": "Design the checkout flow for the app.",
+        "intent": {
+          "actions": [
+            "plan"
+          ],
+          "projectState": "unknown",
+          "deliverables": [
+            "Design the checkout flow for the app."
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "plan"
+      ]
+    },
+    {
+      "id": "unsupported",
+      "input": {
+        "task": "Explain the difference between two logo trademark filings.",
+        "intent": {
+          "actions": [],
+          "projectState": "unknown",
+          "deliverables": [
+            "Explain the difference between two logo trademark filings."
+          ]
+        }
+      },
+      "status": "no_curated_match"
+    },
+    {
+      "id": "existing-portfolio-blog",
+      "input": {
+        "task": "Add a blog to my existing portfolio website",
+        "intent": {
+          "actions": [
+            "feature"
+          ],
+          "projectState": "existing",
+          "deliverables": [
+            "Add a blog to my existing portfolio website"
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "feature"
+      ]
+    },
+    {
+      "id": "portfolio-readme",
+      "input": {
+        "task": "Write a README for my portfolio website",
+        "intent": {
+          "actions": [
+            "documentation"
+          ],
+          "projectState": "existing",
+          "deliverables": [
+            "Write a README for my portfolio website"
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "documentation"
+      ]
+    },
+    {
+      "id": "negation-overrides-incorrect-intent",
+      "input": {
+        "task": "Build my portfolio website. Do not deploy.",
+        "intent": {
+          "actions": [
+            "new-web-project",
+            "deploy"
+          ],
+          "projectState": "new",
+          "deliverables": [
+            "Build my portfolio website. Do not deploy."
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "new-web-project"
+      ]
+    },
+    {
+      "id": "plan-and-build",
+      "input": {
+        "task": "Plan and build a portfolio website",
+        "intent": {
+          "actions": [
+            "plan",
+            "new-web-project"
+          ],
+          "projectState": "new",
+          "deliverables": [
+            "Plan and build a portfolio website"
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "plan",
+        "new-web-project"
+      ]
+    },
+    {
+      "id": "document-then-stage",
+      "input": {
+        "task": "Update the README and deploy the API to staging",
+        "intent": {
+          "actions": [
+            "documentation",
+            "deploy"
+          ],
+          "projectState": "existing",
+          "deliverables": [
+            "Update the README and deploy the API to staging"
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "documentation",
+        "release",
+        "deploy"
+      ]
+    },
+    {
+      "id": "plain-unit-testing",
+      "input": {
+        "task": "Help me write unit tests for pricing calculations",
+        "intent": {
+          "actions": [
+            "testing"
+          ],
+          "projectState": "existing",
+          "deliverables": [
+            "Help me write unit tests for pricing calculations"
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "testing"
+      ]
+    },
+    {
+      "id": "portfolio-paraphrase",
+      "input": {
+        "task": "Put my case studies on the web so hiring managers can browse them",
+        "intent": {
+          "actions": [
+            "new-web-project"
+          ],
+          "projectState": "new",
+          "deliverables": [
+            "Put my case studies on the web so hiring managers can browse them"
+          ]
+        }
+      },
+      "status": "ready",
+      "workflows": [
+        "new-web-project"
       ]
     }
   ]

@@ -14,8 +14,9 @@ const registry = JSON.parse(
 test("MCP catalog tools read real data and return an exact recursive export plan", async () => {
   const client = new Client({ name: "skills-library-test", version: "1.0.0" });
   const transport = new StdioClientTransport({
-    command: process.execPath,
-    args: [path.join(root, "bin/mcp-server.js")],
+    ...JSON.parse(require("node:child_process").execFileSync(process.execPath, [
+      path.join(root, "bin/vibe-skills.js"), "mcp-config",
+    ], { encoding: "utf8" })).mcpServers.skillkit,
   });
   try {
     await client.connect(transport);
@@ -23,6 +24,8 @@ test("MCP catalog tools read real data and return an exact recursive export plan
     assert.deepEqual(
       result.tools.map((tool) => tool.name).sort(),
       [
+        "recommend_workflow",
+        "read_skill_file",
         "search_skills",
         "get_skill",
         "list_domains",
@@ -35,6 +38,45 @@ test("MCP catalog tools read real data and return an exact recursive export plan
       assert.ok(!result.isError, result.content[0]?.text);
       return JSON.parse(result.content[0].text);
     };
+    assert.match(client.getInstructions(), /recommend_workflow first/);
+    const { prompts } = await client.listPrompts();
+    assert.ok(prompts.some(({ name }) => name === 'skillkit_start'));
+    const start = await client.getPrompt({ name: 'skillkit_start', arguments: { task: 'Design my portfolio website.' } });
+    assert.match(start.messages[0].content.text, /structured intent/);
+    assert.equal(start.messages[1].content.text, 'Design my portfolio website.');
+
+    const intake = await call('recommend_workflow', {});
+    assert.deepEqual(intake, { status: 'needs_clarification', question: 'What do you want to do?', candidates: [] });
+    const task = 'Design my portfolio website.';
+    assert.equal((await call('recommend_workflow', { task })).status, 'needs_intent');
+    const intent = { actions: ['new-web-project'], projectState: 'new', deliverables: ['Portfolio site'] };
+    const route = await call('recommend_workflow', { task, intent });
+    const { execFileSync } = require('node:child_process');
+    const localRoute = execFileSync(process.execPath, [path.join(root, 'bin/vibe-skills.js'),
+      'recommend', task, '--intent-json', JSON.stringify(intent), '--json'], { encoding: 'utf8' });
+    assert.deepEqual(route, JSON.parse(localRoute));
+    const constrained = await call('recommend_workflow', { task: 'Do not deploy.',
+      intent: { ...intent, actions: ['new-web-project', 'deploy'] } });
+    assert.ok(constrained.stages.every(({ effect }) => effect !== 'deployment'));
+    assert.equal(route.status, 'ready');
+    assert.equal(route.workflows[0].id, 'new-web-project');
+    const design = await call('get_skill', { id: route.stages[1].skills[0].id });
+    assert.equal(design.skill.id, 'frontend/frontend-design');
+    assert.match(design.instructions, /Frontend Design/);
+    const browser = await call('get_skill', { id: route.stages.at(-1).skills[0].id });
+    assert.ok(browser.supportingFiles.includes('scripts/with_server.py'));
+    const support = await call('read_skill_file', { id: browser.skill.id, file: 'scripts/with_server.py' });
+    assert.equal(support.content, fs.readFileSync(path.join(root, browser.skill.path, support.file), 'utf8'));
+
+    for (const [name, arguments_] of [
+      ['recommend_workflow', { task: ['invalid'] }],
+      ['read_skill_file', { id: browser.skill.id, file: '../SKILL.md' }],
+      ['get_skill', { id: 'code-review' }],
+    ]) {
+      const error = await client.callTool({ name, arguments: arguments_ });
+      assert.equal(error.isError, true, error.content[0]?.text);
+    }
+
     const search = await call("search_skills", {
       domain: "security-bug-bounty",
       limit: 100,

@@ -3,6 +3,9 @@
 ```
 SkillKit/
 ├── bin/vibe-skills.js          CLI: list, search, info, domains, resources, scan, validate, export, stats
+├── bin/mcp-server.js           stdio MCP tools and startup prompt
+├── lib/                        shared routing, skill-file reading, and export layout
+├── workflows/routes.json       task routes, existing skill IDs, resources, and stage checks
 ├── registry/
 │   ├── skills.json             generated index of every skill on disk (source of truth for tooling)
 │   ├── domains.json            the 14-domain taxonomy with counts and flagship skills

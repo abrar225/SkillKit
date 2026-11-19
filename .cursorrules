@@ -12,7 +12,7 @@ You are working in a curated skill library. `AGENTS.md` is authoritative; this f
 
 1. Ground every change in real files. Read the target and its `SOURCE.json` before editing.
 2. Skills with `"origin": "upstream"` are vendored verbatim. Never edit them.
-3. New skills need `SKILL.md` and `SOURCE.json`. A description must say when to activate the skill.
+3. Use the task routing protocol in `AGENTS.md`. Add existing skills through the pinned importer and keep provenance in `SOURCE.json`.
 4. New resources go in `resources/<category>.json` with `id`, `name`, `url`, `type`, `pricing`, `license`, `description`, `why`, and `tags`. HTTPS only.
 5. Do not hand-edit `registry/*.json`, `docs/SKILLS.md`, `docs/RESOURCES.md`, or `THIRD_PARTY_NOTICES.md`. They are generated.
 

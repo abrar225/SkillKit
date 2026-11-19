@@ -1,0 +1,477 @@
+{
+  "workflows": [
+    {
+      "id": "new-web-project",
+      "title": "Build a website or web app",
+      "stages": [
+        {
+          "id": "scope",
+          "skill": "planning/spec-driven-development",
+          "outcome": "Identify the audience, primary action, pages, content, and acceptance criteria. For a personal site, use a short brief.",
+          "check": "The brief covers the requested content and states any material assumption.",
+          "effect": "read-only"
+        },
+        {
+          "id": "design",
+          "skill": "frontend/frontend-design",
+          "resources": [
+            "mdn",
+            "lucide"
+          ],
+          "outcome": "Set a visual direction from the audience, real content, and references. Define typography, layout, and mobile behavior.",
+          "check": "Review a representative screen for hierarchy, readability, responsive layout, and consistency.",
+          "effect": "read-only"
+        },
+        {
+          "id": "implement",
+          "skill": "engineering-ops/incremental-implementation",
+          "outcome": "Use the existing stack when there is one. Build the smallest complete user flow first.",
+          "check": "Run the project build and verify the primary flow with realistic content.",
+          "effect": "implementation"
+        },
+        {
+          "id": "verify",
+          "skill": "automations/webapp-testing",
+          "resources": [
+            "playwright"
+          ],
+          "outcome": "Exercise the primary flow in a browser at desktop and mobile widths.",
+          "check": "Verify navigation, keyboard use, visible focus, and any forms. Record what was observed.",
+          "effect": "read-only"
+        }
+      ],
+      "verificationTier": "pilot"
+    },
+    {
+      "id": "plan",
+      "title": "Clarify requirements and plan",
+      "stages": [
+        {
+          "id": "scope",
+          "skill": "planning/spec-driven-development",
+          "outcome": "Capture the user outcome, constraints, scope, and acceptance criteria.",
+          "check": "Resolve decisions that would materially alter the plan. Record the rest as assumptions.",
+          "effect": "read-only"
+        },
+        {
+          "id": "plan",
+          "skill": "planning/planning-and-task-breakdown",
+          "outcome": "Split the work into deliverable slices and identify dependencies, risks, and verification for each slice.",
+          "check": "Each slice has a testable result and a clear dependency order.",
+          "effect": "read-only"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "design",
+      "title": "Design or polish an interface",
+      "stages": [
+        {
+          "id": "design",
+          "skill": "frontend/frontend-design",
+          "resources": [
+            "lucide",
+            "refactoring-ui"
+          ],
+          "outcome": "Use audience, content, and existing brand to choose a visual direction. Apply it to the requested surface.",
+          "check": "Inspect hierarchy and layout with representative content, including narrow screens.",
+          "effect": "read-only"
+        },
+        {
+          "id": "verify",
+          "skill": "ui-ux/fixing-accessibility",
+          "resources": [
+            "mdn"
+          ],
+          "outcome": "Review semantics, focus, contrast, and interaction states.",
+          "check": "Test keyboard navigation and responsive behavior. Check reduced motion when animation is present.",
+          "effect": "read-only"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "feature",
+      "title": "Implement or improve a feature",
+      "stages": [
+        {
+          "id": "scope",
+          "skill": "architecture/codebase-design",
+          "outcome": "Read project rules, inspect the feature boundary and callers, and identify the smallest viable change.",
+          "check": "Confirm affected behavior and concrete acceptance criteria before editing.",
+          "effect": "read-only"
+        },
+        {
+          "id": "implement",
+          "skill": "engineering-ops/incremental-implementation",
+          "outcome": "Use the existing stack and patterns. Make a focused change and add a meaningful test where behavior warrants it.",
+          "check": "Exercise normal, error, and relevant edge cases using the project's existing checks.",
+          "effect": "implementation"
+        },
+        {
+          "id": "verify",
+          "skill": "engineering-ops/verification-before-completion",
+          "outcome": "Run the checks affected by the change and inspect the diff against requirements.",
+          "check": "Report actual command results and any unresolved limitation.",
+          "effect": "read-only"
+        }
+      ],
+      "verificationTier": "pilot"
+    },
+    {
+      "id": "debug",
+      "title": "Diagnose and fix a regression",
+      "stages": [
+        {
+          "id": "diagnose",
+          "skill": "engineering-ops/systematic-debugging",
+          "outcome": "Reproduce the failure. Trace evidence to the root cause before making changes.",
+          "check": "Capture a failing reproduction or give the exact reason reproduction is unavailable.",
+          "effect": "read-only"
+        },
+        {
+          "id": "verify",
+          "skill": "engineering-ops/verification-before-completion",
+          "outcome": "Apply the smallest correction and re-run the reproduction plus affected checks.",
+          "check": "Show that the original failure now passes and report any remaining uncertainty.",
+          "effect": "implementation"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "architecture",
+      "title": "Design or review the architecture",
+      "stages": [
+        {
+          "id": "design",
+          "skill": "architecture/codebase-design",
+          "resources": [
+            "c4-model",
+            "adr"
+          ],
+          "outcome": "Map the relevant boundaries, constraints, and dependencies. Compare viable structures against the requested change.",
+          "check": "Record the decision and the consequences for callers, testing, and migrations.",
+          "effect": "read-only"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "api-data",
+      "title": "Design or test an API or data model",
+      "stages": [
+        {
+          "id": "design",
+          "skill": "architecture/api-and-interface-design",
+          "outcome": "Inspect data ownership, contracts, and existing clients. Define validation, errors, and compatibility.",
+          "check": "Tie each public behavior to a contract example. Include failure cases and migration impact.",
+          "effect": "read-only"
+        },
+        {
+          "id": "verify",
+          "skill": "engineering-ops/verification-before-completion",
+          "outcome": "Use the project's contract, integration, and migration checks to verify the requested change.",
+          "check": "Exercise success, rejected input, and compatibility cases relevant to the change.",
+          "effect": "read-only"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "mobile",
+      "title": "Build or improve a mobile app",
+      "stages": [
+        {
+          "id": "scope",
+          "skill": "planning/spec-driven-development",
+          "outcome": "Identify the primary mobile flow, target platforms, and the current stack.",
+          "check": "Confirm the main flows and platform-specific constraints.",
+          "effect": "read-only"
+        },
+        {
+          "id": "implement",
+          "skill": "engineering-ops/incremental-implementation",
+          "outcome": "Implement the smallest usable slice with navigation, loading, and recovery states as needed.",
+          "check": "Run the project checks and exercise the main flow on a supported simulator or device.",
+          "effect": "implementation"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "review",
+      "title": "Review changes before delivery",
+      "stages": [
+        {
+          "id": "review",
+          "skill": "engineering-ops/code-review-and-quality",
+          "outcome": "Review the actual diff against its requirements and trace affected callers.",
+          "check": "Give actionable findings with evidence and scope. State which checks ran.",
+          "effect": "read-only"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "documentation",
+      "title": "Write or update project documentation",
+      "stages": [
+        {
+          "id": "write",
+          "skill": "architecture/documentation-and-adrs",
+          "outcome": "Read the current behavior and docs. Give the intended reader enough information to do the task.",
+          "check": "Verify commands, examples, paths, and claims against the current project.",
+          "effect": "documentation"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "performance",
+      "title": "Measure and improve performance",
+      "stages": [
+        {
+          "id": "measure",
+          "skill": "engineering-ops/performance-optimization",
+          "outcome": "Collect a baseline on a representative workload and identify the dominant cost.",
+          "check": "Compare before and after under the same conditions and check for regressions.",
+          "effect": "read-only"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "browser-check",
+      "title": "Verify a web flow in a browser",
+      "stages": [
+        {
+          "id": "verify",
+          "skill": "automations/webapp-testing",
+          "resources": [
+            "playwright"
+          ],
+          "outcome": "Run the requested flow in an available browser with representative data.",
+          "check": "Report the observed result and distinguish manual behavior, automated coverage, and environment limits.",
+          "effect": "read-only"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "release",
+      "title": "Prepare a release",
+      "stages": [
+        {
+          "id": "prepare",
+          "skill": "engineering-ops/shipping-and-launch",
+          "outcome": "Identify the target, build and test commands, environment requirements, migration order, and rollback procedure.",
+          "check": "Verify the candidate in preview or staging and collect the relevant smoke check results.",
+          "effect": "read-only"
+        }
+      ],
+      "verificationTier": "pilot"
+    },
+    {
+      "id": "deploy",
+      "title": "Deploy and verify an authorized release",
+      "stages": [
+        {
+          "id": "release",
+          "skill": "engineering-ops/observability-and-instrumentation",
+          "outcome": "Use the project's approved delivery flow. Check runtime health after an authorized deployment.",
+          "check": "Confirm the deployed revision, primary flow, health signals, and rollback trigger. Report whether deployment actually took place.",
+          "effect": "deployment"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "testing",
+      "title": "Write and verify automated tests",
+      "stages": [
+        {
+          "id": "test",
+          "skill": "engineering-ops/test-driven-development",
+          "outcome": "Add focused tests using the project’s existing test framework and a representative failure case.",
+          "check": "Run the affected tests and record the result.",
+          "effect": "implementation"
+        }
+      ],
+      "verificationTier": "catalog"
+    }
+  ],
+  "additions": [
+    {
+      "workflows": [
+        "design",
+        "new-web-project"
+      ],
+      "stage": "design",
+      "skill": "ui-ux/framer-motion-animator",
+      "whenStack": [
+        "react",
+        "nextjs"
+      ],
+      "resources": [
+        "motion"
+      ],
+      "reason": "Use React motion guidance for requested animation.",
+      "topics": [
+        "motion",
+        "animation",
+        "animate",
+        "hover",
+        "micro interaction"
+      ]
+    },
+    {
+      "workflows": [
+        "new-web-project",
+        "feature"
+      ],
+      "stage": "implement",
+      "skill": "frontend/vercel-react-best-practices",
+      "resources": [
+        "nextjs"
+      ],
+      "reason": "Apply Next.js and React rendering guidance to the existing or requested stack.",
+      "topics": [
+        "next.js",
+        "nextjs",
+        "next js"
+      ]
+    },
+    {
+      "workflows": [
+        "new-web-project",
+        "feature"
+      ],
+      "stage": "implement",
+      "skill": "frontend/vercel-react-best-practices",
+      "resources": [
+        "react"
+      ],
+      "reason": "Check React rendering and data-flow decisions.",
+      "topics": [
+        "react"
+      ]
+    },
+    {
+      "workflows": [
+        "mobile"
+      ],
+      "stage": "implement",
+      "skill": "mobile/flutter-architecture",
+      "resources": [
+        "flutter"
+      ],
+      "reason": "Use the requested Flutter architecture conventions.",
+      "topics": [
+        "flutter"
+      ]
+    },
+    {
+      "workflows": [
+        "mobile"
+      ],
+      "stage": "implement",
+      "skill": "mobile/react-native-skills",
+      "resources": [
+        "react-native"
+      ],
+      "reason": "Use the requested React Native platform guidance.",
+      "topics": [
+        "react native",
+        "expo"
+      ]
+    },
+    {
+      "workflows": [
+        "api-data"
+      ],
+      "stage": "design",
+      "skill": "backend-api/supabase-postgres-best-practices",
+      "resources": [
+        "postgresql"
+      ],
+      "reason": "Apply PostgreSQL-specific query and schema guidance.",
+      "topics": [
+        "supabase",
+        "postgres",
+        "postgresql"
+      ]
+    },
+    {
+      "workflows": [
+        "api-data"
+      ],
+      "stage": "design",
+      "skill": "backend-api/prisma-client-api",
+      "resources": [
+        "prisma"
+      ],
+      "reason": "Use the catalog's Prisma query and client guidance.",
+      "topics": [
+        "prisma"
+      ]
+    },
+    {
+      "workflows": [
+        "api-data"
+      ],
+      "stage": "design",
+      "skill": "backend-api/dbt-analytics-engineering",
+      "resources": [
+        "dbt"
+      ],
+      "reason": "Use the catalog's analytics modeling guidance when the task calls for dbt.",
+      "topics": [
+        "dbt"
+      ]
+    },
+    {
+      "workflows": [
+        "api-data"
+      ],
+      "stage": "design",
+      "resources": [
+        "openapi"
+      ],
+      "topics": [
+        "api",
+        "rest",
+        "endpoint",
+        "openapi"
+      ]
+    },
+    {
+      "workflows": [
+        "api-data"
+      ],
+      "stage": "design",
+      "resources": [
+        "bigquery"
+      ],
+      "topics": [
+        "bigquery"
+      ]
+    },
+    {
+      "workflows": [
+        "plan"
+      ],
+      "stage": "scope",
+      "skill": "planning/vibe-planning-6docs",
+      "resources": [
+        "six-documents-notion"
+      ],
+      "reason": "The request explicitly calls for the six-document workflow.",
+      "topics": [
+        "six documents",
+        "6 documents"
+      ]
+    }
+  ]
+}

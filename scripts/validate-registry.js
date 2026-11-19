@@ -183,6 +183,12 @@ if (skillsRegistry && domainsRegistry && resourcesRegistry) {
   const domains = domainsRegistry.domains || [];
   const resources = resourcesRegistry.resources || [];
 
+  try {
+    require('../lib/task-router').createRouter(skills, resources);
+  } catch (err) {
+    error(err.message);
+  }
+
   // --- Top-level counts ---------------------------------------------------
   if (skillsRegistry.count !== skills.length) {
     error(`skills.json count ${skillsRegistry.count} != ${skills.length} entries`);

@@ -97,7 +97,7 @@
       "name": "master-router",
       "domain": "orchestrator",
       "path": "skills/orchestrator/master-router",
-      "description": "Master meta-orchestrator for the Skills repository. Analyzes incoming developer intent, grills ambiguities, enforces engineering invariants, and dispatches the exact required skills.",
+      "description": "Route a developer's task to SkillKit workflows, skills, resources, and verification steps. Use when starting a build, planning a change, reviewing work, or preparing a release with SkillKit.",
       "descriptionSource": "frontmatter",
       "frontmatter": true,
       "license": "unverified",
