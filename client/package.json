@@ -1,0 +1,9 @@
+{
+  "name": "@abrar225/skillkit-client",
+  "description": "Read a remote SkillKit catalog on demand",
+  "version": "1.0.0",
+  "bin": {"skillkit": "./skillkit.js"},
+  "files": ["skillkit.js", "output.js", "LICENSE"],
+  "engines": {"node": ">=20"},
+  "license": "MIT"
+}

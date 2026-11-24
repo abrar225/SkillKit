@@ -4,7 +4,8 @@
   "description": "SkillKit: a curated, source-traceable library of agent skills and developer resources",
   "main": "bin/vibe-skills.js",
   "bin": {
-    "vibe-skills": "./bin/vibe-skills.js"
+    "vibe-skills": "./bin/vibe-skills.js",
+    "skillkit": "./bin/vibe-skills.js"
   },
   "scripts": {
     "build:registry": "python3 scripts/build-registry.py",
@@ -21,7 +22,8 @@
     "export:claude": "node bin/vibe-skills.js export --target claude",
     "export:cursor": "node bin/vibe-skills.js export --target cursor",
     "verify:upstream": "python3 scripts/import-skills.py --check",
-    "serve": "node bin/http-server.js"
+    "serve": "node bin/http-server.js",
+    "bench": "node bench/run.mjs"
   },
   "keywords": [
     "ai-agent",

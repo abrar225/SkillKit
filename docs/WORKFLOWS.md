@@ -20,7 +20,7 @@ npm ci
 npm run serve
 ```
 
-The default listener is `127.0.0.1:3737`. To serve remote clients, put it behind HTTPS with `SKILLKIT_ORIGIN` set to the public origin. Use `SKILLKIT_HOST` for the bind address and `PORT` for the listening port. Forward the public Host header and set the same canonical origin on the website when mounting its HTTP routes. The public catalog endpoint serves three read-only tools and keeps no session state. Local export planning stays in the stdio server.
+The default listener is `127.0.0.1:3737`. To serve remote clients, put it behind HTTPS with `SKILLKIT_ORIGIN` set to the public origin. Use `SKILLKIT_HOST` for the bind address and `PORT` for the listening port. Forward the public Host header and set the same canonical origin on the website when mounting its HTTP routes. The endpoint serves discovery, explanations, single-item reads, and an opt-in outcome tool. Collection is disabled until an operator configures a feedback file. Local export planning stays in the stdio server.
 
 ```bash
 curl --get http://127.0.0.1:3737/api/kit --data-urlencode 'task=Redesign my existing portfolio website'

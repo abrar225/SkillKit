@@ -62,7 +62,9 @@ function flagValue(index, flag) {
 
 for (let i = 0; i < argv.length; i += 1) {
   const arg = argv[i];
-  if (arg === '--json') flags.json = true;
+  if (arg === '--lock') flags.lock = true;
+  else if (arg === '--project') { flags.project = flagValue(i, arg); i += 1; }
+  else if (arg === '--json') flags.json = true;
   else if (arg === '--featured') flags.featured = true;
   else if (arg === '--all') flags.all = true;
   else if (arg === '--force') flags.force = true;
@@ -145,6 +147,7 @@ function sameTree(source, destination) {
   }
 }
 
+async function main() {
 switch (command) {
   case 'list': {
     const domainFilter = positional[0];
@@ -333,7 +336,7 @@ switch (command) {
     const missing = [];
     for (const id of recommended) {
       const skill = skills.find((s) => s.id === id);
-      if (skill) found.push(skill);
+      if (skill && require('../lib/catalog-policy').mayDeliver(skill)) found.push(skill);
       else missing.push(id);
     }
 
@@ -379,7 +382,8 @@ switch (command) {
           if (!skill) fail(`no skill matches "${id}"`);
           return skill;
         })
-      : skills;
+      : skills.filter(require('../lib/catalog-policy').mayDeliver);
+    if (chosen.some(s => !require('../lib/catalog-policy').mayDeliver(s))) fail('Requested skill is metadata-only under the catalog license policy.');
     const targetDir = targets[target];
     const outRoot = flags.out
       ? path.resolve(flags.out, targetDir)
@@ -482,6 +486,25 @@ switch (command) {
     break;
   }
 
+  case 'verify-lock': {
+    const result = require('../lib/kit-delivery').verifyLock(JSON.parse(fs.readFileSync(positional[0] || 'skillkit.lock.json', 'utf8')));
+    console.log(JSON.stringify(result));
+    break;
+  }
+  case 'get': {
+    const id = positional[0];
+    if (positional.length !== 1) fail('Use get with one exact skill ID.');
+    const delivery = require('../lib/kit-delivery');
+    if (flags.out) {
+      const stream = await require('../lib/kit-archive').archive(id, repoRoot);
+      const file = await require('../client/output').saveArchive(stream, flags.out, id);
+      console.log(file);
+    } else console.log(JSON.stringify(await delivery.getSkill(id)));
+    break;
+  }
+  case 'use':
+  case 'handoff':
+  case 'explain':
   case 'find':
   case 'recommend': {
     const { createRouter } = require('../lib/task-router');
@@ -490,11 +513,16 @@ switch (command) {
     try {
       if (flags.intentJson?.length > 12000) fail('intent JSON exceeds the routing input limit');
       const intent = flags.intentJson === undefined ? undefined : JSON.parse(flags.intentJson);
-      const input = { task, workflow: flags.workflow, stack: flags.stack, intent };
-      if (command === 'find') {
+      const input = { task, ...(flags.workflow ? {workflow: flags.workflow} : {}), ...(flags.stack ? {stack: flags.stack} : {}), ...(intent !== undefined ? {intent} : {}) };
+      if (flags.project) input.stack = [input.stack, require('../lib/project-context').detect(flags.project)].filter(Boolean).join(', ');
+      if (command !== 'recommend') {
         const { findKit, formatKit } = require('../lib/task-kit');
         const kit = findKit(input);
-        console.log(flags.json ? JSON.stringify(kit, null, 2) : formatKit(kit));
+        const delivery = require('../lib/kit-delivery');
+        if (flags.lock) fs.writeFileSync('skillkit.lock.json', JSON.stringify(delivery.makeLock(kit), null, 2) + '\n', { flag: 'wx', mode: 0o600 });
+        if (command === 'handoff') console.log(await delivery.handoff(kit));
+        else if (command === 'explain') console.log(JSON.stringify(require('../lib/task-kit').explainKit(input), null, 2));
+        else console.log(flags.json || command === 'use' ? JSON.stringify(kit) : formatKit(kit));
         break;
       }
       const plan = createRouter(skills, resources)(input);
@@ -586,6 +614,11 @@ Usage:
                                                     Select a compact kit without installing files
   vibe-skills recommend [task] [--workflow id | --intent-json json] [--stack stack] [--json]
                                                     Choose skills, resources, and verification steps
+  vibe-skills use "<brief>" [--lock] [--project dir]  Print a small JSON kit
+  vibe-skills handoff "<brief>"                       Copyable instructions and verification checks
+  vibe-skills get <id> [--out directory]              Read one skill or request its archive
+  vibe-skills explain "<brief>"                       Explain coverage and constraints
+  vibe-skills verify-lock [file]                      Check selected content against its pins
   vibe-skills mcp-config [--target json|codex]       Print local MCP settings
   vibe-skills mcp-check [endpoint]                  Verify stdio or Streamable HTTP kit discovery
   vibe-skills agent-rule                            Print the project routing instruction
@@ -601,3 +634,5 @@ Regenerate the registries after adding a skill or resource:
     break;
   }
 }
+}
+main().catch(error => fail(error.message));

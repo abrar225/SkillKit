@@ -1,6 +1,10 @@
 # SkillKit
 
-Describe the work to your agent. SkillKit selects a small set of instructions, reference links and checks from **192 skills and 157 resources across 14 domains**. Your project gets files only when you explicitly export skills.
+Describe the work to your agent. SkillKit selects a small set of instructions, reference links and checks from **192 skills and 157 resources across 14 domains**. Discovery writes zero files to the consuming project. You can request a single asset or a lockfile.
+
+## Start with one task
+
+From a maintainer checkout, run `node bin/vibe-skills.js use "Redesign my portfolio website"`. A connected agent calls `find_kit`. The first response names the current stage, selected items, and any missing capabilities. Use `explain_match` for decision evidence. For a consuming project, the separate dependency-free CLI talks to an existing server and downloads one asset only on request. [Delivery and setup](docs/DELIVERY.md) · [Routing benchmark](bench/README.md) · [Federated catalog](docs/FEDERATION.md)
 
 ## Use it from a chat
 
@@ -14,7 +18,7 @@ The map works directly from GitHub. Each skill has its own instructions and sour
 
 On a running SkillKit service, copy the **MCP URL** from the integration page into a client that accepts remote Streamable HTTP. Give the agent a task and ask it to call `find_kit`. The server returns skill IDs, resource purposes, pricing and checks. The agent retrieves instructions and supporting text as needed. Discovery and reading write zero files to the consuming project.
 
-A portfolio redesign starts with frontend design and UI refactoring. A brief that identifies React can add React-specific implementation guidance. A poster gets a static design skill and references for type and color. A footage trim can use FFmpeg on its own. An ambiguous format prompts a focused question.
+A portfolio redesign starts with frontend design and UI refactoring. A brief that identifies React can add React-specific implementation guidance. A print brief can return a partial kit if a native format or verified instruction is missing. A footage trim can use FFmpeg on its own. An ambiguous format prompts a focused question.
 
 ## Try it from this checkout
 

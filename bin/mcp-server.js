@@ -19,7 +19,6 @@
 const fs = require('fs');
 const path = require('path');
 const { createRouter, workflowIds, instructions, skillCompatibility, intentSchema } = require('../lib/task-router');
-const { listFiles, readSkillFile } = require('../lib/skill-files');
 const { AjvJsonSchemaValidator } = require('@modelcontextprotocol/sdk/validation/ajv');
 
 const { Server } = require('@modelcontextprotocol/sdk/server/index.js');
@@ -36,7 +35,8 @@ const {
 const REPO_ROOT = path.resolve(__dirname, '..');
 const TARGETS = require('../lib/export-layout');
 const { findKit, inputSchema } = require('../lib/task-kit');
-const { readEntry } = require('../lib/kit-reader');
+const delivery = require('../lib/kit-delivery');
+const { mayDeliver } = require('../lib/catalog-policy');
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -126,6 +126,12 @@ const tools = [
     description: 'Start here. Find relevant skills, reference links and checks for a creative or technical brief. Supply structured intent when you know the deliverables and constraints. Resolve a clarification from conversation context, asking the user only if necessary.',
     inputSchema,
   },
+  { name: 'explain_match', description: 'Explain selected and rejected matches and coverage gaps.', inputSchema },
+  { name: 'get_resource', description: 'Look up one resource by exact ID and inspect its terms and purpose.',
+    inputSchema: { type: 'object', properties: { id: { type: 'string', minLength: 1, maxLength: 150 } }, required: ['id'], additionalProperties: false } },
+  { name: 'report_outcome', description: 'Share a result only with the user’s explicit consent. Stores catalog IDs and a rating when operator collection is enabled.',
+    inputSchema: { type: 'object', properties: { consent: { const: true }, result: { enum: ['useful','mixed','unhelpful'] },
+      ids: { type: 'array', maxItems: 12, items: { type: 'string', maxLength: 150 } } }, required: ['consent','result'], additionalProperties: false } },
   {
     name: 'recommend_workflow',
     description: 'Start here for any developer task. Interpret the user request in context and pass the structured intent. Returns applicable stages, exact skill IDs, resources, and checks. A raw task alone returns choices without inferring a workflow.',
@@ -246,13 +252,13 @@ async function callTool(name, args, remote, root, endpoint) {
     case 'recommend_workflow':
       return textResult(recommendWorkflow(args));
 
-    case 'read_skill_file': {
-      if (remote) return textResult(readEntry(root, args.id, args.file));
-      const skill = skills.find(({ id }) => id === args.id);
-      if (!skill) return errorResult('Use an exact skill ID returned by recommend_workflow or search_skills.');
-      const content = readSkillFile(path.join(REPO_ROOT, skill.path), args.file);
-      return textResult({ id: skill.id, file: args.file, content });
+    case 'get_resource': {
+      const resource = delivery.getResource(args.id);
+      return resource ? textResult(resource) : errorResult('Unknown resource ID.');
     }
+    case 'explain_match': return textResult(require('../lib/task-kit').explainKit(args));
+    case 'report_outcome': return textResult(delivery.reportOutcome(args));
+    case 'read_skill_file': return textResult(await delivery.getSkill(args.id, args.file, root));
 
     case 'search_skills': {
       const query = lower(args.query).trim();
@@ -284,28 +290,16 @@ async function callTool(name, args, remote, root, endpoint) {
     }
 
     case 'get_skill': {
-      if (remote || args.compact) {
-        const detail = readEntry(root, args.id);
-        if (endpoint) detail.archiveUrl = endpoint + '/api/kit?' + new URLSearchParams({ id: args.id, format: 'archive' });
-        return textResult(detail, true);
+      const skill = remote ? null : resolveSkill(args.id);
+      const id = skill?.id || args.id;
+      const detail = await delivery.getSkill(id, undefined, root);
+      if (detail.delivery === 'metadata-only') return textResult(detail);
+      if (endpoint) detail.archiveUrl = endpoint + '/api/kit?' + new URLSearchParams({ id, format: 'archive' });
+      if (skill && !args.compact) {
+        detail.skill = publicSkill(skill);
+        detail.provenance = readJson(path.join(root, skill.path, 'SOURCE.json'));
       }
-      const skill = resolveSkill(args.id);
-      if (!skill) return errorResult(`No skill matches "${args.id}". Use search_skills to find one.`);
-
-      const skillDir = path.join(REPO_ROOT, skill.path);
-      const skillFile = path.join(skillDir, 'SKILL.md');
-      const sourceFile = path.join(skillDir, 'SOURCE.json');
-      const instructions = fs.existsSync(skillFile) ? fs.readFileSync(skillFile, 'utf8') : '';
-      const source = fs.existsSync(sourceFile) ? readJson(sourceFile) : null;
-      const supportingFiles = listFiles(skillDir);
-
-      return textResult({
-        skill: publicSkill(skill),
-        instructions,
-        provenance: source,
-        supportingFiles: supportingFiles.slice(0, 60),
-        supportingFileCount: supportingFiles.length,
-      });
+      return textResult(detail, true);
     }
 
     case 'list_domains':
@@ -325,6 +319,7 @@ async function callTool(name, args, remote, root, endpoint) {
     case 'export_skill': {
       const skill = resolveSkill(args.id);
       if (!skill) return errorResult(`No skill matches "${args.id}". Use search_skills to find one.`);
+      if (!mayDeliver(skill)) return textResult(delivery.restricted(skill));
       const target = lower(args.target);
       if (!Object.hasOwn(TARGETS, target)) {
         return errorResult(`Unknown target "${args.target}". Valid targets: ${Object.keys(TARGETS).join(', ')}`);
@@ -383,7 +378,7 @@ async function callTool(name, args, remote, root, endpoint) {
   }
 }
 
-const remoteNames = new Set(['find_kit', 'get_skill', 'read_skill_file']);
+const remoteNames = new Set(['find_kit', 'get_skill', 'read_skill_file', 'explain_match', 'get_resource', 'report_outcome']);
 const remoteInstructions = 'Call find_kit with the current brief. Supply structured intent from the conversation for compound tasks, explicit constraints or known project context. Resolve a question using known context first. Read the exact skill ID for the current stage with get_skill, then read_skill_file only for referenced text. Use the resource links where relevant. The kit is read-only.';
 
 const validator = new AjvJsonSchemaValidator();
@@ -403,7 +398,7 @@ function createServer({ remote = false, root = REPO_ROOT, endpoint } = {}) {
 
   const annotations = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false };
   server.setRequestHandler(ListToolsRequestSchema, async () => ({
-    tools: activeTools.map((tool) => ({ ...tool, annotations })),
+    tools: activeTools.map((tool) => ({ ...tool, annotations: { ...annotations, openWorldHint: ['get_skill','read_skill_file'].includes(tool.name), ...(tool.name === 'report_outcome' ? { readOnlyHint: false, idempotentHint: false } : {}) } })),
   }));
 
   const prompt = {

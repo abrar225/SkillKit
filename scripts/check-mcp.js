@@ -13,7 +13,7 @@ async function check(endpoint) {
   try {
     await client.connect(transport);
     const { tools } = await client.listTools();
-    for (const name of ['find_kit', 'get_skill', 'read_skill_file']) {
+    for (const name of ['explain_match', 'find_kit', 'get_resource', 'get_skill', 'read_skill_file', 'report_outcome']) {
       if (!tools.some((tool) => tool.name === name)) throw new Error('Missing tool: ' + name);
     }
     const result = await client.callTool({ name: 'find_kit', arguments: { task: 'Redesign my portfolio website' } });
