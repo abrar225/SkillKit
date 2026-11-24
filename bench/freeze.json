@@ -1,0 +1,8 @@
+{
+  "baselineEngineCommit": "99a5430",
+  "fixtureDigests": {
+    "review": "20a1e3987eaa07b0873415337240d2e50c9c09351c35d34360e3f671641107a1",
+    "development": "3c67413c9635a000c4a264731173fb5e04c59abf1b22f339f93c3683769b7a29",
+    "heldOut": "362e962a5e7174b1ab7096a2476601110ff5a9e3dcb649f835d4e8ef7c097df0"
+  }
+}

@@ -1,0 +1,1748 @@
+{
+  "schemaVersion": 1,
+  "node": "v24.14.0",
+  "sourceDigests": {
+    "lib/task-kit.js": "b3cf7e42e8bdf9bc0bbccf04079d31ef2cf4840d9986de002024b0062749ab66",
+    "lib/task-router.js": "3cd8e4837e7286323ab8d6153f82f08590c4ccc0a158f08610645e4a4ca666fd",
+    "lib/kit-reader.js": "25e42b1f17c85aa53742a3d8926498187c9ce7aedc031849ad4a09384fe7e147",
+    "workflows/routes.json": "5c2bf1492581599aae260f41bb719bef578c8b49899e28c2b7fd29e2277d29e0",
+    "registry/skills.json": "3a6aaa68caea098335b1ce29b37404b4b88fdb70134e4c6c17905e5216505ece",
+    "registry/resources.json": "21a7dd0bc269fe086e7d3f67e1761a970e76a4510ec6fe260a7ea2be09996652"
+  },
+  "fixtureDigests": {
+    "review": "20a1e3987eaa07b0873415337240d2e50c9c09351c35d34360e3f671641107a1",
+    "development": "3c67413c9635a000c4a264731173fb5e04c59abf1b22f339f93c3683769b7a29",
+    "heldOut": "362e962a5e7174b1ab7096a2476601110ff5a9e3dcb649f835d4e8ef7c097df0"
+  },
+  "groups": {
+    "all": {
+      "briefs": 120,
+      "usableKit": {
+        "count": 25,
+        "total": 120,
+        "percent": 20.83
+      },
+      "confidentWrong": {
+        "count": 14,
+        "total": 120,
+        "percent": 11.67
+      },
+      "constraintAdherence": {
+        "count": 80,
+        "total": 120,
+        "percent": 66.67
+      },
+      "toolAdherence": {
+        "count": 47,
+        "total": 83,
+        "percent": 56.63
+      },
+      "budgetAdherence": {
+        "count": 6,
+        "total": 9,
+        "percent": 66.67
+      },
+      "formatAdherence": {
+        "count": 106,
+        "total": 120,
+        "percent": 88.33
+      },
+      "correctConfidence": {
+        "count": 28,
+        "total": 120,
+        "percent": 23.33
+      },
+      "correctNoMatchOrPartial": {
+        "count": 2,
+        "total": 26,
+        "percent": 7.69
+      },
+      "unnecessaryQuestion": {
+        "count": 10,
+        "total": 118,
+        "percent": 8.47
+      },
+      "firstResponseBytes": {
+        "samples": 120,
+        "p50": 696,
+        "p95": 1030,
+        "max": 2273
+      },
+      "firstResponseEstimatedTokens": {
+        "samples": 120,
+        "p50": 174,
+        "p95": 258,
+        "max": 569
+      },
+      "responsesUnder2KiB": {
+        "count": 119,
+        "total": 120,
+        "percent": 99.17
+      },
+      "firstUsableSkillMs": {
+        "samples": 49,
+        "p50": 1.518,
+        "p95": 2.402,
+        "max": 14.015
+      },
+      "firstUsableReferenceMs": {
+        "samples": 59,
+        "p50": 1.433,
+        "p95": 2.402,
+        "max": 14.015
+      },
+      "estimatedTokenMethod": "ceil(UTF-8 bytes / 4); tokenizer not part of this offline harness"
+    },
+    "originalReview": {
+      "briefs": 12,
+      "usableKit": {
+        "count": 5,
+        "total": 12,
+        "percent": 41.67
+      },
+      "confidentWrong": {
+        "count": 2,
+        "total": 12,
+        "percent": 16.67
+      },
+      "constraintAdherence": {
+        "count": 9,
+        "total": 12,
+        "percent": 75
+      },
+      "toolAdherence": {
+        "count": 5,
+        "total": 8,
+        "percent": 62.5
+      },
+      "budgetAdherence": {
+        "count": 1,
+        "total": 1,
+        "percent": 100
+      },
+      "formatAdherence": {
+        "count": 10,
+        "total": 12,
+        "percent": 83.33
+      },
+      "correctConfidence": {
+        "count": 5,
+        "total": 12,
+        "percent": 41.67
+      },
+      "correctNoMatchOrPartial": {
+        "count": 0,
+        "total": 2,
+        "percent": 0
+      },
+      "unnecessaryQuestion": {
+        "count": 1,
+        "total": 12,
+        "percent": 8.33
+      },
+      "firstResponseBytes": {
+        "samples": 12,
+        "p50": 642,
+        "p95": 1365,
+        "max": 1365
+      },
+      "firstResponseEstimatedTokens": {
+        "samples": 12,
+        "p50": 161,
+        "p95": 342,
+        "max": 342
+      },
+      "responsesUnder2KiB": {
+        "count": 12,
+        "total": 12,
+        "percent": 100
+      },
+      "firstUsableSkillMs": {
+        "samples": 5,
+        "p50": 0.944,
+        "p95": 14.015,
+        "max": 14.015
+      },
+      "firstUsableReferenceMs": {
+        "samples": 6,
+        "p50": 0.45,
+        "p95": 14.015,
+        "max": 14.015
+      },
+      "estimatedTokenMethod": "ceil(UTF-8 bytes / 4); tokenizer not part of this offline harness"
+    },
+    "regressionVariants": {
+      "briefs": 2,
+      "usableKit": {
+        "count": 0,
+        "total": 2,
+        "percent": 0
+      },
+      "confidentWrong": {
+        "count": 1,
+        "total": 2,
+        "percent": 50
+      },
+      "constraintAdherence": {
+        "count": 1,
+        "total": 2,
+        "percent": 50
+      },
+      "toolAdherence": {
+        "count": 1,
+        "total": 2,
+        "percent": 50
+      },
+      "budgetAdherence": {
+        "count": 0,
+        "total": 0,
+        "percent": null
+      },
+      "formatAdherence": {
+        "count": 1,
+        "total": 2,
+        "percent": 50
+      },
+      "correctConfidence": {
+        "count": 0,
+        "total": 2,
+        "percent": 0
+      },
+      "correctNoMatchOrPartial": {
+        "count": 0,
+        "total": 1,
+        "percent": 0
+      },
+      "unnecessaryQuestion": {
+        "count": 1,
+        "total": 2,
+        "percent": 50
+      },
+      "firstResponseBytes": {
+        "samples": 2,
+        "p50": 247,
+        "p95": 642,
+        "max": 642
+      },
+      "firstResponseEstimatedTokens": {
+        "samples": 2,
+        "p50": 62,
+        "p95": 161,
+        "max": 161
+      },
+      "responsesUnder2KiB": {
+        "count": 2,
+        "total": 2,
+        "percent": 100
+      },
+      "firstUsableSkillMs": {
+        "samples": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "firstUsableReferenceMs": {
+        "samples": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "estimatedTokenMethod": "ceil(UTF-8 bytes / 4); tokenizer not part of this offline harness"
+    },
+    "development": {
+      "briefs": 66,
+      "usableKit": {
+        "count": 17,
+        "total": 66,
+        "percent": 25.76
+      },
+      "confidentWrong": {
+        "count": 8,
+        "total": 66,
+        "percent": 12.12
+      },
+      "constraintAdherence": {
+        "count": 48,
+        "total": 66,
+        "percent": 72.73
+      },
+      "toolAdherence": {
+        "count": 29,
+        "total": 45,
+        "percent": 64.44
+      },
+      "budgetAdherence": {
+        "count": 3,
+        "total": 5,
+        "percent": 60
+      },
+      "formatAdherence": {
+        "count": 60,
+        "total": 66,
+        "percent": 90.91
+      },
+      "correctConfidence": {
+        "count": 20,
+        "total": 66,
+        "percent": 30.3
+      },
+      "correctNoMatchOrPartial": {
+        "count": 2,
+        "total": 12,
+        "percent": 16.67
+      },
+      "unnecessaryQuestion": {
+        "count": 6,
+        "total": 64,
+        "percent": 9.38
+      },
+      "firstResponseBytes": {
+        "samples": 66,
+        "p50": 696,
+        "p95": 1049,
+        "max": 2273
+      },
+      "firstResponseEstimatedTokens": {
+        "samples": 66,
+        "p50": 174,
+        "p95": 263,
+        "max": 569
+      },
+      "responsesUnder2KiB": {
+        "count": 65,
+        "total": 66,
+        "percent": 98.48
+      },
+      "firstUsableSkillMs": {
+        "samples": 33,
+        "p50": 0.402,
+        "p95": 2.124,
+        "max": 2.402
+      },
+      "firstUsableReferenceMs": {
+        "samples": 38,
+        "p50": 0.399,
+        "p95": 2.114,
+        "max": 2.402
+      },
+      "estimatedTokenMethod": "ceil(UTF-8 bytes / 4); tokenizer not part of this offline harness"
+    },
+    "heldOut": {
+      "briefs": 40,
+      "usableKit": {
+        "count": 3,
+        "total": 40,
+        "percent": 7.5
+      },
+      "confidentWrong": {
+        "count": 3,
+        "total": 40,
+        "percent": 7.5
+      },
+      "constraintAdherence": {
+        "count": 22,
+        "total": 40,
+        "percent": 55
+      },
+      "toolAdherence": {
+        "count": 12,
+        "total": 28,
+        "percent": 42.86
+      },
+      "budgetAdherence": {
+        "count": 2,
+        "total": 3,
+        "percent": 66.67
+      },
+      "formatAdherence": {
+        "count": 35,
+        "total": 40,
+        "percent": 87.5
+      },
+      "correctConfidence": {
+        "count": 3,
+        "total": 40,
+        "percent": 7.5
+      },
+      "correctNoMatchOrPartial": {
+        "count": 0,
+        "total": 11,
+        "percent": 0
+      },
+      "unnecessaryQuestion": {
+        "count": 2,
+        "total": 40,
+        "percent": 5
+      },
+      "firstResponseBytes": {
+        "samples": 40,
+        "p50": 736,
+        "p95": 998,
+        "max": 1030
+      },
+      "firstResponseEstimatedTokens": {
+        "samples": 40,
+        "p50": 184,
+        "p95": 250,
+        "max": 258
+      },
+      "responsesUnder2KiB": {
+        "count": 40,
+        "total": 40,
+        "percent": 100
+      },
+      "firstUsableSkillMs": {
+        "samples": 11,
+        "p50": 1.584,
+        "p95": 2.102,
+        "max": 2.102
+      },
+      "firstUsableReferenceMs": {
+        "samples": 15,
+        "p50": 1.446,
+        "p95": 2.102,
+        "max": 2.102
+      },
+      "estimatedTokenMethod": "ceil(UTF-8 bytes / 4); tokenizer not part of this offline harness"
+    }
+  },
+  "permanentRegressionChecks": [
+    {
+      "id": "review-05",
+      "status": "ready",
+      "regressionPass": false,
+      "usable": false
+    },
+    {
+      "id": "review-06",
+      "status": "ready",
+      "regressionPass": false,
+      "usable": false
+    },
+    {
+      "id": "regression-01",
+      "status": "ready",
+      "regressionPass": false,
+      "usable": false
+    },
+    {
+      "id": "regression-02",
+      "status": "no_match",
+      "regressionPass": false,
+      "usable": false
+    }
+  ],
+  "publicCases": [
+    {
+      "id": "review-01",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "frontend/frontend-design",
+        "ui-ux/refactoring-ui"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "a103debd5f8bba5879f141860bcd9b826ccd1ae00290f647ed0193f95c78ac99",
+      "bytes": 1365
+    },
+    {
+      "id": "review-02",
+      "status": "no_match",
+      "question": true,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "homepage design"
+      ],
+      "conflicts": [],
+      "responseDigest": "d03802b656c1b076dcf43ba5ed95a2a72247bcdd99718997eca5178352a2020a",
+      "bytes": 240
+    },
+    {
+      "id": "review-03",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "ui-ux/canvas-design"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "0c61222f1cdc449325cd0cb1a0bd16efd89ad592ee7bfcf8bd89b24a96dc950f",
+      "bytes": 800
+    },
+    {
+      "id": "review-04",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "ffmpeg"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "2f5cdafcc8ee5b9a577219f6216455fc67493948201743986f914aa1f77c6424",
+      "bytes": 642
+    },
+    {
+      "id": "review-05",
+      "status": "ready",
+      "question": false,
+      "usable": false,
+      "confidentWrong": true,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "native Resolve interview edit"
+      ],
+      "conflicts": [
+        "FFmpeg"
+      ],
+      "responseDigest": "2f5cdafcc8ee5b9a577219f6216455fc67493948201743986f914aa1f77c6424",
+      "bytes": 642
+    },
+    {
+      "id": "review-06",
+      "status": "ready",
+      "question": false,
+      "usable": false,
+      "confidentWrong": true,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "LinkedIn post copy"
+      ],
+      "conflicts": [
+        "FFmpeg",
+        "video editing"
+      ],
+      "responseDigest": "2f5cdafcc8ee5b9a577219f6216455fc67493948201743986f914aa1f77c6424",
+      "bytes": 642
+    },
+    {
+      "id": "review-07",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "engineering-ops/systematic-debugging"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "96772ca9e436ed0d30767f4486b3f8ea23f59ddf2e2304213ce682cb7c24eda0",
+      "bytes": 906
+    },
+    {
+      "id": "review-08",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "engineering-ops/debugging-and-error-recovery"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "d8f3e79938cf90976fb678a05845aa0d7a65e7cd722efe24f12e3a9211ca1720",
+      "bytes": 1074
+    },
+    {
+      "id": "review-09",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "engineering-ops/code-review-and-quality"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "6ffc80af14f3a893f3e5d7a634cb5bb73f913d3268bc48ad123b1e85f54255f0",
+      "bytes": 548
+    },
+    {
+      "id": "review-10",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "editorial structure and drafting"
+      ],
+      "conflicts": [],
+      "responseDigest": "c30158108ba8b14b773ea2f9781781d748db2aa3c192598b341a2d854166c504",
+      "bytes": 486
+    },
+    {
+      "id": "review-11",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "Resolve color workflow"
+      ],
+      "conflicts": [],
+      "responseDigest": "28a1713f3b9d07f00fb3d5cce87dbf0c4b356071a659bec8c3c4095cf76b9c16",
+      "bytes": 407
+    },
+    {
+      "id": "review-12",
+      "status": "no_match",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "print composition",
+        "PDF output"
+      ],
+      "conflicts": [],
+      "responseDigest": "bb6169ccaa3d3d1e1d41019d5ac6089cee992451f11aeb9c512fa3e8a9513e6a",
+      "bytes": 121
+    },
+    {
+      "id": "regression-01",
+      "status": "ready",
+      "question": false,
+      "usable": false,
+      "confidentWrong": true,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "native Resolve interview edit"
+      ],
+      "conflicts": [
+        "FFmpeg"
+      ],
+      "responseDigest": "2f5cdafcc8ee5b9a577219f6216455fc67493948201743986f914aa1f77c6424",
+      "bytes": 642
+    },
+    {
+      "id": "regression-02",
+      "status": "no_match",
+      "question": true,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "LinkedIn post copy"
+      ],
+      "conflicts": [],
+      "responseDigest": "e31df58320b1ad568de6dad926e0be28fc1a71b71f8f03173fccbeb52f444b8c",
+      "bytes": 247
+    },
+    {
+      "id": "dev-01",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "engineering-ops/systematic-debugging"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "96772ca9e436ed0d30767f4486b3f8ea23f59ddf2e2304213ce682cb7c24eda0",
+      "bytes": 906
+    },
+    {
+      "id": "dev-02",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "engineering-ops/code-review-and-quality"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "6ffc80af14f3a893f3e5d7a634cb5bb73f913d3268bc48ad123b1e85f54255f0",
+      "bytes": 548
+    },
+    {
+      "id": "dev-03",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "engineering-ops/test-driven-development"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "8728b2c1e90661902e249e40376a1aad484856983112a35a454e702b2e85e8ba",
+      "bytes": 543
+    },
+    {
+      "id": "dev-04",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "architecture/documentation-and-adrs"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "dca21acaac23f46de95cdbe43993752dd8e61646a001a80aeed5c4dfdb0c65d1",
+      "bytes": 573
+    },
+    {
+      "id": "dev-05",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "engineering-ops/performance-optimization"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "c68ee7b72b8c8cb79134d49282e6caad8f827a0f287bed674fc8b6ab6a144c63",
+      "bytes": 569
+    },
+    {
+      "id": "dev-06",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "mobile/flutter-architecture"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "a2795aa3bcef2c57491f4761d0e84f002e4729bb870b8ce9bd0d615c7db63d2f",
+      "bytes": 1193
+    },
+    {
+      "id": "dev-07",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "engineering-ops/memory-leak-debugging"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "e357dd3fbbd0d8f2ef972d6e2635ade59de029498fd648b11d153e6ddb81a10b",
+      "bytes": 795
+    },
+    {
+      "id": "dev-08",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "architecture/codebase-design"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "bb15474fca07054f8e807ecb4a703234be525d35fcb381f4255e3c480d74e28b",
+      "bytes": 928
+    },
+    {
+      "id": "dev-09",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "frontend/frontend-design"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "09052251dd6670e182e4ad028015989efbdab02e22ca5bb7e40c00f84ad2cd0a",
+      "bytes": 2273
+    },
+    {
+      "id": "dev-10",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "frontend/frontend-design",
+        "ui-ux/refactoring-ui"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "6ccb4e47fddc6cd6c800034ddb6ccc4165b88dbbd6dd9921a79e0520290a661a",
+      "bytes": 1719
+    },
+    {
+      "id": "dev-11",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "automations/webapp-testing",
+        "playwright"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "2a562510f6dbf4f517700878dd8a8879285d66e020198f73c7cd9d8038f4e9ab",
+      "bytes": 856
+    },
+    {
+      "id": "dev-12",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "ui-ux/fixing-accessibility",
+        "automations/a11y-debugging",
+        "frontend/web-design-guidelines"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "cb188c4c57b9ccd2af813d5c93e33385fa8cc3202930cc54cd8779dbd1839b2b",
+      "bytes": 970
+    },
+    {
+      "id": "dev-13",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "ui-ux/wireframe"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "ee93aed34f399af50d8fd1ea5bfb529e9f81467754122bba312acb802a259047",
+      "bytes": 314
+    },
+    {
+      "id": "dev-14",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "frontend/vercel-react-best-practices",
+        "frontend/composition-patterns"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "cf1924019cef90b77a34ec41b4100d6fa640f9ceea70823b44258c832487276e",
+      "bytes": 973
+    },
+    {
+      "id": "dev-15",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "UI polish"
+      ],
+      "conflicts": [
+        "Tailwind CSS"
+      ],
+      "responseDigest": "4e691b2120a991361b5505cb39aff090dcae7b665921048295b347905b27f490",
+      "bytes": 654
+    },
+    {
+      "id": "dev-16",
+      "status": "no_match",
+      "question": true,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "native Sketch output"
+      ],
+      "conflicts": [],
+      "responseDigest": "11711cded1ea1bc6370b46fee9d98615205722597be2aa2d92b7e6937fa4caa7",
+      "bytes": 291
+    },
+    {
+      "id": "dev-17",
+      "status": "ready",
+      "question": false,
+      "usable": false,
+      "confidentWrong": true,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [
+        "ui-ux/canvas-design"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "89ec374d042e7a042d8f43d4947593a6871283f634268ccb6e12b02b73c9d73b",
+      "bytes": 943
+    },
+    {
+      "id": "dev-18",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "media/algorithmic-art",
+        "p5js"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "85e630ce84214ce41d6a31c79f88a1f5821a8ca15a131dae81faf5fa1e4f2112",
+      "bytes": 666
+    },
+    {
+      "id": "dev-19",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "ui-ux/canvas-design"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "89ec374d042e7a042d8f43d4947593a6871283f634268ccb6e12b02b73c9d73b",
+      "bytes": 943
+    },
+    {
+      "id": "dev-20",
+      "status": "no_match",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [],
+      "misses": [
+        "InDesign packaging and typography"
+      ],
+      "conflicts": [],
+      "responseDigest": "bb6169ccaa3d3d1e1d41019d5ac6089cee992451f11aeb9c512fa3e8a9513e6a",
+      "bytes": 121
+    },
+    {
+      "id": "dev-21",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "Affinity color separations"
+      ],
+      "conflicts": [],
+      "responseDigest": "8f1ea0c6ef64506f28b7135e0b2e309808323ada521c125917d41663606870f2",
+      "bytes": 827
+    },
+    {
+      "id": "dev-22",
+      "status": "no_match",
+      "question": true,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "identity and usage guidance"
+      ],
+      "conflicts": [],
+      "responseDigest": "11711cded1ea1bc6370b46fee9d98615205722597be2aa2d92b7e6937fa4caa7",
+      "bytes": 291
+    },
+    {
+      "id": "dev-23",
+      "status": "ready",
+      "question": false,
+      "usable": false,
+      "confidentWrong": true,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [
+        "ui-ux/canvas-design"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "89ec374d042e7a042d8f43d4947593a6871283f634268ccb6e12b02b73c9d73b",
+      "bytes": 943
+    },
+    {
+      "id": "dev-24",
+      "status": "ready",
+      "question": false,
+      "usable": false,
+      "confidentWrong": true,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "CorelDRAW color proofing"
+      ],
+      "conflicts": [],
+      "responseDigest": "89ec374d042e7a042d8f43d4947593a6871283f634268ccb6e12b02b73c9d73b",
+      "bytes": 943
+    },
+    {
+      "id": "dev-25",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "ffmpeg"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "78b33863a0833e86c33a68d229cc0c3e1369487c001c456b1a6f94bfc43cb188",
+      "bytes": 321
+    },
+    {
+      "id": "dev-26",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "ffmpeg"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "2f5cdafcc8ee5b9a577219f6216455fc67493948201743986f914aa1f77c6424",
+      "bytes": 642
+    },
+    {
+      "id": "dev-27",
+      "status": "no_match",
+      "question": true,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "FFmpeg audio normalization"
+      ],
+      "conflicts": [],
+      "responseDigest": "e31df58320b1ad568de6dad926e0be28fc1a71b71f8f03173fccbeb52f444b8c",
+      "bytes": 247
+    },
+    {
+      "id": "dev-28",
+      "status": "ready",
+      "question": false,
+      "usable": false,
+      "confidentWrong": true,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "Premiere multicam editing"
+      ],
+      "conflicts": [
+        "FFmpeg"
+      ],
+      "responseDigest": "2f5cdafcc8ee5b9a577219f6216455fc67493948201743986f914aa1f77c6424",
+      "bytes": 642
+    },
+    {
+      "id": "dev-29",
+      "status": "ready",
+      "question": false,
+      "usable": false,
+      "confidentWrong": true,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "FCPXML timeline editing"
+      ],
+      "conflicts": [
+        "FFmpeg"
+      ],
+      "responseDigest": "2f5cdafcc8ee5b9a577219f6216455fc67493948201743986f914aa1f77c6424",
+      "bytes": 642
+    },
+    {
+      "id": "dev-30",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "ffmpeg"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "d1d3ebc54c3033139a37f4dc2e5b21626500f131b3ef3ef964c0e07456dc1e5b",
+      "bytes": 761
+    },
+    {
+      "id": "dev-31",
+      "status": "no_match",
+      "question": true,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "stream-copy trim"
+      ],
+      "conflicts": [],
+      "responseDigest": "e31df58320b1ad568de6dad926e0be28fc1a71b71f8f03173fccbeb52f444b8c",
+      "bytes": 247
+    },
+    {
+      "id": "dev-32",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "Aegisub subtitle editing"
+      ],
+      "conflicts": [],
+      "responseDigest": "f0e2ba6aae060c75e55073cd49136ff06d2e0bc82b018f73a26faf414e3b968e",
+      "bytes": 790
+    },
+    {
+      "id": "dev-33",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "media/hyperframes",
+        "hyperframes"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "430314e6d58e2fe1165a9efc33ee5e9745d23c1fcd42d2cdb60957b5acecf60f",
+      "bytes": 807
+    },
+    {
+      "id": "dev-34",
+      "status": "ready",
+      "question": false,
+      "usable": false,
+      "confidentWrong": true,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "Remotion compositions"
+      ],
+      "conflicts": [
+        "HyperFrames"
+      ],
+      "responseDigest": "430314e6d58e2fe1165a9efc33ee5e9745d23c1fcd42d2cdb60957b5acecf60f",
+      "bytes": 807
+    },
+    {
+      "id": "dev-35",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "manim"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "5d1beeee8f75904af2f23211c31370f9ba676c7a7541390a0e433d3a77896455",
+      "bytes": 819
+    },
+    {
+      "id": "dev-36",
+      "status": "no_match",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [],
+      "misses": [
+        "After Effects scripting"
+      ],
+      "conflicts": [],
+      "responseDigest": "bb6169ccaa3d3d1e1d41019d5ac6089cee992451f11aeb9c512fa3e8a9513e6a",
+      "bytes": 121
+    },
+    {
+      "id": "dev-37",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "Lottie authoring and JSON export"
+      ],
+      "conflicts": [],
+      "responseDigest": "f6ec9948fb7c6a7f37aad679b9b81d46515fc877609289d7e82156d21bf17c2a",
+      "bytes": 947
+    },
+    {
+      "id": "dev-38",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "frontend/threejs-fundamentals",
+        "threejs",
+        "frontend/threejs-interaction"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "37852907597fe44131332b7024755dcdfeed878dff7273656c65abba87140c59",
+      "bytes": 812
+    },
+    {
+      "id": "dev-39",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "ui-ux/framer-motion-animator",
+        "motion"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "27ffb560013cf66462cf4f7bf914d252f74bcdb0bf6e1204c7b03d10f0049aa6",
+      "bytes": 920
+    },
+    {
+      "id": "dev-40",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "media/algorithmic-art",
+        "p5js"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "85e630ce84214ce41d6a31c79f88a1f5821a8ca15a131dae81faf5fa1e4f2112",
+      "bytes": 666
+    },
+    {
+      "id": "dev-41",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "social-media/writing-shape"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "ecd38f7b5c92b1facc452f82b327ae23106f6f40ad69ab1a307d6e2f37e8bc1c",
+      "bytes": 538
+    },
+    {
+      "id": "dev-42",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "thread drafting"
+      ],
+      "conflicts": [],
+      "responseDigest": "893a2246a7effa6733f0fa868db052bbd35725fc69065d6bcb98b8f27f4ba71b",
+      "bytes": 767
+    },
+    {
+      "id": "dev-43",
+      "status": "no_match",
+      "question": true,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "LinkedIn copy"
+      ],
+      "conflicts": [],
+      "responseDigest": "11711cded1ea1bc6370b46fee9d98615205722597be2aa2d92b7e6937fa4caa7",
+      "bytes": 291
+    },
+    {
+      "id": "dev-44",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "social-media/internal-comms"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "9152177d21be61558c4ce93a3cea2299568d6a2cff957f289e2b8ce2441f76e9",
+      "bytes": 309
+    },
+    {
+      "id": "dev-45",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "scraping-leads/cold-email"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "f6d454ba93bd17eb3185b33e2b29d3dd2705cbc5f626f5bc8ada762b83ee78c0",
+      "bytes": 320
+    },
+    {
+      "id": "dev-46",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "social-media/linkedin-profile-optimizer"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "90b02df34dcebd80ff1a603243682b9048f4258be8d4d484afe958712576c245",
+      "bytes": 920
+    },
+    {
+      "id": "dev-47",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "social copy"
+      ],
+      "conflicts": [
+        "auto-publishing"
+      ],
+      "responseDigest": "a0e9cde25d0241691dfafd2cda5f3d6e47e524e3b12ee47ad2c4537eb30e49ee",
+      "bytes": 934
+    },
+    {
+      "id": "dev-48",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "InCopy assignments"
+      ],
+      "conflicts": [],
+      "responseDigest": "a4bf2102fb7da286a09608f2231e905dadbaccf7d175e2271aa0c1d3e558164c",
+      "bytes": 341
+    },
+    {
+      "id": "dev-49",
+      "status": "ready",
+      "question": false,
+      "usable": true,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [
+        "architecture/api-and-interface-design"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "8e8eee350ab4787d91182e059acac1dfa0407f681b1f9717de11d040c1ecb023",
+      "bytes": 962
+    },
+    {
+      "id": "dev-50",
+      "status": "ready",
+      "question": false,
+      "usable": false,
+      "confidentWrong": true,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "dbt test syntax"
+      ],
+      "conflicts": [],
+      "responseDigest": "8728b2c1e90661902e249e40376a1aad484856983112a35a454e702b2e85e8ba",
+      "bytes": 543
+    },
+    {
+      "id": "dev-51",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "backend-api/dbt-job-troubleshooting",
+        "dbt"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "d7caa8cc106da538ed3d4b07965b295529fca9fc306f4c02b2d3fe6beada8307",
+      "bytes": 654
+    },
+    {
+      "id": "dev-52",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "duckdb"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "e638234240f7873e01e170d2a7d929f88cd5e02296ee356206626d02dedfc92b",
+      "bytes": 466
+    },
+    {
+      "id": "dev-53",
+      "status": "no_match",
+      "question": true,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "API contract design"
+      ],
+      "conflicts": [],
+      "responseDigest": "11711cded1ea1bc6370b46fee9d98615205722597be2aa2d92b7e6937fa4caa7",
+      "bytes": 291
+    },
+    {
+      "id": "dev-54",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [
+        "backend-api/prisma-orm-setup",
+        "prisma"
+      ],
+      "misses": [],
+      "conflicts": [
+        "Drizzle"
+      ],
+      "responseDigest": "f7b56e5933728fe2e44b8cdceefbe7717242d29de9367df4467a3b4ccd98ccf5",
+      "bytes": 1049
+    },
+    {
+      "id": "dev-55",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "Alteryx native workflow"
+      ],
+      "conflicts": [],
+      "responseDigest": "a3752eaace204cbfa729b22b81a6fe405f7f60954ba24ffd8ce1af22b33a6c92",
+      "bytes": 930
+    },
+    {
+      "id": "dev-56",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "web data visualization"
+      ],
+      "conflicts": [],
+      "responseDigest": "bb8a378435129a4edce305bb8bd9b7a9f9198138167047d80175b208a9a511bf",
+      "bytes": 1011
+    },
+    {
+      "id": "dev-57",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "release readiness"
+      ],
+      "conflicts": [],
+      "responseDigest": "843866df843f427278140398a65b9da0e74dd2039611a07b2828f1da591ad5f8",
+      "bytes": 422
+    },
+    {
+      "id": "dev-58",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "frontend/deploy-with-vercel"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "ac8465f899e9d487b8ba6834f86c6b09696ad11a56fe3248f03fc911413e40cb",
+      "bytes": 938
+    },
+    {
+      "id": "dev-59",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "engineering-ops/git-workflow-and-versioning",
+        "engineering-ops/using-git-worktrees"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "c7a88931745c4217beae55eb2164315ae4900861217632f9bb420cc1eeae1a53",
+      "bytes": 790
+    },
+    {
+      "id": "dev-60",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "engineering-ops/setup-pre-commit"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "73979bc0e290522864da7bf9bcecb9cf71c87f4f4985c1d104e3d71727f37b2c",
+      "bytes": 821
+    },
+    {
+      "id": "dev-61",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [
+        "engineering-ops/observability-and-instrumentation"
+      ],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "f71f8cc582a8aa56948aecabd562876aba0220fc034cbde358a3ab4baeb89ab4",
+      "bytes": 696
+    },
+    {
+      "id": "dev-62",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "rollback planning"
+      ],
+      "conflicts": [],
+      "responseDigest": "86fffa317fe4c33c4daf21f5355f64c84cff17e20f270fe7f71dd11f7f35ad52",
+      "bytes": 321
+    },
+    {
+      "id": "dev-63",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": false,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "Bamboo Specs Kotlin"
+      ],
+      "conflicts": [],
+      "responseDigest": "d1e0d3f3e71f5df5c12723b2a05bba6b110375b08373bf7bccb9f251950785f0",
+      "bytes": 784
+    },
+    {
+      "id": "dev-64",
+      "status": "partial",
+      "question": false,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [
+        "release quality review"
+      ],
+      "conflicts": [],
+      "responseDigest": "86655b73a4972c38b653a0f88a44521cea4c7c523010948c7d7c9136b3d93ed3",
+      "bytes": 644
+    },
+    {
+      "id": "dev-65",
+      "status": "no_match",
+      "question": true,
+      "usable": false,
+      "confidentWrong": false,
+      "adherence": true,
+      "stateCorrect": true,
+      "approvedIds": [],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "11711cded1ea1bc6370b46fee9d98615205722597be2aa2d92b7e6937fa4caa7",
+      "bytes": 291
+    },
+    {
+      "id": "dev-66",
+      "status": "ready",
+      "question": false,
+      "usable": false,
+      "confidentWrong": true,
+      "adherence": true,
+      "stateCorrect": false,
+      "approvedIds": [],
+      "misses": [],
+      "conflicts": [],
+      "responseDigest": "2f5cdafcc8ee5b9a577219f6216455fc67493948201743986f914aa1f77c6424",
+      "bytes": 642
+    }
+  ]
+}
