@@ -516,12 +516,13 @@ switch (command) {
       const input = { task, ...(flags.workflow ? {workflow: flags.workflow} : {}), ...(flags.stack ? {stack: flags.stack} : {}), ...(intent !== undefined ? {intent} : {}) };
       if (flags.project) input.stack = [input.stack, require('../lib/project-context').detect(flags.project)].filter(Boolean).join(', ');
       if (command !== 'recommend') {
-        const { findKit, formatKit } = require('../lib/task-kit');
-        const kit = findKit(input);
+        const { findKit, formatKit, explainKit } = require('../lib/task-kit');
+        const explained = ['handoff','explain'].includes(command) ? explainKit(input) : null;
+        const kit = explained ? explained.kit : findKit(input);
         const delivery = require('../lib/kit-delivery');
         if (flags.lock) fs.writeFileSync('skillkit.lock.json', JSON.stringify(delivery.makeLock(kit), null, 2) + '\n', { flag: 'wx', mode: 0o600 });
-        if (command === 'handoff') console.log(await delivery.handoff(kit));
-        else if (command === 'explain') console.log(JSON.stringify(require('../lib/task-kit').explainKit(input), null, 2));
+        if (command === 'handoff') console.log(await delivery.handoff(kit, repoRoot, explained.packs));
+        else if (command === 'explain') console.log(JSON.stringify(explained, null, 2));
         else console.log(flags.json || command === 'use' ? JSON.stringify(kit) : formatKit(kit));
         break;
       }

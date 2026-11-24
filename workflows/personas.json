@@ -1,0 +1,96 @@
+[
+  {
+    "id": "developers",
+    "title": "Developers",
+    "deliverables": ["web-site", "web-redesign", "feature", "debug", "architecture", "api", "mobile-app", "code-review", "documentation", "performance", "browser-tests", "release-plan", "deploy", "tests", "mcp-server", "dbt-model", "dbt-tests", "data-analysis", "dead-code", "plan"],
+    "skills": ["engineering-ops/incremental-implementation", "engineering-ops/verification-before-completion", "engineering-ops/code-review-and-quality"],
+    "resources": ["mdn", "playwright", "openapi", "postgresql", "react", "nextjs", "flutter", "react-native", "duckdb", "knip"],
+    "tasteAnchors": [
+      {"example": "A product filter restores its URL-backed state on refresh and handles empty results.", "test": "Exercise refresh, back navigation, and no matches with a fixture."},
+      {"example": "An API contract includes a valid request, one malformed request, and the expected failure response.", "test": "Assert response status, schema, and side effects for both requests."}
+    ],
+    "antiPatterns": ["Adding an abstraction before finding existing callers and conventions.", "Presenting green checks without recording which user flow they exercise."],
+    "checks": ["Run the smallest affected build or test command. Record the exit status and exercised cases.", "Review the diff for unrelated changes and behavior existing callers rely on."],
+    "variants": {
+      "flutter": {"check": "Run project analysis and tests, then open the changed flow on the target emulator."},
+      "react-native": {"check": "Exercise the changed interaction on at least one target device or simulator."},
+      "playwright": {"check": "Assert the user-visible result with a semantic locator at the target viewport."}
+    }
+  },
+  {
+    "id": "video-editors",
+    "title": "Video editors",
+    "deliverables": ["video-export", "video-editor-project", "captions", "audio-cleanup", "color-grade"],
+    "skills": [],
+    "resources": ["ffmpeg", "remotion"],
+    "tasteAnchors": [
+      {"example": "A 30-second interview cut keeps one complete thought and removes distracting gaps.", "test": "Watch without scrubbing. Mark any clipped word, broken eyeline, or audible cut."},
+      {"example": "A dialogue and caption pass keeps the speaker intelligible at ordinary playback volume.", "test": "Listen on headphones and speakers. Check caption sync and safe areas on the delivery canvas."}
+    ],
+    "antiPatterns": ["Defaulting every edit to a dissolve or every angle change to a punch-in.", "Applying a LUT before matching input color space and exposure."],
+    "checks": ["Check duration, dimensions, frame rate, and audio sync in a full playback pass.", "Compare loudness, true peak, captions, and color tags against the delivery brief."],
+    "variants": {
+      "davinci-resolve": {"check": "Reopen the native Resolve project and verify relinked media, edit tracks, transitions, and grades.", "gap": "Native Resolve timeline delivery requires a verified editing and interchange guide."},
+      "premiere-pro": {"check": "Reopen the Premiere project and verify relinked media, track structure, and imported captions.", "gap": "Native Premiere Pro project delivery requires verified Premiere-specific guidance."},
+      "ffmpeg": {"check": "Inspect stream metadata and compare the first and last cuts, dialogue timing, and dimensions."},
+      "remotion": {"check": "Render a representative section and verify the editor handoff requirements separately."}
+    }
+  },
+  {
+    "id": "motion-graphics",
+    "title": "Motion graphics",
+    "deliverables": ["motion-video"],
+    "skills": ["ui-ux/animate", "ui-ux/improve-animations"],
+    "resources": ["motion", "motion-canvas", "hyperframes", "remotion", "manim", "threejs"],
+    "tasteAnchors": [
+      {"example": "An explainer holds each conclusion before the next motion begins.", "test": "Play at normal speed and mark the frame on which each label becomes legible."},
+      {"example": "A title sequence uses eased movement for hierarchy, with stable type during reading time.", "test": "Compare first, middle, and last key poses against storyboard arrows and durations."}
+    ],
+    "antiPatterns": ["Giving every object the same entrance, delay, and spring.", "Using camera movement or looping effects while viewers need to read."],
+    "checks": ["Verify FPS, frame count, safe margins, and the final frame at the delivery dimensions.", "Compare the chosen easing at each key pose and play the full export with audio where present."],
+    "variants": {
+      "remotion": {"check": "Render exact composition dimensions and verify durationInFrames, FPS, and first/last frames."},
+      "after-effects": {"check": "Reopen the composition and verify links, expression errors, and render queue settings.", "gap": "After Effects scripting and editable project delivery require verified native-tool guidance."},
+      "lottie": {"check": "Play the exported JSON in the target runtime and compare key frames with the source.", "gap": "Lottie requires an exporter and a runtime-compatibility pass."},
+      "threejs": {"check": "Revisit key camera times deterministically and inspect lighting, pacing, and target-browser playback."},
+      "manim": {"check": "Render a low-resolution pass and verify equation readability, timing, and exported frame count."}
+    }
+  },
+  {
+    "id": "designers",
+    "title": "Designers",
+    "deliverables": ["web-site", "web-redesign", "ui-design", "ui-review", "wireframe", "brand-guide", "design-system-doc", "static-graphic", "generative-art"],
+    "skills": ["frontend/frontend-design", "ui-ux/canvas-design", "ui-ux/fixing-accessibility", "ui-ux/create-design-md", "ui-ux/wireframe"],
+    "resources": ["google-fonts", "fontshare", "realtime-colors", "mdn", "lucide"],
+    "tasteAnchors": [
+      {"example": "An event poster communicates the event name, date, and location in that order.", "test": "Print or preview at intended size and confirm all three can be found in five seconds."},
+      {"example": "A product screen uses real labels and makes the main action identifiable when color is removed.", "test": "Inspect one narrow viewport in grayscale and tab through all interactive elements."}
+    ],
+    "antiPatterns": ["Generic gradients and decorative labels competing with the primary action.", "Reviewing a palette as swatches without testing type and focus states on backgrounds."],
+    "checks": ["Check hierarchy with representative content at actual screen or print size.", "Measure required contrast and inspect cropping, typography, and keyboard focus where applicable."],
+    "variants": {
+      "figma": {"check": "Open the native design file, inspect layer names, constraints, and editable components."},
+      "sketch": {"check": "Open the native file and verify symbols, linked assets, and resizing."},
+      "coreldraw": {"check": "Reopen the native document and check vector paths, font handling, bleed, and print settings."}
+    }
+  },
+  {
+    "id": "writers-social",
+    "title": "Writers and social",
+    "deliverables": ["article", "newsletter", "social-copy"],
+    "skills": ["social-media/writing-shape", "social-media/writing-beats"],
+    "resources": [],
+    "tasteAnchors": [
+      {"example": "A LinkedIn post from an interview leads with one finding grounded in the interview.", "test": "Trace the opening claim, each quote, and any number to its source."},
+      {"example": "A newsletter gives readers one specific reason to open it and one clear next action.", "test": "Compare subject and preheader with the first paragraph. Open every reference link."}
+    ],
+    "antiPatterns": ["Untraceable metrics, invented quotes, and generic questions designed to solicit comments.", "Turning an article into a wall of one-line paragraphs irrespective of platform."],
+    "checks": ["Verify claims, quotes, and links against the supplied sources.", "Preview the opening and line breaks at the platform's normal reading width."],
+    "variants": {
+      "linkedin": {"check": "Verify the main point appears before expansion and every claim comes from the original source."},
+      "x": {"check": "Check post and thread character limits and confirm that the first post stands alone.", "gap": "Platform-specific X copy guidance is not in the verified inventory."},
+      "substack": {"check": "Compare the subject and preview text with the first paragraph and test every destination link."},
+      "mailchimp": {"check": "Preview the newsletter, test merge fields, and open all links."}
+    }
+  }
+]

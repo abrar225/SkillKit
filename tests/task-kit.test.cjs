@@ -13,8 +13,8 @@ const cases = [
   [brief, 'web-redesign', ['frontend/frontend-design', 'ui-ux/refactoring-ui'], ['refactoring-ui', 'mdn']],
   ['Design a festival poster using only free resources', 'graphic-design', ['ui-ux/canvas-design'], ['google-fonts']],
   ['Cut this interview footage down to 30 seconds', 'video-edit', [], ['ffmpeg']],
-  ['Make an animated explainer', 'motion-video', ['media/hyperframes'], ['hyperframes']],
-  ['Create generative art using flow fields', 'generative-art', ['media/algorithmic-art'], ['p5js']],
+  ['Make an animated explainer', 'motion-video', [], ['hyperframes']],
+  ['Create generative art using flow fields', 'generative-art', [], ['p5js']],
   ['Reshape my blog post into an article', 'editorial', ['social-media/writing-shape'], []],
   ['Write the README for my portfolio website', 'documentation', ['architecture/documentation-and-adrs'], []],
   ['No need to redesign the website. Write a README', 'documentation', ['architecture/documentation-and-adrs'], []],
@@ -34,10 +34,10 @@ for (const [task, route, skillIds, resourceIds] of cases) {
 
 test('ambiguous, compound and unsupported briefs preserve uncertainty', () => {
   const question = findKit({ task: 'Help with my video' });
-  assert.equal(question.status, 'needs_clarification');
+  assert.equal(question.status, 'partial');
   assert.deepEqual(question.choices.map(({ id }) => id), ['video-edit', 'motion-video']);
   assert.equal(findKit({ task: 'Help with my video', workflow: question.choices[0].id }).status, 'ready');
-  assert.equal(findKit({ task: 'Create a flyer and trim this video' }).status, 'needs_clarification');
+  assert.equal(findKit({ task: 'Create a flyer and trim this video' }).status, 'ready');
   assert.equal(findKit({ task: 'qxyzz wvxqq' }).status, 'no_match');
   assert.equal(findKit({ task: 'Find unused exports with Knip' }).resources[0].id, 'knip');
   const compound = findKit({ task: 'Design a poster and trim footage', intent: {
@@ -49,7 +49,7 @@ test('ambiguous, compound and unsupported briefs preserve uncertainty', () => {
 test('known stack and explicit constraints change the selection', () => {
   const kit = findKit({ task: brief + ' Use Next.js and hover animations. Only free resources.' });
   assert.ok(kit.skills.some((s) => s.id === 'frontend/vercel-react-best-practices'));
-  assert.ok(kit.skills.some((s) => s.id === 'ui-ux/framer-motion-animator'));
+  assert.ok(kit.skills.some((s) => s.id === 'ui-ux/animate'));
   assert.ok(kit.resources.every((r) => r.pricing === 'free'));
   const limited = findKit({ task: 'Redesign my portfolio website. Mockups only. Do not deploy.' });
   assert.ok(limited.stages.every((s) => !s.id.includes('implement') && !s.id.includes('deploy')));
@@ -65,7 +65,7 @@ test('CLI, web API, and Streamable HTTP MCP return the same kit without project 
   const client = new Client({ name: 'task-kit-test', version: '1' });
   try {
     await client.connect(new StreamableHTTPClientTransport(url, { fetch }));
-    assert.deepEqual((await client.listTools()).tools.map((s) => s.name).sort(), ['find_kit', 'get_skill', 'read_skill_file']);
+    assert.deepEqual((await client.listTools()).tools.map((s) => s.name).sort(), ['explain_match', 'find_kit', 'get_resource', 'get_skill', 'read_skill_file', 'report_outcome']);
     const result = await client.callTool({ name: 'find_kit', arguments: { task: brief } });
     assert.deepEqual(result.structuredContent, kit);
     const detail = await client.callTool({ name: 'get_skill', arguments: { id: kit.skills[0].id } });
@@ -128,9 +128,9 @@ test('excluded frameworks and unrelated subjects do not trigger optional guidanc
 
 test('a clarification answer keeps the stack, topics and budget from the brief', () => {
   const task = 'Help with my portfolio in React, with hover animations. Only free resources.';
-  assert.equal(findKit({ task }).status, 'needs_clarification');
+  assert.equal(findKit({ task }).status, 'partial');
   const kit = findKit({ task, workflow: 'web-redesign' });
-  assert.ok(kit.skills.some((s) => s.id === 'ui-ux/framer-motion-animator'));
+  assert.ok(kit.skills.some((s) => s.id === 'ui-ux/animate'));
   assert.ok(kit.skills.some((s) => s.id === 'frontend/vercel-react-best-practices'));
   assert.ok(kit.resources.every((r) => r.pricing === 'free'));
 });
