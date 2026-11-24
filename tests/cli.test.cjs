@@ -14,16 +14,17 @@ function fixture(t) {
   fs.mkdirSync(path.join(root, 'lib'));
   fs.copyFileSync(path.resolve(__dirname, '../lib/export-layout.js'), path.join(root, 'lib/export-layout.js'));
   fs.copyFileSync(path.resolve(__dirname, '../bin/vibe-skills.js'), path.join(root, 'bin/vibe-skills.js'));
+  fs.copyFileSync(path.resolve(__dirname, '../lib/catalog-policy.js'), path.join(root, 'lib/catalog-policy.js'));
   const skills = ['alpha', 'beta'].map((name) => ({
     id: `example/${name}`, name, displayName: name, domain: 'example', path: `skills/example/${name}`,
-    description: `${name} workflow`, capabilities: [],
+    description: `${name} workflow`, capabilities: [], origin: 'local-original', license: 'MIT',
   }));
   for (const skill of skills) {
     const dir = path.join(root, skill.path);
     fs.mkdirSync(path.join(dir, 'references'), { recursive: true });
     fs.writeFileSync(path.join(dir, 'SKILL.md'), `# ${skill.name}\n`);
     fs.writeFileSync(path.join(dir, 'references/guide.md'), `Guide for ${skill.name}\n`);
-    fs.writeFileSync(path.join(dir, 'SOURCE.json'), JSON.stringify({ id: skill.id }));
+    fs.writeFileSync(path.join(dir, 'SOURCE.json'), JSON.stringify({ id: skill.id, origin: 'local-original', license: 'MIT', licenseStatus: 'declared' }));
   }
   const registries = {
     skills: { generatedAt: '2026-11-17', skills },

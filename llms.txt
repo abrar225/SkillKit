@@ -12,7 +12,7 @@ Each line pairs a stage with its skill and reference links. Use extra guidance o
 - design (read-only): frontend/frontend-design · https://developer.mozilla.org/ (free) · https://lucide.dev/ (free). Review a representative screen for hierarchy, readability, responsive layout, and consistency.
 - implement (implementation): engineering-ops/incremental-implementation. Run the project build and verify the primary flow with realistic content.
 - verify (read-only): automations/webapp-testing · https://playwright.dev/ (free). Verify navigation, keyboard use, visible focus, and any forms. Record what was observed.
-- For motion in react/nextjs: ui-ux/framer-motion-animator · https://motion.dev/ (free)
+- For motion in react/nextjs: https://motion.dev/ (free)
 - For next.js: frontend/vercel-react-best-practices · https://nextjs.org/ (free)
 - For react: frontend/vercel-react-best-practices · https://react.dev/ (free)
 
@@ -20,13 +20,13 @@ Each line pairs a stage with its skill and reference links. Use extra guidance o
 
 - scope (read-only): planning/spec-driven-development. Resolve decisions that would materially alter the plan. Record the rest as assumptions.
 - plan (read-only): planning/planning-and-task-breakdown. Each slice has a testable result and a clear dependency order.
-- For six documents: planning/vibe-planning-6docs · https://midi-garment-d51.notion.site/The-6-Documents-You-Need-Before-Vibe-Coding-Any-App-3d313d90aa8f80769b6aecefb5f83f45 (free)
+- For six documents: https://midi-garment-d51.notion.site/The-6-Documents-You-Need-Before-Vibe-Coding-Any-App-3d313d90aa8f80769b6aecefb5f83f45 (free)
 
 ## Design or polish an interface
 
 - design (read-only): frontend/frontend-design · https://lucide.dev/ (free) · https://www.refactoringui.com/ (paid). Inspect hierarchy and layout with representative content, including narrow screens.
 - verify (read-only): ui-ux/fixing-accessibility · https://developer.mozilla.org/ (free). Test keyboard navigation and responsive behavior. Check reduced motion when animation is present.
-- For motion in react/nextjs: ui-ux/framer-motion-animator · https://motion.dev/ (free)
+- For motion in react/nextjs: https://motion.dev/ (free)
 
 ## Implement or improve a feature
 
@@ -59,7 +59,7 @@ Each line pairs a stage with its skill and reference links. Use extra guidance o
 
 - scope (read-only): planning/spec-driven-development. Confirm the main flows and platform-specific constraints.
 - implement (implementation): engineering-ops/incremental-implementation. Run the project checks and exercise the main flow on a supported simulator or device.
-- For flutter: mobile/flutter-architecture · https://flutter.dev/ (free)
+- For flutter: https://flutter.dev/ (free)
 - For react native: mobile/react-native-skills · https://reactnative.dev/ (free)
 
 ## Review changes before delivery
@@ -94,7 +94,7 @@ Each line pairs a stage with its skill and reference links. Use extra guidance o
 
 - design (read-only): frontend/frontend-design · https://www.refactoringui.com/ (paid). Review one representative page with real content at phone and desktop widths.
 - implement (implementation): ui-ux/refactoring-ui · https://developer.mozilla.org/ (free). Compare the changed pages and exercise navigation, keyboard focus and the primary contact flow.
-- For motion in react/nextjs: ui-ux/framer-motion-animator · https://motion.dev/ (free)
+- For motion in react/nextjs: https://motion.dev/ (free)
 - For next.js: frontend/vercel-react-best-practices · https://nextjs.org/ (free)
 - For react: frontend/vercel-react-best-practices · https://react.dev/ (free)
 
@@ -108,11 +108,11 @@ Each line pairs a stage with its skill and reference links. Use extra guidance o
 
 ## Compose a motion graphics video
 
-- compose (artifact): media/hyperframes · https://github.com/heygen-com/hyperframes (free). Inspect rendered frames and play the final export to check timing, text and audio.
+- compose (artifact): https://github.com/heygen-com/hyperframes (free). Build the requested timed composition from the brief, footage and assets. Inspect rendered frames and play the final export to check timing, text and audio.
 
 ## Create a generative artwork
 
-- sketch (implementation): media/algorithmic-art · https://p5js.org/ (free). Repeat a seed and verify the output and parameter controls.
+- sketch (implementation): https://p5js.org/ (free). Build a reproducible sketch around the requested visual rules and controls. Repeat a seed and verify the output and parameter controls.
 
 ## Draft or reshape an article
 

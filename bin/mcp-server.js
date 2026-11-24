@@ -298,6 +298,7 @@ async function callTool(name, args, remote, root, endpoint) {
       if (skill && !args.compact) {
         detail.skill = publicSkill(skill);
         detail.provenance = readJson(path.join(root, skill.path, 'SOURCE.json'));
+        delete detail.provenance.originalPath;
       }
       return textResult(detail, true);
     }

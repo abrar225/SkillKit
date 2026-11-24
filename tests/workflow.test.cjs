@@ -8,6 +8,7 @@ const { resources } = require('../registry/resources.json');
 const { evals } = require('../skills/orchestrator/master-router/evals/eval.json');
 
 const recommend = createRouter(skills, resources);
+const { mayDeliver } = require('../lib/catalog-policy');
 
 for (const example of evals) {
   test('workflow routes ' + example.id, () => {
@@ -16,7 +17,8 @@ for (const example of evals) {
     if (example.question) assert.equal(result.question, example.question);
     if (example.workflows) assert.deepEqual(result.workflows.map(({ id }) => id), example.workflows);
     const picked = new Set(result.stages?.flatMap((stage) => stage.skills.map(({ id }) => id)));
-    for (const id of example.skills || []) assert.ok(picked.has(id), id);
+    // Historical routing fixtures also mention entries that now require verified license evidence.
+    for (const id of example.skills || []) assert.equal(picked.has(id), mayDeliver(id), id);
     for (const id of example.excludeSkills || []) assert.ok(!picked.has(id), id);
     const links = new Set(result.stages?.flatMap((stage) => stage.resources.map(({ id }) => id)));
     for (const id of example.resources || []) assert.ok(links.has(id), id);

@@ -184,6 +184,8 @@ console.log(`THIRD_PARTY_NOTICES.md — ${repos.size} upstream projects, ${unver
 // A link-reading assistant needs a compact map even when it cannot call MCP.
 const { workflows, additions } = require('../workflows/routes.json');
 const resourceLinks = new Map(resources.map(({ id, url, pricing }) => [id, url + ' (' + pricing + ')']));
+const { mayDeliver } = require('../lib/catalog-policy');
+const allowedSkill = id => id && mayDeliver(id) ? id : undefined;
 const guide = [
   '# SkillKit for a browsing assistant', '',
   'Start with the deliverable, existing stack and constraints from the conversation. If a missing detail changes which kit fits, ask one question about that detail. For example, ask whether a portfolio request means redesigning existing pages or drafting a static portfolio PDF.', '',
@@ -193,11 +195,11 @@ const guide = [
 for (const route of workflows) {
   guide.push('## ' + route.title, '');
   for (const stage of route.stages) {
-    const refs = [stage.skill, ...(stage.resources || []).map((id) => resourceLinks.get(id))].filter(Boolean);
-    guide.push('- ' + stage.id + ' (' + stage.effect + '): ' + refs.join(' · ') + '. ' + (stage.skill ? '' : stage.outcome + ' ') + stage.check);
+    const refs = [allowedSkill(stage.skill), ...(stage.resources || []).map((id) => resourceLinks.get(id))].filter(Boolean);
+    guide.push('- ' + stage.id + ' (' + stage.effect + '): ' + refs.join(' · ') + '. ' + (allowedSkill(stage.skill) ? '' : stage.outcome + ' ') + stage.check);
   }
   for (const addition of additions.filter((item) => item.workflows.includes(route.id))) {
-    const refs = [addition.skill, ...(addition.resources || []).map((id) => resourceLinks.get(id))].filter(Boolean);
+    const refs = [allowedSkill(addition.skill), ...(addition.resources || []).map((id) => resourceLinks.get(id))].filter(Boolean);
     const stack = addition.whenStack ? ' in ' + addition.whenStack.join('/') : '';
     guide.push('- For ' + addition.topics[0] + stack + ': ' + refs.join(' · '));
   }

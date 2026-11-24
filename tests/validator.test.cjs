@@ -13,7 +13,7 @@ function fixture(t) {
   t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
   for (const name of ['scripts', 'registry', 'resources', 'lib', 'workflows']) fs.mkdirSync(path.join(dir, name));
   for (const name of ['build-registry.py', 'validate-registry.js']) fs.copyFileSync(path.join(root, 'scripts', name), path.join(dir, 'scripts', name));
-  fs.copyFileSync(path.join(root, 'lib/task-router.js'), path.join(dir, 'lib/task-router.js'));
+  for (const name of ['task-router.js','catalog-policy.js']) fs.copyFileSync(path.join(root, 'lib',name), path.join(dir, 'lib',name));
   json(path.join(dir, 'workflows/routes.json'), {
     workflows: [{ id: 'fixture', title: 'Fixture', signals: ['fixture'], stages: [{ id: 'work', skill: 'orchestrator/fixture', resources: ['fixture'] }] }],
     additions: [],
