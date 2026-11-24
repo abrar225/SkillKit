@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "repo": "vercel-labs/skills",
+      "path": "skills/find-skills/SKILL.md",
+      "slug": "find-skills",
+      "language": "en",
+      "collection": "vercel-labs",
+      "title": "Find Skills",
+      "description": "Find public agent skills and check their fit before installing them.",
+      "deliverables": [],
+      "tools": [
+        "skills-cli"
+      ],
+      "formats": [],
+      "stage": "plan",
+      "domain": "orchestrator",
+      "limitations": "The curated catalog carries this source. Its installation commands require an explicit request.",
+      "reviewed": {
+        "checksum": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
+        "license": "MIT",
+        "licenseFiles": [
+          {
+            "name": "LICENSE",
+            "path": "LICENSE",
+            "sha256": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
+            "kind": "notice"
+          }
+        ],
+        "assets": [],
+        "routable": false
+      }
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/writing-plans/SKILL.md",
+      "slug": "writing-plans",
+      "language": "en",
+      "collection": "superpowers",
+      "title": "Writing Plans",
+      "description": "Plan an implementation from existing requirements, with scoped tasks and verification steps.",
+      "deliverables": [
+        "implementation-plan"
+      ],
+      "tools": [],
+      "formats": [
+        "markdown"
+      ],
+      "stage": "plan",
+      "domain": "planning",
+      "reviewed": {
+        "checksum": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a",
+        "license": "MIT",
+        "licenseFiles": [
+          {
+            "name": "LICENSE",
+            "path": "LICENSE",
+            "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+            "kind": "notice"
+          }
+        ],
+        "assets": [],
+        "routable": true
+      }
+    },
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/brand-guidelines/SKILL.md",
+      "slug": "brand-guidelines",
+      "language": "en",
+      "collection": "anthropic",
+      "title": "Anthropic Brand Guidelines",
+      "description": "Apply Anthropic brand colors and typography to a design.",
+      "deliverables": [],
+      "tools": [],
+      "formats": [],
+      "stage": "design",
+      "domain": "ui-ux",
+      "reviewed": {
+        "checksum": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe",
+        "license": "Apache-2.0",
+        "licenseFiles": [
+          {
+            "name": "LICENSE.txt",
+            "path": "skills/brand-guidelines/LICENSE.txt",
+            "sha256": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+            "kind": "notice"
+          }
+        ],
+        "assets": [],
+        "routable": true
+      }
+    },
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/doc-coauthoring/SKILL.md",
+      "slug": "doc-coauthoring",
+      "language": "en",
+      "collection": "anthropic",
+      "title": "Document Co-authoring",
+      "description": "Draft and revise specifications, proposals and documentation with a reader test.",
+      "deliverables": [
+        "documentation"
+      ],
+      "tools": [],
+      "formats": [
+        "markdown"
+      ],
+      "stage": "build",
+      "domain": "social-media",
+      "reviewed": {
+        "checksum": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4",
+        "license": "unverified",
+        "licenseFiles": [],
+        "assets": [],
+        "routable": false
+      }
+    },
+    {
+      "repo": "shwetankg07/linkedin-writing",
+      "path": "SKILL.md",
+      "slug": "writing-linkedin-posts",
+      "language": "en",
+      "title": "Writing LinkedIn Posts",
+      "description": "Draft, rewrite, or review publishable LinkedIn post copy from source facts, including copy to accompany an existing video. Use a two-line hook, one concrete story, and plain text.",
+      "deliverables": [
+        "social-copy"
+      ],
+      "tools": [
+        "linkedin"
+      ],
+      "formats": [
+        "plain-text"
+      ],
+      "stage": "build",
+      "domain": "social-media",
+      "tags": [
+        "linkedin",
+        "social post",
+        "draft",
+        "copy",
+        "video announcement"
+      ],
+      "pricing": "free",
+      "hasScripts": true,
+      "limitations": "The voice template and checker are available as separate files. Review the checker before deciding whether to run it.",
+      "reviewed": {
+        "checksum": "bec4f16379308958fb7d384c8839e46f94efce9a62ce275e74cd5799f86a3ed0",
+        "license": "MIT",
+        "licenseFiles": [
+          {
+            "name": "LICENSE",
+            "path": "LICENSE",
+            "sha256": "2faf3af98c763655fd9db38d0c08748145207f0d16d3848a4af6c6bf084d83a3",
+            "kind": "notice"
+          }
+        ],
+        "assets": [
+          {
+            "name": "voice.md",
+            "path": "voice.md",
+            "sha256": "d8d7b912f9ffe7ad790ecd7d7fd778cd65cb49d7ae65521d79f37df2c794b29e",
+            "kind": "reference"
+          },
+          {
+            "name": "check.py",
+            "path": "check.py",
+            "sha256": "b71011631a0b96ffeeefe8590f293eac2d18ab43ae29fac8ff117ffe2d589fb3",
+            "kind": "script"
+          }
+        ],
+        "routable": true
+      }
+    },
+    {
+      "repo": "LevyBytes/AI-SKILL-davinci-resolve",
+      "path": "SKILL.md",
+      "slug": "davinci-resolve",
+      "language": "en",
+      "title": "DaVinci Resolve Reference Index",
+      "description": "Find native DaVinci Resolve procedures for media, timeline editing, conforming, color, Fairlight and delivery.",
+      "deliverables": [
+        "video-editor-project"
+      ],
+      "tools": [
+        "davinci-resolve"
+      ],
+      "formats": [],
+      "stage": "build",
+      "domain": "media",
+      "limitations": "The SKILL.md routes to separate references. The native timeline procedure has not been reviewed for delivery.",
+      "reviewed": {
+        "checksum": "b7a87ca9a7cebb92bc8653d8d59153cb833babe5ac0b5de408f9622fc0dcbc31",
+        "license": "Apache-2.0",
+        "licenseFiles": [
+          {
+            "name": "LICENSE",
+            "path": "LICENSE",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+            "kind": "notice"
+          },
+          {
+            "name": "NOTICE",
+            "path": "NOTICE",
+            "sha256": "9f037fff1fda821581b1c98115cbc51c89bed7a3171a1cb31bf90d8ba831d95f",
+            "kind": "notice"
+          }
+        ],
+        "assets": [],
+        "routable": false
+      }
+    },
+    {
+      "repo": "Developh/resolve-cut",
+      "path": "skills/resolve-cut/SKILL.md",
+      "slug": "resolve-cut",
+      "language": "en",
+      "title": "Resolve Cut",
+      "description": "Assemble talking-head and interview footage into a DaVinci Resolve Studio timeline with helper scripts and transcription.",
+      "deliverables": [
+        "video-editor-project"
+      ],
+      "tools": [
+        "davinci-resolve",
+        "ffmpeg",
+        "elevenlabs"
+      ],
+      "formats": [],
+      "stage": "build",
+      "domain": "media",
+      "pricing": "paid",
+      "hasScripts": true,
+      "limitations": "Requires Resolve Studio, a credentialed transcription service, and helper scripts outside the reviewed content.",
+      "reviewed": {
+        "checksum": "3c98e0907313b544383ddc578f04c7f0883bcd09e57cb203fe085063c528c0fa",
+        "license": "MIT",
+        "licenseFiles": [
+          {
+            "name": "LICENSE",
+            "path": "LICENSE",
+            "sha256": "45cc0dbebe06420977a30a4fef38e124521f5cbfa5efc473a55b75c763cb541e",
+            "kind": "notice"
+          }
+        ],
+        "assets": [],
+        "routable": false
+      }
+    },
+    {
+      "repo": "DojoCodingLabs/remotion-superpowers",
+      "path": "skills/add-captions/SKILL.md",
+      "slug": "add-captions",
+      "language": "en",
+      "title": "Animated Captions in Remotion",
+      "description": "Add timed caption elements to an existing Remotion project.",
+      "deliverables": [
+        "motion-video"
+      ],
+      "tools": [
+        "remotion"
+      ],
+      "formats": [],
+      "stage": "build",
+      "domain": "media",
+      "limitations": "Uses other skills and may send audio to a credentialed transcription provider.",
+      "reviewed": {
+        "checksum": "ecc6456dc69a65d2ba649f62f1c79f1cf36cf70438269d510e1f3fd9151714eb",
+        "license": "MIT",
+        "licenseFiles": [
+          {
+            "name": "LICENSE",
+            "path": "LICENSE",
+            "sha256": "1f88027eb3a319338ee6dd1dec5e7e7cdd6de45fc7dedccaf6db37434fce52ac",
+            "kind": "notice"
+          }
+        ],
+        "assets": [],
+        "routable": false
+      }
+    }
+  ]
+}

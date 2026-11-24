@@ -1,0 +1,45 @@
+name: Check federated catalog drift
+
+on:
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: federation-refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Refresh reviewed upstream pins
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/refresh-federation.js federation-snapshot.json 2> federation-report.json
+          cat federation-report.json
+          {
+            echo '### Federation refresh'
+            echo ''
+            echo '```json'
+            cat federation-report.json
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: federation-metadata
+          path: |
+            federation-snapshot.json
+            federation-report.json
+          retention-days: 14
