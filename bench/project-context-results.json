@@ -1,0 +1,217 @@
+{
+  "usefulSkill": {
+    "pairs": 9,
+    "withoutContext": 0,
+    "withContext": 2,
+    "wins": 2,
+    "ties": 7,
+    "losses": 0
+  },
+  "usefulReference": {
+    "pairs": 9,
+    "withoutContext": 0,
+    "withContext": 4,
+    "wins": 4,
+    "ties": 5,
+    "losses": 0
+  },
+  "emptyControlMatches": 3,
+  "rows": [
+    {
+      "brief": "Implement a saved-items list with an empty state in the existing mobile app.",
+      "stack": "Flutter",
+      "without": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation"
+        ],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      },
+      "with": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation"
+        ],
+        "resources": [
+          "flutter"
+        ],
+        "usefulSkill": false,
+        "usefulReference": true
+      }
+    },
+    {
+      "brief": "Implement a saved-items list with an empty state in the existing mobile app.",
+      "stack": "React Native",
+      "without": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation"
+        ],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      },
+      "with": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation",
+          "mobile/react-native-skills"
+        ],
+        "resources": [
+          "react-native"
+        ],
+        "usefulSkill": true,
+        "usefulReference": true
+      }
+    },
+    {
+      "brief": "Implement a saved-items list with an empty state in the existing mobile app.",
+      "stack": "Swift",
+      "without": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation"
+        ],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      },
+      "with": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation"
+        ],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      }
+    },
+    {
+      "brief": "Build an account preferences screen with loading and retry states in the existing mobile app.",
+      "stack": "Flutter",
+      "without": {
+        "status": "no_match",
+        "skills": [],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      },
+      "with": {
+        "status": "no_match",
+        "skills": [],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      }
+    },
+    {
+      "brief": "Build an account preferences screen with loading and retry states in the existing mobile app.",
+      "stack": "React Native",
+      "without": {
+        "status": "no_match",
+        "skills": [],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      },
+      "with": {
+        "status": "no_match",
+        "skills": [],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      }
+    },
+    {
+      "brief": "Build an account preferences screen with loading and retry states in the existing mobile app.",
+      "stack": "Swift",
+      "without": {
+        "status": "no_match",
+        "skills": [],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      },
+      "with": {
+        "status": "no_match",
+        "skills": [],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      }
+    },
+    {
+      "brief": "Create a notification settings flow in the existing mobile app.",
+      "stack": "Flutter",
+      "without": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation"
+        ],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      },
+      "with": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation"
+        ],
+        "resources": [
+          "flutter"
+        ],
+        "usefulSkill": false,
+        "usefulReference": true
+      }
+    },
+    {
+      "brief": "Create a notification settings flow in the existing mobile app.",
+      "stack": "React Native",
+      "without": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation"
+        ],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      },
+      "with": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation",
+          "mobile/react-native-skills"
+        ],
+        "resources": [
+          "react-native"
+        ],
+        "usefulSkill": true,
+        "usefulReference": true
+      }
+    },
+    {
+      "brief": "Create a notification settings flow in the existing mobile app.",
+      "stack": "Swift",
+      "without": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation"
+        ],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      },
+      "with": {
+        "status": "ready",
+        "skills": [
+          "engineering-ops/incremental-implementation"
+        ],
+        "resources": [],
+        "usefulSkill": false,
+        "usefulReference": false
+      }
+    }
+  ]
+}
