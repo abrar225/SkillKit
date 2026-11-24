@@ -1,0 +1,119 @@
+# SkillKit for a browsing assistant
+
+Start with the deliverable, existing stack and constraints from the conversation. If a missing detail changes which kit fits, ask one question about that detail. For example, ask whether a portfolio request means redesigning existing pages or drafting a static portfolio PDF.
+
+Choose the matching task below. Entries name skill IDs and resource URLs in stage order. Read only the first applicable skill at https://raw.githubusercontent.com/abrar225/SkillKit/main/skills/<id>/SKILL.md. Resolve its referenced files relative to that folder. SOURCE.json in the same folder records provenance and terms. Use supplied assets and respect limits such as mockups only, free references only and no deployment.
+
+Each line pairs a stage with its skill and reference links. Use extra guidance only when its condition applies. Skip stages outside the brief. For a catalog gap, say what is missing. The connected version also supports ranked catalog search with find_kit.
+
+## Build a website or web app
+
+- scope (read-only): planning/spec-driven-development. The brief covers the requested content and states any material assumption.
+- design (read-only): frontend/frontend-design · https://developer.mozilla.org/ (free) · https://lucide.dev/ (free). Review a representative screen for hierarchy, readability, responsive layout, and consistency.
+- implement (implementation): engineering-ops/incremental-implementation. Run the project build and verify the primary flow with realistic content.
+- verify (read-only): automations/webapp-testing · https://playwright.dev/ (free). Verify navigation, keyboard use, visible focus, and any forms. Record what was observed.
+- For motion in react/nextjs: ui-ux/framer-motion-animator · https://motion.dev/ (free)
+- For next.js: frontend/vercel-react-best-practices · https://nextjs.org/ (free)
+- For react: frontend/vercel-react-best-practices · https://react.dev/ (free)
+
+## Clarify requirements and plan
+
+- scope (read-only): planning/spec-driven-development. Resolve decisions that would materially alter the plan. Record the rest as assumptions.
+- plan (read-only): planning/planning-and-task-breakdown. Each slice has a testable result and a clear dependency order.
+- For six documents: planning/vibe-planning-6docs · https://midi-garment-d51.notion.site/The-6-Documents-You-Need-Before-Vibe-Coding-Any-App-3d313d90aa8f80769b6aecefb5f83f45 (free)
+
+## Design or polish an interface
+
+- design (read-only): frontend/frontend-design · https://lucide.dev/ (free) · https://www.refactoringui.com/ (paid). Inspect hierarchy and layout with representative content, including narrow screens.
+- verify (read-only): ui-ux/fixing-accessibility · https://developer.mozilla.org/ (free). Test keyboard navigation and responsive behavior. Check reduced motion when animation is present.
+- For motion in react/nextjs: ui-ux/framer-motion-animator · https://motion.dev/ (free)
+
+## Implement or improve a feature
+
+- scope (read-only): architecture/codebase-design. Confirm affected behavior and concrete acceptance criteria before editing.
+- implement (implementation): engineering-ops/incremental-implementation. Exercise normal, error, and relevant edge cases using the project's existing checks.
+- verify (read-only): engineering-ops/verification-before-completion. Report actual command results and any unresolved limitation.
+- For next.js: frontend/vercel-react-best-practices · https://nextjs.org/ (free)
+- For react: frontend/vercel-react-best-practices · https://react.dev/ (free)
+
+## Diagnose and fix a regression
+
+- diagnose (read-only): engineering-ops/systematic-debugging. Capture a failing reproduction or give the exact reason reproduction is unavailable.
+- verify (implementation): engineering-ops/verification-before-completion. Show that the original failure now passes and report any remaining uncertainty.
+
+## Design or review the architecture
+
+- design (read-only): architecture/codebase-design · https://c4model.com/ (free) · https://adr.github.io/ (free). Record the decision and the consequences for callers, testing, and migrations.
+
+## Design or test an API or data model
+
+- design (read-only): architecture/api-and-interface-design. Tie each public behavior to a contract example. Include failure cases and migration impact.
+- verify (read-only): engineering-ops/verification-before-completion. Exercise success, rejected input, and compatibility cases relevant to the change.
+- For supabase: backend-api/supabase-postgres-best-practices · https://www.postgresql.org/ (free)
+- For prisma: backend-api/prisma-client-api · https://www.prisma.io/ (free)
+- For dbt: backend-api/dbt-analytics-engineering · https://www.getdbt.com/ (freemium)
+- For api: https://www.openapis.org/ (free)
+- For bigquery: https://cloud.google.com/bigquery (paid)
+
+## Build or improve a mobile app
+
+- scope (read-only): planning/spec-driven-development. Confirm the main flows and platform-specific constraints.
+- implement (implementation): engineering-ops/incremental-implementation. Run the project checks and exercise the main flow on a supported simulator or device.
+- For flutter: mobile/flutter-architecture · https://flutter.dev/ (free)
+- For react native: mobile/react-native-skills · https://reactnative.dev/ (free)
+
+## Review changes before delivery
+
+- review (read-only): engineering-ops/code-review-and-quality. Give actionable findings with evidence and scope. State which checks ran.
+
+## Write or update project documentation
+
+- write (documentation): architecture/documentation-and-adrs. Verify commands, examples, paths, and claims against the current project.
+
+## Measure and improve performance
+
+- measure (read-only): engineering-ops/performance-optimization. Compare before and after under the same conditions and check for regressions.
+
+## Verify a web flow in a browser
+
+- verify (read-only): automations/webapp-testing · https://playwright.dev/ (free). Report the observed result and distinguish manual behavior, automated coverage, and environment limits.
+
+## Prepare a release
+
+- prepare (read-only): engineering-ops/shipping-and-launch. Verify the candidate in preview or staging and collect the relevant smoke check results.
+
+## Deploy and verify an authorized release
+
+- release (deployment): engineering-ops/observability-and-instrumentation. Confirm the deployed revision, primary flow, health signals, and rollback trigger. Report whether deployment actually took place.
+
+## Write and verify automated tests
+
+- test (implementation): engineering-ops/test-driven-development. Run the affected tests and record the result.
+
+## Redesign an existing website
+
+- design (read-only): frontend/frontend-design · https://www.refactoringui.com/ (paid). Review one representative page with real content at phone and desktop widths.
+- implement (implementation): ui-ux/refactoring-ui · https://developer.mozilla.org/ (free). Compare the changed pages and exercise navigation, keyboard focus and the primary contact flow.
+- For motion in react/nextjs: ui-ux/framer-motion-animator · https://motion.dev/ (free)
+- For next.js: frontend/vercel-react-best-practices · https://nextjs.org/ (free)
+- For react: frontend/vercel-react-best-practices · https://react.dev/ (free)
+
+## Design a poster or static graphic
+
+- compose (artifact): ui-ux/canvas-design · https://fonts.google.com/ (free) · https://coolors.co/ (freemium). Open the exported artwork at its intended size and check legibility, cropping and contrast.
+
+## Edit or encode existing footage
+
+- edit (artifact): https://ffmpeg.org/ (free). Use the source footage and requested cuts, captions or output format to prepare an edit. Play the output and check the cut points, audio sync, duration and export dimensions.
+
+## Compose a motion graphics video
+
+- compose (artifact): media/hyperframes · https://github.com/heygen-com/hyperframes (free). Inspect rendered frames and play the final export to check timing, text and audio.
+
+## Create a generative artwork
+
+- sketch (implementation): media/algorithmic-art · https://p5js.org/ (free). Repeat a seed and verify the output and parameter controls.
+
+## Draft or reshape an article
+
+- draft (documentation): social-media/writing-shape. Check each factual claim against the source material and read the draft for continuity.

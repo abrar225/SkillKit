@@ -1,79 +1,41 @@
-<div align="center">
-
 # SkillKit
 
-### Better instructions. Better builds.
+Describe the work to your agent. SkillKit selects a small set of instructions, reference links and checks from **192 skills and 157 resources across 14 domains**. Your project gets files only when you explicitly export skills.
 
-A curated toolkit for people who build with AI agents.
-Find a skill, inspect its source, and bring it into your next project.
+## Use it from a chat
 
-**192 skills · 14 domains · 157 developer resources**
+Give a browsing assistant this prompt alongside your brief:
 
-[Explore the catalog](docs/SKILLS.md) · [Browse resources](docs/RESOURCES.md) · [Get started](docs/GETTING-STARTED.md) · [Source & licensing](docs/LICENSING.md)
+> Use SkillKit at https://github.com/abrar225/SkillKit. Read its llms.txt task map, select the route for my deliverable and read the skill for the current stage. Use the linked resources where they fit. I want to redesign my existing portfolio website.
 
-</div>
+The map works directly from GitHub. Each skill has its own instructions and source record. If a chat cannot open links, the website’s **Find my task kit** page can prepare the selected instructions and links as one copyable handoff. [Agent task map](llms.txt)
 
----
+## Connect an agent
 
-## From “how do I do this?” to a skill you can use
+On a running SkillKit service, copy the **MCP URL** from the integration page into a client that accepts remote Streamable HTTP. Give the agent a task and ask it to call `find_kit`. The server returns skill IDs, resource purposes, pricing and checks. The agent retrieves instructions and supporting text as needed. Discovery and reading write zero files to the consuming project.
 
-SkillKit brings planning, engineering, design, security, automation, and media workflows into one searchable library. Every vendored skill has a source repository, pinned commit, and provenance file so you can inspect what you install.
+A portfolio redesign starts with frontend design and UI refactoring. A brief that identifies React can add React-specific implementation guidance. A poster gets a static design skill and references for type and color. A footage trim can use FFmpeg on its own. An ambiguous format prompts a focused question.
 
-- **Search by the work.** Find skills by task, domain, or capability.
-- **Inspect before installing.** Read the full instructions, supporting files, source, and license.
-- **Use your agent.** Export to Claude Code, Cursor, Antigravity, or the `.agents/skills` convention.
-- **Connect through MCP.** Let your agent search the catalog and read instructions through a local stdio server.
-
-## Your first skill in a minute
-
-Requires Node.js 18+ for the dependency-free CLI. The optional MCP server and test dependencies require Node.js 20+.
+## Try it from this checkout
 
 ```bash
-git clone https://github.com/abrar225/SkillKit.git
-cd SkillKit
+node bin/vibe-skills.js find "Redesign my portfolio website in React"
+node bin/vibe-skills.js find "Create a print poster using only free resources" --json
+node bin/vibe-skills.js find "Trim my interview footage"
+```
 
-node bin/vibe-skills.js search "code review"
-node bin/vibe-skills.js info engineering-ops/code-review
+The CLI runs with Node.js 18+. To host MCP locally, use Node.js 20+, run `npm ci` once in a separate SkillKit checkout, then `npm run serve`. Use `http://127.0.0.1:3737/api/mcp` from a local client. For cloud clients, the operator must make the service reachable over HTTPS. The standalone server also serves a short web-reader guide at `/llms.txt` and the task API at `/api/kit`. The website adds the interactive finder. [Connection options and examples](docs/WORKFLOWS.md)
 
-# Install into your project's Claude Code skills directory.
+## Install a selected skill
+
+Reading a skill over MCP or the web is sufficient for instruction-only use. For fonts, scripts or other assets, choose **Download this skill** on a kit result. Each archive contains one skill folder with its provenance and bundled notices. From a maintainer checkout, you can also export selected IDs to an agent’s native layout:
+
+```bash
 node bin/vibe-skills.js export --target claude \
-  --ids engineering-ops/code-review --out ~/code/my-app
+  --ids frontend/frontend-design --out ~/code/my-portfolio
 ```
 
-Choose `--target cursor`, `--target antigravity`, or `--target agents` for another agent. Existing differing installs are skipped; use `--force` only when you intend to replace them.
-
-## Let the project tell you what it needs
-
-```bash
-node bin/vibe-skills.js scan ~/code/my-app
-node bin/vibe-skills.js domains
-node bin/vibe-skills.js list --featured
-node bin/vibe-skills.js resources
-node bin/vibe-skills.js stats
-```
-
-`scan` recommends catalog entries based on project files. Review the suggestions, then run the export command it prints.
-
-## Give your agent a workflow
-
-Connect the local MCP server, then describe the work in your own words. For example, “Design my portfolio website with three case studies and a contact page.” The coding agent interprets the brief in context. SkillKit validates the intent and returns source-traceable skills, resources, and checks for each applicable step.
-
-```bash
-npm ci
-node bin/vibe-skills.js mcp-config                 # JSON for stdio clients
-node bin/vibe-skills.js mcp-config --target codex    # TOML for Codex
-node bin/vibe-skills.js agent-rule                 # paste into project instructions
-```
-
-Use the project instruction when you want your agent to consult SkillKit on normal requests. Start a new chat after configuring the server. Clients vary in how they expose MCP server instructions and prompts.
-
-Try the same router locally without setting up MCP.
-
-```bash
-node bin/vibe-skills.js recommend "Design my portfolio website" --workflow new-web-project --json
-```
-
-See [client setup and example workflows](docs/WORKFLOWS.md).
+Use `--target cursor`, `--target antigravity` or `--target agents` for other layouts. A full-library export requires `--all`. Existing differing installs are skipped unless you pass `--force`. [CLI guide](docs/GETTING-STARTED.md)
 
 ## The collection
 

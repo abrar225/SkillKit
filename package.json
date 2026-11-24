@@ -16,11 +16,12 @@
     "list": "node bin/vibe-skills.js list",
     "search": "node bin/vibe-skills.js search",
     "scan": "node bin/vibe-skills.js scan",
-    "export:all": "node bin/vibe-skills.js export --target agents",
+    "export:all": "node bin/vibe-skills.js export --target agents --all",
     "export:antigravity": "node bin/vibe-skills.js export --target antigravity",
     "export:claude": "node bin/vibe-skills.js export --target claude",
     "export:cursor": "node bin/vibe-skills.js export --target cursor",
-    "verify:upstream": "python3 scripts/import-skills.py --check"
+    "verify:upstream": "python3 scripts/import-skills.py --check",
+    "serve": "node bin/http-server.js"
   },
   "keywords": [
     "ai-agent",
@@ -44,6 +45,8 @@
   },
   "homepage": "https://github.com/abrar225/SkillKit#readme",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.32.2"
+    "@hono/node-server": "^2.1.9",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "tar": "^7.5.23"
   }
 }

@@ -180,3 +180,28 @@ fs.writeFileSync(path.join(repoRoot, 'THIRD_PARTY_NOTICES.md'), `${noticeLines.j
 console.log(`docs/SKILLS.md — ${skills.length} skills`);
 console.log(`docs/RESOURCES.md — ${resources.length} resources`);
 console.log(`THIRD_PARTY_NOTICES.md — ${repos.size} upstream projects, ${unverified.length} unverified entries`);
+
+// A link-reading assistant needs a compact map even when it cannot call MCP.
+const { workflows, additions } = require('../workflows/routes.json');
+const resourceLinks = new Map(resources.map(({ id, url, pricing }) => [id, url + ' (' + pricing + ')']));
+const guide = [
+  '# SkillKit for a browsing assistant', '',
+  'Start with the deliverable, existing stack and constraints from the conversation. If a missing detail changes which kit fits, ask one question about that detail. For example, ask whether a portfolio request means redesigning existing pages or drafting a static portfolio PDF.', '',
+  'Choose the matching task below. Entries name skill IDs and resource URLs in stage order. Read only the first applicable skill at https://raw.githubusercontent.com/abrar225/SkillKit/main/skills/<id>/SKILL.md. Resolve its referenced files relative to that folder. SOURCE.json in the same folder records provenance and terms. Use supplied assets and respect limits such as mockups only, free references only and no deployment.', '',
+  'Each line pairs a stage with its skill and reference links. Use extra guidance only when its condition applies. Skip stages outside the brief. For a catalog gap, say what is missing. The connected version also supports ranked catalog search with find_kit.', '',
+];
+for (const route of workflows) {
+  guide.push('## ' + route.title, '');
+  for (const stage of route.stages) {
+    const refs = [stage.skill, ...(stage.resources || []).map((id) => resourceLinks.get(id))].filter(Boolean);
+    guide.push('- ' + stage.id + ' (' + stage.effect + '): ' + refs.join(' · ') + '. ' + (stage.skill ? '' : stage.outcome + ' ') + stage.check);
+  }
+  for (const addition of additions.filter((item) => item.workflows.includes(route.id))) {
+    const refs = [addition.skill, ...(addition.resources || []).map((id) => resourceLinks.get(id))].filter(Boolean);
+    const stack = addition.whenStack ? ' in ' + addition.whenStack.join('/') : '';
+    guide.push('- For ' + addition.topics[0] + stack + ': ' + refs.join(' · '));
+  }
+  guide.push('');
+}
+fs.writeFileSync(path.join(repoRoot, 'llms.txt'), guide.join('\n'));
+console.log('llms.txt — ' + workflows.length + ' task routes');

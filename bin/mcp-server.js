@@ -34,20 +34,17 @@ const {
 } = require('@modelcontextprotocol/sdk/types.js');
 
 const REPO_ROOT = path.resolve(__dirname, '..');
-const SKILLS_FILE = path.join(REPO_ROOT, 'registry', 'skills.json');
-const DOMAINS_FILE = path.join(REPO_ROOT, 'registry', 'domains.json');
-const RESOURCES_FILE = path.join(REPO_ROOT, 'registry', 'resources.json');
-
 const TARGETS = require('../lib/export-layout');
+const { findKit, inputSchema } = require('../lib/task-kit');
+const { readEntry } = require('../lib/kit-reader');
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
-const skillsRegistry = readJson(SKILLS_FILE);
-const domainsRegistry = readJson(DOMAINS_FILE);
-const resourcesRegistry = readJson(RESOURCES_FILE);
-
+const skillsRegistry = require('../registry/skills.json');
+const domainsRegistry = require('../registry/domains.json');
+const resourcesRegistry = require('../registry/resources.json');
 const skills = skillsRegistry.skills;
 const domains = domainsRegistry.domains;
 const resources = resourcesRegistry.resources;
@@ -88,13 +85,13 @@ function publicSkill(skill) {
   };
 }
 
-function textResult(payload) {
+function textResult(payload, compact = false) {
   return {
     structuredContent: payload,
     content: [
       {
         type: 'text',
-        text: typeof payload === 'string' ? payload : JSON.stringify(payload, null, 2),
+        text: typeof payload === 'string' ? payload : JSON.stringify(payload, null, compact ? undefined : 2),
       },
     ],
   };
@@ -124,6 +121,11 @@ function resolveSkill(id) {
 }
 
 const tools = [
+  {
+    name: 'find_kit',
+    description: 'Start here. Find relevant skills, reference links and checks for a creative or technical brief. Supply structured intent when you know the deliverables and constraints. Resolve a clarification from conversation context, asking the user only if necessary.',
+    inputSchema,
+  },
   {
     name: 'recommend_workflow',
     description: 'Start here for any developer task. Interpret the user request in context and pass the structured intent. Returns applicable stages, exact skill IDs, resources, and checks. A raw task alone returns choices without inferring a workflow.',
@@ -180,6 +182,7 @@ const tools = [
       type: 'object',
       properties: {
         id: { type: 'string', description: 'Skill id such as engineering-ops/tdd.' },
+        compact: { type: 'boolean', description: 'Use an exact ID and omit the per-file integrity ledger from provenance.' },
       },
       required: ['id'],
       additionalProperties: false,
@@ -235,12 +238,16 @@ const tools = [
   },
 ];
 
-async function callTool(name, args) {
+async function callTool(name, args, remote, root, endpoint) {
   switch (name) {
+    case 'find_kit':
+      return textResult(findKit(args), true);
+
     case 'recommend_workflow':
       return textResult(recommendWorkflow(args));
 
     case 'read_skill_file': {
+      if (remote) return textResult(readEntry(root, args.id, args.file));
       const skill = skills.find(({ id }) => id === args.id);
       if (!skill) return errorResult('Use an exact skill ID returned by recommend_workflow or search_skills.');
       const content = readSkillFile(path.join(REPO_ROOT, skill.path), args.file);
@@ -277,6 +284,11 @@ async function callTool(name, args) {
     }
 
     case 'get_skill': {
+      if (remote || args.compact) {
+        const detail = readEntry(root, args.id);
+        if (endpoint) detail.archiveUrl = endpoint + '/api/kit?' + new URLSearchParams({ id: args.id, format: 'archive' });
+        return textResult(detail, true);
+      }
       const skill = resolveSkill(args.id);
       if (!skill) return errorResult(`No skill matches "${args.id}". Use search_skills to find one.`);
 
@@ -371,31 +383,38 @@ async function callTool(name, args) {
   }
 }
 
-async function main() {
+const remoteNames = new Set(['find_kit', 'get_skill', 'read_skill_file']);
+const remoteInstructions = 'Call find_kit with the current brief. Supply structured intent from the conversation for compound tasks, explicit constraints or known project context. Resolve a question using known context first. Read the exact skill ID for the current stage with get_skill, then read_skill_file only for referenced text. Use the resource links where relevant. The kit is read-only.';
+
+const validator = new AjvJsonSchemaValidator();
+const validators = new Map(tools.map((tool) => [tool.name, validator.getValidator(tool.inputSchema)]));
+
+function createServer({ remote = false, root = REPO_ROOT, endpoint } = {}) {
+  const activeTools = remote ? tools.filter((tool) => remoteNames.has(tool.name)).map((tool) =>
+    tool.name === 'get_skill' ? { ...tool, description: 'Read one exact skill ID, its provenance and a preview of supporting file names.' } : tool) : tools;
+  const guidance = remote ? remoteInstructions : instructions;
   const server = new Server(
     { name: 'vibe-skills', version: require('../package.json').version },
     {
       capabilities: { tools: {}, prompts: {} },
-      instructions,
+      instructions: guidance,
     }
   );
 
-  const validator = new AjvJsonSchemaValidator();
-  const validateArgs = new Map(tools.map((tool) => [tool.name, validator.getValidator(tool.inputSchema)]));
   const annotations = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false };
   server.setRequestHandler(ListToolsRequestSchema, async () => ({
-    tools: tools.map((tool) => ({ ...tool, annotations })),
+    tools: activeTools.map((tool) => ({ ...tool, annotations })),
   }));
 
   const prompt = {
     name: 'skillkit_start',
-    description: 'Use SkillKit to select and apply skills for the current developer task.',
+    description: 'Use SkillKit to select and apply skills for the current task.',
     arguments: [{ name: 'task', description: 'Optional task brief. Otherwise use the existing conversation.' }],
   };
   server.setRequestHandler(ListPromptsRequestSchema, async () => ({ prompts: [prompt] }));
   server.setRequestHandler(GetPromptRequestSchema, async ({ params }) => {
     if (params.name !== prompt.name) throw new McpError(ErrorCode.InvalidParams, 'Unknown prompt: ' + params.name);
-    const messages = [{ role: 'user', content: { type: 'text', text: instructions } }];
+    const messages = [{ role: 'user', content: { type: 'text', text: guidance } }];
     if (params.arguments?.task) {
       if (params.arguments.task.length > 8000) throw new McpError(ErrorCode.InvalidParams, 'Task exceeds 8000 characters.');
       messages.push({ role: 'user', content: { type: 'text', text: params.arguments.task } });
@@ -406,22 +425,30 @@ async function main() {
   server.setRequestHandler(CallToolRequestSchema, async (request) => {
     const { name, arguments: args } = request.params;
     try {
-      const validate = validateArgs.get(name);
+      const validate = (!remote || remoteNames.has(name)) && validators.get(name);
       if (!validate) return errorResult(`Unknown tool "${name}".`);
       const result = validate(args || {});
       if (!result.valid) return errorResult('Invalid arguments: ' + result.errorMessage);
-      return await callTool(name, result.data);
+      return await callTool(name, result.data, remote, root, endpoint);
     } catch (err) {
+      if (remote && err.code) return errorResult('The catalog file is unavailable.');
       return errorResult(`Tool ${name} failed: ${err.message}`);
     }
   });
 
+  return server;
+}
+
+async function main() {
+  const server = createServer();
   const transport = new StdioServerTransport();
   await server.connect(transport);
   console.error(`vibe-skills MCP server ready: ${skills.length} skills, ${domains.length} domains, ${resources.length} resources`);
 }
 
-main().catch((err) => {
+module.exports = { createServer };
+
+if (require.main === module) main().catch((err) => {
   console.error(`vibe-skills MCP server failed: ${err.stack || err.message}`);
   process.exit(1);
 });

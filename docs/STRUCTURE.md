@@ -19,7 +19,8 @@ SkillKit/
 │   ├── build-docs.js           regenerates docs/SKILLS.md, docs/RESOURCES.md, THIRD_PARTY_NOTICES.md
 │   └── validate-registry.js    checks registries against disk, licenses, counts, and URLs
 ├── docs/                       human documentation plus generated catalogs
-├── templates/skill-template/   starter files for a new original skill
+├── llms.txt                    generated task map for URL-reading assistants
+├── bin/http-server.js          remote MCP and read-only task API
 ├── AGENTS.md                   operating rules for agents working in this repo
 ├── CLAUDE.md                   Claude Code entry point
 ├── .cursorrules                Cursor entry point
@@ -76,7 +77,7 @@ Generated and safe to overwrite:
 
 - `registry/skills.json`, `registry/domains.json`, `registry/resources.json`
 - `docs/SKILLS.md`, `docs/RESOURCES.md`
-- `THIRD_PARTY_NOTICES.md`
+- `THIRD_PARTY_NOTICES.md`, `llms.txt`
 
 Handwritten and safe to edit:
 
@@ -84,4 +85,4 @@ Handwritten and safe to edit:
 - `resources/*.json`
 - `docs/GETTING-STARTED.md`, `docs/STRUCTURE.md`, `docs/ADDING-A-SKILL.md`, `docs/ADDING-A-RESOURCE.md`, `docs/LICENSING.md`
 - `README.md`, `AGENTS.md`, `CLAUDE.md`, `.cursorrules`
-- `bin/`, `scripts/`, `templates/`
+- `bin/`, `scripts/`, `lib/`, `workflows/`

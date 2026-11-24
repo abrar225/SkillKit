@@ -300,13 +300,124 @@
         }
       ],
       "verificationTier": "catalog"
+    },
+    {
+      "id": "web-redesign",
+      "title": "Redesign an existing website",
+      "stages": [
+        {
+          "id": "design",
+          "skill": "frontend/frontend-design",
+          "resources": [
+            "refactoring-ui"
+          ],
+          "outcome": "Choose a visual direction from the existing content, audience and strongest work samples. Identify what the redesign must preserve.",
+          "check": "Review one representative page with real content at phone and desktop widths.",
+          "effect": "read-only"
+        },
+        {
+          "id": "implement",
+          "skill": "ui-ux/refactoring-ui",
+          "resources": [
+            "mdn"
+          ],
+          "outcome": "Apply the agreed hierarchy, type and spacing to the existing site. Keep the current stack, URLs and working interactions.",
+          "check": "Compare the changed pages and exercise navigation, keyboard focus and the primary contact flow.",
+          "effect": "implementation"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "graphic-design",
+      "title": "Design a poster or static graphic",
+      "stages": [
+        {
+          "id": "compose",
+          "skill": "ui-ux/canvas-design",
+          "resources": [
+            "google-fonts",
+            "coolors"
+          ],
+          "outcome": "Compose the artwork around the actual copy, viewing distance and target dimensions. Use the supplied brand assets when available.",
+          "check": "Open the exported artwork at its intended size and check legibility, cropping and contrast.",
+          "effect": "artifact"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "video-edit",
+      "title": "Edit or encode existing footage",
+      "stages": [
+        {
+          "id": "edit",
+          "resources": [
+            "ffmpeg"
+          ],
+          "outcome": "Use the source footage and requested cuts, captions or output format to prepare an edit.",
+          "check": "Play the output and check the cut points, audio sync, duration and export dimensions.",
+          "effect": "artifact"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "motion-video",
+      "title": "Compose a motion graphics video",
+      "stages": [
+        {
+          "id": "compose",
+          "skill": "media/hyperframes",
+          "resources": [
+            "hyperframes"
+          ],
+          "outcome": "Build the requested timed composition from the brief, footage and assets.",
+          "check": "Inspect rendered frames and play the final export to check timing, text and audio.",
+          "effect": "artifact"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "generative-art",
+      "title": "Create a generative artwork",
+      "stages": [
+        {
+          "id": "sketch",
+          "skill": "media/algorithmic-art",
+          "resources": [
+            "p5js"
+          ],
+          "outcome": "Build a reproducible sketch around the requested visual rules and controls.",
+          "check": "Repeat a seed and verify the output and parameter controls.",
+          "effect": "implementation"
+        }
+      ],
+      "verificationTier": "catalog"
+    },
+    {
+      "id": "editorial",
+      "title": "Draft or reshape an article",
+      "stages": [
+        {
+          "id": "draft",
+          "skill": "social-media/writing-shape",
+          "resources": [],
+          "outcome": "Structure the supplied material for the intended reader and publication.",
+          "check": "Check each factual claim against the source material and read the draft for continuity.",
+          "effect": "documentation"
+        }
+      ],
+      "verificationTier": "catalog"
     }
   ],
   "additions": [
     {
       "workflows": [
         "design",
-        "new-web-project"
+        "new-web-project",
+        "web-redesign"
       ],
       "stage": "design",
       "skill": "ui-ux/framer-motion-animator",
@@ -329,7 +440,8 @@
     {
       "workflows": [
         "new-web-project",
-        "feature"
+        "feature",
+        "web-redesign"
       ],
       "stage": "implement",
       "skill": "frontend/vercel-react-best-practices",
@@ -346,7 +458,8 @@
     {
       "workflows": [
         "new-web-project",
-        "feature"
+        "feature",
+        "web-redesign"
       ],
       "stage": "implement",
       "skill": "frontend/vercel-react-best-practices",

@@ -14,7 +14,7 @@
  *   vibe-skills resources [category] [query]
  *   vibe-skills scan [directory]
  *   vibe-skills validate [--verbose]
- *   vibe-skills export --target <claude|cursor|antigravity|agents> [--ids a,b] [--out dir] [--force]
+ *   vibe-skills export --target <claude|cursor|antigravity|agents> (--ids a,b | --all) [--out dir] [--force]
  */
 
 const fs = require('fs');
@@ -64,6 +64,7 @@ for (let i = 0; i < argv.length; i += 1) {
   const arg = argv[i];
   if (arg === '--json') flags.json = true;
   else if (arg === '--featured') flags.featured = true;
+  else if (arg === '--all') flags.all = true;
   else if (arg === '--force') flags.force = true;
   else if (arg === '--verbose') flags.verbose = true;
   else if (arg === '--intent-json') { flags.intentJson = flagValue(i, arg); i += 1; }
@@ -365,8 +366,10 @@ switch (command) {
     const targets = require('../lib/export-layout');
     const target = flags.target;
     if (!Object.hasOwn(targets, target)) {
-      fail(`usage: vibe-skills export --target <${Object.keys(targets).join('|')}> [--ids a,b] [--out dir] [--force]`);
+      fail(`usage: vibe-skills export --target <${Object.keys(targets).join('|')}> (--ids a,b | --all) [--out dir] [--force]`);
     }
+    if (flags.all && flags.ids !== undefined) fail('Choose --ids or --all.');
+    if (!flags.all && flags.ids === undefined) fail('Select skills with --ids domain/skill. Use --all for an intentional full export.');
     if (flags.ids !== undefined && !flags.ids.trim()) fail('--ids must contain at least one skill ID');
     const ids = flags.ids ? [...new Set(flags.ids.split(',').map((s) => s.trim()).filter(Boolean))] : null;
     if (ids && ids.length === 0) fail('--ids must contain at least one skill ID');
@@ -479,6 +482,7 @@ switch (command) {
     break;
   }
 
+  case 'find':
   case 'recommend': {
     const { createRouter } = require('../lib/task-router');
     const task = positional.join(' ');
@@ -486,7 +490,14 @@ switch (command) {
     try {
       if (flags.intentJson?.length > 12000) fail('intent JSON exceeds the routing input limit');
       const intent = flags.intentJson === undefined ? undefined : JSON.parse(flags.intentJson);
-      const plan = createRouter(skills, resources)({ task, workflow: flags.workflow, stack: flags.stack, intent });
+      const input = { task, workflow: flags.workflow, stack: flags.stack, intent };
+      if (command === 'find') {
+        const { findKit, formatKit } = require('../lib/task-kit');
+        const kit = findKit(input);
+        console.log(flags.json ? JSON.stringify(kit, null, 2) : formatKit(kit));
+        break;
+      }
+      const plan = createRouter(skills, resources)(input);
       if (flags.json) console.log(JSON.stringify(plan, null, 2));
       else if (plan.status !== 'ready') {
         console.log(plan.question || plan.next);
@@ -524,7 +535,7 @@ switch (command) {
   }
 
   case 'mcp-check': {
-    const result = spawnSync(process.execPath, [path.join(repoRoot, 'scripts', 'check-mcp.js')], { stdio: 'inherit' });
+    const result = spawnSync(process.execPath, [path.join(repoRoot, 'scripts', 'check-mcp.js'), ...positional], { stdio: 'inherit' });
     if (result.error) fail(result.error.message);
     process.exitCode = result.status ?? 1;
     break;
@@ -571,15 +582,17 @@ Usage:
   vibe-skills resources [category] [query]          Browse the resource catalog
   vibe-skills scan [directory] [--json]             Recommend skills for a project
   vibe-skills validate [--verbose]                  Verify registries against disk
+  vibe-skills find "<brief>" [--workflow id | --intent-json json] [--json]
+                                                    Select a compact kit without installing files
   vibe-skills recommend [task] [--workflow id | --intent-json json] [--stack stack] [--json]
                                                     Choose skills, resources, and verification steps
   vibe-skills mcp-config [--target json|codex]       Print local MCP settings
-  vibe-skills mcp-check                             Verify local stdio tools and intent routing
+  vibe-skills mcp-check [endpoint]                  Verify stdio or Streamable HTTP kit discovery
   vibe-skills agent-rule                            Print the project routing instruction
   vibe-skills mcp                                   Run the MCP server over stdio
   vibe-skills stats                                 Totals and license breakdown
   vibe-skills export --target <claude|cursor|antigravity|agents>
-                      [--ids a,b] [--out dir] [--force]
+                      (--ids a,b | --all) [--out dir] [--force]
                                                     Copy skills into an agent layout
 
 Regenerate the registries after adding a skill or resource:

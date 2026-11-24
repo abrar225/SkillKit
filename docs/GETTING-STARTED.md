@@ -9,7 +9,7 @@ Nothing here needs a build step or install to read. The CLI runs on Node 18 or n
 Connect MCP and give your agent a normal task brief, or run the CLI router directly. [Setup and worked examples](WORKFLOWS.md).
 
 ```bash
-node bin/vibe-skills.js recommend "Design my portfolio website" --workflow new-web-project
+node bin/vibe-skills.js find "Redesign my portfolio website"
 ```
 
 ## Browse
@@ -49,10 +49,10 @@ Skills are plain directories with a `SKILL.md`, so installing means placing the 
 
 | Agent | Default location | Command |
 | :--- | :--- | :--- |
-| Claude Code | `.claude/skills/` | `node bin/vibe-skills.js export --target claude` |
-| Cursor | `.cursor/skills/` | `node bin/vibe-skills.js export --target cursor` |
-| Antigravity project | `.agents/skills/` | `node bin/vibe-skills.js export --target antigravity` |
-| Agents CLI convention | `.agents/skills/` | `node bin/vibe-skills.js export --target agents` |
+| Claude Code | `.claude/skills/` | `node bin/vibe-skills.js export --target claude --ids domain/skill` |
+| Cursor | `.cursor/skills/` | `node bin/vibe-skills.js export --target cursor --ids domain/skill` |
+| Antigravity project | `.agents/skills/` | `node bin/vibe-skills.js export --target antigravity --ids domain/skill` |
+| Agents CLI convention | `.agents/skills/` | `node bin/vibe-skills.js export --target agents --ids domain/skill` |
 
 Export copies into the current directory unless you pass `--out`:
 

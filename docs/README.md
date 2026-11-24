@@ -3,7 +3,7 @@
 | Page | Contents |
 | :--- | :--- |
 | [Getting started](GETTING-STARTED.md) | Browse, search, scan a project, install into an agent, verify the catalog |
-| [Task routing and MCP setup](WORKFLOWS.md) | Connect an agent and try the three pilot workflows |
+| [Task routing and MCP setup](WORKFLOWS.md) | Use remote MCP, a web link, a text handoff or local stdio |
 | [Host verification](HOST-VERIFICATION.md) | Record of live host trials and remaining limits |
 | [Structure](STRUCTURE.md) | Repository layout, what counts as a skill or resource, the 14 domains |
 | [Adding a skill](ADDING-A-SKILL.md) | Import an existing skill and record its source |

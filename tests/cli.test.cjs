@@ -171,3 +171,13 @@ test('exports cannot write inside an unselected source skill', (t) => {
   assert.match(result.stderr, /source and destination overlap/);
   assert.equal(fs.existsSync(path.join(otherSource, '.agents')), false);
 });
+
+test('bulk exports require an intentional --all and cannot mix selections', (t) => {
+  const { project, run } = fixture(t);
+  const args = ['export', '--target', 'agents', '--out', project, '--json'];
+  for (const extra of [[], ['--all', '--ids', 'example/alpha']]) {
+    assert.equal(run(...args, ...extra).status, 1);
+    assert.equal(fs.existsSync(project), false);
+  }
+  assert.deepEqual(JSON.parse(run(...args, '--all').stdout).written, ['example/alpha', 'example/beta']);
+});

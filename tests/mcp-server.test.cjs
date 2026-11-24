@@ -24,6 +24,7 @@ test("MCP catalog tools read real data and return an exact recursive export plan
     assert.deepEqual(
       result.tools.map((tool) => tool.name).sort(),
       [
+        "find_kit",
         "recommend_workflow",
         "read_skill_file",
         "search_skills",

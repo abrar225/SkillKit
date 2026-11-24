@@ -37,7 +37,8 @@ Maintained by Abrar Akhunji.
 | `scripts/` | Import, registry build, docs build, validation |
 | `bin/vibe-skills.js` | CLI: list, search, info, domains, resources, scan, validate, export, stats |
 | `docs/` | Guides plus generated catalogs |
-| `templates/skill-template/` | Starter files for an original skill |
+
+For agents consuming the library for another project, start with `find_kit` or the compact `llms.txt` task map. The rules below apply to maintaining SkillKit.
 
 ## 3. Working protocol
 
@@ -56,7 +57,7 @@ node bin/vibe-skills.js search "<term>"  # skills and resources
 node bin/vibe-skills.js info <id>        # one skill, with provenance
 node bin/vibe-skills.js scan <dir>       # recommend skills for a project
 node bin/vibe-skills.js validate         # registry-vs-disk check
-node bin/vibe-skills.js export --target <claude|cursor|antigravity|agents> [--ids ...]
+node bin/vibe-skills.js export --target <claude|cursor|antigravity|agents> (--ids ... | --all)
 
 python3 scripts/build-registry.py        # regenerate registries from disk
 node scripts/build-docs.js               # regenerate catalogs and notices
