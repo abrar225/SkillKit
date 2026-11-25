@@ -22,7 +22,7 @@ Read a skill's `SOURCE.json` and notices before reusing it. Unresolved licenses 
 
 ## Inclusion rules
 
-- Verify an explicit source license before adding a new upstream skill. Preserve the exact files and attribution.
+- Verify an explicit freely redistributable with attribution (or public-domain) SPDX license before adding or mirroring a new upstream skill (`0BSD`, `Apache-2.0`, `BSD-2-Clause`, `BSD-3-Clause`, `BSL-1.0`, `CC0-1.0`, `CC-BY-4.0`, `ISC`, `MIT`, `MIT-0`, `Unlicense`, `Zlib`; `BUSL-1.1` is excluded). Preserve exact files, notices, and attribution.
 - Do not copy paid or gated material. Link its public page as a resource.
 - Retain the existing unresolved local copies transparently; do not manufacture upstream provenance for them.
 - Host features such as Antigravity `/boost` are linked to official documentation unless an actual reusable skill and suitable source terms are verified.

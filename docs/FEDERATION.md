@@ -20,7 +20,7 @@ Review the proposed entries and exact source diffs before changing `catalog/fede
 
 The similarity check groups matching or near-matching instruction files and keeps alternate provenance on the highest-ranked entry. The trust score records findings from a bounded static scan for shell commands, network access, credential references, prompt injection patterns, and bundled scripts. Outcome-based quality scores remain unset until evaluated.
 
-Only skills with supported permissive license evidence can deliver instructions by default. Metadata-only and quarantined rows return a source link and reason. Delivery prefers the individually pinned local mirror, checks its checksum and includes the recorded notices. SkillKit never executes a bundled script. [OSI license list](https://opensource.org/licenses)
+Only skills with verified freely redistributable with attribution (or public-domain) SPDX license evidence can deliver instructions by default (including `BSL-1.0` Boost Software License 1.0, and explicitly excluding `BUSL-1.1` Business Source License 1.1). Metadata-only and quarantined rows return a source link and reason. Delivery prefers the individually pinned local mirror, checks its checksum and includes the recorded notices. SkillKit never executes a bundled script. [SPDX license list](https://spdx.org/licenses/)
 
 ## November 25 inventory and tag audit
 

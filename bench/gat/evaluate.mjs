@@ -21,7 +21,7 @@ export async function evaluateGat({ root = repoRoot, userBriefsDir = supplementa
       maxFirstResponseBytes=Math.max(maxFirstResponseBytes,cards ? cards.responseBytes(first) : Buffer.byteLength(JSON.stringify(first)));
       return first.kitId && cards ? cards.getKit({kitId:first.kitId,request}) : first;
     }
-    const routing = await scoreSet(autoSelection, undefined, { root });
+    const routing = await scoreSet(autoSelection, undefined, { root, includeAdjudicated: true });
     routing.maxFirstResponseBytes=maxFirstResponseBytes;
     const files = readdirSync(userBriefsDir, { withFileTypes: true })
       .filter((entry) => entry.isFile() && entry.name.endsWith('.json'))
@@ -29,7 +29,7 @@ export async function evaluateGat({ root = repoRoot, userBriefsDir = supplementa
     const userBriefs = [];
     for (const file of files) {
       try {
-        userBriefs.push({ file, ...(await scoreSet(autoSelection, resolve(userBriefsDir, file), { root })) });
+        userBriefs.push({ file, ...(await scoreSet(autoSelection, resolve(userBriefsDir, file), { root, includeAdjudicated: true })) });
       } catch {
         userBriefs.push({ file, error: 'Unable to score this file. Check the JSON schema and evidence expressions.' });
       }

@@ -34,3 +34,6 @@ build/
 # Local agent state
 .codex/
 .agents/
+
+# Held-out per-brief diagnostic outputs (never committed or inspected)
+bench/results-private/

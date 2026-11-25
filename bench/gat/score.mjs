@@ -5,6 +5,7 @@ import { resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const require = createRequire(import.meta.url);
+const { atlasSatisfiesClass, canonicalFormat, canonicalTool } = require('../../lib/atlas-taxonomy.js');
 const repoRoot = fileURLToPath(new URL('../..', import.meta.url));
 const heldOut = fileURLToPath(new URL('./heldout.json', import.meta.url));
 const freeze = JSON.parse(readFileSync(new URL('./freeze.json', import.meta.url)));
@@ -18,7 +19,11 @@ const textHas = (text, phrase) => {
   return words.length > 0 && ` ${normalize(text)} `.includes(` ${words} `);
 };
 
-const licenses = new Set(['0BSD', 'Apache-2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'CC0-1.0', 'ISC', 'MIT', 'Unlicense']);
+// Synced with lib/catalog-policy.js (SPDX freely redistributable with attribution; BSL-1.0 kept, BUSL-1.1 excluded).
+const licenses = new Set([
+  '0BSD', 'Apache-2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'BSL-1.0', 'CC0-1.0',
+  'CC-BY-4.0', 'ISC', 'MIT', 'MIT-0', 'Unlicense', 'Zlib',
+]);
 const blockedBudget = new Set([
   'adobe-after-effects', 'adobe-illustrator', 'adobe-indesign', 'adobe-photoshop', 'adobe-premiere-pro',
   'affinity-designer', 'final-cut-pro',
@@ -74,15 +79,21 @@ function accessVerified({ meta, stages }) {
     Boolean(meta.upstream?.commit && meta.checksum && meta.licenseEvidence?.length && !meta.scan?.blocked));
 }
 
-function classHits(groups, refs) {
-  return groups.map(({ ids, terms, checks }) =>
-    refs.filter((item) => ids.includes(item.id) && accessVerified(item) &&
-      pattern(terms).test(item.description) && (!checks || pattern(checks).test(item.checks))));
+function classHits(groups, refs, { adjudicate = false, test = null, catalog = null } = {}) {
+  return groups.map((group) => {
+    const { ids, terms, checks } = group;
+    return refs.filter((item) => {
+      const strict = ids.includes(item.id) && accessVerified(item) &&
+        pattern(terms).test(item.description) && (!checks || pattern(checks).test(item.checks));
+      if (strict) return true;
+      return adjudicate && atlasSatisfiesClass(item, group, test, catalog, accessVerified);
+    });
+  });
 }
 
-function assess(test, kit, catalog) {
+function assess(test, kit, catalog, { adjudicate = false } = {}) {
   const refs = references(kit, catalog);
-  const hits = classHits(test.evidence, refs);
+  const hits = classHits(test.evidence, refs, { adjudicate, test, catalog });
   const matched = hits.flat();
   const everythingCovered = hits.length > 0 && hits.every((items) => items.length > 0);
   const questions = Boolean(kit.question || kit.status === 'needs_clarification' || list(kit.questions).length);
@@ -99,8 +110,12 @@ function assess(test, kit, catalog) {
     blockedBudget.has(id) || meta?.type === 'resource' && meta.pricing !== 'free');
   const ready = kit.status === 'ready';
   // Mandatory tool and format evidence has to come from a selected, accepted reference or its stage.
-  const proves = (term) => matched.some(({ description, checks, id }) =>
-    [description, checks, id].some((candidate) => textHas(candidate, term)));
+  const proves = (term) => matched.some(({ description, checks, id, meta }) =>
+    [description, checks, id].some((candidate) => textHas(candidate, term)) ||
+    (adjudicate && id.startsWith('federated/') && (
+      list(meta?.tools).map(canonicalTool).includes(canonicalTool(term)) ||
+      list(meta?.formats).map(canonicalFormat).includes(canonicalFormat(term))
+    )));
   const missingHardEvidence = ready && [...requiredTools, ...requiredFormats].some((term) => !proves(term));
   const constraintsOk = !violatesExcluded && !violatesBudget && !missingHardEvidence;
   const usable = test.expected === 'ready' && ready && everythingCovered && !questions && gaps.length === 0 && constraintsOk;
@@ -117,28 +132,14 @@ function assess(test, kit, catalog) {
     fallback,
     outsideCorrect: test.expected === 'outside' && noMatch,
     unnecessaryQuestion: questions,
+    federatedHit: usable && matched.some(({ id }) => id.startsWith('federated/')),
     bytes: Buffer.byteLength(JSON.stringify(kit)),
   };
 }
 
 const percent = (rows, predicate) => rows.length ? Number((100 * rows.filter(predicate).length / rows.length).toFixed(2)) : null;
 
-export async function scoreSet(findKit, filename = heldOut, { root = repoRoot } = {}) {
-  const { cases, sha256 } = loadCases(filename);
-  const catalog = loadCatalog(root);
-  const rows = [];
-  for (const test of cases) {
-    let kit;
-    try {
-      kit = await findKit({ task: test.brief });
-    } catch {
-      throw new Error('Engine failed on a benchmark invocation. Inspect engine logs without printing brief text.');
-    }
-    if (!kit || typeof kit !== 'object' || typeof kit.status !== 'string') throw new Error('Engine did not return a kit manifest.');
-    rows.push({
-      domain: test.domain, expected: test.expected, constrained: Boolean(test.constraints), ...assess(test, kit, catalog),
-    });
-  }
+function summarizeRows(rows, sha256) {
   const inScope = rows.filter(({ expected }) => expected !== 'outside');
   const outside = rows.filter(({ expected }) => expected === 'outside');
   const constrained = inScope.filter((row) => row.constrained);
@@ -163,6 +164,45 @@ export async function scoreSet(findKit, filename = heldOut, { root = repoRoot } 
     unnecessaryQuestionPct: percent(rows, (row) => row.unnecessaryQuestion),
     byDomain,
   };
+}
+
+export async function scoreSet(findKit, filename = heldOut, { root = repoRoot, adjudicate = false, includeAdjudicated = false } = {}) {
+  const { cases, sha256 } = loadCases(filename);
+  const catalog = loadCatalog(root);
+  const rows = [];
+  const adjudicatedRows = [];
+  for (const test of cases) {
+    let kit;
+    try {
+      kit = await findKit({ task: test.brief });
+    } catch {
+      throw new Error('Engine failed on a benchmark invocation. Inspect engine logs without printing brief text.');
+    }
+    if (!kit || typeof kit !== 'object' || typeof kit.status !== 'string') throw new Error('Engine did not return a kit manifest.');
+    rows.push({
+      domain: test.domain, expected: test.expected, constrained: Boolean(test.constraints), ...assess(test, kit, catalog, { adjudicate }),
+    });
+    if (includeAdjudicated) {
+      adjudicatedRows.push({
+        domain: test.domain, expected: test.expected, constrained: Boolean(test.constraints), ...assess(test, kit, catalog, { adjudicate: true }),
+      });
+    }
+  }
+  const summary = summarizeRows(rows, sha256);
+  if (includeAdjudicated) {
+    const adj = summarizeRows(adjudicatedRows, sha256);
+    summary.adjudicated = {
+      usablePct: adj.usablePct,
+      wrongPct: adj.wrongPct,
+      constraintPct: adj.constraintPct,
+      fallbackPct: adj.fallbackPct,
+      outsidePct: adj.outsidePct,
+      unnecessaryQuestionPct: adj.unnecessaryQuestionPct,
+      federatedMatchedCount: adjudicatedRows.filter((row) => row.federatedHit).length,
+      byDomain: adj.byDomain,
+    };
+  }
+  return summary;
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

@@ -4,7 +4,8 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const { digest, fetchFederatedSkill, federationStatus, getFederatedSkill, githubUrl, listFederated, requestBytes, scanSkill } = require('../lib/federation');
 const { assessContent, createAdapters, refreshCatalog } = require('../lib/federation-refresh');
-const { getResource, mayDeliver } = require('../lib/catalog-policy');
+const { getResource, isPermissive, mayDeliver } = require('../lib/catalog-policy');
+const { atlasSatisfiesClass, extractTags } = require('../lib/atlas-taxonomy');
 const { resources } = require('../registry/resources.json');
 
 const notice = Buffer.from('Synthetic license evidence for this fixture.');
@@ -239,4 +240,30 @@ test('a directory outage retains prior metadata without granting content deliver
   assert.deepEqual(next.candidates.directory, prior.candidates.directory);
   assert.equal(next.sources.directory.retainedPointers, 1);
   assert.equal(next.funnel.totals.approved, 0);
+});
+
+test('SPDX license list includes BSL-1.0, rejects BUSL-1.1, and taxonomy enforces deliverable and tool matches', () => {
+  for (const spdx of ['0BSD', 'Apache-2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'BSL-1.0', 'CC0-1.0', 'CC-BY-4.0', 'ISC', 'MIT', 'MIT-0', 'Unlicense', 'Zlib']) {
+    assert.equal(isPermissive(spdx), true);
+  }
+  for (const excluded of ['BUSL-1.1', 'GPL-3.0', 'AGPL-3.0', 'SSPL-1.0', 'CC-BY-NC-4.0', 'unverified']) {
+    assert.equal(isPermissive(excluded), false);
+  }
+  const tags = extractTags({
+    title: 'Remotion Captions',
+    description: 'Create animated captions and lower thirds in Remotion.',
+    slug: 'remotion-captions',
+  });
+  assert.ok(tags.tools.includes('remotion'));
+  assert.ok(tags.deliverables.includes('motion-video'));
+  assert.equal(atlasSatisfiesClass(
+    { id: 'federated/owner/repo/remotion-captions', meta: { type: 'skill', ...tags }, checks: '' },
+    { label: 'Remotion compositions', ids: ['@remotion'], terms: ['remotion'] },
+    { domain: 'motion', constraints: { requiredTools: ['Remotion'] } },
+  ), true);
+  assert.equal(atlasSatisfiesClass(
+    { id: 'federated/owner/repo/generic-video', meta: { type: 'skill', deliverables: ['motion-video'], tools: [] }, checks: '' },
+    { label: 'Remotion compositions', ids: ['@remotion'], terms: ['remotion'] },
+    { domain: 'motion', constraints: { requiredTools: ['Remotion'] } },
+  ), false);
 });
