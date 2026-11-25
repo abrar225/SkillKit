@@ -190,7 +190,7 @@ const guide = [
   '# SkillKit for a browsing assistant', '',
   'Start with the deliverable, existing stack and constraints from the conversation. If a missing detail changes which kit fits, ask one question about that detail. For example, ask whether a portfolio request means redesigning existing pages or drafting a static portfolio PDF.', '',
   'Choose the matching task below. Entries name skill IDs and resource URLs in stage order. Read only the first applicable skill at https://raw.githubusercontent.com/abrar225/SkillKit/main/skills/<id>/SKILL.md. Resolve its referenced files relative to that folder. SOURCE.json in the same folder records provenance and terms. Use supplied assets and respect limits such as mockups only, free references only and no deployment.', '',
-  'Each line pairs a stage with its skill and reference links. Use extra guidance only when its condition applies. Skip stages outside the brief. For a catalog gap, say what is missing. With a connected server, call find_kit and confirm a candidate using get_kit with its kitId and original request.', '',
+  'Each line pairs a stage with its skill and reference links. Use extra guidance only when its condition applies. Skip stages outside the brief. For a catalog gap, say what is missing. With a connected server, call find_kit (never install or clone the repo into the project), confirm a candidate using get_kit with its kitId and original request, and load only the active stage skill via get_skill with compact: true.', '',
 ];
 for (const route of workflows) {
   guide.push('## ' + route.title, '');
