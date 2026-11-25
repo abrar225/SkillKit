@@ -23,7 +23,8 @@
     "export:cursor": "node bin/vibe-skills.js export --target cursor",
     "verify:upstream": "python3 scripts/import-skills.py --check",
     "serve": "node bin/http-server.js",
-    "bench": "node bench/review.mjs"
+    "bench": "node bench/review.mjs",
+    "gat": "node bench/gat/run.mjs"
   },
   "keywords": [
     "ai-agent",

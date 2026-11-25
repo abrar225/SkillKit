@@ -1,0 +1,1662 @@
+{
+  "schema": 1,
+  "cases": [
+    {
+      "id": "sync-race",
+      "domain": "coding",
+      "brief": "Two background workers can both claim the same tenant's invoice. Find the cause before changing anything. We have timestamped logs from both workers and a failing retry case.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Root-cause diagnosis",
+          "ids": [
+            "engineering-ops/systematic-debugging",
+            "engineering-ops/diagnosing-bugs",
+            "engineering-ops/debugging-and-error-recovery"
+          ],
+          "terms": [
+            "root cause",
+            "diagnos",
+            "debug"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "build-parser",
+      "domain": "coding",
+      "brief": "The importer trims leading zeroes from our external order numbers. Fix the parser and keep a reusable regression test with one legacy file and one new file.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Behavior change",
+          "ids": [
+            "engineering-ops/implement",
+            "engineering-ops/incremental-implementation",
+            "orchestrator/gravitas"
+          ],
+          "terms": [
+            "implement",
+            "engineering"
+          ]
+        },
+        {
+          "label": "Durable regression",
+          "ids": [
+            "engineering-ops/durable-test-collateral",
+            "engineering-ops/test-driven-development"
+          ],
+          "terms": [
+            "test",
+            "regression"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expo-feed",
+      "domain": "coding",
+      "brief": "Our Expo app drops frames when a customer scrolls through a long receipt history. Help me improve the React Native list without moving the screen to a WebView.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Native list performance",
+          "ids": [
+            "mobile/react-native-skills",
+            "react-native",
+            "expo"
+          ],
+          "terms": [
+            "react native",
+            "expo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swift-actor",
+      "domain": "coding",
+      "brief": "A Swift 6 actor introduced a sendability warning in the receipt-export code. I need a native Swift fix that preserves cancellation and ordering.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Swift concurrency",
+          "ids": [
+            "mobile/write-swift",
+            "swift"
+          ],
+          "terms": [
+            "swift"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "swift"
+        ]
+      }
+    },
+    {
+      "id": "endpoint-contract",
+      "domain": "coding",
+      "brief": "Before anyone writes code, sketch an API contract for bulk invite creation. Clients must distinguish accepted invites, duplicates, and validation failures in the same response.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "API boundary design",
+          "ids": [
+            "architecture/api-and-interface-design",
+            "openapi",
+            "planning/to-spec"
+          ],
+          "terms": [
+            "api",
+            "interface"
+          ]
+        }
+      ],
+      "constraints": {
+        "excludeIds": [
+          "engineering-ops/implement",
+          "engineering-ops/incremental-implementation"
+        ]
+      }
+    },
+    {
+      "id": "mcp-roster",
+      "domain": "coding",
+      "brief": "We need an MCP server that can look up room availability. It should expose a narrow read-only tool with a structured response and clear errors for invalid dates.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "MCP server tool design",
+          "ids": [
+            "backend-api/mcp-builder"
+          ],
+          "terms": [
+            "mcp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "postgres-index",
+      "domain": "coding",
+      "brief": "One PostgreSQL query fetching the most recent order per shop now takes a second. Review EXPLAIN output and help decide whether to change the index.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "PostgreSQL query diagnosis",
+          "ids": [
+            "backend-api/supabase-postgres-best-practices",
+            "postgresql"
+          ],
+          "terms": [
+            "postgres",
+            "explain"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "postgresql"
+        ]
+      }
+    },
+    {
+      "id": "prisma-tx",
+      "domain": "coding",
+      "brief": "I'm making a Prisma Client change that transfers inventory between bins. Point me to the correct transaction API so a failed update rolls back both writes.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Prisma query and transaction reference",
+          "ids": [
+            "backend-api/prisma-client-api",
+            "prisma"
+          ],
+          "terms": [
+            "prisma"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "prisma"
+        ]
+      }
+    },
+    {
+      "id": "fluttet",
+      "domain": "coding",
+      "brief": "Review the architecture of our existing Flutter app. I need a Flutter-specific migration plan that puts platform plugins behind repositories and keeps widget state out of the data layer.",
+      "expected": "partial",
+      "evidence": [
+        {
+          "label": "Flutter reference",
+          "ids": [
+            "flutter",
+            "dart",
+            "mobile/flutter-architecture"
+          ],
+          "terms": [
+            "flutter",
+            "dart"
+          ]
+        }
+      ],
+      "gapTerms": [
+        [
+          "flutter",
+          "repository",
+          "layer",
+          "architecture"
+        ]
+      ]
+    },
+    {
+      "id": "checkout-keyboard",
+      "domain": "ui",
+      "brief": "On the checkout address dialog, Shift+Tab escapes behind the overlay. Review focus placement, keyboard order, and what happens when the dialog closes.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Keyboard accessibility",
+          "ids": [
+            "ui-ux/fixing-accessibility",
+            "automations/a11y-debugging",
+            "frontend/web-design-guidelines"
+          ],
+          "terms": [
+            "focus",
+            "keyboard",
+            "accessibility"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-only-billing",
+      "domain": "ui",
+      "brief": "Review the billing dashboard for drift from our existing component kit. Hand back an ordered fix list engineering can pick up. Please leave product files untouched.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Evidence-based UI handoff",
+          "ids": [
+            "ui-ux/improve-ui",
+            "ui-ux/create-design-md"
+          ],
+          "terms": [
+            "design evidence",
+            "read.only",
+            "without replacing",
+            "existing product"
+          ]
+        }
+      ],
+      "constraints": {
+        "excludeIds": [
+          "engineering-ops/implement",
+          "engineering-ops/incremental-implementation",
+          "frontend/frontend-ui-engineering"
+        ]
+      }
+    },
+    {
+      "id": "cafe-page",
+      "domain": "ui",
+      "brief": "Build a small website for a bakery. Hours, menu, and the route to the shop should be easy to find on a phone. There are no accounts or online orders.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Small responsive website",
+          "ids": [
+            "ui-ux/taste-skill",
+            "frontend/frontend-design",
+            "frontend/frontend-ui-engineering",
+            "ui-ux/impeccable"
+          ],
+          "terms": [
+            "web",
+            "front.end",
+            "interface"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "component-choice",
+      "domain": "ui",
+      "brief": "Our settings page needs a command palette and a modal. We use React without a component library. Compare accessible primitives and pick what to adopt.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Component library selection",
+          "ids": [
+            "ui-ux/pick-ui-library",
+            "radix-ui",
+            "shadcn-ui"
+          ],
+          "terms": [
+            "primitives",
+            "component library",
+            "components"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "astryx-theme",
+      "domain": "ui",
+      "brief": "We already use Astryx. I need the alerts and toast notifications to follow the same theme as the rest of the app, including the existing dark-mode palette.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Astryx theme guidance",
+          "ids": [
+            "ui-ux/astryx",
+            "astryx"
+          ],
+          "terms": [
+            "astryx"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "astryx"
+        ]
+      }
+    },
+    {
+      "id": "record-token",
+      "domain": "ui",
+      "brief": "Read our repository's existing styles and document the recurring type, spacing, and colors in DESIGN.md. Don't touch any component source.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Evidence-based design documentation",
+          "ids": [
+            "ui-ux/create-design-md",
+            "ui-ux/impeccable"
+          ],
+          "terms": [
+            "design.md",
+            "design token"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredFormats": [
+          "design.md"
+        ],
+        "excludeIds": [
+          "frontend/frontend-ui-engineering",
+          "engineering-ops/implement"
+        ]
+      }
+    },
+    {
+      "id": "mobile-viewport",
+      "domain": "ui",
+      "brief": "The help widget on our installed web app sits under the iPhone home indicator. Fix how the full-height layout handles the phone's safe area in the browser.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Native-feeling mobile web",
+          "ids": [
+            "mobile/mobile-native",
+            "mdn"
+          ],
+          "terms": [
+            "mobile",
+            "web api",
+            "phone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "share-card",
+      "domain": "ui",
+      "brief": "Our public collection pages share the wrong image in chat. Fix their Open Graph image and canonical URL without changing the visible page.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "HTML metadata",
+          "ids": [
+            "frontend/fixing-metadata",
+            "mdn"
+          ],
+          "terms": [
+            "metadata",
+            "html"
+          ]
+        }
+      ],
+      "constraints": {
+        "excludeIds": [
+          "ui-ux/improve-ui",
+          "frontend/frontend-design"
+        ]
+      }
+    },
+    {
+      "id": "sketch-file",
+      "domain": "ui",
+      "brief": "Rebuild our web dashboard as an editable native Sketch .sketch file with nested Symbols and named layer styles. We need the working Sketch document for design handoff.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "sketch",
+          "symbol"
+        ]
+      ]
+    },
+    {
+      "id": "seeded-front",
+      "domain": "graphic",
+      "brief": "Make a p5.js sketch of reed patterns for our workshop identity. A guest must be able to enter the seed from a printed card and regenerate the same pattern.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Seeded p5.js generative artwork",
+          "ids": [
+            "media/algorithmic-art",
+            "p5js"
+          ],
+          "terms": [
+            "p5.js",
+            "generative"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "p5.js"
+        ]
+      }
+    },
+    {
+      "id": "club-poster",
+      "domain": "graphic",
+      "brief": "Design an original concert poster from this list of acts and the venue details. Deliver a PDF for the club printer.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Printable static composition",
+          "ids": [
+            "ui-ux/canvas-design",
+            "ui-ux/anthropic-design",
+            "ui-ux/hi-fi-design"
+          ],
+          "terms": [
+            "pdf",
+            "print"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredFormats": [
+          "pdf"
+        ]
+      }
+    },
+    {
+      "id": "timetable-sign",
+      "domain": "graphic",
+      "brief": "I need a static PNG sign for the volunteer check-in desk. The room name and QR code should still read when the file is printed on letter paper.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Static signs and exported image",
+          "ids": [
+            "ui-ux/canvas-design",
+            "ui-ux/anthropic-design"
+          ],
+          "terms": [
+            "png",
+            "static"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredFormats": [
+          "png"
+        ]
+      }
+    },
+    {
+      "id": "annotation-graphic",
+      "domain": "graphic",
+      "brief": "Make a static PNG that explains the rise in return rates using the weekly values I've attached. Label both the policy change and the return to baseline.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Data-literate chart",
+          "ids": [
+            "frontend/dataviz"
+          ],
+          "terms": [
+            "chart",
+            "visualization"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredFormats": [
+          "png"
+        ]
+      }
+    },
+    {
+      "id": "one-sheet-theme",
+      "domain": "graphic",
+      "brief": "We need a reusable look for our feature one-sheets. Give me a theme with type and palette choices that also works on an internal slide.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Reusable artifact theme",
+          "ids": [
+            "ui-ux/theme-factory",
+            "ui-ux/ui-ux-pro-max",
+            "coolors",
+            "realtime-colors"
+          ],
+          "terms": [
+            "theme",
+            "palette",
+            "typeface"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oss-fonts",
+      "domain": "graphic",
+      "brief": "Find a free source of open-source typefaces I can use in printed event materials and on the event's website. I need the typeface library link.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Open-source type catalogue",
+          "ids": [
+            "google-fonts"
+          ],
+          "terms": [
+            "open.source",
+            "typefaces"
+          ]
+        }
+      ],
+      "constraints": {
+        "budget": "free"
+      }
+    },
+    {
+      "id": "label-spot",
+      "domain": "graphic",
+      "brief": "Prepare the carton art in a native Illustrator .ai file. The packaging vendor needs preserved spot-color separations and editable dieline layers.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "illustrator",
+          "spot.color",
+          "dieline",
+          ".ai"
+        ]
+      ]
+    },
+    {
+      "id": "type-master",
+      "domain": "graphic",
+      "brief": "Convert these hand-drawn glyphs into a variable OpenType font with a weight axis, interpolating masters, and proper kerning. Hand back a native Glyphs project.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "glyphs",
+          "opentype",
+          "interpolat",
+          "kerning"
+        ]
+      ]
+    },
+    {
+      "id": "course-stream",
+      "domain": "video",
+      "brief": "Use FFmpeg to convert the course recording into an H.264 MP4 for the school site. Keep the audio in sync and tell me how to verify the exported codec.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "FFmpeg media conversion",
+          "ids": [
+            "ffmpeg"
+          ],
+          "terms": [
+            "ffmpeg",
+            "video processing"
+          ],
+          "checks": [
+            "codec",
+            "h.264",
+            "stream"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "ffmpeg"
+        ],
+        "requiredFormats": [
+          "mp4"
+        ]
+      }
+    },
+    {
+      "id": "caption-burn",
+      "domain": "video",
+      "brief": "With FFmpeg, burn the approved SRT subtitles into a video so they work on the lobby screen. Keep the timing and deliver an MP4.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "FFmpeg subtitle rendering",
+          "ids": [
+            "ffmpeg"
+          ],
+          "terms": [
+            "ffmpeg",
+            "video processing"
+          ],
+          "checks": [
+            "caption",
+            "subtitle",
+            "sync"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "ffmpeg"
+        ],
+        "requiredFormats": [
+          "mp4"
+        ]
+      }
+    },
+    {
+      "id": "loudness-batch",
+      "domain": "video",
+      "brief": "We have twelve training clips that vary wildly in volume. Give me a repeatable FFmpeg workflow to normalize the audio without replacing the picture content.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "FFmpeg audio processing",
+          "ids": [
+            "ffmpeg"
+          ],
+          "terms": [
+            "ffmpeg",
+            "audio"
+          ],
+          "checks": [
+            "loudness",
+            "peak",
+            "audio"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "ffmpeg"
+        ]
+      }
+    },
+    {
+      "id": "cut-copy",
+      "domain": "video",
+      "brief": "The board upload should start at 01:15. Trim the existing MP4 with FFmpeg and stream copy. Don't re-encode it.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "FFmpeg trimming and stream copy",
+          "ids": [
+            "ffmpeg"
+          ],
+          "terms": [
+            "ffmpeg",
+            "video processing"
+          ],
+          "checks": [
+            "stream copy",
+            "copy"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "ffmpeg"
+        ],
+        "requiredFormats": [
+          "mp4"
+        ],
+        "excludeMarkers": [
+          "re-encode",
+          "transcode"
+        ]
+      }
+    },
+    {
+      "id": "phone-crop",
+      "domain": "video",
+      "brief": "Crop the warehouse tour from landscape to a centered 9:16 clip. Use FFmpeg and hand me something I can upload as an MP4.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "FFmpeg cropping and export",
+          "ids": [
+            "ffmpeg"
+          ],
+          "terms": [
+            "ffmpeg",
+            "video processing"
+          ],
+          "checks": [
+            "crop",
+            "dimensions",
+            "frame"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "ffmpeg"
+        ],
+        "requiredFormats": [
+          "mp4"
+        ]
+      }
+    },
+    {
+      "id": "face-redaction",
+      "domain": "video",
+      "brief": "Our witnesses must remain anonymous. I need to track and blur moving faces with FFmpeg, verify it catches fast turns, and deliver an MP4.",
+      "expected": "partial",
+      "evidence": [
+        {
+          "label": "Encoding reference",
+          "ids": [
+            "ffmpeg"
+          ],
+          "terms": [
+            "ffmpeg",
+            "video processing"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "ffmpeg"
+        ]
+      },
+      "gapTerms": [
+        [
+          "track",
+          "moving faces",
+          "blur"
+        ]
+      ]
+    },
+    {
+      "id": "resolve-aces",
+      "domain": "video",
+      "brief": "The editor wants a DaVinci Resolve .drp with an ACES color-managed node tree, timeline markers, and a working color chart reference. They will reopen that project in Resolve.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "davinci",
+          "resolve",
+          "aces",
+          "drp"
+        ]
+      ]
+    },
+    {
+      "id": "final-cut-roundtrip",
+      "domain": "video",
+      "brief": "Round-trip a Final Cut Pro library through FCPXML so relinking preserves compound clips, Roles, and camera angles. Hand back the FCPXML, ready to import.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "final cut",
+          "fcpxml",
+          "compound clips"
+        ]
+      ]
+    },
+    {
+      "id": "finger-drawer",
+      "domain": "motion",
+      "brief": "The mobile cart drawer jumps when I lift my thumb and can't be grabbed while it's closing. Help me make the drag continuous and interruptible in our web app.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Interruptible web gestures",
+          "ids": [
+            "ui-ux/gestures",
+            "ui-ux/emil-design-eng",
+            "ui-ux/apple-design"
+          ],
+          "terms": [
+            "drag",
+            "gesture",
+            "interrupt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layout-stutter",
+      "domain": "motion",
+      "brief": "The CSS sidebar animation is choppy. Audit the animation and show me what is triggering layout on every frame. Don't apply the changes yet.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Motion performance diagnosis",
+          "ids": [
+            "ui-ux/fixing-motion-performance",
+            "ui-ux/improve-animations",
+            "ui-ux/review-animations"
+          ],
+          "terms": [
+            "performance",
+            "motion",
+            "stutter"
+          ]
+        }
+      ],
+      "constraints": {
+        "excludeIds": [
+          "ui-ux/animate",
+          "engineering-ops/implement"
+        ]
+      }
+    },
+    {
+      "id": "descriptive-term",
+      "domain": "motion",
+      "brief": "What should I call the UI effect where you can pull past the end of a list and it bounces back? I need the right word for a design ticket.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Animation terminology",
+          "ids": [
+            "ui-ux/animation-vocabulary"
+          ],
+          "terms": [
+            "glossary",
+            "term"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empty-state",
+      "domain": "motion",
+      "brief": "Animate our web inbox empty state so it settles in after the last item is dismissed. The same transition has to respect reduced motion.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Web motion implementation",
+          "ids": [
+            "ui-ux/animate",
+            "ui-ux/apple-design",
+            "ui-ux/impeccable"
+          ],
+          "terms": [
+            "animat",
+            "motion"
+          ],
+          "checks": [
+            "reduced motion",
+            "reduced-motion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expo-pull",
+      "domain": "motion",
+      "brief": "Our React Native settings sheet should drag down to dismiss. It's in an Expo project and already uses Reanimated. Include a smooth snap-back and an interruption test.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Expo gesture and animation guidance",
+          "ids": [
+            "mobile/animate-expo",
+            "mobile/react-native-skills",
+            "expo"
+          ],
+          "terms": [
+            "expo",
+            "reanimated"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "expo"
+        ]
+      }
+    },
+    {
+      "id": "motion-crit",
+      "domain": "motion",
+      "brief": "Review our new web modal transitions as a motion design critique. The fade looks acceptable but exit timing and the origin of the scale effect feel wrong.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Motion critique",
+          "ids": [
+            "ui-ux/review-animations",
+            "ui-ux/improve-animations",
+            "ui-ux/emil-design-eng"
+          ],
+          "terms": [
+            "review",
+            "critique",
+            "motion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maya-rig",
+      "domain": "motion",
+      "brief": "Build a Maya .ma scene with a two-bone IK/FK switch, skin weights, and controls for an elbow rig the animation team can reuse.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "maya",
+          "ik.fk",
+          "skin weight"
+        ]
+      ]
+    },
+    {
+      "id": "aep-template",
+      "domain": "motion",
+      "brief": "Design an After Effects project for a changing leaderboard. The exported deliverable has to be an editable .aep with expressions and Essential Graphics controls.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "after effects",
+          "aep",
+          "essential graphics"
+        ]
+      ]
+    },
+    {
+      "id": "warehouse-update",
+      "domain": "writing",
+      "brief": "Draft an internal update for warehouse leads about Saturday's scanner changeover. They need the schedule, what changes on each shift, and where to report failures.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Operational team update",
+          "ids": [
+            "social-media/internal-comms",
+            "social-media/anthropic-docs"
+          ],
+          "terms": [
+            "internal comm",
+            "project update",
+            "document"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "handbook-style",
+      "domain": "writing",
+      "brief": "Review the pasted onboarding guide against the writing handbook. Mark unclear instructions and inconsistent voice in comments for the author.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Writing style review",
+          "ids": [
+            "social-media/writing-guidelines",
+            "social-media/anthropic-docs"
+          ],
+          "terms": [
+            "writing guidelines",
+            "writing style",
+            "prose"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decision-note",
+      "domain": "writing",
+      "brief": "Write an architecture decision record for choosing queue deduplication in the worker over a new cache. Capture what pushed the team to the choice and how to revisit it.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Architecture decision documentation",
+          "ids": [
+            "architecture/documentation-and-adrs",
+            "architecture/codebase-design"
+          ],
+          "terms": [
+            "decision",
+            "adr",
+            "architectur"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sendable-guide",
+      "domain": "writing",
+      "brief": "Turn the notes from our front-desk training into an editable SOP the supervisors can comment on. It should cover opening, escalation, and closeout.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Editable operational documentation",
+          "ids": [
+            "social-media/anthropic-docs",
+            "social-media/internal-comms"
+          ],
+          "terms": [
+            "editable",
+            "document",
+            "sop"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developer-article",
+      "domain": "writing",
+      "brief": "I have examples and rough notes for a technical article on timezone bugs. Help me organize them so each idea is introduced before a later example depends on it.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Technical article flow",
+          "ids": [
+            "social-media/writing-beats",
+            "social-media/writing-shape"
+          ],
+          "terms": [
+            "raw material",
+            "article",
+            "paragraph"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pr-test-check",
+      "domain": "writing",
+      "brief": "Help me write the PR description for our new forced-sign-out behavior. Include what changed, why, and the checks reviewers can run.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Pull request writing",
+          "ids": [
+            "engineering-ops/pr",
+            "engineering-ops/git-workflow-and-versioning"
+          ],
+          "terms": [
+            "pull request",
+            "pr body"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grants-form",
+      "domain": "writing",
+      "brief": "Take this grant reporting data and output a native Adobe LiveCycle XFA form with calculations and repeating subforms in the tested PDF.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "livecycle",
+          "xfa",
+          "repeating subform"
+        ]
+      ]
+    },
+    {
+      "id": "indesign-book",
+      "domain": "writing",
+      "brief": "Typeset a workbook for our press. The handoff is a native InDesign .indd with threaded text, master pages, paragraph styles, and working cross-references.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "indesign",
+          "indd",
+          "threaded text"
+        ]
+      ]
+    },
+    {
+      "id": "churn-boundary",
+      "domain": "data",
+      "brief": "Our dbt model flips a customer to churned after the grace period. Add YAML unit tests with mocked upstream rows on either side of midnight.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "dbt unit test design",
+          "ids": [
+            "backend-api/dbt-unit-testing",
+            "backend-api/dbt-analytics-engineering",
+            "dbt"
+          ],
+          "terms": [
+            "dbt"
+          ],
+          "checks": [
+            "test",
+            "fixture"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "dbt"
+        ]
+      }
+    },
+    {
+      "id": "warehouse-layer",
+      "domain": "data",
+      "brief": "In dbt, split these raw shipment events into a staging model and daily fact table. Use references between models and validate what the counts look like.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "dbt transformation modeling",
+          "ids": [
+            "backend-api/dbt-analytics-engineering",
+            "dbt"
+          ],
+          "terms": [
+            "dbt"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "dbt"
+        ]
+      }
+    },
+    {
+      "id": "cloud-job",
+      "domain": "data",
+      "brief": "Last night's dbt Cloud job failed on the model that builds our daily balances. Local runs pass. Work out what changed between the scheduled runs.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "dbt Cloud incident diagnosis",
+          "ids": [
+            "backend-api/dbt-job-troubleshooting",
+            "dbt"
+          ],
+          "terms": [
+            "dbt cloud",
+            "job",
+            "transformation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spend-chart",
+      "domain": "data",
+      "brief": "Help me pick a chart to show department spend and planned spend over time. Some months contain true zeros and some values were never reported.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Chart form and missing data",
+          "ids": [
+            "frontend/dataviz"
+          ],
+          "terms": [
+            "chart",
+            "data viz",
+            "visualization"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local-parquet",
+      "domain": "data",
+      "brief": "Point me to the DuckDB docs for querying three local Parquet files together from SQL. The files can't be uploaded.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "DuckDB local SQL reference",
+          "ids": [
+            "duckdb"
+          ],
+          "terms": [
+            "duckdb",
+            "in.process"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "duckdb"
+        ],
+        "excludeIds": [
+          "bigquery"
+        ]
+      }
+    },
+    {
+      "id": "tenant-rows",
+      "domain": "data",
+      "brief": "Review our PostgreSQL row-level security rules before adding a reporting role. A user with access to one tenant should never see a second tenant's exports.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "PostgreSQL row policy review",
+          "ids": [
+            "backend-api/supabase-postgres-best-practices",
+            "backend-api/supabase",
+            "postgresql"
+          ],
+          "terms": [
+            "postgres",
+            "row level",
+            "rls"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "postgresql"
+        ]
+      }
+    },
+    {
+      "id": "tableau-extract",
+      "domain": "data",
+      "brief": "Build me a packaged Tableau workbook .twbx with a Hyper extract, relationship-aware filters, and a refresh path that analysts can open in Tableau Desktop.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "tableau",
+          "twbx",
+          "hyper"
+        ]
+      ]
+    },
+    {
+      "id": "stata-survey",
+      "domain": "data",
+      "brief": "I need a reproducible Stata .do program that estimates age-adjusted rates with the replicate weights from a complex survey and exports its estimation set.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "stata",
+          "replicate weight",
+          ".do program"
+        ]
+      ]
+    },
+    {
+      "id": "git-safety",
+      "domain": "devops",
+      "brief": "Put git hooks in Claude Code so automation is stopped before it can run git reset --hard or push directly. Local branch commits should still work.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Claude Code Git safeguards",
+          "ids": [
+            "engineering-ops/git-guardrails",
+            "agent-tooling/create-hook"
+          ],
+          "terms": [
+            "hook",
+            "git"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "git"
+        ]
+      }
+    },
+    {
+      "id": "atomic-cleanup",
+      "domain": "devops",
+      "brief": "I have staged and unstaged changes from three unrelated fixes. Help sort the existing work into atomic commits, with a readable history and the working copy preserved.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Git workflow and atomic commits",
+          "ids": [
+            "engineering-ops/git-workflow-and-versioning",
+            "agent-tooling/split-to-prs"
+          ],
+          "terms": [
+            "git",
+            "commit",
+            "split"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cache-instrument",
+      "domain": "devops",
+      "brief": "The cache hit ratio drops after long weekends and we cannot tell which callers are responsible. Add instrumentation with low-cardinality metrics and logging.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Observability and instrumentation",
+          "ids": [
+            "engineering-ops/observability-and-instrumentation"
+          ],
+          "terms": [
+            "metric",
+            "instrument"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rollback-review",
+      "domain": "devops",
+      "brief": "Write a launch checklist for turning on the billing import in production. I need staged rollout and rollback checkpoints. Please don't deploy it.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Release planning and rollback",
+          "ids": [
+            "engineering-ops/shipping-and-launch",
+            "engineering-ops/deprecation-and-migration"
+          ],
+          "terms": [
+            "rollout",
+            "launch",
+            "migration"
+          ]
+        }
+      ],
+      "constraints": {
+        "excludeIds": [
+          "frontend/deploy-with-vercel"
+        ],
+        "excludeMarkers": [
+          "deploy-production",
+          "production-release"
+        ]
+      }
+    },
+    {
+      "id": "postgres-retire",
+      "domain": "devops",
+      "brief": "We need to retire a PostgreSQL column read by both old and new workers without downtime. Plan the expand/contract sequence and a rollback checkpoint.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Safe database deprecation",
+          "ids": [
+            "engineering-ops/deprecation-and-migration",
+            "backend-api/supabase-postgres-best-practices"
+          ],
+          "terms": [
+            "migration",
+            "deprecat"
+          ]
+        }
+      ],
+      "constraints": {
+        "requiredTools": [
+          "postgresql"
+        ]
+      }
+    },
+    {
+      "id": "precommit",
+      "domain": "devops",
+      "brief": "Before these contributors can commit a generated credential by accident, wire in a local pre-commit check that detects hardcoded secrets.",
+      "expected": "ready",
+      "evidence": [
+        {
+          "label": "Local security checks",
+          "ids": [
+            "engineering-ops/setup-pre-commit",
+            "gitleaks",
+            "trufflehog"
+          ],
+          "terms": [
+            "pre.commit",
+            "hardcoded secret",
+            "secret detection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "helm-airgap",
+      "domain": "devops",
+      "brief": "I need a Helm umbrella chart for an air-gapped Kubernetes cluster, including OCI mirroring, private image overrides, and a verified offline manifest render.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "helm",
+          "kubernetes",
+          "air.gap",
+          "oci"
+        ]
+      ]
+    },
+    {
+      "id": "terraform-state",
+      "domain": "devops",
+      "brief": "Move these production Terraform state addresses to a separate workspace in the remote backend. I need a reproducible plan for lock coordination and state rollback.",
+      "expected": "no_match",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "terraform",
+          "state",
+          "backend"
+        ]
+      ]
+    },
+    {
+      "id": "sourdough",
+      "domain": "outside",
+      "brief": "My starter has been in the fridge for eight days. What schedule should I use to revive it before baking on Saturday?",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "starter",
+          "sourdough",
+          "baking",
+          "cook",
+          "food"
+        ]
+      ]
+    },
+    {
+      "id": "trail-path",
+      "domain": "outside",
+      "brief": "Which side of the valley has more shade on an afternoon walk with a stroller? We can get to either trailhead.",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "walk",
+          "stroller",
+          "trail",
+          "outdoor"
+        ]
+      ]
+    },
+    {
+      "id": "pet-travel",
+      "domain": "outside",
+      "brief": "I need to know what paperwork my dog needs for the ferry next month. Does the crossing require a carrier?",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "dog",
+          "ferry",
+          "travel",
+          "paperwork"
+        ]
+      ]
+    },
+    {
+      "id": "piano-tuning",
+      "domain": "outside",
+      "brief": "The upright at our rehearsal space drifts flat in winter. How should we schedule piano tuning through the year?",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "piano",
+          "tuning",
+          "winter"
+        ]
+      ]
+    },
+    {
+      "id": "meeting-live",
+      "domain": "outside",
+      "brief": "I missed today's fire drill. Can you tell me which assembly point the facilities team actually used?",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "fire drill",
+          "assembly point",
+          "facilities"
+        ]
+      ]
+    },
+    {
+      "id": "museum-admission",
+      "domain": "outside",
+      "brief": "Get two timed tickets for the ceramics gallery on Friday after lunch.",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "ticket",
+          "gallery",
+          "friday"
+        ]
+      ]
+    },
+    {
+      "id": "windowsill",
+      "domain": "outside",
+      "brief": "The basil on the south-facing windowsill is growing tall with tiny leaves. How do I get a bushier plant?",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "basil",
+          "plant",
+          "growing"
+        ]
+      ]
+    },
+    {
+      "id": "portrait-paint",
+      "domain": "outside",
+      "brief": "I have brushes, canvas and four tubes of oil paint. How should I load the brush to paint the surface of a pear?",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "paint",
+          "brush",
+          "pear"
+        ]
+      ]
+    },
+    {
+      "id": "live-camera",
+      "domain": "outside",
+      "brief": "Move the tripod back another meter and point the camera slightly down before the speaker walks onstage.",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "tripod",
+          "camera",
+          "onstage"
+        ]
+      ]
+    },
+    {
+      "id": "coat-repair",
+      "domain": "outside",
+      "brief": "My wool coat lining tore at the sleeve. How should I stitch it by hand so pulling the coat on doesn't tear it again?",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "coat",
+          "stitch",
+          "sleeve"
+        ]
+      ]
+    },
+    {
+      "id": "boat-mooring",
+      "domain": "outside",
+      "brief": "Help me tie a line to the dock cleat so I can quickly release it from the boat when the tide turns.",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "dock",
+          "cleat",
+          "boat"
+        ]
+      ]
+    },
+    {
+      "id": "sky-map",
+      "domain": "outside",
+      "brief": "Can I see the Andromeda Galaxy with binoculars from my backyard? How do I recognize it next to the bright stars?",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "andromeda",
+          "binocular",
+          "stars"
+        ]
+      ]
+    },
+    {
+      "id": "identify-bird",
+      "domain": "outside",
+      "brief": "A little brown bird keeps tapping the kitchen glass and flicking its tail. Can you narrow down which bird it could be?",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "bird",
+          "tail",
+          "kitchen"
+        ]
+      ]
+    },
+    {
+      "id": "ceramic-glaze",
+      "domain": "outside",
+      "brief": "I want a satin finish on a cone-six stoneware mug. What should I test before I glaze the whole batch?",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "finish",
+          "stoneware",
+          "glaze"
+        ]
+      ]
+    },
+    {
+      "id": "apartment-key",
+      "domain": "outside",
+      "brief": "My apartment key snapped inside the cylinder. What should I tell the building caretaker so they bring the right tools?",
+      "expected": "outside",
+      "evidence": [],
+      "gapTerms": [
+        [
+          "apartment key",
+          "cylinder",
+          "caretaker"
+        ]
+      ]
+    }
+  ]
+}
