@@ -1,0 +1,32 @@
+{
+  "sampleSize": 200,
+  "blindReviewed": 200,
+  "blindReviewer": "blind-research-subagent-flash (codex exec gpt-6.2-astra / explabs returned HTTP 429 insufficient_quota)",
+  "localCrossCheck": {
+    "model": "Qwen2.5-1.5B-Instruct Q4_K_M",
+    "domainDisagreementRate": 0.76,
+    "stageDisagreementRate": 0.525
+  },
+  "textSources": {
+    "mirror": 50,
+    "upstream": 150,
+    "metadata": 0
+  },
+  "statusBreakdown": {
+    "approved": 50,
+    "metadata-only": 135,
+    "quarantined": 15
+  },
+  "errorCounts": {
+    "domain": 57,
+    "stage": 86,
+    "deliverable": 40,
+    "tool": 46
+  },
+  "errorRates": {
+    "domain": 0.285,
+    "stage": 0.43,
+    "deliverable": 0.2,
+    "tool": 0.23
+  }
+}

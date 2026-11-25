@@ -10,6 +10,7 @@ const {
   expandedTopicQueries,
   maxInventory,
   refreshCatalog,
+  retagSnapshot,
 } = require('../lib/federation-refresh');
 const { mirrorPath, readMirror, readSnapshot, snapshotPath } = require('../lib/federation');
 const reviewed = require('../catalog/federated/reviewed.json');
@@ -38,11 +39,24 @@ function writeAtomic(target, data) {
 }
 
 async function main() {
-  const output = process.argv[2];
-  if (process.argv.length > 3 || (output && output.startsWith('-') && output !== '--write')) {
-    throw new Error('Usage: node scripts/refresh-federation.js [--write|output.json]');
+  const args = process.argv.slice(2);
+  const retagLocal = args.includes('--retag-local');
+  const positional = args.filter((a) => a !== '--retag-local');
+  const output = positional[0];
+  if (positional.length > 1 || (output && output.startsWith('-') && output !== '--write')) {
+    throw new Error('Usage: node scripts/refresh-federation.js [--retag-local] [--write|output.json]');
   }
   const previous = readSnapshot();
+  if (retagLocal) {
+    const next = retagSnapshot(previous, reviewed.entries, readMirror);
+    const json = JSON.stringify(next, null, 2) + '\n';
+    if (output) {
+      const target = output === '--write' ? snapshotPath : path.resolve(output);
+      writeAtomic(target, json);
+    } else process.stdout.write(json);
+    process.stderr.write(JSON.stringify({ funnel: next.funnel }, null, 2) + '\n');
+    return;
+  }
   const mirror = new Map();
   for (const entry of previous.entries) {
     for (const sha of entry.status === 'approved' ? entry.mirror || [] : []) {

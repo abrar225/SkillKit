@@ -363,3 +363,65 @@ test('auto-verification enforces skill-directory licenses, text-only mirroring, 
   assert.equal(require('../lib/federation-refresh').identifyLicenseText(wrappedIsc), 'ISC');
   assert.equal(require('../lib/federation-refresh').parseFrontmatterLicense('LICENSE').status, 'refer-to-file');
 });
+
+test('Phase 2 taxonomy avoids false-positive collisions across captions, PRISMA, timelines, and brand guides', () => {
+  const prismaMedical = extractTags({
+    slug: 'systematic-review-title-abstract-screening',
+    title: 'Systematic Review Screening',
+    description: 'Screen titles and abstracts using PRISMA systematic review protocols.',
+  });
+  assert.ok(!prismaMedical.tools.includes('prisma'));
+  assert.ok(!prismaMedical.deliverables.includes('prisma-setup'));
+  assert.ok(prismaMedical.deliverables.includes('research-synthesis'));
+
+  const igCaptions = extractTags({
+    slug: 'instagram-caption-writing',
+    title: 'Instagram Caption Writing',
+    description: 'Write Instagram captions for exhibition photos.',
+  });
+  assert.ok(igCaptions.deliverables.includes('instagram-copy'));
+  assert.ok(!igCaptions.deliverables.includes('video-captions'));
+
+  const brandGuide = extractTags({
+    slug: 'brand-guidelines',
+    title: 'Brand Guidelines',
+    description: 'Apply official brand colors and typography to a design.',
+  });
+  assert.equal(brandGuide.domain, 'ui-ux');
+  assert.equal(brandGuide.stage, 'design');
+  assert.ok(brandGuide.deliverables.includes('brand-identity'));
+
+  const manimTags = extractTags({
+    slug: 'manimvox-core',
+    title: 'Writing a manimvox episode',
+    description: 'Authoring contract for animated explainer episodes with manimvox.',
+  });
+  assert.equal(manimTags.domain, 'media');
+  assert.ok(manimTags.tools.includes('manim'));
+  assert.ok(manimTags.deliverables.includes('motion-video'));
+
+  const runbookStage = extractTags({
+    slug: 'runbook',
+    title: 'Operational Runbooks',
+    description: 'Write or audit operational runbooks as a senior SRE.',
+  });
+  assert.equal(runbookStage.stage, 'build');
+  assert.ok(runbookStage.deliverables.includes('rollback-runbook'));
+
+  const cleanArch = extractTags({
+    slug: 'clean-architecture-layers',
+    title: 'Clean Architecture Layers',
+    description: 'The dependency rule and what belongs in Application, Infrastructure, and Presentation layers.',
+  });
+  assert.equal(cleanArch.domain, 'architecture');
+  assert.ok(cleanArch.deliverables.includes('architecture-design'));
+  assert.ok(!cleanArch.deliverables.includes('infrastructure-ops'));
+
+  const redisSec = extractTags({
+    slug: 'redis-security',
+    title: 'Redis Security',
+    description: 'Redis security guidance covering TLS, ACL users, and least privilege.',
+  });
+  assert.equal(redisSec.domain, 'security-bug-bounty');
+  assert.ok(redisSec.deliverables.includes('security-audit'));
+});
