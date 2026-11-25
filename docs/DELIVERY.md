@@ -39,6 +39,11 @@ Fresh archives and locks use exclusive writes. Files previously owned by the use
 
 ## Protocol
 
-Read one item using `get_skill`, `read_skill_file`, or `get_resource`. Selected external files are fetched from pinned upstream hashes. Use `explain_match` for selection and rejection reasons. HTTP accepts `POST /api/kit` with a JSON task, stack, optional workflow, or structured intent. Query parameters `format=explain`, `format=lock`, and `format=handoff` request richer forms. The handoff caps text at 12 KiB and marks truncated content. Use `GET /api/kit?id=<id>&format=archive` for one approved archive. Existing checkout owners can request a bulk native export only by supplying `--all`. Scripts are data throughout these operations.
+Read one item using `get_skill`, `read_skill_file`, or `get_resource`. Reviewed federated files load from their pinned mirror when available. Restricted entries return their upstream link. Use `explain_match` for selection and rejection reasons. HTTP accepts `POST /api/kit` with a JSON task, stack, optional workflow, or structured intent. Query parameters `format=explain`, `format=lock`, and `format=handoff` request richer forms. The handoff caps text at 12 KiB and marks truncated content. Use `GET /api/kit?id=<id>&format=archive` for one approved archive. Existing checkout owners can request a bulk native export only by supplying `--all`. Scripts are data throughout these operations.
 
 Outcome collection requires both operator configuration of `SKILLKIT_OUTCOME_FILE` and a caller’s explicit `consent: true`. The stored record contains only the day, a rating, and verified catalog IDs. Raw prompts and transcripts are excluded. Ratings are not used in production ranking.
+
+
+Run `node bin/vibe-skills.js agent-rule` once and put the resulting line in the consuming project's `AGENTS.md` or `CLAUDE.md`. The rule is an instruction to the host. The host still decides whether to call the tool.
+
+For compact discovery, POST the JSON request to `/api/find-kit`. POST its selected `kitId` and original `request` to `/api/get-kit` for the stages. Use the same arguments with MCP `find_kit` and `get_kit`. A text-only client can use `handoff`. Keep the server checkout outside the consuming project.

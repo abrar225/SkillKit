@@ -6,7 +6,7 @@ Tell your agent what you want to build, change, or check. The agent interprets y
 
 | What the client can do | How to use SkillKit |
 | --- | --- |
-| Connect to a remote MCP server | Add the running service’s HTTPS `/api/mcp` endpoint. Call `find_kit`, then `get_skill` with one exact ID. |
+| Connect to a remote MCP server | Add the running service’s HTTPS `/api/mcp` endpoint. Call `find_kit`, select an eligible card and pass its ID and original request to `get_kit`. Read one stage with `get_skill`. |
 | Read web links | Share the repository and its [task map](../llms.txt), or the running service’s `/llms.txt` guide. |
 | Accept pasted text | Enter the brief on the website’s `/mcp` page, prepare the kit, and copy its instructions into the chat. |
 | Run a local stdio server | Keep one checkout outside your projects and configure the client as described below. |
