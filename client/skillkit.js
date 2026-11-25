@@ -5,9 +5,10 @@ const { saveArchive } = require('./output');
 
 async function main() {
   const [command, value, flag, dest, ...rest] = process.argv.slice(2);
-  if (!['use','get','handoff','explain'].includes(command) || !value || rest.length ||
-      (flag !== undefined && !(command === 'get' && flag === '--out' && dest))) {
-    throw new Error('Use skillkit use|handoff|explain "<brief>" or skillkit get <id> [--out directory]. Set SKILLKIT_URL to the service origin.');
+  const hasArguments = command === 'get' ? flag === undefined || (flag === '--out' && dest) :
+    command === 'get-kit' ? flag && dest === undefined : flag === undefined;
+  if (!['use','get','handoff','explain','find-kit','get-kit'].includes(command) || !value || rest.length || !hasArguments) {
+    throw new Error('Use skillkit find-kit|use|handoff|explain "<brief>", skillkit get-kit <kit-id> "<brief>", or skillkit get <id> [--out directory]. Set SKILLKIT_URL to the service origin.');
   }
   if (!process.env.SKILLKIT_URL) throw new Error('Set SKILLKIT_URL to your SkillKit service origin.');
   const url = new URL('/api/kit', process.env.SKILLKIT_URL);
@@ -19,8 +20,9 @@ async function main() {
   } else {
     options.method = 'POST';
     options.headers = { 'content-type': 'application/json' };
-    options.body = JSON.stringify({ task: value });
-    if (command !== 'use') url.searchParams.set('format', command);
+    options.body = JSON.stringify(command === 'get-kit' ? { kitId: value, request: { task: flag } } : { task: value });
+    const format = { 'find-kit': 'card', 'get-kit': 'detail' }[command] || command;
+    if (command !== 'use') url.searchParams.set('format', format);
   }
   const response = await fetch(url, options);
   if (!response.ok) throw new Error('Service returned ' + response.status + ': ' + (await response.text()).slice(0,250));

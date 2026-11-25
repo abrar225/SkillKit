@@ -20,7 +20,7 @@
   {
     "id": "video-editors",
     "title": "Video editors",
-    "deliverables": ["video-export", "video-editor-project", "captions", "audio-cleanup", "color-grade"],
+    "deliverables": ["video-export", "video-editor-project", "captions", "audio-cleanup", "color-grade", "resolve-edit", "resolve-grade", "premiere-transcript"],
     "skills": [],
     "resources": ["ffmpeg", "remotion"],
     "tasteAnchors": [
@@ -39,7 +39,7 @@
   {
     "id": "motion-graphics",
     "title": "Motion graphics",
-    "deliverables": ["motion-video"],
+    "deliverables": ["motion-video", "ae-expression", "remotion-subtitles"],
     "skills": ["ui-ux/animate", "ui-ux/improve-animations"],
     "resources": ["motion", "motion-canvas", "hyperframes", "remotion", "manim", "threejs"],
     "tasteAnchors": [
@@ -59,7 +59,7 @@
   {
     "id": "designers",
     "title": "Designers",
-    "deliverables": ["web-site", "web-redesign", "ui-design", "ui-review", "wireframe", "brand-guide", "design-system-doc", "static-graphic", "generative-art"],
+    "deliverables": ["web-site", "web-redesign", "ui-design", "ui-review", "wireframe", "brand-guide", "design-system-doc", "static-graphic", "generative-art", "inkscape-print", "figma-names"],
     "skills": ["frontend/frontend-design", "ui-ux/canvas-design", "ui-ux/fixing-accessibility", "ui-ux/create-design-md", "ui-ux/wireframe"],
     "resources": ["google-fonts", "fontshare", "realtime-colors", "mdn", "lucide"],
     "tasteAnchors": [

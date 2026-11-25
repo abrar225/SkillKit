@@ -19,9 +19,13 @@ async function main() {
   try {
     await Promise.race([once(server.stdout,'data'), exit.then(() => { throw new Error('Service exited before startup.'); })]);
     await run('scripts/check-mcp.js',[origin+'/api/mcp']);
-    const query = await run('client/skillkit.js',['use','Redesign my portfolio website']);
+    const brief = 'Redesign my portfolio website';
+    const card = JSON.parse((await run('client/skillkit.js',['find-kit',brief])).stdout);
+    const expanded = JSON.parse((await run('client/skillkit.js',['get-kit',card.kitId,brief])).stdout);
+    const query = await run('client/skillkit.js',['use',brief]);
     const kit = JSON.parse(query.stdout);
     assert.equal(kit.status,'ready');
+    assert.deepEqual(expanded.skills, kit.skills);
     const id = kit.skills[0].id;
     const result = JSON.parse((await run('client/skillkit.js',['get',id])).stdout);
     assert.equal(result.id,id);

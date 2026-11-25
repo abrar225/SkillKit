@@ -1,0 +1,90 @@
+{
+  "gates": {
+    "zeroInstall": {
+      "pass": true,
+      "detail": "Real MCP/HTTP discovery and retrieval wrote zero files."
+    },
+    "handsOff": {
+      "pass": false,
+      "withSnippet": [
+        0,
+        0
+      ],
+      "pointerOnly": [
+        0,
+        0
+      ],
+      "attempts": 0
+    },
+    "rightKit": {
+      "pass": false,
+      "routing": {
+        "sha256": "fd1e2be5d29044da048740d1f0b00ddd303600baec85897f5a41071ccf4922c8",
+        "inScope": 66,
+        "outside": 15,
+        "constrained": 28,
+        "fallbackExpected": 15,
+        "usablePct": 7.58,
+        "wrongPct": 16.67,
+        "constraintPct": 85.71,
+        "fallbackPct": 73.33,
+        "outsidePct": 100,
+        "maxBytes": 2103,
+        "unnecessaryQuestionPct": 3.7,
+        "byDomain": {
+          "coding": {
+            "count": 9,
+            "usablePct": 11.11
+          },
+          "ui": {
+            "count": 9,
+            "usablePct": 11.11
+          },
+          "graphic": {
+            "count": 8,
+            "usablePct": 12.5
+          },
+          "video": {
+            "count": 8,
+            "usablePct": 12.5
+          },
+          "motion": {
+            "count": 8,
+            "usablePct": 0
+          },
+          "writing": {
+            "count": 8,
+            "usablePct": 0
+          },
+          "data": {
+            "count": 8,
+            "usablePct": 12.5
+          },
+          "devops": {
+            "count": 8,
+            "usablePct": 0
+          }
+        }
+      },
+      "userBriefs": []
+    },
+    "lean": {
+      "pass": false,
+      "maxBytes": 2103,
+      "withKit": {
+        "n": 0,
+        "tokens": null,
+        "calls": null
+      },
+      "manual": {
+        "n": 0,
+        "tokens": null,
+        "calls": null
+      }
+    },
+    "betterWork": {
+      "pass": false,
+      "evidence": null
+    }
+  }
+}

@@ -34,7 +34,7 @@ test('persona details follow the deliverable and only expose selected tool links
 test('pack checks can describe an unsupported native deliverable while preserving the gap', () => {
   const info = explainKit({ task: 'Edit this interview in DaVinci Resolve and deliver a native Resolve project' });
   assert.notEqual(info.kit.status, 'ready');
-  assert.deepEqual(info.kit.resources, []);
+  assert.deepEqual(info.kit.resources.map(r => r.id), ['resolve-editor-training']);
   assert.equal(info.packs[0].id, 'video-editors');
   assert.match(info.packs[0].variants[0].check, /Reopen the native Resolve project/);
   assert.ok(info.packs[0].variants[0].gap);

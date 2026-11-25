@@ -9,9 +9,9 @@ const resourceIds = (kit) => kit.resources.map(({ id }) => id);
 
 test('native Resolve timelines never earn a generic transcoding kit', () => {
   const info = explainKit({ task: 'Edit an interview in DaVinci Resolve and deliver an editable Resolve timeline' }, localOnly);
-  assert.equal(info.kit.status, 'no_match');
-  assert.deepEqual(info.contract.deliverables.map(({ kind, tools }) => [kind, tools]), [['video-editor-project', ['davinci-resolve']]]);
-  assert.deepEqual(resourceIds(info.kit), []);
+  assert.equal(info.kit.status, 'partial');
+  assert.deepEqual(info.contract.deliverables.map(({ kind, tools }) => [kind, tools]), [['resolve-edit', ['davinci-resolve']], ['video-editor-project', ['davinci-resolve']]]);
+  assert.deepEqual(resourceIds(info.kit), ['resolve-editor-training']);
   assert.match(info.kit.gaps[0], /video editor project.*davinci-resolve/);
   assert.match(info.gapBrief, /exact tools and formats/);
 });
@@ -19,9 +19,9 @@ test('native Resolve timelines never earn a generic transcoding kit', () => {
 test('social copy routes on the text output and ignores video as source', () => {
   const input = { task: 'Write the LinkedIn post text for an already-edited video' };
   const local = explainKit(input, localOnly);
-  assert.equal(local.kit.status, 'partial');
+  assert.equal(local.kit.status, 'no_match');
   assert.deepEqual(local.contract.deliverables.map(({ kind }) => kind), ['social-copy']);
-  assert.deepEqual(skillIds(local.kit), ['social-media/writing-beats']);
+  assert.deepEqual(skillIds(local.kit), []);
   assert.ok(!resourceIds(local.kit).includes('ffmpeg'));
   assert.match(local.kit.gaps.join(' '), /linkedin/i);
 

@@ -34,7 +34,8 @@ const {
 
 const REPO_ROOT = path.resolve(__dirname, '..');
 const TARGETS = require('../lib/export-layout');
-const { findKit, inputSchema } = require('../lib/task-kit');
+const { inputSchema } = require('../lib/task-kit');
+const { discoverKitCards, getKit, cardInputSchema, getKitSchema } = require('../lib/kit-cards');
 const delivery = require('../lib/kit-delivery');
 const { mayDeliver } = require('../lib/catalog-policy');
 const { curatedInventory } = require('../lib/curated-assets');
@@ -118,8 +119,10 @@ const tools = [
   {
     name: 'find_kit',
     description: 'Start here. Find relevant skills, reference links and checks for a creative or technical brief. Supply structured intent when you know the deliverables and constraints. Resolve a clarification from conversation context, asking the user only if necessary.',
-    inputSchema,
+    inputSchema: cardInputSchema,
   },
+  { name: 'get_kit', description: 'Expand a kit returned by find_kit. Pass its exact kitId and the original routing request.',
+    inputSchema: getKitSchema },
   { name: 'explain_match', description: 'Explain selected and rejected matches and coverage gaps.', inputSchema },
   { name: 'get_resource', description: 'Look up one resource by exact ID and inspect its terms and purpose.',
     inputSchema: { type: 'object', properties: { id: { type: 'string', minLength: 1, maxLength: 150 } }, required: ['id'], additionalProperties: false } },
@@ -241,7 +244,9 @@ const tools = [
 async function callTool(name, args, remote, root, endpoint) {
   switch (name) {
     case 'find_kit':
-      return textResult(findKit(args), true);
+      return require('../lib/kit-cards').discoveryResult(await discoverKitCards(args));
+    case 'get_kit':
+      return textResult(getKit(args));
 
     case 'recommend_workflow':
       return textResult(recommendWorkflow(args));
@@ -376,8 +381,8 @@ async function callTool(name, args, remote, root, endpoint) {
   }
 }
 
-const remoteNames = new Set(['find_kit', 'get_skill', 'read_skill_file', 'explain_match', 'get_resource', 'report_outcome']);
-const remoteInstructions = 'Call find_kit with the current brief. Supply structured intent from the conversation for compound tasks, explicit constraints or known project context. Resolve a question using known context first. Read the exact skill ID for the current stage with get_skill, then read_skill_file only for referenced text. Use the resource links where relevant. The kit is read-only.';
+const remoteNames = new Set(['find_kit', 'get_kit', 'get_skill', 'read_skill_file', 'explain_match', 'get_resource', 'report_outcome']);
+const remoteInstructions = 'Call find_kit with the current brief. Supply structured intent from the conversation for compound tasks, explicit constraints or known project context. Resolve a question using known context first. Expand a selected card with get_kit if needed. Read the exact skill ID for the current stage with get_skill, then read_skill_file only for referenced text. Use the resource links where relevant. The kit is read-only.';
 
 const validator = new AjvJsonSchemaValidator();
 const validators = new Map(tools.map((tool) => [tool.name, validator.getValidator(tool.inputSchema)]));
@@ -396,7 +401,7 @@ function createServer({ remote = false, root = REPO_ROOT, endpoint } = {}) {
 
   const annotations = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false };
   server.setRequestHandler(ListToolsRequestSchema, async () => ({
-    tools: activeTools.map((tool) => ({ ...tool, annotations: { ...annotations, openWorldHint: ['get_skill','read_skill_file'].includes(tool.name), ...(tool.name === 'report_outcome' ? { readOnlyHint: false, idempotentHint: false } : {}) } })),
+    tools: activeTools.map((tool) => ({ ...tool, annotations: { ...annotations, openWorldHint: ['find_kit','get_skill','read_skill_file'].includes(tool.name), ...(tool.name === 'report_outcome' ? { readOnlyHint: false, idempotentHint: false } : {}) } })),
   }));
 
   const prompt = {

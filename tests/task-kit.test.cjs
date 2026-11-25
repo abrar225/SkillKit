@@ -65,9 +65,12 @@ test('CLI, web API, and Streamable HTTP MCP return the same kit without project 
   const client = new Client({ name: 'task-kit-test', version: '1' });
   try {
     await client.connect(new StreamableHTTPClientTransport(url, { fetch }));
-    assert.deepEqual((await client.listTools()).tools.map((s) => s.name).sort(), ['explain_match', 'find_kit', 'get_resource', 'get_skill', 'read_skill_file', 'report_outcome']);
+    assert.deepEqual((await client.listTools()).tools.map((s) => s.name).sort(), ['explain_match', 'find_kit', 'get_kit', 'get_resource', 'get_skill', 'read_skill_file', 'report_outcome']);
     const result = await client.callTool({ name: 'find_kit', arguments: { task: brief } });
-    assert.deepEqual(result.structuredContent, kit);
+    const card = result.structuredContent;
+    assert.deepEqual(card, require('../lib/kit-cards').findKitCards({ task: brief }));
+    const expanded = await client.callTool({ name: 'get_kit', arguments: { kitId: card.kitId, request: { task: brief } } });
+    assert.deepEqual(expanded.structuredContent, { ...kit, kitId: card.kitId, version: 3 });
     const detail = await client.callTool({ name: 'get_skill', arguments: { id: kit.skills[0].id } });
     assert.match(detail.structuredContent.instructions, /Frontend Design/);
     assert.ok(detail.structuredContent.provenance.license);

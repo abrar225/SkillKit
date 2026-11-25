@@ -63,6 +63,7 @@ function flagValue(index, flag) {
 for (let i = 0; i < argv.length; i += 1) {
   const arg = argv[i];
   if (arg === '--lock') flags.lock = true;
+  else if (arg === '--upstream') flags.upstream = true;
   else if (arg === '--project') { flags.project = flagValue(i, arg); i += 1; }
   else if (arg === '--json') flags.json = true;
   else if (arg === '--featured') flags.featured = true;
@@ -542,8 +543,11 @@ switch (command) {
   case 'handoff':
   case 'explain':
   case 'find':
+  case 'find-kit':
+  case 'get-kit':
   case 'recommend': {
     const { createRouter } = require('../lib/task-router');
+    const kitId = command === 'get-kit' ? positional.shift() : undefined;
     const task = positional.join(' ');
     if (task.length > 8000 || (flags.stack || '').length > 200) fail('task or stack exceeds the routing input limit');
     try {
@@ -551,6 +555,13 @@ switch (command) {
       const intent = flags.intentJson === undefined ? undefined : JSON.parse(flags.intentJson);
       const input = { task, ...(flags.workflow ? {workflow: flags.workflow} : {}), ...(flags.stack ? {stack: flags.stack} : {}), ...(intent !== undefined ? {intent} : {}) };
       if (flags.project) input.stack = [input.stack, require('../lib/project-context').detect(flags.project)].filter(Boolean).join(', ');
+      if (command === 'find-kit' || command === 'get-kit') {
+        const { discoverKitCards, getKit } = require('../lib/kit-cards');
+        const result = command === 'find-kit' ? await discoverKitCards({ ...input, ...(flags.upstream ? { upstream: true } : {}) }) :
+          getKit({ kitId, request: input });
+        console.log(JSON.stringify(result));
+        break;
+      }
       if (command !== 'recommend') {
         const { findKit, formatKit, explainKit } = require('../lib/task-kit');
         const explained = ['handoff','explain'].includes(command) ? explainKit(input) : null;
@@ -607,7 +618,7 @@ switch (command) {
   }
 
   case 'agent-rule':
-    console.log(require('../lib/task-router').instructions);
+    console.log(require('../lib/task-router').agentRule);
     break;
 
   case 'mcp': {
@@ -648,7 +659,9 @@ Usage:
   vibe-skills scan [directory] [--json]             Recommend skills for a project
   vibe-skills validate [--verbose]                  Verify registries against disk
   vibe-skills find "<brief>" [--workflow id | --intent-json json] [--json]
-                                                    Select a compact kit without installing files
+                                                    Select a kit without installing files
+  vibe-skills find-kit "<brief>"                    Print compact cards for the brief
+  vibe-skills get-kit <kit-id> "<brief>"             Expand a card using the original routing arguments
   vibe-skills recommend [task] [--workflow id | --intent-json json] [--stack stack] [--json]
                                                     Choose skills, resources, and verification steps
   vibe-skills use "<brief>" [--lock] [--project dir]  Print a small JSON kit
