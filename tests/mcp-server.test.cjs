@@ -110,21 +110,8 @@ test("MCP catalog tools read real data and return an exact recursive export plan
       target: "cursor",
       project,
     });
-    const walk = (dir) =>
-      fs
-        .readdirSync(dir, { withFileTypes: true })
-        .flatMap((entry) =>
-          entry.isDirectory()
-            ? walk(path.join(dir, entry.name))
-            : [
-                path
-                  .relative(plan.source, path.join(dir, entry.name))
-                  .split(path.sep)
-                  .join("/"),
-              ],
-        )
-        .sort();
-    assert.deepEqual(plan.files, walk(plan.source));
+    const reviewed = require(path.join(root, "catalog/local-assets.json"))["orchestrator/gravitas"];
+    assert.deepEqual(plan.files, [...Object.keys(reviewed), "SOURCE.json", "SKILLKIT-LICENSE.txt"].sort());
     assert.ok(
       plan.files.some((file) => file.includes("/")),
       "Must include nested files, not just directory names",

@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
+const { createHash } = require('node:crypto');
 
 // Small independent catalog: tests stay deterministic while the real imports change.
 function fixture(t) {
@@ -12,20 +13,26 @@ function fixture(t) {
   fs.mkdirSync(path.join(root, 'bin'));
   fs.mkdirSync(path.join(root, 'registry'));
   fs.mkdirSync(path.join(root, 'lib'));
-  fs.copyFileSync(path.resolve(__dirname, '../lib/export-layout.js'), path.join(root, 'lib/export-layout.js'));
-  fs.copyFileSync(path.resolve(__dirname, '../bin/vibe-skills.js'), path.join(root, 'bin/vibe-skills.js'));
-  fs.copyFileSync(path.resolve(__dirname, '../lib/catalog-policy.js'), path.join(root, 'lib/catalog-policy.js'));
+  fs.mkdirSync(path.join(root, 'catalog'));
+  for (const file of ['lib/export-layout.js', 'bin/vibe-skills.js', 'lib/catalog-policy.js', 'lib/curated-assets.js', 'LICENSE']) {
+    fs.copyFileSync(path.resolve(__dirname, '..', file), path.join(root, file));
+  }
   const skills = ['alpha', 'beta'].map((name) => ({
     id: `example/${name}`, name, displayName: name, domain: 'example', path: `skills/example/${name}`,
     description: `${name} workflow`, capabilities: [], origin: 'local-original', license: 'MIT',
   }));
+  const inventory = {};
   for (const skill of skills) {
     const dir = path.join(root, skill.path);
     fs.mkdirSync(path.join(dir, 'references'), { recursive: true });
     fs.writeFileSync(path.join(dir, 'SKILL.md'), `# ${skill.name}\n`);
     fs.writeFileSync(path.join(dir, 'references/guide.md'), `Guide for ${skill.name}\n`);
     fs.writeFileSync(path.join(dir, 'SOURCE.json'), JSON.stringify({ id: skill.id, origin: 'local-original', license: 'MIT', licenseStatus: 'declared' }));
+    inventory[skill.id] = Object.fromEntries(['SKILL.md', 'references/guide.md'].map(name => [
+      name, createHash('sha256').update(fs.readFileSync(path.join(dir, name))).digest('hex'),
+    ]));
   }
+  fs.writeFileSync(path.join(root, 'catalog/local-assets.json'), JSON.stringify(inventory));
   const registries = {
     skills: { generatedAt: '2026-11-17', skills },
     domains: { domains: [{ id: 'example', name: 'Example', skillCount: 2 }] },
@@ -181,4 +188,49 @@ test('bulk exports require an intentional --all and cannot mix selections', (t) 
     assert.equal(fs.existsSync(project), false);
   }
   assert.deepEqual(JSON.parse(run(...args, '--all').stdout).written, ['example/alpha', 'example/beta']);
+});
+
+test('native export bundles the notice and ignores unrecorded source files when verifying a retry', t => {
+  const { project, root, exportSkill } = fixture(t);
+  const source = path.join(root, 'skills/example/alpha');
+  fs.writeFileSync(path.join(source, '.env'), 'dummy workspace-only setting');
+  fs.writeFileSync(path.join(source, 'references/private.md'), 'unrecorded working note');
+  const first = exportSkill('agents');
+  const installed = path.join(project, '.agents/skills/alpha');
+  assert.equal(fs.existsSync(path.join(installed, '.env')), false);
+  assert.equal(fs.existsSync(path.join(installed, 'references/private.md')), false);
+  assert.equal(fs.readFileSync(path.join(installed, 'SKILLKIT-LICENSE.txt'), 'utf8'), fs.readFileSync(path.join(root, 'LICENSE'), 'utf8'));
+  const retry = exportSkill('agents');
+  assert.deepEqual(retry.retained, ['example/alpha']);
+  assert.deepEqual(retry.verified, first.verified);
+});
+
+test('native export upgrades a verified legacy selection without claiming an identical untracked copy', t => {
+  const { project, root, exportSkill } = fixture(t);
+  const out = path.join(project, '.agents/skills');
+  for (const name of ['alpha', 'beta']) {
+    fs.cpSync(path.join(root, 'skills/example', name), path.join(out, name), { recursive: true });
+  }
+  const digest = createHash('sha256');
+  for (const [relative, type] of [['', 'directory'], ['/SKILL.md', 'file'], ['/SOURCE.json', 'file'],
+    ['/references', 'directory'], ['/references/guide.md', 'file']]) {
+    const file = path.join(out, 'alpha', relative);
+    digest.update(JSON.stringify([relative, type, fs.statSync(file).mode & 0o777]));
+    if (type === 'file') {
+      const bytes = fs.readFileSync(file);
+      digest.update(String(bytes.length) + ':');
+      digest.update(bytes);
+    }
+  }
+  const sha256 = digest.digest('hex');
+  fs.writeFileSync(path.join(out, 'vibe-skills.export.json'), JSON.stringify({
+    target: 'agents', skills: ['example/alpha'], verified: [{ id: 'example/alpha', directory: 'alpha', sha256 }],
+  }));
+  const result = exportSkill('agents', 'example/alpha,example/beta');
+  assert.deepEqual(result.written, ['example/alpha']);
+  assert.deepEqual(result.skipped.map(entry => entry.id), ['example/beta']);
+  assert.equal(fs.existsSync(path.join(out, 'alpha/SKILLKIT-LICENSE.txt')), true);
+  assert.equal(fs.existsSync(path.join(out, 'beta/SKILLKIT-LICENSE.txt')), false);
+  assert.notEqual(result.verified[0].sha256, sha256);
+  assert.deepEqual(exportSkill('agents').retained, ['example/alpha']);
 });

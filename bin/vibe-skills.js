@@ -137,12 +137,12 @@ function isWithin(parent, child) {
   return relative === '' || (!relative.startsWith(`..${path.sep}`) && relative !== '..' && !path.isAbsolute(relative));
 }
 
-function sameTree(source, destination) {
+function installedDigest(destination) {
   try {
     const stat = fs.lstatSync(destination);
-    return stat.isDirectory() && !stat.isSymbolicLink() && treeDigest(source) === treeDigest(destination);
+    return stat.isDirectory() ? treeDigest(destination) : null;
   } catch (error) {
-    if (error.code === 'ENOENT') return false;
+    if (error.code === 'ENOENT') return null;
     throw error;
   }
 }
@@ -367,6 +367,8 @@ switch (command) {
 
   case 'export': {
     const targets = require('../lib/export-layout');
+    const { mayDeliver } = require('../lib/catalog-policy');
+    const { readCuratedAssets, writeAsset } = require('../lib/curated-assets');
     const target = flags.target;
     if (!Object.hasOwn(targets, target)) {
       fail(`usage: vibe-skills export --target <${Object.keys(targets).join('|')}> (--ids a,b | --all) [--out dir] [--force]`);
@@ -382,8 +384,8 @@ switch (command) {
           if (!skill) fail(`no skill matches "${id}"`);
           return skill;
         })
-      : skills.filter(require('../lib/catalog-policy').mayDeliver);
-    if (chosen.some(s => !require('../lib/catalog-policy').mayDeliver(s))) fail('Requested skill is metadata-only under the catalog license policy.');
+      : skills.filter(mayDeliver);
+    if (chosen.some(s => !mayDeliver(s))) fail('Requested skill is metadata-only under the catalog license policy.');
     const targetDir = targets[target];
     const outRoot = flags.out
       ? path.resolve(flags.out, targetDir)
@@ -423,24 +425,46 @@ switch (command) {
     const written = [];
     const retained = [];
     const skipped = [];
+    const expectedDigests = new Map();
+    const previousDigests = new Map((Array.isArray(previous.verified) ? previous.verified : []).map(record => [record?.id, record?.sha256]));
     fs.mkdirSync(outRoot, { recursive: true });
-    for (const skill of chosen) {
-      const source = path.join(repoRoot, skill.path);
-      // Flatten export: agents expect skills directly inside the target directory
-      const dest = path.join(outRoot, path.basename(skill.path));
-      if (fs.existsSync(dest) && !flags.force) {
-        if (sameTree(source, dest)) retained.push(skill.id);
-        else skipped.push({ id: skill.id, reason: 'Existing directory differs from the catalog; use --force to replace it.' });
-        continue;
-      }
+    function prepareSkill(skill) {
       const staging = fs.mkdtempSync(path.join(outRoot, '.vibe-skills-stage-'));
-      const stagedSkill = path.join(staging, 'skill');
+      const directory = path.join(staging, 'skill');
+      try {
+        const { assets, generatedNotice } = readCuratedAssets(repoRoot, skill.id);
+        for (const asset of assets) writeAsset(directory, asset);
+        const legacy = generatedNotice ? treeDigest(directory) : null;
+        if (generatedNotice) writeAsset(directory, generatedNotice);
+        expectedDigests.set(skill.id, { current: treeDigest(directory), legacy });
+        return { staging, directory, generatedNotice };
+      } catch (error) {
+        fs.rmSync(staging, { recursive: true, force: true });
+        throw error;
+      }
+    }
+    function isOwnedLegacy(id, actual, legacy) {
+      return legacy && actual === legacy && previous.skills.includes(id) && previousDigests.get(id) === actual;
+    }
+    for (const skill of chosen) {
+      // Flatten export: agents expect skills directly inside the target directory.
+      const dest = path.join(outRoot, path.basename(skill.path));
+      const { staging, directory, generatedNotice } = prepareSkill(skill);
       const backup = path.join(staging, 'previous');
       let preserveBackup = false;
       try {
-        fs.cpSync(source, stagedSkill, { recursive: true, verbatimSymlinks: true });
+        if (fs.existsSync(dest) && !flags.force) {
+          const actual = installedDigest(dest);
+          const { current, legacy } = expectedDigests.get(skill.id);
+          if (actual === current) retained.push(skill.id);
+          else if (isOwnedLegacy(skill.id, actual, legacy)) {
+            fs.linkSync(path.join(directory, generatedNotice.name), path.join(dest, generatedNotice.name));
+            written.push(skill.id);
+          } else skipped.push({ id: skill.id, reason: 'Existing directory differs from the catalog; use --force to replace it.' });
+          continue;
+        }
         if (fs.existsSync(dest)) fs.renameSync(dest, backup);
-        try { fs.renameSync(stagedSkill, dest); }
+        try { fs.renameSync(directory, dest); }
         catch (error) {
           if (fs.existsSync(backup)) {
             try { fs.renameSync(backup, dest); }
@@ -459,8 +483,20 @@ switch (command) {
     const unverified = [];
     for (const id of trackedIds) {
       const skill = skills.find((candidate) => candidate.id === id);
-      if (skill && sameTree(path.join(repoRoot, skill.path), path.join(outRoot, path.basename(skill.path)))) verified.push(skill);
-      else unverified.push({ id, reason: skill ? 'Missing or different from the current catalog.' : 'Not present in the current catalog.' });
+      if (skill && mayDeliver(skill)) {
+        const directory = path.basename(skill.path);
+        const actual = installedDigest(path.join(outRoot, directory));
+        if (actual && !expectedDigests.has(id)) {
+          const { staging } = prepareSkill(skill);
+          fs.rmSync(staging, { recursive: true, force: true });
+        }
+        const { current, legacy } = expectedDigests.get(id) || {};
+        if (actual && (actual === current || isOwnedLegacy(id, actual, legacy))) {
+          verified.push({ id, directory, sha256: actual });
+          continue;
+        }
+      }
+      unverified.push({ id, reason: skill ? 'Missing or different from the current catalog.' : 'Not present in the current catalog.' });
     }
     const manifest = {
       schemaVersion: '2.0.0',
@@ -469,7 +505,7 @@ switch (command) {
       registryGeneratedAt: skillsFile.generatedAt,
       requestedSkills: chosen.map((skill) => skill.id),
       skills: verified.map((skill) => skill.id),
-      verified: verified.map((skill) => ({ id: skill.id, directory: path.basename(skill.path), sha256: treeDigest(path.join(repoRoot, skill.path)) })),
+      verified,
       written,
       retained,
       skipped,

@@ -37,6 +37,7 @@ const TARGETS = require('../lib/export-layout');
 const { findKit, inputSchema } = require('../lib/task-kit');
 const delivery = require('../lib/kit-delivery');
 const { mayDeliver } = require('../lib/catalog-policy');
+const { curatedInventory } = require('../lib/curated-assets');
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -56,13 +57,6 @@ const clampLimit = (value, fallback = 25, max = 100) => {
   if (!Number.isFinite(parsed) || parsed <= 0) return fallback;
   return Math.max(1, Math.min(Math.floor(parsed), max));
 };
-
-function exportFiles(directory, prefix = '') {
-  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
-    const relative = prefix ? `${prefix}/${entry.name}` : entry.name;
-    return entry.isDirectory() ? exportFiles(path.join(directory, entry.name), relative) : [relative];
-  }).sort();
-}
 
 // Keep the human-readable POSIX command safe for paths containing spaces or shell characters.
 function shellQuote(value) {
@@ -329,7 +323,10 @@ async function callTool(name, args, remote, root, endpoint) {
       const sourceDir = path.join(REPO_ROOT, skill.path);
       const project = args.project ? path.resolve(args.project) : process.cwd();
       const destination = path.join(project, TARGETS[target], path.basename(skill.path));
-      const files = exportFiles(sourceDir);
+      const inventory = curatedInventory(REPO_ROOT, skill.id);
+      const files = [inventory.provenance.name, ...inventory.files];
+      if (!inventory.noticeFiles.length) files.push(inventory.fallback().file);
+      files.sort();
       const commandArgs = [path.join(REPO_ROOT, 'bin', 'vibe-skills.js'), 'export', '--target', target, '--ids', skill.id, '--out', project];
 
       return textResult({
