@@ -278,6 +278,192 @@
         "assets": [],
         "routable": false
       }
+    },
+    {
+      "repo": "expo/skills",
+      "path": "plugins/expo/skills/expo-animation/SKILL.md",
+      "collection": "expo",
+      "language": "en",
+      "domain": "mobile",
+      "pricing": "free",
+      "slug": "expo-animation",
+      "title": "Expo Animation",
+      "description": "Implement motion and gesture-driven interactions in an Expo React Native app using Reanimated, Gesture Handler, screen transitions and haptics.",
+      "deliverables": [
+        "feature",
+        "mobile-app"
+      ],
+      "tools": [
+        "expo",
+        "react-native",
+        "reanimated",
+        "react-native-gesture-handler"
+      ],
+      "features": [
+        "gesture-animation",
+        "haptics",
+        "reduced-motion",
+        "screen-transitions"
+      ],
+      "stage": "build",
+      "check": "Try the gesture on device, interrupt and reverse it, verify reduced motion, and check for UI-thread stalls on a slow Android phone.",
+      "requiresTool": [
+        "expo",
+        "expo-router",
+        "react-native"
+      ],
+      "formats": [],
+      "reviewed": {
+        "checksum": "69709ea8089d17773983d0dd947cfefe7b5ec3636c8e357daca9a5b542fa9ed1",
+        "license": "MIT",
+        "licenseFiles": [
+          {
+            "name": "LICENSE.expo-repository",
+            "path": "LICENSE",
+            "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+            "kind": "notice"
+          },
+          {
+            "name": "LICENSE.expo-plugin",
+            "path": "plugins/expo/LICENSE",
+            "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+            "kind": "notice"
+          },
+          {
+            "name": "LICENSE",
+            "path": "plugins/expo/skills/expo-animation/LICENSE",
+            "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+            "kind": "notice"
+          }
+        ],
+        "assets": [
+          {
+            "name": "RECIPES.md",
+            "path": "plugins/expo/skills/expo-animation/RECIPES.md",
+            "sha256": "4db141cb346d49231c94a95aaa50844b85a71c47ec543e9f9f5a1f453abc9883",
+            "kind": "reference"
+          }
+        ],
+        "routable": true
+      }
+    },
+    {
+      "repo": "expo/skills",
+      "path": "plugins/expo/skills/expo-design-system/SKILL.md",
+      "collection": "expo",
+      "language": "en",
+      "domain": "mobile",
+      "pricing": "free",
+      "slug": "expo-design-system",
+      "title": "Expo Design System",
+      "description": "Extend Expo design tokens and reusable React Native component conventions for colors, spacing, typography, shadows, or styling audits.",
+      "deliverables": [
+        "feature",
+        "design-system-doc"
+      ],
+      "tools": [
+        "expo",
+        "react-native"
+      ],
+      "features": [
+        "design-tokens",
+        "typography",
+        "component-library",
+        "dark-mode"
+      ],
+      "stage": "design",
+      "check": "Check the rendered screen, test applicable interactions and accessibility states, and look for hardcoded values and repeated styles.",
+      "requiresTool": [
+        "expo",
+        "expo-router",
+        "react-native"
+      ],
+      "formats": [],
+      "reviewed": {
+        "checksum": "102e7d2cee193dc4e1dd06796a142106c7d5cc5a435791a031e3036e8200e635",
+        "license": "MIT",
+        "licenseFiles": [
+          {
+            "name": "LICENSE.expo-repository",
+            "path": "LICENSE",
+            "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+            "kind": "notice"
+          },
+          {
+            "name": "LICENSE.expo-plugin",
+            "path": "plugins/expo/LICENSE",
+            "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+            "kind": "notice"
+          }
+        ],
+        "assets": [
+          {
+            "name": "references/audit.md",
+            "path": "plugins/expo/skills/expo-design-system/references/audit.md",
+            "sha256": "a0ead76ab904c119a1353d8d91b9138144a97da43fdff683f291f2d45d868915",
+            "kind": "reference"
+          },
+          {
+            "name": "references/native-slop.md",
+            "path": "plugins/expo/skills/expo-design-system/references/native-slop.md",
+            "sha256": "5662bd04ac2d6367fc4ca3ae355ec1b970752dcd8693a099a5e0792227eb09c1",
+            "kind": "reference"
+          }
+        ],
+        "routable": true
+      }
+    },
+    {
+      "repo": "expo/skills",
+      "path": "plugins/expo/skills/expo-project-structure/SKILL.md",
+      "collection": "expo",
+      "language": "en",
+      "domain": "mobile",
+      "pricing": "free",
+      "slug": "expo-project-structure",
+      "title": "Expo Project Structure",
+      "description": "Scaffold a new Expo Router React Native mobile app with routes, screen components, shared UI, server helpers, styles and co-located tests.",
+      "deliverables": [
+        "mobile-app"
+      ],
+      "tools": [
+        "expo",
+        "expo-router",
+        "react-native"
+      ],
+      "features": [
+        "folder-structure",
+        "scaffolding"
+      ],
+      "stage": "plan",
+      "projectState": "new",
+      "check": "Check that only routes live inside src/app and that screens, shared UI and server-only imports are in the documented folders.",
+      "requiresTool": [
+        "expo",
+        "expo-router",
+        "react-native"
+      ],
+      "formats": [],
+      "reviewed": {
+        "checksum": "ec6221829186fea1672a86eac9c9f560aaa0d4929e9763e0a0e5c55504f23196",
+        "license": "MIT",
+        "licenseFiles": [
+          {
+            "name": "LICENSE.expo-repository",
+            "path": "LICENSE",
+            "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+            "kind": "notice"
+          },
+          {
+            "name": "LICENSE.expo-plugin",
+            "path": "plugins/expo/LICENSE",
+            "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+            "kind": "notice"
+          }
+        ],
+        "assets": [],
+        "routable": true
+      }
     }
   ]
 }

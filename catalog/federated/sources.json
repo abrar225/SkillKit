@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "firstParty": [
+    { "id": "anthropic", "repo": "anthropics/skills", "prefixes": ["skills/"] },
+    { "id": "elastic", "repo": "elastic/agent-skills", "prefixes": ["skills/", "plugins/"] },
+    { "id": "expo", "repo": "expo/skills", "prefixes": ["plugins/expo/skills/"] },
+    { "id": "google-gemini", "repo": "google-gemini/gemini-skills", "prefixes": ["skills/"] },
+    { "id": "hugging-face", "repo": "huggingface/skills", "prefixes": ["skills/"] },
+    { "id": "microsoft-azure", "repo": "microsoft/azure-skills", "prefixes": ["skills/", "plugins/", ".github/skills/"] },
+    { "id": "remotion", "repo": "remotion-dev/skills", "prefixes": ["skills/"] },
+    { "id": "sentry", "repo": "getsentry/skills", "prefixes": ["skills/"] },
+    { "id": "supabase", "repo": "supabase/agent-skills", "prefixes": ["skills/"] },
+    { "id": "vercel-agent-skills", "repo": "vercel-labs/agent-skills", "prefixes": ["skills/"] },
+    { "id": "vercel-labs", "repo": "vercel-labs/skills", "prefixes": ["skills/"] },
+    { "id": "wordpress", "repo": "WordPress/agent-skills", "prefixes": ["skills/"] }
+  ]
+}

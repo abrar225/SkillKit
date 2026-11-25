@@ -26,6 +26,7 @@ jobs:
       - name: Refresh reviewed upstream pins
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          SKILLSMP_API_KEY: ${{ secrets.SKILLSMP_API_KEY }}
         run: |
           node scripts/refresh-federation.js federation-snapshot.json 2> federation-report.json
           cat federation-report.json

@@ -1,6 +1,6 @@
 # SkillKit
 
-Describe the work to your agent. SkillKit selects a small set of instructions, reference links and checks from **192 skills and 157 resources across 14 domains**. Discovery writes zero files to the consuming project. You can request a single asset or a lockfile.
+Describe the work to your agent. SkillKit selects a small set of instructions, reference links and checks from **192 skills and 164 resources across 14 domains**. Discovery writes zero files to the consuming project. You can request a single asset or a lockfile.
 
 ## Start with one task
 
@@ -85,3 +85,7 @@ Curated and maintained by [Abrar Akhunji](https://github.com/abrar225). Reposito
 ## Measured performance
 
 On the frozen 40-brief holdout, SkillKit returned six fully usable kits, respected all scored constraints on 38 briefs, and made zero confidently wrong recommendations. In 15 paired artifact trials, the treatment recorded three wins and twelve ties. Two of the wins followed a no-match handoff. [Release evaluation](docs/RELEASE-EVALUATION.md)
+
+## Atlas snapshot
+
+357 unique public pointers discovered, 11 entries reviewed, 11 passed document validation, 10 with reviewed license evidence, 9 distinct after review, 6 approved for delivery, 6 mirrored and 4 additional routable entries. Directory hits alone cannot deliver a skill. [Source rules](docs/SOURCES.md) · [Per-source funnel](catalog/federated/snapshot.json)

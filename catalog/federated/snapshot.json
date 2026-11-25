@@ -1,33 +1,3178 @@
 {
   "schemaVersion": 1,
-  "verifiedAt": "2026-11-24T09:43:30.400Z",
+  "verifiedAt": "2026-11-25T05:16:45.025Z",
   "sources": {
     "skills.sh": {
       "state": "auth-required",
-      "credential": "VERCEL_OIDC_TOKEN"
+      "tier": "directory",
+      "access": "oidc",
+      "credential": "VERCEL_OIDC_TOKEN",
+      "queryBudget": 6,
+      "attempted": 0,
+      "succeeded": 0,
+      "sampled": 0,
+      "matched": 0
     },
     "skillsmp": {
-      "state": "reachable",
-      "sampled": 5,
+      "tier": "directory",
+      "access": "public",
+      "queryBudget": 6,
+      "attempted": 5,
+      "succeeded": 4,
+      "sampled": 40,
+      "matched": 25,
+      "state": "limited",
+      "httpStatus": 429,
+      "retryAfter": "13",
       "matchedReviewed": 1
     },
     "github-topic": {
+      "tier": "community",
+      "access": "api-key",
+      "queryBudget": 8,
+      "attempted": 8,
+      "succeeded": 8,
+      "sampled": 80,
+      "matched": 79,
       "state": "reachable",
-      "sampled": 30,
       "matchedReviewed": 4
     },
-    "vercel-labs": {
+    "github-code": {
+      "tier": "community",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 12,
+      "matched": 12,
       "state": "reachable",
-      "repository": "vercel-labs/skills"
+      "matchedReviewed": 0
+    },
+    "awesome-lists": {
+      "tier": "community",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 378,
+      "matched": 30,
+      "state": "reachable",
+      "matchedReviewed": 0
+    },
+    "anthropic": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 19,
+      "matched": 19,
+      "state": "reachable",
+      "licenseHint": null,
+      "matchedReviewed": 2
+    },
+    "elastic": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 62,
+      "matched": 62,
+      "state": "reachable",
+      "licenseHint": "Apache-2.0",
+      "matchedReviewed": 0
+    },
+    "expo": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 23,
+      "matched": 23,
+      "state": "reachable",
+      "licenseHint": "MIT",
+      "matchedReviewed": 3
+    },
+    "google-gemini": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 4,
+      "matched": 4,
+      "state": "reachable",
+      "licenseHint": "Apache-2.0",
+      "matchedReviewed": 0
+    },
+    "hugging-face": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 25,
+      "matched": 25,
+      "state": "reachable",
+      "licenseHint": "Apache-2.0",
+      "matchedReviewed": 0
+    },
+    "microsoft-azure": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 35,
+      "matched": 35,
+      "state": "reachable",
+      "licenseHint": "MIT",
+      "matchedReviewed": 0
+    },
+    "remotion": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 14,
+      "matched": 14,
+      "state": "reachable",
+      "licenseHint": null,
+      "matchedReviewed": 0
+    },
+    "sentry": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 31,
+      "matched": 31,
+      "state": "reachable",
+      "licenseHint": "Apache-2.0",
+      "matchedReviewed": 0
+    },
+    "supabase": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 2,
+      "matched": 2,
+      "state": "reachable",
+      "licenseHint": "MIT",
+      "matchedReviewed": 0
+    },
+    "vercel-agent-skills": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 9,
+      "matched": 9,
+      "state": "reachable",
+      "licenseHint": null,
+      "matchedReviewed": 0
+    },
+    "vercel-labs": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 1,
+      "matched": 1,
+      "state": "reachable",
+      "licenseHint": "MIT",
+      "matchedReviewed": 1
+    },
+    "wordpress": {
+      "tier": "first-party",
+      "access": "api-key",
+      "queryBudget": 1,
+      "attempted": 1,
+      "succeeded": 1,
+      "sampled": 20,
+      "matched": 20,
+      "state": "reachable",
+      "licenseHint": "NOASSERTION",
+      "matchedReviewed": 0
     },
     "superpowers": {
       "state": "reachable",
+      "tier": "community",
       "repository": "obra/superpowers"
-    },
-    "anthropic": {
-      "state": "reachable",
-      "repository": "anthropics/skills"
     }
+  },
+  "funnel": {
+    "totals": {
+      "discovered": 357,
+      "licenseHinted": 151,
+      "reviewed": 11,
+      "licensed": 10,
+      "valid": 11,
+      "blocked": 2,
+      "unique": 9,
+      "approved": 6,
+      "routable": 4,
+      "mirrored": 6,
+      "metadataOnly": 3,
+      "quarantined": 2,
+      "removed": 0,
+      "unavailable": 0,
+      "unchanged": 8,
+      "sampled": 755
+    },
+    "sources": {
+      "anthropic": {
+        "sampled": 19,
+        "discovered": 19,
+        "licenseHinted": 0,
+        "reviewed": 2,
+        "licensed": 1,
+        "valid": 2,
+        "blocked": 0,
+        "unique": 2,
+        "approved": 1,
+        "routable": 0,
+        "mirrored": 1,
+        "metadataOnly": 1,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 2
+      },
+      "awesome-lists": {
+        "sampled": 378,
+        "discovered": 30,
+        "licenseHinted": 0,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "elastic": {
+        "sampled": 62,
+        "discovered": 30,
+        "licenseHinted": 30,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "expo": {
+        "sampled": 23,
+        "discovered": 23,
+        "licenseHinted": 23,
+        "reviewed": 3,
+        "licensed": 3,
+        "valid": 3,
+        "blocked": 0,
+        "unique": 3,
+        "approved": 3,
+        "routable": 3,
+        "mirrored": 3,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 3
+      },
+      "github-code": {
+        "sampled": 12,
+        "discovered": 12,
+        "licenseHinted": 0,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "github-repository": {
+        "sampled": 0,
+        "discovered": 0,
+        "licenseHinted": 0,
+        "reviewed": 4,
+        "licensed": 4,
+        "valid": 4,
+        "blocked": 2,
+        "unique": 2,
+        "approved": 1,
+        "routable": 1,
+        "mirrored": 1,
+        "metadataOnly": 1,
+        "quarantined": 2,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 1
+      },
+      "github-topic": {
+        "sampled": 80,
+        "discovered": 79,
+        "licenseHinted": 0,
+        "reviewed": 4,
+        "licensed": 4,
+        "valid": 4,
+        "blocked": 2,
+        "unique": 2,
+        "approved": 1,
+        "routable": 1,
+        "mirrored": 1,
+        "metadataOnly": 1,
+        "quarantined": 2,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 1
+      },
+      "google-gemini": {
+        "sampled": 4,
+        "discovered": 4,
+        "licenseHinted": 4,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "hugging-face": {
+        "sampled": 25,
+        "discovered": 25,
+        "licenseHinted": 25,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "microsoft-azure": {
+        "sampled": 35,
+        "discovered": 35,
+        "licenseHinted": 35,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "remotion": {
+        "sampled": 14,
+        "discovered": 14,
+        "licenseHinted": 0,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "sentry": {
+        "sampled": 31,
+        "discovered": 31,
+        "licenseHinted": 31,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "skills.sh": {
+        "sampled": 0,
+        "discovered": 0,
+        "licenseHinted": 0,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "skillsmp": {
+        "sampled": 40,
+        "discovered": 25,
+        "licenseHinted": 0,
+        "reviewed": 1,
+        "licensed": 0,
+        "valid": 1,
+        "blocked": 0,
+        "unique": 1,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 1,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 1
+      },
+      "supabase": {
+        "sampled": 2,
+        "discovered": 2,
+        "licenseHinted": 2,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "superpowers": {
+        "sampled": 0,
+        "discovered": 0,
+        "licenseHinted": 0,
+        "reviewed": 1,
+        "licensed": 1,
+        "valid": 1,
+        "blocked": 0,
+        "unique": 1,
+        "approved": 1,
+        "routable": 0,
+        "mirrored": 1,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 1
+      },
+      "vercel-agent-skills": {
+        "sampled": 9,
+        "discovered": 9,
+        "licenseHinted": 0,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      },
+      "vercel-labs": {
+        "sampled": 1,
+        "discovered": 1,
+        "licenseHinted": 1,
+        "reviewed": 1,
+        "licensed": 1,
+        "valid": 1,
+        "blocked": 0,
+        "unique": 1,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 1,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 1
+      },
+      "wordpress": {
+        "sampled": 20,
+        "discovered": 20,
+        "licenseHinted": 0,
+        "reviewed": 0,
+        "licensed": 0,
+        "valid": 0,
+        "blocked": 0,
+        "unique": 0,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 0,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 0
+      }
+    },
+    "tiers": {
+      "community": {
+        "sampled": 470,
+        "discovered": 121,
+        "licenseHinted": 0,
+        "reviewed": 5,
+        "licensed": 5,
+        "valid": 5,
+        "blocked": 2,
+        "unique": 3,
+        "approved": 2,
+        "routable": 1,
+        "mirrored": 2,
+        "metadataOnly": 1,
+        "quarantined": 2,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 2
+      },
+      "directory": {
+        "sampled": 40,
+        "discovered": 25,
+        "licenseHinted": 0,
+        "reviewed": 1,
+        "licensed": 0,
+        "valid": 1,
+        "blocked": 0,
+        "unique": 1,
+        "approved": 0,
+        "routable": 0,
+        "mirrored": 0,
+        "metadataOnly": 1,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 1
+      },
+      "first-party": {
+        "sampled": 245,
+        "discovered": 213,
+        "licenseHinted": 151,
+        "reviewed": 6,
+        "licensed": 5,
+        "valid": 6,
+        "blocked": 0,
+        "unique": 6,
+        "approved": 4,
+        "routable": 3,
+        "mirrored": 4,
+        "metadataOnly": 2,
+        "quarantined": 0,
+        "removed": 0,
+        "unavailable": 0,
+        "unchanged": 6
+      }
+    }
+  },
+  "candidates": {
+    "skillsmp": [
+      {
+        "repo": "Galaxy-Dawn/claude-scholar",
+        "slug": "doc-coauthoring",
+        "url": "https://skillsmp.com/creators/galaxy-dawn/claude-scholar/skills-doc-coauthoring"
+      },
+      {
+        "repo": "shareAI-lab/Kode-CLI",
+        "slug": "doc-coauthoring",
+        "url": "https://skillsmp.com/creators/shareai-lab/kode-cli/packages-builtin-skills-skills-doc-coauthoring"
+      },
+      {
+        "repo": "brycewang-stanford/Auto-Empirical-Research-Skills",
+        "slug": "doc-coauthoring",
+        "url": "https://skillsmp.com/creators/brycewang-stanford/auto-empirical-research-skills/skills-19-cuellarc05-vera-economic-intelligence-research-doc-coauthoring"
+      },
+      {
+        "repo": "moonrepo/moon",
+        "slug": "doc-coauthoring",
+        "url": "https://skillsmp.com/creators/moonrepo/moon/agents-skills-doc-coauthoring"
+      },
+      {
+        "repo": "fossasia/eventyay-interpretation",
+        "slug": "doc-coauthoring",
+        "url": "https://skillsmp.com/creators/fossasia/eventyay-interpretation/agents-skills-doc-coauthoring"
+      },
+      {
+        "repo": "Prismer-AI/PrismerCloud",
+        "slug": "doc-coauthoring",
+        "url": "https://skillsmp.com/creators/prismer-ai/prismercloud/sdk-cloud-catalog-skills-doc-coauthoring"
+      },
+      {
+        "repo": "getsentry/skills",
+        "slug": "doc-coauthoring",
+        "url": "https://skillsmp.com/creators/getsentry/skills/skills-doc-coauthoring"
+      },
+      {
+        "repo": "Ohh-889/skyroc",
+        "slug": "doc-coauthoring",
+        "url": "https://skillsmp.com/creators/ohh-889/skyroc/agents-skills-doc-coauthoring"
+      },
+      {
+        "repo": "ECNU-ICALK/AutoSkill",
+        "slug": "doc-coauthoring",
+        "url": "https://skillsmp.com/creators/ecnu-icalk/autoskill/skillbank-common-anthropics-skill-doc-coauthoring"
+      },
+      {
+        "repo": "openclaw/openclaw",
+        "slug": "technical-documentation",
+        "url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-technical-documentation"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "documentation-lookup",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/skills-documentation-lookup"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "docs-governance",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/pi-core-skills-docs-governance"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "living-docs-governance",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/pi-core-skills-living-docs-governance"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "customs-trade-compliance",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/skills-customs-trade-compliance"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "frontend-design-direction",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/skills-frontend-design-direction"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "frontend-slides",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-frontend-slides"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "frontend-patterns",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/docs-ko-kr-skills-frontend-patterns"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "ui-canvas",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/skills-ui-canvas"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "homelab-wireguard-vpn",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/skills-homelab-wireguard-vpn"
+      },
+      {
+        "repo": "deepseek-ai/deepseek-harness",
+        "slug": "dsh-responsive-ui",
+        "url": "https://skillsmp.com/creators/deepseek-ai/deepseek-harness/agents-skills-dsh-responsive-ui"
+      },
+      {
+        "repo": "anomalyco/opencode",
+        "slug": "component-tests",
+        "url": "https://skillsmp.com/creators/anomalyco/opencode/opencode-skills-component-tests"
+      },
+      {
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+        "slug": "ui-ux-pro-max",
+        "url": "https://skillsmp.com/creators/nextlevelbuilder/ui-ux-pro-max-skill/claude-skills-ui-ux-pro-max"
+      },
+      {
+        "repo": "nexu-io/open-design",
+        "slug": "mobile-app",
+        "url": "https://skillsmp.com/creators/nexu-io/open-design/plugins-official-examples-mobile-app"
+      },
+      {
+        "repo": "nexu-io/open-design",
+        "slug": "mobile-onboarding",
+        "url": "https://skillsmp.com/creators/nexu-io/open-design/plugins-official-examples-mobile-onboarding"
+      }
+    ],
+    "github-topic": [
+      {
+        "repo": "social-media-skills/skills",
+        "url": "https://github.com/social-media-skills/skills"
+      },
+      {
+        "repo": "xyluxx/openoutbound",
+        "url": "https://github.com/xyluxx/openoutbound"
+      },
+      {
+        "repo": "harshith-vaddiparthy/content-toolkit",
+        "url": "https://github.com/harshith-vaddiparthy/content-toolkit"
+      },
+      {
+        "repo": "starrybodies/reword",
+        "url": "https://github.com/starrybodies/reword"
+      },
+      {
+        "repo": "franndeli/writing-coach",
+        "url": "https://github.com/franndeli/writing-coach"
+      },
+      {
+        "repo": "LoubakInnovations/humanizer-linkedin",
+        "url": "https://github.com/LoubakInnovations/humanizer-linkedin"
+      },
+      {
+        "repo": "milad-ahmd/linkedin-growth-manager",
+        "url": "https://github.com/milad-ahmd/linkedin-growth-manager"
+      },
+      {
+        "repo": "hyderhusainarastu/ai-writing-humanizer",
+        "url": "https://github.com/hyderhusainarastu/ai-writing-humanizer"
+      },
+      {
+        "repo": "Vitrehac/anti-ai-slop",
+        "url": "https://github.com/Vitrehac/anti-ai-slop"
+      },
+      {
+        "repo": "MakeMyClip/editor",
+        "url": "https://github.com/MakeMyClip/editor"
+      },
+      {
+        "repo": "odaiouattara0022-del/davinci-resolve-skill",
+        "url": "https://github.com/odaiouattara0022-del/davinci-resolve-skill"
+      },
+      {
+        "repo": "kitloomlk-stack/davinci-resolve-video-kit",
+        "url": "https://github.com/kitloomlk-stack/davinci-resolve-video-kit"
+      },
+      {
+        "repo": "vitaliebumbu/davinci-resolve-youtube-audio",
+        "url": "https://github.com/vitaliebumbu/davinci-resolve-youtube-audio"
+      },
+      {
+        "repo": "LondheShubham153/codex-davinci-editing",
+        "url": "https://github.com/LondheShubham153/codex-davinci-editing"
+      },
+      {
+        "repo": "johnnyfekete/resolve-video-skills",
+        "url": "https://github.com/johnnyfekete/resolve-video-skills"
+      },
+      {
+        "repo": "qasimrazamalik-coder/motion-forge",
+        "url": "https://github.com/qasimrazamalik-coder/motion-forge"
+      },
+      {
+        "repo": "AndriiShramko/360-video-editing-playbook",
+        "url": "https://github.com/AndriiShramko/360-video-editing-playbook"
+      },
+      {
+        "repo": "Vincentwei1021/video-shotcraft",
+        "url": "https://github.com/Vincentwei1021/video-shotcraft"
+      },
+      {
+        "repo": "0xsline/OpenChatCut",
+        "url": "https://github.com/0xsline/OpenChatCut"
+      },
+      {
+        "repo": "Leonxlnx/cinetic",
+        "url": "https://github.com/Leonxlnx/cinetic"
+      },
+      {
+        "repo": "pengchujin/livecanvas",
+        "url": "https://github.com/pengchujin/livecanvas"
+      },
+      {
+        "repo": "Vincentwei1021/video-talkcraft",
+        "url": "https://github.com/Vincentwei1021/video-talkcraft"
+      },
+      {
+        "repo": "zhuyansen/awesome-claude-video-skills",
+        "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
+      },
+      {
+        "repo": "Vincentwei1021/anything2explainer",
+        "url": "https://github.com/Vincentwei1021/anything2explainer"
+      },
+      {
+        "repo": "hassancs91/claude-faceless-shorts-creator",
+        "url": "https://github.com/hassancs91/claude-faceless-shorts-creator"
+      },
+      {
+        "repo": "runesleo/claude-video-kit",
+        "url": "https://github.com/runesleo/claude-video-kit"
+      },
+      {
+        "repo": "agentskills/agentskills",
+        "url": "https://github.com/agentskills/agentskills"
+      },
+      {
+        "repo": "unclecatvn/agent-skills",
+        "url": "https://github.com/unclecatvn/agent-skills"
+      },
+      {
+        "repo": "NateBJones-Projects/developer-documentation-skill",
+        "url": "https://github.com/NateBJones-Projects/developer-documentation-skill"
+      },
+      {
+        "repo": "softaworks/agent-toolkit",
+        "url": "https://github.com/softaworks/agent-toolkit"
+      },
+      {
+        "repo": "rodydavis/agent-skills-generator",
+        "url": "https://github.com/rodydavis/agent-skills-generator"
+      },
+      {
+        "repo": "withqwerty/football-docs",
+        "url": "https://github.com/withqwerty/football-docs"
+      },
+      {
+        "repo": "leter/zh-tech-writing",
+        "url": "https://github.com/leter/zh-tech-writing"
+      },
+      {
+        "repo": "Rylaispirit/rylai-codex-hermes-skills",
+        "url": "https://github.com/Rylaispirit/rylai-codex-hermes-skills"
+      },
+      {
+        "repo": "maxrave-dev/kotlin-footguns",
+        "url": "https://github.com/maxrave-dev/kotlin-footguns"
+      },
+      {
+        "repo": "heikkitoivonen/python-time-space-complexity",
+        "url": "https://github.com/heikkitoivonen/python-time-space-complexity"
+      },
+      {
+        "repo": "arvindrk/extract-design-system",
+        "url": "https://github.com/arvindrk/extract-design-system"
+      },
+      {
+        "repo": "oil-oil/oil-ui",
+        "url": "https://github.com/oil-oil/oil-ui"
+      },
+      {
+        "repo": "madebymustafa/design-taste",
+        "url": "https://github.com/madebymustafa/design-taste"
+      },
+      {
+        "repo": "funboy322/avoid-ai-design",
+        "url": "https://github.com/funboy322/avoid-ai-design"
+      },
+      {
+        "repo": "ryuxdsgn/design-intelligence",
+        "url": "https://github.com/ryuxdsgn/design-intelligence"
+      },
+      {
+        "repo": "educlopez/ui-craft",
+        "url": "https://github.com/educlopez/ui-craft"
+      },
+      {
+        "repo": "superdesigndev/superdesign-skill",
+        "url": "https://github.com/superdesigndev/superdesign-skill"
+      },
+      {
+        "repo": "feature-sliced/skills",
+        "url": "https://github.com/feature-sliced/skills"
+      },
+      {
+        "repo": "s1gmamale1/apple-design-skills",
+        "url": "https://github.com/s1gmamale1/apple-design-skills"
+      },
+      {
+        "repo": "master5d/claude-design-skills",
+        "url": "https://github.com/master5d/claude-design-skills"
+      },
+      {
+        "repo": "shammarafzal/claude-flutter-mobile-app-development-skill",
+        "url": "https://github.com/shammarafzal/claude-flutter-mobile-app-development-skill"
+      },
+      {
+        "repo": "adevra/unity-shader-agent-skills",
+        "url": "https://github.com/adevra/unity-shader-agent-skills"
+      },
+      {
+        "repo": "clivejefferies/skills",
+        "url": "https://github.com/clivejefferies/skills"
+      },
+      {
+        "repo": "Aarvion-AI/stackwise-skills",
+        "url": "https://github.com/Aarvion-AI/stackwise-skills"
+      },
+      {
+        "repo": "omarSanOc/spec-driven-mobile-development",
+        "url": "https://github.com/omarSanOc/spec-driven-mobile-development"
+      },
+      {
+        "repo": "syncfusion/maui-toolkit-ui-components-skills",
+        "url": "https://github.com/syncfusion/maui-toolkit-ui-components-skills"
+      },
+      {
+        "repo": "martgueritainaccurate875/skills",
+        "url": "https://github.com/martgueritainaccurate875/skills"
+      },
+      {
+        "repo": "Albaylar/Mobile-Development-Kit",
+        "url": "https://github.com/Albaylar/Mobile-Development-Kit"
+      },
+      {
+        "repo": "khadinakbarlabs/expo-mobile-app-builder",
+        "url": "https://github.com/khadinakbarlabs/expo-mobile-app-builder"
+      },
+      {
+        "repo": "brunoviews/agent-skills",
+        "url": "https://github.com/brunoviews/agent-skills"
+      },
+      {
+        "repo": "datamodel-code-generator/datamodel-code-generator",
+        "url": "https://github.com/datamodel-code-generator/datamodel-code-generator"
+      },
+      {
+        "repo": "alextnetto/res",
+        "url": "https://github.com/alextnetto/res"
+      },
+      {
+        "repo": "unstackedapps/opensuitemcp",
+        "url": "https://github.com/unstackedapps/opensuitemcp"
+      },
+      {
+        "repo": "avivsinai/langfuse-mcp",
+        "url": "https://github.com/avivsinai/langfuse-mcp"
+      },
+      {
+        "repo": "saineshnakra/automated-data-analyst",
+        "url": "https://github.com/saineshnakra/automated-data-analyst"
+      },
+      {
+        "repo": "godwit-email/godwit",
+        "url": "https://github.com/godwit-email/godwit"
+      },
+      {
+        "repo": "retentioneering/retentioneering-tools",
+        "url": "https://github.com/retentioneering/retentioneering-tools"
+      },
+      {
+        "repo": "qcri/codebadger",
+        "url": "https://github.com/qcri/codebadger"
+      },
+      {
+        "repo": "brycewang-stanford/Free-Research-Crew",
+        "url": "https://github.com/brycewang-stanford/Free-Research-Crew"
+      },
+      {
+        "repo": "aiopshwang/data-analysis-ml-agent-skills",
+        "url": "https://github.com/aiopshwang/data-analysis-ml-agent-skills"
+      },
+      {
+        "repo": "kaomei/stickman-video-director",
+        "url": "https://github.com/kaomei/stickman-video-director"
+      },
+      {
+        "repo": "kajisho5/ffmpeg-skill",
+        "url": "https://github.com/kajisho5/ffmpeg-skill"
+      },
+      {
+        "repo": "JimmySadek/video-fetcher-to-markdown",
+        "url": "https://github.com/JimmySadek/video-fetcher-to-markdown"
+      },
+      {
+        "repo": "bestagentkits/motion-video-skill",
+        "url": "https://github.com/bestagentkits/motion-video-skill"
+      },
+      {
+        "repo": "alisadiq-ai/favstash-ai-video-editing-skills",
+        "url": "https://github.com/alisadiq-ai/favstash-ai-video-editing-skills"
+      },
+      {
+        "repo": "derek-zhuolin/motion-skill",
+        "url": "https://github.com/derek-zhuolin/motion-skill"
+      },
+      {
+        "repo": "Jakeschincariol/master-skills",
+        "url": "https://github.com/Jakeschincariol/master-skills"
+      },
+      {
+        "repo": "ChatCut-Inc/agent-plugin",
+        "url": "https://github.com/ChatCut-Inc/agent-plugin"
+      },
+      {
+        "repo": "kurbaitaev/ghost-editor",
+        "url": "https://github.com/kurbaitaev/ghost-editor"
+      }
+    ],
+    "github-code": [
+      {
+        "repo": "butterbase-ai/butterbase",
+        "path": "SKILL.md",
+        "url": "https://github.com/butterbase-ai/butterbase/blob/5ca615ce272cd00fdb4fcac187c80a9f0f1bcbb9/SKILL.md"
+      },
+      {
+        "repo": "Dicklesworthstone/mcp_agent_mail",
+        "path": "SKILL.md",
+        "url": "https://github.com/Dicklesworthstone/mcp_agent_mail/blob/0c5ee1f9832d765cdd3bb38357490d58e8310297/SKILL.md"
+      },
+      {
+        "repo": "awarexone/Agentic-Bug-Hunter",
+        "path": "SKILL.md",
+        "url": "https://github.com/awarexone/Agentic-Bug-Hunter/blob/82f4512ec432765297c36e6b3ef7dc3fe5a58be2/SKILL.md"
+      },
+      {
+        "repo": "butterbase-ai/butterbase-skills",
+        "path": "SKILL.md",
+        "url": "https://github.com/butterbase-ai/butterbase-skills/blob/a90840372baf518a6747217cc8b6b2f9bd75bf6e/SKILL.md"
+      },
+      {
+        "repo": "sharptoolbox/ontology-driven-dev",
+        "path": "SKILL.md",
+        "url": "https://github.com/sharptoolbox/ontology-driven-dev/blob/08686470f7af0a9095a000744d69e28c80f74534/SKILL.md"
+      },
+      {
+        "repo": "xwtro0tk1t-cloud/harness",
+        "path": "SKILL.md",
+        "url": "https://github.com/xwtro0tk1t-cloud/harness/blob/3e8bb50bc16aa8b706a2151e6b24a2966b2f8f19/SKILL.md"
+      },
+      {
+        "repo": "xenitV1/claude-code-maestro",
+        "path": "SKILL.md",
+        "url": "https://github.com/xenitV1/claude-code-maestro/blob/924315bc623ae2553a8309cfd595273f27d08d3e/SKILL.md"
+      },
+      {
+        "repo": "agentspan-ai/agentspan",
+        "path": "SKILL.md",
+        "url": "https://github.com/agentspan-ai/agentspan/blob/9efab45f45b820d3811e02bc3590e5669d74d097/SKILL.md"
+      },
+      {
+        "repo": "NeoSoul-AI/rubric-prediction-skill",
+        "path": "SKILL.md",
+        "url": "https://github.com/NeoSoul-AI/rubric-prediction-skill/blob/88ac84e8bb49dde91cf17ee1d094abd24ccc29a6/SKILL.md"
+      },
+      {
+        "repo": "Wholiver/swiftui-design-skill",
+        "path": "SKILL.md",
+        "url": "https://github.com/Wholiver/swiftui-design-skill/blob/2c82638ebd3c801d9d2d12b5f2d6c20495939995/SKILL.md"
+      },
+      {
+        "repo": "emsifa/api-wilayah-indonesia",
+        "path": "SKILL.md",
+        "url": "https://github.com/emsifa/api-wilayah-indonesia/blob/493bd1c390ca6dc8156cd3fd579394b375ab2398/SKILL.md"
+      },
+      {
+        "repo": "archlizheng/frontend-slides-editable",
+        "path": "SKILL.md",
+        "url": "https://github.com/archlizheng/frontend-slides-editable/blob/e5663e6a0bdc2c2a673198bab3fb61036a7f20ee/SKILL.md"
+      }
+    ],
+    "awesome-lists": [
+      {
+        "repo": "VoltAgent/voltagent",
+        "url": "https://github.com/VoltAgent/voltagent"
+      },
+      {
+        "repo": "user-attachments/assets",
+        "url": "https://github.com/user-attachments/assets"
+      },
+      {
+        "repo": "VoltAgent/official-mcp-servers",
+        "url": "https://github.com/VoltAgent/official-mcp-servers"
+      },
+      {
+        "repo": "serpapi/serpapi-search-tools-python",
+        "url": "https://github.com/serpapi/serpapi-search-tools-python"
+      },
+      {
+        "repo": "serpapi/serpapi-cli",
+        "url": "https://github.com/serpapi/serpapi-cli"
+      },
+      {
+        "repo": "crawlbase/crawlbase-mcp",
+        "url": "https://github.com/crawlbase/crawlbase-mcp"
+      },
+      {
+        "repo": "crawlbase/langchain-crawlbase",
+        "url": "https://github.com/crawlbase/langchain-crawlbase"
+      },
+      {
+        "repo": "crawlbase/n8n-nodes-crawlbase",
+        "url": "https://github.com/crawlbase/n8n-nodes-crawlbase"
+      },
+      {
+        "repo": "LambdaTest/agent-skills",
+        "url": "https://github.com/LambdaTest/agent-skills"
+      },
+      {
+        "repo": "modem-dev/skills",
+        "url": "https://github.com/modem-dev/skills"
+      },
+      {
+        "repo": "officialzeroxyz/zero-plugins",
+        "url": "https://github.com/officialzeroxyz/zero-plugins"
+      },
+      {
+        "repo": "angular/skills",
+        "url": "https://github.com/angular/skills"
+      },
+      {
+        "repo": "trycourier/courier-skills",
+        "url": "https://github.com/trycourier/courier-skills"
+      },
+      {
+        "repo": "firecrawl/cli",
+        "url": "https://github.com/firecrawl/cli"
+      },
+      {
+        "repo": "veniceai/skills",
+        "url": "https://github.com/veniceai/skills"
+      },
+      {
+        "repo": "vercel-labs/agent-skills",
+        "url": "https://github.com/vercel-labs/agent-skills"
+      },
+      {
+        "repo": "cloudflare/security-audit-skill",
+        "url": "https://github.com/cloudflare/security-audit-skill"
+      },
+      {
+        "repo": "coreyhaines31/marketingskills",
+        "url": "https://github.com/coreyhaines31/marketingskills"
+      },
+      {
+        "repo": "realkimbarrett/advertising-skills",
+        "url": "https://github.com/realkimbarrett/advertising-skills"
+      },
+      {
+        "repo": "deanpeters/Product-Manager-Skills",
+        "url": "https://github.com/deanpeters/Product-Manager-Skills"
+      },
+      {
+        "repo": "phuryn/pm-skills",
+        "url": "https://github.com/phuryn/pm-skills"
+      },
+      {
+        "repo": "makenotion/notion-cookbook",
+        "url": "https://github.com/makenotion/notion-cookbook"
+      },
+      {
+        "repo": "makenotion/claude-code-notion-plugin",
+        "url": "https://github.com/makenotion/claude-code-notion-plugin"
+      },
+      {
+        "repo": "resend/resend-skills",
+        "url": "https://github.com/resend/resend-skills"
+      },
+      {
+        "repo": "redis/agent-skills",
+        "url": "https://github.com/redis/agent-skills"
+      },
+      {
+        "repo": "NVIDIA/skills",
+        "url": "https://github.com/NVIDIA/skills"
+      },
+      {
+        "repo": "google/skills",
+        "url": "https://github.com/google/skills"
+      },
+      {
+        "repo": "cypress-io/ai-toolkit",
+        "url": "https://github.com/cypress-io/ai-toolkit"
+      },
+      {
+        "repo": "qdrant/skills",
+        "url": "https://github.com/qdrant/skills"
+      },
+      {
+        "repo": "zilliztech/milvus-skill",
+        "url": "https://github.com/zilliztech/milvus-skill"
+      }
+    ],
+    "anthropic": [
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/academy-guide/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "academy-guide",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/algorithmic-art/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "algorithmic-art",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/canvas-design/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "canvas-design",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/claude-api/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "claude-api",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/discernment-nudge/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "discernment-nudge",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/docx/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "docx",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/frontend-design/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "frontend-design",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/internal-comms/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "internal-comms",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/mcp-builder/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "mcp-builder",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/pdf/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "pdf",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/pptx/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "pptx",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/skill-creator/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "skill-creator",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/slack-gif-creator/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "slack-gif-creator",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/theme-factory/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "theme-factory",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/web-artifacts-builder/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "web-artifacts-builder",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/webapp-testing/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "webapp-testing",
+        "licenseHint": null
+      },
+      {
+        "repo": "anthropics/skills",
+        "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+        "path": "skills/xlsx/SKILL.md",
+        "url": "https://github.com/anthropics/skills",
+        "slug": "xlsx",
+        "licenseHint": null
+      }
+    ],
+    "elastic": [
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/cloud/skills/onboarding/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "onboarding",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/cloud/skills/provisioning/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "provisioning",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/elasticsearch/skills/elasticsearch-anomaly-detection-explainer/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-anomaly-detection-explainer",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/elasticsearch/skills/elasticsearch-anomaly-detection/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-anomaly-detection",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/elasticsearch/skills/elasticsearch-cluster-health/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-cluster-health",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/elasticsearch/skills/elasticsearch-esql/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-esql",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/elasticsearch/skills/elasticsearch-index-design/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-index-design",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/elasticsearch/skills/elasticsearch-ingest/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-ingest",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/elasticsearch/skills/elasticsearch-onboarding/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-onboarding",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/elasticsearch/skills/elasticsearch-query-optimization/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-query-optimization",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/elasticsearch/skills/elasticsearch-reindex/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-reindex",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/elasticsearch/skills/elasticsearch-search-relevance/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-search-relevance",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/kibana/skills/kibana-agent-builder/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-agent-builder",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/kibana/skills/kibana-alerting-rules/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-alerting-rules",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/kibana/skills/kibana-anomaly-detection/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-anomaly-detection",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/kibana/skills/kibana-cases/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-cases",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/kibana/skills/kibana-context-engine/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-context-engine",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/kibana/skills/kibana-dashboards/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-dashboards",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/kibana/skills/kibana-workflows/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-workflows",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/observability/skills/csp-investigation/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "csp-investigation",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/observability/skills/k8s-investigation/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "k8s-investigation",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/observability/skills/llm-obs/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "llm-obs",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/observability/skills/onboarding/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "onboarding",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/observability/skills/service-reliability/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "service-reliability",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/observability/skills/sre-triage/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "sre-triage",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/security/skills/alert-analysis/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "alert-analysis",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/security/skills/alert-triage/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "alert-triage",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/security/skills/case-management/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "case-management",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/security/skills/detection-rule-management/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "detection-rule-management",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/security/skills/generate-security-sample-data/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "generate-security-sample-data",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "plugins/security/skills/ml-integrations/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "ml-integrations",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/cloud/onboarding/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "onboarding",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/cloud/provisioning/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "provisioning",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/elasticsearch/elasticsearch-anomaly-detection-explainer/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-anomaly-detection-explainer",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/elasticsearch/elasticsearch-anomaly-detection/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-anomaly-detection",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/elasticsearch/elasticsearch-cluster-health/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-cluster-health",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/elasticsearch/elasticsearch-esql/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-esql",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/elasticsearch/elasticsearch-index-design/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-index-design",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/elasticsearch/elasticsearch-ingest/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-ingest",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/elasticsearch/elasticsearch-onboarding/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-onboarding",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/elasticsearch/elasticsearch-query-optimization/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-query-optimization",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/elasticsearch/elasticsearch-reindex/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-reindex",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/elasticsearch/elasticsearch-search-relevance/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "elasticsearch-search-relevance",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/kibana/kibana-agent-builder/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-agent-builder",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/kibana/kibana-alerting-rules/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-alerting-rules",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/kibana/kibana-anomaly-detection/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-anomaly-detection",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/kibana/kibana-cases/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-cases",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/kibana/kibana-context-engine/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-context-engine",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/kibana/kibana-dashboards/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-dashboards",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/kibana/kibana-workflows/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "kibana-workflows",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/observability/csp-investigation/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "csp-investigation",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/observability/k8s-investigation/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "k8s-investigation",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/observability/llm-obs/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "llm-obs",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/observability/onboarding/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "onboarding",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/observability/service-reliability/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "service-reliability",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/observability/sre-triage/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "sre-triage",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/security/alert-analysis/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "alert-analysis",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/security/alert-triage/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "alert-triage",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/security/case-management/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "case-management",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/security/detection-rule-management/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "detection-rule-management",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/security/generate-security-sample-data/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "generate-security-sample-data",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "elastic/agent-skills",
+        "commit": "9f0ab3b93e68c85869614e828465ab64f2be2cc7",
+        "path": "skills/security/ml-integrations/SKILL.md",
+        "url": "https://github.com/elastic/agent-skills",
+        "slug": "ml-integrations",
+        "licenseHint": "Apache-2.0"
+      }
+    ],
+    "expo": [
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/eas-app-stores/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "eas-app-stores",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/eas-hosting/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "eas-hosting",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/eas-observe/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "eas-observe",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/eas-simulator/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "eas-simulator",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/eas-update-insights/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "eas-update-insights",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/eas-update/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "eas-update",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/eas-workflows/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "eas-workflows",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-app-clip/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-app-clip",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-brownfield/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-brownfield",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-data-fetching/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-data-fetching",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-dev-client/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-dev-client",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-dom/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-dom",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-examples/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-examples",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-module/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-module",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-native-ui/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-native-ui",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-overview/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-overview",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-router/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-router",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-ui/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-ui",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-upgrade/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-upgrade",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "expo/skills",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "path": "plugins/expo/skills/expo-web-to-native/SKILL.md",
+        "url": "https://github.com/expo/skills",
+        "slug": "expo-web-to-native",
+        "licenseHint": "MIT"
+      }
+    ],
+    "google-gemini": [
+      {
+        "repo": "google-gemini/gemini-skills",
+        "commit": "c4d0c62c1240e08a90546186bf320600ab6a039a",
+        "path": "skills/gemini-api-cli/SKILL.md",
+        "url": "https://github.com/google-gemini/gemini-skills",
+        "slug": "gemini-api-cli",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "google-gemini/gemini-skills",
+        "commit": "c4d0c62c1240e08a90546186bf320600ab6a039a",
+        "path": "skills/gemini-api-dev/SKILL.md",
+        "url": "https://github.com/google-gemini/gemini-skills",
+        "slug": "gemini-api-dev",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "google-gemini/gemini-skills",
+        "commit": "c4d0c62c1240e08a90546186bf320600ab6a039a",
+        "path": "skills/gemini-live-api-dev/SKILL.md",
+        "url": "https://github.com/google-gemini/gemini-skills",
+        "slug": "gemini-live-api-dev",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "google-gemini/gemini-skills",
+        "commit": "c4d0c62c1240e08a90546186bf320600ab6a039a",
+        "path": "skills/gemini-omni-flash-api/SKILL.md",
+        "url": "https://github.com/google-gemini/gemini-skills",
+        "slug": "gemini-omni-flash-api",
+        "licenseHint": "Apache-2.0"
+      }
+    ],
+    "hugging-face": [
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/hf-cli/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "hf-cli",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/hf-cloud-aws-context-discovery/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "hf-cloud-aws-context-discovery",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/hf-cloud-python-env-setup/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "hf-cloud-python-env-setup",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/hf-cloud-sagemaker-deployment-planner/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "hf-cloud-sagemaker-deployment-planner",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/hf-cloud-sagemaker-iam-preflight/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "hf-cloud-sagemaker-iam-preflight",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/hf-cloud-sagemaker-production-defaults/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "hf-cloud-sagemaker-production-defaults",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/hf-cloud-serving-image-selection/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "hf-cloud-serving-image-selection",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/hf-mem/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "hf-mem",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-best/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-best",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-community-evals/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-community-evals",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-datasets/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-datasets",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-gradio/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-gradio",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-llm-trainer/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-llm-trainer",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-local-models/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-local-models",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-lora-space-builder/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-lora-space-builder",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-paper-publisher/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-paper-publisher",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-papers/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-papers",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-spaces/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-spaces",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-tool-builder/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-tool-builder",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-trackio/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-trackio",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-vision-trainer/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-vision-trainer",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/huggingface-zerogpu/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "huggingface-zerogpu",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/train-sentence-transformers/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "train-sentence-transformers",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/transformers-js/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "transformers-js",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "huggingface/skills",
+        "commit": "d67b12054923df5bbfa07c5ff1331412deebdf4f",
+        "path": "skills/trl-training/SKILL.md",
+        "url": "https://github.com/huggingface/skills",
+        "slug": "trl-training",
+        "licenseHint": "Apache-2.0"
+      }
+    ],
+    "microsoft-azure": [
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/airunway-aks-setup/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "airunway-aks-setup",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/appinsights-instrumentation/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "appinsights-instrumentation",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-ai/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-ai",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-aigateway/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-aigateway",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-app-onboard-prereq/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-app-onboard-prereq",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-app-onboard/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-app-onboard",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-cloud-migrate/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-cloud-migrate",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-compliance/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-compliance",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-compute/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-compute",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-deploy/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-deploy",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-diagnostics/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-diagnostics",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-enterprise-infra-planner/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-enterprise-infra-planner",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-kubernetes/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-kubernetes",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-kubernetes/azure-kubernetes-app-deploy/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-kubernetes-app-deploy",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-kubernetes/azure-kubernetes-automatic-readiness/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-kubernetes-automatic-readiness",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-kusto/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-kusto",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-messaging/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-messaging",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-prepare/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-prepare",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-quotas/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-quotas",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-reliability/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-reliability",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-resource-lookup/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-resource-lookup",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-resource-visualizer/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-resource-visualizer",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-storage/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-storage",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-upgrade/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-upgrade",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/azure-validate/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "azure-validate",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/discover-azure-skills/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "discover-azure-skills",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/entra-agent-id/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "entra-agent-id",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/entra-app-registration/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "entra-app-registration",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/microsoft-foundry/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "microsoft-foundry",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/microsoft-foundry/finetuning/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "finetuning",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/microsoft-foundry/models/deploy-model/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "deploy-model",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/microsoft-foundry/models/deploy-model/capacity/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "capacity",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/microsoft-foundry/models/deploy-model/customize/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "customize",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/microsoft-foundry/models/deploy-model/preset/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "preset",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "microsoft/azure-skills",
+        "commit": "7847020998043c6231929b364c35393b7cdab270",
+        "path": "skills/python-appservice-deploy/SKILL.md",
+        "url": "https://github.com/microsoft/azure-skills",
+        "slug": "python-appservice-deploy",
+        "licenseHint": "MIT"
+      }
+    ],
+    "remotion": [
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-best-practices/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-best-practices",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-captions/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-captions",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-create/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-create",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-docs/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-docs",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-elements/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-elements",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-interactivity/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-interactivity",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-license/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-license",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-maps/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-maps",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-markup/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-markup",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-multimedia/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-multimedia",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-render/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-render",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-saas/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-saas",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-studio/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-studio",
+        "licenseHint": null
+      },
+      {
+        "repo": "remotion-dev/skills",
+        "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
+        "path": "skills/remotion-upgrade/SKILL.md",
+        "url": "https://github.com/remotion-dev/skills",
+        "slug": "remotion-upgrade",
+        "licenseHint": null
+      }
+    ],
+    "sentry": [
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/agents-md/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "agents-md",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/blog-writing-guide/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "blog-writing-guide",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/brand-guidelines/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "brand-guidelines",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/browse-local-sentry/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "browse-local-sentry",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/claude-settings-audit/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "claude-settings-audit",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/code-review/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "code-review",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/code-simplifier/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "code-simplifier",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/commit/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "commit",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/create-branch/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "create-branch",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/django-access-review/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "django-access-review",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/django-perf-review/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "django-perf-review",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/doc-coauthoring/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "doc-coauthoring",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/document-api-endpoint/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "document-api-endpoint",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/find-bugs/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "find-bugs",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/gh-review-requests/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "gh-review-requests",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/gha-security-review/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "gha-security-review",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/iterate-pr/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "iterate-pr",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/pr-link-issue/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "pr-link-issue",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/pr-screenshots/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "pr-screenshots",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/pr-writer/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "pr-writer",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/presentation-creator/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "presentation-creator",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/prompt-optimizer/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "prompt-optimizer",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/secret-serialization/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "secret-serialization",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/security-model/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "security-model",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/security-review/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "security-review",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/skill-scanner/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "skill-scanner",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/skill-writer/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "skill-writer",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/sred-project-organizer/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "sred-project-organizer",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/sred-work-summary/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "sred-work-summary",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/triage-frontend-issues/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "triage-frontend-issues",
+        "licenseHint": "Apache-2.0"
+      },
+      {
+        "repo": "getsentry/skills",
+        "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+        "path": "skills/typing-exclusion-worker/SKILL.md",
+        "url": "https://github.com/getsentry/skills",
+        "slug": "typing-exclusion-worker",
+        "licenseHint": "Apache-2.0"
+      }
+    ],
+    "supabase": [
+      {
+        "repo": "supabase/agent-skills",
+        "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+        "path": "skills/supabase-postgres-best-practices/SKILL.md",
+        "url": "https://github.com/supabase/agent-skills",
+        "slug": "supabase-postgres-best-practices",
+        "licenseHint": "MIT"
+      },
+      {
+        "repo": "supabase/agent-skills",
+        "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+        "path": "skills/supabase/SKILL.md",
+        "url": "https://github.com/supabase/agent-skills",
+        "slug": "supabase",
+        "licenseHint": "MIT"
+      }
+    ],
+    "vercel-agent-skills": [
+      {
+        "repo": "vercel-labs/agent-skills",
+        "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+        "path": "skills/composition-patterns/SKILL.md",
+        "url": "https://github.com/vercel-labs/agent-skills",
+        "slug": "composition-patterns",
+        "licenseHint": null
+      },
+      {
+        "repo": "vercel-labs/agent-skills",
+        "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+        "path": "skills/deploy-to-vercel/SKILL.md",
+        "url": "https://github.com/vercel-labs/agent-skills",
+        "slug": "deploy-to-vercel",
+        "licenseHint": null
+      },
+      {
+        "repo": "vercel-labs/agent-skills",
+        "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+        "path": "skills/react-best-practices/SKILL.md",
+        "url": "https://github.com/vercel-labs/agent-skills",
+        "slug": "react-best-practices",
+        "licenseHint": null
+      },
+      {
+        "repo": "vercel-labs/agent-skills",
+        "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+        "path": "skills/react-native-skills/SKILL.md",
+        "url": "https://github.com/vercel-labs/agent-skills",
+        "slug": "react-native-skills",
+        "licenseHint": null
+      },
+      {
+        "repo": "vercel-labs/agent-skills",
+        "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+        "path": "skills/react-view-transitions/SKILL.md",
+        "url": "https://github.com/vercel-labs/agent-skills",
+        "slug": "react-view-transitions",
+        "licenseHint": null
+      },
+      {
+        "repo": "vercel-labs/agent-skills",
+        "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+        "path": "skills/vercel-cli-with-tokens/SKILL.md",
+        "url": "https://github.com/vercel-labs/agent-skills",
+        "slug": "vercel-cli-with-tokens",
+        "licenseHint": null
+      },
+      {
+        "repo": "vercel-labs/agent-skills",
+        "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+        "path": "skills/vercel-optimize/SKILL.md",
+        "url": "https://github.com/vercel-labs/agent-skills",
+        "slug": "vercel-optimize",
+        "licenseHint": null
+      },
+      {
+        "repo": "vercel-labs/agent-skills",
+        "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+        "path": "skills/web-design-guidelines/SKILL.md",
+        "url": "https://github.com/vercel-labs/agent-skills",
+        "slug": "web-design-guidelines",
+        "licenseHint": null
+      },
+      {
+        "repo": "vercel-labs/agent-skills",
+        "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+        "path": "skills/writing-guidelines/SKILL.md",
+        "url": "https://github.com/vercel-labs/agent-skills",
+        "slug": "writing-guidelines",
+        "licenseHint": null
+      }
+    ],
+    "vercel-labs": [],
+    "wordpress": [
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/blueprint/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "blueprint",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wordpress-router/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wordpress-router",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-abilities-api/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-abilities-api",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-abilities-audit/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-abilities-audit",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-abilities-verify/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-abilities-verify",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-ability-development/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-ability-development",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-block-development/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-block-development",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-block-themes/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-block-themes",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-env/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-env",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-interactivity-api/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-interactivity-api",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-patterns/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-patterns",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-performance/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-performance",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-phpstan/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-phpstan",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-playground/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-playground",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-plugin-development/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-plugin-development",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-plugin-directory-guidelines/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-plugin-directory-guidelines",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-project-triage/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-project-triage",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-rest-api/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-rest-api",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wp-wpcli-and-ops/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wp-wpcli-and-ops",
+        "licenseHint": "NOASSERTION"
+      },
+      {
+        "repo": "WordPress/agent-skills",
+        "commit": "7374e6f1c913b3b02b25465d266d9c0e0a04fc96",
+        "path": "skills/wpds/SKILL.md",
+        "url": "https://github.com/WordPress/agent-skills",
+        "slug": "wpds",
+        "licenseHint": "NOASSERTION"
+      }
+    ]
   },
   "entries": [
     {
@@ -44,6 +3189,7 @@
       "stage": "plan",
       "domain": "orchestrator",
       "limitations": "The curated catalog carries this source. Its installation commands require an explicit request.",
+      "tier": "first-party",
       "attribution": "vercel-labs/skills",
       "qualityScore": null,
       "pricing": "unknown",
@@ -60,8 +3206,9 @@
           "url": "https://github.com/vercel-labs/skills/blob/57217cf86ba38148a57af9e90d14a4c049558330/skills/find-skills/SKILL.md"
         }
       ],
-      "lastChecked": "2026-11-24T09:43:30.400Z",
-      "lastVerified": "2026-11-24T09:43:30.400Z",
+      "lastChecked": "2026-11-25T05:16:45.025Z",
+      "lastVerified": "2026-11-25T05:16:45.025Z",
+      "reviewDigest": "6736fdc825673c9deeb4a77570c2d47df9ad83daf9bd3f00ac130b511e13c320",
       "checksum": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
       "fingerprint": "f7c4e26b91000623",
       "trustScore": 72,
@@ -71,6 +3218,25 @@
         ],
         "blocked": false,
         "trustScore": 72
+      },
+      "validity": {
+        "passed": true,
+        "checks": {
+          "name": true,
+          "description": true,
+          "body": true
+        }
+      },
+      "quality": {
+        "method": "structural-v1",
+        "points": 4,
+        "maxPoints": 4,
+        "signals": {
+          "scope": true,
+          "procedure": true,
+          "verification": true,
+          "example": true
+        }
       },
       "license": "MIT",
       "licenseEvidence": [
@@ -85,6 +3251,7 @@
       "skillAssets": [],
       "status": "metadata-only",
       "reason": "The curated catalog carries this source. Its installation commands require an explicit request.",
+      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -102,6 +3269,7 @@
       ],
       "stage": "plan",
       "domain": "planning",
+      "tier": "community",
       "attribution": "obra/superpowers",
       "qualityScore": null,
       "pricing": "unknown",
@@ -118,8 +3286,9 @@
           "url": "https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/writing-plans/SKILL.md"
         }
       ],
-      "lastChecked": "2026-11-24T09:43:30.400Z",
-      "lastVerified": "2026-11-24T09:43:30.400Z",
+      "lastChecked": "2026-11-25T05:16:45.025Z",
+      "lastVerified": "2026-11-25T05:16:45.025Z",
+      "reviewDigest": "da54520fb1be5ea0c28e02f61789dafa08c769bb007496c1497dc0c86757ff44",
       "checksum": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a",
       "fingerprint": "641c8da2055b91fd",
       "trustScore": 72,
@@ -130,7 +3299,30 @@
         "blocked": false,
         "trustScore": 72
       },
+      "validity": {
+        "passed": true,
+        "checks": {
+          "name": true,
+          "description": true,
+          "body": true
+        }
+      },
+      "quality": {
+        "method": "structural-v1",
+        "points": 4,
+        "maxPoints": 4,
+        "signals": {
+          "scope": true,
+          "procedure": true,
+          "verification": true,
+          "example": true
+        }
+      },
       "license": "MIT",
+      "mirror": [
+        "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a",
+        "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+      ],
       "licenseEvidence": [
         {
           "name": "LICENSE",
@@ -143,6 +3335,7 @@
       "skillAssets": [],
       "status": "approved",
       "reason": null,
+      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -156,6 +3349,7 @@
       "formats": [],
       "stage": "design",
       "domain": "ui-ux",
+      "tier": "first-party",
       "attribution": "anthropics/skills",
       "qualityScore": null,
       "pricing": "unknown",
@@ -172,8 +3366,9 @@
           "url": "https://github.com/anthropics/skills/blob/e4bb5d960d87126ff3b3a8af1a104b7db67560ba/skills/brand-guidelines/SKILL.md"
         }
       ],
-      "lastChecked": "2026-11-24T09:43:30.400Z",
-      "lastVerified": "2026-11-24T09:43:30.400Z",
+      "lastChecked": "2026-11-25T05:16:45.025Z",
+      "lastVerified": "2026-11-25T05:16:45.025Z",
+      "reviewDigest": "f4211bd3763f67fdb417dfb1264de1b5ba071866a3a7ace26cfde4ea61cd71e6",
       "checksum": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe",
       "fingerprint": "41d01a00b263b307",
       "trustScore": 80,
@@ -182,7 +3377,30 @@
         "blocked": false,
         "trustScore": 80
       },
+      "validity": {
+        "passed": true,
+        "checks": {
+          "name": true,
+          "description": true,
+          "body": true
+        }
+      },
+      "quality": {
+        "method": "structural-v1",
+        "points": 1,
+        "maxPoints": 4,
+        "signals": {
+          "scope": true,
+          "procedure": false,
+          "verification": false,
+          "example": false
+        }
+      },
       "license": "Apache-2.0",
+      "mirror": [
+        "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe",
+        "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
+      ],
       "licenseEvidence": [
         {
           "name": "LICENSE.txt",
@@ -195,6 +3413,7 @@
       "skillAssets": [],
       "status": "approved",
       "reason": null,
+      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -212,6 +3431,7 @@
       ],
       "stage": "build",
       "domain": "social-media",
+      "tier": "first-party",
       "attribution": "anthropics/skills",
       "qualityScore": null,
       "pricing": "unknown",
@@ -232,8 +3452,9 @@
           "url": "https://skillsmp.com/creators/anthropics/skills/skills-doc-coauthoring"
         }
       ],
-      "lastChecked": "2026-11-24T09:43:30.400Z",
-      "lastVerified": "2026-11-24T09:43:30.400Z",
+      "lastChecked": "2026-11-25T05:16:45.025Z",
+      "lastVerified": "2026-11-25T05:16:45.025Z",
+      "reviewDigest": "9ccdf3bbcdb70b0fa37c5b31b43147a4d2d38df285a229a0a08d8c4d2fe9ab56",
       "checksum": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4",
       "fingerprint": "c8d6b23f0746410f",
       "trustScore": 80,
@@ -242,11 +3463,31 @@
         "blocked": false,
         "trustScore": 80
       },
+      "validity": {
+        "passed": true,
+        "checks": {
+          "name": true,
+          "description": true,
+          "body": true
+        }
+      },
+      "quality": {
+        "method": "structural-v1",
+        "points": 4,
+        "maxPoints": 4,
+        "signals": {
+          "scope": true,
+          "procedure": true,
+          "verification": true,
+          "example": true
+        }
+      },
       "license": "unverified",
       "licenseEvidence": [],
       "skillAssets": [],
       "status": "metadata-only",
       "reason": "An explicit permissive upstream license is missing.",
+      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -276,6 +3517,7 @@
       "pricing": "free",
       "hasScripts": true,
       "limitations": "The voice template and checker are available as separate files. Review the checker before deciding whether to run it.",
+      "tier": "community",
       "attribution": "shwetankg07/linkedin-writing",
       "qualityScore": null,
       "upstream": {
@@ -295,8 +3537,9 @@
           "url": "https://github.com/shwetankg07/linkedin-writing"
         }
       ],
-      "lastChecked": "2026-11-24T09:43:30.400Z",
-      "lastVerified": "2026-11-24T09:43:30.400Z",
+      "lastChecked": "2026-11-25T05:16:45.025Z",
+      "lastVerified": "2026-11-25T05:16:45.025Z",
+      "reviewDigest": "4504bc2170fcb0b5bf38574f8d842ed6a1c8770692dad6623d8e234c74071908",
       "checksum": "bec4f16379308958fb7d384c8839e46f94efce9a62ce275e74cd5799f86a3ed0",
       "fingerprint": "e05774704d0390ca",
       "trustScore": 52,
@@ -309,7 +3552,31 @@
         "blocked": false,
         "trustScore": 52
       },
+      "validity": {
+        "passed": true,
+        "checks": {
+          "name": true,
+          "description": true,
+          "body": true
+        }
+      },
+      "quality": {
+        "method": "structural-v1",
+        "points": 3,
+        "maxPoints": 4,
+        "signals": {
+          "scope": true,
+          "procedure": true,
+          "verification": false,
+          "example": true
+        }
+      },
       "license": "MIT",
+      "mirror": [
+        "bec4f16379308958fb7d384c8839e46f94efce9a62ce275e74cd5799f86a3ed0",
+        "2faf3af98c763655fd9db38d0c08748145207f0d16d3848a4af6c6bf084d83a3",
+        "d8d7b912f9ffe7ad790ecd7d7fd778cd65cb49d7ae65521d79f37df2c794b29e"
+      ],
       "licenseEvidence": [
         {
           "name": "LICENSE",
@@ -337,6 +3604,7 @@
       ],
       "status": "approved",
       "reason": null,
+      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -355,6 +3623,7 @@
       "stage": "build",
       "domain": "media",
       "limitations": "The SKILL.md routes to separate references. The native timeline procedure has not been reviewed for delivery.",
+      "tier": "community",
       "attribution": "LevyBytes/AI-SKILL-davinci-resolve",
       "qualityScore": null,
       "pricing": "unknown",
@@ -375,8 +3644,9 @@
           "url": "https://github.com/LevyBytes/AI-SKILL-davinci-resolve"
         }
       ],
-      "lastChecked": "2026-11-24T09:43:30.400Z",
-      "lastVerified": "2026-11-24T09:43:30.400Z",
+      "lastChecked": "2026-11-25T05:16:45.025Z",
+      "lastVerified": "2026-11-25T05:16:45.025Z",
+      "reviewDigest": "4628e24cc6640fea1974a3d47064ab538aa0204eec96950247de360c4b0a7254",
       "checksum": "b7a87ca9a7cebb92bc8653d8d59153cb833babe5ac0b5de408f9622fc0dcbc31",
       "fingerprint": "654c800031cffb5d",
       "trustScore": 72,
@@ -387,7 +3657,27 @@
         "blocked": false,
         "trustScore": 72
       },
+      "validity": {
+        "passed": true,
+        "checks": {
+          "name": true,
+          "description": true,
+          "body": true
+        }
+      },
+      "quality": {
+        "method": "structural-v1",
+        "points": 2,
+        "maxPoints": 4,
+        "signals": {
+          "scope": true,
+          "procedure": false,
+          "verification": true,
+          "example": false
+        }
+      },
       "license": "Apache-2.0",
+      "refreshState": "verified",
       "licenseEvidence": [
         {
           "name": "LICENSE",
@@ -429,6 +3719,7 @@
       "pricing": "paid",
       "hasScripts": true,
       "limitations": "Requires Resolve Studio, a credentialed transcription service, and helper scripts outside the reviewed content.",
+      "tier": "community",
       "attribution": "Developh/resolve-cut",
       "qualityScore": null,
       "upstream": {
@@ -448,8 +3739,9 @@
           "url": "https://github.com/Developh/resolve-cut"
         }
       ],
-      "lastChecked": "2026-11-24T09:43:30.400Z",
-      "lastVerified": "2026-11-24T09:43:30.400Z",
+      "lastChecked": "2026-11-25T05:16:45.025Z",
+      "lastVerified": "2026-11-25T05:16:45.025Z",
+      "reviewDigest": "487c03e02ece4d751ea6166bc91399012f9f43a8d42c031a2405d8fcbc1e00ee",
       "checksum": "3c98e0907313b544383ddc578f04c7f0883bcd09e57cb203fe085063c528c0fa",
       "fingerprint": "a8d6aa2fc3b9a40a",
       "trustScore": 34,
@@ -462,7 +3754,27 @@
         "blocked": true,
         "trustScore": 34
       },
+      "validity": {
+        "passed": true,
+        "checks": {
+          "name": true,
+          "description": true,
+          "body": true
+        }
+      },
+      "quality": {
+        "method": "structural-v1",
+        "points": 3,
+        "maxPoints": 4,
+        "signals": {
+          "scope": false,
+          "procedure": true,
+          "verification": true,
+          "example": true
+        }
+      },
       "license": "MIT",
+      "refreshState": "verified",
       "licenseEvidence": [
         {
           "name": "LICENSE",
@@ -492,6 +3804,7 @@
       "stage": "build",
       "domain": "media",
       "limitations": "Uses other skills and may send audio to a credentialed transcription provider.",
+      "tier": "community",
       "attribution": "DojoCodingLabs/remotion-superpowers",
       "qualityScore": null,
       "pricing": "unknown",
@@ -512,8 +3825,9 @@
           "url": "https://github.com/DojoCodingLabs/remotion-superpowers"
         }
       ],
-      "lastChecked": "2026-11-24T09:43:30.400Z",
-      "lastVerified": "2026-11-24T09:43:30.400Z",
+      "lastChecked": "2026-11-25T05:16:45.025Z",
+      "lastVerified": "2026-11-25T05:16:45.025Z",
+      "reviewDigest": "2adbafdc5ea95b5c6a89dbbacc4f7880ad84f8c22d2b9401203ca8a0900a382b",
       "checksum": "ecc6456dc69a65d2ba649f62f1c79f1cf36cf70438269d510e1f3fd9151714eb",
       "fingerprint": "430f1b83161dd877",
       "trustScore": 42,
@@ -525,7 +3839,27 @@
         "blocked": true,
         "trustScore": 42
       },
+      "validity": {
+        "passed": true,
+        "checks": {
+          "name": true,
+          "description": true,
+          "body": true
+        }
+      },
+      "quality": {
+        "method": "structural-v1",
+        "points": 3,
+        "maxPoints": 4,
+        "signals": {
+          "scope": true,
+          "procedure": true,
+          "verification": false,
+          "example": true
+        }
+      },
       "license": "MIT",
+      "refreshState": "verified",
       "licenseEvidence": [
         {
           "name": "LICENSE",
@@ -538,6 +3872,352 @@
       "skillAssets": [],
       "status": "quarantined",
       "reason": "The static scan detected a high-risk pattern."
+    },
+    {
+      "id": "federated/expo/skills/expo-animation",
+      "name": "expo-animation",
+      "language": "en",
+      "domain": "mobile",
+      "pricing": "free",
+      "title": "Expo Animation",
+      "description": "Implement motion and gesture-driven interactions in an Expo React Native app using Reanimated, Gesture Handler, screen transitions and haptics.",
+      "deliverables": [
+        "feature",
+        "mobile-app"
+      ],
+      "tools": [
+        "expo",
+        "react-native",
+        "reanimated",
+        "react-native-gesture-handler"
+      ],
+      "features": [
+        "gesture-animation",
+        "haptics",
+        "reduced-motion",
+        "screen-transitions"
+      ],
+      "stage": "build",
+      "check": "Try the gesture on device, interrupt and reverse it, verify reduced motion, and check for UI-thread stalls on a slow Android phone.",
+      "requiresTool": [
+        "expo",
+        "expo-router",
+        "react-native"
+      ],
+      "formats": [],
+      "tier": "first-party",
+      "attribution": "expo/skills",
+      "qualityScore": null,
+      "upstream": {
+        "repo": "expo/skills",
+        "path": "plugins/expo/skills/expo-animation/SKILL.md",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-animation/SKILL.md"
+      },
+      "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-animation/SKILL.md",
+      "sources": [
+        {
+          "source": "expo",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-animation/SKILL.md"
+        }
+      ],
+      "lastChecked": "2026-11-25T05:16:45.025Z",
+      "lastVerified": "2026-11-25T05:16:45.025Z",
+      "reviewDigest": "9ccc3a7638aa09b0a0dcf56e3a05af310b0e28b37f9138b791b84d03fb7ba0c9",
+      "checksum": "69709ea8089d17773983d0dd947cfefe7b5ec3636c8e357daca9a5b542fa9ed1",
+      "fingerprint": "d928bc460e69bab1",
+      "trustScore": 72,
+      "scan": {
+        "flags": [
+          "shell-command"
+        ],
+        "blocked": false,
+        "trustScore": 72
+      },
+      "validity": {
+        "passed": true,
+        "checks": {
+          "name": true,
+          "description": true,
+          "body": true
+        }
+      },
+      "quality": {
+        "method": "structural-v1",
+        "points": 4,
+        "maxPoints": 4,
+        "signals": {
+          "scope": true,
+          "procedure": true,
+          "verification": true,
+          "example": true
+        }
+      },
+      "license": "MIT",
+      "mirror": [
+        "69709ea8089d17773983d0dd947cfefe7b5ec3636c8e357daca9a5b542fa9ed1",
+        "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+        "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+        "4db141cb346d49231c94a95aaa50844b85a71c47ec543e9f9f5a1f453abc9883"
+      ],
+      "licenseEvidence": [
+        {
+          "name": "LICENSE.expo-repository",
+          "path": "LICENSE",
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+          "kind": "notice",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/LICENSE"
+        },
+        {
+          "name": "LICENSE.expo-plugin",
+          "path": "plugins/expo/LICENSE",
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+          "kind": "notice",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/LICENSE"
+        },
+        {
+          "name": "LICENSE",
+          "path": "plugins/expo/skills/expo-animation/LICENSE",
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "kind": "notice",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-animation/LICENSE"
+        }
+      ],
+      "skillAssets": [
+        {
+          "name": "RECIPES.md",
+          "path": "plugins/expo/skills/expo-animation/RECIPES.md",
+          "sha256": "4db141cb346d49231c94a95aaa50844b85a71c47ec543e9f9f5a1f453abc9883",
+          "kind": "reference",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-animation/RECIPES.md"
+        }
+      ],
+      "status": "approved",
+      "reason": null,
+      "refreshState": "unchanged",
+      "aliases": []
+    },
+    {
+      "id": "federated/expo/skills/expo-design-system",
+      "name": "expo-design-system",
+      "language": "en",
+      "domain": "mobile",
+      "pricing": "free",
+      "title": "Expo Design System",
+      "description": "Extend Expo design tokens and reusable React Native component conventions for colors, spacing, typography, shadows, or styling audits.",
+      "deliverables": [
+        "feature",
+        "design-system-doc"
+      ],
+      "tools": [
+        "expo",
+        "react-native"
+      ],
+      "features": [
+        "design-tokens",
+        "typography",
+        "component-library",
+        "dark-mode"
+      ],
+      "stage": "design",
+      "check": "Check the rendered screen, test applicable interactions and accessibility states, and look for hardcoded values and repeated styles.",
+      "requiresTool": [
+        "expo",
+        "expo-router",
+        "react-native"
+      ],
+      "formats": [],
+      "tier": "first-party",
+      "attribution": "expo/skills",
+      "qualityScore": null,
+      "upstream": {
+        "repo": "expo/skills",
+        "path": "plugins/expo/skills/expo-design-system/SKILL.md",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-design-system/SKILL.md"
+      },
+      "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-design-system/SKILL.md",
+      "sources": [
+        {
+          "source": "expo",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-design-system/SKILL.md"
+        }
+      ],
+      "lastChecked": "2026-11-25T05:16:45.025Z",
+      "lastVerified": "2026-11-25T05:16:45.025Z",
+      "reviewDigest": "f9a529cc657ada412d04bc9263e1852b4c89665026942e1d04ef4cc2f42f8ceb",
+      "checksum": "102e7d2cee193dc4e1dd06796a142106c7d5cc5a435791a031e3036e8200e635",
+      "fingerprint": "d22a58992c637a0b",
+      "trustScore": 80,
+      "scan": {
+        "flags": [],
+        "blocked": false,
+        "trustScore": 80
+      },
+      "validity": {
+        "passed": true,
+        "checks": {
+          "name": true,
+          "description": true,
+          "body": true
+        }
+      },
+      "quality": {
+        "method": "structural-v1",
+        "points": 4,
+        "maxPoints": 4,
+        "signals": {
+          "scope": true,
+          "procedure": true,
+          "verification": true,
+          "example": true
+        }
+      },
+      "license": "MIT",
+      "mirror": [
+        "102e7d2cee193dc4e1dd06796a142106c7d5cc5a435791a031e3036e8200e635",
+        "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+        "a0ead76ab904c119a1353d8d91b9138144a97da43fdff683f291f2d45d868915",
+        "5662bd04ac2d6367fc4ca3ae355ec1b970752dcd8693a099a5e0792227eb09c1"
+      ],
+      "licenseEvidence": [
+        {
+          "name": "LICENSE.expo-repository",
+          "path": "LICENSE",
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+          "kind": "notice",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/LICENSE"
+        },
+        {
+          "name": "LICENSE.expo-plugin",
+          "path": "plugins/expo/LICENSE",
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+          "kind": "notice",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/LICENSE"
+        }
+      ],
+      "skillAssets": [
+        {
+          "name": "references/audit.md",
+          "path": "plugins/expo/skills/expo-design-system/references/audit.md",
+          "sha256": "a0ead76ab904c119a1353d8d91b9138144a97da43fdff683f291f2d45d868915",
+          "kind": "reference",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-design-system/references/audit.md"
+        },
+        {
+          "name": "references/native-slop.md",
+          "path": "plugins/expo/skills/expo-design-system/references/native-slop.md",
+          "sha256": "5662bd04ac2d6367fc4ca3ae355ec1b970752dcd8693a099a5e0792227eb09c1",
+          "kind": "reference",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-design-system/references/native-slop.md"
+        }
+      ],
+      "status": "approved",
+      "reason": null,
+      "refreshState": "unchanged",
+      "aliases": []
+    },
+    {
+      "id": "federated/expo/skills/expo-project-structure",
+      "name": "expo-project-structure",
+      "language": "en",
+      "domain": "mobile",
+      "pricing": "free",
+      "title": "Expo Project Structure",
+      "description": "Scaffold a new Expo Router React Native mobile app with routes, screen components, shared UI, server helpers, styles and co-located tests.",
+      "deliverables": [
+        "mobile-app"
+      ],
+      "tools": [
+        "expo",
+        "expo-router",
+        "react-native"
+      ],
+      "features": [
+        "folder-structure",
+        "scaffolding"
+      ],
+      "stage": "plan",
+      "projectState": "new",
+      "check": "Check that only routes live inside src/app and that screens, shared UI and server-only imports are in the documented folders.",
+      "requiresTool": [
+        "expo",
+        "expo-router",
+        "react-native"
+      ],
+      "formats": [],
+      "tier": "first-party",
+      "attribution": "expo/skills",
+      "qualityScore": null,
+      "upstream": {
+        "repo": "expo/skills",
+        "path": "plugins/expo/skills/expo-project-structure/SKILL.md",
+        "commit": "e577fe1524106faa3b241430874cb3c495e6b9db",
+        "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-project-structure/SKILL.md"
+      },
+      "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-project-structure/SKILL.md",
+      "sources": [
+        {
+          "source": "expo",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-project-structure/SKILL.md"
+        }
+      ],
+      "lastChecked": "2026-11-25T05:16:45.025Z",
+      "lastVerified": "2026-11-25T05:16:45.025Z",
+      "reviewDigest": "8849ed15b162fc73c40c07e71622e9fc777e89a5aa823ae7c345a4645bd360ea",
+      "checksum": "ec6221829186fea1672a86eac9c9f560aaa0d4929e9763e0a0e5c55504f23196",
+      "fingerprint": "6527d58e336498a2",
+      "trustScore": 80,
+      "scan": {
+        "flags": [],
+        "blocked": false,
+        "trustScore": 80
+      },
+      "validity": {
+        "passed": true,
+        "checks": {
+          "name": true,
+          "description": true,
+          "body": true
+        }
+      },
+      "quality": {
+        "method": "structural-v1",
+        "points": 3,
+        "maxPoints": 4,
+        "signals": {
+          "scope": true,
+          "procedure": false,
+          "verification": true,
+          "example": true
+        }
+      },
+      "license": "MIT",
+      "mirror": [
+        "ec6221829186fea1672a86eac9c9f560aaa0d4929e9763e0a0e5c55504f23196",
+        "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
+      ],
+      "licenseEvidence": [
+        {
+          "name": "LICENSE.expo-repository",
+          "path": "LICENSE",
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+          "kind": "notice",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/LICENSE"
+        },
+        {
+          "name": "LICENSE.expo-plugin",
+          "path": "plugins/expo/LICENSE",
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+          "kind": "notice",
+          "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/LICENSE"
+        }
+      ],
+      "skillAssets": [],
+      "status": "approved",
+      "reason": null,
+      "refreshState": "unchanged",
+      "aliases": []
     }
   ]
 }
