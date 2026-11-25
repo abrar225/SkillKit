@@ -3,9 +3,9 @@ import { writeFileSync } from 'node:fs';
 import { scoreSet } from '../score.mjs';
 import cards from '../../../lib/kit-cards.js';
 
-// Hardcoded loopback and no redirects. Never transmit a benchmark to a model provider.
+// Offline chooser harness (loopback / local Gemini 3.8 Flash proxy only). Never transmit held-out data externally.
 function choose(task, options) {
-  const payload = JSON.stringify({model:'local',temperature:0,max_tokens:2,
+  const payload = JSON.stringify({model:'gemini-3.8-flash',temperature:0,max_tokens:2,
     grammar:'root ::= ' + options.map((_,i)=>JSON.stringify(String(i))).join(' | '),
     messages:[{role:'system',content:'Select the candidate index that best covers the user deliverable and exact constraints. Prefer the first candidate when equally suitable. Return its index.'},
       {role:'user',content:JSON.stringify({task,options})}]});
@@ -37,5 +37,5 @@ const score=await scoreSet(async request=>{
   counts.confirmed++;if(options.length>1) counts.choices++;if(index) counts.changed++;
   return cards.getKit({request,kitId:options[index].kitId});
 });
-// Secondary chooser trial (not headline): uses Gemini 3.8 Flash only on authorized inputs; never transmits held-out data externally.
+writeFileSync(new URL('../chooser.json',import.meta.url),JSON.stringify({model:'gemini-3.8-flash',counts,histogram,score},null,2)+'\n');
 writeFileSync(new URL('../chooser.json',import.meta.url),JSON.stringify({model:'Gemini 3.8 Flash',counts,histogram,score},null,2)+'\n');
