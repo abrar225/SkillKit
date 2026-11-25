@@ -267,3 +267,99 @@ test('SPDX license list includes BSL-1.0, rejects BUSL-1.1, and taxonomy enforce
     { domain: 'motion', constraints: { requiredTools: ['Remotion'] } },
   ), false);
 });
+
+test('auto-verification enforces skill-directory licenses, text-only mirroring, and mixed-license guardrails', async () => {
+  const mitText = 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software.\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.';
+  const bslText = 'Boost Software License - Version 1.0 - August 17th, 2003\nPermission is hereby granted, free of charge, to any person or organization obtaining a copy.';
+  const buslText = 'Business Source License 1.1\nLicensor: Example Corp\nChange Date: 2029-01-01';
+  const richBody = (extra = '') => [
+    '## Workflow',
+    '1. Inspect the inputs, run verification checks, and validate expected results on representative cases.',
+    '2. Confirm edge cases and review the output before finishing.',
+    '```js\nconsole.log("example");\n```',
+    extra,
+  ].join('\n');
+
+  const dirLicensed = Buffer.from(`---\nname: dir-skill\ndescription: Use when building React views.\n---\n${richBody()}`);
+  const fmLicensed = Buffer.from(`---\nname: fm-skill\ndescription: Use when testing Playwright flows.\nlicense: BSL-1.0\n---\n${richBody()}`);
+  const buslSkill = Buffer.from(`---\nname: busl-skill\ndescription: Use when managing BUSL tasks.\nlicense: BUSL-1.1\n---\n${richBody()}`);
+  const rootOnlySubdir = Buffer.from(`---\nname: root-only\ndescription: Use when checking root license fallback.\n---\n${richBody()}`);
+  const refDoc = Buffer.from('# Reference Guide\nUse exact verified checks.');
+  const scriptBytes = Buffer.from('print("do not mirror")');
+
+  const files = {
+    'owner/mixed-repo': {
+      'LICENSE': Buffer.from(mitText),
+      'skills/dir-skill/SKILL.md': dirLicensed,
+      'skills/dir-skill/LICENSE': Buffer.from(mitText),
+      'skills/dir-skill/references/guide.md': refDoc,
+      'skills/dir-skill/scripts/run.py': scriptBytes,
+      'skills/fm-skill/SKILL.md': fmLicensed,
+      'skills/busl-skill/SKILL.md': buslSkill,
+      'skills/busl-skill/LICENSE': Buffer.from(buslText),
+      'skills/root-only/SKILL.md': rootOnlySubdir,
+    },
+    'owner/bsl-root': {
+      'SKILL.md': Buffer.from(`---\nname: bsl-tool\ndescription: Use when building Docker images.\n---\n${richBody()}`),
+      'LICENSE': Buffer.from(bslText),
+    },
+  };
+
+  const adapters = {
+    discover: async () => ({
+      sources: {
+        'github-topic': { state: 'reachable', tier: 'community', sampled: 2 },
+      },
+      discoveries: {
+        'github-topic': [
+          { repo: 'owner/mixed-repo', url: 'https://github.com/owner/mixed-repo' },
+          { repo: 'owner/bsl-root', url: 'https://github.com/owner/bsl-root' },
+        ],
+      },
+    }),
+    inspectRepo: async (repo) => ({
+      metadata: { full_name: repo, private: false, fork: false, archived: false, license: { spdx_id: 'MIT' } },
+      commit: digest(JSON.stringify(files[repo])).slice(0, 40),
+      files: new Map(Object.keys(files[repo]).map((p) => [p, { mode: p.endsWith('.py') ? '100755' : '100644' }])),
+    }),
+    inspect: async (repo) => adapters.inspectRepo(repo),
+    read: async (repo, _commit, file) => files[repo][file],
+  };
+
+  const mirror = new Map();
+  const snap = await refreshCatalog({ reviewed: [], previous: { entries: [] }, adapters, mirror, autoVerify: true });
+
+  const byId = new Map(snap.entries.map((e) => [e.id, e]));
+  const dirEntry = byId.get('federated/owner/mixed-repo/dir-skill');
+  assert.equal(dirEntry.status, 'approved');
+  assert.equal(dirEntry.trustTier, 'auto-verified');
+  assert.equal(dirEntry.license, 'MIT');
+  assert.equal(dirEntry.hasScripts, true);
+  assert.ok(mirror.has(digest(dirLicensed)));
+  assert.ok(mirror.has(digest(refDoc)));
+  assert.ok(!mirror.has(digest(scriptBytes)), 'bundled script must never be mirrored');
+
+  const fmEntry = byId.get('federated/owner/mixed-repo/fm-skill');
+  assert.equal(fmEntry.status, 'approved');
+  assert.equal(fmEntry.license, 'BSL-1.0');
+  assert.equal(fmEntry.trustTier, 'auto-verified');
+
+  const buslEntry = byId.get('federated/owner/mixed-repo/busl-skill');
+  assert.equal(buslEntry.status, 'metadata-only');
+  assert.equal(buslEntry.trustTier, 'metadata-only');
+
+  const rootOnlyEntry = byId.get('federated/owner/mixed-repo/root-only');
+  assert.equal(rootOnlyEntry.status, 'metadata-only');
+  assert.match(rootOnlyEntry.reason, /skill-directory/i);
+
+  const rootSkill = byId.get('federated/owner/bsl-root/bsl-tool');
+  assert.equal(rootSkill.status, 'approved');
+  assert.equal(rootSkill.license, 'BSL-1.0');
+  assert.equal(snap.funnel.licenseTiers['auto-verified'].count, 3);
+  assert.equal(snap.funnel.licenseTiers['metadata-only'].count, 2);
+  assert.equal(snap.funnel.totals.discovered, snap.funnel.totals.parsed, 'discovered count must not double-count resolved entries');
+
+  const wrappedIsc = 'ISC License\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.';
+  assert.equal(require('../lib/federation-refresh').identifyLicenseText(wrappedIsc), 'ISC');
+  assert.equal(require('../lib/federation-refresh').parseFrontmatterLicense('LICENSE').status, 'refer-to-file');
+});

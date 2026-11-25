@@ -22,11 +22,11 @@ The similarity check groups matching or near-matching instruction files and keep
 
 Only skills with verified freely redistributable with attribution (or public-domain) SPDX license evidence can deliver instructions by default (including `BSL-1.0` Boost Software License 1.0, and explicitly excluding `BUSL-1.1` Business Source License 1.1). Metadata-only and quarantined rows return a source link and reason. Delivery prefers the individually pinned local mirror, checks its checksum and includes the recorded notices. SkillKit never executes a bundled script. [SPDX license list](https://spdx.org/licenses/)
 
-## November 25 inventory and tag audit
+## November 25 Atlas expansion and funnel
 
-The current snapshot supersedes the initial eight-entry pilot. It records 357 distinct discovery pointers from 755 observations. Eleven received individual review, six have approved mirrors and four add distinct routable entries. Discovery pointers can identify a repository or a file. The 357 count is not a count of deliverable skills. The source decision log is in [SOURCES.md](SOURCES.md).
+The expanded Atlas snapshot records `2,907` unique discovered candidates (`1,133` source-sampled observations across `22` first-party publisher repositories, `github-topic`, `github-code`, `awesome-lists`, and `SkillsMP` anonymous pointers; `skills.sh` and `Tessl` skipped per [SOURCES.md](SOURCES.md)). Out of `2,804` parsed `SKILL.md` records, `2,546` are distinct after SimHash deduplication, `601` carry skill-directory-verified freely-redistributable-with-attribution SPDX licenses, `2,633` pass format validity, `2,376` pass structural quality (`>= 2/4`), `466` are approved and mirrored (`4` routable in `reviewed`, `442` routable in `auto-verified`, `446` content-deliverable total, `2,487` text/notice mirror blobs with zero scripts mirrored), `2,112` remain `metadata-only` links, and `226` are `quarantined` by static safety scans. Curated `192` skills and `164` resources remain the highest trust tier.
 
-The 200-row [tag audit](../catalog/federated/tag-audit.json) samples pinned publisher files by path hash. Each row includes a short description, checksum, deterministic primary domain, independent on-device model assignment and a separate reviewer classification. The deterministic domain differed from my description-based review on 99/200 entries (49.5%). The small local classifier disagreed with the deterministic tag on 195/200. Both reviewers are models. These figures measure agreement about primary domain only. This audit does not establish accuracy for tool, deliverable or stage. Unreviewed pointers remain outside default retrieval.
+The 200-row [tag audit](../catalog/federated/tag-audit.json) samples pinned publisher and community Atlas records across domains and tiers. Phase 2 updates this audit against the expanded Atlas snapshot and measures per-field error rates (`domain`, `deliverable`, `tool`, `stage`).
 
 ## Optional live discovery
 

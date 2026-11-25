@@ -2,9 +2,30 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
-const { createAdapters, refreshCatalog } = require('../lib/federation-refresh');
+const { execFileSync } = require('node:child_process');
+const {
+  createAdapters,
+  expandedCodeQueries,
+  expandedSkillsmpQueries,
+  expandedTopicQueries,
+  maxInventory,
+  refreshCatalog,
+} = require('../lib/federation-refresh');
 const { mirrorPath, readMirror, readSnapshot, snapshotPath } = require('../lib/federation');
 const reviewed = require('../catalog/federated/reviewed.json');
+
+function resolveGithubToken() {
+  if (process.env.GITHUB_TOKEN) return process.env.GITHUB_TOKEN;
+  try {
+    return execFileSync('gh', ['auth', 'token'], {
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore'],
+      timeout: 5000,
+    }).trim() || undefined;
+  } catch {
+    return undefined;
+  }
+}
 
 function writeAtomic(target, data) {
   const temporary = target + '.' + process.pid + '.tmp';
@@ -29,7 +50,19 @@ async function main() {
       if (content) mirror.set(sha, content);
     }
   }
-  const next = await refreshCatalog({ reviewed: reviewed.entries, previous, adapters: createAdapters(), mirror });
+  // Keep token purely in memory; never log, write to disk, or serialize.
+  const token = resolveGithubToken();
+  const env = token ? { ...process.env, GITHUB_TOKEN: token } : { ...process.env };
+  const adapters = createAdapters({
+    env,
+    topicQueries: expandedTopicQueries,
+    codeQueries: expandedCodeQueries,
+    skillsmpQueries: expandedSkillsmpQueries,
+    awesomeRepoLimit: 120,
+    skipSkillsSh: true,
+    inventoryLimit: maxInventory,
+  });
+  const next = await refreshCatalog({ reviewed: reviewed.entries, previous, adapters, mirror, autoVerify: true });
   const json = JSON.stringify(next, null, 2) + '\n';
   if (output) {
     const target = output === '--write' ? snapshotPath : path.resolve(output);
@@ -41,17 +74,20 @@ async function main() {
         if (!bytes) throw new Error('An approved mirror pin is missing verified bytes.');
         if (!readMirror(sha)) writeAtomic(path.join(mirrorPath, sha), bytes);
       }
+      for (const file of fs.readdirSync(mirrorPath)) {
+        if (!active.has(file)) fs.unlinkSync(path.join(mirrorPath, file));
+      }
     }
     writeAtomic(target, json);
   } else process.stdout.write(json);
   const priorById = new Map(previous.entries.map((entry) => [entry.id, entry]));
   const materialChange = (entry) => {
     const prior = priorById.get(entry.id);
-    return !prior || ['status', 'checksum', 'license', 'reason', 'validity', 'mirror'].some((key) =>
+    return !prior || ['status', 'trustTier', 'checksum', 'license', 'reason', 'validity', 'mirror'].some((key) =>
       JSON.stringify(prior[key]) !== JSON.stringify(entry[key]));
   };
-  const changed = next.entries.filter(materialChange).map(({ id, status, reason }) => ({ id, status, reason }));
-  process.stderr.write(JSON.stringify({ sources: next.sources, funnel: next.funnel, changed }, null, 2) + '\n');
+  const changed = next.entries.filter(materialChange).map(({ id, status, trustTier, license, reason }) => ({ id, status, trustTier, license, reason }));
+  process.stderr.write(JSON.stringify({ sources: next.sources, funnel: next.funnel, changedCount: changed.length }, null, 2) + '\n');
 }
 
 main().catch((error) => {

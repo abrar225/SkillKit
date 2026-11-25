@@ -88,4 +88,4 @@ On the frozen 40-brief holdout, SkillKit returned six fully usable kits, respect
 
 ## Atlas snapshot
 
-357 unique public pointers discovered, 11 entries reviewed, 11 passed document validation, 10 with reviewed license evidence, 9 distinct after review, 6 approved for delivery, 6 mirrored and 4 additional routable entries. Directory hits alone cannot deliver a skill. [Source rules](docs/SOURCES.md) · [Per-source funnel](catalog/federated/snapshot.json)
+2,907 unique public candidates discovered, 2,804 parsed, 2,546 unique after deduplication, 601 license-eligible (freely redistributable with attribution at the skill-directory level), 2,633 valid documents, 2,376 structural-quality passed, 466 approved & text-mirrored (`6` reviewed / `4` routable, `460` auto-verified / `442` routable, total `446` content-deliverable/routable), 2,112 metadata-only links, and 226 quarantined. Curated `192` skills and `164` resources stay the highest trust tier; bundled scripts are never mirrored or executed. [Source rules](docs/SOURCES.md) · [Per-source funnel](catalog/federated/snapshot.json)
