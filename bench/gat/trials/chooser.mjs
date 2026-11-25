@@ -37,4 +37,5 @@ const score=await scoreSet(async request=>{
   counts.confirmed++;if(options.length>1) counts.choices++;if(index) counts.changed++;
   return cards.getKit({request,kitId:options[index].kitId});
 });
-writeFileSync(new URL('../chooser.json',import.meta.url),JSON.stringify({model:'Qwen2.5-1.5B-Instruct Q4_K_M',counts,histogram,score},null,2)+'\n');
+// Secondary chooser trial (not headline): uses Gemini 3.8 Flash only on authorized inputs; never transmits held-out data externally.
+writeFileSync(new URL('../chooser.json',import.meta.url),JSON.stringify({model:'Gemini 3.8 Flash',counts,histogram,score},null,2)+'\n');
