@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "verifiedAt": "2026-11-25T05:16:45.025Z",
+  "verifiedAt": "2026-11-25T05:32:56.080Z",
   "sources": {
     "skills.sh": {
       "state": "auth-required",
@@ -17,13 +17,11 @@
       "tier": "directory",
       "access": "public",
       "queryBudget": 6,
-      "attempted": 5,
-      "succeeded": 4,
-      "sampled": 40,
-      "matched": 25,
-      "state": "limited",
-      "httpStatus": 429,
-      "retryAfter": "13",
+      "attempted": 6,
+      "succeeded": 6,
+      "sampled": 60,
+      "matched": 40,
+      "state": "reachable",
       "matchedReviewed": 1
     },
     "github-topic": {
@@ -211,7 +209,7 @@
   },
   "funnel": {
     "totals": {
-      "discovered": 357,
+      "discovered": 372,
       "licenseHinted": 151,
       "reviewed": 11,
       "licensed": 10,
@@ -225,8 +223,8 @@
       "quarantined": 2,
       "removed": 0,
       "unavailable": 0,
-      "unchanged": 8,
-      "sampled": 755
+      "unchanged": 0,
+      "sampled": 775
     },
     "sources": {
       "anthropic": {
@@ -245,7 +243,7 @@
         "quarantined": 0,
         "removed": 0,
         "unavailable": 0,
-        "unchanged": 2
+        "unchanged": 0
       },
       "awesome-lists": {
         "sampled": 378,
@@ -299,7 +297,7 @@
         "quarantined": 0,
         "removed": 0,
         "unavailable": 0,
-        "unchanged": 3
+        "unchanged": 0
       },
       "github-code": {
         "sampled": 12,
@@ -335,7 +333,7 @@
         "quarantined": 2,
         "removed": 0,
         "unavailable": 0,
-        "unchanged": 1
+        "unchanged": 0
       },
       "github-topic": {
         "sampled": 80,
@@ -353,7 +351,7 @@
         "quarantined": 2,
         "removed": 0,
         "unavailable": 0,
-        "unchanged": 1
+        "unchanged": 0
       },
       "google-gemini": {
         "sampled": 4,
@@ -464,8 +462,8 @@
         "unchanged": 0
       },
       "skillsmp": {
-        "sampled": 40,
-        "discovered": 25,
+        "sampled": 60,
+        "discovered": 40,
         "licenseHinted": 0,
         "reviewed": 1,
         "licensed": 0,
@@ -479,7 +477,7 @@
         "quarantined": 0,
         "removed": 0,
         "unavailable": 0,
-        "unchanged": 1
+        "unchanged": 0
       },
       "supabase": {
         "sampled": 2,
@@ -515,7 +513,7 @@
         "quarantined": 0,
         "removed": 0,
         "unavailable": 0,
-        "unchanged": 1
+        "unchanged": 0
       },
       "vercel-agent-skills": {
         "sampled": 9,
@@ -551,7 +549,7 @@
         "quarantined": 0,
         "removed": 0,
         "unavailable": 0,
-        "unchanged": 1
+        "unchanged": 0
       },
       "wordpress": {
         "sampled": 20,
@@ -589,11 +587,11 @@
         "quarantined": 2,
         "removed": 0,
         "unavailable": 0,
-        "unchanged": 2
+        "unchanged": 0
       },
       "directory": {
-        "sampled": 40,
-        "discovered": 25,
+        "sampled": 60,
+        "discovered": 40,
         "licenseHinted": 0,
         "reviewed": 1,
         "licensed": 0,
@@ -607,7 +605,7 @@
         "quarantined": 0,
         "removed": 0,
         "unavailable": 0,
-        "unchanged": 1
+        "unchanged": 0
       },
       "first-party": {
         "sampled": 245,
@@ -625,7 +623,7 @@
         "quarantined": 0,
         "removed": 0,
         "unavailable": 0,
-        "unchanged": 6
+        "unchanged": 0
       }
     }
   },
@@ -750,6 +748,81 @@
         "repo": "nexu-io/open-design",
         "slug": "mobile-onboarding",
         "url": "https://skillsmp.com/creators/nexu-io/open-design/plugins-official-examples-mobile-onboarding"
+      },
+      {
+        "repo": "openclaw/openclaw",
+        "slug": "notion",
+        "url": "https://skillsmp.com/creators/openclaw/openclaw/skills-notion"
+      },
+      {
+        "repo": "openclaw/openclaw",
+        "slug": "claw-score",
+        "url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-claw-score"
+      },
+      {
+        "repo": "vinta/awesome-python",
+        "slug": "audit-the-list",
+        "url": "https://skillsmp.com/creators/vinta/awesome-python/claude-skills-audit-the-list"
+      },
+      {
+        "repo": "mattpocock/skills",
+        "slug": "migrate-to-shoehorn",
+        "url": "https://skillsmp.com/creators/mattpocock/skills/skills-misc-migrate-to-shoehorn"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "data-scraper-agent",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/skills-data-scraper-agent"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "data-throughput-accelerator",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/pi-core-skills-data-throughput-accelerator"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "redis-patterns",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/pi-core-skills-redis-patterns"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "swift-actor-persistence",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/kiro-skills-swift-actor-persistence"
+      },
+      {
+        "repo": "openclaw/openclaw",
+        "slug": "video-frames",
+        "url": "https://skillsmp.com/creators/openclaw/openclaw/skills-video-frames"
+      },
+      {
+        "repo": "openclaw/openclaw",
+        "slug": "summarize",
+        "url": "https://skillsmp.com/creators/openclaw/openclaw/skills-summarize"
+      },
+      {
+        "repo": "openclaw/openclaw",
+        "slug": "control-ui-e2e",
+        "url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-control-ui-e2e"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "remotion-video-creation",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/skills-remotion-video-creation"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "short-video-distribution",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/skills-short-video-distribution"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "video-editing",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/skills-video-editing"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "slug": "manim-video",
+        "url": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-manim-video"
       }
     ],
     "github-topic": [
@@ -3206,9 +3279,9 @@
           "url": "https://github.com/vercel-labs/skills/blob/57217cf86ba38148a57af9e90d14a4c049558330/skills/find-skills/SKILL.md"
         }
       ],
-      "lastChecked": "2026-11-25T05:16:45.025Z",
-      "lastVerified": "2026-11-25T05:16:45.025Z",
-      "reviewDigest": "6736fdc825673c9deeb4a77570c2d47df9ad83daf9bd3f00ac130b511e13c320",
+      "lastChecked": "2026-11-25T05:32:56.080Z",
+      "lastVerified": "2026-11-25T05:32:56.080Z",
+      "reviewDigest": "9c07b0d3eb4148c4c886a93d2939cdff1ee3ef9093ce1d9322ac76886c089af5",
       "checksum": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
       "fingerprint": "f7c4e26b91000623",
       "trustScore": 72,
@@ -3224,7 +3297,8 @@
         "checks": {
           "name": true,
           "description": true,
-          "body": true
+          "body": true,
+          "substantive": true
         }
       },
       "quality": {
@@ -3239,6 +3313,7 @@
         }
       },
       "license": "MIT",
+      "refreshState": "verified",
       "licenseEvidence": [
         {
           "name": "LICENSE",
@@ -3251,7 +3326,6 @@
       "skillAssets": [],
       "status": "metadata-only",
       "reason": "The curated catalog carries this source. Its installation commands require an explicit request.",
-      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -3286,9 +3360,9 @@
           "url": "https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/writing-plans/SKILL.md"
         }
       ],
-      "lastChecked": "2026-11-25T05:16:45.025Z",
-      "lastVerified": "2026-11-25T05:16:45.025Z",
-      "reviewDigest": "da54520fb1be5ea0c28e02f61789dafa08c769bb007496c1497dc0c86757ff44",
+      "lastChecked": "2026-11-25T05:32:56.080Z",
+      "lastVerified": "2026-11-25T05:32:56.080Z",
+      "reviewDigest": "836da9a6be021f8538120eb3d86c22560cdb1219f8395046c026a65a0f279b58",
       "checksum": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a",
       "fingerprint": "641c8da2055b91fd",
       "trustScore": 72,
@@ -3304,7 +3378,8 @@
         "checks": {
           "name": true,
           "description": true,
-          "body": true
+          "body": true,
+          "substantive": true
         }
       },
       "quality": {
@@ -3319,6 +3394,7 @@
         }
       },
       "license": "MIT",
+      "refreshState": "verified",
       "mirror": [
         "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a",
         "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
@@ -3335,7 +3411,6 @@
       "skillAssets": [],
       "status": "approved",
       "reason": null,
-      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -3366,9 +3441,9 @@
           "url": "https://github.com/anthropics/skills/blob/e4bb5d960d87126ff3b3a8af1a104b7db67560ba/skills/brand-guidelines/SKILL.md"
         }
       ],
-      "lastChecked": "2026-11-25T05:16:45.025Z",
-      "lastVerified": "2026-11-25T05:16:45.025Z",
-      "reviewDigest": "f4211bd3763f67fdb417dfb1264de1b5ba071866a3a7ace26cfde4ea61cd71e6",
+      "lastChecked": "2026-11-25T05:32:56.080Z",
+      "lastVerified": "2026-11-25T05:32:56.080Z",
+      "reviewDigest": "122d4c6182e4404c6cddb622fb72d846c500a51c2ba27eaa08645d74f98e439c",
       "checksum": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe",
       "fingerprint": "41d01a00b263b307",
       "trustScore": 80,
@@ -3382,7 +3457,8 @@
         "checks": {
           "name": true,
           "description": true,
-          "body": true
+          "body": true,
+          "substantive": true
         }
       },
       "quality": {
@@ -3397,6 +3473,7 @@
         }
       },
       "license": "Apache-2.0",
+      "refreshState": "verified",
       "mirror": [
         "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe",
         "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
@@ -3413,7 +3490,6 @@
       "skillAssets": [],
       "status": "approved",
       "reason": null,
-      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -3452,9 +3528,9 @@
           "url": "https://skillsmp.com/creators/anthropics/skills/skills-doc-coauthoring"
         }
       ],
-      "lastChecked": "2026-11-25T05:16:45.025Z",
-      "lastVerified": "2026-11-25T05:16:45.025Z",
-      "reviewDigest": "9ccdf3bbcdb70b0fa37c5b31b43147a4d2d38df285a229a0a08d8c4d2fe9ab56",
+      "lastChecked": "2026-11-25T05:32:56.080Z",
+      "lastVerified": "2026-11-25T05:32:56.080Z",
+      "reviewDigest": "c4f977b5b4c41017ba72a1828596830de5a6478feed4dfa7ee0d4f9f7162890f",
       "checksum": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4",
       "fingerprint": "c8d6b23f0746410f",
       "trustScore": 80,
@@ -3468,7 +3544,8 @@
         "checks": {
           "name": true,
           "description": true,
-          "body": true
+          "body": true,
+          "substantive": true
         }
       },
       "quality": {
@@ -3483,11 +3560,11 @@
         }
       },
       "license": "unverified",
+      "refreshState": "verified",
       "licenseEvidence": [],
       "skillAssets": [],
       "status": "metadata-only",
       "reason": "An explicit permissive upstream license is missing.",
-      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -3537,9 +3614,9 @@
           "url": "https://github.com/shwetankg07/linkedin-writing"
         }
       ],
-      "lastChecked": "2026-11-25T05:16:45.025Z",
-      "lastVerified": "2026-11-25T05:16:45.025Z",
-      "reviewDigest": "4504bc2170fcb0b5bf38574f8d842ed6a1c8770692dad6623d8e234c74071908",
+      "lastChecked": "2026-11-25T05:32:56.080Z",
+      "lastVerified": "2026-11-25T05:32:56.080Z",
+      "reviewDigest": "854daeda690c0b9b30c4877266bd45939481c60fa9b0cda520433368e056e7a0",
       "checksum": "bec4f16379308958fb7d384c8839e46f94efce9a62ce275e74cd5799f86a3ed0",
       "fingerprint": "e05774704d0390ca",
       "trustScore": 52,
@@ -3557,7 +3634,8 @@
         "checks": {
           "name": true,
           "description": true,
-          "body": true
+          "body": true,
+          "substantive": true
         }
       },
       "quality": {
@@ -3572,6 +3650,7 @@
         }
       },
       "license": "MIT",
+      "refreshState": "verified",
       "mirror": [
         "bec4f16379308958fb7d384c8839e46f94efce9a62ce275e74cd5799f86a3ed0",
         "2faf3af98c763655fd9db38d0c08748145207f0d16d3848a4af6c6bf084d83a3",
@@ -3604,7 +3683,6 @@
       ],
       "status": "approved",
       "reason": null,
-      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -3644,9 +3722,9 @@
           "url": "https://github.com/LevyBytes/AI-SKILL-davinci-resolve"
         }
       ],
-      "lastChecked": "2026-11-25T05:16:45.025Z",
-      "lastVerified": "2026-11-25T05:16:45.025Z",
-      "reviewDigest": "4628e24cc6640fea1974a3d47064ab538aa0204eec96950247de360c4b0a7254",
+      "lastChecked": "2026-11-25T05:32:56.080Z",
+      "lastVerified": "2026-11-25T05:32:56.080Z",
+      "reviewDigest": "071a50f24afa794ce4f55223d69e03db7668938e66f0f129a0759b6376410067",
       "checksum": "b7a87ca9a7cebb92bc8653d8d59153cb833babe5ac0b5de408f9622fc0dcbc31",
       "fingerprint": "654c800031cffb5d",
       "trustScore": 72,
@@ -3662,7 +3740,8 @@
         "checks": {
           "name": true,
           "description": true,
-          "body": true
+          "body": true,
+          "substantive": true
         }
       },
       "quality": {
@@ -3739,9 +3818,9 @@
           "url": "https://github.com/Developh/resolve-cut"
         }
       ],
-      "lastChecked": "2026-11-25T05:16:45.025Z",
-      "lastVerified": "2026-11-25T05:16:45.025Z",
-      "reviewDigest": "487c03e02ece4d751ea6166bc91399012f9f43a8d42c031a2405d8fcbc1e00ee",
+      "lastChecked": "2026-11-25T05:32:56.080Z",
+      "lastVerified": "2026-11-25T05:32:56.080Z",
+      "reviewDigest": "96781c375191c01f76826dc150d757e0e118710f1407398edf3b540f97c64a26",
       "checksum": "3c98e0907313b544383ddc578f04c7f0883bcd09e57cb203fe085063c528c0fa",
       "fingerprint": "a8d6aa2fc3b9a40a",
       "trustScore": 34,
@@ -3759,7 +3838,8 @@
         "checks": {
           "name": true,
           "description": true,
-          "body": true
+          "body": true,
+          "substantive": true
         }
       },
       "quality": {
@@ -3825,9 +3905,9 @@
           "url": "https://github.com/DojoCodingLabs/remotion-superpowers"
         }
       ],
-      "lastChecked": "2026-11-25T05:16:45.025Z",
-      "lastVerified": "2026-11-25T05:16:45.025Z",
-      "reviewDigest": "2adbafdc5ea95b5c6a89dbbacc4f7880ad84f8c22d2b9401203ca8a0900a382b",
+      "lastChecked": "2026-11-25T05:32:56.080Z",
+      "lastVerified": "2026-11-25T05:32:56.080Z",
+      "reviewDigest": "a4dbe37619a596f847269a5448590f7ae7353977b36f03c1e427962df21c8526",
       "checksum": "ecc6456dc69a65d2ba649f62f1c79f1cf36cf70438269d510e1f3fd9151714eb",
       "fingerprint": "430f1b83161dd877",
       "trustScore": 42,
@@ -3844,7 +3924,8 @@
         "checks": {
           "name": true,
           "description": true,
-          "body": true
+          "body": true,
+          "substantive": true
         }
       },
       "quality": {
@@ -3921,9 +4002,9 @@
           "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-animation/SKILL.md"
         }
       ],
-      "lastChecked": "2026-11-25T05:16:45.025Z",
-      "lastVerified": "2026-11-25T05:16:45.025Z",
-      "reviewDigest": "9ccc3a7638aa09b0a0dcf56e3a05af310b0e28b37f9138b791b84d03fb7ba0c9",
+      "lastChecked": "2026-11-25T05:32:56.080Z",
+      "lastVerified": "2026-11-25T05:32:56.080Z",
+      "reviewDigest": "415afdef7b94be6f56c0ead274e509eecd0d3f5767e4bfc8a936df655e983968",
       "checksum": "69709ea8089d17773983d0dd947cfefe7b5ec3636c8e357daca9a5b542fa9ed1",
       "fingerprint": "d928bc460e69bab1",
       "trustScore": 72,
@@ -3939,7 +4020,8 @@
         "checks": {
           "name": true,
           "description": true,
-          "body": true
+          "body": true,
+          "substantive": true
         }
       },
       "quality": {
@@ -3954,6 +4036,7 @@
         }
       },
       "license": "MIT",
+      "refreshState": "verified",
       "mirror": [
         "69709ea8089d17773983d0dd947cfefe7b5ec3636c8e357daca9a5b542fa9ed1",
         "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
@@ -3994,7 +4077,6 @@
       ],
       "status": "approved",
       "reason": null,
-      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -4043,9 +4125,9 @@
           "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-design-system/SKILL.md"
         }
       ],
-      "lastChecked": "2026-11-25T05:16:45.025Z",
-      "lastVerified": "2026-11-25T05:16:45.025Z",
-      "reviewDigest": "f9a529cc657ada412d04bc9263e1852b4c89665026942e1d04ef4cc2f42f8ceb",
+      "lastChecked": "2026-11-25T05:32:56.080Z",
+      "lastVerified": "2026-11-25T05:32:56.080Z",
+      "reviewDigest": "7e72b3b38ca5ab0967c163d88cbfab7e67f482ec4a45420c5aad1bc94499625e",
       "checksum": "102e7d2cee193dc4e1dd06796a142106c7d5cc5a435791a031e3036e8200e635",
       "fingerprint": "d22a58992c637a0b",
       "trustScore": 80,
@@ -4059,7 +4141,8 @@
         "checks": {
           "name": true,
           "description": true,
-          "body": true
+          "body": true,
+          "substantive": true
         }
       },
       "quality": {
@@ -4074,6 +4157,7 @@
         }
       },
       "license": "MIT",
+      "refreshState": "verified",
       "mirror": [
         "102e7d2cee193dc4e1dd06796a142106c7d5cc5a435791a031e3036e8200e635",
         "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
@@ -4114,7 +4198,6 @@
       ],
       "status": "approved",
       "reason": null,
-      "refreshState": "unchanged",
       "aliases": []
     },
     {
@@ -4162,9 +4245,9 @@
           "url": "https://github.com/expo/skills/blob/e577fe1524106faa3b241430874cb3c495e6b9db/plugins/expo/skills/expo-project-structure/SKILL.md"
         }
       ],
-      "lastChecked": "2026-11-25T05:16:45.025Z",
-      "lastVerified": "2026-11-25T05:16:45.025Z",
-      "reviewDigest": "8849ed15b162fc73c40c07e71622e9fc777e89a5aa823ae7c345a4645bd360ea",
+      "lastChecked": "2026-11-25T05:32:56.080Z",
+      "lastVerified": "2026-11-25T05:32:56.080Z",
+      "reviewDigest": "e62aff6b7d66bc1d0493c264b96d9b31f5c34df2b5cd03e2546ad9a0629c5329",
       "checksum": "ec6221829186fea1672a86eac9c9f560aaa0d4929e9763e0a0e5c55504f23196",
       "fingerprint": "6527d58e336498a2",
       "trustScore": 80,
@@ -4178,7 +4261,8 @@
         "checks": {
           "name": true,
           "description": true,
-          "body": true
+          "body": true,
+          "substantive": true
         }
       },
       "quality": {
@@ -4193,6 +4277,7 @@
         }
       },
       "license": "MIT",
+      "refreshState": "verified",
       "mirror": [
         "ec6221829186fea1672a86eac9c9f560aaa0d4929e9763e0a0e5c55504f23196",
         "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
@@ -4216,7 +4301,6 @@
       "skillAssets": [],
       "status": "approved",
       "reason": null,
-      "refreshState": "unchanged",
       "aliases": []
     }
   ]

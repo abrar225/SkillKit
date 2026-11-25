@@ -185,6 +185,7 @@ const tools = [
       type: 'object',
       properties: {
         id: { type: 'string', description: 'Skill id such as engineering-ops/tdd.' },
+        focus: { type: 'string', maxLength: 8000, description: 'Optional task focus for short verbatim source excerpts. Omit for the full file.' },
         compact: { type: 'boolean', description: 'Use an exact ID and omit the per-file integrity ledger from provenance.' },
       },
       required: ['id'],
@@ -299,7 +300,7 @@ async function callTool(name, args, remote, root, endpoint) {
         detail.provenance = readJson(path.join(root, skill.path, 'SOURCE.json'));
         delete detail.provenance.originalPath;
       }
-      return textResult(detail, true);
+      return textResult(require('../lib/focused-skill').focusedSkill(detail, args.focus), true);
     }
 
     case 'list_domains':

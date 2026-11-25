@@ -1,8 +1,9 @@
 """Audit a repeatable hash-selected sample of publisher SKILL.md metadata. No user tasks enter discovery."""
 import concurrent.futures as cf
-import hashlib,json,pathlib,re,time,urllib.parse,urllib.request
+import hashlib,json,pathlib,re,subprocess,urllib.parse,urllib.request
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 dest=ROOT/'catalog/federated/tag-audit.json'
+prior={r['id']:r for r in json.loads(dest.read_text())} if dest.exists() else {}
 snap=json.loads((ROOT/'catalog/federated/snapshot.json').read_text())
 candidates={i['repo']+'/'+i['path']:i for rows in snap['candidates'].values() for i in rows if i.get('commit') and i.get('path','').endswith('/SKILL.md')}
 sample=sorted(candidates,key=lambda x:hashlib.sha256(x.encode()).digest())[:200]
@@ -27,7 +28,18 @@ def audit(key):
         hits={k:len(re.findall(p,evidence,re.I)) for k,p in domains.items()}
         tag=max(hits,key=hits.get) if any(hits.values()) else 'unknown'
         record.update(sha256=hashlib.sha256(data).hexdigest(),domain=tag,description=evidence)
-    except Exception as exc:record['unassessed']=str(exc)[:100]
+        assessment=subprocess.run(['node',str(ROOT/'scripts/assess-atlas-document.js')],input=json.dumps(dict(body=body,slug=item.get('slug',key))),capture_output=True,text=True,check=True)
+        record.update(json.loads(assessment.stdout))
+        previous=prior.get(key,{})
+        if record['sha256']==previous.get('sha256'):
+            for k in ('blindLocalDomain','reviewDomain'):
+                if k in previous: record[k]=previous[k]
+            if 'reviewDomain' in record: record['domainError']=record['reviewDomain']!=tag
+            if 'blindLocalDomain' in record: record['disagrees']=record['blindLocalDomain']!=tag
+    except Exception as exc:
+        if prior.get(key,{}).get('commit')==item['commit']:
+            record=prior[key].copy()
+        record['unassessed']=type(exc).__name__
     return record
 with cf.ThreadPoolExecutor(max_workers=3) as pool:rows=list(pool.map(audit,sample))
 dest.write_text(json.dumps(rows,indent=2,ensure_ascii=False)+'\n')

@@ -47,3 +47,5 @@ Outcome collection requires both operator configuration of `SKILLKIT_OUTCOME_FIL
 Run `node bin/vibe-skills.js agent-rule` once and put the resulting line in the consuming project's `AGENTS.md` or `CLAUDE.md`. The rule is an instruction to the host. The host still decides whether to call the tool.
 
 For compact discovery, POST the JSON request to `/api/find-kit`. POST its selected `kitId` and original `request` to `/api/get-kit` for the stages. Use the same arguments with MCP `find_kit` and `get_kit`. A text-only client can use `handoff`. Keep the server checkout outside the consuming project.
+
+For a small model, `get_skill` accepts an optional `focus` string. The maintainer CLI equivalent is `get <id> --focus "<brief>"`. Returned excerpts quote the approved source verbatim and preserve its provenance and notices. Read the full file for prerequisites or caveats before applying a stage.

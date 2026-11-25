@@ -1,0 +1,46 @@
+{
+  "model": "Qwen2.5-1.5B-Instruct Q4_K_M",
+  "qualifiedTasks": 34,
+  "minRunsPerArm": 3,
+  "blinded": true,
+  "interval95": [
+    0.2650854701640365,
+    0.6092921450416022
+  ],
+  "wins": 12,
+  "losses": 16,
+  "ties": 6,
+  "categories": {
+    "web": {
+      "wins": 1,
+      "losses": 4,
+      "ties": 1
+    },
+    "poster": {
+      "wins": 0,
+      "losses": 3,
+      "ties": 1
+    },
+    "newsletter": {
+      "wins": 1,
+      "losses": 5,
+      "ties": 0
+    },
+    "readme": {
+      "wins": 3,
+      "losses": 0,
+      "ties": 3
+    },
+    "review": {
+      "wins": 3,
+      "losses": 3,
+      "ties": 0
+    },
+    "release": {
+      "wins": 4,
+      "losses": 1,
+      "ties": 1
+    }
+  },
+  "method": "Task-level sign of sum of three paired votes; Wilson 95% for wins among non-tied tasks."
+}

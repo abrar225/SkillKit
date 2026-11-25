@@ -62,6 +62,7 @@ function flagValue(index, flag) {
 
 for (let i = 0; i < argv.length; i += 1) {
   const arg = argv[i];
+  if (arg === '--focus') { flags.focus = flagValue(i, arg); i++; continue; }
   if (arg === '--lock') flags.lock = true;
   else if (arg === '--upstream') flags.upstream = true;
   else if (arg === '--project') { flags.project = flagValue(i, arg); i += 1; }
@@ -536,7 +537,7 @@ switch (command) {
       const stream = await require('../lib/kit-archive').archive(id, repoRoot);
       const file = await require('../client/output').saveArchive(stream, flags.out, id);
       console.log(file);
-    } else console.log(JSON.stringify(await delivery.getSkill(id)));
+    } else console.log(JSON.stringify(require('../lib/focused-skill').focusedSkill(await delivery.getSkill(id), flags.focus)));
     break;
   }
   case 'use':

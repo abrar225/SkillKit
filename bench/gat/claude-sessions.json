@@ -1,0 +1,301 @@
+[
+  {
+    "persona": "web",
+    "arm": "pointer",
+    "host": "Claude Code with local Qwen2.5-1.5B",
+    "realSession": true,
+    "localInference": true,
+    "completed": true,
+    "error": null,
+    "calledSkillKit": false,
+    "workingKit": false,
+    "calls": 0,
+    "toolNames": [],
+    "skillsLoaded": [],
+    "tokens": 24511,
+    "usage": {
+      "input_tokens": 24471,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 23,
+      "output_tokens": 17,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "projectFilesChanged": [],
+    "responseHash": "df144f723f6f34c8ea66b6157de53dd07f60a2d196665f9ecd209d81c2727e8a"
+  },
+  {
+    "persona": "web",
+    "arm": "snippet",
+    "host": "Claude Code with local Qwen2.5-1.5B",
+    "realSession": true,
+    "localInference": true,
+    "completed": true,
+    "error": null,
+    "calledSkillKit": false,
+    "workingKit": false,
+    "calls": 0,
+    "toolNames": [],
+    "skillsLoaded": [],
+    "tokens": 24808,
+    "usage": {
+      "input_tokens": 24071,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 592,
+      "output_tokens": 145,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "projectFilesChanged": [],
+    "responseHash": "d9ac0e5c519257c67fbdda60b6a5f416b84cb6618e34dc3d4b99c15f29ee020d"
+  },
+  {
+    "persona": "web",
+    "arm": "manual",
+    "host": "Claude Code with local Qwen2.5-1.5B",
+    "realSession": true,
+    "localInference": true,
+    "completed": false,
+    "error": "Incomplete session",
+    "calledSkillKit": false,
+    "workingKit": false,
+    "calls": 0,
+    "toolNames": [],
+    "skillsLoaded": [],
+    "tokens": 0,
+    "usage": {},
+    "projectFilesChanged": [],
+    "responseHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "persona": "video",
+    "arm": "pointer",
+    "host": "Claude Code with local Qwen2.5-1.5B",
+    "realSession": true,
+    "localInference": true,
+    "completed": true,
+    "error": null,
+    "calledSkillKit": false,
+    "workingKit": false,
+    "calls": 0,
+    "toolNames": [],
+    "skillsLoaded": [],
+    "tokens": 24573,
+    "usage": {
+      "input_tokens": 24523,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 22,
+      "output_tokens": 28,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "projectFilesChanged": [],
+    "responseHash": "6d349a395ee2cca7b8455eaee08f9ee8f0c1eb77bdfb287d6db52a587c6f51e5"
+  },
+  {
+    "persona": "video",
+    "arm": "snippet",
+    "host": "Claude Code with local Qwen2.5-1.5B",
+    "realSession": true,
+    "localInference": true,
+    "completed": true,
+    "error": null,
+    "calledSkillKit": false,
+    "workingKit": false,
+    "calls": 0,
+    "toolNames": [],
+    "skillsLoaded": [],
+    "tokens": 25030,
+    "usage": {
+      "input_tokens": 24115,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 593,
+      "output_tokens": 322,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "projectFilesChanged": [],
+    "responseHash": "2a926ab3461400136c73a1ffcdfa07dd85cfbce149745e934661b28a4d74b496"
+  },
+  {
+    "persona": "video",
+    "arm": "manual",
+    "host": "Claude Code with local Qwen2.5-1.5B",
+    "realSession": true,
+    "localInference": true,
+    "completed": false,
+    "error": "Incomplete session",
+    "calledSkillKit": false,
+    "workingKit": false,
+    "calls": 0,
+    "toolNames": [],
+    "skillsLoaded": [],
+    "tokens": 0,
+    "usage": {},
+    "projectFilesChanged": [],
+    "responseHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "persona": "motion",
+    "arm": "pointer",
+    "host": "Claude Code with local Qwen2.5-1.5B",
+    "realSession": true,
+    "localInference": true,
+    "completed": true,
+    "error": null,
+    "calledSkillKit": false,
+    "workingKit": false,
+    "calls": 0,
+    "toolNames": [],
+    "skillsLoaded": [],
+    "tokens": 24584,
+    "usage": {
+      "input_tokens": 24520,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 21,
+      "output_tokens": 43,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "projectFilesChanged": [],
+    "responseHash": "87db5896faf1ee5637212f36fd89e8ae95f949951dc8f5ff19a5f02d98a8f39a"
+  },
+  {
+    "persona": "motion",
+    "arm": "snippet",
+    "host": "Claude Code with local Qwen2.5-1.5B",
+    "realSession": true,
+    "localInference": true,
+    "completed": false,
+    "error": "Incomplete session",
+    "calledSkillKit": false,
+    "workingKit": false,
+    "calls": 0,
+    "toolNames": [],
+    "skillsLoaded": [],
+    "tokens": 0,
+    "usage": {},
+    "projectFilesChanged": [],
+    "responseHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "persona": "motion",
+    "arm": "manual",
+    "host": "Claude Code with local Qwen2.5-1.5B",
+    "realSession": true,
+    "localInference": true,
+    "completed": true,
+    "error": null,
+    "calledSkillKit": false,
+    "workingKit": false,
+    "calls": 0,
+    "toolNames": [],
+    "skillsLoaded": [],
+    "tokens": 19844,
+    "usage": {
+      "input_tokens": 19225,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 591,
+      "output_tokens": 28,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "projectFilesChanged": [],
+    "responseHash": "d764ffd6a83a3608a6a102a2bd714f74dffdd9e2d0478976c0a3752c603133f4"
+  },
+  {
+    "persona": "design",
+    "arm": "pointer",
+    "host": "Claude Code with local Qwen2.5-1.5B",
+    "realSession": true,
+    "localInference": true,
+    "completed": true,
+    "error": null,
+    "calledSkillKit": false,
+    "workingKit": false,
+    "calls": 0,
+    "toolNames": [],
+    "skillsLoaded": [],
+    "tokens": 25156,
+    "usage": {
+      "input_tokens": 24523,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 21,
+      "output_tokens": 612,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "projectFilesChanged": [],
+    "responseHash": "a1ec554540d43cc117b9df1c6954ea07f0f156b8bba2a0b81d5bec75761cdbd6"
+  }
+]

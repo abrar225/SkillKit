@@ -31,3 +31,5 @@ The 200-row [tag audit](../catalog/federated/tag-audit.json) samples pinned publ
 ## Optional live discovery
 
 Both the operator and caller must enable live search. Start the service with `SKILLKIT_UPSTREAM_SEARCH=1` and pass `upstream: true` to `find_kit`, or use `find-kit --upstream` from the maintainer CLI. Only an uncovered, recognized public catalog category and an allowlisted tool name can leave the process. Incoming briefs, filenames, organization names and benchmark text never become search terms. A result is a link to investigate. It cannot promote a kit to READY or authorize a download. Use `explain_match` for the specialist requirements when a gap remains.
+
+Use `node scripts/atlas-index.js` for the offline inventory summary, append an exact ID for one normalized record or `--json` for local analysis. Null values mean that the field lacks verification. The descriptive tags on discovery pointers are provisional. Document scans omit assets and repository-level permissions. A pointer never enters the router through this inventory view.
