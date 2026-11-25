@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "generatedAt": "2026-11-17",
-  "count": 157,
+  "count": 164,
   "categories": [
     {
       "id": "agent-workflows",
@@ -13,7 +13,7 @@
       "id": "architecture-code-quality",
       "name": "Architecture, Code Quality & Dead Code",
       "path": "resources/architecture-code-quality.json",
-      "count": 18
+      "count": 19
     },
     {
       "id": "automation-scraping",
@@ -31,7 +31,7 @@
       "id": "design-ui",
       "name": "Design, UI & Motion",
       "path": "resources/design-ui.json",
-      "count": 25
+      "count": 27
     },
     {
       "id": "frontend",
@@ -49,7 +49,7 @@
       "id": "media-video",
       "name": "Media, Video & Generative Art",
       "path": "resources/media-video.json",
-      "count": 6
+      "count": 10
     },
     {
       "id": "mobile",
@@ -695,6 +695,23 @@
         "code-quality",
         "agent-behavior",
         "best-practices"
+      ],
+      "category": "architecture-code-quality"
+    },
+    {
+      "id": "docker-build-practices",
+      "name": "Docker build best practices",
+      "url": "https://docs.docker.com/build/building/best-practices/",
+      "type": "documentation",
+      "pricing": "free",
+      "license": "Publisher terms (reference link only)",
+      "description": "Docker documents multi-stage builds, base image choice, dependency management and Dockerfile instructions.",
+      "why": "Evaluate the build stages, final image contents and base image before releasing a container.",
+      "tags": [
+        "docker",
+        "dockerfile",
+        "build",
+        "container"
       ],
       "category": "architecture-code-quality"
     },
@@ -1576,6 +1593,40 @@
       "category": "design-ui"
     },
     {
+      "id": "inkscape-pdf",
+      "name": "Inkscape PDF export guide",
+      "url": "https://inkscape-manuals.readthedocs.io/en/latest/export-pdf.html",
+      "type": "documentation",
+      "pricing": "free",
+      "license": "Publisher terms (reference link only)",
+      "description": "The Inkscape guide explains saving a PDF from an editable SVG and choosing export settings for text and filters.",
+      "why": "Keep the SVG master, then inspect the exported PDF at its intended size.",
+      "tags": [
+        "inkscape",
+        "pdf",
+        "svg",
+        "print"
+      ],
+      "category": "design-ui"
+    },
+    {
+      "id": "figma-component-naming",
+      "name": "Figma component naming and organization",
+      "url": "https://help.figma.com/hc/en-us/articles/360038663994-Name-and-organize-components",
+      "type": "documentation",
+      "pricing": "freemium",
+      "license": "Publisher terms (reference link only)",
+      "description": "Figma documents component naming and organization within the Assets panel.",
+      "why": "Use consistent groups to make components discoverable in a Figma design file.",
+      "tags": [
+        "figma",
+        "components",
+        "naming",
+        "design-system"
+      ],
+      "category": "design-ui"
+    },
+    {
       "id": "react",
       "name": "React",
       "url": "https://react.dev/",
@@ -2091,6 +2142,75 @@
         "video",
         "remotion",
         "skills"
+      ],
+      "category": "media-video"
+    },
+    {
+      "id": "resolve-editor-training",
+      "name": "DaVinci Resolve editing and post-production training",
+      "url": "https://www.blackmagicdesign.com/products/davinciresolve/training",
+      "type": "documentation",
+      "pricing": "free",
+      "license": "Publisher terms (reference link only)",
+      "description": "Blackmagic Design publishes editor, colorist and Fairlight training with downloadable project exercises for DaVinci Resolve.",
+      "why": "Follow the native timeline editing, grading or mixing exercises for the relevant application version.",
+      "tags": [
+        "davinci-resolve",
+        "timeline",
+        "color",
+        "fairlight"
+      ],
+      "category": "media-video"
+    },
+    {
+      "id": "after-effects-expressions",
+      "name": "After Effects expression basics",
+      "url": "https://helpx.adobe.com/after-effects/desktop/work-with-expressions/expression-basics/expression-basics.html",
+      "type": "documentation",
+      "pricing": "paid",
+      "license": "Publisher terms (reference link only)",
+      "description": "Adobe explains how to add expressions to animation properties, link values and inspect the result in After Effects.",
+      "why": "Apply the expression to an editable property and scrub the composition to verify motion. Requires After Effects.",
+      "tags": [
+        "after-effects",
+        "expressions",
+        "motion",
+        "animation"
+      ],
+      "category": "media-video"
+    },
+    {
+      "id": "premiere-text-editing",
+      "name": "Premiere text-based editing",
+      "url": "https://helpx.adobe.com/premiere-pro/using/text-based-editing.html",
+      "type": "documentation",
+      "pricing": "paid",
+      "license": "Publisher terms (reference link only)",
+      "description": "Adobe documents transcript-based rough cuts, source media transcription and edits to a Premiere sequence.",
+      "why": "Use transcript selections to build an editable interview sequence. Requires Premiere.",
+      "tags": [
+        "premiere-pro",
+        "video",
+        "interview",
+        "transcript",
+        "timeline"
+      ],
+      "category": "media-video"
+    },
+    {
+      "id": "remotion-captions",
+      "name": "Remotion caption data and rendering",
+      "url": "https://www.remotion.dev/docs/captions/",
+      "type": "documentation",
+      "pricing": "freemium",
+      "license": "Publisher terms (reference link only)",
+      "description": "Remotion documents timed caption data, subtitle utilities and displaying captions in a composition.",
+      "why": "Check caption timing and line grouping in the Remotion composition. Check the Remotion license for the intended use.",
+      "tags": [
+        "remotion",
+        "captions",
+        "video",
+        "subtitles"
       ],
       "category": "media-video"
     },

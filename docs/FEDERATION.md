@@ -1,8 +1,8 @@
 # Federated skill catalog
 
-The curated skill registry has priority. When local entries leave a gap, the router can consider eligible entries from the reviewed federated snapshot. The snapshot contains metadata and upstream pins. Third-party instructions stay upstream until requested by exact ID.
+The curated skill registry has priority. When local entries leave a gap, the router can consider eligible entries from the reviewed federated snapshot. The snapshot contains metadata and upstream pins. Individually approved permissive files are mirrored locally. Other pointers retain their upstream link.
 
-The initial snapshot covers eight skill entries. The LinkedIn writing entry is eligible to fill a distinct routing gap. The duplicate Anthropic and Superpowers entries remain discoverable by exact ID. The two Resolve entries document important limits. One points to references that still need review. The other requires Resolve Studio, local scripts, and credentialed transcription and is quarantined.
+The original pilot covered eight skill entries. The LinkedIn writing entry is eligible to fill a distinct routing gap. The duplicate Anthropic and Superpowers entries remain discoverable by exact ID. The two Resolve entries document important limits. One points to references that still need review. The other requires Resolve Studio, local scripts, and credentialed transcription and is quarantined.
 
 ## Sources
 
@@ -20,4 +20,10 @@ Review the proposed entries and exact source diffs before changing `catalog/fede
 
 The similarity check groups matching or near-matching instruction files and keeps alternate provenance on the highest-ranked entry. The trust score records findings from a bounded static scan for shell commands, network access, credential references, prompt injection patterns, and bundled scripts. Outcome-based quality scores remain unset until evaluated.
 
-Only skills with supported permissive license evidence can deliver instructions by default. Metadata-only and quarantined rows return a source link and reason. Delivery retrieves individually pinned files from GitHub, verifies their checksums, and includes the recorded notices. SkillKit never executes a bundled script. [OSI license list](https://opensource.org/licenses)
+Only skills with supported permissive license evidence can deliver instructions by default. Metadata-only and quarantined rows return a source link and reason. Delivery prefers the individually pinned local mirror, checks its checksum and includes the recorded notices. SkillKit never executes a bundled script. [OSI license list](https://opensource.org/licenses)
+
+## November 25 inventory and tag audit
+
+The current snapshot supersedes the initial eight-entry pilot. It records 357 distinct discovery pointers from 755 observations. Eleven received individual review, six have approved mirrors and four add distinct routable entries. Discovery pointers can identify a repository or a file. The 357 count is not a count of deliverable skills. The source decision log is in [SOURCES.md](SOURCES.md).
+
+The 200-row [tag audit](../catalog/federated/tag-audit.json) samples pinned publisher files by path hash. Each row includes a short description, checksum, deterministic primary domain, independent on-device model assignment and a separate reviewer classification. The deterministic domain differed from my description-based review on 99/200 entries (49.5%). The small local classifier disagreed with the deterministic tag on 195/200. Both reviewers are models. These figures measure agreement about primary domain only. This audit does not establish accuracy for tool, deliverable or stage. Unreviewed pointers remain outside default retrieval.

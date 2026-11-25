@@ -283,5 +283,37 @@
     "description": "Cinematic AI website template library with prompt-based workflows and an MCP/Figma surface.",
     "why": "Reference only. Pricing is paid; no template content is copied into this repository.",
     "tags": ["templates", "cinematic", "paid", "mcp"]
+  },
+  {
+    "id": "inkscape-pdf",
+    "name": "Inkscape PDF export guide",
+    "url": "https://inkscape-manuals.readthedocs.io/en/latest/export-pdf.html",
+    "type": "documentation",
+    "pricing": "free",
+    "license": "Publisher terms (reference link only)",
+    "description": "The Inkscape guide explains saving a PDF from an editable SVG and choosing export settings for text and filters.",
+    "why": "Keep the SVG master, then inspect the exported PDF at its intended size.",
+    "tags": [
+      "inkscape",
+      "pdf",
+      "svg",
+      "print"
+    ]
+  },
+  {
+    "id": "figma-component-naming",
+    "name": "Figma component naming and organization",
+    "url": "https://help.figma.com/hc/en-us/articles/360038663994-Name-and-organize-components",
+    "type": "documentation",
+    "pricing": "freemium",
+    "license": "Publisher terms (reference link only)",
+    "description": "Figma documents component naming and organization within the Assets panel.",
+    "why": "Use consistent groups to make components discoverable in a Figma design file.",
+    "tags": [
+      "figma",
+      "components",
+      "naming",
+      "design-system"
+    ]
   }
 ]

@@ -271,5 +271,21 @@
       "agent-behavior",
       "best-practices"
     ]
+  },
+  {
+    "id": "docker-build-practices",
+    "name": "Docker build best practices",
+    "url": "https://docs.docker.com/build/building/best-practices/",
+    "type": "documentation",
+    "pricing": "free",
+    "license": "Publisher terms (reference link only)",
+    "description": "Docker documents multi-stage builds, base image choice, dependency management and Dockerfile instructions.",
+    "why": "Evaluate the build stages, final image contents and base image before releasing a container.",
+    "tags": [
+      "docker",
+      "dockerfile",
+      "build",
+      "container"
+    ]
   }
 ]

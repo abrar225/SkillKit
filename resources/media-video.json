@@ -64,5 +64,70 @@
     "description": "Skills for creating, animating, captioning, and rendering Remotion videos.",
     "why": "Useful when the project already uses Remotion.",
     "tags": ["video", "remotion", "skills"]
+  },
+  {
+    "id": "resolve-editor-training",
+    "name": "DaVinci Resolve editing and post-production training",
+    "url": "https://www.blackmagicdesign.com/products/davinciresolve/training",
+    "type": "documentation",
+    "pricing": "free",
+    "license": "Publisher terms (reference link only)",
+    "description": "Blackmagic Design publishes editor, colorist and Fairlight training with downloadable project exercises for DaVinci Resolve.",
+    "why": "Follow the native timeline editing, grading or mixing exercises for the relevant application version.",
+    "tags": [
+      "davinci-resolve",
+      "timeline",
+      "color",
+      "fairlight"
+    ]
+  },
+  {
+    "id": "after-effects-expressions",
+    "name": "After Effects expression basics",
+    "url": "https://helpx.adobe.com/after-effects/desktop/work-with-expressions/expression-basics/expression-basics.html",
+    "type": "documentation",
+    "pricing": "paid",
+    "license": "Publisher terms (reference link only)",
+    "description": "Adobe explains how to add expressions to animation properties, link values and inspect the result in After Effects.",
+    "why": "Apply the expression to an editable property and scrub the composition to verify motion. Requires After Effects.",
+    "tags": [
+      "after-effects",
+      "expressions",
+      "motion",
+      "animation"
+    ]
+  },
+  {
+    "id": "premiere-text-editing",
+    "name": "Premiere text-based editing",
+    "url": "https://helpx.adobe.com/premiere-pro/using/text-based-editing.html",
+    "type": "documentation",
+    "pricing": "paid",
+    "license": "Publisher terms (reference link only)",
+    "description": "Adobe documents transcript-based rough cuts, source media transcription and edits to a Premiere sequence.",
+    "why": "Use transcript selections to build an editable interview sequence. Requires Premiere.",
+    "tags": [
+      "premiere-pro",
+      "video",
+      "interview",
+      "transcript",
+      "timeline"
+    ]
+  },
+  {
+    "id": "remotion-captions",
+    "name": "Remotion caption data and rendering",
+    "url": "https://www.remotion.dev/docs/captions/",
+    "type": "documentation",
+    "pricing": "freemium",
+    "license": "Publisher terms (reference link only)",
+    "description": "Remotion documents timed caption data, subtitle utilities and displaying captions in a composition.",
+    "why": "Check caption timing and line grouping in the Remotion composition. Check the Remotion license for the intended use.",
+    "tags": [
+      "remotion",
+      "captions",
+      "video",
+      "subtitles"
+    ]
   }
 ]

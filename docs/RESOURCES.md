@@ -2,18 +2,18 @@
 
 Generated from `registry/resources.json` on 2026-11-17. Do not edit by hand: run `npm run build:registry && npm run docs`.
 
-157 developer resources across 11 categories. These are links and references, not vendored code.
+164 developer resources across 11 categories. These are links and references, not vendored code.
 
 | Category | Entries |
 | :--- | ---: |
 | [Agent Workflows & Skill Ecosystems](#agent-workflows) `agent-workflows` | 20 |
-| [Architecture, Code Quality & Dead Code](#architecture-code-quality) `architecture-code-quality` | 18 |
+| [Architecture, Code Quality & Dead Code](#architecture-code-quality) `architecture-code-quality` | 19 |
 | [Automation, Scraping & Leads](#automation-scraping) `automation-scraping` | 10 |
 | [Backend, Databases & Data](#backend-data) `backend-data` | 18 |
-| [Design, UI & Motion](#design-ui) `design-ui` | 25 |
+| [Design, UI & Motion](#design-ui) `design-ui` | 27 |
 | [Frontend Platform & Performance](#frontend) `frontend` | 20 |
 | [Learning & Reference](#learning-reference) `learning-reference` | 6 |
-| [Media, Video & Generative Art](#media-video) `media-video` | 6 |
+| [Media, Video & Generative Art](#media-video) `media-video` | 10 |
 | [Mobile Platforms](#mobile) `mobile` | 8 |
 | [Planning, Specs & Documentation](#planning-docs) `planning-docs` | 9 |
 | [Security & Reverse Engineering](#security) `security` | 17 |
@@ -73,6 +73,7 @@ Source file: `resources/architecture-code-quality.json`
 | [CodeQL](https://codeql.github.com/) | static-analysis-tool | free for public repos | GitHub terms | Semantic code analysis engine used by GitHub code scanning. |
 | [SonarQube](https://www.sonarsource.com/products/sonarqube/) | code-quality-platform | freemium | LGPL-3.0 (Community Build) | Continuous code-quality and security analysis with quality gates. |
 | [Andrej Karpathy Guidelines & Skills](https://github.com/multica-ai/andrej-karpathy-skills) | repository | free | MIT | Community-maintained coding guidelines inspired by Andrej Karpathy, covering surgical changes, explicit assumptions, and verifiable outcomes. |
+| [Docker build best practices](https://docs.docker.com/build/building/best-practices/) | documentation | free | Publisher terms (reference link only) | Docker documents multi-stage builds, base image choice, dependency management and Dockerfile instructions. |
 
 <a id="automation-scraping"></a>
 
@@ -153,6 +154,8 @@ Source file: `resources/design-ui.json`
 | [Taste Skill](https://github.com/leonxlnx/taste-skill) | skill | free | MIT | High-agency UX/UI guidance with layout variance, typography, and GSAP motion constraints. |
 | [Vivid Sites](https://www.vividsites.app/) | template-library | paid with free samples | commercial | Cinematic Three.js and scroll-film website templates with copy-paste prompts. |
 | [GetLayers](https://www.getlayers.ai/) | template-library | paid | commercial | Cinematic AI website template library with prompt-based workflows and an MCP/Figma surface. |
+| [Inkscape PDF export guide](https://inkscape-manuals.readthedocs.io/en/latest/export-pdf.html) | documentation | free | Publisher terms (reference link only) | The Inkscape guide explains saving a PDF from an editable SVG and choosing export settings for text and filters. |
+| [Figma component naming and organization](https://help.figma.com/hc/en-us/articles/360038663994-Name-and-organize-components) | documentation | freemium | Publisher terms (reference link only) | Figma documents component naming and organization within the Assets panel. |
 
 <a id="frontend"></a>
 
@@ -212,6 +215,10 @@ Source file: `resources/media-video.json`
 | [p5.js](https://p5js.org/) | creative-coding | free | LGPL-2.1 | Creative coding library for canvas sketches and generative art. |
 | [HyperFrames Skills](https://github.com/heygen-com/hyperframes) | skill-library | free | Apache-2.0 | Video skills for launch films, explainers, music videos, charts, maps, captions, and rendering. |
 | [Remotion Skills](https://github.com/remotion-dev/skills) | skill-library | free | see repository | Skills for creating, animating, captioning, and rendering Remotion videos. |
+| [DaVinci Resolve editing and post-production training](https://www.blackmagicdesign.com/products/davinciresolve/training) | documentation | free | Publisher terms (reference link only) | Blackmagic Design publishes editor, colorist and Fairlight training with downloadable project exercises for DaVinci Resolve. |
+| [After Effects expression basics](https://helpx.adobe.com/after-effects/desktop/work-with-expressions/expression-basics/expression-basics.html) | documentation | paid | Publisher terms (reference link only) | Adobe explains how to add expressions to animation properties, link values and inspect the result in After Effects. |
+| [Premiere text-based editing](https://helpx.adobe.com/premiere-pro/using/text-based-editing.html) | documentation | paid | Publisher terms (reference link only) | Adobe documents transcript-based rough cuts, source media transcription and edits to a Premiere sequence. |
+| [Remotion caption data and rendering](https://www.remotion.dev/docs/captions/) | documentation | freemium | Publisher terms (reference link only) | Remotion documents timed caption data, subtitle utilities and displaying captions in a composition. |
 
 <a id="mobile"></a>
 
