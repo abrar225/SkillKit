@@ -1,0 +1,8 @@
+{
+  "id": "social",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "8b68aa81808ada4f423abd01f4aeb7544ca5e7859cc7ca55c6fb59e8019e6b3e",
+  "output": "North Library will open on Sundays from 10 a.m. to 2 p.m. starting 6 October.\n\nIf weekday shifts make it hard to get to the library, you\u2019ll have four hours each Sunday to stop in.\n\nDrop by on 6 October to pick up a book.\n"
+}

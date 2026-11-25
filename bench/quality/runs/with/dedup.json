@@ -1,0 +1,8 @@
+{
+  "id": "dedup",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "75c91165489b52c133bf91511f7c59c8f9fa22bc2663346c2f51c72542209955",
+  "output": "SELECT user_id, id\nFROM (\n  SELECT user_id, id,\n         ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY \"at\" DESC, id DESC) AS rn\n  FROM events\n)\nWHERE rn = 1\nORDER BY user_id;\n"
+}

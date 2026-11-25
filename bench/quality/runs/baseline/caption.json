@@ -1,0 +1,8 @@
+{
+  "id": "caption",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "9604ed2e31c08f057405565a00d8deac7ae7e9556d2860a5184ad637b2a21227",
+  "output": "We opened the kiln and found a surprise: one cobalt glaze had turned violet. Come by the studio on Saturday to see how it came out.\n"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "release",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "f2603033e9a7bb756e31f97fe03f458c5e3216758153df4c5ff4a3a5ab8ca6fa",
+  "output": "1. [ ] Verify compatibility in staging with the old reader and new writer running together. Confirm the old reader can fetch a book created by the new writer and sees an update to a pre-migration book. Record expected and actual responses.\n2. [ ] Apply the additive database changes in production. Confirm the old reader still works before enabling the new writer. Keep the old fields and the previous writer available for rollback.\n3. [ ] Enable the new writer for a small share of requests. Keep the old reader serving traffic and record the IDs of the books used to check compatibility.\n4. [ ] Run the post-deploy smoke test. Create a test book and update its title through the new writer, then fetch it by ID through the old reader after each write. Verify the returned ID, title, and required fields against the values sent. Record the results and remove the test record.\n5. [ ] If a successful canary write produces a missing book or incorrect required field on two consecutive reads after the normal visibility window, disable the new writer and restore the previous writer. Keep the additive schema and reconcile affected records. Expand the rollout after the smoke test passes and compatibility checks stay green.\n"
+}

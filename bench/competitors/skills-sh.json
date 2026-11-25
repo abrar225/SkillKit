@@ -1,0 +1,203 @@
+{
+  "source": "skills-sh",
+  "fixtureDigests": {
+    "review": "20a1e3987eaa07b0873415337240d2e50c9c09351c35d34360e3f671641107a1",
+    "heldOut": "362e962a5e7174b1ab7096a2476601110ff5a9e3dcb649f835d4e8ef7c097df0"
+  },
+  "originalReview": {
+    "eligible": 12,
+    "attempted": 12,
+    "responses": 12,
+    "anyResults": 6,
+    "allComponentsTop3Metadata": 2,
+    "responseBytesP50": 503,
+    "elapsedMsP50": 414.192,
+    "errors": []
+  },
+  "heldOut": {
+    "eligible": 0,
+    "attempted": 0,
+    "responses": 0,
+    "anyResults": 0,
+    "allComponentsTop3Metadata": 0,
+    "responseBytesP50": null,
+    "elapsedMsP50": null,
+    "errors": []
+  },
+  "publicCases": [
+    {
+      "id": "review-01",
+      "results": [
+        {
+          "id": "frontend/frontend-design",
+          "name": "frontend-design",
+          "remoteId": "anthropics/skills/frontend-design",
+          "repo": "anthropics/skills",
+          "url": "https://skills.sh/anthropics/skills/frontend-design"
+        }
+      ],
+      "allComponents": true,
+      "bytes": 627,
+      "ms": 414.192292
+    },
+    {
+      "id": "review-02",
+      "results": [
+        {
+          "id": "frontend/frontend-design",
+          "name": "frontend-design",
+          "remoteId": "anthropics/skills/frontend-design",
+          "repo": "anthropics/skills",
+          "url": "https://skills.sh/anthropics/skills/frontend-design"
+        }
+      ],
+      "allComponents": true,
+      "bytes": 658,
+      "ms": 347.67633300000006
+    },
+    {
+      "id": "review-03",
+      "results": [],
+      "allComponents": false,
+      "bytes": 477,
+      "ms": 494.39466600000014
+    },
+    {
+      "id": "review-04",
+      "results": [
+        {
+          "id": "external/media-use",
+          "name": "media-use",
+          "remoteId": "heygen-com/hyperframes/media-use",
+          "repo": "heygen-com/hyperframes",
+          "url": "https://skills.sh/heygen-com/hyperframes/media-use"
+        },
+        {
+          "id": "external/ai-video-generation",
+          "name": "ai-video-generation",
+          "remoteId": "inference-sh/skills/ai-video-generation",
+          "repo": "inference-sh/skills",
+          "url": "https://skills.sh/inference-sh/skills/ai-video-generation"
+        },
+        {
+          "id": "external/ai-avatar-video",
+          "name": "ai-avatar-video",
+          "remoteId": "inference-sh/skills/ai-avatar-video",
+          "repo": "inference-sh/skills",
+          "url": "https://skills.sh/inference-sh/skills/ai-avatar-video"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 1418,
+      "ms": 688.6537920000001
+    },
+    {
+      "id": "review-05",
+      "results": [
+        {
+          "id": "external/grill-with-docs",
+          "name": "grill-with-docs",
+          "remoteId": "mattpocock/skills/grill-with-docs",
+          "repo": "mattpocock/skills",
+          "url": "https://skills.sh/mattpocock/skills/grill-with-docs"
+        },
+        {
+          "id": "external/ai-video-generation",
+          "name": "ai-video-generation",
+          "remoteId": "101-skills/superpowers/ai-video-generation",
+          "repo": "101-skills/superpowers",
+          "url": "https://skills.sh/101-skills/superpowers/ai-video-generation"
+        },
+        {
+          "id": "external/ai-video-generation",
+          "name": "ai-video-generation",
+          "remoteId": "magentosh/superpowers/ai-video-generation",
+          "repo": "magentosh/superpowers",
+          "url": "https://skills.sh/magentosh/superpowers/ai-video-generation"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 1276,
+      "ms": 548.0435829999999
+    },
+    {
+      "id": "review-06",
+      "results": [
+        {
+          "id": "external/ai-video-generation",
+          "name": "ai-video-generation",
+          "remoteId": "inference-sh/skills/ai-video-generation",
+          "repo": "inference-sh/skills",
+          "url": "https://skills.sh/inference-sh/skills/ai-video-generation"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 654,
+      "ms": 386.07562499999995
+    },
+    {
+      "id": "review-07",
+      "results": [],
+      "allComponents": false,
+      "bytes": 473,
+      "ms": 465.8785419999999
+    },
+    {
+      "id": "review-08",
+      "results": [],
+      "allComponents": false,
+      "bytes": 498,
+      "ms": 501.6861249999997
+    },
+    {
+      "id": "review-09",
+      "results": [],
+      "allComponents": false,
+      "bytes": 456,
+      "ms": 340.6570419999998
+    },
+    {
+      "id": "review-10",
+      "results": [
+        {
+          "id": "frontend/frontend-design",
+          "name": "frontend-design",
+          "remoteId": "anthropics/skills/frontend-design",
+          "repo": "anthropics/skills",
+          "url": "https://skills.sh/anthropics/skills/frontend-design"
+        },
+        {
+          "id": "orchestrator/grill-me",
+          "name": "grill-me",
+          "remoteId": "mattpocock/skills/grill-me",
+          "repo": "mattpocock/skills",
+          "url": "https://skills.sh/mattpocock/skills/grill-me"
+        },
+        {
+          "id": "external/grill-with-docs",
+          "name": "grill-with-docs",
+          "remoteId": "mattpocock/skills/grill-with-docs",
+          "repo": "mattpocock/skills",
+          "url": "https://skills.sh/mattpocock/skills/grill-with-docs"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 1143,
+      "ms": 568.4180420000002
+    },
+    {
+      "id": "review-11",
+      "results": [],
+      "allComponents": false,
+      "bytes": 503,
+      "ms": 331.5108330000003
+    },
+    {
+      "id": "review-12",
+      "results": [],
+      "allComponents": false,
+      "bytes": 461,
+      "ms": 327.1583330000003
+    }
+  ]
+}

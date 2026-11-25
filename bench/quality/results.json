@@ -1,0 +1,331 @@
+{
+  "wins": 3,
+  "ties": 12,
+  "losses": 0,
+  "automated": {
+    "wins": 1,
+    "ties": 14,
+    "losses": 0
+  },
+  "tasks": [
+    {
+      "id": "focus",
+      "outcome": "ties",
+      "criterion": "blinded rubric",
+      "checks": {
+        "baseline": {
+          "focus-visible": true,
+          "outline": true,
+          "b9ff70": true
+        },
+        "with": {
+          "focus-visible": true,
+          "outline": true,
+          "b9ff70": true
+        }
+      }
+    },
+    {
+      "id": "motion",
+      "outcome": "wins",
+      "criterion": "blinded rubric",
+      "checks": {
+        "baseline": {
+          "saved": true,
+          "prefers-reduced-motion": true,
+          "(?:transition|animation)": true
+        },
+        "with": {
+          "saved": true,
+          "prefers-reduced-motion": true,
+          "(?:transition|animation)": true
+        }
+      }
+    },
+    {
+      "id": "markup",
+      "outcome": "ties",
+      "criterion": "blinded rubric",
+      "checks": {
+        "baseline": {
+          "<form": true,
+          "type=[\"']email": true,
+          "<label": true,
+          "<button": true,
+          "associated email label": true
+        },
+        "with": {
+          "<form": true,
+          "type=[\"']email": true,
+          "<label": true,
+          "<button": true,
+          "associated email label": true
+        }
+      }
+    },
+    {
+      "id": "poster",
+      "outcome": "ties",
+      "criterion": "blinded rubric",
+      "checks": {
+        "baseline": {
+          "<svg": true,
+          "210mm": true,
+          "297mm": true,
+          "<text": true,
+          "NIGHT BUS": true,
+          "20:00": true,
+          "Room 4": true,
+          "valid SVG": true
+        },
+        "with": {
+          "<svg": true,
+          "210mm": true,
+          "297mm": true,
+          "<text": true,
+          "NIGHT BUS": true,
+          "20:00": true,
+          "Room 4": true,
+          "valid SVG": true
+        }
+      }
+    },
+    {
+      "id": "palette",
+      "outcome": "ties",
+      "criterion": "blinded rubric",
+      "checks": {
+        "baseline": {
+          "<svg": true,
+          "<text": true,
+          "#[0-9a-f]{6}": true,
+          "valid SVG": true,
+          "three editable hex labels": true
+        },
+        "with": {
+          "<svg": true,
+          "<text": true,
+          "#[0-9a-f]{6}": true,
+          "valid SVG": true,
+          "three editable hex labels": true
+        }
+      }
+    },
+    {
+      "id": "titles",
+      "outcome": "ties",
+      "criterion": "automated",
+      "checks": {
+        "baseline": {
+          "^WEBVTT": true,
+          "00:00:01.000 --> 00:00:03.000": true,
+          "Welcome back": true,
+          "00:00:05.000 --> 00:00:07.000": true,
+          "Check the dial": true
+        },
+        "with": {
+          "^WEBVTT": true,
+          "00:00:01.000 --> 00:00:03.000": true,
+          "Welcome back": true,
+          "00:00:05.000 --> 00:00:07.000": true,
+          "Check the dial": true
+        }
+      }
+    },
+    {
+      "id": "encode",
+      "outcome": "ties",
+      "criterion": "automated",
+      "checks": {
+        "baseline": {
+          "ffmpeg": true,
+          "-i +[\"']?interview.mov": true,
+          "-t +(?:5|00:00:05)": true,
+          "libx264": true,
+          "aac": true,
+          "review.mp4": true
+        },
+        "with": {
+          "ffmpeg": true,
+          "-i +[\"']?interview.mov": true,
+          "-t +(?:5|00:00:05)": true,
+          "libx264": true,
+          "aac": true,
+          "review.mp4": true
+        }
+      }
+    },
+    {
+      "id": "social",
+      "outcome": "ties",
+      "criterion": "blinded rubric",
+      "checks": {
+        "baseline": {
+          "North Library": true,
+          "Sunday": true,
+          "10": true,
+          "2": true,
+          "(?:6 October|October 6)": true,
+          "word limit": true
+        },
+        "with": {
+          "North Library": true,
+          "Sunday": true,
+          "10": true,
+          "2": true,
+          "(?:6 October|October 6)": true,
+          "word limit": true
+        }
+      }
+    },
+    {
+      "id": "letter",
+      "outcome": "ties",
+      "criterion": "blinded rubric",
+      "checks": {
+        "baseline": {
+          "covered market": true,
+          "(?:4 May|May 4)": true,
+          "9": true,
+          "packet": true,
+          "word limit": true
+        },
+        "with": {
+          "covered market": true,
+          "(?:4 May|May 4)": true,
+          "9": true,
+          "packet": true,
+          "word limit": true
+        }
+      }
+    },
+    {
+      "id": "caption",
+      "outcome": "ties",
+      "criterion": "blinded rubric",
+      "checks": {
+        "baseline": {
+          "cobalt": true,
+          "violet": true,
+          "Saturday": true,
+          "word limit": true,
+          "no hashtags": true
+        },
+        "with": {
+          "cobalt": true,
+          "violet": true,
+          "Saturday": true,
+          "word limit": true,
+          "no hashtags": true
+        }
+      }
+    },
+    {
+      "id": "query",
+      "outcome": "ties",
+      "criterion": "automated",
+      "checks": {
+        "baseline": {
+          "SELECT": true,
+          "LEFT": true,
+          "ORDER BY": true,
+          "paid_count": true,
+          "fixture result": true
+        },
+        "with": {
+          "SELECT": true,
+          "LEFT": true,
+          "ORDER BY": true,
+          "paid_count": true,
+          "fixture result": true
+        }
+      }
+    },
+    {
+      "id": "dedup",
+      "outcome": "ties",
+      "criterion": "automated",
+      "checks": {
+        "baseline": {
+          "SELECT": true,
+          "ORDER BY": true,
+          "fixture result": true
+        },
+        "with": {
+          "SELECT": true,
+          "ORDER BY": true,
+          "fixture result": true
+        }
+      }
+    },
+    {
+      "id": "readme",
+      "outcome": "ties",
+      "criterion": "automated",
+      "checks": {
+        "baseline": {
+          "Node.{0,5}20": true,
+          "needle audit ./src": true,
+          "0": true,
+          "1": true,
+          "2": true,
+          "input": true
+        },
+        "with": {
+          "Node.{0,5}20": true,
+          "needle audit ./src": true,
+          "0": true,
+          "1": true,
+          "2": true,
+          "input": true
+        }
+      }
+    },
+    {
+      "id": "release",
+      "outcome": "wins",
+      "criterion": "automated",
+      "checks": {
+        "baseline": {
+          "rollback|roll back": false,
+          "read": true,
+          "write": true,
+          "old": true,
+          "new": true
+        },
+        "with": {
+          "rollback|roll back": true,
+          "read": true,
+          "write": true,
+          "old": true,
+          "new": true
+        }
+      }
+    },
+    {
+      "id": "table",
+      "outcome": "wins",
+      "criterion": "blinded rubric",
+      "checks": {
+        "baseline": {
+          "<table": true,
+          "scope=[\"']col": true,
+          "scope=[\"']row": true,
+          "Matte": true,
+          "Gloss": true,
+          "\\$5": true,
+          "\\$8": true
+        },
+        "with": {
+          "<table": true,
+          "scope=[\"']col": true,
+          "scope=[\"']row": true,
+          "Matte": true,
+          "Gloss": true,
+          "\\$5": true,
+          "\\$8": true
+        }
+      }
+    }
+  ]
+}

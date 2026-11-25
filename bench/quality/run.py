@@ -1,5 +1,5 @@
 """Paired model evaluation. Keep outputs as data. Never execute generated programs."""
-import argparse, concurrent.futures, hashlib, json, os, pathlib, re, shutil, sqlite3, subprocess, tempfile, time
+import argparse, concurrent.futures, hashlib, json, pathlib, re, sqlite3, subprocess, tempfile, time
 from html.parser import HTMLParser
 from xml.etree import ElementTree
 

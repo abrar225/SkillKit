@@ -1,0 +1,8 @@
+{
+  "id": "titles",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "e91c1b9d009ea3a2854e76d848ecada15b6ce831046cb7b7601939f147859962",
+  "output": "WEBVTT\n\n00:00:01.000 --> 00:00:03.000\nWelcome back.\n\n00:00:05.000 --> 00:00:07.000\nCheck the dial.\n"
+}

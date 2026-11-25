@@ -1,0 +1,8 @@
+{
+  "id": "motion",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "f66bf6c64c7178fcd1fdbfc82f14011b5e660147cfe096b237d615a246f6e2fd",
+  "output": ".saved {\n  display: inline-block;\n  margin-inline-start: 0.5em;\n  font-size: 0.875em;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .saved {\n    animation: saved-enter 180ms ease-out both;\n  }\n\n  @keyframes saved-enter {\n    from {\n      opacity: 0;\n      transform: translateY(3px);\n    }\n\n    to {\n      opacity: 1;\n      transform: translateY(0);\n    }\n  }\n}\n"
+}

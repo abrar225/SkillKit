@@ -1,0 +1,8 @@
+{
+  "id": "markup",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "6671aea0a88579ca23dacb03dca3c45bc29fc334af25ea5a9289e8cab780ff4c",
+  "output": "<form method=\"post\" aria-labelledby=\"library-signup-heading\">\n  <h2 id=\"library-signup-heading\">Library email signup</h2>\n  <label for=\"library-signup-email\">Email address</label>\n  <input id=\"library-signup-email\" name=\"email\" type=\"email\" autocomplete=\"email\" required>\n  <button type=\"submit\">Sign up</button>\n</form>\n"
+}

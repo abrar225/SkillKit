@@ -1,0 +1,8 @@
+{
+  "id": "palette",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "5af9b22698ec3463a69ae329ea24abbbfb42a0744c637e06920d68ea35ec9b6b",
+  "output": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"720\" height=\"328\" viewBox=\"0 0 720 328\" role=\"img\" aria-labelledby=\"title desc\">\n  <title id=\"title\">Bicycle Repair Cooperative color card</title>\n  <desc id=\"desc\">Three swatches from dark to light: #172D2B, #A97542, and #F5E9D0.</desc>\n\n  <rect width=\"720\" height=\"328\" fill=\"#FFFFFF\"/>\n  <g fill=\"#172D2B\" font-family=\"sans-serif\">\n    <text x=\"32\" y=\"62\" font-size=\"32\" font-weight=\"bold\">Bicycle Repair Cooperative</text>\n    <text x=\"32\" y=\"93\" font-size=\"18\">Brand colors</text>\n  </g>\n\n  <g stroke=\"#172D2B\" stroke-width=\"2\">\n    <rect x=\"32\" y=\"122\" width=\"208\" height=\"122\" rx=\"6\" fill=\"#172D2B\"/>\n    <rect x=\"256\" y=\"122\" width=\"208\" height=\"122\" rx=\"6\" fill=\"#A97542\"/>\n    <rect x=\"480\" y=\"122\" width=\"208\" height=\"122\" rx=\"6\" fill=\"#F5E9D0\"/>\n  </g>\n\n  <g fill=\"#172D2B\" font-family=\"monospace\" font-size=\"22\" text-anchor=\"middle\">\n    <text x=\"136\" y=\"281\">#172D2B</text>\n    <text x=\"360\" y=\"281\">#A97542</text>\n    <text x=\"584\" y=\"281\">#F5E9D0</text>\n  </g>\n</svg>\n"
+}

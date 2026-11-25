@@ -81,3 +81,7 @@ The public repository contains the skill collection, CLI, MCP server, and docume
 ---
 
 Curated and maintained by [Abrar Akhunji](https://github.com/abrar225). Repository-owned code and curation: [MIT](LICENSE). Copied materials retain their source terms.
+
+## Measured performance
+
+On the frozen 40-brief holdout, SkillKit returned six fully usable kits, respected all scored constraints on 38 briefs, and made zero confidently wrong recommendations. In 15 paired artifact trials, the treatment recorded three wins and twelve ties. Two of the wins followed a no-match handoff. [Release evaluation](docs/RELEASE-EVALUATION.md)

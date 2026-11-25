@@ -1,0 +1,8 @@
+{
+  "id": "poster",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "f5b220de8a72bd19d5a1b8725643e95e6c606384fe50d9044a6f6fc05424051b",
+  "output": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"210mm\" height=\"297mm\" viewBox=\"0 0 210 297\" role=\"img\" aria-labelledby=\"title description\">\n  <title id=\"title\">NIGHT BUS</title>\n  <desc id=\"description\">Free jazz concert on 26 June at 20:00 in Room 4.</desc>\n  <rect width=\"210\" height=\"297\" fill=\"#fff\"/>\n  <rect x=\"8\" y=\"8\" width=\"194\" height=\"281\" fill=\"#10172a\"/>\n  <g aria-hidden=\"true\">\n    <path d=\"M22 29H188M22 211H188M22 271H188\" stroke=\"#f9e5ab\" stroke-width=\".55\"/>\n    <path d=\"M23 192C62 192 67 153 108 153H186M23 198C65 198 71 159 108 159H186M23 204C69 204 76 165 108 165H186\" fill=\"none\" stroke=\"#81aadd\" stroke-width=\"1.15\"/>\n    <circle cx=\"150\" cy=\"159\" r=\"10\" fill=\"#10172a\" stroke=\"#f9e5ab\" stroke-width=\"1.5\"/>\n    <circle cx=\"150\" cy=\"159\" r=\"4.2\" fill=\"#f9e5ab\"/>\n  </g>\n  <g fill=\"#f9e5ab\" font-family=\"Arial, Helvetica, sans-serif\" font-weight=\"900\">\n    <text x=\"20\" y=\"72\" font-size=\"46\">NIGHT</text>\n    <text x=\"19\" y=\"137\" font-size=\"76\">BUS</text>\n  </g>\n  <g fill=\"#fff8e7\" font-family=\"Arial, Helvetica, sans-serif\">\n    <text x=\"22\" y=\"229\" font-size=\"6\" font-weight=\"bold\" letter-spacing=\"1.2\">FREE JAZZ CONCERT</text>\n    <text x=\"22\" y=\"246\" font-size=\"11\" font-weight=\"bold\">26 June</text>\n    <text x=\"188\" y=\"246\" text-anchor=\"end\" font-size=\"11\" font-weight=\"bold\">20:00</text>\n    <text x=\"22\" y=\"262\" font-size=\"9\">Room 4</text>\n  </g>\n</svg>\n"
+}

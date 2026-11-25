@@ -1,0 +1,8 @@
+{
+  "id": "palette",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "6c3f9313de2123340350d24d67312343b4c6d539a4da5e500e5a823cd39fbd65",
+  "output": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"400\" viewBox=\"0 0 800 400\" role=\"img\" aria-labelledby=\"brand-title brand-desc\">\n  <title id=\"brand-title\">Bicycle Repair Cooperative</title>\n  <desc id=\"brand-desc\">Three brand colors from dark to light: #142B33, #B2472D, and #F5E7C8.</desc>\n  <rect width=\"800\" height=\"400\" fill=\"#fff\"/>\n  <path d=\"M40 48H760\" stroke=\"#142B33\" stroke-width=\"2\"/>\n  <text x=\"40\" y=\"96\" fill=\"#142B33\" font-family=\"Arial, sans-serif\" font-size=\"36\" font-weight=\"bold\">Bicycle Repair Cooperative</text>\n  <g stroke=\"#142B33\" stroke-width=\"2\">\n    <rect x=\"41\" y=\"136\" width=\"222\" height=\"156\" fill=\"#142B33\"/>\n    <rect x=\"289\" y=\"136\" width=\"222\" height=\"156\" fill=\"#B2472D\"/>\n    <rect x=\"537\" y=\"136\" width=\"222\" height=\"156\" fill=\"#F5E7C8\"/>\n  </g>\n  <g fill=\"#142B33\" font-family=\"monospace\" font-weight=\"bold\" font-size=\"24\">\n    <text x=\"40\" y=\"331\">#142B33</text>\n    <text x=\"288\" y=\"331\">#B2472D</text>\n    <text x=\"536\" y=\"331\">#F5E7C8</text>\n  </g>\n  <path d=\"M40 359H760\" stroke=\"#142B33\" stroke-width=\"2\"/>\n</svg>\n"
+}

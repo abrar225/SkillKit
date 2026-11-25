@@ -1,0 +1,8 @@
+{
+  "id": "letter",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "3303d68bc0bde761ef588ae184cd5087ba9f18984e4990db578878d6e0984e18",
+  "output": "Rain is moving our seed swap under the roof of the covered market. Join us there on 4 May at 9 am and bring one labelled packet of seeds to swap.\n"
+}

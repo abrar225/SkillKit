@@ -1,0 +1,8 @@
+{
+  "id": "encode",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "789b7989851950b94a737b12a0fe353ee78289f35924f01bb33fd136f5bb96fa",
+  "output": "ffmpeg -i interview.mov -ss 00:00:10 -t 5 -c:v libx264 -c:a aac review.mp4\n"
+}

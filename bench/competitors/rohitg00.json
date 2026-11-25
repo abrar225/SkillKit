@@ -1,0 +1,250 @@
+{
+  "source": "rohitg00",
+  "fixtureDigests": {
+    "review": "20a1e3987eaa07b0873415337240d2e50c9c09351c35d34360e3f671641107a1",
+    "heldOut": "362e962a5e7174b1ab7096a2476601110ff5a9e3dcb649f835d4e8ef7c097df0"
+  },
+  "originalReview": {
+    "eligible": 12,
+    "attempted": 12,
+    "responses": 12,
+    "anyResults": 12,
+    "allComponentsTop3Metadata": 1,
+    "responseBytesP50": 519,
+    "elapsedMsP50": 23.235,
+    "errors": []
+  },
+  "heldOut": {
+    "eligible": 40,
+    "attempted": 40,
+    "responses": 40,
+    "anyResults": 38,
+    "allComponentsTop3Metadata": 6,
+    "responseBytesP50": 540,
+    "elapsedMsP50": 28.154,
+    "errors": []
+  },
+  "publicCases": [
+    {
+      "id": "review-01",
+      "results": [
+        {
+          "id": "external/design",
+          "name": "design",
+          "repo": "rshankras/claude-code-apple-skills"
+        },
+        {
+          "id": "external/cto",
+          "name": "cto",
+          "repo": "lotosbin/claude-skills"
+        },
+        {
+          "id": "external/art",
+          "name": "art",
+          "repo": "danielmiessler/personal_ai_infrastructure"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 519,
+      "ms": 47.140541999999996
+    },
+    {
+      "id": "review-02",
+      "results": [
+        {
+          "id": "external/cto",
+          "name": "cto",
+          "repo": "lotosbin/claude-skills"
+        },
+        {
+          "id": "external/art",
+          "name": "art",
+          "repo": "danielmiessler/personal_ai_infrastructure"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 537,
+      "ms": 37.09091600000001
+    },
+    {
+      "id": "review-03",
+      "results": [
+        {
+          "id": "external/pr",
+          "name": "pr",
+          "repo": "automattic/wordpress-activitypub"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 541,
+      "ms": 20.403208000000006
+    },
+    {
+      "id": "review-04",
+      "results": [
+        {
+          "id": "external/ffmpeg",
+          "name": "ffmpeg",
+          "repo": "digitalsamba/claude-code-video-toolkit"
+        },
+        {
+          "id": "external/interview",
+          "name": "interview",
+          "repo": "takuan-osho/ccmarketplace"
+        },
+        {
+          "id": "external/hi",
+          "name": "hi",
+          "repo": "kentoje/dotfiles"
+        }
+      ],
+      "allComponents": true,
+      "bytes": 485,
+      "ms": 22.363083999999986
+    },
+    {
+      "id": "review-05",
+      "results": [
+        {
+          "id": "external/interview",
+          "name": "interview",
+          "repo": "takuan-osho/ccmarketplace"
+        },
+        {
+          "id": "external/my",
+          "name": "my",
+          "repo": "sungjunlee/claude-config"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 525,
+      "ms": 27.589957999999996
+    },
+    {
+      "id": "review-06",
+      "results": [
+        {
+          "id": "external/linkedin",
+          "name": "linkedin",
+          "repo": "andrejones92/canifi-life-os"
+        },
+        {
+          "id": "external/atheris",
+          "name": "atheris",
+          "repo": "trailofbits/skills"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 569,
+      "ms": 35.71479200000002
+    },
+    {
+      "id": "review-07",
+      "results": [
+        {
+          "id": "external/debug",
+          "name": "debug",
+          "repo": "lobehub/lobe-chat"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 483,
+      "ms": 23.234959000000003
+    },
+    {
+      "id": "review-08",
+      "results": [
+        {
+          "id": "external/help",
+          "name": "help",
+          "repo": "parcadei/continuous-claude-v3"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 577,
+      "ms": 26.158875000000023
+    },
+    {
+      "id": "review-09",
+      "results": [
+        {
+          "id": "external/typescript",
+          "name": "typescript",
+          "repo": "pproenca/dot-skills"
+        },
+        {
+          "id": "external/review",
+          "name": "review",
+          "repo": "allenai2014/ai-investment-advisor"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 487,
+      "ms": 14.919582999999989
+    },
+    {
+      "id": "review-10",
+      "results": [
+        {
+          "id": "external/new",
+          "name": "new",
+          "repo": "railwayapp/railway-skills"
+        },
+        {
+          "id": "external/design",
+          "name": "design",
+          "repo": "rshankras/claude-code-apple-skills"
+        },
+        {
+          "id": "external/interview",
+          "name": "interview",
+          "repo": "takuan-osho/ccmarketplace"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 518,
+      "ms": 20.148792000000014
+    },
+    {
+      "id": "review-11",
+      "results": [
+        {
+          "id": "external/my",
+          "name": "my",
+          "repo": "sungjunlee/claude-config"
+        },
+        {
+          "id": "external/sk",
+          "name": "sk",
+          "repo": "lambdamechanic/skills"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 524,
+      "ms": 28.920458999999994
+    },
+    {
+      "id": "review-12",
+      "results": [
+        {
+          "id": "external/pdf",
+          "name": "pdf",
+          "repo": "anthropics/skills"
+        },
+        {
+          "id": "external/pr",
+          "name": "pr",
+          "repo": "automattic/wordpress-activitypub"
+        },
+        {
+          "id": "external/db",
+          "name": "db",
+          "repo": "johnlindquist/claude"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 460,
+      "ms": 16.709249999999997
+    }
+  ]
+}

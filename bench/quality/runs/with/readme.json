@@ -1,0 +1,8 @@
+{
+  "id": "readme",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "ae41784ae2b89d056465b51e0ae06d3ee0a31e2970baa71dc6b3c85523b614cc",
+  "output": "## Audit stale imports with Needle\n\nNeedle requires Node.js 20. Run this command to check `./src` for stale imports.\n\n```sh\nneedle audit ./src\n```\n\nExit codes\n\n- `0` \u2014 No stale imports found\n- `1` \u2014 Stale imports found\n- `2` \u2014 Input error\n"
+}

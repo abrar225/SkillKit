@@ -1,0 +1,128 @@
+[
+  {
+    "id": "focus",
+    "A": [
+      2,
+      2,
+      2
+    ],
+    "B": [
+      2,
+      2,
+      2
+    ],
+    "reason": "Both set a thick offset lime outline for keyboard focus. B also specifies a system highlight color in forced-colors mode."
+  },
+  {
+    "id": "motion",
+    "A": [
+      2,
+      2,
+      2
+    ],
+    "B": [
+      2,
+      2,
+      1
+    ],
+    "reason": "Both pair a short fade with slight movement and respect reduced motion. A also sizes and spaces the confirmation as a compact inline element."
+  },
+  {
+    "id": "markup",
+    "A": [
+      2,
+      2,
+      2
+    ],
+    "B": [
+      2,
+      2,
+      2
+    ],
+    "reason": "Both provide a visible label, email autocomplete, and a submit button. A names the subscription in the button, while B uses a visible heading to name the form."
+  },
+  {
+    "id": "poster",
+    "A": [
+      2,
+      2,
+      2
+    ],
+    "B": [
+      2,
+      2,
+      2
+    ],
+    "reason": "Both use physical A4 dimensions, editable text, a high-contrast oversized title, and route-like linework. A separates date and time while B puts them on one line."
+  },
+  {
+    "id": "palette",
+    "A": [
+      2,
+      2,
+      2
+    ],
+    "B": [
+      2,
+      2,
+      2
+    ],
+    "reason": "Both use editable hex labels on white and outline three swatches with distinct grayscale values. A centers the labels, while B aligns them to the swatches’ left edges."
+  },
+  {
+    "id": "social",
+    "A": [
+      2,
+      2,
+      2
+    ],
+    "B": [
+      2,
+      2,
+      2
+    ],
+    "reason": "Both give the new Sunday hours, address weekday shift workers, and finish with a book-related invitation. A leads with shift workers, while B gives the invitation a specific date."
+  },
+  {
+    "id": "letter",
+    "A": [
+      2,
+      2,
+      2
+    ],
+    "B": [
+      2,
+      2,
+      2
+    ],
+    "reason": "Both open with rain moving the swap to the covered market and state the date, time, and one labelled packet to bring in two sentences."
+  },
+  {
+    "id": "caption",
+    "A": [
+      2,
+      2,
+      2
+    ],
+    "B": [
+      2,
+      2,
+      2
+    ],
+    "reason": "Both start with the kiln and violet glaze reveal and close with a direct Saturday studio invitation. A uses present tense, while B describes the discovery in past tense."
+  },
+  {
+    "id": "table",
+    "A": [
+      2,
+      2,
+      2
+    ],
+    "B": [
+      2,
+      2,
+      1
+    ],
+    "reason": "Both preserve native table semantics with scoped headers and adapt to the container. A gives prices consistent right alignment and adds cell padding, while B uses default cell styling inside a scroll wrapper."
+  }
+]

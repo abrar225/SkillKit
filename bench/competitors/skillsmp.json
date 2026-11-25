@@ -1,0 +1,377 @@
+{
+  "source": "skillsmp",
+  "fixtureDigests": {
+    "review": "20a1e3987eaa07b0873415337240d2e50c9c09351c35d34360e3f671641107a1",
+    "heldOut": "362e962a5e7174b1ab7096a2476601110ff5a9e3dcb649f835d4e8ef7c097df0"
+  },
+  "originalReview": {
+    "eligible": 12,
+    "attempted": 12,
+    "responses": 12,
+    "anyResults": 12,
+    "allComponentsTop3Metadata": 0,
+    "responseBytesP50": 2051,
+    "elapsedMsP50": 884.3,
+    "errors": []
+  },
+  "heldOut": {
+    "eligible": 0,
+    "attempted": 0,
+    "responses": 0,
+    "anyResults": 0,
+    "allComponentsTop3Metadata": 0,
+    "responseBytesP50": null,
+    "elapsedMsP50": null,
+    "errors": []
+  },
+  "publicCases": [
+    {
+      "id": "review-01",
+      "results": [
+        {
+          "id": "external/design-system",
+          "name": "design-system",
+          "remoteId": "affaan-m-ecc-pi-core-skills-design-system-skill-md",
+          "repo": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC/tree/main/pi/core/skills/design-system"
+        },
+        {
+          "id": "external/design-taste-frontend",
+          "name": "design-taste-frontend",
+          "remoteId": "leonxlnx-taste-skill-skills-taste-skill-skill-md",
+          "repo": "Leonxlnx/taste-skill",
+          "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill"
+        },
+        {
+          "id": "external/design-is",
+          "name": "design-is",
+          "remoteId": "thedotmack-claude-mem-plugin-skills-design-is-skill-md",
+          "repo": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem/tree/main/plugin/skills/design-is"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 3146,
+      "ms": 3514.42325
+    },
+    {
+      "id": "review-02",
+      "results": [
+        {
+          "id": "external/config-gc",
+          "name": "config-gc",
+          "remoteId": "affaan-m-ecc-skills-config-gc-skill-md",
+          "repo": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC/tree/main/skills/config-gc"
+        },
+        {
+          "id": "external/flox-environments",
+          "name": "flox-environments",
+          "remoteId": "affaan-m-ecc-skills-flox-environments-skill-md",
+          "repo": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC/tree/main/skills/flox-environments"
+        },
+        {
+          "id": "external/prompt-optimizer",
+          "name": "prompt-optimizer",
+          "remoteId": "affaan-m-ecc-skills-prompt-optimizer-skill-md",
+          "repo": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC/tree/main/skills/prompt-optimizer"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 2808,
+      "ms": 765.6467919999996
+    },
+    {
+      "id": "review-03",
+      "results": [
+        {
+          "id": "external/agent-transcript",
+          "name": "agent-transcript",
+          "remoteId": "openclaw-openclaw-agents-skills-agent-transcript-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/agent-transcript"
+        },
+        {
+          "id": "external/apple-notes",
+          "name": "apple-notes",
+          "remoteId": "openclaw-openclaw-skills-apple-notes-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/skills/apple-notes"
+        },
+        {
+          "id": "external/bear-notes",
+          "name": "bear-notes",
+          "remoteId": "openclaw-openclaw-skills-bear-notes-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/skills/bear-notes"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 1638,
+      "ms": 4024.9877909999996
+    },
+    {
+      "id": "review-04",
+      "results": [
+        {
+          "id": "external/dsh-trim-cot-leakage",
+          "name": "dsh-trim-cot-leakage",
+          "remoteId": "deepseek-ai-deepseek-harness-agents-skills-dsh-trim-cot-leakage-skill-md",
+          "repo": "deepseek-ai/deepseek-harness",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/tree/master/.agents/skills/dsh-trim-cot-leakage"
+        },
+        {
+          "id": "external/caveman-learn",
+          "name": "caveman-learn",
+          "remoteId": "juliusbrussee-caveman-skills-caveman-learn-skill-md",
+          "repo": "JuliusBrussee/caveman",
+          "url": "https://github.com/JuliusBrussee/caveman/tree/main/skills/caveman-learn"
+        },
+        {
+          "id": "external/comment-review",
+          "name": "comment-review",
+          "remoteId": "stirling-tools-stirling-pdf-claude-skills-comment-review-skill-md",
+          "repo": "Stirling-Tools/Stirling-PDF",
+          "url": "https://github.com/Stirling-Tools/Stirling-PDF/tree/main/.claude/skills/comment-review"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 3137,
+      "ms": 754.015625
+    },
+    {
+      "id": "review-05",
+      "results": [
+        {
+          "id": "external/nano-pdf",
+          "name": "nano-pdf",
+          "remoteId": "openclaw-openclaw-skills-nano-pdf-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/skills/nano-pdf"
+        },
+        {
+          "id": "external/obsidian",
+          "name": "obsidian",
+          "remoteId": "openclaw-openclaw-skills-obsidian-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/skills/obsidian"
+        },
+        {
+          "id": "external/apple-notes",
+          "name": "apple-notes",
+          "remoteId": "openclaw-openclaw-skills-apple-notes-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/skills/apple-notes"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 1627,
+      "ms": 716.4539999999979
+    },
+    {
+      "id": "review-06",
+      "results": [
+        {
+          "id": "external/feishu-doc",
+          "name": "feishu-doc",
+          "remoteId": "openclaw-openclaw-extensions-feishu-skills-feishu-doc-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/extensions/feishu/skills/feishu-doc"
+        },
+        {
+          "id": "external/openclaw-pr-maintainer",
+          "name": "openclaw-pr-maintainer",
+          "remoteId": "openclaw-openclaw-agents-skills-openclaw-pr-maintainer-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/openclaw-pr-maintainer"
+        },
+        {
+          "id": "planning/triage",
+          "name": "triage",
+          "remoteId": "mattpocock-skills-skills-engineering-triage-skill-md",
+          "repo": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills/tree/main/skills/engineering/triage"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 2044,
+      "ms": 727.479333000003
+    },
+    {
+      "id": "review-07",
+      "results": [
+        {
+          "id": "external/openclaw-debugging",
+          "name": "openclaw-debugging",
+          "remoteId": "openclaw-openclaw-agents-skills-openclaw-debugging-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/openclaw-debugging"
+        },
+        {
+          "id": "external/openclaw-testing",
+          "name": "openclaw-testing",
+          "remoteId": "openclaw-openclaw-agents-skills-openclaw-testing-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/openclaw-testing"
+        },
+        {
+          "id": "external/node-inspect-debugger",
+          "name": "node-inspect-debugger",
+          "remoteId": "openclaw-openclaw-skills-node-inspect-debugger-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/skills/node-inspect-debugger"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 1927,
+      "ms": 1058.6835829999982
+    },
+    {
+      "id": "review-08",
+      "results": [
+        {
+          "id": "planning/constraint-driven-development",
+          "name": "constraint-driven-development",
+          "remoteId": "addyosmani-agent-skills-skills-constraint-driven-development-skill-md",
+          "repo": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills/tree/main/skills/constraint-driven-development"
+        },
+        {
+          "id": "external/codex-qa",
+          "name": "codex-qa",
+          "remoteId": "code-yeongyu-oh-my-openagent-agents-skills-codex-qa-skill-md",
+          "repo": "code-yeongyu/oh-my-openagent",
+          "url": "https://github.com/code-yeongyu/oh-my-openagent/tree/dev/.agents/skills/codex-qa"
+        },
+        {
+          "id": "external/custom-connector",
+          "name": "custom-connector",
+          "remoteId": "anthropics-claude-plugins-official-plugins-claude-for-manufacturing-skills-custom-connector-skill-md",
+          "repo": "anthropics/claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/custom-connector"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 4389,
+      "ms": 684.337959000004
+    },
+    {
+      "id": "review-09",
+      "results": [
+        {
+          "id": "external/technical-documentation",
+          "name": "technical-documentation",
+          "remoteId": "openclaw-openclaw-agents-skills-technical-documentation-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/technical-documentation"
+        },
+        {
+          "id": "external/oracle",
+          "name": "oracle",
+          "remoteId": "openclaw-openclaw-skills-oracle-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/skills/oracle"
+        },
+        {
+          "id": "external/skill-creator",
+          "name": "skill-creator",
+          "remoteId": "openclaw-openclaw-skills-skill-creator-skill-md",
+          "repo": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw/tree/main/skills/skill-creator"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 1704,
+      "ms": 884.2999999999956
+    },
+    {
+      "id": "review-10",
+      "results": [
+        {
+          "id": "planning/to-spec",
+          "name": "to-spec",
+          "remoteId": "mattpocock-skills-skills-engineering-to-spec-skill-md",
+          "repo": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills/tree/main/skills/engineering/to-spec"
+        },
+        {
+          "id": "external/to-questionnaire",
+          "name": "to-questionnaire",
+          "remoteId": "mattpocock-skills-skills-productivity-to-questionnaire-skill-md",
+          "repo": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills/tree/main/skills/productivity/to-questionnaire"
+        },
+        {
+          "id": "external/ui-canvas",
+          "name": "ui-canvas",
+          "remoteId": "affaan-m-ecc-agents-skills-ui-canvas-skill-md",
+          "repo": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/ui-canvas"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 2051,
+      "ms": 1382.8924169999955
+    },
+    {
+      "id": "review-11",
+      "results": [
+        {
+          "id": "external/taste-application",
+          "name": "taste-application",
+          "remoteId": "affaan-m-ecc-skills-taste-application-skill-md",
+          "repo": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC/tree/main/skills/taste-application"
+        },
+        {
+          "id": "external/generating-python-installer",
+          "name": "generating-python-installer",
+          "remoteId": "affaan-m-ecc-skills-generating-python-installer-skill-md",
+          "repo": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC/tree/main/skills/generating-python-installer"
+        },
+        {
+          "id": "external/competitive-report-structure",
+          "name": "competitive-report-structure",
+          "remoteId": "affaan-m-ecc-skills-competitive-report-structure-skill-md",
+          "repo": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC/tree/main/skills/competitive-report-structure"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 2820,
+      "ms": 1226.4511670000065
+    },
+    {
+      "id": "review-12",
+      "results": [
+        {
+          "id": "external/setup-matt-pocock-skills",
+          "name": "setup-matt-pocock-skills",
+          "remoteId": "mattpocock-skills-skills-engineering-setup-matt-pocock-skills-skill-md",
+          "repo": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills/tree/main/skills/engineering/setup-matt-pocock-skills"
+        },
+        {
+          "id": "external/terraform-patterns",
+          "name": "terraform-patterns",
+          "remoteId": "affaan-m-ecc-skills-terraform-patterns-skill-md",
+          "repo": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC/tree/main/skills/terraform-patterns"
+        },
+        {
+          "id": "external/java-coding-standards",
+          "name": "java-coding-standards",
+          "remoteId": "affaan-m-ecc-kiro-skills-java-coding-standards-skill-md",
+          "repo": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC/tree/main/.kiro/skills/java-coding-standards"
+        }
+      ],
+      "allComponents": false,
+      "bytes": 2200,
+      "ms": 2104.0442080000066
+    }
+  ]
+}

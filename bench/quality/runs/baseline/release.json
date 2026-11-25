@@ -1,0 +1,8 @@
+{
+  "id": "release",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "9c201905243ce8b83987565b13749b14ed5d3276394698bf35b97780223fca68",
+  "output": "1. Apply additive schema changes and verify in staging that the old reader can still fetch books created or updated by the new writer.\n2. Record the production book-read error rate and confirm that the old writer can resume against the expanded schema. Keep the old reader serving traffic.\n3. Enable the new writer for a small share of traffic. After deployment, create and update a test book through the API, then fetch it with the old reader and verify its title, price, and stock match the writes.\n4. Compare the canary\u2019s book-read error rate with the recorded baseline. If the rate exceeds baseline by more than one percentage point for five consecutive minutes, disable the new writer, route writes to the old writer, and repeat the smoke test.\n5. Ramp up the new writer only after the smoke test passes and the error rate stays within the threshold. Repeat the smoke test after full rollout and keep the compatible schema while the old reader is active.\n"
+}

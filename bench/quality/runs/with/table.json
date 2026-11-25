@@ -1,0 +1,8 @@
+{
+  "id": "table",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "3e24a58e858501a227d13f819b58ddfa8a958d85ee5050469c244c7b1865108e",
+  "output": "<table style=\"width: 100%; max-width: 36rem; border-collapse: collapse; overflow-wrap: anywhere;\">\n  <caption>Print studio paper prices</caption>\n  <thead>\n    <tr>\n      <th scope=\"col\" style=\"text-align: start; padding: 0.5rem;\">Paper</th>\n      <th scope=\"col\" style=\"text-align: end; padding: 0.5rem;\">Price</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\" style=\"text-align: start; padding: 0.5rem;\">Matte</th>\n      <td style=\"text-align: end; padding: 0.5rem;\">$5</td>\n    </tr>\n    <tr>\n      <th scope=\"row\" style=\"text-align: start; padding: 0.5rem;\">Gloss</th>\n      <td style=\"text-align: end; padding: 0.5rem;\">$8</td>\n    </tr>\n  </tbody>\n</table>\n"
+}

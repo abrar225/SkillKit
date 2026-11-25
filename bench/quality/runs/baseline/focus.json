@@ -1,0 +1,8 @@
+{
+  "id": "focus",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "9df8ee54f300297ce906034bdbc2dd7390efff7be6516dc5a81817c81d77c059",
+  "output": ":focus-visible {\n  outline: 3px solid #b9ff70;\n  outline-offset: 3px;\n}\n"
+}

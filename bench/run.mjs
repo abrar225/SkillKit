@@ -19,11 +19,19 @@ const { values } = parseArgs({ options: {
 const root = resolve(values.root);
 const require = createRequire(join(root, 'package.json'));
 const { findKit } = require('./lib/task-kit.js');
-const { readEntry } = require('./lib/kit-reader.js');
+const getSkill = existsSync(join(root, 'lib/kit-delivery.js'))
+  ? require('./lib/kit-delivery.js').getSkill
+  : (id, file, skillRoot) => require('./lib/kit-reader.js').readEntry(skillRoot, id, file);
 const { skills } = require('./registry/skills.json');
 const { resources } = require('./registry/resources.json');
 const frozen = JSON.parse(readFileSync(join(home, 'freeze.json'), 'utf8'));
 const catalog = new Map([...skills, ...resources].map((entry) => [entry.id, entry]));
+const snapshotPath = join(root, 'catalog/federated/snapshot.json');
+if (existsSync(snapshotPath)) {
+  for (const entry of JSON.parse(readFileSync(snapshotPath, 'utf8')).entries) {
+    if (!catalog.has(entry.id)) catalog.set(entry.id, entry);
+  }
+}
 
 function load(name, path) {
   return loadFixtures(path || join(home, `fixtures/${name}.tsv`), frozen.fixtureDigests[name]);
@@ -49,8 +57,8 @@ async function run(gold) {
   for (const id of ordered) {
     if (!score.approvedIds.has(id)) continue;
     try {
-      const entry = await readEntry(root, id);
-      if (entry.instructions?.trim() && !entry.metadataOnly) {
+      const entry = await getSkill(id, undefined, root);
+      if (entry.instructions?.trim() && !entry.metadataOnly && entry.delivery !== 'metadata-only') {
         firstUsableSkillMs = performance.now() - start;
         break;
       }
@@ -65,7 +73,9 @@ async function run(gold) {
 }
 
 const engineFiles = ['lib/task-kit.js', 'lib/task-router.js', 'lib/kit-reader.js', 'workflows/routes.json',
-  'registry/skills.json', 'registry/resources.json'];
+  'registry/skills.json', 'registry/resources.json', 'lib/kit-delivery.js', 'lib/catalog-policy.js',
+  'lib/federation.js', 'lib/intent-contract.js', 'lib/task-capabilities.js', 'lib/task-retrieval.js', 'lib/persona-packs.js',
+  'lib/curated-assets.js', 'catalog/local-assets.json', 'workflows/personas.json', 'catalog/federated/snapshot.json'];
 const sourceDigests = Object.fromEntries(engineFiles.filter((path) => existsSync(join(root, path)))
   .map((path) => [path, digest(readFileSync(join(root, path)))]));
 const results = [];

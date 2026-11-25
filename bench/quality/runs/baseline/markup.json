@@ -1,0 +1,8 @@
+{
+  "id": "markup",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "c6fd70b5ac391e7f458761e808a31c3a92fe814d06ffdba73c2a66824c78443f",
+  "output": "<form action=\"/newsletter/subscribe\" method=\"post\">\n  <label for=\"library-signup-email\">Email address</label>\n  <input type=\"email\" id=\"library-signup-email\" name=\"email\" autocomplete=\"email\" required>\n  <button type=\"submit\">Sign up for library emails</button>\n</form>\n"
+}

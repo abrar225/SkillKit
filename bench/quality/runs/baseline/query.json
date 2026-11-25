@@ -1,0 +1,8 @@
+{
+  "id": "query",
+  "model": "gpt-6.2-sol",
+  "effort": "medium",
+  "runner": "Codex desktop batch, isolated by arm",
+  "promptSha256": "4bfdf2dcbd0f91cef94a70f7a43a124a3f07ea6d25f571222e882334f77e1dc2",
+  "output": "SELECT c.id, COUNT(o.status) AS paid_count\nFROM customers AS c\nLEFT JOIN orders AS o\n  ON o.customer_id = c.id AND o.status = 'paid'\nGROUP BY c.id\nORDER BY c.id;\n"
+}
