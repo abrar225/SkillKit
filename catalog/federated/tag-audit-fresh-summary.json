@@ -1,0 +1,36 @@
+{
+  "seed": 202611251,
+  "sampleSize": 200,
+  "overlapWithPreviousSample": 0,
+  "blindReviewed": 200,
+  "blindReviewer": "Gemini 3.8 Flash (two independent read-only research batches, 0..99 and 100..199)",
+  "textSources": {
+    "mirror": 120,
+    "upstream": 80,
+    "metadata": 0
+  },
+  "statusBreakdown": {
+    "approved": 120,
+    "metadata-only": 65,
+    "quarantined": 15
+  },
+  "errorCounts": {
+    "domain": 82,
+    "stage": 90,
+    "deliverable": 77,
+    "tool": 43
+  },
+  "errorRates": {
+    "domain": 0.41,
+    "stage": 0.45,
+    "deliverable": 0.385,
+    "tool": 0.215
+  },
+  "stageHardFilterAllowed": false,
+  "previousTunedSampleRates": {
+    "domain": 0.285,
+    "stage": 0.43,
+    "deliverable": 0.2,
+    "tool": 0.23
+  }
+}

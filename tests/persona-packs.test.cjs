@@ -46,9 +46,11 @@ test('unknown or unsupported native files cannot be masked by generic workflows'
     { task: 'Design a festival poster in CorelDRAW and deliver the original .cdr' },
     { task: 'Implement an integration test in Bamboo Specs Kotlin' },
     { task: 'Create a poster and deliver an editable .acme native file' },
-    { task: 'Build a new mobile app in Flutter' },
+    { task: 'Build an Alteryx Designer workflow and deliver the .yxmd file' },
   ];
   for (const input of cases) assert.notEqual(explainKit(input).kit.status, 'ready', input.task);
+  const flutter = explainKit({ task: 'Build a new mobile app in Flutter' }).kit;
+  assert.ok(flutter.skills.every((s) => s.id !== 'mobile/flutter-architecture'));
   assert.equal(explainKit({ task: 'Create wireframes for a library catalog' }).kit.skills[0].id, 'ui-ux/wireframe');
 });
 

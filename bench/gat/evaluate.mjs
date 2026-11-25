@@ -21,7 +21,11 @@ export async function evaluateGat({ root = repoRoot, userBriefsDir = supplementa
       maxFirstResponseBytes=Math.max(maxFirstResponseBytes,cards ? cards.responseBytes(first) : Buffer.byteLength(JSON.stringify(first)));
       return first.kitId && cards ? cards.getKit({kitId:first.kitId,request}) : first;
     }
-    const routing = await scoreSet(autoSelection, undefined, { root, includeAdjudicated: true });
+    const routing = await scoreSet(autoSelection, undefined, {
+      root,
+      includeAdjudicated: true,
+      sampleAdjudicatedDest: resolve(root, 'bench/results-private/adjudicated-matches-30.json'),
+    });
     routing.maxFirstResponseBytes=maxFirstResponseBytes;
     const files = readdirSync(userBriefsDir, { withFileTypes: true })
       .filter((entry) => entry.isFile() && entry.name.endsWith('.json'))

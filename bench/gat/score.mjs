@@ -1,7 +1,7 @@
-import { createHash } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { createHash, randomInt } from 'node:crypto';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
-import { resolve } from 'node:path';
+import { dirname, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const require = createRequire(import.meta.url);
@@ -125,6 +125,7 @@ function assess(test, kit, catalog, { adjudicate = false } = {}) {
   const fallback = namedGaps && constraintsOk &&
     (test.expected === 'partial' && usefulPartial || test.expected === 'no_match' && noMatch);
 
+  const federatedMatchedIds = [...new Set(matched.map(({ id }) => id).filter((id) => id.startsWith('federated/')))];
   return {
     usable,
     confidentWrong: ready && !usable,
@@ -132,7 +133,8 @@ function assess(test, kit, catalog, { adjudicate = false } = {}) {
     fallback,
     outsideCorrect: test.expected === 'outside' && noMatch,
     unnecessaryQuestion: questions,
-    federatedHit: usable && matched.some(({ id }) => id.startsWith('federated/')),
+    federatedHit: usable && federatedMatchedIds.length > 0,
+    federatedMatchedIds,
     bytes: Buffer.byteLength(JSON.stringify(kit)),
   };
 }
@@ -166,11 +168,12 @@ function summarizeRows(rows, sha256) {
   };
 }
 
-export async function scoreSet(findKit, filename = heldOut, { root = repoRoot, adjudicate = false, includeAdjudicated = false } = {}) {
+export async function scoreSet(findKit, filename = heldOut, { root = repoRoot, adjudicate = false, includeAdjudicated = false, sampleAdjudicatedDest = null } = {}) {
   const { cases, sha256 } = loadCases(filename);
   const catalog = loadCatalog(root);
   const rows = [];
   const adjudicatedRows = [];
+  const privateSamples = [];
   for (const test of cases) {
     let kit;
     try {
@@ -179,13 +182,25 @@ export async function scoreSet(findKit, filename = heldOut, { root = repoRoot, a
       throw new Error('Engine failed on a benchmark invocation. Inspect engine logs without printing brief text.');
     }
     if (!kit || typeof kit !== 'object' || typeof kit.status !== 'string') throw new Error('Engine did not return a kit manifest.');
+    const baseAssessment = assess(test, kit, catalog, { adjudicate });
     rows.push({
-      domain: test.domain, expected: test.expected, constrained: Boolean(test.constraints), ...assess(test, kit, catalog, { adjudicate }),
+      domain: test.domain, expected: test.expected, constrained: Boolean(test.constraints), ...baseAssessment,
     });
     if (includeAdjudicated) {
+      const adjAssessment = assess(test, kit, catalog, { adjudicate: true });
       adjudicatedRows.push({
-        domain: test.domain, expected: test.expected, constrained: Boolean(test.constraints), ...assess(test, kit, catalog, { adjudicate: true }),
+        domain: test.domain, expected: test.expected, constrained: Boolean(test.constraints), ...adjAssessment,
       });
+      if (sampleAdjudicatedDest && adjAssessment.federatedHit) {
+        privateSamples.push({
+          id: test.id,
+          domain: test.domain,
+          brief: test.brief,
+          strictUsable: baseAssessment.usable,
+          adjudicatedUsable: adjAssessment.usable,
+          federatedMatchedIds: adjAssessment.federatedMatchedIds,
+        });
+      }
     }
   }
   const summary = summarizeRows(rows, sha256);
@@ -201,6 +216,20 @@ export async function scoreSet(findKit, filename = heldOut, { root = repoRoot, a
       federatedMatchedCount: adjudicatedRows.filter((row) => row.federatedHit).length,
       byDomain: adj.byDomain,
     };
+  }
+  if (sampleAdjudicatedDest) {
+    const pool = [...privateSamples];
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = randomInt(i + 1);
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    mkdirSync(dirname(sampleAdjudicatedDest), { recursive: true });
+    writeFileSync(sampleAdjudicatedDest, JSON.stringify({
+      generatedAt: new Date().toISOString(),
+      totalAdjudicatedMatches: privateSamples.length,
+      sampledCount: Math.min(30, pool.length),
+      samples: pool.slice(0, 30),
+    }, null, 2) + '\n');
   }
   return summary;
 }

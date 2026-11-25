@@ -60,7 +60,7 @@ test('federation keeps checked metadata, gates exact routes, and fails closed on
   assert.equal(entry.status, 'approved');
   assert.equal(entry.qualityScore, null);
   assert.ok(listFederated().some((candidate) => candidate.id === id));
-  assert.ok(!listFederated().some((candidate) => candidate.upstream.repo === 'obra/superpowers'));
+  assert.ok(!listFederated().some((candidate) => candidate.id === 'federated/obra/superpowers/writing-plans'));
   assert.ok(federationStatus().verifiedAt);
   await assert.rejects(fetchFederatedSkill(id, {
     fetchImpl: async (url, options) => {
@@ -350,7 +350,7 @@ test('auto-verification enforces skill-directory licenses, text-only mirroring, 
 
   const rootOnlyEntry = byId.get('federated/owner/mixed-repo/root-only');
   assert.equal(rootOnlyEntry.status, 'metadata-only');
-  assert.match(rootOnlyEntry.reason, /skill-directory/i);
+  assert.match(rootOnlyEntry.reason, /differing from root|restrictive|BUSL-1\.1/i);
 
   const rootSkill = byId.get('federated/owner/bsl-root/bsl-tool');
   assert.equal(rootSkill.status, 'approved');
@@ -424,4 +424,87 @@ test('Phase 2 taxonomy avoids false-positive collisions across captions, PRISMA,
   });
   assert.equal(redisSec.domain, 'security-bug-bounty');
   assert.ok(redisSec.deliverables.includes('security-audit'));
+});
+
+test('Stage 1b repo-level license evidence approves clean repos and blocks vendored, conflicting, and custom repos', async () => {
+  const mitText = 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software.\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.';
+  const apacheText = 'Apache License\nVersion 2.0, January 2004\nhttp://www.apache.org/licenses/';
+  const remotionText = 'Remotion Company License\nCommercial use requires a paid company seat license.';
+  const noticeOk = 'Copyright 2026 Clean Studio. Attribution notice only.';
+  const noticeConflict = 'Third-party notice: components licensed under GNU General Public License (GPL-3.0).';
+  const richBody = [
+    '## Workflow',
+    '1. Inspect inputs, verify edge cases, and validate expected results on representative cases.',
+    '2. Review outputs before completion.',
+    '```js\nconsole.log("ok");\n```',
+  ].join('\n');
+
+  const cleanSkill = Buffer.from(`---\nname: alpha-skill\ndescription: Use when styling UI components cleanly.\n---\n${richBody}`);
+  const copiedSkill = Buffer.from(`---\nname: copied-skill\ndescription: Use when rendering templates.\nsource: https://github.com/other-org/other-skills\n---\n${richBody}`);
+  const vendoredSkill = Buffer.from(`---\nname: ext-skill\ndescription: Use when creating videos.\n---\n${richBody}`);
+  const scriptBytes = Buffer.from('console.log("never mirror");');
+
+  const files = {
+    'owner/clean-repo': {
+      'LICENSE': Buffer.from(mitText),
+      'NOTICE': Buffer.from(noticeOk),
+      'skills/alpha-skill/SKILL.md': cleanSkill,
+      'skills/alpha-skill/scripts/build.js': scriptBytes,
+      'skills/vendor/ext-skill/SKILL.md': vendoredSkill,
+      'skills/copied-skill/SKILL.md': copiedSkill,
+    },
+    'owner/conflicting-notice': {
+      'LICENSE': Buffer.from(apacheText),
+      'NOTICE': Buffer.from(noticeConflict),
+      'skills/alpha-skill/SKILL.md': cleanSkill,
+    },
+    'owner/remotion-custom': {
+      'LICENSE': Buffer.from(remotionText),
+      'skills/alpha-skill/SKILL.md': cleanSkill,
+    },
+  };
+
+  const adapters = {
+    discover: async () => ({
+      sources: { 'github-topic': { state: 'reachable', tier: 'community', sampled: 3 } },
+      discoveries: {
+        'github-topic': [
+          { repo: 'owner/clean-repo', url: 'https://github.com/owner/clean-repo' },
+          { repo: 'owner/conflicting-notice', url: 'https://github.com/owner/conflicting-notice' },
+          { repo: 'owner/remotion-custom', url: 'https://github.com/owner/remotion-custom' },
+        ],
+      },
+    }),
+    inspectRepo: async (repo) => ({
+      metadata: { full_name: repo, private: false, fork: false, archived: false },
+      commit: digest(JSON.stringify(files[repo])).slice(0, 40),
+      files: new Map(Object.keys(files[repo]).map((p) => [p, { mode: p.endsWith('.js') ? '100755' : '100644' }])),
+    }),
+    read: async (repo, _commit, file) => files[repo][file],
+  };
+
+  const mirror = new Map();
+  const snap = await refreshCatalog({ reviewed: [], previous: { entries: [] }, adapters, mirror, autoVerify: true });
+  const byId = new Map(snap.entries.map((e) => [e.id, e]));
+
+  const alpha = byId.get('federated/owner/clean-repo/alpha-skill');
+  assert.equal(alpha.status, 'approved');
+  assert.equal(alpha.trustTier, 'auto-verified');
+  assert.equal(alpha.licenseEvidenceScope, 'repo-root-license');
+  assert.ok(!mirror.has(digest(scriptBytes)), 'scripts must not be mirrored');
+
+  const vendored = byId.get('federated/owner/clean-repo/ext-skill');
+  assert.equal(vendored.status, 'metadata-only');
+  assert.match(vendored.reason, /vendored/i);
+
+  const copied = byId.get('federated/owner/clean-repo/copied-skill');
+  assert.equal(copied.status, 'metadata-only');
+  assert.match(copied.reason, /upstream repository/i);
+
+  const noticeRejected = byId.get('federated/owner/conflicting-notice/alpha-skill');
+  assert.equal(noticeRejected.status, 'metadata-only');
+  assert.match(noticeRejected.reason, /notice file/i);
+
+  const customRejected = byId.get('federated/owner/remotion-custom/alpha-skill');
+  assert.equal(customRejected.status, 'metadata-only');
 });
