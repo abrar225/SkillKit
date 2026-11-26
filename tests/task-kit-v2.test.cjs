@@ -120,3 +120,90 @@ test('typical manifests are compact and route-selected skills are licensed', () 
     }
   }
 });
+
+test('specialist routes, graphic phrasing, and constraint boundaries hold without false matches', () => {
+  const astryx = explainKit({ task: 'Build a form screen using the Astryx design system.' }, localOnly);
+  assert.equal(astryx.kit.status, 'ready');
+  assert.ok(skillIds(astryx.kit).includes('ui-ux/astryx'));
+
+  const pickUi = explainKit({ task: 'Recommend a UI component library for a React command palette.' }, localOnly);
+  assert.equal(pickUi.kit.status, 'ready');
+  assert.ok(skillIds(pickUi.kit).includes('ui-ux/pick-ui-library'));
+
+  const reusable = explainKit({ task: 'Create a reusable theme for our quarterly slide deck in PPTX.' }, localOnly);
+  assert.equal(reusable.kit.status, 'ready');
+  assert.ok(skillIds(reusable.kit).includes('ui-ux/theme-factory'));
+
+  const comp = explainKit({ task: 'Design compound React component composition patterns for our dropdown.' }, localOnly);
+  assert.equal(comp.kit.status, 'ready');
+  assert.ok(skillIds(comp.kit).includes('frontend/composition-patterns'));
+
+  const durable = explainKit({ task: 'Stabilize flaky tests and eliminate fake timer leaks in Vitest.' }, localOnly);
+  assert.equal(durable.kit.status, 'ready');
+  assert.ok(skillIds(durable.kit).includes('engineering-ops/durable-test-collateral'));
+
+  const safeMig = explainKit({ task: 'Plan a zero-downtime Postgres schema migration with backward-compatible rollout.' }, localOnly);
+  assert.equal(safeMig.kit.status, 'ready');
+  assert.ok(skillIds(safeMig.kit).includes('engineering-ops/deprecation-and-migration'));
+
+  const sop = explainKit({ task: 'Turn these onboarding notes into an engineering SOP handbook in Markdown.' }, localOnly);
+  assert.equal(sop.kit.status, 'ready');
+  assert.ok(skillIds(sop.kit).includes('social-media/anthropic-docs'));
+
+  const sign = explainKit({ task: 'Create a static PNG sign for the conference workshop desk.' }, localOnly);
+  assert.equal(sign.kit.status, 'ready');
+  assert.ok(skillIds(sign.kit).includes('ui-ux/canvas-design'));
+
+  const duckdb = explainKit({ task: 'Document a local DuckDB query workflow over Parquet logs.' }, localOnly);
+  assert.equal(duckdb.kit.status, 'ready');
+  assert.ok(resourceIds(duckdb.kit).includes('duckdb'));
+
+  const arch = explainKit({ task: 'Refactor our legacy Express handlers into clean domain modules.' }, localOnly);
+  assert.equal(arch.kit.status, 'ready');
+  assert.ok(skillIds(arch.kit).includes('architecture/improve-codebase-architecture'));
+
+  const helm = explainKit({ task: 'Create a Kubernetes Helm chart for our microservice.' }, localOnly);
+  assert.notEqual(helm.contract.deliverables[0].kind, 'data-visualization');
+
+  const xThread = findKit({ task: 'Write X thread copy breaking down 5 Postgres indexing mistakes, text only.' }, localOnly);
+  assert.equal(xThread.status, 'ready');
+  assert.ok(xThread.constraints.includes('no-auto-publishing'));
+
+  const negSpan = explainKit({ task: 'Design an API without OpenAPI or Swagger, using gRPC protobuf instead.' }, localOnly);
+  assert.ok(negSpan.contract.forbiddenTools.includes('openapi'));
+  assert.ok(!negSpan.contract.forbiddenTools.includes('grpc'));
+  assert.equal(negSpan.kit.status, 'no_match');
+
+  const pricingRedesign = explainKit({ task: 'Redesign our pricing page without any JavaScript framework or utility CSS library.' }, localOnly);
+  assert.equal(pricingRedesign.kit.status, 'ready');
+  assert.ok(pricingRedesign.contract.forbiddenTools.includes('tailwindcss'));
+  assert.ok(pricingRedesign.contract.forbiddenTools.includes('react'));
+
+  const freeFonts = explainKit({ task: 'Create a static poster. Paid fonts and commercial stock are strictly off limits.' }, localOnly);
+  assert.equal(freeFonts.kit.status, 'ready');
+  assert.equal(freeFonts.contract.budget, 'free');
+
+  const dns = findKit({ task: 'Migrate our website DNS records to Cloudflare; need help configuring CNAMEs.' }, localOnly);
+  assert.equal(dns.status, 'no_match');
+  assert.equal(dns.question, undefined);
+
+  const acme = findKit({ task: 'Create a poster and deliver an editable .acme native file.' }, localOnly);
+  assert.notEqual(acme.status, 'ready');
+
+  const edl = findKit({ task: 'Edit an interview and deliver an .edl timeline.' }, localOnly);
+  assert.notEqual(edl.status, 'ready');
+
+  const readOnlyInfra = explainKit({ task: 'Deploy a Kubernetes Ingress controller with Helm.' }, {
+    federatedCandidates: () => [{
+      id: 'federated/notharshhaa/devops-skills/k8s-review',
+      name: 'k8s-review',
+      description: 'Review Kubernetes manifests.',
+      deliverables: ['infrastructure-ops'],
+      tools: ['helm', 'kubernetes'],
+      formats: ['yaml'],
+      stage: 'review',
+      license: 'MIT',
+    }],
+  });
+  assert.equal(readOnlyInfra.kit.status, 'no_match');
+});
