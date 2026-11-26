@@ -1,6 +1,6 @@
 {
   "name": "@abrar225/skills",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "SkillKit: a curated, source-traceable library of agent skills and developer resources",
   "main": "bin/vibe-skills.js",
   "bin": {
