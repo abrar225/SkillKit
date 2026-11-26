@@ -1,0 +1,41 @@
+{
+  "model": "Gemini 4 Hydrogen",
+  "qualifiedTasks": 30,
+  "minRunsPerArm": 3,
+  "blinded": true,
+  "interval95": [
+    0.6646880050648342,
+    0.9384996631922972
+  ],
+  "wins": 22,
+  "losses": 4,
+  "ties": 4,
+  "categories": {
+    "web": {
+      "wins": 5,
+      "losses": 1,
+      "ties": 0
+    },
+    "newsletter": {
+      "wins": 3,
+      "losses": 3,
+      "ties": 0
+    },
+    "readme": {
+      "wins": 2,
+      "losses": 0,
+      "ties": 4
+    },
+    "review": {
+      "wins": 6,
+      "losses": 0,
+      "ties": 0
+    },
+    "release": {
+      "wins": 6,
+      "losses": 0,
+      "ties": 0
+    }
+  },
+  "method": "Task-level sign of sum of three paired votes on Gemini 4 Hydrogen; deterministic functional checks first, blinded judge tie-breaker, Wilson 95% CI for wins among non-tied tasks."
+}

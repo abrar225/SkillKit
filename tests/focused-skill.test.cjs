@@ -13,3 +13,22 @@ test('focused skill excerpts preserve source paragraphs, attribution and full-fi
   assert.equal(focusedSkill(detail), detail);
   assert.throws(() => focusedSkill(detail, 'x'.repeat(8001)));
 });
+
+test('focused skill excerpts preserve intact fenced code blocks inside byte limit', () => {
+  const prose = 'Use explicit accessible labels linked to every form control by matching id.';
+  const code = [
+    '```html',
+    '<label for="email">Email address</label>',
+    '',
+    '<input id="email" type="email" required />',
+    '```',
+  ].join('\n');
+  const unrelated = 'Migration checklists require verifying staged backups before schema cutover.';
+  const detail = { instructions: [prose, code, unrelated].join('\n\n'), notices: ['notice'] };
+  const excerpt = focusedSkill(detail, 'accessible label email form control');
+  assert.equal(excerpt.excerpt, true);
+  assert.ok(excerpt.instructions.includes('```html'));
+  assert.ok(excerpt.instructions.includes('<input id="email" type="email" required />'));
+  assert.equal((excerpt.instructions.match(/```/g) || []).length % 2, 0);
+  assert.ok(Buffer.byteLength(excerpt.instructions) <= 900);
+});

@@ -6,8 +6,9 @@
     "skills": ["engineering-ops/incremental-implementation", "engineering-ops/verification-before-completion", "engineering-ops/code-review-and-quality"],
     "resources": ["mdn", "playwright", "openapi", "postgresql", "react", "nextjs", "flutter", "react-native", "duckdb", "knip"],
     "tasteAnchors": [
-      {"example": "A product filter restores its URL-backed state on refresh and handles empty results.", "test": "Exercise refresh, back navigation, and no matches with a fixture."},
-      {"example": "An API contract includes a valid request, one malformed request, and the expected failure response.", "test": "Assert response status, schema, and side effects for both requests."}
+      {"deliverables": ["feature", "web-site", "web-redesign"], "example": "A product filter restores its URL-backed state on refresh and handles empty results.", "test": "Exercise refresh, back navigation, and no matches with a fixture."},
+      {"deliverables": ["api", "tests"], "example": "An API contract includes a valid request, one malformed request, and the expected failure response.", "test": "Assert response status, schema, and side effects for both requests."},
+      {"deliverables": ["documentation"], "example": "A CLI README states exact prerequisites, a copy-paste fenced command without $ prompts, a concise behavior summary explicitly linking documented exit codes to their triggers, and clear exit status notes (0 success, specific documented codes, and other non-zero failure) with zero meta-disclaimers.", "test": "Verify prerequisites and specific exit codes appear in both behavior explanation and exit notes without invented flags or prompt prefixes."}
     ],
     "antiPatterns": ["Adding an abstraction before finding existing callers and conventions.", "Presenting green checks without recording which user flow they exercise."],
     "checks": ["Run the smallest affected build or test command. Record the exit status and exercised cases.", "Review the diff for unrelated changes and behavior existing callers rely on."],
@@ -63,8 +64,8 @@
     "skills": ["frontend/frontend-design", "ui-ux/canvas-design", "ui-ux/fixing-accessibility", "ui-ux/create-design-md", "ui-ux/wireframe"],
     "resources": ["google-fonts", "fontshare", "realtime-colors", "mdn", "lucide"],
     "tasteAnchors": [
-      {"example": "An event poster communicates the event name, date, and location in that order.", "test": "Print or preview at intended size and confirm all three can be found in five seconds."},
-      {"example": "A product screen uses real labels and makes the main action identifiable when color is removed.", "test": "Inspect one narrow viewport in grayscale and tab through all interactive elements."}
+      {"deliverables": ["static-graphic", "inkscape-print"], "example": "An event poster communicates the event name, date, and location in that order.", "test": "Print or preview at intended size and confirm all three can be found in five seconds."},
+      {"deliverables": ["web-site", "web-redesign", "ui-design", "ui-review", "wireframe"], "example": "A product screen uses real labels and makes the main action identifiable when color is removed.", "test": "Inspect one narrow viewport in grayscale and tab through all interactive elements."}
     ],
     "antiPatterns": ["Generic gradients and decorative labels competing with the primary action.", "Reviewing a palette as swatches without testing type and focus states on backgrounds."],
     "checks": ["Check hierarchy with representative content at actual screen or print size.", "Measure required contrast and inspect cropping, typography, and keyboard focus where applicable."],
@@ -81,10 +82,10 @@
     "skills": ["social-media/writing-shape", "social-media/writing-beats"],
     "resources": [],
     "tasteAnchors": [
-      {"example": "A LinkedIn post from an interview leads with one finding grounded in the interview.", "test": "Trace the opening claim, each quote, and any number to its source."},
-      {"example": "A newsletter gives readers one specific reason to open it and one clear next action.", "test": "Compare subject and preheader with the first paragraph. Open every reference link."}
+      {"deliverables": ["social-copy", "article"], "example": "A LinkedIn post from an interview leads with one finding grounded in the interview.", "test": "Trace the opening claim, each quote, and any number to its source."},
+      {"deliverables": ["newsletter"], "example": "A reader newsletter leads with one crisp subject line and states dates, times, and next actions once cleanly in natural prose without quoting prompt labels.", "test": "Check word budget and readability; avoid echoing the same date or venue across subject, preheader, and opener."}
     ],
-    "antiPatterns": ["Untraceable metrics, invented quotes, and generic questions designed to solicit comments.", "Turning an article into a wall of one-line paragraphs irrespective of platform."],
+    "antiPatterns": ["Untraceable metrics, invented quotes, and generic questions designed to solicit comments.", "Turning an article into a wall of one-line paragraphs irrespective of platform.", "Repeating the same date or detail verbatim across subject, preheader, and opener, or copying prompt phrasing like 'from my notes'."],
     "checks": ["Verify claims, quotes, and links against the supplied sources.", "Preview the opening and line breaks at the platform's normal reading width."],
     "variants": {
       "linkedin": {"check": "Verify the main point appears before expansion and every claim comes from the original source."},

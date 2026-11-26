@@ -569,7 +569,7 @@ switch (command) {
         const kit = explained ? explained.kit : findKit(input);
         const delivery = require('../lib/kit-delivery');
         if (flags.lock) fs.writeFileSync('skillkit.lock.json', JSON.stringify(delivery.makeLock(kit), null, 2) + '\n', { flag: 'wx', mode: 0o600 });
-        if (command === 'handoff') console.log(await delivery.handoff(kit, repoRoot, explained.packs));
+        if (command === 'handoff') console.log(await delivery.handoff(kit, repoRoot, explained.packs, task));
         else if (command === 'explain') console.log(JSON.stringify(explained, null, 2));
         else console.log(flags.json || command === 'use' ? JSON.stringify(kit) : formatKit(kit));
         break;
